@@ -5,7 +5,7 @@ export function TriptychDivider() {
     <div className="py-12 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="relative h-[200px] md:h-[300px] rounded-xl overflow-hidden shadow-2xl">
-          <Image src="/images/triptych.png" alt="East Asian inspired artwork" fill className="object-cover" />
+          <Image src="/images/birthright.jpg" alt="East Asian inspired artwork" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-red-950/60 via-transparent to-red-950/60"></div>
 
           <div className="absolute inset-0 flex items-center justify-center">

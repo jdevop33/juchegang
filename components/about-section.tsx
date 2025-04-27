@@ -5,7 +5,7 @@ export function AboutSection() {
     <section id="about" className="py-16 relative">
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
-        <Image src="/images/bear-mountain.png" alt="Mountain landscape" fill className="object-cover opacity-20" />
+        <Image src="/images/brothers.jpg" alt="Mountain Bonds" fill className="object-cover opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-red-950/90 to-red-900/95"></div>
       </div>
 
