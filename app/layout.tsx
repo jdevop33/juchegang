@@ -5,6 +5,12 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#034DA2",
+}
+
 export const metadata = {
   title: "The 48 Laws of Excellence - Juche GanG Edition",
   description:
