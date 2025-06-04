@@ -14,8 +14,6 @@ export const metadata = {
   creator: "Juche GanG",
   publisher: "Juche GanG",
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#034DA2",
   openGraph: {
     type: "website",
     locale: "en_US",
