@@ -1,15 +1,27 @@
+"use client"
+
 import type { Law } from "@/types/law"
-import { ArrowUpRight } from "lucide-react"
+import { ArrowUpRight, Star } from "lucide-react"
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 
 interface LawCardProps {
   law: Law
 }
 
 export function LawCard({ law }: LawCardProps) {
+  const { ref, isIntersecting } = useIntersectionObserver({
+    threshold: 0.2,
+    triggerOnce: true,
+  })
+
   return (
     <div
+      ref={ref}
       id={`law-${law.number}`}
-      className="group bg-red-800/50 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] border border-red-700/50"
+      className={`group glass-effect rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 hover-lift border border-red-700/50 ${
+        isIntersecting ? 'animate-slideInUp opacity-100' : 'opacity-0 translate-y-8'
+      }`}
+      style={{ animationDelay: `${(law.number % 6) * 100}ms` }}
     >
       <div className="p-6">
         <div className="flex items-center justify-between mb-4">
