@@ -49,7 +49,7 @@ export default function Home() {
     <>
       {showLoading && <LoadingScreen onComplete={handleLoadingComplete} />}
       <main
-        className={`min-h-screen friendship-gradient text-white transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"}`}
+        className={`min-h-screen bg-background text-foreground transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"}`}
       >
         <ReadingProgress />
         <ParticleBackground />
@@ -58,11 +58,11 @@ export default function Home() {
         <HeroSection />
 
       <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="max-w-4xl mx-auto mb-12 text-center animate-slideInUp">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white animate-glow text-shadow-glow animate-friendship-pulse">
+        <div className="max-w-4xl mx-auto mb-16 text-center animate-slideInUp">
+          <h2 className="text-4xl md:text-6xl font-light mb-8 text-foreground tracking-tight">
             Featured Laws
           </h2>
-          <p className="text-lg text-blue-100 animate-slideInLeft glass-effect p-4 rounded-xl">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             These laws form the foundation of personal excellence and will transform how you approach life's challenges.
           </p>
         </div>
@@ -74,11 +74,11 @@ export default function Home() {
 
         <TriptychDivider />
 
-        <div id="laws" className="max-w-4xl mx-auto mb-12 text-center pt-16 animate-slideInUp">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white animate-glow text-shadow-blue animate-friendship-pulse">
+        <div id="laws" className="max-w-4xl mx-auto mb-16 text-center pt-24 animate-slideInUp">
+          <h2 className="text-4xl md:text-6xl font-light mb-8 text-foreground tracking-tight">
             The 48 Laws Of Excellence
           </h2>
-          <p className="text-lg text-white animate-slideInRight glass-effect-red p-4 rounded-xl">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering
             commitment to your highest potential.
           </p>
@@ -96,7 +96,7 @@ export default function Home() {
         description="Master yourself before attempting to master others. These laws will help you develop the self-discipline needed to achieve excellence in any field."
         laws={selfDisciplineLaws}
         imagePath="/images/bear-mountain.png"
-        bgClass="bg-friendship-blue"
+        bgClass="bg-muted"
       />
 
       <CategorySection
@@ -104,7 +104,7 @@ export default function Home() {
         description="No one achieves greatness alone. These laws will guide you in forming alliances and relationships that elevate everyone involved."
         laws={relationshipLaws}
         imagePath="/royalty.jpg"
-        bgClass="friendship-gradient-reverse"
+        bgClass="bg-secondary"
       />
 
       <AboutSection />
