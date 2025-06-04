@@ -51,7 +51,7 @@ export default function Home() {
         </div>
 
         <div className="space-y-12 mb-16">
-          <FeaturedLaw law={featuredLaw1} imagePath="/images/asian-landscape.png" />
+          <FeaturedLaw law={featuredLaw1} imagePath="/boss.jpg " />
           <FeaturedLaw law={featuredLaw25} imagePath="/images/mountain-bear-sunset.png" />
         </div>
 
@@ -84,7 +84,7 @@ export default function Home() {
         title="Building Powerful Relationships"
         description="No one achieves greatness alone. These laws will guide you in forming alliances and relationships that elevate everyone involved."
         laws={relationshipLaws}
-        imagePath="/images/asian-landscape.png"
+        imagePath="/royalty.jpg"
         bgClass="bg-gradient-to-b from-red-900 to-red-950"
       />
 
