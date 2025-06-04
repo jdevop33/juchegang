@@ -10,9 +10,7 @@ import { CategorySection } from "@/components/category-section"
 import { TriptychDivider } from "@/components/triptych-divider"
 import { FloatingActionButton } from "@/components/floating-action-button"
 import { ReadingProgress } from "@/components/reading-progress"
-import { ParticleBackground } from "@/components/particle-background"
 import { LoadingScreen } from "@/components/loading-screen"
-import { CursorTrail } from "@/components/cursor-trail"
 import { laws } from "@/data/laws"
 import { useState, useEffect } from "react"
 
@@ -52,17 +50,15 @@ export default function Home() {
         className={`min-h-screen bg-background text-foreground transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"}`}
       >
         <ReadingProgress />
-        <ParticleBackground />
-        <CursorTrail />
         <JucheHeader />
         <HeroSection />
 
       <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="max-w-4xl mx-auto mb-16 text-center animate-slideInUp">
-          <h2 className="text-4xl md:text-6xl font-light mb-8 text-foreground tracking-tight">
+        <div className="max-w-4xl mx-auto mb-16 text-center animate-slideInUp section-padding">
+          <h2 className="text-headline text-foreground mb-8">
             Featured Laws
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-body-large text-muted-foreground max-w-2xl mx-auto">
             These laws form the foundation of personal excellence and will transform how you approach life's challenges.
           </p>
         </div>
@@ -74,11 +70,11 @@ export default function Home() {
 
         <TriptychDivider />
 
-        <div id="laws" className="max-w-4xl mx-auto mb-16 text-center pt-24 animate-slideInUp">
-          <h2 className="text-4xl md:text-6xl font-light mb-8 text-foreground tracking-tight">
+        <div id="laws" className="max-w-4xl mx-auto mb-16 text-center section-padding animate-slideInUp">
+          <h2 className="text-headline text-foreground mb-8">
             The 48 Laws Of Excellence
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-body-large text-muted-foreground max-w-3xl mx-auto">
             A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering
             commitment to your highest potential.
           </p>

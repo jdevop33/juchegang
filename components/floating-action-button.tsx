@@ -41,21 +41,21 @@ export function FloatingActionButton() {
       >
         <button
           onClick={() => scrollToSection("laws")}
-          className="w-12 h-12 bg-friendship-blue hover:bg-friendship-red text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group friendship-glow"
+          className="w-12 h-12 bg-accent hover:bg-primary text-accent-foreground rounded-full sophisticated-shadow hover-lift transition-all duration-300 flex items-center justify-center group"
           title="View Laws"
         >
           <BookOpen className="h-5 w-5 group-hover:scale-110 transition-transform" />
         </button>
         <button
           onClick={() => scrollToSection("about")}
-          className="w-12 h-12 bg-friendship-red hover:bg-friendship-blue text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group friendship-glow"
+          className="w-12 h-12 bg-secondary hover:bg-accent text-secondary-foreground hover:text-accent-foreground rounded-full sophisticated-shadow hover-lift transition-all duration-300 flex items-center justify-center group"
           title="About"
         >
           <User className="h-5 w-5 group-hover:scale-110 transition-transform" />
         </button>
         <button
           onClick={scrollToTop}
-          className="w-12 h-12 friendship-gradient hover:friendship-gradient-reverse text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group friendship-glow"
+          className="w-12 h-12 bg-primary hover:bg-accent text-primary-foreground rounded-full sophisticated-shadow hover-lift transition-all duration-300 flex items-center justify-center group"
           title="Back to Top"
         >
           <ChevronUp className="h-5 w-5 group-hover:scale-110 transition-transform" />
@@ -65,7 +65,7 @@ export function FloatingActionButton() {
       {/* Main FAB */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 friendship-gradient hover:friendship-gradient-reverse text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center animate-float friendship-glow"
+        className="w-14 h-14 bg-accent hover:bg-primary text-accent-foreground rounded-full sophisticated-shadow hover-lift transition-all duration-300 flex items-center justify-center"
       >
         {isOpen ? (
           <X className="h-6 w-6 transition-transform duration-300" />

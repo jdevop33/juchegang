@@ -56,11 +56,11 @@ export function HeroSection() {
               <Star className="h-5 w-5 text-accent" />
               <span className="text-sm font-medium text-white tracking-wide uppercase">Excellence Through Discipline</span>
             </div>
-            <h1 className="text-6xl sm:text-7xl md:text-9xl font-light mb-12 text-white leading-none tracking-tight">
+            <h1 className="text-display text-white mb-12 leading-none">
               The 48 Laws <br />
-              <span className="font-normal">of Excellence</span>
+              <span className="font-light">of Excellence</span>
             </h1>
-            <p className="text-2xl sm:text-3xl md:text-4xl text-white/90 mb-12 max-w-4xl font-light leading-relaxed glass-effect-dark p-8 rounded elegant-border">
+            <p className="text-body-large text-white/90 mb-12 max-w-4xl glass-effect-dark p-8 rounded elegant-border">
               Master the principles that separate leaders from followers. Transform discipline into power,
               commitment into excellence, and potential into unstoppable achievement.
             </p>
