@@ -71,28 +71,33 @@ export function ParticleBackground() {
     const drawParticles = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-      particlesRef.current.forEach((particle) => {
+      particlesRef.current.forEach((particle, index) => {
         ctx.save()
         ctx.globalAlpha = particle.opacity
-        ctx.fillStyle = "#ef4444"
+        // Alternate between friendship blue and red
+        ctx.fillStyle = index % 2 === 0 ? "#034DA2" : "#EC1D25"
         ctx.beginPath()
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
         ctx.fill()
         ctx.restore()
       })
 
-      // Draw connections between nearby particles
+      // Draw connections between nearby particles with friendship colors
       particlesRef.current.forEach((particle1, i) => {
-        particlesRef.current.slice(i + 1).forEach((particle2) => {
+        particlesRef.current.slice(i + 1).forEach((particle2, j) => {
           const dx = particle1.x - particle2.x
           const dy = particle1.y - particle2.y
           const distance = Math.sqrt(dx * dx + dy * dy)
 
-          if (distance < 100) {
+          if (distance < 120) {
             ctx.save()
-            ctx.globalAlpha = (1 - distance / 100) * 0.1
-            ctx.strokeStyle = "#ef4444"
-            ctx.lineWidth = 1
+            ctx.globalAlpha = (1 - distance / 120) * 0.15
+            // Create gradient connections
+            const gradient = ctx.createLinearGradient(particle1.x, particle1.y, particle2.x, particle2.y)
+            gradient.addColorStop(0, "#034DA2")
+            gradient.addColorStop(1, "#EC1D25")
+            ctx.strokeStyle = gradient
+            ctx.lineWidth = 1.5
             ctx.beginPath()
             ctx.moveTo(particle1.x, particle1.y)
             ctx.lineTo(particle2.x, particle2.y)

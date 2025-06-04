@@ -4,65 +4,72 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    /* Friendship Club Color Scheme */
+    --friendship-blue: 213 96% 32%;     /* #034DA2 */
+    --friendship-red: 356 87% 52%;      /* #EC1D25 */
+    --friendship-white: 0 0% 100%;      /* #FFFFFF */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    /* Light theme using friendship colors */
+    --background: var(--friendship-white);
+    --foreground: var(--friendship-blue);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
+    --card: var(--friendship-white);
+    --card-foreground: var(--friendship-blue);
 
-    --primary: 0 72.2% 50.6%;
-    --primary-foreground: 0 85.7% 97.3%;
+    --popover: var(--friendship-white);
+    --popover-foreground: var(--friendship-blue);
 
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
+    --primary: var(--friendship-blue);
+    --primary-foreground: var(--friendship-white);
 
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    --secondary: 213 30% 95%;
+    --secondary-foreground: var(--friendship-blue);
 
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --muted: 213 20% 96%;
+    --muted-foreground: 213 50% 45%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --accent: var(--friendship-red);
+    --accent-foreground: var(--friendship-white);
 
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 72.2% 50.6%;
+    --destructive: var(--friendship-red);
+    --destructive-foreground: var(--friendship-white);
 
-    --radius: 0.5rem;
+    --border: 213 30% 85%;
+    --input: 213 30% 90%;
+    --ring: var(--friendship-blue);
+
+    --radius: 0.75rem;
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Dark theme with friendship colors */
+    --background: 213 100% 8%;          /* Deep blue background */
+    --foreground: var(--friendship-white);
 
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 213 80% 12%;
+    --card-foreground: var(--friendship-white);
 
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 213 80% 10%;
+    --popover-foreground: var(--friendship-white);
 
-    --primary: 0 72.2% 50.6%;
-    --primary-foreground: 0 85.7% 97.3%;
+    --primary: var(--friendship-red);
+    --primary-foreground: var(--friendship-white);
 
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 213 40% 20%;
+    --secondary-foreground: var(--friendship-white);
 
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
+    --muted: 213 30% 18%;
+    --muted-foreground: 213 20% 70%;
 
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: var(--friendship-red);
+    --accent-foreground: var(--friendship-white);
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: var(--friendship-red);
+    --destructive-foreground: var(--friendship-white);
 
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 72.2% 50.6%;
+    --border: 213 40% 25%;
+    --input: 213 40% 20%;
+    --ring: var(--friendship-red);
   }
 }
 
@@ -120,13 +127,25 @@
   }
 
   .glass-effect {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(3, 77, 162, 0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(236, 29, 37, 0.3);
+    box-shadow: 0 8px 32px rgba(3, 77, 162, 0.1);
+  }
+
+  .glass-effect-red {
+    background: rgba(236, 29, 37, 0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(3, 77, 162, 0.3);
+    box-shadow: 0 8px 32px rgba(236, 29, 37, 0.1);
   }
 
   .text-shadow-glow {
-    text-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+    text-shadow: 0 0 20px rgba(236, 29, 37, 0.6);
+  }
+
+  .text-shadow-blue {
+    text-shadow: 0 0 20px rgba(3, 77, 162, 0.6);
   }
 
   .hover-lift {
@@ -135,7 +154,19 @@
 
   .hover-lift:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(3, 77, 162, 0.3), 0 0 30px rgba(236, 29, 37, 0.2);
+  }
+
+  .friendship-gradient {
+    background: linear-gradient(135deg, #034DA2 0%, #EC1D25 100%);
+  }
+
+  .friendship-gradient-reverse {
+    background: linear-gradient(135deg, #EC1D25 0%, #034DA2 100%);
+  }
+
+  .friendship-glow {
+    box-shadow: 0 0 30px rgba(3, 77, 162, 0.4), 0 0 60px rgba(236, 29, 37, 0.3);
   }
 
   @keyframes fadeIn {
@@ -204,10 +235,23 @@
 
   @keyframes glow {
     from {
-      text-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+      text-shadow: 0 0 20px rgba(236, 29, 37, 0.6);
     }
     to {
-      text-shadow: 0 0 30px rgba(239, 68, 68, 0.8), 0 0 40px rgba(239, 68, 68, 0.6);
+      text-shadow: 0 0 30px rgba(236, 29, 37, 0.9), 0 0 40px rgba(3, 77, 162, 0.6);
     }
+  }
+
+  @keyframes friendshipPulse {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(3, 77, 162, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(236, 29, 37, 0.6), 0 0 60px rgba(3, 77, 162, 0.4);
+    }
+  }
+
+  .animate-friendship-pulse {
+    animation: friendshipPulse 3s ease-in-out infinite;
   }
 }

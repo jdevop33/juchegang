@@ -35,65 +35,57 @@ export function HeroSection() {
           priority
         />
 
-        {/* Enhanced overlay with animated gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-red-950/90 via-red-950/30 to-transparent">
-          <div className="absolute inset-0 bg-gradient-to-r from-red-900/20 via-transparent to-red-900/20 animate-pulse-slow"></div>
+        {/* Enhanced overlay with friendship colors */}
+        <div className="absolute inset-0 bg-gradient-to-t from-friendship-blue/90 via-friendship-blue/30 to-transparent">
+          <div className="absolute inset-0 bg-gradient-to-r from-friendship-red/20 via-transparent to-friendship-red/20 animate-pulse-slow"></div>
         </div>
       </div>
 
-      {/* Floating particles effect */}
+      {/* Professional geometric overlay */}
       <div className="absolute inset-0">
-        {[...Array(6)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-2 h-2 bg-red-400/30 rounded-full animate-float"
-            style={{
-              left: `${20 + i * 15}%`,
-              top: `${30 + (i % 3) * 20}%`,
-              animationDelay: `${i * 0.5}s`,
-            }}
-          />
-        ))}
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-friendship-red/20 rotate-45"></div>
+        <div className="absolute top-1/3 right-1/4 w-24 h-24 border border-friendship-blue/20 rotate-12"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-20 h-20 border border-friendship-red/15 -rotate-12"></div>
       </div>
 
       {/* Content positioned for better visibility */}
       <div className="absolute inset-0 flex flex-col justify-end pb-16 md:pb-24">
         <div className="container mx-auto px-6">
           <div className={`max-w-3xl transition-all duration-1000 ${isLoaded ? 'animate-slideInUp' : 'opacity-0'}`}>
-            <div className="inline-flex items-center gap-2 glass-effect px-4 py-2 rounded-full mb-6 animate-scaleIn">
-              <Sparkles className="h-4 w-4 text-red-300 animate-pulse" />
-              <span className="text-sm font-medium text-red-200">Juche GanG Edition</span>
+            <div className="inline-flex items-center gap-3 bg-friendship-blue/90 backdrop-blur-sm px-8 py-4 rounded-sm mb-8 border-l-4 border-friendship-red">
+              <Star className="h-6 w-6 text-friendship-red" />
+              <span className="text-lg font-bold text-white tracking-wide">EXCELLENCE THROUGH DISCIPLINE</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 text-white leading-tight drop-shadow-lg animate-glow">
-              The 48 Laws <br />
-              <span className="text-red-300 text-shadow-glow">Of Excellence</span>
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-8 text-white leading-none tracking-tight">
+              THE 48 LAWS <br />
+              <span className="text-friendship-red font-black">OF EXCELLENCE</span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-red-100 mb-8 max-w-2xl drop-shadow-md glass-effect p-4 rounded-lg animate-slideInLeft">
-              A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering
-              commitment to your highest potential.
+            <p className="text-xl sm:text-2xl md:text-3xl text-white mb-10 max-w-4xl font-medium leading-relaxed bg-friendship-blue/80 backdrop-blur-sm p-8 border-l-4 border-friendship-red">
+              Master the principles that separate leaders from followers. Transform discipline into power,
+              commitment into excellence, and potential into unstoppable achievement.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 animate-slideInRight">
+            <div className="flex flex-col sm:flex-row gap-6">
               <a
                 href="#laws"
-                className="px-8 py-3 bg-red-700 hover:bg-red-600 text-white font-medium rounded-lg transition-all duration-300 text-center hover-lift group"
+                className="px-12 py-5 bg-friendship-red hover:bg-friendship-blue text-white font-bold text-lg tracking-wide transition-all duration-300 text-center border-2 border-friendship-red hover:border-friendship-blue transform hover:scale-105"
               >
-                <span className="group-hover:animate-pulse">Explore the Laws</span>
+                MASTER THE LAWS
               </a>
               <a
                 href="#about"
-                className="px-8 py-3 glass-effect text-white font-medium rounded-lg border border-red-700/50 transition-all duration-300 text-center hover-lift group"
+                className="px-12 py-5 bg-transparent border-2 border-friendship-blue hover:bg-friendship-blue text-white font-bold text-lg tracking-wide transition-all duration-300 text-center transform hover:scale-105"
               >
-                <span className="group-hover:animate-pulse">About the Author</span>
+                LEARN THE SYSTEM
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator with friendship colors */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-8 h-12 rounded-full border-2 border-red-300 flex justify-center">
-          <div className="w-1 h-3 bg-red-300 rounded-full mt-2 animate-pulse"></div>
+        <div className="w-8 h-12 rounded-full border-2 border-friendship-red flex justify-center friendship-glow">
+          <div className="w-1 h-3 bg-friendship-red rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </div>

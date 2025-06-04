@@ -18,15 +18,10 @@ import { useState, useEffect } from "react"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [showLoading, setShowLoading] = useState(true)
+  const [showLoading, setShowLoading] = useState(false) // Disable loading screen for now
 
   useEffect(() => {
-    // Simulate loading time for better UX
-    const timer = setTimeout(() => {
-      setIsLoaded(true)
-    }, 100)
-
-    return () => clearTimeout(timer)
+    setIsLoaded(true)
   }, [])
 
   const handleLoadingComplete = () => {
@@ -54,7 +49,7 @@ export default function Home() {
     <>
       {showLoading && <LoadingScreen onComplete={handleLoadingComplete} />}
       <main
-        className={`min-h-screen bg-gradient-to-b from-red-950 to-red-900 text-white transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"}`}
+        className={`min-h-screen friendship-gradient text-white transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"}`}
       >
         <ReadingProgress />
         <ParticleBackground />
@@ -64,10 +59,10 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="max-w-4xl mx-auto mb-12 text-center animate-slideInUp">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-red-300 animate-glow text-shadow-glow">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white animate-glow text-shadow-glow animate-friendship-pulse">
             Featured Laws
           </h2>
-          <p className="text-lg text-red-100 animate-slideInLeft">
+          <p className="text-lg text-blue-100 animate-slideInLeft glass-effect p-4 rounded-xl">
             These laws form the foundation of personal excellence and will transform how you approach life's challenges.
           </p>
         </div>
@@ -80,10 +75,10 @@ export default function Home() {
         <TriptychDivider />
 
         <div id="laws" className="max-w-4xl mx-auto mb-12 text-center pt-16 animate-slideInUp">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-red-300 animate-glow text-shadow-glow">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white animate-glow text-shadow-blue animate-friendship-pulse">
             The 48 Laws Of Excellence
           </h2>
-          <p className="text-lg text-red-100 animate-slideInRight">
+          <p className="text-lg text-white animate-slideInRight glass-effect-red p-4 rounded-xl">
             A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering
             commitment to your highest potential.
           </p>
@@ -101,7 +96,7 @@ export default function Home() {
         description="Master yourself before attempting to master others. These laws will help you develop the self-discipline needed to achieve excellence in any field."
         laws={selfDisciplineLaws}
         imagePath="/images/bear-mountain.png"
-        bgClass="bg-red-950"
+        bgClass="bg-friendship-blue"
       />
 
       <CategorySection
@@ -109,7 +104,7 @@ export default function Home() {
         description="No one achieves greatness alone. These laws will guide you in forming alliances and relationships that elevate everyone involved."
         laws={relationshipLaws}
         imagePath="/royalty.jpg"
-        bgClass="bg-gradient-to-b from-red-900 to-red-950"
+        bgClass="friendship-gradient-reverse"
       />
 
       <AboutSection />

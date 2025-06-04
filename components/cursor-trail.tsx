@@ -46,13 +46,20 @@ export function CursorTrail() {
 
         if (point.life > 0) {
           const opacity = point.life / 20
-          const size = (point.life / 20) * 8
+          const size = (point.life / 20) * 10
 
           ctx.save()
-          ctx.globalAlpha = opacity * 0.3
-          ctx.fillStyle = "#ef4444"
+          ctx.globalAlpha = opacity * 0.4
+          // Alternate between friendship colors for trail
+          ctx.fillStyle = index % 2 === 0 ? "#034DA2" : "#EC1D25"
           ctx.beginPath()
           ctx.arc(point.x, point.y, size, 0, Math.PI * 2)
+          ctx.fill()
+
+          // Add glow effect
+          ctx.globalAlpha = opacity * 0.2
+          ctx.beginPath()
+          ctx.arc(point.x, point.y, size * 2, 0, Math.PI * 2)
           ctx.fill()
           ctx.restore()
         }
