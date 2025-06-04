@@ -39,11 +39,13 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon.ico", sizes: "16x16", type: "image/ico" },
-      { url: "/favicon.ico", sizes: "32x32", type: "image/ico" },
+      { url: "/kffav.png" },
+      { url: "/kffav.png", sizes: "16x16", type: "image/png" },
+      { url: "/kffav.png", sizes: "32x32", type: "image/png" },
+      { url: "/kffav.png", sizes: "48x48", type: "image/png" },
     ],
-    apple: [{ url: "/favicon.ico" }],
+    apple: [{ url: "/kffav.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/kffav.png",
   },
     generator: 'v0.dev'
 }
@@ -56,7 +58,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/kffav.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/kffav.png" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>

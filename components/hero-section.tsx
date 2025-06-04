@@ -1,15 +1,59 @@
+"use client"
+
+import { useState, useEffect } from "react"
 import Image from "next/image"
-import { Star } from "lucide-react"
+import { Star, Sparkles } from "lucide-react"
 
 export function HeroSection() {
+  const [scrollY, setScrollY] = useState(0)
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  useEffect(() => {
+    setIsLoaded(true)
+
+    const handleScroll = () => {
+      setScrollY(window.scrollY)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Hero image container that fills the viewport */}
-      <div className="absolute inset-0">
-        <Image src="/images/hero-image.png" alt="Juche 2025" fill className="object-cover object-center" priority />
+      {/* Hero image container with parallax effect */}
+      <div
+        className="absolute inset-0 parallax"
+        style={{
+          transform: `translateY(${scrollY * 0.5}px)`,
+        }}
+      >
+        <Image
+          src="/images/hero-image.png"
+          alt="Juche 2025"
+          fill
+          className="object-cover object-center scale-110"
+          priority
+        />
 
-        {/* Subtle overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-red-950/90 via-red-950/30 to-transparent"></div>
+        {/* Enhanced overlay with animated gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-red-950/90 via-red-950/30 to-transparent">
+          <div className="absolute inset-0 bg-gradient-to-r from-red-900/20 via-transparent to-red-900/20 animate-pulse-slow"></div>
+        </div>
+      </div>
+
+      {/* Floating particles effect */}
+      <div className="absolute inset-0">
+        {[...Array(6)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-2 h-2 bg-red-400/30 rounded-full animate-float"
+            style={{
+              left: `${20 + i * 15}%`,
+              top: `${30 + (i % 3) * 20}%`,
+              animationDelay: `${i * 0.5}s`,
+            }}
+          />
+        ))}
       </div>
 
       {/* Content positioned for better visibility */}
