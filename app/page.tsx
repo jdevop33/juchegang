@@ -8,15 +8,29 @@ import { FeaturedLaw } from "@/components/featured-law"
 import { AboutSection } from "@/components/about-section"
 import { CategorySection } from "@/components/category-section"
 import { TriptychDivider } from "@/components/triptych-divider"
+import { FloatingActionButton } from "@/components/floating-action-button"
+import { ReadingProgress } from "@/components/reading-progress"
+import { ParticleBackground } from "@/components/particle-background"
+import { LoadingScreen } from "@/components/loading-screen"
 import { laws } from "@/data/laws"
 import { useState, useEffect } from "react"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
+  const [showLoading, setShowLoading] = useState(true)
 
   useEffect(() => {
-    setIsLoaded(true)
+    // Simulate loading time for better UX
+    const timer = setTimeout(() => {
+      setIsLoaded(true)
+    }, 100)
+
+    return () => clearTimeout(timer)
   }, [])
+
+  const handleLoadingComplete = () => {
+    setShowLoading(false)
+  }
 
   // Featured laws
   const featuredLaw1 = laws.find((law) => law.number === 1) || laws[0]
@@ -36,16 +50,22 @@ export default function Home() {
   ]
 
   return (
-    <main
-      className={`min-h-screen bg-gradient-to-b from-red-950 to-red-900 text-white transition-opacity duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}
-    >
-      <JucheHeader />
-      <HeroSection />
+    <>
+      {showLoading && <LoadingScreen onComplete={handleLoadingComplete} />}
+      <main
+        className={`min-h-screen bg-gradient-to-b from-red-950 to-red-900 text-white transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"}`}
+      >
+        <ReadingProgress />
+        <ParticleBackground />
+        <JucheHeader />
+        <HeroSection />
 
-      <div className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto mb-12 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-red-300">Featured Laws</h2>
-          <p className="text-lg text-red-100">
+      <div className="container mx-auto px-4 py-16 relative z-10">
+        <div className="max-w-4xl mx-auto mb-12 text-center animate-slideInUp">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-red-300 animate-glow text-shadow-glow">
+            Featured Laws
+          </h2>
+          <p className="text-lg text-red-100 animate-slideInLeft">
             These laws form the foundation of personal excellence and will transform how you approach life's challenges.
           </p>
         </div>
@@ -57,9 +77,11 @@ export default function Home() {
 
         <TriptychDivider />
 
-        <div id="laws" className="max-w-4xl mx-auto mb-12 text-center pt-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-red-300">The 48 Laws Of Excellence</h2>
-          <p className="text-lg text-red-100">
+        <div id="laws" className="max-w-4xl mx-auto mb-12 text-center pt-16 animate-slideInUp">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-red-300 animate-glow text-shadow-glow">
+            The 48 Laws Of Excellence
+          </h2>
+          <p className="text-lg text-red-100 animate-slideInRight">
             A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering
             commitment to your highest potential.
           </p>
@@ -90,6 +112,8 @@ export default function Home() {
 
       <AboutSection />
       <JucheFooter />
+      <FloatingActionButton />
     </main>
+    </>
   )
 }
