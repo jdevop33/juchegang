@@ -12,6 +12,7 @@ import { FloatingActionButton } from "@/components/floating-action-button"
 import { ReadingProgress } from "@/components/reading-progress"
 import { ParticleBackground } from "@/components/particle-background"
 import { LoadingScreen } from "@/components/loading-screen"
+import { CursorTrail } from "@/components/cursor-trail"
 import { laws } from "@/data/laws"
 import { useState, useEffect } from "react"
 
@@ -57,6 +58,7 @@ export default function Home() {
       >
         <ReadingProgress />
         <ParticleBackground />
+        <CursorTrail />
         <JucheHeader />
         <HeroSection />
 
