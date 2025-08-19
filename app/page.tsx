@@ -13,11 +13,11 @@ import { ReadingProgress } from "@/components/reading-progress"
 import { LoadingScreen } from "@/components/loading-screen"
 import { ContactForm } from "@/components/contact-form"
 import { laws } from "@/data/laws"
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react"\nimport { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [showLoading, setShowLoading] = useState(false) // Disable loading screen for now
+  const [showLoading, setShowLoading] = useState(false) // Disable loading screen for now\n  \n  useScrollAnimation()
 
   useEffect(() => {
     setIsLoaded(true)
@@ -55,56 +55,88 @@ export default function Home() {
         <HeroSection />
 
       <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="max-w-4xl mx-auto mb-16 text-center animate-slideInUp section-padding">
-          <h2 className="text-headline text-foreground mb-8">
-            Featured Laws
+        <div className="max-w-4xl mx-auto mb-20 text-center section-reveal" id="featured">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium animate-staggered-fade-in">
+            ⭐ Featured Excellence
+          </div>
+          <h2 className="text-headline text-foreground mb-8 animate-staggered-fade-in stagger-delay-1">
+            Foundation Laws
           </h2>
-          <p className="text-body-large text-muted-foreground max-w-2xl mx-auto">
-            These laws form the foundation of personal excellence and will transform how you approach life's challenges.
+          <p className="text-body-large text-muted-foreground max-w-2xl mx-auto animate-staggered-fade-in stagger-delay-2">
+            These cornerstone principles form the bedrock of personal excellence and will fundamentally transform how you approach life's greatest challenges.
           </p>
         </div>
 
-        <div className="space-y-12 mb-16">
-          <FeaturedLaw law={featuredLaw1} imagePath="/images/bear-mountain.png" />
-          <FeaturedLaw law={featuredLaw25} imagePath="/images/mountain-bear-sunset.png" />
+        <div className="space-y-16 mb-20">
+          <div className="animate-staggered-fade-in stagger-delay-3">
+            <FeaturedLaw law={featuredLaw1} imagePath="/images/bear-mountain.png" />
+          </div>
+          <div className="animate-staggered-fade-in stagger-delay-4">
+            <FeaturedLaw law={featuredLaw25} imagePath="/images/mountain-bear-sunset.png" />
+          </div>
         </div>
 
-        <TriptychDivider />
+        <div className="section-transition">
+          <TriptychDivider />
+        </div>
 
-        <div id="laws" className="max-w-4xl mx-auto mb-16 text-center section-padding animate-slideInUp">
+        <div id="laws" className="scroll-mt-nav max-w-4xl mx-auto mb-20 text-center section-reveal">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-destructive/10 text-destructive rounded-full text-sm font-medium">
+            📚 Complete Collection
+          </div>
           <h2 className="text-headline text-foreground mb-8">
             The 48 Laws Of Excellence
           </h2>
-          <p className="text-body-large text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering
-            commitment to your highest potential.
+          <p className="text-body-large text-muted-foreground max-w-3xl mx-auto mb-8">
+            A comprehensive codex for achieving mastery through discipline, strategic thinking, and unwavering commitment to your highest potential.
           </p>
+          <div className="section-divider"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {laws.map((law) => (
-            <LawCard key={law.number} law={law} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {laws.map((law, index) => (
+            <div key={law.number} className="animate-staggered-fade-in" style={{ animationDelay: `${(index % 6) * 0.1}s` }}>
+              <LawCard law={law} />
+            </div>
           ))}
         </div>
       </div>
 
-      <CategorySection
-        title="Self-Discipline & Focus"
-        description="Master yourself before attempting to master others. These laws will help you develop the self-discipline needed to achieve excellence in any field."
-        laws={selfDisciplineLaws}
-        imagePath="/images/bear-mountain.png"
-        bgClass="bg-muted"
-      />
+      <div className="section-transition">
+        <div className="section-divider"></div>
+      </div>
 
-      <CategorySection
-        title="Building Powerful Relationships"
-        description="No one achieves greatness alone. These laws will guide you in forming alliances and relationships that elevate everyone involved."
-        laws={relationshipLaws}
-        imagePath="/images/asian-landscape.jpg"
-        bgClass="bg-secondary"
-      />
+      <div className="section-reveal">
+        <CategorySection
+          title="Self-Discipline & Focus"
+          description="Master yourself before attempting to master others. These laws will help you develop the unshakeable self-discipline needed to achieve excellence in any field."
+          laws={selfDisciplineLaws}
+          imagePath="/images/bear-mountain.png"
+          bgClass="bg-muted/50 backdrop-blur-sm"
+        />
+      </div>
 
-      <AboutSection />
+      <div className="section-transition">
+        <div className="section-divider"></div>
+      </div>
+
+      <div className="section-reveal">
+        <CategorySection
+          title="Building Powerful Relationships"
+          description="No one achieves greatness alone. These laws will guide you in forming strategic alliances and meaningful relationships that elevate everyone involved."
+          laws={relationshipLaws}
+          imagePath="/images/asian-landscape.jpg"
+          bgClass="bg-secondary/50 backdrop-blur-sm"
+        />
+      </div>
+
+      <div className="section-transition">
+        <div className="section-divider"></div>
+      </div>
+
+      <div className="section-reveal">
+        <AboutSection />
+      </div>
       
       <div id="contact" className="bg-gradient-to-b from-background to-muted/30">
         <ContactForm />

@@ -335,6 +335,56 @@
   .animate-friendship-pulse {
     animation: friendshipPulse 3s ease-in-out infinite;
   }
+
+  @keyframes staggeredFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-staggered-fade-in {
+    animation: staggeredFadeIn 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .stagger-delay-1 { animation-delay: 0.1s; }
+  .stagger-delay-2 { animation-delay: 0.2s; }
+  .stagger-delay-3 { animation-delay: 0.3s; }
+  .stagger-delay-4 { animation-delay: 0.4s; }
+  .stagger-delay-5 { animation-delay: 0.5s; }
+  .stagger-delay-6 { animation-delay: 0.6s; }
+
+  .section-divider {
+    position: relative;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsl(var(--accent)) 20%, hsl(var(--destructive)) 50%, hsl(var(--accent)) 80%, transparent);
+    margin: 4rem 0;
+    opacity: 0.6;
+  }
+
+  .section-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: hsl(var(--accent));
+    border-radius: 50%;
+    box-shadow: 0 0 20px hsl(var(--accent));
+  }
+
+  .section-transition {
+    background: linear-gradient(180deg, transparent 0%, hsl(var(--muted))/20 50%, transparent 100%);
+    padding: 2rem 0;
+    margin: 2rem 0;
+  }
   
   /* Cross-browser compatibility fixes */
   .backdrop-blur {
@@ -388,6 +438,46 @@
       min-height: 44px;
       min-width: 44px;
     }
+  }
+
+  /* Smooth scrolling between sections */
+  .scroll-mt-nav {
+    scroll-margin-top: 5rem;
+  }
+
+  /* Enhanced section reveal animations */
+  .section-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .section-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Parallax container improvements */
+  .parallax-container {
+    position: relative;
+    overflow: hidden;
+    will-change: transform;
+  }
+
+  .parallax-content {
+    position: relative;
+    z-index: 10;
+  }
+
+  .parallax-bg {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    will-change: transform;
+    z-index: 1;
   }
   
   /* High contrast mode support */
