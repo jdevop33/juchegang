@@ -11,6 +11,7 @@ import { TriptychDivider } from "@/components/triptych-divider"
 import { FloatingActionButton } from "@/components/floating-action-button"
 import { ReadingProgress } from "@/components/reading-progress"
 import { LoadingScreen } from "@/components/loading-screen"
+import { ContactForm } from "@/components/contact-form"
 import { laws } from "@/data/laws"
 import { useState, useEffect } from "react"
 
@@ -104,6 +105,11 @@ export default function Home() {
       />
 
       <AboutSection />
+      
+      <div id="contact" className="bg-gradient-to-b from-background to-muted/30">
+        <ContactForm />
+      </div>
+      
       <JucheFooter />
       <FloatingActionButton />
     </main>

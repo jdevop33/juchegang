@@ -77,14 +77,54 @@
   * {
     @apply border-border;
   }
+  
+  /* Enhanced cross-browser compatibility and responsive base styles */
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
   body {
     @apply bg-background text-foreground;
     scroll-behavior: smooth;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow-x: hidden;
   }
-
-  /* Smooth scrolling for the whole page */
-  html {
-    scroll-behavior: smooth;
+  
+  /* Prevent horizontal scroll on mobile */
+  @media (max-width: 640px) {
+    html, body {
+      overflow-x: hidden;
+      position: relative;
+    }
+  }
+  
+  /* Fix for iOS Safari viewport height */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      min-height: -webkit-fill-available;
+    }
+  }
+  
+  /* Better image rendering across browsers */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+  
+  /* High quality images for retina displays */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    img {
+      image-rendering: auto;
+      -ms-interpolation-mode: auto;
+    }
   }
 }
 
@@ -148,25 +188,35 @@
     border-left: 3px solid hsl(var(--accent));
   }
 
-  /* Professional typography */
+  /* Professional typography with enhanced responsive scaling */
   .text-display {
-    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-size: clamp(2rem, 7vw + 0.5rem, 6rem);
     font-weight: 300;
     line-height: 1.1;
     letter-spacing: -0.02em;
   }
 
   .text-headline {
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-size: clamp(1.25rem, 3vw + 0.5rem, 3rem);
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.01em;
   }
 
   .text-body-large {
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 1vw + 0.875rem, 1.25rem);
     line-height: 1.6;
     font-weight: 400;
+  }
+  
+  /* Responsive text utilities */
+  @media (max-width: 640px) {
+    .text-display {
+      font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+    .text-headline {
+      font-size: clamp(1.25rem, 4vw, 2rem);
+    }
   }
 
   /* Professional spacing */
@@ -284,5 +334,79 @@
 
   .animate-friendship-pulse {
     animation: friendshipPulse 3s ease-in-out infinite;
+  }
+  
+  /* Cross-browser compatibility fixes */
+  .backdrop-blur {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
+  
+  /* Safari-specific fixes for backdrop filters */
+  @supports (-webkit-backdrop-filter: none) {
+    .glass-effect,
+    .glass-effect-dark {
+      -webkit-backdrop-filter: blur(20px);
+    }
+  }
+  
+  /* Firefox-specific optimizations */
+  @-moz-document url-prefix() {
+    .parallax {
+      transform: translateZ(0);
+      -moz-transform: translateZ(0);
+    }
+  }
+  
+  /* IE11 fallbacks */
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .glass-effect,
+    .glass-effect-dark {
+      background: rgba(255, 255, 255, 0.95);
+    }
+  }
+  
+  /* Responsive container queries for modern browsers */
+  @container (min-width: 768px) {
+    .container-responsive {
+      padding: 2rem;
+    }
+  }
+  
+  /* Safe area insets for modern mobile devices */
+  @supports (padding: max(0px)) {
+    .safe-area-padding {
+      padding-left: max(1rem, env(safe-area-inset-left));
+      padding-right: max(1rem, env(safe-area-inset-right));
+      padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    }
+  }
+  
+  /* Improved touch targets for mobile */
+  @media (pointer: coarse) {
+    button, a, input, textarea, select {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+  
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .glass-effect,
+    .glass-effect-dark {
+      border-width: 2px;
+    }
+  }
+  
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }

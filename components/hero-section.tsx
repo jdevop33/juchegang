@@ -49,31 +49,31 @@ export function HeroSection() {
       </div>
 
       {/* Content positioned for better visibility */}
-      <div className="absolute inset-0 flex flex-col justify-end pb-16 md:pb-24">
-        <div className="container mx-auto px-6">
+      <div className="absolute inset-0 flex flex-col justify-end pb-12 sm:pb-16 md:pb-20 lg:pb-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`max-w-5xl transition-all duration-1000 ${isLoaded ? 'animate-slideInUp' : 'opacity-0'}`}>
-            <div className="inline-flex items-center gap-3 glass-effect-dark px-6 py-3 rounded mb-8 elegant-border">
-              <Star className="h-5 w-5 text-accent" />
-              <span className="text-sm font-medium text-white tracking-wide uppercase">Excellence Through Discipline</span>
+            <div className="inline-flex items-center gap-2 sm:gap-3 glass-effect-dark px-4 sm:px-6 py-2 sm:py-3 rounded mb-4 sm:mb-6 md:mb-8 elegant-border">
+              <Star className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
+              <span className="text-xs sm:text-sm font-medium text-white tracking-wide uppercase">Excellence Through Discipline</span>
             </div>
-            <h1 className="text-display text-white mb-12 leading-none">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 sm:mb-8 md:mb-10 lg:mb-12 leading-tight">
               The 48 Laws <br />
               <span className="font-light">of Excellence</span>
             </h1>
-            <p className="text-body-large text-white/90 mb-12 max-w-4xl glass-effect-dark p-8 rounded elegant-border">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 md:mb-10 lg:mb-12 max-w-4xl glass-effect-dark p-4 sm:p-6 md:p-8 rounded elegant-border">
               Master the principles that separate leaders from followers. Transform discipline into power,
               commitment into excellence, and potential into unstoppable achievement.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
                 href="#laws"
-                className="px-8 py-4 bg-accent hover:bg-primary text-accent-foreground font-medium tracking-wide transition-all duration-300 text-center hover-lift sophisticated-shadow"
+                className="px-6 sm:px-8 py-3 sm:py-4 bg-accent hover:bg-primary text-accent-foreground font-medium text-sm sm:text-base tracking-wide transition-all duration-300 text-center hover-lift sophisticated-shadow rounded"
               >
                 Explore the Laws
               </a>
               <a
                 href="#about"
-                className="px-8 py-4 glass-effect-dark text-white font-medium tracking-wide transition-all duration-300 text-center hover-lift minimal-border"
+                className="px-6 sm:px-8 py-3 sm:py-4 glass-effect-dark text-white font-medium text-sm sm:text-base tracking-wide transition-all duration-300 text-center hover-lift minimal-border rounded"
               >
                 About the System
               </a>
