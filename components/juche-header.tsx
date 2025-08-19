@@ -2,6 +2,7 @@
 
 import { Menu, X } from "lucide-react"
 import { useState, useEffect } from "react"
+import Link from "next/link"
 
 export function JucheHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -30,7 +31,7 @@ export function JucheHeader() {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <h1 className="text-2xl font-bold text-red-300 hover:text-white transition-colors">
-            <a href="#">Juche GanG</a>
+            <Link href="/">Juche GanG</Link>
           </h1>
         </div>
 
@@ -38,24 +39,29 @@ export function JucheHeader() {
         <nav className="hidden md:block">
           <ul className="flex gap-6">
             <li>
-              <a href="#" className="text-red-200 hover:text-white transition-colors">
+              <Link href="/" className="text-red-200 hover:text-white transition-colors">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#laws" className="text-red-200 hover:text-white transition-colors">
+              <Link href="/#laws" className="text-red-200 hover:text-white transition-colors">
                 The 48 Laws
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="text-red-200 hover:text-white transition-colors">
+              <Link href="/#about" className="text-red-200 hover:text-white transition-colors">
                 About
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="text-red-200 hover:text-white transition-colors">
                 Contact
               </a>
+            </li>
+            <li>
+              <Link href="/gallery" className="text-red-200 hover:text-white transition-colors">
+                Gallery
+              </Link>
             </li>
           </ul>
         </nav>
@@ -76,31 +82,31 @@ export function JucheHeader() {
           <nav className="container mx-auto px-4">
             <ul className="flex flex-col gap-4">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#laws"
+                <Link
+                  href="/#laws"
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   The 48 Laws
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
+                <Link
+                  href="/#about"
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -110,6 +116,15 @@ export function JucheHeader() {
                 >
                   Contact
                 </a>
+              </li>
+              <li>
+                <Link
+                  href="/gallery"
+                  className="text-red-200 hover:text-white transition-colors block py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Gallery
+                </Link>
               </li>
             </ul>
           </nav>
