@@ -59,6 +59,11 @@ export function JucheHeader() {
               </Link>
             </li>
             <li>
+              <Link href="/briefings" className="text-red-200 hover:text-white transition-colors">
+                Briefings
+              </Link>
+            </li>
+            <li>
               <Link href="/gallery" className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-500 transition-colors font-semibold">
                 📸 Gallery
               </Link>
@@ -115,6 +120,15 @@ export function JucheHeader() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/briefings"
+                  className="text-red-200 hover:text-white transition-colors block py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Briefings
                 </Link>
               </li>
               <li>
