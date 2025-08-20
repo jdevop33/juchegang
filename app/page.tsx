@@ -73,10 +73,10 @@ export default function Home() {
 
           <div className="space-y-16 mb-20 relative z-10">
             <div className="animate-staggered-fade-in stagger-delay-3">
-              <FeaturedLaw law={featuredLaw1} imagePath="/images/bear-mountain.png" />
+              <FeaturedLaw law={featuredLaw1} imagePath="/images/hero-image.png" />
             </div>
             <div className="animate-staggered-fade-in stagger-delay-4">
-              <FeaturedLaw law={featuredLaw25} imagePath="/images/mountain-bear-sunset.png" />
+              <FeaturedLaw law={featuredLaw25} imagePath="/images/birthright.jpg" />
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function Home() {
           title="Self-Discipline & Focus"
           description="Master yourself before attempting to master others. These laws will help you develop the unshakeable self-discipline needed to achieve excellence in any field."
           laws={selfDisciplineLaws}
-          imagePath="/images/bear-mountain.png"
+          imagePath="/images/brothers.jpg"
           bgClass="bg-muted/50 backdrop-blur-sm"
         />
       </div>
@@ -130,7 +130,7 @@ export default function Home() {
           title="Building Powerful Relationships"
           description="No one achieves greatness alone. These laws will guide you in forming strategic alliances and meaningful relationships that elevate everyone involved."
           laws={relationshipLaws}
-          imagePath="/images/asian-landscape.jpg"
+          imagePath="/images/jj.png"
           bgClass="bg-secondary/50 backdrop-blur-sm"
         />
       </div>
