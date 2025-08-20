@@ -77,9 +77,10 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
           <Image
             src={src}
             alt={alt}
-            fill
+            width={1200}
+            height={800}
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, (max-width: 1440px) 25vw, 20vw"
-            className={`object-cover transition-all duration-500 ${isLoaded ? "opacity-100" : "opacity-0"} group-hover:brightness-110`}
+            className={`w-full h-auto transition-all duration-500 ${isLoaded ? "opacity-100" : "opacity-0"} group-hover:brightness-110`}
             onLoad={handleImageLoad}
             onError={() => setHasError(true)}
             priority={index < 8}

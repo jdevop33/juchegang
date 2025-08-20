@@ -22,14 +22,14 @@ export function AboutSection() {
 
               <div>
                 <h3 className="text-2xl font-bold text-white mb-2">Jesse James</h3>
-                <p className="text-red-200 mb-4 italic">He/Him • AI Technology Enthusiast • Full Stack Engineer • Startup Growth Driver</p>
+                <p className="text-red-200 mb-4 italic">AI Technology Enthusiast • Full Stack Engineer • Startup Growth Driver</p>
                 <div className="prose prose-invert prose-red max-w-none">
                   <p>
                     Building and selling next‑gen solutions across product, engineering, and growth. Focused on
                     practical AI, clean UX, and scalable full‑stack systems that create real outcomes.
                   </p>
                   <p>
-                    University of Victoria • Greater Victoria Metropolitan Area • Vi CARE. 500+ connections,
+                    University of Victoria • Greater Victoria Metropolitan Area • 500+ connections,
                     16,368 followers.
                   </p>
                 </div>
