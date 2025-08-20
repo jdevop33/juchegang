@@ -24,7 +24,7 @@ export function JucheFooter() {
             <h3 className="text-lg font-bold text-red-300 mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-red-200 hover:text-white transition-colors">
+                <a href="/" className="text-red-200 hover:text-white transition-colors">
                   Home
                 </a>
               </li>
@@ -39,7 +39,7 @@ export function JucheFooter() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-red-200 hover:text-white transition-colors">
+                <a href="#contact" className="text-red-200 hover:text-white transition-colors">
                   Contact
                 </a>
               </li>
@@ -50,22 +50,22 @@ export function JucheFooter() {
             <h3 className="text-lg font-bold text-red-300 mb-4">Categories</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-red-200 hover:text-white transition-colors">
+                <a href="/#laws" className="text-red-200 hover:text-white transition-colors">
                   Self-Discipline
                 </a>
               </li>
               <li>
-                <a href="#" className="text-red-200 hover:text-white transition-colors">
+                <a href="/#laws" className="text-red-200 hover:text-white transition-colors">
                   Relationships
                 </a>
               </li>
               <li>
-                <a href="#" className="text-red-200 hover:text-white transition-colors">
+                <a href="/#laws" className="text-red-200 hover:text-white transition-colors">
                   Strategy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-red-200 hover:text-white transition-colors">
+                <a href="/#laws" className="text-red-200 hover:text-white transition-colors">
                   Personal Growth
                 </a>
               </li>

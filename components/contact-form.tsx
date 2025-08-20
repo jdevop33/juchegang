@@ -12,10 +12,11 @@ import { Send, CheckCircle2, AlertCircle } from "lucide-react"
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
+    Name: "",
+    Email: "",
+    Subject: "",
+    Message: "",
+    _gotcha: "", // Honeypot field for spam protection
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
@@ -25,18 +26,22 @@ export function ContactForm() {
     setIsSubmitting(true)
     setSubmitStatus("idle")
 
+    // Create FormData object for HeroTofu
+    const formElement = e.target as HTMLFormElement
+    const formDataToSend = new FormData(formElement)
+
     try {
-      const response = await fetch("https://formspree.io/f/xvgogaaz", {
+      const response = await fetch("https://public.herotofu.com/v1/f934d410-7d50-11f0-b600-1fdb6134186f", {
         method: "POST",
+        body: formDataToSend,
         headers: {
-          "Content-Type": "application/json",
+          "Accept": "application/json",
         },
-        body: JSON.stringify(formData),
       })
 
       if (response.ok) {
         setSubmitStatus("success")
-        setFormData({ name: "", email: "", subject: "", message: "" })
+        setFormData({ Name: "", Email: "", Subject: "", Message: "", _gotcha: "" })
       } else {
         setSubmitStatus("error")
       }
@@ -70,7 +75,7 @@ export function ContactForm() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6" acceptCharset="UTF-8">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
                       <Label htmlFor="name" className="text-sm font-medium">
@@ -78,10 +83,10 @@ export function ContactForm() {
                       </Label>
                       <Input
                         id="name"
-                        name="name"
+                        name="Name"
                         type="text"
                         placeholder="Your Name"
-                        value={formData.name}
+                        value={formData.Name}
                         onChange={handleChange}
                         required
                         className="w-full border-muted-foreground/20 focus:border-friendship-blue transition-colors"
@@ -93,10 +98,10 @@ export function ContactForm() {
                       </Label>
                       <Input
                         id="email"
-                        name="email"
+                        name="Email"
                         type="email"
                         placeholder="your@email.com"
-                        value={formData.email}
+                        value={formData.Email}
                         onChange={handleChange}
                         required
                         className="w-full border-muted-foreground/20 focus:border-friendship-blue transition-colors"
@@ -109,10 +114,10 @@ export function ContactForm() {
                     </Label>
                     <Input
                       id="subject"
-                      name="subject"
+                      name="Subject"
                       type="text"
                       placeholder="What's this about?"
-                      value={formData.subject}
+                      value={formData.Subject}
                       onChange={handleChange}
                       required
                       className="w-full border-muted-foreground/20 focus:border-friendship-blue transition-colors"
@@ -124,13 +129,25 @@ export function ContactForm() {
                     </Label>
                     <Textarea
                       id="message"
-                      name="message"
+                      name="Message"
                       placeholder="Share your thoughts on excellence..."
-                      value={formData.message}
+                      value={formData.Message}
                       onChange={handleChange}
                       required
                       rows={5}
                       className="w-full min-h-[120px] md:min-h-[150px] border-muted-foreground/20 focus:border-friendship-blue transition-colors resize-none"
+                    />
+                  </div>
+                  
+                  {/* Honeypot field for spam protection - hidden from users */}
+                  <div style={{ display: 'none' }} aria-hidden="true">
+                    <input
+                      type="text"
+                      name="_gotcha"
+                      value={formData._gotcha}
+                      onChange={handleChange}
+                      tabIndex={-1}
+                      autoComplete="off"
                     />
                   </div>
 
