@@ -92,9 +92,11 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
             <Maximize2 className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
           
-          {/* Loading skeleton */}
+          {/* Loading skeleton with shimmer effect */}
           {!isLoaded && (
-            <div className="absolute inset-0 bg-gradient-to-br from-muted/50 to-muted animate-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-br from-muted/50 to-muted animate-pulse">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-shimmer" />
+            </div>
           )}
         </div>
       </DialogTrigger>

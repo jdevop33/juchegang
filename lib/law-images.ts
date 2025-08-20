@@ -15,6 +15,8 @@ export function getLawImage(lawNumber: number): string {
     5: '/gallery/gallery-054.webp',
     7: '/gallery/gallery-046.webp',
     8: '/gallery/gallery-044.jpg',
+    46: '/gallery/gallery-055.webp',
+    47: '/gallery/gallery-057.jpg',
   }
   if (overrides[lawNumber]) {
     return overrides[lawNumber]

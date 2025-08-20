@@ -72,10 +72,11 @@ export default async function NatoExpansionBriefing() {
           </p>
         </section>
 
+        {/* Emblems section - commented out until images are available
         <div className="not-prose grid md:grid-cols-2 gap-4 my-10">
           <SafeFocalImage src="/gallery/coat_of_arms_dprk.png" alt="DPRK Emblem" width={800} height={800} className="rounded-xl border border-border/60 bg-muted/10 object-contain" />
           <SafeFocalImage src="/gallery/russian_federation_coa.png" alt="Russian Emblem" width={800} height={800} className="rounded-xl border border-border/60 bg-muted/10 object-contain" />
-        </div>
+        </div> */}
 
         <footer className="not-prose mt-12 text-sm text-muted-foreground">
           This page summarizes primary sources. For full texts, transcripts, and scans, link them here as assets when available.

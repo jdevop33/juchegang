@@ -92,6 +92,7 @@ const config: Config = {
       animation: {
         pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         bounce: "bounce 2s infinite",
+        shimmer: "shimmer 2s linear infinite",
       },
       keyframes: {
         pulse: {
@@ -105,6 +106,10 @@ const config: Config = {
           "50%": {
             transform: "translateY(-25%)",
           },
+        },
+        shimmer: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
         },
       },
     },

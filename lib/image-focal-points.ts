@@ -14,6 +14,8 @@ const focalMap: Record<string, FocalPoint> = {
   "/gallery/gallery-054.webp": { x: 50, y: 35 }, // Law 5
   "/gallery/gallery-046.webp": { x: 50, y: 35 }, // Law 7
   "/gallery/gallery-044.jpg": { x: 50, y: 35 }, // Law 8
+  "/gallery/gallery-055.webp": { x: 50, y: 38 }, // Law 46 (more headroom)
+  "/gallery/gallery-057.jpg": { x: 50, y: 35 }, // Law 47
   // Law 4 dynamic file varies, but we bias downward crop
   "/gallery/gallery-004.jpg": { x: 50, y: 35 },
   "/gallery/gallery-004.webp": { x: 50, y: 35 },
