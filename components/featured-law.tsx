@@ -2,6 +2,7 @@ import type { Law } from "@/types/law"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import FocalImage from "./focal-image"
+import SafeFocalImage from "./safe-focal-image"
 import { getLawImage } from "@/lib/law-images"
 
 interface FeaturedLawProps {
@@ -74,7 +75,7 @@ export function FeaturedLaw({ law, imagePath }: FeaturedLawProps) {
           </a>
         </div>
         <div className="relative h-64 md:h-auto">
-          <FocalImage
+          <SafeFocalImage
             src={getLawImage(law.number)}
             alt={`Law ${law.number}: ${law.title}`}
             fill

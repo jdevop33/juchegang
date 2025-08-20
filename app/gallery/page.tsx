@@ -37,13 +37,12 @@ async function listGalleryImages(): Promise<{ src: string; alt: string }[]> {
     return files
   }
 
-  const fileUrls = await walk(galleryDir, "")
+  const fileUrls = await walk(galleryDir, "/gallery")
   return fileUrls
-    .map((url) => url.replace(/^\//, ""))
     .sort((a, b) => a.localeCompare(b))
     .map((url) => {
       const name = path.basename(url)
-      return { src: `/gallery/${url}`, alt: name.replace(/[-_]/g, " ") }
+      return { src: url, alt: name.replace(/[-_]/g, " ") }
     })
 }
 

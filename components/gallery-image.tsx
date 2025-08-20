@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useState, useRef, useEffect } from "react"
+import { useState, useEffect } from "react"
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { ChevronLeft, ChevronRight, X, Download, Maximize2 } from "lucide-react"
 
@@ -17,7 +17,6 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
   const [isLoaded, setIsLoaded] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(index)
-  const imageRef = useRef<HTMLImageElement>(null)
 
   useEffect(() => {
     if (isOpen) {
@@ -76,15 +75,15 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
       <DialogTrigger asChild>
         <div className="relative group cursor-pointer overflow-hidden rounded-lg hover:scale-[1.02] transition-transform duration-300">
           <Image
-            ref={imageRef}
             src={src}
             alt={alt}
             fill
-            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, (max-width: 1440px) 25vw, 20vw"
             className={`object-cover transition-all duration-500 ${isLoaded ? "opacity-100" : "opacity-0"} group-hover:brightness-110`}
             onLoad={handleImageLoad}
             onError={() => setHasError(true)}
             priority={index < 8}
+            unoptimized
           />
           
           {/* Hover overlay */}
