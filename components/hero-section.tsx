@@ -31,8 +31,8 @@ export function HeroSection() {
           src="/images/hero-image.png"
           alt="Juche 2025"
           fill
-          className="object-cover object-center scale-110"
-          style={{ objectPosition: 'center 30%' }}
+          className="object-cover object-center scale-105"
+          style={{ objectPosition: 'center 12%' }}
           priority
         />
 
