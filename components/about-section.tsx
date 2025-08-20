@@ -22,15 +22,17 @@ export function AboutSection() {
 
               <div>
                 <h3 className="text-2xl font-bold text-white mb-2">Jesse James</h3>
-                <p className="text-red-200 mb-4 italic">AI Technology Enthusiast • Full Stack Engineer • Startup Growth Driver</p>
+                <p className="text-red-200 mb-4 italic">Canadian Managing Director • Juche Community Relations</p>
                 <div className="prose prose-invert prose-red max-w-none">
                   <p>
-                    Building and selling next‑gen solutions across product, engineering, and growth. Focused on
-                    practical AI, clean UX, and scalable full‑stack systems that create real outcomes.
+                    Specializing in cross-cultural diplomatic initiatives and community engagement strategies. 
+                    Coordinating educational outreach programs that promote understanding of Korean political 
+                    philosophy and self-reliance principles across North American academic institutions.
                   </p>
                   <p>
-                    University of Victoria • Greater Victoria Metropolitan Area • 500+ connections,
-                    16,368 followers.
+                    University of Victoria • Advanced studies in East Asian political systems and international 
+                    relations. Facilitating dialogue between Western and DPRK intellectual communities through 
+                    cultural exchange programs and policy research initiatives.
                   </p>
                 </div>
               </div>

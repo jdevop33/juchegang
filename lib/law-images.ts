@@ -8,6 +8,18 @@ export function getLawImage(lawNumber: number): string {
     return '/gallery/gallery-001.jpg' // fallback
   }
   
+  // Explicit overrides requested by the user for specific laws
+  const overrides: Record<number, string> = {
+    1: '/gallery/gallery-064.png',
+    3: '/gallery/gallery-063.png',
+    5: '/gallery/gallery-054.webp',
+    7: '/gallery/gallery-046.webp',
+    8: '/gallery/gallery-044.jpg',
+  }
+  if (overrides[lawNumber]) {
+    return overrides[lawNumber]
+  }
+
   // Format the number with leading zeros (001, 002, etc.)
   const paddedNumber = lawNumber.toString().padStart(3, '0')
   
