@@ -1,16 +1,16 @@
 import Image from "next/image"
+import FocalImage from "./focal-image"
 
 export function TriptychDivider() {
   return (
     <div className="py-12 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="relative h-[200px] md:h-[300px] rounded-xl overflow-hidden shadow-2xl">
-          <Image
+          <FocalImage
             src="/gallery/gallery-010.webp"
             alt="Embrace excellence background"
             fill
             className="object-cover object-center"
-            style={{ objectPosition: 'center 18%' }}
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-red-950/60 via-transparent to-red-950/60"></div>

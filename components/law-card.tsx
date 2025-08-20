@@ -4,7 +4,7 @@ import type { Law } from "@/types/law"
 import { ArrowUpRight, Star } from "lucide-react"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { getLawImage } from "@/lib/law-images"
-import Image from "next/image"
+import FocalImage from "./focal-image"
 
 interface LawCardProps {
   law: Law
@@ -27,7 +27,7 @@ export function LawCard({ law }: LawCardProps) {
     >
       {/* Unique image for each law */}
       <div className="relative h-48 overflow-hidden">
-        <Image
+        <FocalImage
           src={getLawImage(law.number)}
           alt={`Visual representation of Law ${law.number}: ${law.title}`}
           fill

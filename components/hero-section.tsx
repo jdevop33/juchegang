@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import FocalImage from "./focal-image"
 import { Star, Sparkles } from "lucide-react"
 
 export function HeroSection() {
@@ -27,12 +28,11 @@ export function HeroSection() {
           transform: `translateY(${scrollY * 0.5}px)`,
         }}
       >
-        <Image
+        <FocalImage
           src="/images/hero-image.png"
           alt="Juche 2025"
           fill
           className="object-cover object-center scale-105"
-          style={{ objectPosition: 'center 12%' }}
           priority
         />
 

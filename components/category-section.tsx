@@ -1,5 +1,6 @@
 import type { Law } from "@/types/law"
 import Image from "next/image"
+import FocalImage from "./focal-image"
 import { getLawImage } from "@/lib/law-images"
 
 interface CategorySectionProps {
@@ -46,7 +47,7 @@ export function CategorySection({ title, description, laws, imagePath, bgClass }
           </div>
 
           <div className="relative h-80 md:h-[500px] rounded-xl overflow-hidden shadow-2xl">
-            <Image src={getLawImage(laws[0]?.number || 1)} alt={title} fill className="object-cover" />
+            <FocalImage src={getLawImage(laws[0]?.number || 1)} alt={title} fill className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-red-950/80 to-transparent"></div>
           </div>
         </div>
