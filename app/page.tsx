@@ -55,10 +55,11 @@ export default function Home() {
         <HeroSection />
 
       <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="max-w-4xl mx-auto mb-20 text-center section-reveal" id="featured">
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium animate-staggered-fade-in">
-            ⭐ Featured Excellence
-          </div>
+        <div className="featured-laws-section relative">
+          <div className="max-w-4xl mx-auto mb-20 text-center section-reveal relative z-10" id="featured">
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium animate-staggered-fade-in backdrop-blur-sm">
+              ⭐ Featured Excellence
+            </div>
           <h2 className="text-headline text-foreground mb-8 animate-staggered-fade-in stagger-delay-1">
             Foundation Laws
           </h2>
@@ -67,12 +68,13 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="space-y-16 mb-20">
-          <div className="animate-staggered-fade-in stagger-delay-3">
-            <FeaturedLaw law={featuredLaw1} imagePath="/images/bear-mountain.png" />
-          </div>
-          <div className="animate-staggered-fade-in stagger-delay-4">
-            <FeaturedLaw law={featuredLaw25} imagePath="/images/mountain-bear-sunset.png" />
+          <div className="space-y-16 mb-20 relative z-10">
+            <div className="animate-staggered-fade-in stagger-delay-3">
+              <FeaturedLaw law={featuredLaw1} imagePath="/images/bear-mountain.png" />
+            </div>
+            <div className="animate-staggered-fade-in stagger-delay-4">
+              <FeaturedLaw law={featuredLaw25} imagePath="/images/mountain-bear-sunset.png" />
+            </div>
           </div>
         </div>
 
