@@ -13,16 +13,38 @@ const allowedExtensions = new Set([".jpg", ".jpeg", ".png", ".webp"]) as const
 
 async function listGalleryImages(): Promise<{ src: string; alt: string }[]> {
   const galleryDir = path.join(process.cwd(), "public", "gallery")
-  let files: string[] = []
-  try {
-    files = await fs.readdir(galleryDir)
-  } catch {
-    return []
+
+  async function walk(dir: string, baseUrl: string): Promise<string[]> {
+    let entries: any[] = []
+    try {
+      entries = await fs.readdir(dir, { withFileTypes: true })
+    } catch {
+      return []
+    }
+
+    const files: string[] = []
+    for (const entry of entries) {
+      // Skip hidden files/folders
+      if (entry.name.startsWith(".")) continue
+      const fullPath = path.join(dir, entry.name)
+      const relUrl = `${baseUrl}/${entry.name}`
+      if (entry.isDirectory()) {
+        files.push(...(await walk(fullPath, relUrl)))
+      } else if (allowedExtensions.has(path.extname(entry.name).toLowerCase() as any)) {
+        files.push(relUrl)
+      }
+    }
+    return files
   }
-  return files
-    .filter((name) => allowedExtensions.has(path.extname(name).toLowerCase() as any))
+
+  const fileUrls = await walk(galleryDir, "")
+  return fileUrls
+    .map((url) => url.replace(/^\//, ""))
     .sort((a, b) => a.localeCompare(b))
-    .map((name) => ({ src: `/gallery/${name}`, alt: name.replace(/[-_]/g, " ") }))
+    .map((url) => {
+      const name = path.basename(url)
+      return { src: `/gallery/${url}`, alt: name.replace(/[-_]/g, " ") }
+    })
 }
 
 export default async function GalleryPage() {
@@ -49,6 +71,22 @@ export default async function GalleryPage() {
             </div>
           )}
         </header>
+
+        {/* SoundCloud player */}
+        <div className="mb-12">
+          <div className="rounded-xl overflow-hidden border border-border/60 bg-muted/20">
+            <iframe
+              title="Gallery soundtrack"
+              width="100%"
+              height="300"
+              scrolling="no"
+              frameBorder="0"
+              allow="autoplay"
+              loading="lazy"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1087014736&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            />
+          </div>
+        </div>
 
         {images.length === 0 ? (
           <div className="text-center py-16">
