@@ -54,13 +54,13 @@ export function JucheHeader() {
               </Link>
             </li>
             <li>
-              <a href="#" className="text-red-200 hover:text-white transition-colors">
+              <Link href="/#contact" className="text-red-200 hover:text-white transition-colors">
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
-              <Link href="/gallery" className="text-red-200 hover:text-white transition-colors">
-                Gallery
+              <Link href="/gallery" className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-500 transition-colors font-semibold">
+                📸 Gallery
               </Link>
             </li>
           </ul>
@@ -109,21 +109,21 @@ export function JucheHeader() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/#contact"
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
                   href="/gallery"
-                  className="text-red-200 hover:text-white transition-colors block py-2"
+                  className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-500 transition-colors block font-semibold"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Gallery
+                  📸 Gallery
                 </Link>
               </li>
             </ul>

@@ -19,7 +19,7 @@ export function HeroSection() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[90vh] overflow-hidden">
       {/* Hero image container with parallax effect */}
       <div
         className="absolute inset-0 parallax"
@@ -32,13 +32,17 @@ export function HeroSection() {
           alt="Juche 2025"
           fill
           className="object-cover object-center scale-110"
+          style={{ objectPosition: 'center 30%' }}
           priority
         />
 
-        {/* Sophisticated overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent">
-          <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/10"></div>
+        {/* Enhanced overlay for better flow */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+          <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20"></div>
         </div>
+        
+        {/* Smooth transition to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
       </div>
 
       {/* Minimal geometric elements */}
