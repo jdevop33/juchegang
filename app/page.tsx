@@ -13,11 +13,14 @@ import { ReadingProgress } from "@/components/reading-progress"
 import { LoadingScreen } from "@/components/loading-screen"
 import { ContactForm } from "@/components/contact-form"
 import { laws } from "@/data/laws"
-import { useState, useEffect } from "react"\nimport { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { useState, useEffect } from "react"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [showLoading, setShowLoading] = useState(false) // Disable loading screen for now\n  \n  useScrollAnimation()
+  const [showLoading, setShowLoading] = useState(false) // Disable loading screen for now
+
+  useScrollAnimation()
 
   useEffect(() => {
     setIsLoaded(true)

@@ -14,7 +14,7 @@ export function FeaturedLaw({ law, imagePath }: FeaturedLawProps) {
       <div className="absolute inset-0">
         <Image
           src="/images/featured-bg.jpg"
-          alt="Featured background"
+          alt="Communist revolutionary background"
           fill
           className="object-cover"
           priority
