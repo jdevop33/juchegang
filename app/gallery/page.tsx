@@ -38,7 +38,33 @@ async function listGalleryImages(): Promise<{ src: string; alt: string }[]> {
   }
 
   const fileUrls = await walk(galleryDir, "/gallery")
-  return fileUrls
+  
+  // Remove duplicates by preferring webp over jpg, then png over jpg
+  const deduplicatedUrls = new Map<string, string>()
+  
+  fileUrls.forEach(url => {
+    const name = path.basename(url)
+    const nameWithoutExt = name.replace(/\.[^.]+$/, '')
+    const ext = path.extname(name).toLowerCase()
+    
+    if (!deduplicatedUrls.has(nameWithoutExt)) {
+      deduplicatedUrls.set(nameWithoutExt, url)
+    } else {
+      const existingUrl = deduplicatedUrls.get(nameWithoutExt)!
+      const existingExt = path.extname(existingUrl).toLowerCase()
+      
+      // Priority: webp > png > jpg/jpeg
+      const priority = { '.webp': 3, '.png': 2, '.jpg': 1, '.jpeg': 1 }
+      const currentPriority = priority[ext as keyof typeof priority] || 0
+      const existingPriority = priority[existingExt as keyof typeof priority] || 0
+      
+      if (currentPriority > existingPriority) {
+        deduplicatedUrls.set(nameWithoutExt, url)
+      }
+    }
+  })
+  
+  return Array.from(deduplicatedUrls.values())
     .sort((a, b) => a.localeCompare(b))
     .map((url) => {
       const name = path.basename(url)
