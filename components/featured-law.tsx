@@ -1,6 +1,7 @@
 import type { Law } from "@/types/law"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
+import { getLawImage } from "@/lib/law-images"
 
 interface FeaturedLawProps {
   law: Law
@@ -73,7 +74,7 @@ export function FeaturedLaw({ law, imagePath }: FeaturedLawProps) {
         </div>
         <div className="relative h-64 md:h-auto">
           <Image
-            src={imagePath || "/placeholder.svg"}
+            src={getLawImage(law.number)}
             alt={`Law ${law.number}: ${law.title}`}
             fill
             className="object-cover"

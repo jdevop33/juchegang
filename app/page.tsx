@@ -73,10 +73,10 @@ export default function Home() {
 
           <div className="space-y-16 mb-20 relative z-10">
             <div className="animate-staggered-fade-in stagger-delay-3">
-              <FeaturedLaw law={featuredLaw1} imagePath="/images/hero-image.png" />
+              <FeaturedLaw law={featuredLaw1} imagePath="" />
             </div>
             <div className="animate-staggered-fade-in stagger-delay-4">
-              <FeaturedLaw law={featuredLaw25} imagePath="/images/birthright.jpg" />
+              <FeaturedLaw law={featuredLaw25} imagePath="" />
             </div>
           </div>
         </div>
