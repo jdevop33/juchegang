@@ -62,7 +62,7 @@ export function JucheHeader() {
               </Link>
             </li>
             <li>
-              <Link href="/#contact" className="text-red-200 hover:text-white transition-colors">
+              <Link href="/contact" className="text-red-200 hover:text-white transition-colors">
                 {t('contact')}
               </Link>
             </li>
@@ -147,7 +147,7 @@ export function JucheHeader() {
               </li>
               <li>
                 <Link
-                  href="/#contact"
+                  href="/contact"
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
