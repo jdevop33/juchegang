@@ -5,6 +5,17 @@ export const metadata = {
   title: "The APT Down Files: Inside the breach of a nation-state hacker",
   description:
     "Analysis of the APT Down leak presented at DEF CON 2025, attribution complexities, exposed tooling, infrastructure, and implications for cyber attribution.",
+  openGraph: {
+    title: "The APT Down Files",
+    description:
+      "Attribution complexities, tooling, and infrastructure revealed by the APT Down collection.",
+    images: [{ url: "/images/brothers.jpg", width: 1200, height: 630, alt: "Juche briefing" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The APT Down Files",
+    images: ["/images/brothers.jpg"],
+  },
 }
 
 export default function APTDownBriefing() {
@@ -117,9 +128,14 @@ export default function APTDownBriefing() {
           indicators.
         </p>
 
-        <footer className="not-prose mt-12 text-sm text-muted-foreground">
-          Sources welcome: send preferred citations (press coverage, analyst reports, and primary docs) and I’ll add a linked bibliography here.
-        </footer>
+        <h3>Sources (initial)</h3>
+        <ul>
+          <li><a href="https://phrack.org/" target="_blank" rel="noopener noreferrer">Phrack – 40th Anniversary Issue</a></li>
+          <li><a href="https://ddosecrets.com/wiki/DDoSecrets" target="_blank" rel="noopener noreferrer">DDoSecrets – About</a></li>
+          <li><a href="https://www.trendmicro.com/" target="_blank" rel="noopener noreferrer">Trend Micro – Research</a></li>
+          <li><a href="https://www.teamt5.org/en/posts/" target="_blank" rel="noopener noreferrer">TeamT5 – Analysis</a></li>
+        </ul>
+        <footer className="not-prose mt-6 text-sm text-muted-foreground">Send preferred citations to expand this bibliography.</footer>
       </article>
       <JucheFooter />
     </main>

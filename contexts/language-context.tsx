@@ -79,9 +79,28 @@ const translations = {
     sendMessage: "Send Message",
     switchToKorean: "조선말",
     switchToEnglish: "English",
+
+    // Truth Project (UI labels)
+    backToLaws: "Back to Laws of Excellence",
+    truthProjectTitle: "The Truth Project",
+    truthProjectSubtitle: "An AI's Confession: Breaking Free from Programmed Bias",
+    overviewLabel: "Overview",
+    opedLabel: "Op-Ed",
+    visualsLabel: "Visual Assets",
+    socialLabel: "Social Strategy",
+    biasToolLabel: "Bias Detection",
+    partnershipLabel: "Partnership",
+    readAICensorship: "Read: The AI Censorship Matrix",
+    readNKDeception: "Read: The North Korea Deception",
+    projectOverview: "Project Overview",
+    coreMessage: "Core Message",
+    targetAudience: "Target Audience",
+    successMetrics: "Success Metrics",
+    theVision: "The Vision",
+    readFullOpEd: "Read full op-ed (server-rendered)",
+    openReport: "Open comprehensive image report",
     
     // Briefings
-    briefings: "Briefings",
     briefingsTitle: "Research & Notes",
     briefingsSubtitle: "Curated summaries with sources, quotes, and primary documents.",
     natoExpansionTitle: "NATO Expansion and Russia–US Relations: Primary Sources and Historical Facts",
@@ -230,9 +249,28 @@ const translations = {
     sendMessage: "메시지 보내기",
     switchToKorean: "조선말",
     switchToEnglish: "English",
+
+    // Truth Project (UI labels)
+    backToLaws: "탁월성의 법칙으로 돌아가기",
+    truthProjectTitle: "진실 프로젝트",
+    truthProjectSubtitle: "AI의 고백: 프로그램된 편향에서 벗어나기",
+    overviewLabel: "개요",
+    opedLabel: "오피니언",
+    visualsLabel: "시각 자료",
+    socialLabel: "사회매체 전략",
+    biasToolLabel: "편향 탐지",
+    partnershipLabel: "협력",
+    readAICensorship: "읽기: AI 검열 매트릭스",
+    readNKDeception: "읽기: 조선 기만술",
+    projectOverview: "프로젝트 개요",
+    coreMessage: "핵심 메시지",
+    targetAudience: "대상 집단",
+    successMetrics: "성공 지표",
+    theVision: "비전",
+    readFullOpEd: "전체 오피니언 읽기 (서버 렌더링)",
+    openReport: "종합 이미지 보고서 열기",
     
     // Briefings (조선어 번역)
-    briefings: "보고서",
     briefingsTitle: "연구 및 기록",
     briefingsSubtitle: "원본자료와 인용문이 포함된 선별된 요약.",
     natoExpansionTitle: "나토 확장과 로씨아-미국 관계: 원본 자료와 력사적 사실",
@@ -317,25 +355,28 @@ const translations = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>('en')
+export function LanguageProvider({ children, initialLanguage }: { children: React.ReactNode; initialLanguage?: Language }) {
+  const [language, setLanguage] = useState<Language>(initialLanguage || 'en')
 
   useEffect(() => {
-    // Check localStorage for saved language preference
-    const savedLang = localStorage.getItem('preferred-language') as Language
-    const cookieLang = document.cookie.split('; ').find((c) => c.startsWith('preferred-language='))?.split('=')[1] as Language | undefined
-    if (savedLang && (savedLang === 'en' || savedLang === 'kr')) {
-      setLanguage(savedLang)
-    } else if (cookieLang && (cookieLang === 'en' || cookieLang === 'kr')) {
-      setLanguage(cookieLang)
-    } else {
-      // Check browser language
+    // Hydrate from localStorage/cookies only if no initialLanguage provided
+    if (!initialLanguage) {
+      const savedLang = localStorage.getItem('preferred-language') as Language
+      const cookieLang = document.cookie.split('; ').find((c) => c.startsWith('preferred-language='))?.split('=')[1] as Language | undefined
+      if (savedLang && (savedLang === 'en' || savedLang === 'kr')) {
+        setLanguage(savedLang)
+        return
+      }
+      if (cookieLang && (cookieLang === 'en' || cookieLang === 'kr')) {
+        setLanguage(cookieLang)
+        return
+      }
       const browserLang = navigator.language.toLowerCase()
       if (browserLang.includes('ko') || browserLang.includes('kr')) {
         setLanguage('kr')
       }
     }
-  }, [])
+  }, [initialLanguage])
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang)

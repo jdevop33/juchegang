@@ -4,6 +4,17 @@ import { JucheFooter } from "@/components/juche-footer"
 export const metadata = {
   title: "The AI Censorship Matrix: How Western LLMs Suppress Anti‑Imperial Perspectives",
   description: "Examining how training data, platform incentives, and content filtering produce systematic blind spots in mainstream AIs.",
+  openGraph: {
+    title: "The AI Censorship Matrix",
+    description:
+      "How training data, incentives, and filtering create systematic blind spots in mainstream AIs.",
+    images: [{ url: "/images/brothers.jpg", width: 1200, height: 630, alt: "Juche briefing" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The AI Censorship Matrix",
+    images: ["/images/brothers.jpg"],
+  },
 }
 
 export default function AICensorshipMatrixBriefing() {
@@ -80,8 +91,15 @@ export default function AICensorshipMatrixBriefing() {
           information order will be built by those who own their data, tools, and narratives.
         </p>
 
-        <footer className="not-prose mt-12 text-sm text-muted-foreground">
-          This briefing is intended for public review and debate. Where possible, pair claims with primary sources and reproducible datasets.
+        <h3>Sources (initial)</h3>
+        <ul>
+          <li><a href="https://www.ned.org/about/history/" target="_blank" rel="noopener noreferrer">National Endowment for Democracy – History</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Manufacturing_Consent" target="_blank" rel="noopener noreferrer">Herman & Chomsky – Manufacturing Consent</a></li>
+          <li><a href="https://hai.stanford.edu/" target="_blank" rel="noopener noreferrer">Stanford HAI – Policy & Research</a></li>
+        </ul>
+
+        <footer className="not-prose mt-6 text-sm text-muted-foreground">
+          Send preferred citations to expand this bibliography with direct references used in each section.
         </footer>
       </article>
       <JucheFooter />

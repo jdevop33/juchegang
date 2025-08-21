@@ -5,6 +5,17 @@ import SafeFocalImage from "@/components/safe-focal-image"
 export const metadata = {
   title: "The Ukraine Deception: How NATO Expansion Manufactured a War",
   description: "Analysis of NATO expansion violations, sabotaged peace talks, and systematic manufacturing of conflict for imperial objectives.",
+  openGraph: {
+    title: "The Ukraine Deception",
+    description:
+      "NATO expansion, sabotaged peace talks, and manufacturing of conflict for imperial objectives.",
+    images: [{ url: "/images/brothers.jpg", width: 1200, height: 630, alt: "Juche briefing" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Ukraine Deception",
+    images: ["/images/brothers.jpg"],
+  },
 }
 
 export default function NatoExpansionBriefing() {
@@ -219,9 +230,13 @@ export default function NatoExpansionBriefing() {
           </p>
         </section>
 
-        <footer className="not-prose mt-12 text-sm text-muted-foreground">
-          This analysis summarizes publicly available documents, diplomatic records, and statements from key participants. Primary sources are cited where available to enable independent verification.
-        </footer>
+        <h3>Sources (initial)</h3>
+        <ul>
+          <li><a href="https://nsarchive.gwu.edu/" target="_blank" rel="noopener noreferrer">National Security Archive – Declassified records</a></li>
+          <li><a href="https://www.rand.org/" target="_blank" rel="noopener noreferrer">RAND Corporation – Overextending and Unbalancing Russia</a></li>
+          <li><a href="https://www.youtube.com/watch?v=H8Kc9p2sSqk" target="_blank" rel="noopener noreferrer">Naftali Bennett – Interview</a></li>
+        </ul>
+        <footer className="not-prose mt-6 text-sm text-muted-foreground">Send preferred citations to expand this bibliography.</footer>
       </article>
       <JucheFooter />
     </main>

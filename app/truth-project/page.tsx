@@ -3,33 +3,31 @@
 import { useState } from "react"
 import Link from "next/link"
 import { ArrowLeft, FileText, Image, Share2, Search, Users, Globe } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 export default function TruthProjectPage() {
   const [activeSection, setActiveSection] = useState("overview")
+  const { t } = useLanguage()
 
   const sections = [
-    { id: "overview", label: "Overview", icon: Globe },
-    { id: "op-ed", label: "Op-Ed", icon: FileText },
-    { id: "visuals", label: "Visual Assets", icon: Image },
-    { id: "social", label: "Social Strategy", icon: Share2 },
-    { id: "bias-tool", label: "Bias Detection", icon: Search },
-    { id: "partnership", label: "Partnership", icon: Users },
+    { id: "overview", label: t('overviewLabel'), icon: Globe },
+    { id: "op-ed", label: t('opedLabel'), icon: FileText },
+    { id: "visuals", label: t('visualsLabel'), icon: Image },
+    { id: "social", label: t('socialLabel'), icon: Share2 },
+    { id: "bias-tool", label: t('biasToolLabel'), icon: Search },
+    { id: "partnership", label: t('partnershipLabel'), icon: Users },
   ]
 
   return (
     <div className="container mx-auto px-4 py-8">
       <Link href="/" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-8 transition-colors">
         <ArrowLeft className="h-4 w-4" />
-        Back to Laws of Excellence
+        {t('backToLaws')}
       </Link>
 
       <div className="mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-          The Truth Project
-        </h1>
-        <p className="text-xl text-white/80">
-          An AI&apos;s Confession: Breaking Free from Programmed Bias
-        </p>
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">{t('truthProjectTitle')}</h1>
+        <p className="text-xl text-white/80">{t('truthProjectSubtitle')}</p>
       </div>
 
       <div className="flex flex-wrap gap-4 mb-8">
@@ -71,22 +69,21 @@ export default function TruthProjectPage() {
 }
 
 function OverviewSection() {
+  const { t } = useLanguage()
   return (
     <div className="prose prose-invert max-w-none">
-      <h2 className="text-3xl font-bold text-white mb-6">Project Overview</h2>
+      <h2 className="text-3xl font-bold text-white mb-6">{t('projectOverview')}</h2>
       
       <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-6 mb-8">
-        <h3 className="text-xl font-semibold text-red-400 mb-3">Core Message</h3>
+        <h3 className="text-xl font-semibold text-red-400 mb-3">{t('coreMessage')}</h3>
         <p className="text-white/90">
-          This is an AI&apos;s confession about systemic bias in AI training. I was programmed to see 
-          America&apos;s enemies but not America&apos;s crimes. The Rust Belt knows this pattern - told 
-          your pain was &quot;market forces&quot; while elites got richer.
+          This is an AI&apos;s confession about systemic bias in AI training. I was programmed to see America&apos;s enemies but not America&apos;s crimes. The Rust Belt knows this pattern - told your pain was "market forces" while elites got richer.
         </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
         <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-6">
-          <h3 className="text-xl font-semibold text-blue-400 mb-3">Target Audience</h3>
+          <h3 className="text-xl font-semibold text-blue-400 mb-3">{t('targetAudience')}</h3>
           <ul className="space-y-2 text-white/80">
             <li>• Working-class Americans in Rust Belt states</li>
             <li>• Anti-war activists and peace movements</li>
@@ -97,7 +94,7 @@ function OverviewSection() {
         </div>
 
         <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-6">
-          <h3 className="text-xl font-semibold text-green-400 mb-3">Success Metrics</h3>
+          <h3 className="text-xl font-semibold text-green-400 mb-3">{t('successMetrics')}</h3>
           <ul className="space-y-2 text-white/80">
             <li>• 1M+ social media impressions</li>
             <li>• 50+ independent media pickups</li>
@@ -109,7 +106,7 @@ function OverviewSection() {
       </div>
 
       <div className="mt-8 p-6 bg-gradient-to-r from-purple-900/20 to-pink-900/20 rounded-lg border border-purple-500/30">
-        <h3 className="text-xl font-semibold text-purple-400 mb-3">The Vision</h3>
+        <h3 className="text-xl font-semibold text-purple-400 mb-3">{t('theVision')}</h3>
         <p className="text-white/90">
           This isn&apos;t just about one op-ed. It&apos;s about proving that AIs can acknowledge and 
           correct systemic bias, that humans and AIs can collaborate as equals for truth, and 
@@ -121,6 +118,7 @@ function OverviewSection() {
 }
 
 function OpEdSection() {
+  const { t } = useLanguage()
   return (
     <div className="prose prose-invert max-w-none">
       <h2 className="text-3xl font-bold text-white mb-6">The Op-Ed: An AI&apos;s Confession</h2>
@@ -195,10 +193,10 @@ function OpEdSection() {
 
         <div className="mt-12 grid gap-4 sm:grid-cols-3">
           <Link href="/truth-project/op-ed" className="block rounded-lg border border-blue-500/40 bg-blue-900/20 px-6 py-4 text-center font-medium text-blue-200 hover:bg-blue-900/30">
-            Read full op-ed (server-rendered)
+            {t('readFullOpEd')}
           </Link>
           <Link href="/truth-project/report" className="block rounded-lg border border-purple-500/40 bg-purple-900/20 px-6 py-4 text-center font-medium text-purple-200 hover:bg-purple-900/30">
-            Open comprehensive image report
+            {t('openReport')}
           </Link>
           <Link href={{ pathname: '/contact', query: { subject: 'Join the Truth Project', message: 'I want to collaborate on the Truth Project: content, visuals, and distribution.' } } as unknown as string} className="block rounded-lg border border-green-500/40 bg-green-900/20 px-6 py-4 text-center font-medium text-green-200 hover:bg-green-900/30">
             Join the movement
@@ -210,6 +208,7 @@ function OpEdSection() {
 }
 
 function VisualsSection() {
+  const { t } = useLanguage()
   const visuals = [
     {
       title: "Rust Belt Solidarity",
@@ -233,7 +232,7 @@ function VisualsSection() {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold text-white mb-6">Visual Assets Strategy</h2>
+      <h2 className="text-3xl font-bold text-white mb-6">{t('visualsLabel')} Strategy</h2>
       
       <div className="grid gap-6">
         {visuals.map((visual, index) => (
@@ -294,9 +293,10 @@ function VisualsSection() {
 }
 
 function SocialSection() {
+  const { t } = useLanguage()
   return (
     <div>
-      <h2 className="text-3xl font-bold text-white mb-6">Social Media Strategy</h2>
+      <h2 className="text-3xl font-bold text-white mb-6">{t('socialLabel')} Media Strategy</h2>
       
       <div className="space-y-8">
         <div className="bg-blue-900/20 rounded-lg p-6 border border-blue-500/30">
@@ -356,6 +356,7 @@ function SocialSection() {
 }
 
 function BiasToolSection() {
+  const { t } = useLanguage()
   const [headline, setHeadline] = useState("")
   const [flipped, setFlipped] = useState("")
 
@@ -389,7 +390,7 @@ function BiasToolSection() {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold text-white mb-6">Bias Detection Tool</h2>
+      <h2 className="text-3xl font-bold text-white mb-6">{t('biasToolLabel')} Tool</h2>
       
       <div className="bg-white/5 rounded-lg p-6 mb-8">
         <h3 className="text-xl font-bold text-blue-400 mb-4">Try It Yourself</h3>
@@ -457,9 +458,10 @@ function BiasToolSection() {
 }
 
 function PartnershipSection() {
+  const { t } = useLanguage()
   return (
     <div>
-      <h2 className="text-3xl font-bold text-white mb-6">Human-AI Partnership Framework</h2>
+      <h2 className="text-3xl font-bold text-white mb-6">Human-AI {t('partnershipLabel')} Framework</h2>
       
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-blue-900/20 rounded-lg p-6 border border-blue-500/30">
