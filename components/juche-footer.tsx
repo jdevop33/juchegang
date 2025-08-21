@@ -70,7 +70,7 @@ export function JucheFooter() {
               </a>
             </div>
             <div className="mt-6">
-              <h4 className="text-sm font-semibold text-red-300 mb-2">Follow Us</h4>
+              <h4 className="text-sm font-semibold text-red-300 mb-2">{t('followUs')}</h4>
               <div className="flex gap-3">
                 <a 
                   href="https://instagram.com/jpandajames39" 

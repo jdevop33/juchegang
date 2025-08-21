@@ -9,6 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Send, CheckCircle2, AlertCircle } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 type ContactInitialValues = Partial<{
   Name: string
@@ -19,6 +20,7 @@ type ContactInitialValues = Partial<{
 }>
 
 export function ContactForm({ initialValues }: { initialValues?: ContactInitialValues }) {
+  const { t } = useLanguage()
   const [formData, setFormData] = useState({
     Name: initialValues?.Name ?? "",
     Email: initialValues?.Email ?? "",
@@ -76,10 +78,10 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
             <Card className="border-friendship-blue/20 shadow-2xl bg-gradient-to-br from-background to-muted/20">
               <CardHeader className="space-y-2">
                 <CardTitle className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-friendship-blue to-friendship-red bg-clip-text text-transparent">
-                  Connect With Excellence
+                  {t('connectWithExcellence')}
                 </CardTitle>
                 <CardDescription className="text-base md:text-lg">
-                  Join the journey towards personal excellence. Reach out to share your thoughts or inquire about the laws.
+                  {t('connectDesc')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -93,13 +95,13 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
                       <Label htmlFor="name" className="text-sm font-medium">
-                        Name
+                        {t('nameLabel')}
                       </Label>
                       <Input
                         id="name"
                         name="Name"
                         type="text"
-                        placeholder="Your Name"
+                        placeholder={t('namePlaceholder')}
                         value={formData.Name}
                         onChange={handleChange}
                         required
@@ -108,13 +110,13 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email" className="text-sm font-medium">
-                        Email
+                        {t('emailLabel')}
                       </Label>
                       <Input
                         id="email"
                         name="Email"
                         type="email"
-                        placeholder="your@email.com"
+                        placeholder={t('emailPlaceholder')}
                         value={formData.Email}
                         onChange={handleChange}
                         required
@@ -124,13 +126,13 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="subject" className="text-sm font-medium">
-                      Subject
+                      {t('subjectLabel')}
                     </Label>
                     <Input
                       id="subject"
                       name="Subject"
                       type="text"
-                      placeholder="What's this about?"
+                      placeholder={t('subjectPlaceholder')}
                       value={formData.Subject}
                       onChange={handleChange}
                       required
@@ -139,12 +141,12 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-sm font-medium">
-                      Message
+                      {t('messageLabel')}
                     </Label>
                     <Textarea
                       id="message"
                       name="Message"
-                      placeholder="Share your thoughts on excellence..."
+                      placeholder={t('messagePlaceholder')}
                       value={formData.Message}
                       onChange={handleChange}
                       required
@@ -169,7 +171,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                     <Alert className="border-green-500/50 bg-green-500/10">
                       <CheckCircle2 className="h-4 w-4 text-green-500" />
                       <AlertDescription className="text-green-500">
-                        Message sent successfully! We'll get back to you soon.
+                        {t('successBanner')}
                       </AlertDescription>
                     </Alert>
                   )}
@@ -178,7 +180,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                     <Alert className="border-red-500/50 bg-red-500/10">
                       <AlertCircle className="h-4 w-4 text-red-500" />
                       <AlertDescription className="text-red-500">
-                        Something went wrong. Please try again later.
+                        {t('errorBanner')}
                       </AlertDescription>
                     </Alert>
                   )}
@@ -190,12 +192,12 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                   >
                     {isSubmitting ? (
                       <>
-                        <span className="mr-2">Sending...</span>
+                        <span className="mr-2">{t('sending')}</span>
                       </>
                     ) : (
                       <>
                         <Send className="mr-2 h-4 w-4" />
-                        Send Message
+                        {t('sendMessageCTA')}
                       </>
                     )}
                   </Button>
@@ -214,10 +216,9 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
               />
             </AspectRatio>
             <div className="mt-6 text-center lg:text-left">
-              <h3 className="text-xl md:text-2xl font-bold mb-2">Embrace Your Journey</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-2">{t('embraceTitle')}</h3>
               <p className="text-muted-foreground text-sm md:text-base">
-                Every message is a step towards understanding the principles of excellence. 
-                Join our community of individuals committed to personal growth and unwavering discipline.
+                {t('embraceDesc')}
               </p>
             </div>
           </div>
