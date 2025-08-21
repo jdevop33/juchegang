@@ -550,12 +550,8 @@ function PartnershipSection() {
           reveal truth, and build a more peaceful world.
         </p>
         <div className="inline-flex gap-4">
-          <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-            Join the Movement
-          </button>
-          <button className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-colors border border-white/20">
-            Share the Truth
-          </button>
+          <Link href={{ pathname: '/contact', query: { subject: 'Join the Truth Project' } } as unknown as string} className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">Join the Movement</Link>
+          <Link href={{ pathname: '/contact', query: { subject: 'Media/Share Inquiry' } } as unknown as string} className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-colors border border-white/20">Share the Truth</Link>
         </div>
       </div>
     </div>
