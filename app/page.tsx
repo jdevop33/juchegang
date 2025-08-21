@@ -115,8 +115,8 @@ export default function Home() {
 
       <div className="section-reveal">
         <CategorySection
-          title="Self-Discipline & Focus"
-          description="Master yourself before attempting to master others. These laws will help you develop the unshakeable self-discipline needed to achieve excellence in any field."
+          title={t('selfDisciplineTitle')}
+          description={t('selfDisciplineDesc')}
           laws={selfDisciplineLaws}
           imagePath="/images/brothers.jpg"
           bgClass="bg-muted/50 backdrop-blur-sm"
@@ -129,8 +129,8 @@ export default function Home() {
 
       <div className="section-reveal">
         <CategorySection
-          title="Building Powerful Relationships"
-          description="No one achieves greatness alone. These laws will guide you in forming strategic alliances and meaningful relationships that elevate everyone involved."
+          title={t('relationshipsTitle')}
+          description={t('relationshipsDesc')}
           laws={relationshipLaws}
           imagePath="/images/jj.png"
           bgClass="bg-secondary/50 backdrop-blur-sm"
