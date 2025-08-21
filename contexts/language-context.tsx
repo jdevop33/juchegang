@@ -19,6 +19,13 @@ const translations = {
     mission: "Our Mission",
     about: "About",
     contact: "Contact",
+    briefings: "Briefings",
+    culture: "Culture",
+    youth: "Youth",
+    peace: "Peace",
+    channels: "Channels",
+    truthProject: "Truth Project",
+    cuisine: "Cuisine & Traditions",
     
     // Hero Section
     heroBadge: "Excellence Through Discipline",
@@ -163,6 +170,13 @@ const translations = {
     mission: "사명",
     about: "소개",
     contact: "련락처",
+    briefings: "보고서",
+    culture: "문화교류",
+    youth: "청년력량",
+    peace: "평화력사",
+    channels: "채널들",
+    truthProject: "진실 프로젝트",
+    cuisine: "한식과 전통",
     
     // Hero Section (조선말 선호)
     heroBadge: "규률에 의한 탁월성",

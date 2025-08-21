@@ -20,7 +20,7 @@ export function LanguageToggle() {
     >
       <Globe className="h-4 w-4" />
       <span className="font-bold">
-        {language === 'en' ? '한국어' : 'EN'}
+        {language === 'en' ? t('switchToKorean') : t('switchToEnglish')}
       </span>
     </Button>
   )

@@ -53,17 +53,17 @@ export function JucheHeader() {
             </li>
             <li>
               <Link href="/cultural-exchange" className="text-red-200 hover:text-white transition-colors">
-                {language === 'kr' ? '문화교류' : 'Culture'}
+                {t('culture')}
               </Link>
             </li>
             <li>
               <Link href="/youth-empowerment" className="text-red-200 hover:text-white transition-colors">
-                {language === 'kr' ? '청년력량' : 'Youth'}
+                {t('youth')}
               </Link>
             </li>
             <li>
               <Link href="/peace-timeline" className="text-red-200 hover:text-white transition-colors">
-                {language === 'kr' ? '평화력사' : 'Peace'}
+                {t('peace')}
               </Link>
             </li>
             <li>
@@ -73,7 +73,7 @@ export function JucheHeader() {
             </li>
             <li>
               <Link href="/briefings" className="text-red-200 hover:text-white transition-colors">
-                Briefings
+                {t('briefings')}
               </Link>
             </li>
             <li>
@@ -83,7 +83,7 @@ export function JucheHeader() {
             </li>
             <li>
               <Link href="/channels" className="text-red-200 hover:text-white transition-colors">
-                {language === 'kr' ? '채널들' : 'Channels'}
+                {t('channels')}
               </Link>
             </li>
             <li>
@@ -93,7 +93,7 @@ export function JucheHeader() {
             </li>
             <li>
               <Link href="/truth-project" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition-colors font-semibold">
-                🌍 Truth Project
+                🌍 {t('truthProject')}
               </Link>
             </li>
           </ul>
@@ -143,7 +143,7 @@ export function JucheHeader() {
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {language === 'kr' ? '문화교류' : 'Cultural Exchange'}
+                  {t('culture')}
                 </Link>
               </li>
               <li>
@@ -152,7 +152,7 @@ export function JucheHeader() {
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {language === 'kr' ? '청년 임파워먼트' : 'Youth Empowerment'}
+                  {t('youth')}
                 </Link>
               </li>
               <li>
@@ -161,7 +161,7 @@ export function JucheHeader() {
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {language === 'kr' ? '평화 통일 역사' : 'Peace Timeline'}
+                  {t('peace')}
                 </Link>
               </li>
               <li>
@@ -170,7 +170,7 @@ export function JucheHeader() {
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {language === 'kr' ? '한식과 전통' : 'Cuisine & Traditions'}
+                  {t('cuisine')}
                 </Link>
               </li>
               <li>
@@ -188,7 +188,7 @@ export function JucheHeader() {
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Briefings
+                  {t('briefings')}
                 </Link>
               </li>
               <li>
@@ -206,7 +206,7 @@ export function JucheHeader() {
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {language === 'kr' ? '진실의 채널들' : 'Truth Channels'}
+                  {t('channels')}
                 </Link>
               </li>
               <li>
@@ -224,7 +224,7 @@ export function JucheHeader() {
                   className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition-colors block font-semibold"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  🌍 Truth Project
+                  🌍 {t('truthProject')}
                 </Link>
               </li>
               <li className="pt-4 border-t border-red-800">
