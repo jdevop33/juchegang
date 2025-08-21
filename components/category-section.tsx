@@ -1,8 +1,11 @@
+"use client"
 import type { Law } from "@/types/law"
 import Image from "next/image"
 import FocalImage from "./focal-image"
 import SafeFocalImage from "./safe-focal-image"
 import { getLawImage } from "@/lib/law-images"
+import { useLanguage } from "@/contexts/language-context"
+import { lawsKr } from "@/data/laws.kr"
 
 interface CategorySectionProps {
   title: string
@@ -13,6 +16,7 @@ interface CategorySectionProps {
 }
 
 export function CategorySection({ title, description, laws, imagePath, bgClass }: CategorySectionProps) {
+  const { t, language } = useLanguage()
   return (
     <section className={`py-16 ${bgClass}`}>
       <div className="container mx-auto px-4">
@@ -32,13 +36,13 @@ export function CategorySection({ title, description, laws, imagePath, bgClass }
                       {law.number}
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-2">{law.title}</h3>
-                      <p className="text-red-200 line-clamp-2">{law.content.substring(0, 120)}...</p>
+                      <h3 className="text-xl font-bold text-white mb-2">{language === 'kr' ? (lawsKr[law.number]?.title ?? law.title) : law.title}</h3>
+                      <p className="text-red-200 line-clamp-2">{(language === 'kr' ? (lawsKr[law.number]?.content ?? law.content) : law.content).substring(0, 120)}...</p>
                       <a
                         href={`#law-${law.number}`}
                         className="text-red-300 hover:text-red-200 text-sm font-medium mt-2 inline-block"
                       >
-                        Read more
+                        {t('readMore')}
                       </a>
                     </div>
                   </div>

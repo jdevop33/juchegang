@@ -4,6 +4,8 @@ import Image from "next/image"
 import FocalImage from "./focal-image"
 import SafeFocalImage from "./safe-focal-image"
 import { getLawImage } from "@/lib/law-images"
+import { useLanguage } from "@/contexts/language-context"
+import { lawsKr } from "@/data/laws.kr"
 
 interface FeaturedLawProps {
   law: Law
@@ -11,6 +13,10 @@ interface FeaturedLawProps {
 }
 
 export function FeaturedLaw({ law, imagePath }: FeaturedLawProps) {
+  const { t, language } = useLanguage()
+  const localized = lawsKr[law.number]
+  const displayTitle = language === 'kr' ? (localized?.title ?? law.title) : law.title
+  const displayContent = language === 'kr' ? (localized?.content ?? law.content) : law.content
   return (
     <div className="relative rounded-xl overflow-hidden shadow-2xl border-2 border-red-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
       {/* Communist Revolutionary Background */}
@@ -60,24 +66,24 @@ export function FeaturedLaw({ law, imagePath }: FeaturedLawProps) {
             <div className="h-10 w-10 flex items-center justify-center rounded-full bg-yellow-500 text-red-900 font-bold border-2 border-yellow-400 shadow-lg">
               {law.number}
             </div>
-            <h3 className="text-xl font-bold text-yellow-300 drop-shadow-lg">Law {law.number}</h3>
+            <h3 className="text-xl font-bold text-yellow-300 drop-shadow-lg">{t('lawLabel')} {law.number}</h3>
           </div>
-          <h2 className="text-4xl font-bold mb-6 text-white drop-shadow-2xl leading-tight">{law.title}</h2>
+          <h2 className="text-4xl font-bold mb-6 text-white drop-shadow-2xl leading-tight">{displayTitle}</h2>
           <div className="prose prose-invert prose-red max-w-none mb-8">
-            <p className="text-red-50 leading-relaxed drop-shadow-lg text-lg">{law.content}</p>
+            <p className="text-red-50 leading-relaxed drop-shadow-lg text-lg">{displayContent}</p>
           </div>
           <a
             href={`#law-${law.number}`}
             className="inline-flex items-center gap-2 text-yellow-300 hover:text-yellow-200 font-bold group bg-black/40 px-6 py-3 rounded-lg backdrop-blur-sm border-2 border-yellow-400/50 hover:border-yellow-400 transition-all shadow-lg"
           >
-            Read more
+            {t('readMore')}
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
         <div className="relative h-64 md:h-auto">
           <SafeFocalImage
             src={getLawImage(law.number)}
-            alt={`Law ${law.number}: ${law.title}`}
+            alt={`${t('lawLabel')} ${law.number}: ${displayTitle}`}
             fill
             className="object-cover"
           />

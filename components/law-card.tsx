@@ -16,14 +16,16 @@ interface LawCardProps {
 
 export function LawCard({ law }: LawCardProps) {
   const [isExpanded, setIsExpanded] = useState(false)
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const localized = lawsKr[law.number]
   const { ref, isIntersecting } = useIntersectionObserver({
     threshold: 0.2,
     triggerOnce: true,
   })
 
-  const isContentLong = law.content.length > 200
+  const displayTitle = language === 'kr' ? (localized?.title ?? law.title) : law.title
+  const displayContent = language === 'kr' ? (localized?.content ?? law.content) : law.content
+  const isContentLong = displayContent.length > 200
 
   return (
     <div
@@ -38,7 +40,7 @@ export function LawCard({ law }: LawCardProps) {
       <div className="relative h-48 overflow-hidden">
         <SafeFocalImage
           src={getLawImage(law.number)}
-          alt={`Visual representation of Law ${law.number}: ${law.title}`}
+          alt={`Visual representation of ${t('lawLabel')} ${law.number}: ${displayTitle}`}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -61,13 +63,13 @@ export function LawCard({ law }: LawCardProps) {
           </h3>
         </div>
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 text-card-foreground group-hover:text-accent transition-colors duration-300 line-clamp-2">
-          {localized?.title || law.title}
+          {displayTitle}
         </h2>
         <div className="prose prose-gray max-w-none flex-1">
           <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed transition-all duration-300 ${
             !isExpanded && isContentLong ? 'line-clamp-4 sm:line-clamp-5' : ''
           }`}>
-            {localized?.content || law.content}
+            {displayContent}
           </p>
         </div>
         
