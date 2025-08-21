@@ -83,12 +83,7 @@ export function LawCard({ law }: LawCardProps) {
           </div>
         )}
         
-        <div className="mt-4 sm:mt-5 md:mt-6 opacity-0 group-hover:opacity-100 md:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 md:translate-y-0">
-          <a href={`#law-${law.number}`} className="inline-flex items-center gap-1.5 sm:gap-2 text-accent hover:text-primary text-xs sm:text-sm font-medium hover:underline transition-colors">
-            <span>View full details</span>
-            <ArrowUpRight className="h-3 w-3 sm:h-4 sm:w-4 transition-transform group-hover:rotate-12" />
-          </a>
-        </div>
+        {/* Removed non-functional 'View full details' link per request */}
       </div>
     </div>
   )
