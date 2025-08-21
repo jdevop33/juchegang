@@ -75,7 +75,13 @@ export function ContactForm() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6" acceptCharset="UTF-8">
+                <form
+                  onSubmit={handleSubmit}
+                  action="https://public.herotofu.com/v1/f934d410-7d50-11f0-b600-1fdb6134186f"
+                  method="POST"
+                  className="space-y-4 md:space-y-6"
+                  acceptCharset="UTF-8"
+                >
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
                       <Label htmlFor="name" className="text-sm font-medium">
