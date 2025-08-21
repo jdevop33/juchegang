@@ -68,6 +68,11 @@ export function JucheHeader() {
                 📸 Gallery
               </Link>
             </li>
+            <li>
+              <Link href="/truth-project" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition-colors font-semibold">
+                🌍 Truth Project
+              </Link>
+            </li>
           </ul>
         </nav>
 
@@ -138,6 +143,15 @@ export function JucheHeader() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   📸 Gallery
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/truth-project"
+                  className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition-colors block font-semibold"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  🌍 Truth Project
                 </Link>
               </li>
             </ul>
