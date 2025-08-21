@@ -1,13 +1,12 @@
 import Link from "next/link"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
-
 export const metadata = {
   title: "Briefings",
   description: "Primary-source briefings and research notes.",
 }
 
-export default async function BriefingsIndexPage() {
+export default function BriefingsIndexPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
@@ -36,6 +35,14 @@ export default async function BriefingsIndexPage() {
               </Link>
             </h2>
             <p className="text-muted-foreground">Media pipelines, defector incentives, cyber ambiguity, and frozen-conflict capitalism sustaining U.S. posture in East Asia.</p>
+          </li>
+          <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
+            <h2 className="text-2xl font-semibold mb-2">
+              <Link href="/briefings/ai-censorship-matrix" className="hover:underline">
+                The AI Censorship Matrix: How Western LLMs Suppress Anti‑Imperial Perspectives
+              </Link>
+            </h2>
+            <p className="text-muted-foreground">How datasets, policy layers, and platform incentives create systematic blind spots in mainstream AI systems.</p>
           </li>
         </ul>
       </section>

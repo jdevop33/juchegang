@@ -1,6 +1,7 @@
 "use client"
 
 import type { Law } from "@/types/law"
+import { lawsKr } from "@/data/laws.kr"
 import { ArrowUpRight, Star, ChevronDown, ChevronUp } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
@@ -16,6 +17,7 @@ interface LawCardProps {
 export function LawCard({ law }: LawCardProps) {
   const [isExpanded, setIsExpanded] = useState(false)
   const { t } = useLanguage()
+  const localized = lawsKr[law.number]
   const { ref, isIntersecting } = useIntersectionObserver({
     threshold: 0.2,
     triggerOnce: true,
@@ -59,13 +61,13 @@ export function LawCard({ law }: LawCardProps) {
           </h3>
         </div>
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 text-card-foreground group-hover:text-accent transition-colors duration-300 line-clamp-2">
-          {law.title}
+          {localized?.title || law.title}
         </h2>
         <div className="prose prose-gray max-w-none flex-1">
           <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed transition-all duration-300 ${
             !isExpanded && isContentLong ? 'line-clamp-4 sm:line-clamp-5' : ''
           }`}>
-            {law.content}
+            {localized?.content || law.content}
           </p>
         </div>
         

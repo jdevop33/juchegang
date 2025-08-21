@@ -1,6 +1,5 @@
-"use client"
+// Server component: remove client directive and async data on server
 
-import type { Metadata } from "next"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 

@@ -57,6 +57,15 @@ export default function TruthProjectPage() {
         {activeSection === "bias-tool" && <BiasToolSection />}
         {activeSection === "partnership" && <PartnershipSection />}
       </div>
+
+      <div className="mt-8 grid sm:grid-cols-2 gap-4">
+        <Link href="/briefings/ai-censorship-matrix" className="block rounded-lg border border-white/20 bg-white/5 px-6 py-4 text-center text-white hover:bg-white/10">
+          Read: The AI Censorship Matrix
+        </Link>
+        <Link href="/briefings/north-korea-deception" className="block rounded-lg border border-white/20 bg-white/5 px-6 py-4 text-center text-white hover:bg-white/10">
+          Read: The North Korea Deception
+        </Link>
+      </div>
     </div>
   )
 }

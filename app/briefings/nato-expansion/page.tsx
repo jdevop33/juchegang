@@ -7,7 +7,7 @@ export const metadata = {
   description: "Primary sources and historical facts",
 }
 
-export default async function NatoExpansionBriefing() {
+export default function NatoExpansionBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />

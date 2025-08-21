@@ -1,3 +1,4 @@
+"use client"
 import { Star, Heart, Mail, Instagram } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
@@ -40,12 +41,12 @@ export function JucheFooter() {
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-red-200 hover:text-white transition-colors">
+                <a href="/mission" className="text-red-200 hover:text-white transition-colors">
                   {t('about')}
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-red-200 hover:text-white transition-colors">
+                <a href="/contact" className="text-red-200 hover:text-white transition-colors">
                   {t('contact')}
                 </a>
               </li>
