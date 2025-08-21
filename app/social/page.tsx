@@ -1,10 +1,10 @@
+"use client"
+
 import type { Metadata } from "next"
+import { JucheHeader } from "@/components/juche-header"
+import { JucheFooter } from "@/components/juche-footer"
 
 export const revalidate = 900 // 15 minutes
-
-export const metadata: Metadata = {
-  title: "Social Streams | Juche GanG",
-}
 
 type YouTubeVideo = {
   id: string
@@ -40,7 +40,9 @@ export default async function SocialPage() {
   ])
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black">
+    <>
+      <JucheHeader />
+      <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black pt-20">
       <div className="container mx-auto px-4 py-10">
         <header className="mb-8">
           <h1 className="text-4xl md:text-6xl font-bold text-white">Social Streams</h1>
@@ -127,6 +129,8 @@ export default async function SocialPage() {
         </section>
       </div>
     </main>
+    <JucheFooter />
+    </>
   )
 }
 

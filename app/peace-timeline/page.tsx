@@ -4,6 +4,8 @@ import { useLanguage } from "@/contexts/language-context"
 import { motion } from "framer-motion"
 import { Calendar, Heart, Handshake, Globe, Users, TreePine, Building, Mountain, Star, Crown, Flag, Bird, ArrowRight } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { JucheHeader } from "@/components/juche-header"
+import { JucheFooter } from "@/components/juche-footer"
 
 export default function PeaceTimelinePage() {
   const { language } = useLanguage()
@@ -165,7 +167,9 @@ export default function PeaceTimelinePage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-blue-950 to-black">
+    <>
+      <JucheHeader />
+      <main className="min-h-screen bg-gradient-to-b from-black via-blue-950 to-black pt-20">
       {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
         <motion.div
@@ -389,5 +393,7 @@ export default function PeaceTimelinePage() {
         </motion.div>
       </section>
     </main>
+    <JucheFooter />
+    </>
   )
 }

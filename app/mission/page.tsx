@@ -4,6 +4,8 @@ import { useLanguage } from "@/contexts/language-context"
 import { motion } from "framer-motion"
 import { Globe, Users, Target, Flame, Mountain, Sun } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
+import { JucheHeader } from "@/components/juche-header"
+import { JucheFooter } from "@/components/juche-footer"
 
 export default function MissionPage() {
   const { t, language } = useLanguage()
@@ -60,7 +62,9 @@ export default function MissionPage() {
   ]
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-red-950 to-black">
+    <>
+      <JucheHeader />
+      <main className="min-h-screen bg-gradient-to-b from-black via-red-950 to-black pt-20">
       {/* Hero Section */}
       <section className="relative py-20 px-4">
         <div className="container mx-auto max-w-6xl">
@@ -168,5 +172,7 @@ export default function MissionPage() {
         </div>
       </section>
     </main>
+    <JucheFooter />
+    </>
   )
 }

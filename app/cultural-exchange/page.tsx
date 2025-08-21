@@ -4,6 +4,8 @@ import { useLanguage } from "@/contexts/language-context"
 import { motion } from "framer-motion"
 import { Heart, Globe, Music, Utensils, Book, Users, Camera, Plane, HandHeart, Star } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { JucheHeader } from "@/components/juche-header"
+import { JucheFooter } from "@/components/juche-footer"
 import Link from "next/link"
 
 export default function CulturalExchangePage() {
@@ -126,7 +128,9 @@ export default function CulturalExchangePage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-blue-950 to-black">
+    <>
+      <JucheHeader />
+      <main className="min-h-screen bg-gradient-to-b from-black via-blue-950 to-black pt-20">
       {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
         <motion.div
@@ -319,5 +323,7 @@ export default function CulturalExchangePage() {
         </motion.div>
       </section>
     </main>
+    <JucheFooter />
+    </>
   )
 }

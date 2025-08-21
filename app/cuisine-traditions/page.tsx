@@ -4,6 +4,8 @@ import { useLanguage } from "@/contexts/language-context"
 import { motion } from "framer-motion"
 import { Soup, Leaf, Heart, Users, Clock, Sparkles, ChefHat, Flame } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { JucheHeader } from "@/components/juche-header"
+import { JucheFooter } from "@/components/juche-footer"
 import Link from "next/link"
 
 export default function CuisineTraditionsPage() {
@@ -138,7 +140,9 @@ export default function CuisineTraditionsPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-orange-950 to-black">
+    <>
+      <JucheHeader />
+      <main className="min-h-screen bg-gradient-to-b from-black via-orange-950 to-black pt-20">
       {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
         <motion.div
@@ -345,5 +349,7 @@ export default function CuisineTraditionsPage() {
         </motion.div>
       </section>
     </main>
+    <JucheFooter />
+    </>
   )
 }
