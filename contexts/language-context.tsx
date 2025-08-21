@@ -355,7 +355,7 @@ const translations = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
-export function LanguageProvider({ children, initialLanguage }: { children: React.ReactNode; initialLanguage?: Language }) {
+export function LanguageProvider({ children, initialLanguage, dictionary }: { children: React.ReactNode; initialLanguage?: Language, dictionary?: Record<string, string> }) {
   const [language, setLanguage] = useState<Language>(initialLanguage || 'en')
 
   useEffect(() => {
@@ -386,6 +386,7 @@ export function LanguageProvider({ children, initialLanguage }: { children: Reac
   }
 
   const t = (key: string): string => {
+    if (dictionary && dictionary[key]) return dictionary[key]
     return translations[language][key as keyof typeof translations['en']] || key
   }
 

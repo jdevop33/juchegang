@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
 import { getServerLanguage } from "@/lib/i18n-server"
+import { getDictionary } from "@/lib/dictionary"
 import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -61,12 +62,13 @@ export const metadata = {
     generator: 'v0.dev'
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   const serverLang = getServerLanguage()
+  const dict = await getDictionary(serverLang)
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -112,7 +114,7 @@ export default function RootLayout({
         </noscript>
         {/* End Google Tag Manager (noscript) */}
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <LanguageProvider initialLanguage={serverLang}>
+          <LanguageProvider initialLanguage={serverLang} dictionary={dict}>
             {children}
           </LanguageProvider>
         </ThemeProvider>
