@@ -49,13 +49,13 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/kffav.png" },
-      { url: "/kffav.png", sizes: "16x16", type: "image/png" },
-      { url: "/kffav.png", sizes: "32x32", type: "image/png" },
-      { url: "/kffav.png", sizes: "48x48", type: "image/png" },
+      { url: "/favicon.svg" },
+      { url: "/favicon.svg", sizes: "16x16", type: "image/svg+xml" },
+      { url: "/favicon.svg", sizes: "32x32", type: "image/svg+xml" },
+      { url: "/favicon.svg", sizes: "48x48", type: "image/svg+xml" },
     ],
-    apple: [{ url: "/kffav.png", sizes: "180x180", type: "image/png" }],
-    shortcut: "/kffav.png",
+    apple: [{ url: "/favicon.svg", sizes: "180x180", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg",
   },
     generator: 'v0.dev'
 }
@@ -68,8 +68,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/kffav.png" sizes="any" />
-        <link rel="apple-touch-icon" href="/kffav.png" />
+        <link rel="icon" href="/favicon.svg" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{

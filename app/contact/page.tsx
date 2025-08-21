@@ -3,6 +3,8 @@
 import { Suspense, useMemo } from "react"
 import { useSearchParams } from "next/navigation"
 import { ContactForm } from "@/components/contact-form"
+import { JucheHeader } from "@/components/juche-header"
+import { JucheFooter } from "@/components/juche-footer"
 
 function ContactPageContent() {
   const params = useSearchParams()
@@ -21,7 +23,8 @@ function ContactPageContent() {
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black">
-      <div className="container mx-auto px-4 py-10">
+      <JucheHeader />
+      <div className="container mx-auto px-4 py-10 pt-28">
         <header className="mb-8">
           <h1 className="text-4xl md:text-6xl font-bold text-white">Contact</h1>
           <p className="text-white/80 mt-2">We'll reply as soon as we can.</p>
@@ -30,6 +33,7 @@ export default function ContactPage() {
           <ContactPageContent />
         </Suspense>
       </div>
+      <JucheFooter />
     </main>
   )
 }

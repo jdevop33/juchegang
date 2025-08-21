@@ -41,6 +41,22 @@ export default function BriefingsContent() {
           </h2>
           <p className="text-muted-foreground">{t('ukraineDeceptionDesc')}</p>
         </li>
+        <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/false-flag-cyber-operations" className="hover:underline">
+              False Flag Cyber Operations and North Korean APT Mimicry
+            </Link>
+          </h2>
+          <p className="text-muted-foreground">Technical, strategic, and operational analysis of false flag cyber operations and DPRK APT impersonation patterns.</p>
+        </li>
+        <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/apt-down-files" className="hover:underline">
+              The APT Down Files: Inside the breach of a nation-state hacker
+            </Link>
+          </h2>
+          <p className="text-muted-foreground">Inside the 9GB leak revealed at DEF CON 2025: tools, ops data, attribution puzzles, and defensive takeaways.</p>
+        </li>
       </ul>
     </section>
   )

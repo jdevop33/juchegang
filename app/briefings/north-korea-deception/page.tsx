@@ -2,7 +2,26 @@ import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 export const metadata = {
   title: "The North Korea Deception: Manufactured Threats and the War Machine",
-  description: "A long-form analysis of how threat inflation, media funding pipelines, and frozen-conflict capitalism sustain the imperial security architecture.",
+  description:
+    "A long-form analysis of how threat inflation, media funding pipelines, and frozen-conflict capitalism sustain the imperial security architecture.",
+  openGraph: {
+    title: "The North Korea Deception: Manufactured Threats and the War Machine",
+    description:
+      "How threat inflation, media pipelines, and frozen-conflict capitalism sustain an imperial security architecture.",
+    images: [
+      {
+        url: "/images/brothers.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Juche briefing share image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The North Korea Deception",
+    images: ["/images/brothers.jpg"],
+  },
 }
 
 export default function NorthKoreaDeceptionBriefing() {
@@ -259,8 +278,16 @@ export default function NorthKoreaDeceptionBriefing() {
           the broader matrix of manufactured consent that shapes American foreign policy and keeps the war machine profitable.
         </p>
 
-        <footer className="not-prose mt-12 text-sm text-muted-foreground">
-          This briefing summarizes arguments for public review. Where applicable, link primary sources and funding disclosures alongside media claims to enable reader verification.
+        <h3>Sources (initial)</h3>
+        <ul>
+          <li><a href="https://www.ned.org/about/history/" target="_blank" rel="noopener noreferrer">National Endowment for Democracy – History</a></li>
+          <li><a href="https://www.rfa.org/about" target="_blank" rel="noopener noreferrer">Radio Free Asia – About</a></li>
+          <li><a href="https://wikileaks.org/ciav7p1/" target="_blank" rel="noopener noreferrer">Wikileaks – Vault 7 (CIA)</a></li>
+          <li><a href="https://attack.mitre.org/" target="_blank" rel="noopener noreferrer">MITRE ATT&CK Framework</a></li>
+        </ul>
+
+        <footer className="not-prose mt-6 text-sm text-muted-foreground">
+          Send preferred citations and I’ll expand this bibliography with direct references used in each section.
         </footer>
       </article>
       <JucheFooter />
