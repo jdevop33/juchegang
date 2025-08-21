@@ -1,7 +1,9 @@
 import Image from "next/image"
 import FocalImage from "./focal-image"
+import { useLanguage } from "@/contexts/language-context"
 
 export function AboutSection() {
+  const { t } = useLanguage()
   return (
     <section id="about" className="py-16 relative">
       {/* Background image with overlay */}
@@ -25,14 +27,10 @@ export function AboutSection() {
                 <p className="text-red-200 mb-4 italic">Canadian Managing Director • Juche Community Relations</p>
                 <div className="prose prose-invert prose-red max-w-none">
                   <p>
-                    Specializing in cross-cultural diplomatic initiatives and community engagement strategies. 
-                    Coordinating educational outreach programs that promote understanding of Korean political 
-                    philosophy and self-reliance principles across North American academic institutions.
+                    {t('aboutText1') || 'Specializing in cross-cultural diplomatic initiatives and community engagement strategies. Coordinating educational outreach programs that promote understanding of Korean political philosophy and self-reliance principles across North American academic institutions.'}
                   </p>
                   <p>
-                    University of Victoria • Advanced studies in East Asian political systems and international 
-                    relations. Facilitating dialogue between Western and DPRK intellectual communities through 
-                    cultural exchange programs and policy research initiatives.
+                    {t('aboutText2') || 'University of Victoria • Advanced studies in East Asian political systems and international relations. Facilitating dialogue between Western and DPRK intellectual communities through cultural exchange programs and policy research initiatives.'}
                   </p>
                 </div>
               </div>

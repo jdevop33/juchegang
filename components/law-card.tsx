@@ -55,7 +55,7 @@ export function LawCard({ law }: LawCardProps) {
         <div className="mb-4">
           <h3 className="text-sm font-medium text-muted-foreground flex items-center gap-2 mb-2">
             <Star className="h-4 w-4 text-accent" />
-            {t('laws48') ? `${t('laws48').split(' ')[0]}` : 'Law'} {law.number}
+            {t('lawLabel')} {law.number}
           </h3>
         </div>
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 text-card-foreground group-hover:text-accent transition-colors duration-300 line-clamp-2">
@@ -76,7 +76,7 @@ export function LawCard({ law }: LawCardProps) {
               onClick={() => setIsExpanded(!isExpanded)}
               className="inline-flex items-center gap-2 text-accent hover:text-primary text-sm font-medium hover:underline transition-colors"
             >
-              <span>{isExpanded ? t('learnMore') : t('readMore')}</span>
+              <span>{isExpanded ? t('showLess') : t('readMore')}</span>
               {isExpanded ? 
                 <ChevronUp className="h-4 w-4 transition-transform" /> : 
                 <ChevronDown className="h-4 w-4 transition-transform" />
