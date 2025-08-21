@@ -29,6 +29,14 @@ export default async function BriefingsIndexPage() {
             </h2>
             <p className="text-muted-foreground">Putin’s 2007 Munich speech, declassified assurances, expansion waves, crisis precedents, and U.S. policy doctrine.</p>
           </li>
+          <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
+            <h2 className="text-2xl font-semibold mb-2">
+              <Link href="/briefings/north-korea-deception" className="hover:underline">
+                The North Korea Deception: How Manufactured Threats Fund the Imperial War Machine
+              </Link>
+            </h2>
+            <p className="text-muted-foreground">Media pipelines, defector incentives, cyber ambiguity, and frozen-conflict capitalism sustaining U.S. posture in East Asia.</p>
+          </li>
         </ul>
       </section>
       <JucheFooter />

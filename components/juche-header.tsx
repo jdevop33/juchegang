@@ -82,6 +82,11 @@ export function JucheHeader() {
               </Link>
             </li>
             <li>
+              <Link href="/channels" className="text-red-200 hover:text-white transition-colors">
+                {language === 'kr' ? '채널들' : 'Channels'}
+              </Link>
+            </li>
+            <li>
               <Link href="/gallery" className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-500 transition-colors font-semibold">
                 📸 {t('gallery')}
               </Link>
@@ -193,6 +198,15 @@ export function JucheHeader() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {t('social')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/channels"
+                  className="text-red-200 hover:text-white transition-colors block py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {language === 'kr' ? '진실의 채널들' : 'Truth Channels'}
                 </Link>
               </li>
               <li>
