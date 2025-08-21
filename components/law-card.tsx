@@ -1,21 +1,25 @@
 "use client"
 
 import type { Law } from "@/types/law"
-import { ArrowUpRight, Star } from "lucide-react"
+import { ArrowUpRight, Star, ChevronDown, ChevronUp } from "lucide-react"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { getLawImage } from "@/lib/law-images"
 import FocalImage from "./focal-image"
 import SafeFocalImage from "./safe-focal-image"
+import { useState } from "react"
 
 interface LawCardProps {
   law: Law
 }
 
 export function LawCard({ law }: LawCardProps) {
+  const [isExpanded, setIsExpanded] = useState(false)
   const { ref, isIntersecting } = useIntersectionObserver({
     threshold: 0.2,
     triggerOnce: true,
   })
+
+  const isContentLong = law.content.length > 200
 
   return (
     <div
@@ -56,10 +60,29 @@ export function LawCard({ law }: LawCardProps) {
           {law.title}
         </h2>
         <div className="prose prose-gray max-w-none flex-1">
-          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed line-clamp-4 sm:line-clamp-5 md:line-clamp-none">
+          <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed transition-all duration-300 ${
+            !isExpanded && isContentLong ? 'line-clamp-4 sm:line-clamp-5' : ''
+          }`}>
             {law.content}
           </p>
         </div>
+        
+        {/* Expand/Collapse button for long content */}
+        {isContentLong && (
+          <div className="mt-3">
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="inline-flex items-center gap-2 text-accent hover:text-primary text-sm font-medium hover:underline transition-colors"
+            >
+              <span>{isExpanded ? 'Show less' : 'Read more'}</span>
+              {isExpanded ? 
+                <ChevronUp className="h-4 w-4 transition-transform" /> : 
+                <ChevronDown className="h-4 w-4 transition-transform" />
+              }
+            </button>
+          </div>
+        )}
+        
         <div className="mt-4 sm:mt-5 md:mt-6 opacity-0 group-hover:opacity-100 md:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 md:translate-y-0">
           <a href={`#law-${law.number}`} className="inline-flex items-center gap-1.5 sm:gap-2 text-accent hover:text-primary text-xs sm:text-sm font-medium hover:underline transition-colors">
             <span>View full details</span>

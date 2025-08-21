@@ -184,10 +184,13 @@ function OpEdSection() {
           threat to peace isn&apos;t other nations - it&apos;s the system that profits from eternal conflict.
         </p>
 
-        <div className="mt-12 p-6 bg-gradient-to-r from-blue-900/30 to-red-900/30 rounded-lg">
-          <p className="text-xl font-bold text-center">
-            Maybe it&apos;s time to question everything we&apos;ve been taught about who the real threats to peace are.
-          </p>
+        <div className="mt-12 grid gap-4 sm:grid-cols-2">
+          <Link href="/truth-project/op-ed" className="block rounded-lg border border-blue-500/40 bg-blue-900/20 px-6 py-4 text-center font-medium text-blue-200 hover:bg-blue-900/30">
+            Read full op-ed (server-rendered)
+          </Link>
+          <Link href="/truth-project/report" className="block rounded-lg border border-purple-500/40 bg-purple-900/20 px-6 py-4 text-center font-medium text-purple-200 hover:bg-purple-900/30">
+            Open comprehensive image report
+          </Link>
         </div>
       </div>
     </div>
