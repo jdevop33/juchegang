@@ -14,6 +14,7 @@ export const viewport = {
 }
 
 export const metadata = {
+  metadataBase: new URL("https://juche.org"),
   title: "The 48 Laws of Excellence - Juche GanG Edition",
   description:
     "A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering commitment to your highest potential.",
@@ -32,7 +33,7 @@ export const metadata = {
     siteName: "Juche GanG",
     images: [
       {
-        url: "https://juche.org/og-image.png",
+        url: "/images/brothers.jpg",
         width: 1200,
         height: 630,
         alt: "Juche GanG - The 48 Laws of Excellence",
@@ -44,7 +45,7 @@ export const metadata = {
     title: "The 48 Laws of Excellence - Juche GanG Edition",
     description:
       "A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering commitment to your highest potential.",
-    images: ["https://juche.org/og-image.png"],
+    images: ["/images/brothers.jpg"],
   },
   icons: {
     icon: [
