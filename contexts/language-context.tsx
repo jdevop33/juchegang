@@ -21,9 +21,13 @@ const translations = {
     contact: "Contact",
     
     // Hero Section
+    heroBadge: "Excellence Through Discipline",
     heroTitle: "Juche Gang",
     heroSubtitle: "United in Purpose, Unrelenting in Will",
     heroDescription: "Through discipline, courage, and unwavering commitment, we forge the path to excellence and global transformation",
+    heroCTAExplore: "Explore the Laws",
+    heroCTAAbout: "About the System",
+    scroll: "SCROLL",
     
     // Quotes
     quote1: "Self-reliance is the key to true independence",
@@ -48,27 +52,35 @@ const translations = {
     // Laws page
     laws48: "The 48 Laws of Excellence",
     lawsSubtitle: "Principles for Personal and Collective Transformation",
+    featuredExcellence: "Featured Excellence",
+    foundationLaws: "Foundation Laws",
+    foundationDesc: "These cornerstone principles form the bedrock of personal excellence and will fundamentally transform how you approach life's greatest challenges.",
+    completeCollection: "Complete Collection",
     
     // Buttons
     learnMore: "Learn More",
     readMore: "Read More",
     sendMessage: "Send Message",
-    switchToKorean: "한국어",
+    switchToKorean: "조선말",
     switchToEnglish: "English",
   },
   kr: {
     // Navigation
     home: "홈",
-    social: "소셜 미디어",
-    gallery: "갤러리",
-    mission: "우리의 사명",
+    social: "사회매체",
+    gallery: "화상전람",
+    mission: "사명",
     about: "소개",
-    contact: "연락처",
+    contact: "련락처",
     
-    // Hero Section
+    // Hero Section (조선말 선호)
+    heroBadge: "규률에 의한 탁월성",
     heroTitle: "주체갱",
-    heroSubtitle: "목적으로 단결하고, 의지로 굴하지 않는다",
-    heroDescription: "규율, 용기, 그리고 흔들림 없는 헌신을 통해 우리는 탁월함과 세계 변혁의 길을 개척한다",
+    heroSubtitle: "목적에로 단결하고 의지로 굴함이 없다",
+    heroDescription: "규률, 담력, 그리고 흔들림없는 헌신으로 우리는 탁월성과 세계적 변혁의 길을 개척한다",
+    heroCTAExplore: "법칙들을 보기",
+    heroCTAAbout: "체계 소개",
+    scroll: "내리기",
     
     // Quotes
     quote1: "자주는 진정한 독립의 열쇠이다",
@@ -91,14 +103,18 @@ const translations = {
     connect: "연결",
     
     // Laws page
-    laws48: "탁월함의 48가지 법칙",
-    lawsSubtitle: "개인과 집단 변혁을 위한 원칙",
+    laws48: "탁월성의 48개 법칙",
+    lawsSubtitle: "개인과 집단적 변혁을 위한 원칙",
+    featuredExcellence: "주요 탁월성",
+    foundationLaws: "기초 법칙들",
+    foundationDesc: "이 기초 원칙들은 개인의 탁월성의 초석이며 당신의 도전 태도를 근본적으로 바꾸어줄 것이다.",
+    completeCollection: "전집",
     
     // Buttons
     learnMore: "더 알아보기",
     readMore: "더 읽기",
     sendMessage: "메시지 보내기",
-    switchToKorean: "한국어",
+    switchToKorean: "조선말",
     switchToEnglish: "English",
   }
 }

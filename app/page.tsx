@@ -6,6 +6,7 @@ import { JucheFooter } from "@/components/juche-footer"
 import { HeroSection } from "@/components/hero-section"
 import { FeaturedLaw } from "@/components/featured-law"
 import { AboutSection } from "@/components/about-section"
+import { useLanguage } from "@/contexts/language-context"
 import { CategorySection } from "@/components/category-section"
 import { TriptychDivider } from "@/components/triptych-divider"
 import { FloatingActionButton } from "@/components/floating-action-button"
@@ -21,6 +22,7 @@ export default function Home() {
   const [showLoading, setShowLoading] = useState(false) // Disable loading screen for now
 
   useScrollAnimation()
+  const { t } = useLanguage()
 
   useEffect(() => {
     setIsLoaded(true)
@@ -61,13 +63,13 @@ export default function Home() {
         <div className="featured-laws-section relative">
           <div className="max-w-4xl mx-auto mb-20 text-center section-reveal relative z-10" id="featured">
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium animate-staggered-fade-in backdrop-blur-sm">
-              ⭐ Featured Excellence
+              ⭐ {t('featuredExcellence')}
             </div>
           <h2 className="text-headline text-foreground mb-8 animate-staggered-fade-in stagger-delay-1">
-            Foundation Laws
+            {t('foundationLaws')}
           </h2>
           <p className="text-body-large text-muted-foreground max-w-2xl mx-auto animate-staggered-fade-in stagger-delay-2">
-            These cornerstone principles form the bedrock of personal excellence and will fundamentally transform how you approach life's greatest challenges.
+            {t('foundationDesc')}
           </p>
         </div>
 
@@ -87,13 +89,13 @@ export default function Home() {
 
         <div id="laws" className="scroll-mt-nav max-w-4xl mx-auto mb-20 text-center section-reveal">
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-destructive/10 text-destructive rounded-full text-sm font-medium">
-            📚 Complete Collection
+            📚 {t('completeCollection')}
           </div>
           <h2 className="text-headline text-foreground mb-8">
-            The 48 Laws Of Excellence
+            {t('laws48')}
           </h2>
           <p className="text-body-large text-muted-foreground max-w-3xl mx-auto mb-8">
-            A comprehensive codex for achieving mastery through discipline, strategic thinking, and unwavering commitment to your highest potential.
+            {t('lawsSubtitle')}
           </p>
           <div className="section-divider"></div>
         </div>

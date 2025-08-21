@@ -2,6 +2,7 @@
 
 import type { Law } from "@/types/law"
 import { ArrowUpRight, Star, ChevronDown, ChevronUp } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { getLawImage } from "@/lib/law-images"
 import FocalImage from "./focal-image"
@@ -14,6 +15,7 @@ interface LawCardProps {
 
 export function LawCard({ law }: LawCardProps) {
   const [isExpanded, setIsExpanded] = useState(false)
+  const { t } = useLanguage()
   const { ref, isIntersecting } = useIntersectionObserver({
     threshold: 0.2,
     triggerOnce: true,
@@ -53,7 +55,7 @@ export function LawCard({ law }: LawCardProps) {
         <div className="mb-4">
           <h3 className="text-sm font-medium text-muted-foreground flex items-center gap-2 mb-2">
             <Star className="h-4 w-4 text-accent" />
-            Law {law.number}
+            {t('laws48') ? `${t('laws48').split(' ')[0]}` : 'Law'} {law.number}
           </h3>
         </div>
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 text-card-foreground group-hover:text-accent transition-colors duration-300 line-clamp-2">
@@ -74,7 +76,7 @@ export function LawCard({ law }: LawCardProps) {
               onClick={() => setIsExpanded(!isExpanded)}
               className="inline-flex items-center gap-2 text-accent hover:text-primary text-sm font-medium hover:underline transition-colors"
             >
-              <span>{isExpanded ? 'Show less' : 'Read more'}</span>
+              <span>{isExpanded ? t('learnMore') : t('readMore')}</span>
               {isExpanded ? 
                 <ChevronUp className="h-4 w-4 transition-transform" /> : 
                 <ChevronDown className="h-4 w-4 transition-transform" />

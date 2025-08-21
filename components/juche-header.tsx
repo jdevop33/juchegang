@@ -9,7 +9,7 @@ import { useLanguage } from "@/contexts/language-context"
 export function JucheHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
 
   // Add scroll detection for header transparency
   useEffect(() => {
@@ -52,13 +52,18 @@ export function JucheHeader() {
               </Link>
             </li>
             <li>
-              <Link href="/#laws" className="text-red-200 hover:text-white transition-colors">
-                The 48 Laws
+              <Link href="/cultural-exchange" className="text-red-200 hover:text-white transition-colors">
+                {language === 'kr' ? '문화교류' : 'Culture'}
               </Link>
             </li>
             <li>
-              <Link href="/#about" className="text-red-200 hover:text-white transition-colors">
-                {t('about')}
+              <Link href="/youth-empowerment" className="text-red-200 hover:text-white transition-colors">
+                {language === 'kr' ? '청년력량' : 'Youth'}
+              </Link>
+            </li>
+            <li>
+              <Link href="/peace-timeline" className="text-red-200 hover:text-white transition-colors">
+                {language === 'kr' ? '평화력사' : 'Peace'}
               </Link>
             </li>
             <li>
@@ -129,20 +134,38 @@ export function JucheHeader() {
               </li>
               <li>
                 <Link
-                  href="/#laws"
+                  href="/cultural-exchange"
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  The 48 Laws
+                  {language === 'kr' ? '문화교류' : 'Cultural Exchange'}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/#about"
+                  href="/youth-empowerment"
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {t('about')}
+                  {language === 'kr' ? '청년 임파워먼트' : 'Youth Empowerment'}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/peace-timeline"
+                  className="text-red-200 hover:text-white transition-colors block py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {language === 'kr' ? '평화 통일 역사' : 'Peace Timeline'}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cuisine-traditions"
+                  className="text-red-200 hover:text-white transition-colors block py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {language === 'kr' ? '한식과 전통' : 'Cuisine & Traditions'}
                 </Link>
               </li>
               <li>
