@@ -10,13 +10,21 @@ import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Send, CheckCircle2, AlertCircle } from "lucide-react"
 
-export function ContactForm() {
+type ContactInitialValues = Partial<{
+  Name: string
+  Email: string
+  Subject: string
+  Message: string
+  _gotcha: string
+}>
+
+export function ContactForm({ initialValues }: { initialValues?: ContactInitialValues }) {
   const [formData, setFormData] = useState({
-    Name: "",
-    Email: "",
-    Subject: "",
-    Message: "",
-    _gotcha: "", // Honeypot field for spam protection
+    Name: initialValues?.Name ?? "",
+    Email: initialValues?.Email ?? "",
+    Subject: initialValues?.Subject ?? "",
+    Message: initialValues?.Message ?? "",
+    _gotcha: initialValues?._gotcha ?? "", // Honeypot field for spam protection
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")

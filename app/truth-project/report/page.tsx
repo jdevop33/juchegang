@@ -51,7 +51,7 @@ export default function TruthProjectReportPage() {
           <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-5">
             <h3 className="text-lg font-semibold text-blue-300 mb-2">Op-ed version</h3>
             <p className="text-white/80 mb-3">Read the long-form reflection that pairs with this report.</p>
-            <Link href="/truth-project#op-ed" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700">
+            <Link href="/truth-project/op-ed" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700">
               <FileText className="h-4 w-4" /> Open op-ed
             </Link>
           </div>
@@ -63,6 +63,14 @@ export default function TruthProjectReportPage() {
               <li>Carousel copy (6–9 frames)</li>
               <li>Short-form script outline</li>
             </ul>
+          </div>
+
+          <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-5">
+            <h3 className="text-lg font-semibold text-green-300 mb-2">Collaborate</h3>
+            <p className="text-white/80 mb-3">Want to join the Truth Project? Reach out.</p>
+            <Link href={{ pathname: '/contact', query: { subject: 'Truth Project Collaboration' } } as unknown as string} className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-green-600 text-white hover:bg-green-700">
+              Contact us
+            </Link>
           </div>
         </aside>
       </div>

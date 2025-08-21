@@ -3,10 +3,13 @@
 import { Menu, X } from "lucide-react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { LanguageToggle } from "@/components/language-toggle"
+import { useLanguage } from "@/contexts/language-context"
 
 export function JucheHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const { t } = useLanguage()
 
   // Add scroll detection for header transparency
   useEffect(() => {
@@ -40,7 +43,12 @@ export function JucheHeader() {
           <ul className="flex gap-6">
             <li>
               <Link href="/" className="text-red-200 hover:text-white transition-colors">
-                Home
+                {t('home')}
+              </Link>
+            </li>
+            <li>
+              <Link href="/mission" className="text-red-200 hover:text-white transition-colors">
+                {t('mission')}
               </Link>
             </li>
             <li>
@@ -50,12 +58,12 @@ export function JucheHeader() {
             </li>
             <li>
               <Link href="/#about" className="text-red-200 hover:text-white transition-colors">
-                About
+                {t('about')}
               </Link>
             </li>
             <li>
               <Link href="/#contact" className="text-red-200 hover:text-white transition-colors">
-                Contact
+                {t('contact')}
               </Link>
             </li>
             <li>
@@ -65,12 +73,12 @@ export function JucheHeader() {
             </li>
             <li>
               <Link href="/social" className="text-red-200 hover:text-white transition-colors">
-                Social
+                {t('social')}
               </Link>
             </li>
             <li>
               <Link href="/gallery" className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-500 transition-colors font-semibold">
-                📸 Gallery
+                📸 {t('gallery')}
               </Link>
             </li>
             <li>
@@ -80,6 +88,11 @@ export function JucheHeader() {
             </li>
           </ul>
         </nav>
+
+        {/* Language Toggle */}
+        <div className="hidden md:block">
+          <LanguageToggle />
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -102,7 +115,16 @@ export function JucheHeader() {
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Home
+                  {t('home')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/mission"
+                  className="text-red-200 hover:text-white transition-colors block py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {t('mission')}
                 </Link>
               </li>
               <li>
@@ -120,7 +142,7 @@ export function JucheHeader() {
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  About
+                  {t('about')}
                 </Link>
               </li>
               <li>
@@ -129,7 +151,7 @@ export function JucheHeader() {
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Contact
+                  {t('contact')}
                 </Link>
               </li>
               <li>
@@ -147,7 +169,7 @@ export function JucheHeader() {
                   className="text-red-200 hover:text-white transition-colors block py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Social
+                  {t('social')}
                 </Link>
               </li>
               <li>
@@ -156,7 +178,7 @@ export function JucheHeader() {
                   className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-500 transition-colors block font-semibold"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  📸 Gallery
+                  📸 {t('gallery')}
                 </Link>
               </li>
               <li>
@@ -167,6 +189,9 @@ export function JucheHeader() {
                 >
                   🌍 Truth Project
                 </Link>
+              </li>
+              <li className="pt-4 border-t border-red-800">
+                <LanguageToggle />
               </li>
             </ul>
           </nav>

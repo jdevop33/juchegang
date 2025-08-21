@@ -184,12 +184,15 @@ function OpEdSection() {
           threat to peace isn&apos;t other nations - it&apos;s the system that profits from eternal conflict.
         </p>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2">
+        <div className="mt-12 grid gap-4 sm:grid-cols-3">
           <Link href="/truth-project/op-ed" className="block rounded-lg border border-blue-500/40 bg-blue-900/20 px-6 py-4 text-center font-medium text-blue-200 hover:bg-blue-900/30">
             Read full op-ed (server-rendered)
           </Link>
           <Link href="/truth-project/report" className="block rounded-lg border border-purple-500/40 bg-purple-900/20 px-6 py-4 text-center font-medium text-purple-200 hover:bg-purple-900/30">
             Open comprehensive image report
+          </Link>
+          <Link href={{ pathname: '/contact', query: { subject: 'Join the Truth Project', message: 'I want to collaborate on the Truth Project: content, visuals, and distribution.' } } as unknown as string} className="block rounded-lg border border-green-500/40 bg-green-900/20 px-6 py-4 text-center font-medium text-green-200 hover:bg-green-900/30">
+            Join the movement
           </Link>
         </div>
       </div>
