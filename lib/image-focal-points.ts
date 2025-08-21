@@ -12,7 +12,7 @@ const focalMap: Record<string, FocalPoint> = {
   "/gallery/gallery-064.png": { x: 50, y: 35 }, // Law 1
   "/gallery/gallery-063.png": { x: 50, y: 35 }, // Law 3
   "/gallery/gallery-054.webp": { x: 50, y: 35 }, // Law 5
-  "/gallery/gallery-046.webp": { x: 50, y: 60 }, // Law 7 (move down)
+  "/gallery/gallery-046.webp": { x: 50, y: 72 }, // Law 7 (move further down)
   "/gallery/gallery-044.jpg": { x: 50, y: 35 }, // Law 8
   "/gallery/gallery-055.webp": { x: 50, y: 38 }, // Law 46 (more headroom)
   "/gallery/gallery-057.jpg": { x: 50, y: 35 }, // Law 47
@@ -38,7 +38,7 @@ const focalMap: Record<string, FocalPoint> = {
   "/gallery/gallery-011.jpg": { x: 50, y: 35 },
   "/gallery/gallery-009.jpg": { x: 50, y: 35 },
   // Adjustments to keep faces fully visible
-  "/gallery/gallery-012.webp": { x: 50, y: 32 }, // Law 12
+  "/gallery/gallery-012.webp": { x: 50, y: 45 }, // Law 12 (slightly down)
   "/gallery/gallery-016.webp": { x: 50, y: 32 }, // Law 16
   "/gallery/gallery-020.webp": { x: 50, y: 32 }, // Law 20
   "/gallery/gallery-023.jpg": { x: 50, y: 32 },  // Law 23
