@@ -81,6 +81,8 @@ const translations = {
     natoExpansionDesc: "Putin's 2007 Munich speech, declassified assurances, expansion waves, crisis precedents, and U.S. policy doctrine.",
     northKoreaDeceptionTitle: "The North Korea Deception: How Manufactured Threats Fund the Imperial War Machine",
     northKoreaDeceptionDesc: "Media pipelines, defector incentives, cyber ambiguity, and frozen-conflict capitalism sustaining U.S. posture in East Asia.",
+    ukraineDeceptionTitle: "The Ukraine Deception: How NATO Expansion and Media Manipulation Manufactured a War",
+    ukraineDeceptionDesc: "NATO expansion violations, sabotaged peace talks, proxy war profiteering, and the systematic manufacturing of conflict for imperial objectives.",
     
     // North Korea Briefing Content
     mediaManufacturing: "The Media Manufacturing Machine",
@@ -124,6 +126,20 @@ const translations = {
     russianCollapseContent: "GDP fell on the order of 40–50% by the late 1990s; inflation in 1992 alone exceeded 2,500%; and male life expectancy dropped about six years by 1994. Aid packages and IMF programs were sizable yet insufficient to prevent the 1998 crisis.",
     americanWarningsContent: "George Kennan labeled expansion a \"fateful error.\" Former Defense Secretary William Perry and others expressed similar concerns. A 2008 cable from then‑Ambassador William Burns titled \"NYET MEANS NYET\" warned that pushing NATO membership for Ukraine could lead to internal division and violence, and would be viewed in Russia as a direct challenge.",
     monroeDoctrineContent: "Since 1823 the U.S. has opposed foreign military presence in the Western Hemisphere, from the Cuban Missile Crisis to interventions in Guatemala, the Dominican Republic, and Grenada, and more recent statements regarding Russian or Chinese deployments in the region.",
+    
+    // Ukraine Briefing Content
+    strategicChessboard: "The Strategic Chessboard: NATO's Relentless Expansion",
+    canadianAnalogy: "The Canadian Analogy: Understanding Russia's Security Concerns", 
+    peaceSabotaged: "The Peace That Was Sabotaged: February-April 2022",
+    johnsonMission: "Boris Johnson's Wrecking Mission: April 9, 2022",
+    grahamConfession: "Senator Graham's Bloodthirsty Confession",
+    billionTheft: "The $300 Billion Theft: Economic Warfare Through Asset Seizure",
+    mediaComplicity: "Media Complicity: Manufacturing Consent for Proxy War",
+    militaryReality: "The Military Reality: Limited Objectives, Manufactured Threat",
+    randPlaybook: "The RAND Playbook: Ukraine as a Weapon",
+    europeanVassalization: "The European Vassalization Project",
+    endgame: "The Endgame: Prolonged Conflict, Profitable Destruction",
+    breakingMatrix: "Breaking the Information Matrix",
   },
   kr: {
     // Navigation
@@ -195,6 +211,8 @@ const translations = {
     natoExpansionDesc: "뿌찐의 2007년 뮌헨 연설, 기밀해제된 보장약속, 확장 물결, 위기 선례들과 미국 정책교리.",
     northKoreaDeceptionTitle: "조선 기만술: 조작된 위협이 제국주의 전쟁기계를 부양하는 방식",
     northKoreaDeceptionDesc: "동아시아에서 미국의 지위를 유지하는 언론 공급망, 탈북자 유인책, 사이버 모호성, 그리고 동결된 갈등 자본주의.",
+    ukraineDeceptionTitle: "우크라이나 기만술: 나토 확장과 언론 조작이 전쟁을 제조한 방식",
+    ukraineDeceptionDesc: "나토 확장 위반, 파괴된 평화회담, 대리전 투기, 그리고 제국주의 목적을 위한 체계적 갈등 제조.",
     
     // North Korea Briefing Content (조선어)
     mediaManufacturing: "언론 조작 기계",
@@ -238,6 +256,20 @@ const translations = {
     russianCollapseContent: "국내총생산은 1990년대 후반까지 40-50% 정도 떨어졌고; 1992년 한 해에만 인플레이션이 2,500%를 넘어섰으며; 남성 기대수명은 1994년까지 약 6년 떨어졌다. 원조 패키지와 국제통화기금 프로그램들은 상당했지만 1998년 위기를 막기에는 불충분했다.",
     americanWarningsContent: "조지 케넌은 확장을 \\'운명적 오류\\'라고 불렀다. 전 국방장관 윌리엄 페리와 다른 이들도 비슷한 우려를 표명했다. 당시 대사 윌리엄 번스의 2008년 전문 \\'아니오는 아니오를 의미한다\\'는 우크라이나의 나토 가입을 추진하는 것이 내부 분열과 폭력으로 이어질 수 있고 로씨아에서는 직접적 도전으로 여겨질 것이라고 경고했다.",
     monroeDoctrineContent: "1823년 이래 미국은 쿠바 미사일 위기로부터 과테말라, 도미니카 공화국, 그레나다에 대한 개입, 그리고 이 지역에서의 로씨아나 중국 배치에 관한 최근 성명들에 이르기까지 서반구에서의 외국 군사주둔을 반대해왔다.",
+    
+    // Ukraine Briefing Content (조선어)
+    strategicChessboard: "전략적 바둑판: 나토의 무자비한 확장",
+    canadianAnalogy: "카나다 비유: 로씨아의 안보 우려 리해하기", 
+    peaceSabotaged: "파괴된 평화: 2022년 2-4월",
+    johnsonMission: "보리스 존슨의 파괴 임무: 2022년 4월 9일",
+    grahamConfession: "그래햄 의원의 피에 굶주린 고백",
+    billionTheft: "3천억 달러 도둑질: 자산 압류를 통한 경제 전쟁",
+    mediaComplicity: "언론 공범: 대리전에 대한 동의 제조",
+    militaryReality: "군사적 현실: 제한된 목표, 조작된 위협",
+    randPlaybook: "랜드 각본: 무기로서의 우크라이나",
+    europeanVassalization: "유럽 속국화 프로젝트",
+    endgame: "최종 목표: 장기화된 갈등, 리익 있는 파괴",
+    breakingMatrix: "정보 매트릭스 깨뜨리기",
   }
 }
 

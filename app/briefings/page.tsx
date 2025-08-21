@@ -38,11 +38,11 @@ export default function BriefingsIndexPage() {
           </li>
           <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
             <h2 className="text-2xl font-semibold mb-2">
-              <Link href="/briefings/ai-censorship-matrix" className="hover:underline">
-                The AI Censorship Matrix: How Western LLMs Suppress Anti‑Imperial Perspectives
+              <Link href="/briefings/ukraine-deception" className="hover:underline">
+                {t('ukraineDeceptionTitle')}
               </Link>
             </h2>
-            <p className="text-muted-foreground">How datasets, policy layers, and platform incentives create systematic blind spots in mainstream AI systems.</p>
+            <p className="text-muted-foreground">{t('ukraineDeceptionDesc')}</p>
           </li>
         </ul>
       </section>
