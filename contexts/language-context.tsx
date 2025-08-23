@@ -399,6 +399,8 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export function LanguageProvider({ children, initialLanguage, dictionary }: { children: React.ReactNode; initialLanguage?: Language, dictionary?: Record<string, string> }) {
   const [language, setLanguage] = useState<Language>(initialLanguage || 'en')
+  // Hold the active dictionary for the currently selected language (hydrated from server, refreshed on toggle)
+  const [activeDictionary, setActiveDictionary] = useState<Record<string, string> | null>(dictionary ?? null)
 
   useEffect(() => {
     // Hydrate from localStorage/cookies only if no initialLanguage provided
@@ -420,6 +422,22 @@ export function LanguageProvider({ children, initialLanguage, dictionary }: { ch
     }
   }, [initialLanguage])
 
+  // Load the correct dictionary whenever the language changes (client-side toggle)
+  useEffect(() => {
+    let cancelled = false
+    ;(async () => {
+      try {
+        const dictModule = await import(`@/i18n/${language}.json`).then((m) => m.default as Record<string, string>)
+        if (!cancelled) setActiveDictionary(dictModule)
+      } catch {
+        if (!cancelled) setActiveDictionary(null)
+      }
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [language])
+
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang)
     localStorage.setItem('preferred-language', lang)
@@ -428,8 +446,31 @@ export function LanguageProvider({ children, initialLanguage, dictionary }: { ch
   }
 
   const t = (key: string): string => {
-    if (dictionary && dictionary[key]) return dictionary[key]
-    return translations[language][key as keyof typeof translations['en']] || key
+    // Prefer the active dictionary for the current language (server-provided at first, swapped on toggle)
+    if (activeDictionary && activeDictionary[key]) return activeDictionary[key]
+
+    try {
+      // Safely access translations with fallback
+      const langTranslations = translations[language]
+      if (!langTranslations) {
+        console.warn(`Translation not found for language: ${language}`)
+        return key
+      }
+      
+      const translation = langTranslations[key as keyof typeof langTranslations]
+      if (translation) return translation
+      
+      // Fallback to English if translation doesn't exist in current language
+      const englishTranslation = translations['en'][key as keyof typeof translations['en']]
+      if (englishTranslation) return englishTranslation
+      
+      // If no translation found at all, log warning and return key
+      console.warn(`Translation key not found: ${key}`)
+      return key
+    } catch (error) {
+      console.error(`Error accessing translation for key: ${key}`, error)
+      return key
+    }
   }
 
   return (

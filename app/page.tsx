@@ -24,9 +24,9 @@ import type { Law } from "@/types/law"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [showLoading, setShowLoading] = useState(true) // Enable enhanced loading screen
+  const [showLoading, setShowLoading] = useState(false) // Disable enhanced loading screen for now
   const [selectedLaw, setSelectedLaw] = useState<Law | null>(null)
-  const [useEnhancedCards, setUseEnhancedCards] = useState(true)
+  const [useEnhancedCards, setUseEnhancedCards] = useState(false) // Use simple cards for now
 
   useScrollAnimation()
   const { t } = useLanguage()
@@ -66,15 +66,12 @@ export default function Home() {
   ]
 
   return (
-    <AccessibilityProvider>
-      <>
-        {showLoading && <EnhancedLoading onComplete={handleLoadingComplete} />}
-        <SkipLinks />
-        <AccessibilityToolbar />
-        <main
-          id="main-content"
-          className={`min-h-screen bg-background text-foreground transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"} gpu-accelerated`}
-        >
+    <>
+      {showLoading && <EnhancedLoading onComplete={handleLoadingComplete} />}
+      <main
+        id="main-content"
+        className={`min-h-screen bg-background text-foreground transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"}`}
+      >
         <ReadingProgress />
         <JucheHeader />
         <HeroSection />
@@ -120,23 +117,14 @@ export default function Home() {
           <div className="section-divider"></div>
         </div>
 
-        {/* Interactive Features Section */}
-        <ScrollReveal className="mb-16">
-          <InteractiveFeatures laws={laws} onLawSelect={handleLawSelect} />
-        </ScrollReveal>
+        {/* Simplified for now */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
-          <StaggeredReveal>
-            {laws.map((law, index) => (
-              <div key={law.number} className="will-change-transform">
-                {useEnhancedCards ? (
-                  <EnhancedLawCard law={law} index={index} />
-                ) : (
-                  <LawCard law={law} />
-                )}
-              </div>
-            ))}
-          </StaggeredReveal>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {laws.map((law, index) => (
+            <div key={law.number} className="animate-staggered-fade-in" style={{ animationDelay: `${(index % 6) * 0.1}s` }}>
+              <LawCard law={law} />
+            </div>
+          ))}
         </div>
       </div>
 
@@ -144,48 +132,49 @@ export default function Home() {
         <div className="section-divider"></div>
       </div>
 
-      <ScrollReveal direction="left">
+      <div className="section-transition">
+        <div className="section-divider"></div>
+      </div>
+
+      <div className="section-reveal">
         <CategorySection
           title={t('selfDisciplineTitle')}
           description={t('selfDisciplineDesc')}
           laws={selfDisciplineLaws}
           imagePath="/images/brothers.jpg"
-          bgClass="bg-muted/50 backdrop-blur-sm card-premium"
+          bgClass="bg-muted/50 backdrop-blur-sm"
         />
-      </ScrollReveal>
+      </div>
 
       <div className="section-transition">
         <div className="section-divider"></div>
       </div>
 
-      <ScrollReveal direction="right">
+      <div className="section-reveal">
         <CategorySection
           title={t('relationshipsTitle')}
           description={t('relationshipsDesc')}
           laws={relationshipLaws}
           imagePath="/images/jj.png"
-          bgClass="bg-secondary/50 backdrop-blur-sm card-premium"
+          bgClass="bg-secondary/50 backdrop-blur-sm"
         />
-      </ScrollReveal>
+      </div>
 
       <div className="section-transition">
         <div className="section-divider"></div>
       </div>
 
-      <ScrollReveal direction="up">
+      <div className="section-reveal">
         <AboutSection />
-      </ScrollReveal>
+      </div>
       
-      <ScrollReveal direction="up" delay={0.2}>
-        <div id="contact" className="bg-gradient-to-b from-background to-muted/30">
-          <ContactForm />
-        </div>
-      </ScrollReveal>
+      <div id="contact" className="bg-gradient-to-b from-background to-muted/30">
+        <ContactForm />
+      </div>
       
       <JucheFooter />
       <FloatingActionButton />
     </main>
-      </>
-    </AccessibilityProvider>
+    </>
   )
 }

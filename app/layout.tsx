@@ -3,7 +3,7 @@ import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
-import { getServerLanguage } from "@/lib/i18n-server"
+import { getServerLanguage, type Language } from "@/lib/i18n-server"
 import { getDictionary } from "@/lib/dictionary"
 import { Analytics } from "@vercel/analytics/next"
 
@@ -67,8 +67,17 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const serverLang = await getServerLanguage()
-  const dict = await getDictionary(serverLang)
+  let serverLang: Language = 'en'
+  let dict: Record<string, string> = {}
+  
+  try {
+    serverLang = await getServerLanguage()
+    dict = await getDictionary(serverLang)
+  } catch (error) {
+    console.warn('Failed to load server language or dictionary, using defaults:', error)
+    serverLang = 'en'
+    dict = {}
+  }
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
