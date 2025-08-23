@@ -84,7 +84,7 @@ export default async function SocialPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/90" />
         <div className="relative z-10 flex h-full items-end justify-center text-center px-4 pb-24 sm:pb-28 md:pb-36">
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-xl">Social Media</h1>
+            <h1 className="sr-only">Social Media</h1>
           </div>
         </div>
       </section>
