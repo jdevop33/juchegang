@@ -7,9 +7,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import Link from "next/link"
+import FocalImage from "@/components/focal-image"
 
 export default function CuisineTraditionsPage() {
   const { language } = useLanguage()
+  const cuisineAlt = language === 'kr' ? '한국 음식 배경' : 'Korean cuisine background'
 
   const traditionalDishes = [
     {
@@ -143,12 +145,23 @@ export default function CuisineTraditionsPage() {
     <>
       <JucheHeader />
       <main className="min-h-screen bg-gradient-to-b from-black via-orange-950 to-black pt-20">
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden">
+      {/* Hero Section with background image */}
+      <section className="relative py-20 px-4 overflow-hidden" style={{ minHeight: '60svh' }}>
+        {/* Background image */}
+        <FocalImage
+          src="/gallery/North_Korean_Bibimbap_비빔밥_(12330376074).jpg"
+          alt={cuisineAlt}
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="container mx-auto max-w-6xl text-center"
+          className="container mx-auto max-w-6xl text-center relative z-10"
         >
           <ChefHat className="h-16 w-16 text-orange-400 mx-auto mb-6" />
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-red-400 to-yellow-400 bg-clip-text text-transparent">

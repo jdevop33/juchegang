@@ -18,6 +18,7 @@ const focalMap: Record<string, FocalPoint> = {
   "/gallery/gallery-057.jpg": { x: 50, y: 35 }, // Law 47
   "/images/SupremeLeader.png": { x: 70, y: 85 }, // Social hero focal (legacy)
   "/gallery/herosocial.jpg": { x: 50, y: 40 }, // Social hero focal (preferred)
+  "/gallery/North_Korean_Bibimbap_비빔밥_(12330376074).jpg": { x: 50, y: 35 }, // Cuisine hero focal
   "/gallery/gallery-041.webp": { x: 50, y: 35 },
   "/gallery/gallery-042.jpg": { x: 50, y: 35 },
   "/gallery/gallery-040.webp": { x: 50, y: 35 },
