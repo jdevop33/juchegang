@@ -81,18 +81,15 @@ export default async function SocialPage() {
           sizes="100vw"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
-        <div className="relative z-10 flex h-full items-center justify-center text-center px-4">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/90" />
+        <div className="relative z-10 flex h-full items-end justify-center text-center px-4 pb-24 sm:pb-28 md:pb-36">
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white">Social Media</h1>
-            <p className="text-white/80 mt-3 max-w-3xl mx-auto text-base sm:text-lg">
-              Stories, images, and video that illuminate reality and promote understanding.
-            </p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-xl">Social Media</h1>
           </div>
         </div>
       </section>
       <div className="container mx-auto px-4 py-10">
-        <section className="mb-10">
+        <section className="mb-16">
           <h2 className="text-2xl font-semibold text-white mb-4">Profiles</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {socialProfiles.map((p) => (
