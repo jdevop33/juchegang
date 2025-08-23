@@ -6,6 +6,7 @@ import SafeFocalImage from "./safe-focal-image"
 import { getLawImage } from "@/lib/law-images"
 import { useLanguage } from "@/contexts/language-context"
 import { lawsKr } from "@/data/laws.kr"
+import { useAutoTranslate } from "@/hooks/use-auto-translate"
 
 interface FeaturedLawProps {
   law: Law
@@ -15,8 +16,11 @@ interface FeaturedLawProps {
 export function FeaturedLaw({ law, imagePath }: FeaturedLawProps) {
   const { t, language } = useLanguage()
   const localized = lawsKr[law.number]
-  const displayTitle = language === 'kr' ? (localized?.title ?? law.title) : law.title
-  const displayContent = language === 'kr' ? (localized?.content ?? law.content) : law.content
+  const shouldAuto = language === 'kr'
+  const { translated: autoTitle } = useAutoTranslate(!localized?.title ? law.title : undefined, shouldAuto, "KR", "EN")
+  const { translated: autoContent } = useAutoTranslate(!localized?.content ? law.content : undefined, shouldAuto, "KR", "EN")
+  const displayTitle = language === 'kr' ? (localized?.title ?? autoTitle ?? law.title) : law.title
+  const displayContent = language === 'kr' ? (localized?.content ?? autoContent ?? law.content) : law.content
   return (
     <div className="relative rounded-xl overflow-hidden shadow-2xl border-2 border-red-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
       {/* Communist Revolutionary Background */}

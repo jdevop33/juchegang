@@ -16,10 +16,10 @@ export function LanguageToggle() {
       onClick={toggleLanguage}
       variant="ghost"
       size="sm"
-      className="flex items-center gap-2 text-white hover:text-friendship-blue transition-colors"
+      className="flex items-center gap-2 text-white hover:text-friendship-blue language-bounce fluid-focus gentle-glow"
     >
-      <Globe className="h-4 w-4" />
-      <span className="font-bold">
+      <Globe className="h-4 w-4 transition-transform duration-300" />
+      <span className="font-bold transition-all duration-300">
         {language === 'en' ? t('switchToKorean') : t('switchToEnglish')}
       </span>
     </Button>

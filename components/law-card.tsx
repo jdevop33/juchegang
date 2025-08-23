@@ -9,6 +9,7 @@ import { getLawImage } from "@/lib/law-images"
 import FocalImage from "./focal-image"
 import SafeFocalImage from "./safe-focal-image"
 import { useState } from "react"
+import { useAutoTranslate } from "@/hooks/use-auto-translate"
 
 interface LawCardProps {
   law: Law
@@ -23,8 +24,23 @@ export function LawCard({ law }: LawCardProps) {
     triggerOnce: true,
   })
 
-  const displayTitle = language === 'kr' ? (localized?.title ?? law.title) : law.title
-  const displayContent = language === 'kr' ? (localized?.content ?? law.content) : law.content
+  // Auto-translate if Korean selected and no localized text present
+  const shouldAuto = language === 'kr'
+  const { translated: autoTitle } = useAutoTranslate(
+    !localized?.title ? law.title : undefined,
+    shouldAuto,
+    "KR",
+    "EN",
+  )
+  const { translated: autoContent } = useAutoTranslate(
+    !localized?.content ? law.content : undefined,
+    shouldAuto,
+    "KR",
+    "EN",
+  )
+
+  const displayTitle = language === 'kr' ? (localized?.title ?? autoTitle ?? law.title) : law.title
+  const displayContent = language === 'kr' ? (localized?.content ?? autoContent ?? law.content) : law.content
   const isContentLong = displayContent.length > 200
 
   return (

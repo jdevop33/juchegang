@@ -837,3 +837,385 @@
     );
   }
 }
+
+/* =================================================================== */
+/* FLUID UI ENHANCEMENTS - Enhanced smooth interactions and animations */
+/* =================================================================== */
+
+/* Enhanced fluid animations for better UX */
+@keyframes fluid-bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    transform: translate3d(0, -8px, 0);
+  }
+  70% {
+    transform: translate3d(0, -4px, 0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+@keyframes smooth-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes elastic-scale {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes ripple-effect {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes breathing {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes smooth-slide-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes magnetic-hover {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Fluid interaction classes */
+.fluid-bounce {
+  animation: fluid-bounce 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.smooth-pulse {
+  animation: smooth-pulse 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.elastic-scale {
+  animation: elastic-scale 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.breathing {
+  animation: breathing 3s ease-in-out infinite;
+}
+
+.smooth-slide-in {
+  animation: smooth-slide-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Enhanced hover transitions with magnetic effect */
+.fluid-hover {
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.fluid-hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.fluid-hover:hover::before {
+  width: 300px;
+  height: 300px;
+  animation: ripple-effect 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fluid-hover:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    0 0 80px hsl(var(--accent) / 0.15);
+}
+
+/* Magnetic attraction effect for interactive elements */
+.magnetic {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+
+.magnetic:hover {
+  animation: magnetic-hover 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Smooth focus states with elegant transitions */
+.fluid-focus:focus-visible {
+  outline: none;
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 0 3px hsl(var(--accent) / 0.5),
+    0 8px 32px hsl(var(--accent) / 0.3),
+    0 0 60px hsl(var(--accent) / 0.2);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Language toggle enhanced animations */
+.language-bounce {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center;
+}
+
+.language-bounce:hover {
+  transform: scale(1.1) rotate(5deg);
+  filter: brightness(1.2);
+}
+
+.language-bounce:active {
+  transform: scale(0.95) rotate(-2deg);
+}
+
+/* Enhanced button with fluid interactions */
+.btn-fluid {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: center;
+}
+
+.btn-fluid::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.btn-fluid:hover::after {
+  width: 400px;
+  height: 400px;
+}
+
+.btn-fluid:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 12px 24px rgba(0, 0, 0, 0.15),
+    0 0 40px hsl(var(--accent) / 0.2);
+}
+
+.btn-fluid:active {
+  transform: translateY(-1px) scale(0.98);
+  transition-duration: 0.1s;
+}
+
+/* Card with 3D fluid animations */
+.card-fluid {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card-fluid:hover {
+  transform: rotateY(3deg) rotateX(1deg) translateY(-8px);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.15),
+    0 0 100px hsl(var(--accent) / 0.1);
+}
+
+/* Text with gentle hover animations */
+.text-fluid {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.text-fluid:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: hsl(var(--accent));
+}
+
+/* Navigation with smooth underline animations */
+.nav-fluid {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+}
+
+.nav-fluid::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, hsl(var(--accent)), hsl(var(--destructive)));
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateX(-50%);
+}
+
+.nav-fluid:hover::after {
+  width: 100%;
+}
+
+.nav-fluid:hover {
+  color: hsl(var(--accent));
+  transform: translateY(-1px);
+}
+
+/* Enhanced scroll reveal animations */
+.scroll-fluid {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-fluid.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animations for lists and grids */
+.stagger-fluid:nth-child(1) { transition-delay: 0.1s; }
+.stagger-fluid:nth-child(2) { transition-delay: 0.2s; }
+.stagger-fluid:nth-child(3) { transition-delay: 0.3s; }
+.stagger-fluid:nth-child(4) { transition-delay: 0.4s; }
+.stagger-fluid:nth-child(5) { transition-delay: 0.5s; }
+.stagger-fluid:nth-child(6) { transition-delay: 0.6s; }
+.stagger-fluid:nth-child(7) { transition-delay: 0.7s; }
+.stagger-fluid:nth-child(8) { transition-delay: 0.8s; }
+
+/* Premium loading states */
+.loading-fluid {
+  background: linear-gradient(90deg, 
+    hsl(var(--muted)) 25%, 
+    hsl(var(--accent) / 0.3) 50%, 
+    hsl(var(--muted)) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+  border-radius: var(--radius);
+}
+
+/* Enhanced glass morphism with fluid interactions */
+.glass-fluid {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.glass-fluid:hover {
+  backdrop-filter: blur(30px) saturate(250%);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Floating action button enhancements */
+.fab-fluid {
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fab-fluid:hover {
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  animation: breathing 2s ease-in-out infinite;
+}
+
+/* Tooltip with fluid entrance */
+.tooltip-fluid {
+  opacity: 0;
+  transform: translateY(10px) scale(0.8);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip-fluid.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Performance optimizations for smooth animations */
+* {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gpu-boost {
+  transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
+}
+
+/* Micro-interactions for enhanced UX */
+.micro-bounce:active {
+  animation: elastic-scale 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.gentle-glow:hover {
+  box-shadow: 0 0 30px hsl(var(--accent) / 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Smooth page transitions */
+.page-transition {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.page-transition.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
