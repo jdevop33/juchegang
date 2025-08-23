@@ -46,38 +46,48 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : "button"
     
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-      // Create ripple effect
-      const button = e.currentTarget
-      const rect = button.getBoundingClientRect()
-      const size = Math.max(rect.width, rect.height)
-      const x = e.clientX - rect.left - size / 2
-      const y = e.clientY - rect.top - size / 2
-      
-      const ripple = document.createElement('span')
-      ripple.style.cssText = `
-        position: absolute;
-        left: ${x}px;
-        top: ${y}px;
-        width: ${size}px;
-        height: ${size}px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.3);
-        transform: scale(0);
-        animation: ripple-effect 0.6s linear;
-        pointer-events: none;
-        z-index: 1;
-      `
-      
-      button.appendChild(ripple)
-      
-      // Remove ripple after animation
-      setTimeout(() => {
-        if (ripple.parentNode) {
-          ripple.parentNode.removeChild(ripple)
-        }
-      }, 600)
-      
+      // Call the original onClick immediately first
       onClick?.(e)
+      
+      // Then create ripple effect asynchronously
+      requestAnimationFrame(() => {
+        try {
+          const button = e.currentTarget
+          if (!button) return
+          
+          const rect = button.getBoundingClientRect()
+          const size = Math.max(rect.width, rect.height)
+          const x = e.clientX - rect.left - size / 2
+          const y = e.clientY - rect.top - size / 2
+          
+          const ripple = document.createElement('span')
+          ripple.style.cssText = `
+            position: absolute;
+            left: ${x}px;
+            top: ${y}px;
+            width: ${size}px;
+            height: ${size}px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(0);
+            animation: ripple-effect 0.6s linear;
+            pointer-events: none;
+            z-index: 1;
+          `
+          
+          button.appendChild(ripple)
+          
+          // Remove ripple after animation
+          setTimeout(() => {
+            if (ripple.parentNode === button) {
+              button.removeChild(ripple)
+            }
+          }, 600)
+        } catch (error) {
+          // Silently handle any ripple effect errors
+          console.debug('Ripple effect error:', error)
+        }
+      })
     }
     
     return (

@@ -1,6 +1,6 @@
 "use client"
 
-import React, { createContext, useContext, useState, useEffect } from 'react'
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react'
 
 type Language = 'en' | 'kr'
 
@@ -438,14 +438,25 @@ export function LanguageProvider({ children, initialLanguage, dictionary }: { ch
     }
   }, [language])
 
-  const handleSetLanguage = (lang: Language) => {
+  const handleSetLanguage = useCallback((lang: Language) => {
+    console.log('Setting language to:', lang)
+    
+    // Update state immediately
     setLanguage(lang)
-    localStorage.setItem('preferred-language', lang)
-    const oneYear = 60 * 60 * 24 * 365
-    document.cookie = `preferred-language=${lang}; path=/; max-age=${oneYear}`
-  }
+    
+    // Save to storage asynchronously to avoid blocking
+    requestAnimationFrame(() => {
+      try {
+        localStorage.setItem('preferred-language', lang)
+        const oneYear = 60 * 60 * 24 * 365
+        document.cookie = `preferred-language=${lang}; path=/; max-age=${oneYear}`
+      } catch (error) {
+        console.error('Failed to save language preference:', error)
+      }
+    })
+  }, [])
 
-  const t = (key: string): string => {
+  const t = useCallback((key: string): string => {
     // Prefer the active dictionary for the current language (server-provided at first, swapped on toggle)
     if (activeDictionary && activeDictionary[key]) return activeDictionary[key]
 
@@ -471,7 +482,7 @@ export function LanguageProvider({ children, initialLanguage, dictionary }: { ch
       console.error(`Error accessing translation for key: ${key}`, error)
       return key
     }
-  }
+  }, [activeDictionary, language])
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
