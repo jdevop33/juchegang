@@ -69,7 +69,10 @@ export default async function SocialPage() {
     <>
       <JucheHeader />
       <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black pt-20">
-      <section className="relative h-[280px] md:h-[420px]">
+      <section
+        className="relative h-auto"
+        style={{ minHeight: 'calc(100svh - 5rem)' }}
+      >
         <FocalImage
           src="/images/SupremeLeader.png"
           alt="Juche Social"
@@ -81,8 +84,8 @@ export default async function SocialPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
         <div className="relative z-10 flex h-full items-center justify-center text-center px-4">
           <div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white">Social Media</h1>
-            <p className="text-white/80 mt-3 max-w-3xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white">Social Media</h1>
+            <p className="text-white/80 mt-3 max-w-3xl mx-auto text-base sm:text-lg">
               Stories, images, and video that illuminate reality and promote understanding.
             </p>
           </div>
