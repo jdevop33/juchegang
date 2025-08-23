@@ -2,6 +2,20 @@
 
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
+import FocalImage from "@/components/focal-image"
+import { socialProfiles } from "@/lib/social-profiles"
+
+export const metadata = {
+  title: "Social Media",
+  description: "Follow Juche GanG across platforms. Updates, media and analysis.",
+  openGraph: {
+    title: "Social Media — Juche GanG",
+    description: "Follow Juche GanG across platforms. Updates, media and analysis.",
+    images: [
+      { url: "/images/SupremeLeader.png", width: 1200, height: 630, alt: "Juche Social" },
+    ],
+  },
+}
 
 export const revalidate = 900 // 15 minutes
 
@@ -22,14 +36,27 @@ type InstagramPost = {
 }
 
 async function fetchYouTube(channelIds: string[]): Promise<YouTubeVideo[]> {
-  // Placeholder: expects an edge function or API route to proxy API keys
-  // For now, return an empty array to keep page functional without secrets.
-  return []
+  try {
+    const params = new URLSearchParams()
+    if (channelIds.length > 0) params.set("channelIds", channelIds.join(","))
+    const res = await fetch(`/api/social/youtube?${params.toString()}`, { cache: "no-store" })
+    const json = await res.json()
+    return json.items ?? []
+  } catch {
+    return []
+  }
 }
 
 async function fetchInstagram(usernames: string[]): Promise<InstagramPost[]> {
-  // Placeholder: expects an edge function or API route to proxy tokens
-  return []
+  try {
+    const params = new URLSearchParams()
+    if (usernames.length > 0) params.set("usernames", usernames.join(","))
+    const res = await fetch(`/api/social/instagram?${params.toString()}`, { cache: "no-store" })
+    const json = await res.json()
+    return json.items ?? []
+  } catch {
+    return []
+  }
 }
 
 export default async function SocialPage() {
@@ -42,11 +69,49 @@ export default async function SocialPage() {
     <>
       <JucheHeader />
       <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black pt-20">
+      <section className="relative h-[280px] md:h-[420px]">
+        <FocalImage
+          src="/images/SupremeLeader.png"
+          alt="Juche Social"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
+        <div className="relative z-10 flex h-full items-center justify-center text-center px-4">
+          <div>
+            <h1 className="text-4xl md:text-6xl font-bold text-white">Social Media</h1>
+            <p className="text-white/80 mt-3 max-w-3xl mx-auto">
+              Stories, images, and video that illuminate reality and promote understanding.
+            </p>
+          </div>
+        </div>
+      </section>
       <div className="container mx-auto px-4 py-10">
-        <header className="mb-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white">Social Streams</h1>
-          <p className="text-white/80 mt-2">Follow us on social media for updates.</p>
-        </header>
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-white mb-4">Profiles</h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {socialProfiles.map((p) => (
+              <a
+                key={p.url}
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-4 rounded-lg bg-black/30 border border-white/10 hover:bg-black/40 transition-colors"
+              >
+                {/* Simple platform badge */}
+                <span className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-white/10 text-white capitalize">
+                  {p.platform[0]}
+                </span>
+                <div>
+                  <div className="text-white font-medium">{p.displayName ?? `@${p.handle}`}</div>
+                  <div className="text-white/60 text-sm">{p.platform}</div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-white mb-4">Instagram</h2>

@@ -35,6 +35,7 @@ export function HeroSection() {
           alt="Juche 2025"
           fill
           className="object-cover object-center scale-105"
+          sizes="100vw"
           priority
         />
 

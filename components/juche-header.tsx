@@ -31,7 +31,7 @@ export function JucheHeader() {
         isScrolled ? "bg-red-950/90 backdrop-blur-md border-b border-red-800" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between safe-area-padding">
         <div className="flex items-center">
           <h1 className="text-2xl font-bold text-red-300 hover:text-white transition-colors">
             <Link href="/">Juche GanG</Link>
@@ -106,7 +106,7 @@ export function JucheHeader() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-red-200 hover:text-white p-2"
+          className="md:hidden text-red-200 hover:text-white p-3"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >

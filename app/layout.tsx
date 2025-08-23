@@ -67,7 +67,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const serverLang = getServerLanguage()
+  const serverLang = await getServerLanguage()
   const dict = await getDictionary(serverLang)
   return (
     <html lang="en" suppressHydrationWarning>

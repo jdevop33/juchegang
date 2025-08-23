@@ -1,6 +1,7 @@
 "use client"
 
 import { LawCard } from "@/components/law-card"
+import { EnhancedLawCard } from "@/components/enhanced-law-card"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { HeroSection } from "@/components/hero-section"
@@ -11,25 +12,40 @@ import { CategorySection } from "@/components/category-section"
 import { TriptychDivider } from "@/components/triptych-divider"
 import { FloatingActionButton } from "@/components/floating-action-button"
 import { ReadingProgress } from "@/components/reading-progress"
-import { LoadingScreen } from "@/components/loading-screen"
+import { EnhancedLoading } from "@/components/enhanced-loading"
+import { InteractiveFeatures } from "@/components/interactive-features"
+import { AccessibilityProvider, AccessibilityToolbar, SkipLinks } from "@/components/accessibility-enhancements"
 import { ContactForm } from "@/components/contact-form"
+import { ScrollReveal, StaggeredReveal } from "@/hooks/use-scroll-reveal"
 import { laws } from "@/data/laws"
 import { useState, useEffect } from "react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import type { Law } from "@/types/law"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [showLoading, setShowLoading] = useState(false) // Disable loading screen for now
+  const [showLoading, setShowLoading] = useState(true) // Enable enhanced loading screen
+  const [selectedLaw, setSelectedLaw] = useState<Law | null>(null)
+  const [useEnhancedCards, setUseEnhancedCards] = useState(true)
 
   useScrollAnimation()
   const { t } = useLanguage()
 
   useEffect(() => {
-    setIsLoaded(true)
+    // Simulate loading time for stellar experience
+    const timer = setTimeout(() => {
+      setIsLoaded(true)
+    }, 100)
+    
+    return () => clearTimeout(timer)
   }, [])
 
   const handleLoadingComplete = () => {
     setShowLoading(false)
+  }
+
+  const handleLawSelect = (law: Law) => {
+    setSelectedLaw(law)
   }
 
   // Featured laws
@@ -50,11 +66,15 @@ export default function Home() {
   ]
 
   return (
-    <>
-      {showLoading && <LoadingScreen onComplete={handleLoadingComplete} />}
-      <main
-        className={`min-h-screen bg-background text-foreground transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"}`}
-      >
+    <AccessibilityProvider>
+      <>
+        {showLoading && <EnhancedLoading onComplete={handleLoadingComplete} />}
+        <SkipLinks />
+        <AccessibilityToolbar />
+        <main
+          id="main-content"
+          className={`min-h-screen bg-background text-foreground transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"} gpu-accelerated`}
+        >
         <ReadingProgress />
         <JucheHeader />
         <HeroSection />
@@ -100,12 +120,23 @@ export default function Home() {
           <div className="section-divider"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {laws.map((law, index) => (
-            <div key={law.number} className="animate-staggered-fade-in" style={{ animationDelay: `${(index % 6) * 0.1}s` }}>
-              <LawCard law={law} />
-            </div>
-          ))}
+        {/* Interactive Features Section */}
+        <ScrollReveal className="mb-16">
+          <InteractiveFeatures laws={laws} onLawSelect={handleLawSelect} />
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
+          <StaggeredReveal>
+            {laws.map((law, index) => (
+              <div key={law.number} className="will-change-transform">
+                {useEnhancedCards ? (
+                  <EnhancedLawCard law={law} index={index} />
+                ) : (
+                  <LawCard law={law} />
+                )}
+              </div>
+            ))}
+          </StaggeredReveal>
         </div>
       </div>
 
@@ -113,45 +144,48 @@ export default function Home() {
         <div className="section-divider"></div>
       </div>
 
-      <div className="section-reveal">
+      <ScrollReveal direction="left">
         <CategorySection
           title={t('selfDisciplineTitle')}
           description={t('selfDisciplineDesc')}
           laws={selfDisciplineLaws}
           imagePath="/images/brothers.jpg"
-          bgClass="bg-muted/50 backdrop-blur-sm"
+          bgClass="bg-muted/50 backdrop-blur-sm card-premium"
         />
-      </div>
+      </ScrollReveal>
 
       <div className="section-transition">
         <div className="section-divider"></div>
       </div>
 
-      <div className="section-reveal">
+      <ScrollReveal direction="right">
         <CategorySection
           title={t('relationshipsTitle')}
           description={t('relationshipsDesc')}
           laws={relationshipLaws}
           imagePath="/images/jj.png"
-          bgClass="bg-secondary/50 backdrop-blur-sm"
+          bgClass="bg-secondary/50 backdrop-blur-sm card-premium"
         />
-      </div>
+      </ScrollReveal>
 
       <div className="section-transition">
         <div className="section-divider"></div>
       </div>
 
-      <div className="section-reveal">
+      <ScrollReveal direction="up">
         <AboutSection />
-      </div>
+      </ScrollReveal>
       
-      <div id="contact" className="bg-gradient-to-b from-background to-muted/30">
-        <ContactForm />
-      </div>
+      <ScrollReveal direction="up" delay={0.2}>
+        <div id="contact" className="bg-gradient-to-b from-background to-muted/30">
+          <ContactForm />
+        </div>
+      </ScrollReveal>
       
       <JucheFooter />
       <FloatingActionButton />
     </main>
-    </>
+      </>
+    </AccessibilityProvider>
   )
 }

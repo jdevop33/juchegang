@@ -86,6 +86,7 @@ export function FeaturedLaw({ law, imagePath }: FeaturedLawProps) {
             alt={`${t('lawLabel')} ${law.number}: ${displayTitle}`}
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-red-900/80 to-transparent"></div>
         </div>

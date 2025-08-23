@@ -1,21 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://juchegang.com/</loc>
-    <lastmod>2025-08-20</lastmod>
+    <loc>https://juche.org/</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://juchegang.com/gallery</loc>
-    <lastmod>2025-08-20</lastmod>
+    <loc>https://juche.org/gallery</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/briefings</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://juchegang.com/briefings/nato-expansion</loc>
-    <lastmod>2025-08-20</lastmod>
+    <loc>https://juche.org/briefings/nato-expansion</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/briefings/ukraine-deception</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/briefings/north-korea-deception</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/briefings/false-flag-cyber-operations</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/briefings/ai-censorship-matrix</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/briefings/apt-down-files</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/truth-project</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/truth-project/op-ed</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/truth-project/report</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/mission</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/contact</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/channels</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/social</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/cultural-exchange</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/cuisine-traditions</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/youth-empowerment</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juche.org/peace-timeline</loc>
+    <lastmod>2025-08-23T10:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -1,5 +1,8 @@
-import Image, { ImageProps } from "next/image"
+import Image from "next/image"
+import { ComponentProps } from "react"
 import { getFocalForImage } from "@/lib/image-focal-points"
+
+type ImageProps = ComponentProps<typeof Image>
 
 type FocalImageProps = Omit<ImageProps, "src" | "alt"> & {
   src: string
