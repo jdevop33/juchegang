@@ -39,11 +39,12 @@ export function LanguageToggle() {
     <button
       onClick={toggleLanguage}
       disabled={isToggling}
-      className="flex items-center gap-2 px-3 py-2 rounded text-sm font-medium text-white hover:text-friendship-blue transition-all duration-200 hover:bg-white/10 disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-friendship-blue/50"
+      aria-label={language === 'en' ? t('switchToKorean') : t('switchToEnglish')}
+      className="flex items-center gap-2 px-3 py-2 rounded text-sm font-medium text-white hover:text-friendship-blue transition-all duration-200 hover:bg-white/10 disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-friendship-blue/50 min-h-[44px] min-w-[44px]"
       type="button"
     >
-      <Globe className={`h-4 w-4 transition-transform duration-300 ${isToggling ? 'animate-spin' : ''}`} />
-      <span className="font-bold">
+      <Globe className={`h-5 w-5 transition-transform duration-300 ${isToggling ? 'animate-spin' : ''}`} />
+      <span className="font-bold hidden sm:inline">
         {language === 'en' ? t('switchToKorean') : t('switchToEnglish')}
       </span>
     </button>

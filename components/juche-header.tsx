@@ -99,19 +99,22 @@ export function JucheHeader() {
           </ul>
         </nav>
 
-        {/* Language Toggle */}
+        {/* Language Toggle (desktop) */}
         <div className="hidden md:block">
           <LanguageToggle />
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-red-200 hover:text-white p-3"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+        {/* Mobile actions: language + menu */}
+        <div className="md:hidden flex items-center gap-2">
+          <LanguageToggle />
+          <button
+            className="text-red-200 hover:text-white p-3"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
