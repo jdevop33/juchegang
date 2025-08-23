@@ -12,7 +12,7 @@ const focalMap: Record<string, FocalPoint> = {
   "/gallery/gallery-064.png": { x: 50, y: 35 }, // Law 1
   "/gallery/gallery-063.png": { x: 50, y: 35 }, // Law 3
   "/gallery/gallery-054.webp": { x: 50, y: 35 }, // Law 5
-  "/gallery/gallery-046.webp": { x: 50, y: 72 }, // Law 7 (move further down)
+  "/gallery/gallery-046.webp": { x: 50, y: 24 }, // Law 7 (show full face)
   "/gallery/gallery-044.jpg": { x: 50, y: 35 }, // Law 8
   "/gallery/gallery-055.webp": { x: 50, y: 38 }, // Law 46 (more headroom)
   "/gallery/gallery-057.jpg": { x: 50, y: 35 }, // Law 47
