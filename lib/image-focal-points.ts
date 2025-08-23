@@ -39,8 +39,8 @@ const focalMap: Record<string, FocalPoint> = {
   "/gallery/gallery-012.webp": { x: 50, y: 20 }, // Law 12 (come down a bit more)
   "/gallery/gallery-016.webp": { x: 50, y: 32 }, // Law 16
   "/gallery/gallery-020.webp": { x: 50, y: 32 }, // Law 20
-  "/gallery/gallery-023.jpg": { x: 50, y: 32 },  // Law 23
-  "/gallery/gallery-030.jpg": { x: 50, y: 32 },  // Law 30
+  "/gallery/gallery-023.jpg": { x: 50, y: 24 },  // Law 23 (move further down)
+  "/gallery/gallery-030.jpg": { x: 50, y: 20 },  // Law 30 (move further down to show face)
   "/gallery/gallery-034.jpg": { x: 50, y: 32 },  // Law 34
   // Law 4 dynamic file varies, but we bias downward crop
   "/gallery/gallery-004.jpg": { x: 50, y: 35 },
