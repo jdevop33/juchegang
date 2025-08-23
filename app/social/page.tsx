@@ -70,8 +70,8 @@ export default async function SocialPage() {
       <JucheHeader />
       <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black pt-20">
       <section
-        className="relative h-auto"
-        style={{ minHeight: 'calc(100svh - 5rem)' }}
+        className="relative h-auto -mt-20"
+        style={{ minHeight: '100svh' }}
       >
         <FocalImage
           src="/images/SupremeLeader.png"
@@ -81,7 +81,7 @@ export default async function SocialPage() {
           sizes="100vw"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
         <div className="relative z-10 flex h-full items-center justify-center text-center px-4">
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white">Social Media</h1>
