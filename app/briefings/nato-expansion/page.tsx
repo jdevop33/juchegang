@@ -24,7 +24,7 @@ export default function NatoExpansionBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
-      <BriefingBanner src="/images/brothers.jpg" alt="NATO expansion" aspect="12/5" contain overlay="bottom" />
+  <BriefingBanner src="/images/coolgang2.png" alt="NATO expansion" aspect="12/5" contain overlay="bottom" />
       <NATOExpansionContent />
       <JucheFooter />
     </main>

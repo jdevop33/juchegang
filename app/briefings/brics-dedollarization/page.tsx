@@ -24,7 +24,7 @@ export default function BRICSDedollarizationBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
-      <BriefingBanner src="/images/briefing2banner.png" alt="BRICS de-dollarization" aspect="12/5" contain overlay="bottom" />
+  <BriefingBanner src="/images/coolgang2.png" alt="BRICS de-dollarization" aspect="12/5" contain overlay="bottom" />
       <BRICSDedollarizationContent />
       <JucheFooter />
     </main>

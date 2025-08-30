@@ -30,7 +30,7 @@ export default function NorthKoreaDeceptionBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
-  <BriefingBanner src="/images/featured-bg.jpg" alt="North Korea deception" aspect="12/5" contain overlay="bottom" />
+  <BriefingBanner src="/images/coolgang2.png" alt="North Korea deception" aspect="12/5" contain overlay="bottom" />
   <NorthKoreaDeceptionContent />
       <JucheFooter />
     </main>

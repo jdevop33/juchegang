@@ -23,7 +23,7 @@ export default function AIConfessionBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
-  <BriefingBanner src="/images/hero-image.png" alt="AI confession" aspect="12/5" contain overlay="bottom" />
+  <BriefingBanner src="/images/coolgang2.png" alt="AI confession" aspect="12/5" contain overlay="bottom" />
       <AIConfessionContent />
       <JucheFooter />
     </main>

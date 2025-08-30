@@ -23,7 +23,7 @@ export default function TruthForPeaceBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
-  <BriefingBanner src="/images/featured-bg.jpg" alt="Truth for peace" aspect="12/5" contain overlay="bottom" />
+  <BriefingBanner src="/images/coolgang2.png" alt="Truth for peace" aspect="12/5" contain overlay="bottom" />
       <TruthForPeaceContent />
       <JucheFooter />
     </main>

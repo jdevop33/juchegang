@@ -24,7 +24,7 @@ export default function APTDownBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
-  <BriefingBanner src="/images/hero-image.png" alt="APT Down files" aspect="12/5" contain overlay="bottom" />
+  <BriefingBanner src="/images/coolgang2.png" alt="APT Down files" aspect="12/5" contain overlay="bottom" />
       <APTDownContent />
       <JucheFooter />
     </main>
