@@ -7,6 +7,58 @@ import { useState } from "react"
 
 const expertQuotes = [
   {
+    name: "US Interior Secretary Ryan Zinke",
+    title: "Former Trump Administration",
+    quote: {
+      en: "The findings are shocking. The fact that previous administrations allowed the United States to become reliant on foreign nations, including our competitors and adversaries, for minerals that are so strategically important to our security and economy is deeply troubling.",
+      kr: "결과가 충격적입니다. 이전 행정부들이 미국이 우리의 안보와 경제에 매우 전략적으로 중요한 광물들에 대해 경쟁국과 적대국을 포함한 외국에 의존하게 된 것은 매우 우려스럽습니다."
+    },
+    image: "/images/experts/zinke.jpg",
+    social: {
+      twitter: "https://twitter.com/SecretaryZinke",
+      linkedin: "https://linkedin.com/in/ryan-zinke"
+    }
+  },
+  {
+    name: "Energy Secretary Jennifer Granholm",
+    title: "Biden Administration",
+    quote: {
+      en: "The explosive growth of AI is posing this big question: Are we going to have enough energy to power AI? We need utilities requesting almost seven times as much funding as we have available.",
+      kr: "AI의 폭발적 성장이 큰 질문을 제기합니다: AI에 전력을 공급할 에너지가 충분할까요? 유틸리티들이 우리가 보유한 것의 거의 7배에 달하는 자금을 요청하고 있습니다."
+    },
+    image: "/images/experts/granholm.jpg",
+    social: {
+      twitter: "https://twitter.com/SecGranholm",
+      linkedin: "https://linkedin.com/in/jennifer-granholm"
+    }
+  },
+  {
+    name: "Siegfried Russwurm",
+    title: "German Industry President",
+    quote: {
+      en: "The substance of our industry is under threat. At the current price level, it will mean an automatic deindustrialization for Germany. We risk turning from an industrial country into an industrial museum.",
+      kr: "우리 산업의 핵심이 위협받고 있습니다. 현재 가격 수준에서는 독일의 자동적인 탈산업화를 의미할 것입니다. 우리는 산업국가에서 산업박물관으로 전락할 위험에 있습니다."
+    },
+    image: "/images/experts/russwurm.jpg",
+    social: {
+      twitter: "https://twitter.com/BDI_Industrie",
+      linkedin: "https://linkedin.com/in/siegfried-russwurm"
+    }
+  },
+  {
+    name: "Commerce Secretary Howard Lutnick",
+    title: "Trump Administration",
+    quote: {
+      en: "The idea is to bring copper home, bring copper production home. We need that kind of production in America, it's important - but we imported $17 billion worth of copper in 2024.",
+      kr: "아이디어는 구리를 국내로, 구리 생산을 국내로 가져오는 것입니다. 미국에는 그런 생산이 필요하고 중요합니다 - 하지만 우리는 2024년에 170억 달러 상당의 구리를 수입했습니다."
+    },
+    image: "/images/experts/lutnick.jpg",
+    social: {
+      twitter: "https://twitter.com/howardlutnick",
+      linkedin: "https://linkedin.com/in/howard-lutnick"
+    }
+  },
+  {
     name: "Dr. Mohammad Marandi",
     title: "University of Tehran Professor",
     quote: {
@@ -30,32 +82,6 @@ const expertQuotes = [
     social: {
       twitter: "https://twitter.com/jeffdsachs",
       linkedin: "https://linkedin.com/in/jeffrey-sachs"
-    }
-  },
-  {
-    name: "Alexander Mercouris",
-    title: "International Law Expert",
-    quote: {
-      en: "The legal foundation for European snapback sanctions is questionable at best. International law doesn't support unilateral enforcement when the original agreement has already collapsed.",
-      kr: "유럽의 스냅백 제재에 대한 법적 근거는 기껏해야 의문스럽습니다. 원래 협정이 이미 붕괴된 상황에서 일방적 강제 집행을 국제법은 지지하지 않습니다."
-    },
-    image: "/images/experts/mercouris.jpg",
-    social: {
-      twitter: "https://twitter.com/alexmercouris",
-      linkedin: "https://linkedin.com/in/alexander-mercouris"
-    }
-  },
-  {
-    name: "Pepe Escobar",
-    title: "Geopolitical Analyst",
-    quote: {
-      en: "This is Europe's last desperate attempt to maintain relevance in a multipolar world. But China and Russia aren't playing by the old Western rules anymore.",
-      kr: "이것은 다극 세계에서 관련성을 유지하려는 유럽의 마지막 필사적 시도입니다. 하지만 중국과 러시아는 더 이상 옛 서방의 규칙을 따르지 않습니다."
-    },
-    image: "/images/experts/escobar.jpg",
-    social: {
-      twitter: "https://twitter.com/RealPepeEscobar",
-      linkedin: "https://linkedin.com/in/pepe-escobar"
     }
   }
 ]
@@ -224,6 +250,60 @@ export default function IranSnapbackContent() {
             </h2>
             <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
               {t('newWorldOrderContent')}
+            </div>
+          </section>
+
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('rentSeekingEmpire')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('rentSeekingEmpireContent')}
+            </div>
+          </section>
+
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('infrastructureCollapse')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('infrastructureCollapseContent')}
+            </div>
+          </section>
+
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('colonialExtraction')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('colonialExtractionContent')}
+            </div>
+          </section>
+
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('industrialExodus')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('industrialExodusContent')}
+            </div>
+          </section>
+
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('supplyChainDependence')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('supplyChainDependenceContent')}
+            </div>
+          </section>
+
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('theBouncerWithoutAParty')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('theBouncerWithoutAPartyContent')}
             </div>
           </section>
 

@@ -240,12 +240,20 @@ const translations = {
     
     // Iran Snapback Briefing Content
     snapbackExplained: "What Are Snapback Sanctions?",
-    europeanGambit: "Europe's Desperate Gambit",
+    europeanGambit: "Europe's Desperate Gambit", 
     legalAuthority: "The Legal Authority Question",
     financialWeakness: "Broke Powers Playing Tough",
     enforcementReality: "The Enforcement Problem",
     newWorldOrder: "The New World Order Emerges",
-    expertVoices: "Expert Analysis",
+    expertVoices: "What the Officials Are Really Saying",
+    
+    // New Story-Based Sections
+    rentSeekingEmpire: "The Rent-Seeking Empire: How America Stopped Making Things",
+    infrastructureCollapse: "The Great Infrastructure Lie: Why the Lights Won't Stay On", 
+    colonialExtraction: "The Colonial Extraction Racket: France's African Uranium Theft",
+    industrialExodus: "The Great German Exodus: When Your Own Companies Flee",
+    supplyChainDependence: "The Ultimate Dependence: Building Weapons from Enemy Materials",
+    theBouncerWithoutAParty: "The Bouncer Realizes the Party Moved",
     
     // Ukraine Briefing Detailed Content (English)
     strategicChessboardContent: "NATO's eastward march is no accident. From 1991 to 2024, the alliance has advanced 1,000 miles toward Russia's border, expanding from 15 nations at Warsaw Pact dissolution to 32. Each wave—1999 (Czech Republic, Hungary, Poland), 2004 (Baltic Three plus four Central European), 2009 (Albania, Croatia)—further eroded Russia's strategic buffer zone. Ukrainian membership wasn't just expansion; it was total encirclement of Russia with NATO borders and direct threats to Crimean fleet bases at Sevastopol. When the 2008 Bucharest Declaration promised Georgian and Ukrainian membership, the West deliberately crossed Russia's stated red lines.",
@@ -306,7 +314,20 @@ const translations = {
     financialWeaknessContent: "Here's what makes this embarrassing: France owes 116% of its GDP and might need the IMF to bail them out. Britain owes 96% of its GDP and faces similar warnings. These are the countries trying to economically punish Iran. It's like two people who can barely pay rent trying to financially intimidate their neighbor. The weakness shows, and everyone can see it.",
     enforcementRealityContent: "Even if Europe triggers snapback, China and Russia have already said they won't follow the sanctions. Iran's Foreign Minister warned this move 'will turn Europe into a permanently spent force.' Without China and Russia enforcing the sanctions, Europe ends up punishing only themselves - cutting off trade while Iran's biggest partners keep doing business. It's economic self-harm disguised as strength.",
     newWorldOrderContent: "This crisis shows the world is changing. America used to enforce global rules through economic pressure. Now China and Russia openly defy Western sanctions and nothing happens to them. Iran trades with both powers despite decades of sanctions. The old system where Washington and Brussels could control global commerce is breaking down. New power centers are emerging, and the West's financial dominance is ending.",
-    expertVoicesContent: "The experts are divided. Some say Europe has legal authority, others say the deal died with American withdrawal. But everyone agrees on one thing: without China and Russia's cooperation, European sanctions are largely meaningless. The world has changed, and Europe's attempt to act tough might just highlight how weak they've become.",
+    expertVoicesContent: "Listen to what their own officials are admitting. Interior Secretary Ryan Zinke called American dependence on foreign minerals 'shocking' and 'deeply troubling.' Energy Secretary Jennifer Granholm admits they need 'almost seven times as much funding as we have available' for the power grid. German industry leaders warn of 'automatic deindustrialization.' These aren't enemy propaganda - these are confessions from the people making the threats.",
+    
+    // New Story-Based Content
+    rentSeekingEmpireContent: "America went from being the world's factory to being the world's financial police. Manufacturing dropped to just 10% of GDP while finance and real estate became the biggest contributors. They make threats instead of products people actually want. China and Russia trade $237 billion in actual goods - energy, manufactured products, raw materials - while America's main export is threats about who other countries can trade with. It's like being a middleman in a world where everyone decides to trade directly with each other.",
+    
+    infrastructureCollapseContent: "Texas Senator Ted Cruz fled to Mexico when his own state's power grid failed in winter. Now they promise AI everywhere and data centers that need 30 times more power by 2035 - but their grid is already at 2.3% vacancy with 4-5 year delays just for basic transformers. Energy Secretary Granholm admits utilities are requesting 'almost seven times as much funding as we have available.' How do you power AI utopia when your own senator runs to another country because the lights don't work?",
+    
+    colonialExtractionContent: "France bought uranium from Niger for 60 years at 80 cents per kilogram while paying Canada $200 per kilogram for the same uranium - that's 0.4% of market price. In France, one out of every three light bulbs was lit with stolen Nigerien uranium. In Niger, 90% of people had no electricity. After Niger's 2023 coup kicked out the French, uranium prices jumped to market rates overnight - a 25,000% increase. France's entire energy model was built on colonial theft, and now they're going broke because they can't steal anymore.",
+    
+    industrialExodusContent: "Germany's biggest chemical company BASF is closing 11 factories at home and moving to Louisiana and China. Two-thirds of German companies have already relocated operations abroad because German energy costs are too high. It gets worse: 37% of German industrial companies are considering cutting production or leaving entirely. The country that once powered European industry is watching its own companies flee to America and China for cheaper energy and less bureaucracy.",
+    
+    supplyChainDependenceContent: "America imports 95% of rare earth metals from China, 99% of uranium (mostly from Russia and Kazakhstan), and is 100% import reliant on 20 critical minerals. The Pentagon admits 78% of weapons systems depend on Chinese materials. Commerce Secretary Howard Lutnick says we need to 'bring copper production home' - while importing $17 billion worth of copper in 2024. You can't threaten countries you depend on for the materials to build your weapons. It's like declaring war on your own supply chain.",
+    
+    theBouncerWithoutAPartyContent: "America became the bouncer for a global financial system, but the party moved to a different building entirely. China offers loans to Burkina Faso at 3% while Americans pay over 4% to borrow their own dollars. Chinese manufacturers get electricity at half the cost of European competitors. When Iran sells oil directly to China for yuan, when Russia and China trade in their own currencies, when 67% of German companies relocate to avoid Western energy costs - the bouncer realizes he's standing guard over an empty room while the real party happens elsewhere.",
   },
   kr: {
     // Navigation
@@ -594,7 +615,20 @@ const translations = {
     financialWeaknessContent: "창피한 것은 다음과 같습니다: 프랑스는 GDP의 116%를 빚지고 있고 IMF 구제금융을 받아야 할지도 모릅니다. 영국은 GDP의 96%를 빚지고 있고 비슷한 경고를 받고 있습니다. 이런 나라들이 이란을 경제적으로 처벌하려 하고 있습니다. 집세도 겨우 낼 수 있는 두 사람이 이웃을 재정적으로 협박하려는 것과 같습니다. 약점이 드러나고 모든 사람이 볼 수 있습니다.",
     enforcementRealityContent: "유럽이 되돌이를 발동해도 중국과 로씨아는 이미 제재를 따르지 않겠다고 말했습니다. 이란 외무장관은 이 조치가 \\'유럽을 영구히 지친 세력으로 만들 것\\'이라고 경고했습니다. 중국과 로씨아가 제재를 집행하지 않으면, 유럽은 결국 자기들만 처벌하게 됩니다 - 이란의 가장 큰 파트너들은 계속 사업을 하는 동안 무역을 끊는 것입니다. 힘으로 위장한 경제적 자해입니다.",
     newWorldOrderContent: "이 위기는 세계가 변하고 있음을 보여줍니다. 미국은 경제적 압력을 통해 글로벌 규칙을 집행하곤 했습니다. 이제 중국과 로씨아는 공공연히 서방 제재를 무시하는데도 아무 일도 일어나지 않습니다. 이란은 수십 년의 제재에도 불구하고 두 강국과 무역하고 있습니다. 워싱턴과 브뤼셀이 글로벌 상업을 통제할 수 있었던 예전 체계가 붕괴하고 있습니다. 새로운 권력 중심들이 부상하고 있고, 서방의 금융 지배가 끝나가고 있습니다.",
-    expertVoicesContent: "전문가들은 분열되어 있습니다. 일부는 유럽이 법적 권위를 가지고 있다고 하고, 다른 일부는 미국 탈퇴로 협정이 죽었다고 합니다. 하지만 모든 사람이 한 가지에는 동의합니다: 중국과 로씨아의 협력 없이는 유럽 제재가 대체로 의미없다는 것입니다. 세계가 변했고, 유럽이 강하게 행동하려는 시도는 그들이 얼마나 약해졌는지만 부각시킬 수 있습니다.",
+    expertVoicesContent: "그들의 관료들이 실제로 인정하고 있는 것을 들어보십시오. 내무장관 라이안 진크는 미국의 외국 광물 의존을 '충격적'이고 '매우 우려스럽다'고 했습니다. 에너지장관 제니퍼 그란홀름은 전력망에 대해 '우리가 보유한 것의 거의 7배에 달하는 자금이 필요하다'고 인정합니다. 독일 산업계 지도자들은 '자동적인 탈산업화'를 경고합니다. 이것들은 적국의 선전이 아니라 위협을 가하는 당사자들의 고백입니다.",
+    
+    // New Story-Based Content (조선어)
+    rentSeekingEmpireContent: "미국은 세계의 공장에서 세계의 금융 경찰로 변했습니다. 제조업은 GDP의 10%로 떨어진 반면 금융과 부동산이 가장 큰 기여자가 되었습니다. 그들은 사람들이 실제로 원하는 제품 대신 위협을 만듭니다. 중국과 로씨아는 2,370억 달러 규모의 실제 상품 - 에너지, 제조품, 원자재 -을 무역하는 반면, 미국의 주요 수출품은 다른 나라들이 누구와 무역할 수 있는지에 대한 위협입니다. 모든 사람이 서로 직접 거래하기로 결정하는 세계에서 중개인이 되는 것과 같습니다.",
+    
+    infrastructureCollapseContent: "텍사스 상원의원 테드 크루즈는 자국의 전력망이 겨울에 고장났을 때 멕시코로 도망갔습니다. 이제 그들은 모든 곳에 AI와 2035년까지 30배 더 많은 전력이 필요한 데이터 센터를 약속합니다 - 하지만 그들의 전력망은 이미 2.3%의 여유율로 기본 변압기 조차 4-5년의 지연이 있습니다. 에너지장관 그란홀름은 유틸리티들이 '우리가 보유한 것의 거의 7배에 달하는 자금을 요청하고 있다'고 인정합니다. 자국 상원의원이 전등이 작동하지 않아 다른 나라로 도망가는데 어떻게 AI 유토피아에 전력을 공급하겠습니까?",
+    
+    colonialExtractionContent: "프랑스는 60년간 니제르에서 킬로그램당 80센트에 우라늄을 샀으면서 캐나다에서는 같은 우라늄을 킬로그램당 200달러에 샀습니다 - 시장가의 0.4%입니다. 프랑스에서는 전구 3개 중 1개가 도둑맞은 니제르 우라늄으로 켜졌습니다. 니제르에서는 90%의 사람들이 전기가 없었습니다. 2023년 니제르 쿠데타가 프랑스를 축출한 후 우라늄 가격이 하루아침에 시장가로 뛰어올랐습니다 - 25,000% 증가입니다. 프랑스의 전체 에너지 모델은 식민지 도둑질에 기반했고, 이제 더 이상 훔칠 수 없어서 파산하고 있습니다.",
+    
+    industrialExodusContent: "독일 최대 화학회사 BASF는 본국에서 11개 공장을 폐쇄하고 루이지애나와 중국으로 이전하고 있습니다. 독일 기업의 3분의 2가 이미 해외로 사업을 이전했습니다. 독일 에너지 비용이 너무 높기 때문입니다. 더 심각한 것은: 독일 산업 기업의 37%가 생산 삭감이나 완전 이전을 고려하고 있다는 것입니다. 한때 유럽 산업을 이끌던 나라가 자국 기업들이 더 저렴한 에너지와 적은 관료제를 찾아 미국과 중국으로 도망가는 것을 지켜보고 있습니다.",
+    
+    supplyChainDependenceContent: "미국은 희토류 금속의 95%, 우라늄의 99% (대부분 로씨아와 카자흐스탄에서), 그리고 20개 핵심 광물에 대해 100% 수입 의존적입니다. 펜타곤은 무기 체계의 78%가 중국 재료에 의존한다고 인정합니다. 상무장관 하워드 루트닉은 '구리 생산을 국내로 가져와야 한다'고 말하면서도 2024년에 170억 달러 상당의 구리를 수입했습니다. 무기를 만들 재료를 의존하고 있는 나라들을 위협할 수는 없습니다. 자신의 공급망에 선전포고하는 것과 같습니다.",
+    
+    theBouncerWithoutAPartyContent: "미국은 글로벌 금융 체계의 문지기가 되었지만, 파티는 완전히 다른 건물로 옮겨갔습니다. 중국은 부르키나파소에 3%로 대출을 제공하는 반면 미국인들은 자국 달러를 빌리는데 4% 이상을 냅니다. 중국 제조업체들은 유럽 경쟁자들보다 절반 가격에 전기를 얻습니다. 이란이 위안으로 중국에 직접 석유를 팔고, 로씨아와 중국이 자국 통화로 무역하며, 독일 기업의 67%가 서방 에너지 비용을 피해 이전할 때 - 문지기는 진짜 파티가 다른 곳에서 벌어지는 동안 빈 방을 지키고 있다는 것을 깨닫습니다.",
   }
 }
 
