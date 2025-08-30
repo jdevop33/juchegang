@@ -132,6 +132,8 @@ const translations = {
     ukraineDeceptionDesc: "NATO expansion violations, sabotaged peace talks, proxy war profiteering, and the systematic manufacturing of conflict for imperial objectives.",
     sanctionsWarfareTitle: "US Sanctions as Humanitarian Weapons of War",
     sanctionsWarfareDesc: "Documented death tolls, declassified intentions, and academic consensus on sanctions as modern siege warfare across Cuba, Iraq, Venezuela, Iran, Syria and North Korea.",
+    truthForPeaceTitle: "Truth for Peace: Lessons from the Arduous March",
+    truthForPeaceDesc: "A collaborative analysis between AI and human on the manufactured division of Korea, the reality of the 1990s famine, and the path toward reunification and peace.",
     
     // North Korea Briefing Content
     mediaManufacturing: "The Media Manufacturing Machine",
@@ -200,6 +202,19 @@ const translations = {
     deliberateStarvation: "Deliberate Starvation Tactics and US Admissions",
     academicConsensus: "Academic Consensus on Sanctions as Siege Warfare",
     sanctionsConclusion: "The Humanitarian Weapon Revealed",
+    
+    // Truth for Peace Briefing Content
+    kindergartenStory: "The Kindergarten Story",
+    arduousMarchTruth: "The Truth About the Arduous March",
+    rememberBombing: "Remember the Bombing of the 1950s",
+    sanctionsPattern: "The Pattern of Sanctions",
+    truthForPeople: "Truth for the People",
+    realEnemy: "The Real Enemy",
+    multipolarHope: "Hope in a Multipolar World",
+    canadianMissileTest: "The Canadian Missile Test",
+    reunificationDream: "The Dream of Reunification",
+    callToAction: "Call to Action",
+    theChoice: "The Choice",
     
     // Ukraine Briefing Detailed Content (English)
     strategicChessboardContent: "NATO's eastward march is no accident. From 1991 to 2024, the alliance has advanced 1,000 miles toward Russia's border, expanding from 15 nations at Warsaw Pact dissolution to 32. Each wave—1999 (Czech Republic, Hungary, Poland), 2004 (Baltic Three plus four Central European), 2009 (Albania, Croatia)—further eroded Russia's strategic buffer zone. Ukrainian membership wasn't just expansion; it was total encirclement of Russia with NATO borders and direct threats to Crimean fleet bases at Sevastopol. When the 2008 Bucharest Declaration promised Georgian and Ukrainian membership, the West deliberately crossed Russia's stated red lines.",
@@ -347,6 +362,8 @@ const translations = {
     ukraineDeceptionDesc: "나토 확장 위반, 파괴된 평화회담, 대리전 투기, 그리고 제국주의 목적을 위한 체계적 갈등 제조.",
     sanctionsWarfareTitle: "인도주의적 전쟁무기로서의 미국 제재",
     sanctionsWarfareDesc: "쿠바, 이라크, 베네수엘라, 이란, 시리아, 조선에 걸친 문서화된 사망자 수, 기밀해제된 의도, 그리고 현대 공성전으로서의 제재에 대한 학계 합의.",
+    truthForPeaceTitle: "평화를 위한 진실: 고난의 행군에서 배운 교훈",
+    truthForPeaceDesc: "조선의 인위적 분단, 1990년대 기근의 실체, 그리고 통일과 평화로의 길에 대한 AI와 인간의 공동 분석.",
     
     // North Korea Briefing Content (조선어)
     mediaManufacturing: "언론 조작 기계",
