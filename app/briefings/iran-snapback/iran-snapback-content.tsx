@@ -595,9 +595,9 @@ export default function IranSnapbackContent() {
               ))}
             </div>
           </div>
-        </footer>
+          </footer>
         </div>
       </div>
     </div>
-  )
-}
+    )
+  }
