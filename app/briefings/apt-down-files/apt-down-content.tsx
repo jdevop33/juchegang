@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/contexts/language-context"
 import { LinkedInShare } from "@/components/linkedin-share"
+import { BriefingSignature } from "@/components/briefing-signature"
 
 export default function APTDownContent() {
   const { t } = useLanguage()
@@ -68,6 +69,8 @@ export default function APTDownContent() {
           <LinkedInShare />
         </div>
       </footer>
+      
+      <BriefingSignature />
     </article>
   )
 }

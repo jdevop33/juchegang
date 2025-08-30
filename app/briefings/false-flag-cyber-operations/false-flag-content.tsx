@@ -1,6 +1,7 @@
 "use client"
 
 import { useLanguage } from "@/contexts/language-context"
+import { BriefingSignature } from "@/components/briefing-signature"
 
 export default function FalseFlagContent() {
   const { t } = useLanguage()
@@ -43,6 +44,8 @@ export default function FalseFlagContent() {
         <li><a href="https://securelist.com/olympic-destroyer/" target="_blank" rel="noopener noreferrer">Olympic Destroyer analyses</a></li>
       </ul>
       <footer className="not-prose mt-6 text-sm text-muted-foreground">Send preferred citations to expand this bibliography.</footer>
+      
+      <BriefingSignature />
     </article>
   )
 }

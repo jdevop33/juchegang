@@ -1,6 +1,7 @@
 "use client"
 
 import { useLanguage } from "@/contexts/language-context"
+import { BriefingSignature } from "@/components/briefing-signature"
 
 export default function NATOExpansionContent() {
   const { t } = useLanguage()
@@ -221,6 +222,8 @@ export default function NATOExpansionContent() {
         <li><a href="https://www.youtube.com/watch?v=H8Kc9p2sSqk" target="_blank" rel="noopener noreferrer">Naftali Bennett – Interview</a></li>
       </ul>
       <footer className="not-prose mt-6 text-sm text-muted-foreground">Send preferred citations to expand this bibliography.</footer>
+      
+      <BriefingSignature />
     </article>
   )
 }

@@ -9,6 +9,7 @@ type Props = {
   contain?: boolean
   priority?: boolean
   overlay?: "none" | "top" | "bottom" | "left" | "right"
+  unoptimized?: boolean
 }
 
 export function BriefingBanner({
@@ -19,6 +20,7 @@ export function BriefingBanner({
   contain = false,
   priority = false,
   overlay = "bottom",
+  unoptimized = false,
 }: Props) {
   const aspectClass = clsx({
     "aspect-[4/3] sm:aspect-[16/9] lg:aspect-[12/5]": aspect === "12/5",
@@ -44,8 +46,8 @@ export function BriefingBanner({
           fill
           priority={priority}
           className={clsx(contain ? "object-contain" : "object-cover")}
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
-          unoptimized
+          sizes="100vw"
+          unoptimized={unoptimized}
         />
         {overlay !== "none" && <div className={overlayClass} />}
       </div>
