@@ -197,13 +197,14 @@ export default function IranSnapbackContent() {
       <div className="max-w-none">
         {/* Hero Banner */}
         <section className="not-prose mb-12 sm:mb-16 -mx-4 sm:-mx-6 lg:-mx-8">
-          <div className="relative">
+          <div className="relative w-full aspect-[12/5]">
             <Image
               src="/images/briefing3banner.png"
               alt="Iran sanctions showdown"
-              width={1920}
-              height={800}
-              className="w-full h-96 sm:h-[500px] lg:h-[600px] object-cover"
+              fill
+              className="object-contain"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
+              priority
               unoptimized
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70">
@@ -390,13 +391,13 @@ export default function IranSnapbackContent() {
 
           {/* Visual Banner Section */}
           <section className="not-prose my-16">
-            <div className="relative rounded-2xl overflow-hidden">
+            <div className="relative rounded-2xl overflow-hidden w-full aspect-[3/1]">
               <Image
                 src="/images/briefingbanner2.png"
                 alt="Economic warfare visualization"
-                width={1200}
-                height={400}
-                className="w-full h-64 sm:h-80 lg:h-96 object-cover"
+                fill
+                className="object-contain"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
                 unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center">
@@ -435,13 +436,13 @@ export default function IranSnapbackContent() {
 
           {/* Cool Gang Visual */}
           <section className="not-prose my-16">
-            <div className="relative rounded-2xl overflow-hidden">
+            <div className="relative rounded-2xl overflow-hidden w-full aspect-[3/1]">
               <Image
                 src="/images/coolgang.png"
                 alt="New world order rising"
-                width={1200}
-                height={400}
-                className="w-full h-64 sm:h-80 lg:h-96 object-cover"
+                fill
+                className="object-contain"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
                 unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-l from-black/60 to-transparent flex items-center justify-end">
@@ -498,13 +499,13 @@ export default function IranSnapbackContent() {
 
           {/* Final Epic Visual */}
           <section className="not-prose my-16">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full aspect-[12/5]">
               <Image
                 src="/images/briefingsbanner1.png"
                 alt="The future belongs to multipolarity"
-                width={1200}
-                height={500}
-                className="w-full h-72 sm:h-96 lg:h-[500px] object-cover"
+                fill
+                className="object-contain"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
                 unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
@@ -532,13 +533,13 @@ export default function IranSnapbackContent() {
 
           {/* Cool Gang 2 Final Visual */}
           <section className="not-prose my-16">
-            <div className="relative rounded-2xl overflow-hidden">
+            <div className="relative rounded-2xl overflow-hidden w-full aspect-[3/1]">
               <Image
                 src="/images/coolgang2.png"
                 alt="Unity of the oppressed nations"
-                width={1200}
-                height={400}
-                className="w-full h-64 sm:h-80 lg:h-96 object-cover"
+                fill
+                className="object-contain"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
                 unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70 flex items-center">
