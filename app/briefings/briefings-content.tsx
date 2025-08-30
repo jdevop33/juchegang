@@ -59,6 +59,14 @@ export default function BriefingsContent() {
         </li>
         <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
           <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/ai-confession" className="hover:underline">
+              {t('aiConfessionTitle')}
+            </Link>
+          </h2>
+          <p className="text-muted-foreground">{t('aiConfessionDesc')}</p>
+        </li>
+        <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
+          <h2 className="text-2xl font-semibold mb-2">
             <Link href="/briefings/false-flag-cyber-operations" className="hover:underline">
               False Flag Cyber Operations and North Korean APT Mimicry
             </Link>
