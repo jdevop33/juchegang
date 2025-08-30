@@ -130,6 +130,8 @@ const translations = {
     northKoreaDeceptionDesc: "Media pipelines, defector incentives, cyber ambiguity, and frozen-conflict capitalism sustaining U.S. posture in East Asia.",
     ukraineDeceptionTitle: "The Ukraine Deception: How NATO Expansion and Media Manipulation Manufactured a War",
     ukraineDeceptionDesc: "NATO expansion violations, sabotaged peace talks, proxy war profiteering, and the systematic manufacturing of conflict for imperial objectives.",
+    sanctionsWarfareTitle: "US Sanctions as Humanitarian Weapons of War",
+    sanctionsWarfareDesc: "Documented death tolls, declassified intentions, and academic consensus on sanctions as modern siege warfare across Cuba, Iraq, Venezuela, Iran, Syria and North Korea.",
     
     // North Korea Briefing Content
     mediaManufacturing: "The Media Manufacturing Machine",
@@ -188,6 +190,17 @@ const translations = {
     endgame: "The Endgame: Prolonged Conflict, Profitable Destruction",
     breakingMatrix: "Breaking the Information Matrix",
     
+    // Sanctions Warfare Briefing Content
+    sanctionsIntroduction: "The Doctrine of Economic Strangulation",
+    cubaEmbargo: "Cuba's Six-Decade Humanitarian Crisis",
+    northKoreaSanctions: "North Korea's Engineered Agricultural Collapse", 
+    venezuelaCrisis: "Venezuela's Calculated Economic Destruction",
+    iraqChildMortality: "Iraq's Documented Child Mortality Crisis",
+    syriaIranMedical: "Syria and Iran's Medical Catastrophes",
+    deliberateStarvation: "Deliberate Starvation Tactics and US Admissions",
+    academicConsensus: "Academic Consensus on Sanctions as Siege Warfare",
+    sanctionsConclusion: "The Humanitarian Weapon Revealed",
+    
     // Ukraine Briefing Detailed Content (English)
     strategicChessboardContent: "NATO's eastward march is no accident. From 1991 to 2024, the alliance has advanced 1,000 miles toward Russia's border, expanding from 15 nations at Warsaw Pact dissolution to 32. Each wave—1999 (Czech Republic, Hungary, Poland), 2004 (Baltic Three plus four Central European), 2009 (Albania, Croatia)—further eroded Russia's strategic buffer zone. Ukrainian membership wasn't just expansion; it was total encirclement of Russia with NATO borders and direct threats to Crimean fleet bases at Sevastopol. When the 2008 Bucharest Declaration promised Georgian and Ukrainian membership, the West deliberately crossed Russia's stated red lines.",
     canadianAnalogyContent: "If China and Russia were training officers at Mexican military academies, deploying advanced missiles and tracking facilities in Mexico, and drawing Canada into a Beijing-centered alliance, how would America react? Recall the Cuban Missile Crisis—we nearly triggered nuclear war over missiles just 90 miles away. Yet when Russia expresses identical security concerns, America calls it 'aggression.' Russia was expected to watch NATO share a 1,200-mile border with Ukraine, deploy advanced weapons systems within 300 miles of Moscow, and directly threaten Black Sea fleet bases. If that's 'innocent self-defense,' then the Monroe Doctrine is imperialist aggression.",
@@ -201,6 +214,17 @@ const translations = {
     europeanVassalizationContent: "The Ukraine conflict is about permanently subordinating Europe to America. Nord Stream destruction (likely carried out by America) severed Germany from cheap Russian gas, forcing dependence on expensive U.S. LNG. French and German hopes for rapprochement with Russia were scrapped. European military spending surged, most flowing to U.S. defense contractors. Most importantly, the prospect of European-Asian integration—through Belt and Road, Eurasian Economic Union, Russia-China partnerships—was blocked for decades. Biden said it explicitly: America's goal was to 'end the relationship between Russia and Germany.' The Ukraine crisis was America's preemptive strike against independent European foreign policy. Europe lost energy independence, economic autonomy, and strategic sovereignty. They are now complete American satellites.",
     endgameContent: "The goal isn't Ukrainian victory; it's conflict prolongation. Permanent low-intensity war serves multiple purposes: wearing down Russia, maintaining European subordination, enriching defense contractors, justifying NATO expansion. Peace disrupts all these objectives. So the West sets unachievable goals for Zelensky—restore 1991 borders, reparations, war crimes trials—ensuring negotiations perpetually fail. Meanwhile, Ukraine is slowly ground down: population declining, economy destroyed, territory devastated. But Western elites don't care. They're interested in destroying Russia, not rebuilding Ukraine. Ukrainians? They're expendable. When the West says 'to the last Ukrainian,' it's not hyperbole—it's policy.",
     breakingMatrixContent: "Breaking out of the media matrix is simple. Follow the money. Who profits from Ukraine? Raytheon, Lockheed Martin, Boeing—check their stock prices. Energy giants—ExxonMobil, Chevron—see how much they made from Russian energy bans. Investigate how the comedian behind Zelensky became a billionaire overnight. Look at BlackRock and JP Morgan's role in Ukrainian 'reconstruction.' Genuine anti-war voices are silenced or branded 'Putin's spokesmen.' Negotiating for peace is called 'surrender.' Asking questions is 'unpatriotic.' Sound familiar? Iraq, Libya, Syria... same script, different victims. Peace was possible, but not profitable. War is terrible, but lucrative. This is how empire works.",
+    
+    // Sanctions Warfare Detailed Content (English)
+    sanctionsIntroductionContent: "US sanctions policies across multiple countries have caused severe humanitarian crises with documented death tolls in the hundreds of thousands, functioning as what scholars describe as the 'modern equivalent of siege warfare.' Declassified documents reveal deliberate US intent to cause civilian suffering through economic pressure, with officials explicitly acknowledging—and in some cases defending—the humanitarian costs as acceptable collateral damage in pursuit of foreign policy objectives.",
+    cubaEmbargoContent: "The US embargo of Cuba, spanning 62 years since 1962, represents the longest-running comprehensive sanctions regime in modern history. Cuban physicians currently have access to less than 50% of new medicines available on the world market due to US pharmaceutical industry dominance. The embargo's extraterritorial provisions force international companies to choose between Cuba and the US market, with ships docking at Cuban ports facing six-month bans from US ports. These measures have cost Cuba an estimated $1.499 trillion over six decades. Declassified documents reveal the original intent was to create 'hunger, desperation, and the overthrow of the government.'",
+    northKoreaSanctionsContent: "Current UN sanctions, tightened dramatically in 2016-2017, have recreated pre-famine conditions by restricting oil imports essential for agriculture. North Korea receives only 500,000 barrels of refined petroleum annually—equivalent to one day of South Korean consumption—crippling fertilizer production and agricultural machinery. The sanctions regime systematically obstructs humanitarian aid delivery, with WFP funding dropping to only $15 million of the $50 million yearly need. By 2021, North Korean officials were again using 'Arduous March' terminology, signaling return to famine conditions.",
+    venezuelaCrisisContent: "The intensification of US sanctions on Venezuela from 2017-2019 precipitated what economists documented as 40,000 excess deaths in just two years. Financial sanctions devastated Venezuela's import capacity, with food imports plummeting 78% from $11.2 billion to $2.46 billion between 2013 and 2018. By 2024, 82% of Venezuelans live in poverty and 53% in extreme poverty. The humanitarian catastrophe triggered Latin America's largest displacement crisis, with 7.7 million Venezuelans fleeing since 2015.",
+    iraqChildMortalityContent: "The 1990s Iraq sanctions regime produced one of the most controversial humanitarian disasters in modern history, with UNICEF's 1999 study documenting child mortality increases from 56 to 131 per 1,000 births, extrapolating to 400,000-500,000 excess deaths among children under five. Secretary of State Madeleine Albright's infamous response on CBS's 60 Minutes when asked about reports of half a million child deaths: 'I think this is a very hard choice, but the price—we think the price is worth it.' Denis Halliday, UN Assistant Secretary-General, resigned calling the sanctions 'genocidal.'",
+    syriaIranMedicalContent: "The Caesar Act of 2020 has systematically undermined Syria's healthcare system. At Damascus's Al-Biruni Hospital, which treats 70% of Syria's cancer patients, none of the three CT scanners remain operational due to inability to obtain spare parts. Children face two-year waiting lists for cardiac surgery. In Iran, US sanctions have created a documented medical catastrophe affecting 6 million patients with chronic diseases, with 30 Iranian children with epidermolysis bullosa dying after Swedish companies ceased selling specialized wound dressings due to sanctions fears.",
+    deliberateStarvationContent: "Declassified documents reveal consistent US awareness and intent to cause civilian suffering through sanctions. President Nixon's September 1970 directive to 'make the economy scream' in Chile established the template for using economic warfare to destabilize governments. The pattern across all cases shows deliberate targeting of essential sectors: agriculture, energy, healthcare, and banking. US government assessments consistently predicted these impacts, with a 1990 CIA briefing on Iraq sanctions predicting 'considerable deprivation.'",
+    academicConsensusContent: "Leading scholars have developed sophisticated analyses comparing sanctions to historical siege warfare. Joy Gordon argues sanctions are 'the modern equivalent of siege warfare,' achieving through international institutions what armies once accomplished through physical encirclement. The comparison to the WWI British blockade of Germany, which killed 300,000 to 763,000 civilians, provides the most direct historical parallel. UN Special Rapporteur Alena Douhan concluded 'the overwhelming majority of unilateral measures applied today were illegal under international law.'",
+    sanctionsConclusionContent: "The evidence demonstrates that US sanctions function as humanitarian weapons causing mass civilian suffering comparable to historical siege warfare. From Cuba's six-decade healthcare crisis to Venezuela's engineered economic collapse, from Iraq's child mortality catastrophe to the medical disasters in Syria and Iran, sanctions have killed hundreds of thousands while officials explicitly acknowledged these 'prices' as acceptable. Despite humanitarian exemptions that exist on paper, the practical effect mirrors what international law sought to prohibit—the weaponization of human suffering as a tool of statecraft.",
   },
   kr: {
     // Navigation
@@ -321,6 +345,8 @@ const translations = {
     northKoreaDeceptionDesc: "동아시아에서 미국의 지위를 유지하는 언론 공급망, 탈북자 유인책, 사이버 모호성, 그리고 동결된 갈등 자본주의.",
     ukraineDeceptionTitle: "우크라이나 기만술: 나토 확장과 언론 조작이 전쟁을 제조한 방식",
     ukraineDeceptionDesc: "나토 확장 위반, 파괴된 평화회담, 대리전 투기, 그리고 제국주의 목적을 위한 체계적 갈등 제조.",
+    sanctionsWarfareTitle: "인도주의적 전쟁무기로서의 미국 제재",
+    sanctionsWarfareDesc: "쿠바, 이라크, 베네수엘라, 이란, 시리아, 조선에 걸친 문서화된 사망자 수, 기밀해제된 의도, 그리고 현대 공성전으로서의 제재에 대한 학계 합의.",
     
     // North Korea Briefing Content (조선어)
     mediaManufacturing: "언론 조작 기계",
@@ -379,6 +405,17 @@ const translations = {
     endgame: "최종 목표: 장기화된 갈등, 리익 있는 파괴",
     breakingMatrix: "정보 매트릭스 깨뜨리기",
     
+    // Sanctions Warfare Briefing Content (조선어)
+    sanctionsIntroduction: "경제적 교살의 교리",
+    cubaEmbargo: "쿠바의 60년간 인도주의 위기",
+    northKoreaSanctions: "조선의 조작된 농업 붕괴", 
+    venezuelaCrisis: "베네수엘라의 계획된 경제 파괴",
+    iraqChildMortality: "이라크의 문서화된 아동 사망률 위기",
+    syriaIranMedical: "시리아와 이란의 의료 재난",
+    deliberateStarvation: "의도적 기아 전술과 미국의 인정",
+    academicConsensus: "공성전으로서의 제재에 대한 학계 합의",
+    sanctionsConclusion: "드러난 인도주의적 무기",
+    
     // Ukraine Briefing Detailed Content (조선어)
     strategicChessboardContent: "NATO의 동진은 우연이 아니다. 1991년부터 2024년까지 동맹은 로씨아 국경으로 1,000마일을 전진했으며, 바르샤바 조약 해체시 15개국이었던 것이 32개국으로 확장되였다. 각 물결마다 - 1999년 (체코, 헝가리, 폴란드), 2004년 (발틱 3국과 4개 중부유럽), 2009년 (알바니아, 크로아티아) - 로씨아의 전략적 완충지대를 더욱 침식했다. 우크라이나 가입은 단순한 확장이 아니라 로씨아를 NATO 국경으로 완전히 포위하고 크림과 세바스토폴의 함대 기지를 위협하는 것이였다. 2008년 부쿠레슈티 선언에서 조지아와 우크라이나 가입을 약속했을 때, 서방은 로씨아의 명시적 적색선을 의도적으로 넘었다.",
     canadianAnalogyContent: "만약 중국과 로씨아가 멕시코군 사관학교에서 장교들을 훈련시키고, 멕시코에 첨단 미사일과 추적 시설을 배치하며, 캐나다를 베이징 중심 동맹에 끌어들인다면 미국은 어떻게 반응할까? 1962년 쿠바 위기 때처럼 핵전쟁 직전까지 간 것을 상기하라 - 그때는 단지 90마일 떨어진 미사일 때문이었다. 그런데 미국은 로씨아가 동일한 안보 우려를 표명할 때 \\'침략\\'이라고 부른다. 로씨아는 NATO가 우크라이나에서 1,200마일의 국경을 공유하고, 모스크바로부터 300마일 내에 첨단 무기체계를 배치하며, 흑해 함대 기지에 직접 위협을 가하는 것을 지켜봐야 했다. 이것이 \\'무고한 자위\\'라면, 몬로 독트린은 제국주의적 침략이다.",
@@ -392,6 +429,17 @@ const translations = {
     europeanVassalizationContent: "우크라이나 갈등은 유럽을 영구적으로 미국에 종속시키는 작업이다. 노드 스트림 파괴 (미국이 수행했을 가능성이 높다)로 독일은 값싼 로씨아 가스와 단절되어 고가의 미국 LNG에 의존하게 되었다. 프랑스와 독일의 로씨아와의 화해 희망은 폐기되었다. 유럽의 군사비는 급증하는데, 그 대부분이 미국 무기업체로 들어간다. 가장 중요한 것은 유럽-아시아 통합 - 일대일로, 유라시아 경제연합, 로씨아-중국 파트너십을 통한 - 에 대한 전망이 수십 년 동안 차단된 것이다. 바이든은 명시적으로 말했다: 미국의 목표는 \\'로씨아와 독일의 관계를 끝내는\\'것이다. 우크라이나 위기는 독립적인 유럽 외교정책에 대한 미국의 선제타격이다. 유럽은 에너지 독립, 경제 자립, 전략적 자율을 잃었다. 이제 그들은 완전한 미국의 위성국가들이다.",
     endgameContent: "목표는 우크라이나의 승리가 아니라 갈등의 장기화다. 영구적인 저강도 전쟁은 여러 목적에 기여한다: 로씨아 소모, 유럽 종속 유지, 무기업체 배불리기, NATO 확장 정당화. 평화는 이 모든 목표를 방해한다. 따라서 서방은 젤렌스키에게 달성불가능한 목표들을 설정해준다 - 1991년 국경 복원, 배상금, 전쟁범죄 재판 - 그래서 협상이 영원히 실패하도록 한다. 한편, 우크라이나는 천천히 갈려나가고 있다: 인구는 감소하고, 경제는 파괴되며, 국토는 폐허가 된다. 하지만 서방 엘리트들에게는 상관없다. 그들은 우크라이나를 재건하는 것이 아니라 로씨아를 파괴하는 것에 관심이 있다. 우크라이나인들? 그들은 소모품이다. 서방이 \\'마지막 우크라이나인까지\\'라고 말할 때, 그것은 과장이 아니라 정책이다.",
     breakingMatrixContent: "언론 매트릭스에서 벗어나는 것은 간단하다. 돈을 따라가라. 우크라이나에서 누가 리익을 보는가? 레이시온, 록히드 마틴, 보잉 - 그들의 주가를 보라. 에너지 거대기업들 - 엑슨모빌, 셰브론 - 그들이 로씨아 에너지 금지로 얼마나 벌었는지 확인하라. 젤렌스키의 뒤에 있는 코미디언이 하룻밤 사이에 억만장자가 된 방법을 조사하라. 우크라이나 \\'재건\\'에서 블랙록과 JP 모간의 역할을 살펴보라. 진정한 반전 운동가들은 침묵당하거나 \\'뿌찐의 대변인\\'으로 낙인찍힌다. 평화를 위한 협상은 \\'항복\\'으로 불린다. 질문하는 것은 \\'비애국적\\'이다. 이 모든 것이 익숙하지 않나? 이라크, 리비아, 시리아... 각본은 같고, 희생자만 바뀐다. 평화는 가능했지만 수익성이 없었다. 전쟁은 끔찍하지만 리익이 된다. 이것이 제국이 작동하는 방식이다.",
+    
+    // Sanctions Warfare Detailed Content (조선어)
+    sanctionsIntroductionContent: "여러 나라에 대한 미국의 제재정책은 수십만 명의 문서화된 사망자를 내며 심각한 인도주의 위기를 일으켰으며, 학자들이 \\'현대판 공성전\\'이라고 묘사하는 기능을 한다. 기밀해제된 문서들은 경제적 압박을 통해 민간인 고통을 의도적으로 야기하려는 미국의 계획된 의도를 드러내며, 관리들이 외교정책 목표 추구에서 인도주의적 비용을 용인할 수 있는 부수피해로 명시적으로 인정하고—경우에 따라서는 변호하였다.",
+    cubaEmbargoContent: "1962년부터 62년간 지속된 미국의 쿠바 금수조치는 현대 력사상 가장 긴 포괄적 제재체제를 나타낸다. 쿠바 의사들은 미국 제약산업의 지배와 헬름스-버튼법 하의 제3국 제한으로 인해 현재 세계 시장에서 이용가능한 신약의 50% 미만에만 접근할 수 있다. 금수의 역외 조항들은 국제기업들로 하여금 쿠바와 훨씬 큰 미국 시장 중 하나를 선택하도록 강요하며, 쿠바 항구에 정박하는 선박들은 6개월간 미국 항구 출입금지를 당한다. 이러한 조치들은 쿠바에게 60년간 추정 1조 4990억 달러의 손실을 가했다. 기밀해제된 문서들은 원래 의도가 \\'기아, 절망, 그리고 정부 전복\\'을 조성하는 것이었음을 드러낸다.",
+    northKoreaSanctionsContent: "2016-2017년에 극적으로 강화된 현재의 유엔 제재는 농업에 필수적인 석유 수입을 제한하여 기근 이전 상황을 재조성했다. 조선은 연간 50만 배럴의 정제석유만 받는데—이는 남조선 하루 소비량에 해당한다—비료 생산과 농업 기계를 불구로 만들었다. 제재 체제는 체계적으로 인도주의 원조 전달을 가로막으며, 세계식량계획 자금은 연간 필요액 5천만 달러 중 1천5백만 달러로만 떨어졌다. 2021년까지 조선 관리들은 다시 \\'고난의 행군\\'이라는 용어를 사용하기 시작했으며, 이는 기근 상태로의 복귀를 신호한다.",
+    venezuelaCrisisContent: "2017-2019년 베네수엘라에 대한 미국 제재의 강화는 경제학자들이 단 2년간 4만 명의 초과 사망을 문서화한 것을 촉발했다. 금융 제재는 베네수엘라의 수입 능력을 파괴했으며, 식품 수입은 2013년과 2018년 사이 112억 달러에서 24억 6천만 달러로 78% 급락했다. 2024년까지 베네수엘라인의 82%가 빈곤 상태에, 53%가 극빈 상태에 처해있다. 인도주의 재앙은 라틴아메리카 최대의 난민 위기를 촉발했으며, 2015년 이후 770만 베네수엘라인이 피난을 떠났다.",
+    iraqChildMortalityContent: "1990년대 이라크 제재 체제는 현대 력사상 가장 논란이 된 인도주의 재앙 중 하나를 만들어냈으며, UNICEF의 1999년 연구는 아동 사망률이 출생 1000명당 56명에서 131명으로 증가했음을 문서화하여 5세 미만 아동 중 40-50만 명의 초과 사망을 추산했다. 50만 명의 아동 사망 보고에 대해 질문받은 매들린 올브라이트 국무장관의 악명높은 CBS 60분 응답: \\'이는 매우 어려운 선택이라고 생각하지만, 대가를—우리는 그 대가가 가치있다고 생각한다.\\' 유엔 사무차장 데니스 할리데이는 제재를 \\'집단학살적\\'이라고 부르며 사임했다.",
+    syriaIranMedicalContent: "2020년의 시저법은 체계적으로 시리아의 의료체계를 훼손해왔다. 시리아 암환자의 70%를 치료하는 다마스쿠스의 알비루니 병원에서는 부품을 구할 수 없어 3대의 CT 스캐너 중 작동하는 것이 없다. 아이들은 심장수술을 위해 2년을 기다려야 한다. 이란에서 미국 제재는 600만 명의 만성질환자들에게 영향을 미치는 문서화된 의료재앙을 만들어냈으며, 스웨덴 회사들이 제재 우려로 전문 상처치료제 판매를 중단한 후 표피박리 수포증을 앓는 30명의 이란 아동들이 사망했다.",
+    deliberateStarvationContent: "기밀해제된 문서들은 제재를 통해 민간인 고통을 야기하려는 미국의 일관된 인식과 의도를 드러낸다. 닉슨 대통령의 1970년 9월 칠레에서 \\'경제를 비명지르게 하라\\'는 지시는 경제전쟁을 사용하여 정부를 불안정화시키는 템플릿을 확립했다. 모든 경우에 걸친 패턴은 필수 부문들의 의도적 목표화를 보여준다: 농업, 에너지, 의료, 은행업. 미국 정부 평가들은 일관되게 이러한 영향들을 예측했으며, 이라크 제재에 대한 1990년 CIA 브리핑은 \\'상당한 궁핍\\'을 예측했다.",
+    academicConsensusContent: "주요 학자들은 제재를 력사적 공성전과 비교하는 정교한 분석을 발전시켰다. 조이 고든은 제재가 \\'현대판 공성전\\'이라고 주장하며, 군대가 한때 물리적 포위를 통해 달성했던 것을 국제기구를 통해 성취한다고 한다. 30-76만 3천 명의 민간인을 죽인 1차대전 영국의 독일 봉쇄와의 비교는 가장 직접적인 력사적 평행선을 제공한다. 유엔 특별보고관 알레나 도우한은 \\'오늘날 적용되는 일방적 조치의 압도적 대다수가 국제법 하에서 불법적이었다\\'고 결론지었다.",
+    sanctionsConclusionContent: "증거는 미국 제재가 력사적 공성전에 비견할 수 있는 대량 민간인 고통을 야기하는 인도주의적 무기로 기능한다는 것을 보여준다. 쿠바의 60년간 의료 위기로부터 베네수엘라의 조작된 경제 붕괴, 이라크의 아동 사망률 재앙으로부터 시리아와 이란의 의료 재난에 이르기까지, 제재는 관리들이 이러한 \\'대가\\'를 용인할 수 있다고 명시적으로 인정하는 동안 수십만 명을 죽였다. 서류상 존재하는 인도주의적 면제에도 불구하고, 실제 효과는 국제법이 금지하려 했던 것—인간 고통의 국정 도구로의 무기화—을 반영한다.",
   }
 }
 
