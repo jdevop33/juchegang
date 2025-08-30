@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import SanctionsWarfareContent from "./sanctions-warfare-content"
+import { BriefingBanner } from "@/components/briefing-banner"
 
 export const metadata = {
   title: "US Sanctions as Humanitarian Weapons of War",
@@ -22,6 +23,7 @@ export default function SanctionsWarfareBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
+  <BriefingBanner src="/images/featured-bg.jpg" alt="Sanctions warfare" aspect="12/5" contain overlay="bottom" />
       <SanctionsWarfareContent />
       <JucheFooter />
     </main>

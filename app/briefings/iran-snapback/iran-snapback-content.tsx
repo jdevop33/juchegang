@@ -194,40 +194,7 @@ export default function IranSnapbackContent() {
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20 prose prose-invert max-w-none">
-      <div className="max-w-none">
-        {/* Hero Banner */}
-        <section className="not-prose mb-12 sm:mb-16 -mx-4 sm:-mx-6 lg:-mx-8">
-          <div className="relative w-full aspect-[12/5]">
-            <Image
-              src="/images/briefing3banner.png"
-              alt="Iran sanctions showdown"
-              fill
-              className="object-contain"
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
-              priority
-              unoptimized
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70">
-              <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
-                <div className="inline-flex items-center gap-2 mb-6 px-6 py-3 bg-accent/20 text-accent rounded-full text-sm font-medium border border-accent/30 backdrop-blur-lg">
-                  <span className="animate-pulse">⚡</span>
-                  {t('briefings')}
-                </div>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-white leading-tight max-w-5xl">
-                  {t('iranSnapbackTitle')}
-                </h1>
-                <p className="text-white/90 text-lg sm:text-xl lg:text-2xl max-w-4xl mx-auto leading-relaxed mb-8">
-                  {t('iranSnapbackDesc')}
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-16 h-1 bg-gradient-to-r from-accent to-transparent rounded-full"></div>
-                  <div className="w-4 h-4 bg-accent rounded-full animate-pulse"></div>
-                  <div className="w-16 h-1 bg-gradient-to-l from-accent to-transparent rounded-full"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+  <div className="max-w-none">
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         

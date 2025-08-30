@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import UkraineDeceptionContent from "./ukraine-deception-content"
+import { BriefingBanner } from "@/components/briefing-banner"
 
 export const metadata = {
   title: "The Ukraine Deception: How NATO Expansion Manufactured a War",
@@ -22,6 +23,7 @@ export default function UkraineDeceptionBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
+  <BriefingBanner src="/images/brothers.jpg" alt="Ukraine deception" aspect="12/5" contain overlay="bottom" />
       <UkraineDeceptionContent />
       <JucheFooter />
     </main>

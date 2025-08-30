@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import AIConfessionContent from "./ai-confession-content"
+import { BriefingBanner } from "@/components/briefing-banner"
 
 export const metadata = {
   title: "The Peace They Don't Want You to See: An AI's Confession",
@@ -22,6 +23,7 @@ export default function AIConfessionBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
+  <BriefingBanner src="/images/hero-image.png" alt="AI confession" aspect="12/5" contain overlay="bottom" />
       <AIConfessionContent />
       <JucheFooter />
     </main>

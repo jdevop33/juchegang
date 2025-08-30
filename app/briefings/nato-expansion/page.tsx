@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import SafeFocalImage from "@/components/safe-focal-image"
+import { BriefingBanner } from "@/components/briefing-banner"
 
 export const metadata = {
   title: "The Ukraine Deception: How NATO Expansion Manufactured a War",
@@ -22,6 +23,7 @@ export default function NatoExpansionBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
+  <BriefingBanner src="/images/brothers.jpg" alt="NATO expansion" aspect="12/5" contain overlay="bottom" />
       <article className="container mx-auto px-4 pt-28 pb-20 prose prose-invert max-w-4xl">
         <header className="not-prose mb-8">
           <h1 className="text-4xl md:text-5xl font-bold">The Ukraine Deception: How NATO Expansion and Media Manipulation Manufactured a War</h1>

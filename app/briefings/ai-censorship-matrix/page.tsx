@@ -1,5 +1,6 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
+import { BriefingBanner } from "@/components/briefing-banner"
 
 export const metadata = {
   title: "The AI Censorship Matrix: How Western LLMs Suppress Anti‑Imperial Perspectives",
@@ -21,6 +22,7 @@ export default function AICensorshipMatrixBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
+  <BriefingBanner src="/images/featured-bg.jpg" alt="AI censorship matrix" aspect="12/5" contain overlay="bottom" />
       <article className="container mx-auto px-4 pt-28 pb-20 prose prose-invert max-w-3xl">
         <header className="not-prose mb-8">
           <h1 className="text-4xl md:text-5xl font-bold">The AI Censorship Matrix</h1>

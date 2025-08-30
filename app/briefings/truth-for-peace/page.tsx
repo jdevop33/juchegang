@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import TruthForPeaceContent from "./truth-for-peace-content"
+import { BriefingBanner } from "@/components/briefing-banner"
 
 export const metadata = {
   title: "Truth for Peace: Lessons from the Arduous March",
@@ -22,6 +23,7 @@ export default function TruthForPeaceBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
+  <BriefingBanner src="/images/featured-bg.jpg" alt="Truth for peace" aspect="12/5" contain overlay="bottom" />
       <TruthForPeaceContent />
       <JucheFooter />
     </main>

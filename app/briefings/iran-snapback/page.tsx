@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import IranSnapbackContent from "./iran-snapback-content"
+import { BriefingBanner } from "@/components/briefing-banner"
 import "./styles.css"
 
 export const metadata = {
@@ -23,6 +24,7 @@ export default function IranSnapbackBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
+  <BriefingBanner src="/images/briefing3banner.png" alt="Iran sanctions showdown" aspect="12/5" contain overlay="bottom" priority />
       <IranSnapbackContent />
       <JucheFooter />
     </main>

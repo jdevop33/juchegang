@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import APTDownContent from "./apt-down-content"
+import { BriefingBanner } from "@/components/briefing-banner"
 
 export const metadata = {
   title: "The APT Down Files: Inside the breach of a nation-state hacker",
@@ -23,6 +24,7 @@ export default function APTDownBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
+  <BriefingBanner src="/images/hero-image.png" alt="APT Down files" aspect="12/5" contain overlay="bottom" />
       <APTDownContent />
       <JucheFooter />
     </main>
