@@ -1,5 +1,6 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
+import { BriefingBanner } from "@/components/briefing-banner"
 import NorthKoreaDeceptionContent from "./north-korea-deception-content"
 export const metadata = {
   title: "The North Korea Deception: Manufactured Threats and the War Machine",
@@ -29,7 +30,8 @@ export default function NorthKoreaDeceptionBriefing() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
-      <NorthKoreaDeceptionContent />
+  <BriefingBanner src="/images/featured-bg.jpg" alt="North Korea deception" aspect="12/5" contain overlay="bottom" />
+  <NorthKoreaDeceptionContent />
       <JucheFooter />
     </main>
   )

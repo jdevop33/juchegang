@@ -2,6 +2,7 @@ import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import SafeFocalImage from "@/components/safe-focal-image"
 import { BriefingBanner } from "@/components/briefing-banner"
+import NATOExpansionContent from "./nato-expansion-content"
 
 export const metadata = {
   title: "The Ukraine Deception: How NATO Expansion Manufactured a War",
