@@ -1,6 +1,6 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
-import IranSnapbackContent from "./iran-snapback-content-test"
+import IranSnapbackContent from "./iran-snapback-content"
 import "./styles.css"
 
 export const metadata = {
