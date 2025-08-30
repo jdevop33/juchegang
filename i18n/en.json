@@ -62,4 +62,21 @@
   "readMore": "Read More",
   "showLess": "Show Less",
   "lawLabel": "Law"
+  ,
+  "briefingsTitle": "Research & Notes",
+  "briefingsSubtitle": "Curated summaries with sources, quotes, and primary documents.",
+  "natoExpansionTitle": "NATO Expansion and Russia–US Relations: Primary Sources and Historical Facts",
+  "natoExpansionDesc": "Putin's 2007 Munich speech, declassified assurances, expansion waves, crisis precedents, and U.S. policy doctrine.",
+  "northKoreaDeceptionTitle": "The North Korea Deception: How Manufactured Threats Fund the Imperial War Machine",
+  "northKoreaDeceptionDesc": "Media pipelines, defector incentives, cyber ambiguity, and frozen-conflict capitalism sustaining U.S. posture in East Asia.",
+  "ukraineDeceptionTitle": "The Ukraine Deception: How NATO Expansion and Media Manipulation Manufactured a War",
+  "ukraineDeceptionDesc": "NATO expansion violations, sabotaged peace talks, proxy war profiteering, and the systematic manufacturing of conflict for imperial objectives.",
+  "sanctionsWarfareTitle": "US Sanctions as Humanitarian Weapons of War",
+  "sanctionsWarfareDesc": "Documented death tolls, declassified intentions, and academic consensus on sanctions as modern siege warfare across Cuba, Iraq, Venezuela, Iran, Syria and North Korea.",
+  "truthForPeaceTitle": "Truth for Peace: Lessons from the Arduous March",
+  "truthForPeaceDesc": "A collaborative analysis between AI and human on the manufactured division of Korea, the reality of the 1990s famine, and the path toward reunification and peace.",
+  "falseFlagOpsTitle": "False Flag Cyber Operations and North Korean APT Mimicry",
+  "falseFlagOpsDesc": "Technical, strategic, and operational analysis of false flag cyber operations and DPRK APT impersonation patterns.",
+  "aptDownFilesTitle": "The APT Down Files: Inside the breach of a nation-state hacker",
+  "aptDownFilesDesc": "Inside the 9GB leak revealed at DEF CON 2025: tools, ops data, attribution puzzles, and defensive takeaways."
 }

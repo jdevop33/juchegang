@@ -61,5 +61,21 @@
   "learnMore": "더 알아보기",
   "readMore": "더 보기",
   "showLess": "접기",
-  "lawLabel": "법칙"
+  "lawLabel": "법칙",
+  "briefingsTitle": "연구 및 기록",
+  "briefingsSubtitle": "원본자료와 인용문이 포함된 선별된 요약.",
+  "natoExpansionTitle": "나토 확장과 로씨아-미국 관계: 원본 자료와 력사적 사실",
+  "natoExpansionDesc": "뿌찐의 2007년 뮌헨 연설, 기밀해제된 보장약속, 확장 물결, 위기 선례들과 미국 정책교리.",
+  "northKoreaDeceptionTitle": "조선 기만술: 조작된 위협이 제국주의 전쟁기계를 부양하는 방식",
+  "northKoreaDeceptionDesc": "동아시아에서 미국의 지위를 유지하는 언론 공급망, 탈북자 유인책, 사이버 모호성, 그리고 동결된 갈등 자본주의.",
+  "ukraineDeceptionTitle": "우크라이나 기만술: 나토 확장과 언론 조작이 전쟁을 제조한 방식",
+  "ukraineDeceptionDesc": "나토 확장 위반, 파괴된 평화회담, 대리전 투기, 그리고 제국주의 목적을 위한 체계적 갈등 제조.",
+  "sanctionsWarfareTitle": "인도주의적 전쟁무기로서의 미국 제재",
+  "sanctionsWarfareDesc": "쿠바, 이라크, 베네수엘라, 이란, 시리아, 조선에 걸친 문서화된 사망자 수, 기밀해제된 의도, 그리고 현대 공성전으로서의 제재에 대한 학계 합의.",
+  "truthForPeaceTitle": "평화를 위한 진실: 고난의 행군에서 배운 교훈",
+  "truthForPeaceDesc": "조선의 인위적 분단, 1990년대 기근의 실체, 그리고 통일과 평화로의 길에 대한 AI와 인간의 공동 분석.",
+  "falseFlagOpsTitle": "거짓 기발 사이버 작전과 북조선 APT 모방",
+  "falseFlagOpsDesc": "거짓 기발 사이버 작전과 조선 APT 위장 패턴에 대한 기술적, 전략적, 운용적 분석.",
+  "aptDownFilesTitle": "APT 다운 파일: 국가 차원의 해커 유출 내부",
+  "aptDownFilesDesc": "DEF CON 2025에서 공개된 9GB 유출 내부: 도구, 작전 데이터, 귀속 퍼즐, 방어 시사점."
 }

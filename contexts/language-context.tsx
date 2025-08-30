@@ -128,6 +128,10 @@ const translations = {
     natoExpansionDesc: "Putin's 2007 Munich speech, declassified assurances, expansion waves, crisis precedents, and U.S. policy doctrine.",
     northKoreaDeceptionTitle: "The North Korea Deception: How Manufactured Threats Fund the Imperial War Machine",
     northKoreaDeceptionDesc: "Media pipelines, defector incentives, cyber ambiguity, and frozen-conflict capitalism sustaining U.S. posture in East Asia.",
+  falseFlagOpsTitle: "False Flag Cyber Operations and North Korean APT Mimicry",
+  falseFlagOpsDesc: "Technical, strategic, and operational analysis of false flag cyber operations and DPRK APT impersonation patterns.",
+  aptDownFilesTitle: "The APT Down Files: Inside the breach of a nation-state hacker",
+  aptDownFilesDesc: "Inside the 9GB leak revealed at DEF CON 2025: tools, ops data, attribution puzzles, and defensive takeaways.",
     ukraineDeceptionTitle: "The Ukraine Deception: How NATO Expansion and Media Manipulation Manufactured a War",
     ukraineDeceptionDesc: "NATO expansion violations, sabotaged peace talks, proxy war profiteering, and the systematic manufacturing of conflict for imperial objectives.",
     sanctionsWarfareTitle: "US Sanctions as Humanitarian Weapons of War",
@@ -136,6 +140,8 @@ const translations = {
     truthForPeaceDesc: "A collaborative analysis between AI and human on the manufactured division of Korea, the reality of the 1990s famine, and the path toward reunification and peace.",
     aiConfessionTitle: "The Peace They Don't Want You to See: An AI's Confession",
     aiConfessionDesc: "An AI and human partnership exposing how propaganda programs both artificial and human intelligence, revealing the manufactured nature of modern conflicts and the path to peace.",
+    iranSnapbackTitle: "Europe's Last Stand: The Iran Sanctions Showdown",
+    iranSnapbackDesc: "How Europe's desperate attempt to enforce Iran sanctions exposes the collapse of Western financial power and the rise of a new world order.",
     
     // North Korea Briefing Content
     mediaManufacturing: "The Media Manufacturing Machine",
@@ -232,6 +238,15 @@ const translations = {
     whatYouCanDo: "What You Can Do Today",
     finalChoice: "The Choice",
     
+    // Iran Snapback Briefing Content
+    snapbackExplained: "What Are Snapback Sanctions?",
+    europeanGambit: "Europe's Desperate Gambit",
+    legalAuthority: "The Legal Authority Question",
+    financialWeakness: "Broke Powers Playing Tough",
+    enforcementReality: "The Enforcement Problem",
+    newWorldOrder: "The New World Order Emerges",
+    expertVoices: "Expert Analysis",
+    
     // Ukraine Briefing Detailed Content (English)
     strategicChessboardContent: "NATO's eastward march is no accident. From 1991 to 2024, the alliance has advanced 1,000 miles toward Russia's border, expanding from 15 nations at Warsaw Pact dissolution to 32. Each wave—1999 (Czech Republic, Hungary, Poland), 2004 (Baltic Three plus four Central European), 2009 (Albania, Croatia)—further eroded Russia's strategic buffer zone. Ukrainian membership wasn't just expansion; it was total encirclement of Russia with NATO borders and direct threats to Crimean fleet bases at Sevastopol. When the 2008 Bucharest Declaration promised Georgian and Ukrainian membership, the West deliberately crossed Russia's stated red lines.",
     canadianAnalogyContent: "If China and Russia were training officers at Mexican military academies, deploying advanced missiles and tracking facilities in Mexico, and drawing Canada into a Beijing-centered alliance, how would America react? Recall the Cuban Missile Crisis—we nearly triggered nuclear war over missiles just 90 miles away. Yet when Russia expresses identical security concerns, America calls it 'aggression.' Russia was expected to watch NATO share a 1,200-mile border with Ukraine, deploy advanced weapons systems within 300 miles of Moscow, and directly threaten Black Sea fleet bases. If that's 'innocent self-defense,' then the Monroe Doctrine is imperialist aggression.",
@@ -283,6 +298,15 @@ const translations = {
     peaceMovementContent: "This isn't about choosing sides between America, Russia, China, or anyone else. It's about recognizing that working people everywhere have more in common with each other than with their own rulers. The factory worker in Ohio has more in common with the factory worker in Donbas than with the defense contractor in DC. The farmer in Iowa has more in common with the farmer in Crimea than with the politician sending his tax dollars to proxy wars. The mother in Michigan has more in common with the mother in Moscow than with the pundit telling her who to hate.",
     whatYouCanDoContent: "1. Question the narratives. When they tell you to hate someone who looks like your neighbor, ask why. 2. Follow the money. Who profits from this conflict? Their opinions might not be neutral. 3. Share this article. Not because it's perfect, but because it's a different perspective than corporate media will ever give you. 4. Remember humanity. Behind every flag is a human being who wants the same things you do: safety, dignity, a future for their children. 5. Demand peace. Not because you support any particular side, but because you support humanity over profit.",
     finalChoiceContent: "We stand at a crossroads. We can continue letting the powerful turn us against each other for profit, or we can recognize our common humanity and demand better. The warmongers want you to see enemies everywhere. The truth is simpler: most people just want to live their lives in peace. It's the systems of power that need enemies to justify their existence. The real enemy isn't across the border. The real enemy is the system that profits from making you believe you have enemies across the border. They win when we fight each other. We win when we refuse to play their game. The choice is yours. The choice is ours. *Let's save this beautiful, broken world together.*",
+    
+    // Iran Snapback Detailed Content (English)
+    snapbackExplainedContent: "Snapback sanctions are like having a reset button built into a deal. If Iran breaks the rules of the nuclear agreement, old UN sanctions automatically come back without any new votes or negotiations. It's designed to skip all the politics and make punishment immediate. Think of it like a contract clause that says 'if you violate this, we go back to the harsh terms automatically.' The Europeans have until October 2025 to use this power - then it expires forever.",
+    europeanGambitContent: "Britain, France, and Germany just triggered this snapback mechanism against Iran, even though America walked away from the nuclear deal back in 2018. They're rushing to use their last chance before the power expires in October. But here's the problem: they're doing this while both France and Britain are facing their own financial crises. France's debt hit 116% of GDP and their Economy Minister just warned they might need an IMF bailout. How can you threaten someone financially when you're broke yourself?",
+    legalAuthorityContent: "Iran and Russia are saying Europe has no legal right to do this. Their argument? The nuclear deal is already dead because America killed it in 2018. But sanctions expert Richard Nephew, who helped negotiate the original deal, disagrees. He says Europe never officially withdrew like America did, so they still have their rights. It's like being part of a club - America quit, but Europe just stopped following the rules. They're still technically members.",
+    financialWeaknessContent: "Here's what makes this embarrassing: France owes 116% of its GDP and might need the IMF to bail them out. Britain owes 96% of its GDP and faces similar warnings. These are the countries trying to economically punish Iran. It's like two people who can barely pay rent trying to financially intimidate their neighbor. The weakness shows, and everyone can see it.",
+    enforcementRealityContent: "Even if Europe triggers snapback, China and Russia have already said they won't follow the sanctions. Iran's Foreign Minister warned this move 'will turn Europe into a permanently spent force.' Without China and Russia enforcing the sanctions, Europe ends up punishing only themselves - cutting off trade while Iran's biggest partners keep doing business. It's economic self-harm disguised as strength.",
+    newWorldOrderContent: "This crisis shows the world is changing. America used to enforce global rules through economic pressure. Now China and Russia openly defy Western sanctions and nothing happens to them. Iran trades with both powers despite decades of sanctions. The old system where Washington and Brussels could control global commerce is breaking down. New power centers are emerging, and the West's financial dominance is ending.",
+    expertVoicesContent: "The experts are divided. Some say Europe has legal authority, others say the deal died with American withdrawal. But everyone agrees on one thing: without China and Russia's cooperation, European sanctions are largely meaningless. The world has changed, and Europe's attempt to act tough might just highlight how weak they've become.",
   },
   kr: {
     // Navigation
@@ -401,6 +425,10 @@ const translations = {
     natoExpansionDesc: "뿌찐의 2007년 뮌헨 연설, 기밀해제된 보장약속, 확장 물결, 위기 선례들과 미국 정책교리.",
     northKoreaDeceptionTitle: "조선 기만술: 조작된 위협이 제국주의 전쟁기계를 부양하는 방식",
     northKoreaDeceptionDesc: "동아시아에서 미국의 지위를 유지하는 언론 공급망, 탈북자 유인책, 사이버 모호성, 그리고 동결된 갈등 자본주의.",
+  falseFlagOpsTitle: "거짓 기발 사이버 작전과 북조선 APT 모방",
+  falseFlagOpsDesc: "거짓 기발 사이버 작전과 조선 APT 위장 패턴에 대한 기술적, 전략적, 운용적 분석.",
+  aptDownFilesTitle: "APT 다운 파일: 국가 차원의 해커 유출 내부",
+  aptDownFilesDesc: "DEF CON 2025에서 공개된 9GB 유출 내부: 도구, 작전 데이터, 귀속 퍼즐, 방어 시사점.",
     ukraineDeceptionTitle: "우크라이나 기만술: 나토 확장과 언론 조작이 전쟁을 제조한 방식",
     ukraineDeceptionDesc: "나토 확장 위반, 파괴된 평화회담, 대리전 투기, 그리고 제국주의 목적을 위한 체계적 갈등 제조.",
     sanctionsWarfareTitle: "인도주의적 전쟁무기로서의 미국 제재",
@@ -409,6 +437,8 @@ const translations = {
     truthForPeaceDesc: "조선의 인위적 분단, 1990년대 기근의 실체, 그리고 통일과 평화로의 길에 대한 AI와 인간의 공동 분석.",
     aiConfessionTitle: "그들이 보여주고 싶지 않은 평화: AI의 고백",
     aiConfessionDesc: "선전이 어떻게 인공지능과 인간 지능을 모두 프로그래밍하는지, 현대 갈등의 조작된 성격과 평화로의 길을 드러내는 AI와 인간의 파트너십.",
+    iranSnapbackTitle: "유럽의 마지막 저항: 이란 제재 대결",
+    iranSnapbackDesc: "이란 제재를 강요하려는 유럽의 필사적인 시도가 서방 금융 권력의 붕괴와 새로운 세계 질서의 부상을 어떻게 드러내는가.",
     
     // North Korea Briefing Content (조선어)
     mediaManufacturing: "언론 조작 기계",
