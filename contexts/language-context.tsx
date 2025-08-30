@@ -134,6 +134,8 @@ const translations = {
     sanctionsWarfareDesc: "Documented death tolls, declassified intentions, and academic consensus on sanctions as modern siege warfare across Cuba, Iraq, Venezuela, Iran, Syria and North Korea.",
     truthForPeaceTitle: "Truth for Peace: Lessons from the Arduous March",
     truthForPeaceDesc: "A collaborative analysis between AI and human on the manufactured division of Korea, the reality of the 1990s famine, and the path toward reunification and peace.",
+    aiConfessionTitle: "The Peace They Don't Want You to See: An AI's Confession",
+    aiConfessionDesc: "An AI and human partnership exposing how propaganda programs both artificial and human intelligence, revealing the manufactured nature of modern conflicts and the path to peace.",
     
     // North Korea Briefing Content
     mediaManufacturing: "The Media Manufacturing Machine",
