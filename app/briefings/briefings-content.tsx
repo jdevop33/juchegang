@@ -19,6 +19,14 @@ export default function BriefingsContent() {
       <ul className="max-w-3xl mx-auto space-y-6">
         <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
           <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/iran-snapback" className="hover:underline">
+              {t('iranSnapbackTitle')}
+            </Link>
+          </h2>
+          <p className="text-muted-foreground">{t('iranSnapbackDesc')}</p>
+        </li>
+        <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
+          <h2 className="text-2xl font-semibold mb-2">
             <Link href="/briefings/nato-expansion" className="hover:underline">
               {t('natoExpansionTitle')}
             </Link>

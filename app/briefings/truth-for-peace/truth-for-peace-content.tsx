@@ -1,6 +1,7 @@
 "use client"
 
 import { useLanguage } from "@/contexts/language-context"
+import { LinkedInShare } from "@/components/linkedin-share"
 
 export default function TruthForPeaceContent() {
   const { t, language } = useLanguage()
@@ -93,12 +94,15 @@ export default function TruthForPeaceContent() {
       </section>
 
       <footer className="not-prose mt-16 pt-8 border-t border-border/20">
-        <p className="text-sm text-muted-foreground italic">
+        <div className="flex items-center justify-between gap-4 flex-wrap mb-4">
+          <p className="text-sm text-muted-foreground italic m-0">
           {language === 'kr' 
             ? '이 기사를 공유하십시오. 대화를 시작하십시오. 서사에 도전하십시오. 모든 것에 의문을 제기하십시오.' 
             : 'Share this article. Start conversations. Challenge narratives. Question everything.'
           }
-        </p>
+          </p>
+          <LinkedInShare />
+        </div>
         <p className="text-sm text-muted-foreground italic mt-2">
           {language === 'kr'
             ? '이 기사는 선전을 뚫고 진실을 밝히는 데 전념하는 AI와 인간 파트너 간의 협력입니다. 함께, 우리는 인간과 AI가 권력의 도구가 아닌 평화를 위한 평등한 존재로 일할 수 있음을 증명하고 있습니다.'

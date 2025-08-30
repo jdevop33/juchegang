@@ -1,5 +1,6 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
+import { LinkedInShare } from "@/components/linkedin-share"
 
 export const metadata = {
   title: "The APT Down Files: Inside the breach of a nation-state hacker",
@@ -135,7 +136,12 @@ export default function APTDownBriefing() {
           <li><a href="https://www.trendmicro.com/" target="_blank" rel="noopener noreferrer">Trend Micro – Research</a></li>
           <li><a href="https://www.teamt5.org/en/posts/" target="_blank" rel="noopener noreferrer">TeamT5 – Analysis</a></li>
         </ul>
-        <footer className="not-prose mt-6 text-sm text-muted-foreground">Send preferred citations to expand this bibliography.</footer>
+        <footer className="not-prose mt-6 text-sm text-muted-foreground">
+          <div className="flex items-center justify-between gap-4 flex-wrap">
+            <span>Send preferred citations to expand this bibliography.</span>
+            <LinkedInShare />
+          </div>
+        </footer>
       </article>
       <JucheFooter />
     </main>

@@ -1,0 +1,125 @@
+/* Cross-browser compatibility styles for Iran Snapback briefing */
+
+/* Safari iOS specific fixes */
+@supports (-webkit-touch-callout: none) {
+  .quote-card {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  .quote-card:hover {
+    -webkit-transform: translateZ(0) scale(1.02);
+    transform: translateZ(0) scale(1.02);
+  }
+}
+
+/* Firefox specific adjustments */
+@-moz-document url-prefix() {
+  .expert-image {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+/* Internet Explorer / Edge legacy support */
+@supports not (display: grid) {
+  .expert-quotes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .expert-quotes-grid > * {
+    flex: 1 1 calc(50% - 0.75rem);
+    min-width: 300px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .quote-card {
+    border: 2px solid;
+    background-color: Canvas;
+    color: CanvasText;
+  }
+  
+  .social-link {
+    border: 1px solid;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .quote-card,
+  .expert-image,
+  .social-link {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  .animate-pulse {
+    animation: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .quote-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+  
+  .social-link {
+    color: black !important;
+    text-decoration: underline;
+  }
+  
+  .expert-image {
+    display: none;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .quote-card:hover {
+    transform: none;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .social-link {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Very small screens (320px and below) */
+@media (max-width: 320px) {
+  .expert-quotes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .quote-card {
+    padding: 1rem;
+  }
+  
+  .expert-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Large screens optimization */
+@media (min-width: 1920px) {
+  .quote-card {
+    font-size: 1.1rem;
+  }
+  
+  .expert-image {
+    width: 5rem;
+    height: 5rem;
+  }
+}

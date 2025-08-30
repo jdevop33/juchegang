@@ -1,6 +1,7 @@
 "use client"
 
 import { useLanguage } from "@/contexts/language-context"
+import { LinkedInShare } from "@/components/linkedin-share"
 
 export default function SanctionsWarfareContent() {
   const { t } = useLanguage()
@@ -74,6 +75,12 @@ export default function SanctionsWarfareContent() {
           {t('sanctionsConclusionContent')}
         </p>
       </section>
+      <footer className="not-prose mt-12 text-sm text-muted-foreground">
+        <div className="flex items-center justify-between gap-4 flex-wrap">
+          <p className="text-muted-foreground">{t('briefingNote')}</p>
+          <LinkedInShare />
+        </div>
+      </footer>
     </article>
   )
 }

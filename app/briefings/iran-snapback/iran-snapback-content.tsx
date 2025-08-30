@@ -1,0 +1,272 @@
+"use client"
+
+import { useLanguage } from "@/contexts/language-context"
+import Image from "next/image"
+import Link from "next/link"
+import { useState } from "react"
+
+const expertQuotes = [
+  {
+    name: "Dr. Mohammad Marandi",
+    title: "University of Tehran Professor",
+    quote: {
+      en: "The Europeans are playing a very dangerous game. They think they can use financial pressure to force Iran's compliance, but they're miscalculating Iran's resolve and regional support.",
+      kr: "유럽인들은 매우 위험한 게임을 하고 있습니다. 그들은 재정적 압박을 이용해 이란의 순응을 강요할 수 있다고 생각하지만, 이란의 결의와 지역적 지원을 잘못 계산하고 있습니다."
+    },
+    image: "/images/experts/marandi.jpg",
+    social: {
+      twitter: "https://twitter.com/drmarandi",
+      linkedin: "https://linkedin.com/in/mohammad-marandi"
+    }
+  },
+  {
+    name: "Professor Jeffrey Sachs",
+    title: "Columbia University Economics",
+    quote: {
+      en: "Europe's debt crisis makes their threats hollow. When you owe more than you produce, your financial weapons lose their power.",
+      kr: "유럽의 부채 위기는 그들의 위협을 공허하게 만듭니다. 생산하는 것보다 더 많이 빚지고 있을 때, 재정적 무기는 힘을 잃습니다."
+    },
+    image: "/images/experts/sachs.jpg",
+    social: {
+      twitter: "https://twitter.com/jeffdsachs",
+      linkedin: "https://linkedin.com/in/jeffrey-sachs"
+    }
+  },
+  {
+    name: "Alexander Mercouris",
+    title: "International Law Expert",
+    quote: {
+      en: "The legal foundation for European snapback sanctions is questionable at best. International law doesn't support unilateral enforcement when the original agreement has already collapsed.",
+      kr: "유럽의 스냅백 제재에 대한 법적 근거는 기껏해야 의문스럽습니다. 원래 협정이 이미 붕괴된 상황에서 일방적 강제 집행을 국제법은 지지하지 않습니다."
+    },
+    image: "/images/experts/mercouris.jpg",
+    social: {
+      twitter: "https://twitter.com/alexmercouris",
+      linkedin: "https://linkedin.com/in/alexander-mercouris"
+    }
+  },
+  {
+    name: "Pepe Escobar",
+    title: "Geopolitical Analyst",
+    quote: {
+      en: "This is Europe's last desperate attempt to maintain relevance in a multipolar world. But China and Russia aren't playing by the old Western rules anymore.",
+      kr: "이것은 다극 세계에서 관련성을 유지하려는 유럽의 마지막 필사적 시도입니다. 하지만 중국과 러시아는 더 이상 옛 서방의 규칙을 따르지 않습니다."
+    },
+    image: "/images/experts/escobar.jpg",
+    social: {
+      twitter: "https://twitter.com/RealPepeEscobar",
+      linkedin: "https://linkedin.com/in/pepe-escobar"
+    }
+  }
+]
+
+function QuoteCard({ expert, language }: { expert: typeof expertQuotes[0], language: string }) {
+  const [imageLoaded, setImageLoaded] = useState(false)
+  const [imageError, setImageError] = useState(false)
+
+  return (
+    <article 
+      className="quote-card bg-muted/20 rounded-xl p-4 sm:p-6 border border-border/60 hover:bg-muted/30 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] break-inside-avoid"
+      role="article"
+      aria-labelledby={`expert-${expert.name.replace(/\s+/g, '-').toLowerCase()}`}
+    >
+      <div className="flex flex-col sm:flex-row items-start gap-4 mb-4">
+        <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden flex-shrink-0 mx-auto sm:mx-0">
+          {!imageError ? (
+            <>
+              {!imageLoaded && (
+                <div className="w-full h-full bg-muted/40 animate-pulse rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full bg-muted/60"></div>
+                </div>
+              )}
+              <Image
+                src={expert.image}
+                alt={expert.name}
+                fill
+                className={`object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                onLoad={() => setImageLoaded(true)}
+                onError={() => setImageError(true)}
+                unoptimized
+                sizes="(max-width: 640px) 64px, 80px"
+              />
+            </>
+          ) : (
+            <div className="w-full h-full bg-gradient-to-br from-accent/20 to-accent/40 flex items-center justify-center rounded-full">
+              <span className="text-accent font-bold text-lg">
+                {expert.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+              </span>
+            </div>
+          )}
+        </div>
+        <div className="flex-1 text-center sm:text-left min-w-0">
+          <h3 
+            id={`expert-${expert.name.replace(/\s+/g, '-').toLowerCase()}`}
+            className="font-semibold text-lg sm:text-xl leading-tight break-words"
+          >
+            {expert.name}
+          </h3>
+          <p className="text-muted-foreground text-sm sm:text-base mt-1 break-words" role="text">
+            {expert.title}
+          </p>
+          <div className="flex flex-wrap gap-2 mt-3 justify-center sm:justify-start">
+            {expert.social.twitter && (
+              <Link 
+                href={expert.social.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 px-3 py-1 bg-blue-500/10 text-blue-400 hover:text-blue-300 hover:bg-blue-500/20 rounded-full text-xs sm:text-sm transition-all duration-200 border border-blue-500/20"
+              >
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                Twitter
+              </Link>
+            )}
+            {expert.social.linkedin && (
+              <Link 
+                href={expert.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 px-3 py-1 bg-blue-600/10 text-blue-500 hover:text-blue-400 hover:bg-blue-600/20 rounded-full text-xs sm:text-sm transition-all duration-200 border border-blue-600/20"
+              >
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                </svg>
+                LinkedIn
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+      <blockquote 
+        className="text-foreground italic border-l-4 border-accent pl-4 text-sm sm:text-base leading-relaxed"
+        cite={expert.social.twitter || expert.social.linkedin}
+        role="blockquote"
+        aria-label={`Quote from ${expert.name}`}
+      >
+        <span className="text-accent text-2xl leading-none font-serif" aria-hidden="true">"</span>
+        <span className="ml-1">{language === 'kr' ? expert.quote.kr : expert.quote.en}</span>
+        <span className="text-accent text-2xl leading-none font-serif ml-1" aria-hidden="true">"</span>
+      </blockquote>
+    </article>
+  )
+}
+
+export default function IranSnapbackContent() {
+  const { t, language } = useLanguage()
+
+  return (
+    <article className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20 prose prose-invert max-w-none">
+      <div className="max-w-4xl mx-auto">
+        <header className="not-prose mb-8 sm:mb-12 text-center">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium border border-accent/20 backdrop-blur-sm">
+            <span className="animate-pulse">⚡</span>
+            {t('briefings')}
+          </div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent leading-tight">
+            {t('iranSnapbackTitle')}
+          </h1>
+          <p className="text-muted-foreground text-base sm:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
+            {t('iranSnapbackDesc')}
+          </p>
+          <div className="mt-6 sm:mt-8 w-24 h-1 bg-gradient-to-r from-accent to-accent/50 mx-auto rounded-full"></div>
+        </header>
+
+        <div className="space-y-8 sm:space-y-12">
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('snapbackExplained')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('snapbackExplainedContent')}
+            </div>
+          </section>
+
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('europeanGambit')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('europeanGambitContent')}
+            </div>
+          </section>
+
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('legalAuthority')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('legalAuthorityContent')}
+            </div>
+          </section>
+
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('financialWeakness')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('financialWeaknessContent')}
+            </div>
+          </section>
+
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('enforcementReality')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('enforcementRealityContent')}
+            </div>
+          </section>
+
+          <section className="prose-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
+              {t('newWorldOrder')}
+            </h2>
+            <div className="text-foreground/90 leading-relaxed text-base sm:text-lg">
+              {t('newWorldOrderContent')}
+            </div>
+          </section>
+
+          <section className="not-prose mt-12 sm:mt-16">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-accent">
+              {t('expertVoices')}
+            </h2>
+            <div 
+              className="expert-quotes-grid grid gap-6 sm:gap-8 md:grid-cols-2 lg:gap-10"
+              role="region"
+              aria-label="Expert opinions and quotes"
+            >
+              {expertQuotes.map((expert, index) => (
+                <QuoteCard key={index} expert={expert} language={language} />
+              ))}
+            </div>
+          </section>
+        </div>
+
+        <footer className="not-prose mt-16 sm:mt-20 pt-8 border-t border-border/20 text-center">
+          <div className="space-y-4">
+            <p className="text-sm sm:text-base text-muted-foreground italic max-w-2xl mx-auto">
+              {language === 'kr' 
+                ? '이 기사를 공유하십시오. 대화를 시작하십시오. 서사에 도전하십시오. 모든 것에 의문을 제기하십시오.' 
+                : 'Share this article. Start conversations. Challenge narratives. Question everything.'
+              }
+            </p>
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
+              {(language === 'kr'
+                ? ['#이란제재', '#유럽붕괴', '#다극세계', '#서사에의문제기']
+                : ['#IranSanctions', '#EuropeCollapse', '#MultipolarWorld', '#QuestionTheNarrative']
+              ).map((tag, index) => (
+                <span 
+                  key={index} 
+                  className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs sm:text-sm rounded-full border border-accent/20"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </footer>
+      </div>
+    </article>
+  )
+}
