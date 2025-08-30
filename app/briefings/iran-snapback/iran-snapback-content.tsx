@@ -356,32 +356,7 @@ export default function IranSnapbackContent() {
             </div>
           </section>
 
-          {/* Visual Banner Section */}
-          <section className="not-prose my-16">
-            <div className="relative rounded-2xl overflow-hidden w-full aspect-[3/1]">
-              <Image
-                src="/images/briefingbanner2.png"
-                alt="Economic warfare visualization"
-                fill
-                className="object-contain"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
-                unoptimized
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center">
-                <div className="p-6 sm:p-12 max-w-2xl">
-                  <h3 className="text-2xl sm:text-4xl font-bold text-white mb-4">
-                    {language === 'kr' ? '경제 전쟁의 진실' : 'The Truth About Economic Warfare'}
-                  </h3>
-                  <p className="text-white/90 text-lg">
-                    {language === 'kr' 
-                      ? '서방의 금융 지배가 어떻게 무너지고 있는지 공식들의 고백을 통해 알아보십시오'
-                      : 'Discover how Western financial dominance is crumbling through official confessions'
-                    }
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          {/* Removed mid‑page banner per request */}
 
           <section id="shadow" className="prose-lg scroll-mt-24">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
@@ -401,32 +376,7 @@ export default function IranSnapbackContent() {
             </div>
           </section>
 
-          {/* Cool Gang Visual */}
-          <section className="not-prose my-16">
-            <div className="relative rounded-2xl overflow-hidden w-full aspect-[3/1]">
-              <Image
-                src="/images/coolgang.png"
-                alt="New world order rising"
-                fill
-                className="object-contain"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
-                unoptimized
-              />
-              <div className="absolute inset-0 bg-gradient-to-l from-black/60 to-transparent flex items-center justify-end">
-                <div className="p-6 sm:p-12 max-w-2xl text-right">
-                  <h3 className="text-2xl sm:text-4xl font-bold text-white mb-4">
-                    {language === 'kr' ? '새로운 세계 질서' : 'The New World Order'}
-                  </h3>
-                  <p className="text-white/90 text-lg">
-                    {language === 'kr' 
-                      ? '다극화된 세계에서 진짜 권력이 어디로 이동하고 있는가'
-                      : 'Where real power is shifting in a multipolar world'
-                    }
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          {/* Removed mid‑page banner per request */}
 
           <section id="blindspot" className="prose-lg scroll-mt-24">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-accent border-b border-accent/20 pb-2">
@@ -464,66 +414,9 @@ export default function IranSnapbackContent() {
             </div>
           </section>
 
-          {/* Final Epic Visual */}
-          <section className="not-prose my-16">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full aspect-[12/5]">
-              <Image
-                src="/images/briefingsbanner1.png"
-                alt="The future belongs to multipolarity"
-                fill
-                className="object-contain"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
-                unoptimized
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
-                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-12 text-center">
-                  <h3 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 bg-gradient-to-r from-white via-white to-accent/80 bg-clip-text text-transparent">
-                    {language === 'kr' ? '다극 세계의 승리' : 'Victory of the Multipolar World'}
-                  </h3>
-                  <p className="text-white/90 text-lg sm:text-xl lg:text-2xl max-w-4xl mx-auto leading-relaxed mb-8">
-                    {language === 'kr' 
-                      ? '제국들이 무너져도 인민들은 번영합니다. 평화는 전쟁보다 강하고, 협력은 지배보다 강합니다. 새로운 세계가 태어나고 있습니다.'
-                      : 'Empires fall, but people prosper. Peace is stronger than war, cooperation stronger than domination. A new world is being born.'
-                    }
-                  </p>
-                  <div className="flex justify-center items-center gap-6">
-                    <div className="w-24 h-1 bg-gradient-to-r from-transparent via-accent to-transparent rounded-full"></div>
-                    <div className="w-3 h-3 bg-accent rounded-full"></div>
-                    <div className="w-6 h-6 bg-accent rounded-full animate-pulse"></div>
-                    <div className="w-3 h-3 bg-accent rounded-full"></div>
-                    <div className="w-24 h-1 bg-gradient-to-l from-transparent via-accent to-transparent rounded-full"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          {/* Removed final banner per request */}
 
-          {/* Cool Gang 2 Final Visual */}
-          <section className="not-prose my-16">
-            <div className="relative rounded-2xl overflow-hidden w-full aspect-[3/1]">
-              <Image
-                src="/images/coolgang2.png"
-                alt="Unity of the oppressed nations"
-                fill
-                className="object-contain"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
-                unoptimized
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70 flex items-center">
-                <div className="p-6 sm:p-12 w-full text-center">
-                  <h3 className="text-2xl sm:text-4xl font-bold text-white mb-4">
-                    {language === 'kr' ? '피억압민족의 단결' : 'Unity of Oppressed Nations'}
-                  </h3>
-                  <p className="text-white/90 text-lg max-w-3xl mx-auto">
-                    {language === 'kr' 
-                      ? '전 세계 인민들이 제국주의의 사슬을 끊고 진정한 자유를 향해 나아갑니다'
-                      : 'People of the world break the chains of imperialism and march toward true freedom'
-                    }
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          {/* Removed additional banner per request */}
 
           <section className="not-prose mt-12 sm:mt-16">
             <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-accent">

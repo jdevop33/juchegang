@@ -78,5 +78,17 @@
   "falseFlagOpsTitle": "False Flag Cyber Operations and North Korean APT Mimicry",
   "falseFlagOpsDesc": "Technical, strategic, and operational analysis of false flag cyber operations and DPRK APT impersonation patterns.",
   "aptDownFilesTitle": "The APT Down Files: Inside the breach of a nation-state hacker",
-  "aptDownFilesDesc": "Inside the 9GB leak revealed at DEF CON 2025: tools, ops data, attribution puzzles, and defensive takeaways."
+  "aptDownFilesDesc": "Inside the 9GB leak revealed at DEF CON 2025: tools, ops data, attribution puzzles, and defensive takeaways.",
+
+  "bricsTitle": "BRICS De-dollarization: Reshaping Global Finance",
+  "bricsSubtitle": "Payment systems, reserve diversification, and U.S. policy constraints in a multipolar era.",
+  "bricsIntro": "De-dollarization is not a switch but an architecture: bilateral settlement in local currencies, commodity-linked trade invoicing, regional clearing, and gradual reserve diversification. BRICS countries are scaling operational alternatives that reduce exposure to dollar sanctions and liquidity shocks while preserving optionality where the dollar remains efficient.",
+  "bricsCurrencyArchitecture": "Early discourse focused on a single \"BRICS currency.\" In practice, members prioritized interoperable rails: CIPS connectivity, local‑currency swap lines, bilateral clearing, and commodity‑anchored contracts. This modular approach lowers frictions without requiring monetary union, and it’s already live in energy and raw‑materials trade.",
+  "bricsQuantifiedDedollarization": "Dollar share in trade settlement is declining fastest in energy and bulk commodities where bilateral trust is highest. Private estimates show double‑digit growth in non‑USD settlement for China–Russia, China–GCC, and India–Russia flows since 2022, with spillover into insurance, shipping, and financing.",
+  "bricsFederalReserveConstraints": "As more trade clears outside the dollar system, imported disinflation from global demand for USD assets weakens. The Fed faces sharper trade‑offs between price stability and financial stability as QT/QE cycles transmit more volatility to U.S. term premia without the previous external absorption.",
+  "bricsFinancialIntelligence": "When settlement, custody, and messaging shift to non‑U.S. venues, visibility for sanctions screening and financial intelligence narrows. Gaps widen across trade finance, maritime insurance, and correspondent networks not routed through U.S.‑supervised infrastructure.",
+  "bricsPaymentInfrastructure": "Alternative rails—CIPS links, local RTGS upgrades, bank‑to‑bank APIs, and regional FX nets—have moved from pilots to production for targeted corridors. The priority is resilience and optionality rather than replacement; redundancy itself is strategic.",
+  "bricsFiscalSustainability": "Higher structural interest costs and weaker external demand for Treasuries imply a medium‑term fiscal adjustment in the U.S. on the order often cited at hundreds of billions annually. Productivity growth and industrial capacity can offset, but rely on investment not merely financial engineering.",
+  "bricsReserveDiversification": "Sovereign portfolios are diversifying incrementally—more gold, more CNY assets, and deeper local‑currency bonds in regional partners. Dollar resilience persists, but single‑point dependence is falling as hedging becomes policy.",
+  "bricsConclusion": "The dollar remains dominant, but contestable. BRICS strategies emphasize redundancy, local optionality, and commodity‑linked contracts. The long‑run equilibrium is plural: multiple rails, multiple units of account, and less unilateral leverage over global commerce."
 }
