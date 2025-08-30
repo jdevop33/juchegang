@@ -13,10 +13,10 @@ const expertQuotes = [
       en: "The findings are shocking. The fact that previous administrations allowed the United States to become reliant on foreign nations, including our competitors and adversaries, for minerals that are so strategically important to our security and economy is deeply troubling.",
       kr: "결과가 충격적입니다. 이전 행정부들이 미국이 우리의 안보와 경제에 매우 전략적으로 중요한 광물들에 대해 경쟁국과 적대국을 포함한 외국에 의존하게 된 것은 매우 우려스럽습니다."
     },
-    image: "/images/experts/zinke.jpg",
+    image: "/images/RyanZinke.jpg",
     social: {
-      twitter: "https://twitter.com/SecretaryZinke",
-      linkedin: "https://linkedin.com/in/ryan-zinke"
+      twitter: "https://x.com/Secretaryzinke",
+      linkedin: "https://www.linkedin.com/in/ryan-zinke-b3b34416/"
     }
   },
   {
@@ -26,10 +26,10 @@ const expertQuotes = [
       en: "The explosive growth of AI is posing this big question: Are we going to have enough energy to power AI? We need utilities requesting almost seven times as much funding as we have available.",
       kr: "AI의 폭발적 성장이 큰 질문을 제기합니다: AI에 전력을 공급할 에너지가 충분할까요? 유틸리티들이 우리가 보유한 것의 거의 7배에 달하는 자금을 요청하고 있습니다."
     },
-    image: "/images/experts/granholm.jpg",
+    image: "/images/JenniferGranholm.jpg",
     social: {
-      twitter: "https://twitter.com/SecGranholm",
-      linkedin: "https://linkedin.com/in/jennifer-granholm"
+      twitter: "https://x.com/secgranholm?lang=en",
+      linkedin: "https://www.linkedin.com/in/jennifergranholm/"
     }
   },
   {
@@ -39,10 +39,10 @@ const expertQuotes = [
       en: "The substance of our industry is under threat. At the current price level, it will mean an automatic deindustrialization for Germany. We risk turning from an industrial country into an industrial museum.",
       kr: "우리 산업의 핵심이 위협받고 있습니다. 현재 가격 수준에서는 독일의 자동적인 탈산업화를 의미할 것입니다. 우리는 산업국가에서 산업박물관으로 전락할 위험에 있습니다."
     },
-    image: "/images/experts/russwurm.jpg",
+    image: "/images/siegfried-russwurm.jpg",
     social: {
-      twitter: "https://twitter.com/BDI_Industrie",
-      linkedin: "https://linkedin.com/in/siegfried-russwurm"
+      twitter: "",
+      linkedin: "https://www.linkedin.com/in/siegfried-russwurm/?originalSubdomain=de"
     }
   },
   {
@@ -52,10 +52,10 @@ const expertQuotes = [
       en: "The idea is to bring copper home, bring copper production home. We need that kind of production in America, it's important - but we imported $17 billion worth of copper in 2024.",
       kr: "아이디어는 구리를 국내로, 구리 생산을 국내로 가져오는 것입니다. 미국에는 그런 생산이 필요하고 중요합니다 - 하지만 우리는 2024년에 170억 달러 상당의 구리를 수입했습니다."
     },
-    image: "/images/experts/lutnick.jpg",
+    image: "/images/HowardWLutnick.jpg",
     social: {
-      twitter: "https://twitter.com/howardlutnick",
-      linkedin: "https://linkedin.com/in/howard-lutnick"
+      twitter: "",
+      linkedin: "https://www.linkedin.com/in/howardwlutnick/"
     }
   },
   {
@@ -65,10 +65,10 @@ const expertQuotes = [
       en: "The Europeans are playing a very dangerous game. They think they can use financial pressure to force Iran's compliance, but they're miscalculating Iran's resolve and regional support.",
       kr: "유럽인들은 매우 위험한 게임을 하고 있습니다. 그들은 재정적 압박을 이용해 이란의 순응을 강요할 수 있다고 생각하지만, 이란의 결의와 지역적 지원을 잘못 계산하고 있습니다."
     },
-    image: "/images/experts/marandi.jpg",
+    image: "/images/Seyed_Mohammad_Marandi_2014-06-30.jpg",
     social: {
-      twitter: "https://twitter.com/drmarandi",
-      linkedin: "https://linkedin.com/in/mohammad-marandi"
+      twitter: "https://x.com/s_m_marandi?lang=en",
+      linkedin: "https://en.wikipedia.org/wiki/Mohammad_Marandi"
     }
   },
   {
@@ -78,10 +78,10 @@ const expertQuotes = [
       en: "Europe's debt crisis makes their threats hollow. When you owe more than you produce, your financial weapons lose their power.",
       kr: "유럽의 부채 위기는 그들의 위협을 공허하게 만듭니다. 생산하는 것보다 더 많이 빚지고 있을 때, 재정적 무기는 힘을 잃습니다."
     },
-    image: "/images/experts/sachs.jpg",
+    image: "/images/jeffreysachs.jpg",
     social: {
-      twitter: "https://twitter.com/jeffdsachs",
-      linkedin: "https://linkedin.com/in/jeffrey-sachs"
+      twitter: "",
+      linkedin: "https://www.linkedin.com/in/jeffrey-d-sachs/"
     }
   }
 ]
@@ -145,7 +145,7 @@ function QuoteCard({ expert, language }: { expert: typeof expertQuotes[0], langu
                 <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
-                Twitter
+                X
               </Link>
             )}
             {expert.social.linkedin && (
@@ -155,10 +155,21 @@ function QuoteCard({ expert, language }: { expert: typeof expertQuotes[0], langu
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 px-3 py-1 bg-blue-600/10 text-blue-500 hover:text-blue-400 hover:bg-blue-600/20 rounded-full text-xs sm:text-sm transition-all duration-200 border border-blue-600/20"
               >
-                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
-                </svg>
-                LinkedIn
+                {expert.social.linkedin.includes('wikipedia.org') ? (
+                  <>
+                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 17.93V20h-2v-.07A8.001 8.001 0 014.07 13H4v-2h.07A8.001 8.001 0 0111 4.07V4h2v.07A8.001 8.001 0 0119.93 11H20v2h-.07A8.001 8.001 0 0113 19.93z"/>
+                    </svg>
+                    Wikipedia
+                  </>
+                ) : (
+                  <>
+                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                    </svg>
+                    LinkedIn
+                  </>
+                )}
               </Link>
             )}
           </div>
