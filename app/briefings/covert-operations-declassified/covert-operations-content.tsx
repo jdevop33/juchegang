@@ -1,5 +1,3 @@
-"use client"
-
 export default function CovertOperationsContent() {
   return (
     <article className="container mx-auto px-4 py-16">
