@@ -83,6 +83,14 @@ export default function BriefingsContent() {
         </li>
         <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
           <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/navy-seals-civilians" className="hover:underline">
+              {t('navySealsTitle')}
+            </Link>
+          </h2>
+          <p className="text-muted-foreground">{t('navySealsDesc')}</p>
+        </li>
+        <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
+          <h2 className="text-2xl font-semibold mb-2">
             <Link href="/briefings/apt-down-files" className="hover:underline">
               {t('aptDownFilesTitle')}
             </Link>
