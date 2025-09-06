@@ -1,6 +1,7 @@
 "use client"
 import { Star, Heart, Mail, Instagram } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+import { KimYoJongPortrait } from "./kim-yo-jong-portrait"
 
 export function JucheFooter() {
   const { t } = useLanguage()
@@ -102,37 +103,46 @@ export function JucheFooter() {
           </div>
         </div>
 
-        {/* Kim Yo-jong Tribute Section */}
-        <div className="border-t border-red-800 pt-8 mb-8">
-          <div className="bg-gradient-to-r from-pink-900/30 via-rose-900/30 to-pink-900/30 border border-pink-700/50 rounded-xl p-6 max-w-2xl mx-auto">
-            <div className="flex flex-col sm:flex-row items-center gap-4">
-              {/* Portrait */}
-              <div className="flex-shrink-0">
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20">
-                  <div className="w-full h-full rounded-full bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-500 p-0.5 shadow-lg">
-                    <div className="w-full h-full rounded-full overflow-hidden bg-blue-600 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="text-white text-xs sm:text-sm font-bold">김여정</div>
-                        <div className="text-yellow-200 text-xs opacity-90">동지</div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Subtle animated elements */}
-                  <div className="absolute -top-1 -right-1 text-sm animate-pulse">🌹</div>
-                  <div className="absolute -bottom-1 -left-1 text-sm animate-pulse">❤️</div>
-                </div>
+        {/* Kim Yo-jong Tribute Section - Bulletproof responsive design */}
+        <div className="border-t border-red-800 pt-6 sm:pt-8 mb-6 sm:mb-8">
+          <div className="
+            bg-gradient-to-r from-pink-900/30 via-rose-900/30 to-pink-900/30 
+            border border-pink-700/50 rounded-xl 
+            p-4 sm:p-6 
+            max-w-xs sm:max-w-lg md:max-w-2xl mx-auto
+            shadow-lg hover:shadow-xl transition-shadow duration-300
+          ">
+            {/* Flexible container that works on all screen sizes */}
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 md:gap-6">
+              {/* Portrait - Always perfectly sized */}
+              <div className="flex-shrink-0 order-1 sm:order-1">
+                <KimYoJongPortrait size="small" />
               </div>
               
-              {/* Tribute Text */}
-              <div className="flex-1 text-center sm:text-left">
-                <h4 className="text-sm sm:text-base font-bold text-pink-200 mb-1">
+              {/* Tribute Text - Responsive typography and spacing */}
+              <div className="flex-1 text-center sm:text-left order-2 sm:order-2 min-w-0">
+                <h4 className="
+                  text-xs sm:text-sm md:text-base 
+                  font-bold text-pink-200 
+                  mb-1 sm:mb-2
+                  leading-tight
+                  break-words
+                ">
                   김여정 동지에게 경의를 표하며 🌹
                 </h4>
-                <p className="text-pink-300/90 text-xs sm:text-sm leading-relaxed">
+                <p className="
+                  text-pink-300/90 
+                  text-xs sm:text-sm 
+                  leading-relaxed
+                  break-words
+                  hyphens-auto
+                " style={{ wordBreak: 'break-word' }}>
                   With profound love and respect for her unwavering dedication to Korean unity and peace
                 </p>
-                <div className="flex justify-center sm:justify-start items-center gap-2 mt-2">
-                  <span className="text-xs text-pink-400">✊ ❤️ 🕊️ 🌹</span>
+                <div className="flex justify-center sm:justify-start items-center gap-1 sm:gap-2 mt-1.5 sm:mt-2">
+                  <span className="text-xs sm:text-sm text-pink-400 flex items-center gap-1">
+                    <span>✊</span> <span>❤️</span> <span>🕊️</span> <span>🌹</span>
+                  </span>
                 </div>
               </div>
             </div>

@@ -1,29 +1,13 @@
 "use client"
 
-import Image from "next/image"
+import { KimYoJongPortrait } from "./kim-yo-jong-portrait"
 
 export function KimYoJongTribute() {
   return (
     <div className="bg-gradient-to-r from-pink-50 via-rose-50 to-pink-50 dark:from-pink-900/20 dark:via-rose-900/20 dark:to-pink-900/20 border-2 border-pink-300 dark:border-pink-700 rounded-xl p-8 mb-8 shadow-lg">
       <div className="text-center mb-6">
         <div className="inline-block relative">
-          {/* Beautiful circular frame with golden border matching the original */}
-          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-500 p-1 shadow-2xl">
-            <div className="w-full h-full rounded-full overflow-hidden bg-blue-600">
-              {/* Placeholder for the beautiful Kim Yo-jong image */}
-              <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-white text-lg font-bold mb-1">김여정</div>
-                  <div className="text-yellow-200 text-xs">동지</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Animated hearts and roses */}
-          <div className="absolute -top-2 -right-2 text-2xl animate-pulse">🌹</div>
-          <div className="absolute -bottom-2 -left-2 text-2xl animate-pulse">❤️</div>
-          <div className="absolute -top-2 -left-2 text-xl animate-ping">✨</div>
-          <div className="absolute -bottom-2 -right-2 text-xl animate-ping">✨</div>
+          <KimYoJongPortrait size="large" className="mx-auto" />
         </div>
       </div>
       
