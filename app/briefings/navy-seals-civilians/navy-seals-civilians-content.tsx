@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
+import "./mobile-styles.css"
 
 interface HistoricalScenario {
   id: string
@@ -84,6 +85,8 @@ export default function NavySealsCiviliansContent() {
   const [progress, setProgress] = useState(0)
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null)
   const [showConsequence, setShowConsequence] = useState(false)
+  const [feelingSelected, setFeelingSelected] = useState<string | null>(null)
+  const [showPlotTwist, setShowPlotTwist] = useState(false)
 
   const handleChoice = (choiceId: string) => {
     setSelectedChoice(choiceId)
@@ -106,6 +109,18 @@ export default function NavySealsCiviliansContent() {
     }
   }
 
+  const handleFeeling = (feeling: string) => {
+    setFeelingSelected(feeling)
+    // Haptic feedback on mobile if supported
+    if (window.navigator && window.navigator.vibrate) {
+      window.navigator.vibrate(50)
+    }
+    // Auto-advance after 2 seconds to show the plot twist
+    setTimeout(() => {
+      setShowPlotTwist(true)
+    }, 2000)
+  }
+
   const resetJourney = () => {
     setCurrentStep(-1)
     setChoices([])
@@ -113,6 +128,8 @@ export default function NavySealsCiviliansContent() {
     setProgress(0)
     setSelectedChoice(null)
     setShowConsequence(false)
+    setFeelingSelected(null)
+    setShowPlotTwist(false)
   }
 
   // Introduction screen
@@ -145,7 +162,7 @@ export default function NavySealsCiviliansContent() {
               </p>
               <Button 
                 onClick={() => setCurrentStep(0)}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 touch-manipulation min-h-[48px]"
                 size="lg"
               >
                 Begin Your Journey 🚀
@@ -206,10 +223,10 @@ export default function NavySealsCiviliansContent() {
                     <Button
                       key={choice.id}
                       variant="outline"
-                      className="w-full p-6 h-auto text-left justify-start hover:bg-accent/50"
+                      className="w-full p-6 min-h-[60px] h-auto text-left justify-start hover:bg-accent/50 touch-manipulation"
                       onClick={() => handleChoice(choice.id)}
                     >
-                      <div className="text-base">{choice.text}</div>
+                      <div className="text-base leading-relaxed">{choice.text}</div>
                     </Button>
                   ))}
                 </div>
@@ -238,7 +255,7 @@ export default function NavySealsCiviliansContent() {
               <div className="text-center">
                 <Button 
                   onClick={handleContinue}
-                  className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3"
+                  className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 min-h-[48px] touch-manipulation"
                   size="lg"
                 >
                   {currentStep < scenarios.length - 1 ? "Continue Journey →" : "See Final Results 🎯"}
@@ -287,37 +304,86 @@ export default function NavySealsCiviliansContent() {
           </CardContent>
         </Card>
 
-        <div className="text-center mb-8">
-          <p className="text-xl font-semibold mb-6">How does this story make you feel? What's your judgment?</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Button variant="outline" className="px-6 py-3">
-              Outrage - This is terrorism!
-            </Button>
-            <Button variant="outline" className="px-6 py-3">
-              Concern - Investigate this!
-            </Button>
-            <Button variant="outline" className="px-6 py-3">
-              Anger - Punish the perpetrators!
-            </Button>
+        {!feelingSelected ? (
+          <div className="text-center mb-8">
+            <p className="text-xl font-semibold mb-6">How does this story make you feel? What's your judgment?</p>
+            <p className="text-base text-muted-foreground mb-6">Tap your reaction below ↓</p>
+            <div className="grid gap-4 max-w-2xl mx-auto">
+              <Button 
+                variant="outline" 
+                className="w-full p-4 min-h-[60px] text-left justify-start hover:bg-red-50 hover:border-red-300 dark:hover:bg-red-950 touch-manipulation"
+                onClick={() => handleFeeling('outrage')}
+              >
+                <span className="text-lg">😡 Outrage - This is terrorism!</span>
+              </Button>
+              <Button 
+                variant="outline" 
+                className="w-full p-4 min-h-[60px] text-left justify-start hover:bg-orange-50 hover:border-orange-300 dark:hover:bg-orange-950 touch-manipulation"
+                onClick={() => handleFeeling('concern')}
+              >
+                <span className="text-lg">😰 Concern - Investigate this!</span>
+              </Button>
+              <Button 
+                variant="outline" 
+                className="w-full p-4 min-h-[60px] text-left justify-start hover:bg-red-50 hover:border-red-300 dark:hover:bg-red-950 touch-manipulation"
+                onClick={() => handleFeeling('anger')}
+              >
+                <span className="text-lg">😠 Anger - Punish the perpetrators!</span>
+              </Button>
+            </div>
           </div>
-        </div>
+        ) : !showPlotTwist ? (
+          <div className="text-center mb-8">
+            <Card className="border-blue-200 bg-blue-50/50 dark:bg-blue-900/20 dark:border-blue-800">
+              <CardContent className="p-6">
+                <p className="text-xl font-semibold mb-3 text-blue-800 dark:text-blue-200">
+                  Your reaction: {feelingSelected === 'outrage' ? '😡 Outrage' : feelingSelected === 'concern' ? '😰 Concern' : '😠 Anger'}
+                </p>
+                <p className="text-lg text-blue-800 dark:text-blue-200 mb-4">
+                  That's a completely natural response to reading about foreign forces killing innocent civilians...
+                </p>
+                <div className="flex items-center justify-center space-x-2">
+                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
+                  <span className="text-blue-800 dark:text-blue-200">Preparing to reveal the truth...</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        ) : (
+          <>
+            <Card className="mb-8 border-yellow-200 bg-yellow-50/50 dark:bg-yellow-900/20 dark:border-yellow-800">
+              <CardHeader>
+                <CardTitle className="text-yellow-800 dark:text-yellow-200">⚠️ Plot Twist</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-xl font-semibold mb-4 text-yellow-800 dark:text-yellow-200">
+                  The "foreign forces" were US Navy SEALs.
+                </p>
+                <p className="text-xl font-semibold mb-4 text-yellow-800 dark:text-yellow-200">
+                  The "American civilians" were North Korean fishermen.
+                </p>
+                <p className="text-lg text-yellow-800 dark:text-yellow-200">
+                  This actually happened in 2019. Military reviews found the killings "justified." The details were classified and kept from congressional oversight.
+                </p>
+              </CardContent>
+            </Card>
 
-        <Card className="mb-8 border-yellow-200 bg-yellow-50/50 dark:bg-yellow-900/20 dark:border-yellow-800">
-          <CardHeader>
-            <CardTitle className="text-yellow-800 dark:text-yellow-200">⚠️ Plot Twist</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-xl font-semibold mb-4 text-yellow-800 dark:text-yellow-200">
-              The "foreign forces" were US Navy SEALs.
-            </p>
-            <p className="text-xl font-semibold mb-4 text-yellow-800 dark:text-yellow-200">
-              The "American civilians" were North Korean fishermen.
-            </p>
-            <p className="text-lg text-yellow-800 dark:text-yellow-200">
-              This actually happened in 2019. Military reviews found the killings "justified." The details were classified and kept from congressional oversight.
-            </p>
-          </CardContent>
-        </Card>
+            <Card className="mb-8 border-purple-200 bg-purple-50/50 dark:bg-purple-900/20 dark:border-purple-800">
+              <CardHeader>
+                <CardTitle className="text-purple-800 dark:text-purple-200">🤔 Your Reaction Changed?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-lg text-purple-800 dark:text-purple-200">
+                  You felt {feelingSelected === 'outrage' ? 'outrage' : feelingSelected === 'concern' ? 'concern' : 'anger'} when you thought foreign forces killed Americans. 
+                  How do you feel now knowing it was American forces killing North Koreans?
+                </p>
+                <p className="text-lg font-semibold mt-3 text-purple-800 dark:text-purple-200">
+                  This is exactly how perspective shapes our judgment of identical actions.
+                </p>
+              </CardContent>
+            </Card>
+          </>
+        )}
 
         <Card className="mb-8">
           <CardHeader>
@@ -346,7 +412,7 @@ export default function NavySealsCiviliansContent() {
           <Button 
             onClick={resetJourney}
             variant="outline"
-            className="px-8 py-3"
+            className="px-8 py-4 min-h-[48px] touch-manipulation"
           >
             Take the Journey Again
           </Button>

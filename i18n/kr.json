@@ -18,6 +18,7 @@
   "footerBlurb": "규률과 담력, 그리고 흔들림없는 결의로 개인의 힘을 기르는 탁월성 추구에 헌신한다.",
   "madeWith": "철의 의지와 결의로 제작",
   "followUs": "팔로우",
+  "respectNote": "본 페이지는 문화를 존중하고 사실에 기반한 설명을 지향합니다. 서로 다른 관점은 품위와 배려로 다룹니다.",
 
   "backToLaws": "탁월성의 법칙으로 돌아가기",
   "truthProjectTitle": "진실 프로젝트",
@@ -79,6 +80,12 @@
   "falseFlagOpsDesc": "거짓 기발 사이버 작전과 조선 APT 위장 패턴에 대한 기술적, 전략적, 운용적 분석.",
   "navySealsTitle": "입장 바뀌기: 관점의 이야기",
   "navySealsDesc": "우리 군대 대 그들 군대일 때 같은 이야기가 얼마나 다르게 느껴지는가? 관점에 대한 상호작용적 검토.",
+  "covertOperationsTitle": "기밀해제: 미국 비밀작전과 그 인적 대가",
+  "covertOperationsDesc": "기밀해제 문서, 의회 조사, 신뢰할 수 있는 자료에서 나온 민간인 희생자에 대한 문서화된 증거.",
+  "koreanReunificationTitle": "하나의 조선: 통일과 평화의 길",
+  "koreanReunificationDesc": "조선의 인위적 분단을 이해하고, 조선민주주의인민공화국의 성취를 존중하며, 평화적 통일을 위해 노력한다.",
+  "frozenConflictsTitle": "아이젠하워의 경고: 동결된 분쟁이 군산복합체에 자금을 대는 방법",
+  "frozenConflictsDesc": "조선에서 타이완, 우크라이나까지 - 영구적 긴장이 어떻게 전쟁 기계에 끝없는 이익을 창출하는가.",
   "aptDownFilesTitle": "APT 다운 파일: 국가 차원의 해커 유출 내부",
   "aptDownFilesDesc": "DEF CON 2025에서 공개된 9GB 유출 내부: 도구, 작전 데이터, 귀속 퍼즐, 방어 시사점.",
 

@@ -1,0 +1,30 @@
+/* Mobile optimization for perspective challenge buttons */
+.touch-manipulation {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Ensure buttons are large enough for touch on mobile */
+@media (max-width: 768px) {
+  button {
+    min-height: 48px !important;
+    min-width: 48px !important;
+  }
+}
+
+/* Improve button press feedback on mobile */
+button:active {
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
+}
+
+/* Prevent zoom on double tap */
+* {
+  touch-action: manipulation;
+}

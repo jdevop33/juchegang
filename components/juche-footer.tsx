@@ -103,7 +103,10 @@ export function JucheFooter() {
         </div>
 
         <div className="border-t border-red-800 pt-8 text-center">
-          <p className="text-red-200">© {new Date().getFullYear()} Juche GanG. {t('allRights')}</p>
+          <p className="text-red-200 mb-2">© {new Date().getFullYear()} Juche GanG. {t('allRights')}</p>
+          <p className="text-red-300 text-sm opacity-90">
+            {t('respectNote') || 'These pages aim to be factual and respectful across cultures. Differences in views are approached with dignity and care.'}
+          </p>
         </div>
       </div>
     </footer>

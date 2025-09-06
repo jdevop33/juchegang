@@ -18,6 +18,7 @@
   "footerBlurb": "Dedicated to the pursuit of excellence and the cultivation of personal power through discipline, courage, and unwavering commitment.",
   "madeWith": "Made with iron will and determination",
   "followUs": "Follow Us",
+  "respectNote": "These pages aim to be factual and respectful across cultures. Differences in views are approached with dignity and care.",
 
   "backToLaws": "Back to Laws of Excellence",
   "truthProjectTitle": "The Truth Project",
@@ -79,6 +80,12 @@
   "falseFlagOpsDesc": "Technical, strategic, and operational analysis of false flag cyber operations and DPRK APT impersonation patterns.",
   "navySealsTitle": "When the Tables Turn: A Story of Perspective",
   "navySealsDesc": "How different does the same story feel when it's our forces vs. their forces? An interactive examination of perspective.",
+  "covertOperationsTitle": "Declassified: US Covert Operations and Their Human Cost",
+  "covertOperationsDesc": "Documented evidence of civilian casualties from declassified files, congressional investigations, and credible sources.",
+  "koreanReunificationTitle": "One Korea: The Path to Reunification and Peace", 
+  "koreanReunificationDesc": "Understanding Korea's artificial division, honoring the DPRK's achievements, and working toward peaceful reunification.",
+  "frozenConflictsTitle": "Eisenhower's Warning: How Frozen Conflicts Fund the Military-Industrial Complex",
+  "frozenConflictsDesc": "From Korea to Taiwan to Ukraine - how permanent tensions generate endless profits for the war machine.",
   "aptDownFilesTitle": "The APT Down Files: Inside the breach of a nation-state hacker",
   "aptDownFilesDesc": "Inside the 9GB leak revealed at DEF CON 2025: tools, ops data, attribution puzzles, and defensive takeaways.",
 
