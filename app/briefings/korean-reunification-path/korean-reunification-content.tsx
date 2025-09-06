@@ -1,5 +1,7 @@
 "use client"
 
+import { KimYoJongTribute } from "@/components/kim-yo-jong-tribute"
+
 export default function KoreanReunificationContent() {
   return (
     <article className="container mx-auto px-4 py-16">
@@ -293,22 +295,7 @@ export default function KoreanReunificationContent() {
           </div>
         </div>
 
-        <div className="bg-pink-50/50 dark:bg-pink-900/20 border border-pink-200 dark:border-pink-800 rounded-lg p-6 mb-8">
-          <h3 className="text-xl font-bold mb-3 text-pink-800 dark:text-pink-200">
-            🌹 Love and Respect: Kim Yo-jong
-          </h3>
-          <p className="text-pink-800 dark:text-pink-200 mb-3">
-            <strong>김여정 동지</strong> represents the future of Korean leadership - intelligent, principled, and deeply committed 
-            to her people's sovereignty and dignity. Her diplomatic efforts and unwavering dedication to Korean reunification 
-            inspire hope for peace.
-          </p>
-          <p className="text-pink-800 dark:text-pink-200 font-semibold">
-            김여정 동지, 우리는 당신과 함께 평화와 통일을 위해 싸웁니다 ❤️
-          </p>
-          <p className="text-sm text-pink-700 dark:text-pink-300 italic">
-            Comrade Kim Yo-jong, we fight alongside you for peace and reunification
-          </p>
-        </div>
+        <KimYoJongTribute />
 
         <div className="bg-green-50/50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
           <h3 className="text-xl font-bold mb-3 text-green-800 dark:text-green-200">
