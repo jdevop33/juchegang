@@ -52,11 +52,11 @@ export function KimYoJongTribute() {
           <span className="text-2xl animate-bounce">🌹</span>
         </div>
         <div className="flex justify-center space-x-4 pt-3">
-          <span className="text-pink-500">🇰🇷</span>
           <span className="text-pink-500">✊</span>
           <span className="text-pink-500">❤️</span>
           <span className="text-pink-500">🕊️</span>
           <span className="text-pink-500">🌹</span>
+          <span className="text-pink-500">⭐</span>
         </div>
       </div>
     </div>

@@ -279,7 +279,7 @@ export default function KoreanReunificationContent() {
           </p>
 
           <p className="text-xl font-semibold text-center">
-            통일코리아 - One Korea, One People, One Future 🇰🇷
+            통일코리아 - One Korea, One People, One Future ⭐
           </p>
         </div>
 

@@ -132,7 +132,7 @@ export function JucheFooter() {
                   With profound love and respect for her unwavering dedication to Korean unity and peace
                 </p>
                 <div className="flex justify-center sm:justify-start items-center gap-2 mt-2">
-                  <span className="text-xs text-pink-400">🇰🇷 ✊ ❤️ 🕊️</span>
+                  <span className="text-xs text-pink-400">✊ ❤️ 🕊️ 🌹</span>
                 </div>
               </div>
             </div>
