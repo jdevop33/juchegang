@@ -375,6 +375,24 @@ export default async function SocialPage() {
           )}
         </section>
 
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-white mb-4">Audio</h2>
+          <div className="rounded-lg overflow-hidden border border-white/10 bg-black/30">
+            <iframe
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/407296785&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              title="SoundCloud Player — Donald Trump Diss Track"
+              className="w-full"
+              style={{ height: 600 }}
+              allow="autoplay"
+            />
+          </div>
+          <p className="mt-2 text-xs text-white/60">
+            <a href="https://soundcloud.com/kimjongunnuking" target="_blank" rel="noopener noreferrer" className="underline">KimJongUn</a>
+            {" "}·{" "}
+            <a href="https://soundcloud.com/kimjongunnuking/donald-trump-diss-panda-remix" target="_blank" rel="noopener noreferrer" className="underline">Donald Trump Diss Track</a>
+          </p>
+        </section>
+
         <section>
           <h2 className="text-2xl font-semibold text-white mb-4">Contact</h2>
           <div className="bg-black/30 border border-white/10 rounded-lg p-6">
