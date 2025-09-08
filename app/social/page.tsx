@@ -4,6 +4,14 @@ import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import FocalImage from "@/components/focal-image"
 import { socialProfiles } from "@/lib/social-profiles"
+import { trustedSources } from "@/data/trusted-sources"
+import { fetchRssItems, extractFirstYouTubeUrl } from "@/lib/fetch-rss"
+import { TrustedStoryCard } from "@/components/trusted-story-card"
+import TtsButton from "@/components/tts-button"
+import { featuredVideos } from "@/data/featured-videos"
+import { FeaturedLecture } from "@/components/featured-lecture"
+import { featuredChannels } from "@/data/featured-channels"
+import { FeaturedChannel } from "@/components/featured-channel"
 
 export const metadata = {
   title: "Social Media",
@@ -59,11 +67,67 @@ async function fetchInstagram(usernames: string[]): Promise<InstagramPost[]> {
   }
 }
 
+// Fetch recent videos for a specific YouTube channel (for Trusted Sources)
+async function fetchChannelVideos(channelId: string): Promise<YouTubeVideo[]> {
+  try {
+    const response = await fetch(`/api/youtube?channelId=${channelId}&action=videos`, { cache: 'no-store' })
+    if (!response.ok) return []
+    const data = await response.json()
+    return data.videos || []
+  } catch {
+    return []
+  }
+}
+
 export default async function SocialPage() {
   const [yt, ig] = await Promise.all([
     fetchYouTube([]),
     fetchInstagram(["jpandajames39", "kimjongunwins"]),
   ])
+
+  // Trusted sources aggregation (server-side)
+  const rssSources = trustedSources.filter((s) => s.kind === 'rss' && s.feedUrl)
+  const youtubeSources = trustedSources.filter((s) => s.kind === 'youtube')
+  const linkSources = trustedSources.filter((s) => s.kind === 'link')
+
+  const trustedStories = (await Promise.all(
+    rssSources.map(async (src) => {
+      try {
+        const items = await fetchRssItems(src.feedUrl as string, 5)
+        return items
+          .filter((it) => typeof it.title === 'string' && typeof it.link === 'string')
+          .map((it) => ({
+            id: `${src.id}-${it.id}`,
+            title: it.title,
+            url: it.link,
+            publishedAt: it.pubDate,
+            summary: it.description,
+            youtubeUrl: extractFirstYouTubeUrl(it.content || it.description),
+            sourceName: src.sourceName,
+            author: src.author,
+          }))
+      } catch {
+        return [] as any[]
+      }
+    })
+  ))
+    .flat()
+
+  const trustedVideos = (await Promise.all(
+    youtubeSources.map(async (src) => {
+      if (!src.youtubeChannelId) return [] as any[]
+      const vids = await fetchChannelVideos(src.youtubeChannelId)
+      return vids.slice(0, 1).map((v) => ({
+        id: `${src.id}-${v.id}`,
+        title: v.title,
+        url: v.url,
+        publishedAt: v.publishedAt,
+        thumbnail: v.thumbnail,
+        sourceName: src.sourceName,
+      }))
+    })
+  ))
+    .flat()
 
   return (
     <>
@@ -89,6 +153,131 @@ export default async function SocialPage() {
         </div>
       </section>
       <div className="container mx-auto px-4 py-10">
+        {/* Featured Channels */}
+        {featuredChannels.length > 0 ? (
+          <section className="mb-16">
+            <h2 className="text-2xl font-semibold text-white mb-6">Featured Channels</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {await Promise.all(
+                featuredChannels.map(async (fc) => {
+                  const vids = fc.channelId ? await fetchChannelVideos(fc.channelId) : []
+                  return (
+                    <FeaturedChannel
+                      key={fc.id}
+                      title={fc.title}
+                      username={fc.username}
+                      channelUrl={`https://youtube.com/${fc.username}`}
+                      description={fc.description}
+                      location={fc.location}
+                      joined={fc.joined}
+                      subscribers={fc.subscribers}
+                      videosCount={fc.videosCount}
+                      totalViews={fc.totalViews}
+                      links={fc.links}
+                      videos={vids}
+                    />
+                  )
+                })
+              )}
+            </div>
+          </section>
+        ) : null}
+        {/* Featured Lecture */}
+        {featuredVideos.length > 0 ? (
+          <FeaturedLecture
+            title={featuredVideos[0].title}
+            speaker={featuredVideos[0].speaker}
+            series={featuredVideos[0].series}
+            date={featuredVideos[0].date}
+            views={featuredVideos[0].views}
+            description={featuredVideos[0].description}
+            hashtags={featuredVideos[0].hashtags}
+            youtubeEmbedUrl={featuredVideos[0].youtubeEmbedUrl}
+            attributionHtml={featuredVideos[0].attributionHtml}
+            chapters={featuredVideos[0].chapters}
+          />
+        ) : null}
+        {/* Trusted Sources */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-semibold text-white mb-4">Trusted Sources</h2>
+          {/* Featured Channels strip */}
+          <div className="flex flex-wrap gap-3 mb-6">
+            {youtubeSources.map((src) => (
+              <a key={src.id} href={src.url} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg bg-black/30 border border-white/10 text-white/90 hover:bg-black/50">
+                {src.sourceName || src.url}
+              </a>
+            ))}
+            {linkSources.map((src) => (
+              <a key={src.id} href={src.url} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg bg-black/30 border border-yellow-500/30 text-yellow-300 hover:bg-black/50">
+                {src.sourceName || src.url}
+              </a>
+            ))}
+          </div>
+
+          {/* Stories */}
+          {trustedStories.length > 0 ? (
+            <div className="grid md:grid-cols-2 gap-6 mb-10">
+              {trustedStories.map((item) => (
+                <div key={item.id} className="space-y-3">
+                  <TrustedStoryCard
+                    title={item.title}
+                    author={item.author}
+                    sourceName={item.sourceName}
+                    url={item.url}
+                    publishedAt={item.publishedAt}
+                    summary={item.summary}
+                  />
+                  <div className="flex items-center gap-3">
+                    <TtsButton text={(item.title ? item.title + ". " : "") + (item.summary || "")} />
+                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-white/70 underline">
+                      Original source
+                    </a>
+                  </div>
+                  {item.youtubeUrl ? (
+                    <div className="aspect-video w-full overflow-hidden rounded-lg border border-white/10 bg-black/30">
+                      <iframe
+                        src={item.youtubeUrl.replace("watch?v=", "embed/")}
+                        title={item.title || "Video"}
+                        className="w-full h-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      />
+                    </div>
+                  ) : null}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="text-white/60 mb-10">No trusted stories available right now.</p>
+          )}
+
+          {/* Videos */}
+          {trustedVideos.length > 0 ? (
+            <div className="grid md:grid-cols-2 gap-6">
+              {trustedVideos.map((v) => (
+                <div key={v.id} className="space-y-2">
+                  <div className="aspect-video w-full overflow-hidden rounded-lg border border-white/10 bg-black/30">
+                    <iframe
+                      src={v.url.replace("watch?v=", "embed/")}
+                      title={v.title}
+                      className="w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
+                  </div>
+                  <div className="text-white/80 text-sm">{v.sourceName ? `${v.sourceName} • ` : ""}{new Date(v.publishedAt).toLocaleString()}</div>
+                  <a href={v.url} target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:underline">{v.title}</a>
+                </div>
+              ))}
+            </div>
+          ) : null}
+          <p className="text-xs text-white/50 mt-4">
+            All linked works are the property of their respective authors and publishers. Embedded media is displayed for
+            educational commentary and discovery. Please visit the original source to support the creators.
+          </p>
+        </section>
         <section className="mb-16">
           <h2 className="text-2xl font-semibold text-white mb-4">Profiles</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
