@@ -1,5 +1,3 @@
-import { parseStringPromise } from "xml2js"
-
 export type RssItem = {
   id: string
   title: string
@@ -9,42 +7,52 @@ export type RssItem = {
   content?: string
 }
 
+function stripCdata(value: string | undefined): string | undefined {
+  if (!value) return value
+  return value.replace(/<!\[CDATA\[|\]\]>/g, "").trim()
+}
+
+function extractTag(block: string, tag: string): string | undefined {
+  const regex = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i")
+  const m = block.match(regex)
+  return stripCdata(m?.[1] ?? undefined)
+}
+
 export async function fetchRssItems(feedUrl: string, limit = 5): Promise<RssItem[]> {
   try {
     const res = await fetch(feedUrl, { next: { revalidate: 900 } })
     if (!res.ok) return []
     const xml = await res.text()
-    const parsed = await parseStringPromise(xml, { explicitArray: false, trim: true })
 
-    // Handle both RSS 2.0 and Atom minimally
-    const channel = parsed?.rss?.channel
-    const atomFeed = parsed?.feed
+    // RSS 2.0 items
+    const itemMatches = xml.match(/<item[\s\S]*?<\/item>/gi) || []
+    const rssItems: RssItem[] = itemMatches.slice(0, limit).map((block, idx) => {
+      const guid = extractTag(block, "guid") || `${idx}`
+      const title = extractTag(block, "title") || "Untitled"
+      const link = extractTag(block, "link") || ""
+      const pubDate = extractTag(block, "pubDate")
+      const description = extractTag(block, "description")
+      const content = extractTag(block, "content:encoded")
+      return { id: guid, title, link, pubDate, description, content }
+    })
 
-    if (channel?.item) {
-      const items = Array.isArray(channel.item) ? channel.item : [channel.item]
-      return items.slice(0, limit).map((it: any, idx: number) => ({
-        id: it.guid?._ || it.guid || `${idx}`,
-        title: it.title,
-        link: it.link,
-        pubDate: it.pubDate,
-        description: it.description,
-        content: it["content:encoded"],
-      }))
-    }
+    if (rssItems.length > 0) return rssItems
 
-    if (atomFeed?.entry) {
-      const entries = Array.isArray(atomFeed.entry) ? atomFeed.entry : [atomFeed.entry]
-      return entries.slice(0, limit).map((e: any, idx: number) => ({
-        id: e.id || `${idx}`,
-        title: e.title?._ || e.title,
-        link: e.link?.href || e.link,
-        pubDate: e.updated || e.published,
-        description: e.summary?._ || e.summary,
-        content: e.content?._ || e.content,
-      }))
-    }
+    // Atom entries (fallback)
+    const entryMatches = xml.match(/<entry[\s\S]*?<\/entry>/gi) || []
+    const atomItems: RssItem[] = entryMatches.slice(0, limit).map((block, idx) => {
+      const id = extractTag(block, "id") || `${idx}`
+      const title = extractTag(block, "title") || "Untitled"
+      // <link href="..." />
+      const linkMatch = block.match(/<link[^>]*href=\"([^\"]+)\"[^>]*\/>/i)
+      const link = linkMatch?.[1] || extractTag(block, "link") || ""
+      const pubDate = extractTag(block, "updated") || extractTag(block, "published")
+      const description = extractTag(block, "summary")
+      const content = extractTag(block, "content")
+      return { id, title, link, pubDate, description, content }
+    })
 
-    return []
+    return atomItems
   } catch {
     return []
   }
