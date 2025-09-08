@@ -35,8 +35,8 @@ export function JucheHeader() {
     >
       <div className="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between safe-area-padding">
         <div className="flex items-center gap-3">
-          <Link href="/" aria-label="Home" className="inline-flex items-center gap-2">
-            <Image src="/logo1.svg" alt="Juche GanG" width={36} height={36} priority />
+          <Link href="/" aria-label="Home" className="inline-flex items-center gap-3">
+            <Image src="/uselogo.svg" alt="Juche GanG" width={56} height={56} priority />
             <span className="sr-only">Juche GanG</span>
           </Link>
         </div>
@@ -58,7 +58,7 @@ export function JucheHeader() {
               <Drawer.Content className="fixed right-0 top-0 h-screen w-[92vw] max-w-[520px] bg-[#0b0a0a] border-l border-white/10 shadow-2xl will-change-transform">
                 <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
                   <div className="flex items-center gap-3">
-                    <Image src="/logo1.svg" alt="Juche GanG" width={28} height={28} />
+                    <Image src="/uselogo.svg" alt="Juche GanG" width={40} height={40} />
                     <span className="text-white/90 font-semibold">Juche GanG</span>
                   </div>
                   <button onClick={() => setIsMenuOpen(false)} aria-label="Close menu" className="p-2 text-white/80 hover:text-white">
@@ -104,7 +104,7 @@ export function JucheHeader() {
               <Drawer.Content className="fixed right-0 top-0 h-screen w-[92vw] max-w-[420px] bg-[#0b0a0a] border-l border-white/10 shadow-2xl will-change-transform">
                 <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
                   <div className="flex items-center gap-3">
-                    <Image src="/logo1.svg" alt="Juche GanG" width={24} height={24} />
+                    <Image src="/uselogo.svg" alt="Juche GanG" width={32} height={32} />
                     <span className="text-white/90 font-semibold">Menu</span>
                   </div>
                   <button onClick={() => setIsMenuOpen(false)} aria-label="Close menu" className="p-2 text-white/80 hover:text-white">
