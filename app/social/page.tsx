@@ -12,6 +12,8 @@ import { featuredVideos } from "@/data/featured-videos"
 import { FeaturedLecture } from "@/components/featured-lecture"
 import { featuredChannels } from "@/data/featured-channels"
 import { FeaturedChannel } from "@/components/featured-channel"
+import { personalInspiration } from "@/data/personal-inspiration"
+import { PersonalInspiration } from "@/components/personal-inspiration"
 
 export const metadata = {
   title: "Social Media",
@@ -153,6 +155,15 @@ export default async function SocialPage() {
         </div>
       </section>
       <div className="container mx-auto px-4 py-10">
+        {/* Foundational Inspiration */}
+        {personalInspiration ? (
+          <PersonalInspiration
+            title={personalInspiration.title}
+            description={personalInspiration.description}
+            youtubeEmbedUrl={personalInspiration.youtubeEmbedUrl}
+            sources={personalInspiration.sources}
+          />
+        ) : null}
         {/* Featured Channels */}
         {featuredChannels.length > 0 ? (
           <section className="mb-16">
