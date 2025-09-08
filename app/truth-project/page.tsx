@@ -56,13 +56,40 @@ export default function TruthProjectPage() {
         {activeSection === "partnership" && <PartnershipSection />}
       </div>
 
-      <div className="mt-8 grid sm:grid-cols-2 gap-4">
-        <Link href="/briefings/ai-censorship-matrix" className="block rounded-lg border border-white/20 bg-white/5 px-6 py-4 text-center text-white hover:bg-white/10">
-          Read: The AI Censorship Matrix
-        </Link>
-        <Link href="/briefings/north-korea-deception" className="block rounded-lg border border-white/20 bg-white/5 px-6 py-4 text-center text-white hover:bg-white/10">
-          Read: The North Korea Deception
-        </Link>
+      <div className="mt-8">
+        <h2 className="text-2xl font-bold text-white mb-6">Investigative Reports</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          <Link href="/truth-project/wikipedia-bureaucrats" className="block rounded-lg border border-red-500/30 bg-red-900/20 px-6 py-4 text-center text-white hover:bg-red-900/30 transition-colors">
+            <div className="text-sm text-red-400 mb-1">EXPOSÉ</div>
+            <div className="font-semibold">Wikipedia's Hidden Power</div>
+            <div className="text-sm text-white/60 mt-1">16 anonymous bureaucrats control the world's knowledge</div>
+          </Link>
+          <Link href="/truth-project/wikipedia-neutrality" className="block rounded-lg border border-blue-500/30 bg-blue-900/20 px-6 py-4 text-center text-white hover:bg-blue-900/30 transition-colors">
+            <div className="text-sm text-blue-400 mb-1">INVESTIGATION</div>
+            <div className="font-semibold">Wikipedia's Contested Neutrality</div>
+            <div className="text-sm text-white/60 mt-1">How systematic bias shapes global information</div>
+          </Link>
+          <Link href="/truth-project/fiction-becomes-fact" className="block rounded-lg border border-purple-500/30 bg-purple-900/20 px-6 py-4 text-center text-white hover:bg-purple-900/30 transition-colors">
+            <div className="text-sm text-purple-400 mb-1">ANALYSIS</div>
+            <div className="font-semibold">When Fiction Becomes Fact</div>
+            <div className="text-sm text-white/60 mt-1">The psychology of narrative dependence</div>
+          </Link>
+          <Link href="/truth-project/sovereign-wealth-seizures" className="block rounded-lg border border-yellow-500/30 bg-yellow-900/20 px-6 py-4 text-center text-white hover:bg-yellow-900/30 transition-colors">
+            <div className="text-sm text-yellow-400 mb-1">HISTORICAL ANALYSIS</div>
+            <div className="font-semibold">Sovereign Wealth Seizures</div>
+            <div className="text-sm text-white/60 mt-1">From colonial plunder to frozen Russian assets</div>
+          </Link>
+          <Link href="/briefings/ai-censorship-matrix" className="block rounded-lg border border-green-500/30 bg-green-900/20 px-6 py-4 text-center text-white hover:bg-green-900/30 transition-colors">
+            <div className="text-sm text-green-400 mb-1">BRIEFING</div>
+            <div className="font-semibold">The AI Censorship Matrix</div>
+            <div className="text-sm text-white/60 mt-1">How AI systems are programmed with bias</div>
+          </Link>
+          <Link href="/briefings/north-korea-deception" className="block rounded-lg border border-orange-500/30 bg-orange-900/20 px-6 py-4 text-center text-white hover:bg-orange-900/30 transition-colors">
+            <div className="text-sm text-orange-400 mb-1">BRIEFING</div>
+            <div className="font-semibold">The North Korea Deception</div>
+            <div className="text-sm text-white/60 mt-1">Challenging mainstream narratives</div>
+          </Link>
+        </div>
       </div>
     </div>
   )
