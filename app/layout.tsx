@@ -7,6 +7,7 @@ import { getServerLanguage, type Language } from "@/lib/i18n-server"
 import { getDictionary } from "@/lib/dictionary"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Analytics } from "@vercel/analytics/next"
+import { AnalyticsTracker } from "@/components/analytics-tracker"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -88,19 +89,19 @@ export default async function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        {/* Google Tag Manager */}
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKQ6PF3Q8W"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID || "GTM-T6TZ48WR"}');
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-WKQ6PF3Q8W');
             `,
           }}
         />
-        {/* End Google Tag Manager */}
+        {/* End Google Analytics */}
         {/* Microsoft Clarity */}
         <script
           type="text/javascript"
@@ -110,7 +111,7 @@ export default async function RootLayout({
                   c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
                   t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                   y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY_ID || "sxi1aj8201"}");
+              })(window, document, "clarity", "script", "qxe1et76wh");
             `,
           }}
         />
@@ -119,18 +120,9 @@ export default async function RootLayout({
         <script async src="//www.instagram.com/embed.js"></script>
       </head>
       <body className={inter.className}>
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe 
-            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID || "GTM-T6TZ48WR"}`}
-            height="0" 
-            width="0" 
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
-        {/* End Google Tag Manager (noscript) */}
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <LanguageProvider initialLanguage={serverLang} dictionary={dict}>
+            <AnalyticsTracker />
             <Breadcrumbs />
             {children}
           </LanguageProvider>

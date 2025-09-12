@@ -10,6 +10,7 @@ import FocalImage from "./focal-image"
 import SafeFocalImage from "./safe-focal-image"
 import { useState } from "react"
 import { useAutoTranslate } from "@/hooks/use-auto-translate"
+import { analytics } from "@/lib/analytics"
 
 interface LawCardProps {
   law: Law
@@ -93,7 +94,10 @@ export function LawCard({ law }: LawCardProps) {
         {isContentLong && (
           <div className="mt-3">
             <button
-              onClick={() => setIsExpanded(!isExpanded)}
+              onClick={() => {
+                setIsExpanded(!isExpanded)
+                analytics.trackLaw(law.number, law.title, !isExpanded ? 'view' : 'click')
+              }}
               className="inline-flex items-center gap-2 text-accent hover:text-primary text-sm font-medium hover:underline transition-colors"
             >
               <span>{isExpanded ? t('showLess') : t('readMore')}</span>
