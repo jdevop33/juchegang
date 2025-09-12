@@ -17,6 +17,15 @@ const nextConfig = {
   // Performance optimizations
   compress: true,
   poweredByHeader: false,
+  async redirects() {
+    return [
+      {
+        source: '/briefings/north-korea-deception',
+        destination: '/briefings/dprk-narrative',
+        permanent: true,
+      },
+    ]
+  },
   // Security headers
   async headers() {
     return [

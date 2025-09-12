@@ -360,7 +360,7 @@ export default function NavySealsCiviliansContent() {
                   The "foreign forces" were US Navy SEALs.
                 </p>
                 <p className="text-xl font-semibold mb-4 text-yellow-800 dark:text-yellow-200">
-                  The "American civilians" were North Korean fishermen.
+                  The "American civilians" were DPRK fishermen.
                 </p>
                 <p className="text-lg text-yellow-800 dark:text-yellow-200">
                   This actually happened in 2019. Military reviews found the killings "justified." The details were classified and kept from congressional oversight.
@@ -375,7 +375,7 @@ export default function NavySealsCiviliansContent() {
               <CardContent>
                 <p className="text-lg text-purple-800 dark:text-purple-200">
                   You felt {feelingSelected === 'outrage' ? 'outrage' : feelingSelected === 'concern' ? 'concern' : 'anger'} when you thought foreign forces killed Americans. 
-                  How do you feel now knowing it was American forces killing North Koreans?
+                  How do you feel now knowing it was American forces killing DPRK citizens?
                 </p>
                 <p className="text-lg font-semibold mt-3 text-purple-800 dark:text-purple-200">
                   This is exactly how perspective shapes our judgment of identical actions.
@@ -427,7 +427,7 @@ export default function NavySealsCiviliansContent() {
             rel="noopener noreferrer"
             className="text-accent hover:underline"
           >
-            CTV News: US Navy SEALs botched secret 2019 mission in North Korea
+            CTV News: US Navy SEALs botched secret 2019 mission in the DPRK
           </a>
         </div>
       </div>

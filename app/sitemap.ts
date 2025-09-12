@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/truth-project/report',
     '/briefings',
     '/briefings/ai-censorship-matrix',
-    '/briefings/north-korea-deception',
+    '/briefings/dprk-narrative',
     '/briefings/nato-expansion',
     '/briefings/iran-snapback',
     '/briefings/brics-dedollarization',

@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
 import { getServerLanguage, type Language } from "@/lib/i18n-server"
 import { getDictionary } from "@/lib/dictionary"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -13,6 +14,7 @@ export const viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: "#034DA2",
+  colorScheme: "dark",
 }
 
 export const metadata = {
@@ -83,6 +85,9 @@ export default async function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
@@ -110,6 +115,8 @@ export default async function RootLayout({
           }}
         />
         {/* End Microsoft Clarity */}
+        {/* Instagram Embed Script */}
+        <script async src="//www.instagram.com/embed.js"></script>
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
@@ -124,6 +131,7 @@ export default async function RootLayout({
         {/* End Google Tag Manager (noscript) */}
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <LanguageProvider initialLanguage={serverLang} dictionary={dict}>
+            <Breadcrumbs />
             {children}
           </LanguageProvider>
         </ThemeProvider>

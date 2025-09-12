@@ -1,0 +1,61 @@
+{
+  "name": "Juche GanG - The 48 Laws of Excellence",
+  "short_name": "Juche GanG",
+  "description": "A platform for peace, unity, and excellence. Building bridges between nations through understanding and solidarity.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#EC1D25",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/uselogo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/faviconjuche.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/kffav.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "social", "news"],
+  "screenshots": [
+    {
+      "src": "/screenshot-1.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Gallery",
+      "short_name": "Gallery",
+      "description": "View media gallery",
+      "url": "/gallery",
+      "icons": [{ "src": "/faviconjuche.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Peace Timeline",
+      "short_name": "Peace",
+      "description": "Journey to unity",
+      "url": "/peace-timeline",
+      "icons": [{ "src": "/faviconjuche.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Truth Project",
+      "short_name": "Truth",
+      "description": "Understanding through facts",
+      "url": "/truth-project",
+      "icons": [{ "src": "/faviconjuche.png", "sizes": "192x192" }]
+    }
+  ]
+}

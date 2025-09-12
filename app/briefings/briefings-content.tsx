@@ -35,7 +35,7 @@ export default function BriefingsContent() {
         </li>
         <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
           <h2 className="text-2xl font-semibold mb-2">
-            <Link href="/briefings/north-korea-deception" className="hover:underline">
+            <Link href="/briefings/dprk-narrative" className="hover:underline">
               {t('northKoreaDeceptionTitle')}
             </Link>
           </h2>

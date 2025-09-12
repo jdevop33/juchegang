@@ -21,6 +21,9 @@ export function JucheFooter() {
               <Heart className="h-4 w-4 text-red-500" />
               <span>{t('madeWith')}</span>
             </div>
+            <p className="mt-3 text-red-300/90 text-sm">
+              {"We honor the sovereignty, dignity, and cultural traditions of all nations — including the DPRK, the Russian Federation, and the People's Republic of China — and commit to language that fosters mutual respect and understanding."}
+            </p>
           </div>
 
           <div>

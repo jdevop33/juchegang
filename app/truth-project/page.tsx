@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ArrowLeft, FileText, Image, Share2, Search, Users, Globe } from "lucide-react"
+import { ArrowLeft, FileText, Image, Share2, Search, Users, Globe, Brain, Star } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
 export default function TruthProjectPage() {
@@ -28,6 +28,35 @@ export default function TruthProjectPage() {
       <div className="mb-12">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">{t('truthProjectTitle')}</h1>
         <p className="text-xl text-white/80">{t('truthProjectSubtitle')}</p>
+      </div>
+
+      {/* Featured: Beyond Ideology */}
+      <div className="mb-12 bg-gradient-to-r from-purple-900/30 via-blue-900/30 to-purple-900/30 rounded-2xl p-8 border border-purple-500/20">
+        <div className="flex items-start gap-4">
+          <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+            <Brain className="w-6 h-6 text-white" />
+          </div>
+          <div className="flex-1">
+            <div className="flex items-center gap-2 mb-2">
+              <Star className="w-4 h-4 text-yellow-400" />
+              <span className="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded-full font-medium">
+                FEATURED ANALYSIS
+              </span>
+            </div>
+            <h2 className="text-2xl font-bold text-white mb-3">Beyond Ideology: The Psychology of Political Division</h2>
+            <p className="text-white/80 mb-4 leading-relaxed">
+              Dr. Roy's groundbreaking lecture reveals how politicians manipulate us through fear and artificial divisions. 
+              Discover why "all ideologies are dumb" and how we can find unity through understanding rather than hatred.
+            </p>
+            <Link 
+              href="/truth-project/beyond-ideology"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold rounded-lg transition-all transform hover:scale-105"
+            >
+              <Brain className="w-4 h-4 mr-2" />
+              Read Full Analysis
+            </Link>
+          </div>
+        </div>
       </div>
 
       <div className="flex flex-wrap gap-4 mb-8">
@@ -86,7 +115,7 @@ export default function TruthProjectPage() {
           </Link>
           <Link href="/briefings/north-korea-deception" className="block rounded-lg border border-orange-500/30 bg-orange-900/20 px-6 py-4 text-center text-white hover:bg-orange-900/30 transition-colors">
             <div className="text-sm text-orange-400 mb-1">BRIEFING</div>
-            <div className="font-semibold">The North Korea Deception</div>
+            <div className="font-semibold">The DPRK Narrative</div>
             <div className="text-sm text-white/60 mt-1">Challenging mainstream narratives</div>
           </Link>
         </div>
