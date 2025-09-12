@@ -98,7 +98,7 @@ export default function Home() {
       <div className="container mx-auto px-4 py-8 relative z-10">
         <div className="featured-laws-section relative">
           <div className="max-w-4xl mx-auto mb-20 text-center section-reveal relative z-10" id="featured">
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium animate-staggered-fade-in backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-yellow-500/20 to-amber-400/20 text-yellow-400 rounded-full text-sm font-medium animate-staggered-fade-in backdrop-blur-sm border border-yellow-500/30">
               ⭐ {t('featuredExcellence')}
             </div>
           <h2 className="text-headline text-foreground mb-8 animate-staggered-fade-in stagger-delay-1">
@@ -124,7 +124,7 @@ export default function Home() {
         </div>
 
         <div id="laws" className="scroll-mt-nav max-w-4xl mx-auto mb-20 text-center section-reveal">
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-destructive/10 text-destructive rounded-full text-sm font-medium">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-blue-600/20 to-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30 backdrop-blur-sm">
             📚 {t('completeCollection')}
           </div>
           <h2 className="text-headline text-foreground mb-8">
