@@ -88,6 +88,11 @@ export default function TruthProjectPage() {
       <div className="mt-8">
         <h2 className="text-2xl font-bold text-white mb-6">{t('investigationsTitle')}</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          <Link href="/truth-project/power-dynamics" className="block rounded-lg border border-cyan-500/30 bg-cyan-900/20 px-6 py-4 text-center text-white hover:bg-cyan-900/30 transition-colors">
+            <div className="text-sm text-cyan-400 mb-1">COMPREHENSIVE ANALYSIS</div>
+            <div className="font-semibold">How Major Powers Actually Behave</div>
+            <div className="text-sm text-white/60 mt-1">Multi-language research exposes Cold War myths vs reality</div>
+          </Link>
           <Link href="/truth-project/wikipedia-bureaucrats" className="block rounded-lg border border-red-500/30 bg-red-900/20 px-6 py-4 text-center text-white hover:bg-red-900/30 transition-colors">
             <div className="text-sm text-red-400 mb-1">EXPOSÉ</div>
             <div className="font-semibold">Wikipedia's Hidden Power</div>

@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react'
 import { translateText } from '@/lib/auto-translate'
+import { logger } from '@/lib/logger'
 
 type Language = 'en' | 'kr' | 'kp'
 
@@ -875,7 +876,7 @@ export function LanguageProvider({ children, initialLanguage, dictionary }: { ch
   }, [language])
 
   const handleSetLanguage = useCallback((lang: Language) => {
-    console.log('Setting language to:', lang)
+    logger.info('Setting language to:', lang)
     
     // Update state immediately
     setLanguage(lang)
@@ -887,7 +888,7 @@ export function LanguageProvider({ children, initialLanguage, dictionary }: { ch
         const oneYear = 60 * 60 * 24 * 365
         document.cookie = `preferred-language=${lang}; path=/; max-age=${oneYear}`
       } catch (error) {
-        console.error('Failed to save language preference:', error)
+        logger.error('Failed to save language preference:', error)
       }
     })
   }, [])
@@ -900,7 +901,7 @@ export function LanguageProvider({ children, initialLanguage, dictionary }: { ch
       // Safely access translations with fallback
       const langTranslations = translations[language]
       if (!langTranslations) {
-        console.warn(`Translation not found for language: ${language}`)
+        logger.warn(`Translation not found for language: ${language}`)
         return key
       }
       
@@ -915,7 +916,7 @@ export function LanguageProvider({ children, initialLanguage, dictionary }: { ch
       const cacheKey = `${language}|${key}`
       const cached = autoCache.get(cacheKey)
       if (cached) return cached
-      console.warn(`Translation key not found: ${key}; attempting auto-translate`)
+      logger.warn(`Translation key not found: ${key}; attempting auto-translate`)
       // Fire and forget; when it resolves, store to cache so future renders show translated text
       const sourceGuess: 'EN' | 'KR' = key.match(/[\u3131-\uD79D]/) ? 'KR' : 'EN'
       translateText(key, language === 'kr' ? 'KR' : 'EN', sourceGuess)
@@ -926,7 +927,7 @@ export function LanguageProvider({ children, initialLanguage, dictionary }: { ch
         .catch(() => {})
       return key
     } catch (error) {
-      console.error(`Error accessing translation for key: ${key}`, error)
+      logger.error(`Error accessing translation for key: ${key}`, error)
       return key
     }
   }, [activeDictionary, language, autoCache])

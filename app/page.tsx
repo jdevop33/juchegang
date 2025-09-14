@@ -1,32 +1,55 @@
 "use client"
 
 import { LawCard } from "@/components/law-card"
-import { EnhancedLawCard } from "@/components/enhanced-law-card"
 import { EnhancedHeader } from "@/components/enhanced-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { SolidarityBanner } from "@/components/solidarity-banner"
-import { PeaceCounter } from "@/components/peace-counter"
-import { CulturalCalendar } from "@/components/cultural-calendar"
 import { CardSkeleton } from "@/components/ui/skeleton-loader"
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll"
 import { useInstagramEmbeds } from "@/hooks/use-instagram-embeds"
 import { HeroSection } from "@/components/hero-section"
 import { FeaturedLaw } from "@/components/featured-law"
-import { AboutSection } from "@/components/about-section"
 import { useLanguage } from "@/contexts/language-context"
-import { CategorySection } from "@/components/category-section"
 import { TriptychDivider } from "@/components/triptych-divider"
-import { EnhancedFloatingAction } from "@/components/enhanced-floating-action"
 import { ReadingProgress } from "@/components/reading-progress"
 import { EnhancedLoading } from "@/components/enhanced-loading"
-import { InteractiveFeatures } from "@/components/interactive-features"
-import { AccessibilityProvider, AccessibilityToolbar, SkipLinks } from "@/components/accessibility-enhancements"
-import { ContactForm } from "@/components/contact-form"
-import { ScrollReveal, StaggeredReveal } from "@/hooks/use-scroll-reveal"
 import { laws } from "@/data/laws"
 import { useState, useEffect } from "react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import type { Law } from "@/types/law"
+import dynamic from "next/dynamic"
+import { StructuredData } from "@/components/structured-data"
+
+// Lazy load heavy components that are below the fold
+const PeaceCounter = dynamic(() => import("@/components/peace-counter").then(mod => ({ default: mod.PeaceCounter })), {
+  loading: () => <div className="h-32 animate-pulse bg-gradient-to-r from-gray-200 to-gray-300 rounded-lg" />,
+  ssr: false
+})
+
+const CulturalCalendar = dynamic(() => import("@/components/cultural-calendar").then(mod => ({ default: mod.CulturalCalendar })), {
+  loading: () => <CardSkeleton />,
+  ssr: false
+})
+
+const AboutSection = dynamic(() => import("@/components/about-section").then(mod => ({ default: mod.AboutSection })), {
+  loading: () => <div className="h-64 animate-pulse bg-gray-200 rounded-lg" />,
+  ssr: false
+})
+
+const CategorySection = dynamic(() => import("@/components/category-section").then(mod => ({ default: mod.CategorySection })), {
+  loading: () => <div className="h-96 animate-pulse bg-gray-200 rounded-lg" />,
+  ssr: false
+})
+
+const EnhancedFloatingAction = dynamic(() => import("@/components/enhanced-floating-action").then(mod => ({ default: mod.EnhancedFloatingAction })), {
+  loading: () => null,
+  ssr: false
+})
+
+const ContactForm = dynamic(() => import("@/components/contact-form").then(mod => ({ default: mod.ContactForm })), {
+  loading: () => <div className="h-96 animate-pulse bg-gray-200 rounded-lg" />,
+  ssr: false
+})
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -82,6 +105,8 @@ export default function Home() {
 
   return (
     <>
+      <StructuredData type="homepage" />
+      <StructuredData type="organization" />
       {showLoading && <EnhancedLoading onComplete={handleLoadingComplete} />}
       <main
         id="main-content"

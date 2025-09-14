@@ -45,10 +45,14 @@ export function LawCard({ law }: LawCardProps) {
   const isContentLong = displayContent.length > 200
 
   return (
-    <div
+    <article
       ref={ref}
       id={`law-${law.number}`}
-      className={`group bg-card rounded-lg sophisticated-shadow overflow-hidden hover-lift minimal-border transition-all duration-500 h-full flex flex-col ${
+      role="article"
+      aria-labelledby={`law-${law.number}-title`}
+      aria-describedby={`law-${law.number}-content`}
+      tabIndex={0}
+      className={`group bg-card rounded-lg sophisticated-shadow overflow-hidden hover-lift minimal-border transition-all duration-500 h-full flex flex-col focus:ring-2 focus:ring-accent focus:outline-none ${
         isIntersecting ? 'animate-slideInUp opacity-100' : 'opacity-0 translate-y-8'
       }`}
       style={{ animationDelay: `${(law.number % 6) * 100}ms` }}
@@ -79,13 +83,19 @@ export function LawCard({ law }: LawCardProps) {
             {t('lawLabel')} {law.number}
           </h3>
         </div>
-        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 text-card-foreground group-hover:text-accent transition-colors duration-300 line-clamp-2">
+        <h2 
+          id={`law-${law.number}-title`}
+          className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 text-card-foreground group-hover:text-accent transition-colors duration-300 line-clamp-2"
+        >
           {displayTitle}
         </h2>
         <div className="prose prose-gray max-w-none flex-1">
-          <p className={`text-sm sm:text-base text-muted-foreground leading-relaxed transition-all duration-300 ${
-            !isExpanded && isContentLong ? 'line-clamp-4 sm:line-clamp-5' : ''
-          }`}>
+          <p 
+            id={`law-${law.number}-content`}
+            className={`text-sm sm:text-base text-muted-foreground leading-relaxed transition-all duration-300 ${
+              !isExpanded && isContentLong ? 'line-clamp-4 sm:line-clamp-5' : ''
+            }`}
+          >
             {displayContent}
           </p>
         </div>
@@ -98,7 +108,10 @@ export function LawCard({ law }: LawCardProps) {
                 setIsExpanded(!isExpanded)
                 analytics.trackLaw(law.number, law.title, !isExpanded ? 'view' : 'click')
               }}
-              className="inline-flex items-center gap-2 text-accent hover:text-primary text-sm font-medium hover:underline transition-colors"
+              aria-expanded={isExpanded}
+              aria-controls={`law-${law.number}-content`}
+              aria-label={`${isExpanded ? t('showLess') : t('readMore')} for Law ${law.number}`}
+              className="inline-flex items-center gap-2 text-accent hover:text-primary text-sm font-medium hover:underline transition-colors focus:ring-2 focus:ring-accent focus:outline-none rounded px-1"
             >
               <span>{isExpanded ? t('showLess') : t('readMore')}</span>
               {isExpanded ? 
@@ -111,6 +124,6 @@ export function LawCard({ law }: LawCardProps) {
         
         {/* Removed non-functional 'View full details' link per request */}
       </div>
-    </div>
+    </article>
   )
 }

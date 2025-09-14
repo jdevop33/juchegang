@@ -144,8 +144,9 @@ export function EnhancedHeader() {
 
               <button 
                 onClick={() => setIsMenuOpen(true)}
-                className="p-2 sm:p-2.5 rounded-lg bg-white/5 hover:bg-white/10 transition-all"
-                aria-label="Open menu"
+                className="p-2 sm:p-2.5 rounded-lg bg-white/5 hover:bg-white/10 transition-all focus:ring-2 focus:ring-white/30 focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Open navigation menu"
+                type="button"
               >
                 <Menu className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </button>
