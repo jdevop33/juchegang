@@ -15,9 +15,17 @@ export function HeroSection() {
   useEffect(() => {
     setIsLoaded(true)
     const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
-    const update = () => setReducedMotion(!!mq.matches)
+    const compute = () => {
+      const stored = localStorage.getItem('motion-preference')
+      if (stored === 'on') return false
+      if (stored === 'off') return true
+      return !!mq.matches
+    }
+    const update = () => setReducedMotion(compute())
     update()
     mq.addEventListener?.('change', update)
+    const handlePrefChange = () => update()
+    window.addEventListener('motion-preference-change', handlePrefChange as any)
 
     const handleScroll = () => {
       if (!mq.matches) setScrollY(window.scrollY)
@@ -27,6 +35,7 @@ export function HeroSection() {
     return () => {
       window.removeEventListener("scroll", handleScroll)
       mq.removeEventListener?.('change', update)
+      window.removeEventListener('motion-preference-change', handlePrefChange as any)
     }
   }, [])
   return (

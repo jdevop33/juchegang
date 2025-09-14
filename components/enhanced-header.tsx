@@ -7,6 +7,7 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import * as Drawer from "vaul"
 import { LanguageToggle } from "@/components/language-toggle"
+import MotionToggle from "@/components/motion-toggle"
 import { useLanguage } from "@/contexts/language-context"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -134,6 +135,7 @@ export function EnhancedHeader() {
               <div className="hidden sm:block">
                 <LanguageToggle />
               </div>
+              <MotionToggle />
               
               <Link 
                 href="/contact" 
