@@ -19,6 +19,7 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import type { Law } from "@/types/law"
 import dynamic from "next/dynamic"
 import { StructuredData } from "@/components/structured-data"
+import CountryFlag from "@/components/country-flag"
 
 // Lazy load heavy components that are below the fold
 const PeaceCounter = dynamic(() => import("@/components/peace-counter").then(mod => ({ default: mod.PeaceCounter })), {
@@ -230,9 +231,9 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="mb-8">
               <div className="inline-flex items-center gap-3 mb-4 px-6 py-3 bg-gradient-to-r from-red-600/20 via-blue-600/20 to-red-600/20 rounded-full border border-yellow-500/30">
-                <span className="text-2xl">🇷🇺</span>
-                <span className="text-2xl">🇰🇵</span>
-                <span className="text-2xl">🇨🇳</span>
+                <CountryFlag iso="ru" size={24} className="rounded-sm border border-white/10" />
+                <CountryFlag iso="kp" size={24} className="rounded-sm border border-white/10" />
+                <CountryFlag iso="cn" size={24} className="rounded-sm border border-white/10" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 <span className="bg-gradient-to-r from-red-400 via-blue-400 to-red-400 bg-clip-text text-transparent">

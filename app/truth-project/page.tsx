@@ -88,6 +88,11 @@ export default function TruthProjectPage() {
       <div className="mt-8">
         <h2 className="text-2xl font-bold text-white mb-6">{t('investigationsTitle')}</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          <Link href="/truth-project/empires-receipts" className="block rounded-lg border border-red-500/30 bg-red-900/20 px-6 py-4 text-center text-white hover:bg-red-900/30 transition-colors">
+            <div className="text-sm text-red-400 mb-1">FLAGSHIP EXPOSÉ</div>
+            <div className="font-semibold">The Empire's Receipts</div>
+            <div className="text-sm text-white/60 mt-1">When actions and words don't match, the receipts tell the real story</div>
+          </Link>
           <Link href="/truth-project/power-dynamics" className="block rounded-lg border border-cyan-500/30 bg-cyan-900/20 px-6 py-4 text-center text-white hover:bg-cyan-900/30 transition-colors">
             <div className="text-sm text-cyan-400 mb-1">COMPREHENSIVE ANALYSIS</div>
             <div className="font-semibold">How Major Powers Actually Behave</div>
@@ -122,6 +127,19 @@ export default function TruthProjectPage() {
             <div className="text-sm text-orange-400 mb-1">BRIEFING</div>
             <div className="font-semibold">The DPRK Narrative</div>
             <div className="text-sm text-white/60 mt-1">Challenging mainstream narratives</div>
+          </Link>
+          <Link href="/truth-project/liberation-frameworks" className="block rounded-lg border border-green-500/30 bg-green-900/20 px-6 py-4 text-center text-white hover:bg-green-900/30 transition-colors">
+            <div className="text-sm text-green-400 mb-1">LIBERATION GUIDE</div>
+            <div className="font-semibold">Liberation Frameworks</div>
+            <div className="text-sm text-white/60 mt-1">Practical tools for breaking free and building unity</div>
+          </Link>
+        </div>
+        
+        <div className="mt-8">
+          <Link href="/gallery/unity-reconnaissance" className="block rounded-lg border border-blue-500/30 bg-blue-900/20 px-6 py-4 text-center text-white hover:bg-blue-900/30 transition-colors max-w-md mx-auto">
+            <div className="text-sm text-blue-400 mb-1">SPECIAL GALLERY</div>
+            <div className="font-semibold">Unity Reconnaissance</div>
+            <div className="text-sm text-white/60 mt-1">Historical evidence of natural cooperation before manufactured division</div>
           </Link>
         </div>
       </div>

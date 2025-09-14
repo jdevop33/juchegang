@@ -17,6 +17,14 @@ export default function BriefingsContent() {
       </header>
 
       <ul className="max-w-3xl mx-auto space-y-6">
+        <li className="rounded-xl border border-red-500/30 p-6 bg-red-900/20 hover:bg-red-900/30 transition">
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/media-manipulation-decoded" className="hover:underline text-red-300">
+              Media Manipulation Decoded
+            </Link>
+          </h2>
+          <p className="text-white/70">How six corporations control 90% of what you see, think, and believe. The psychological weapons of mass distraction exposed.</p>
+        </li>
         <li className="rounded-xl border border-border/60 p-6 bg-muted/20 hover:bg-muted/30 transition">
           <h2 className="text-2xl font-semibold mb-2">
             <Link href="/briefings/iran-snapback" className="hover:underline">

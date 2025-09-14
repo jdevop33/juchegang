@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Brain, Heart, Users, BookOpen, Globe, Star, ArrowRight, Quote } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import CountryFlag from "@/components/country-flag"
 
 export function BeyondIdeologyClient() {
   const keyInsights = [
@@ -83,9 +84,9 @@ export function BeyondIdeologyClient() {
             {/* JucheGanG Triad Header */}
             <div className="mb-6">
               <div className="inline-flex items-center gap-3 mb-4 px-6 py-3 bg-gradient-to-r from-red-600/20 via-blue-600/20 to-red-600/20 rounded-full border border-yellow-500/30">
-                <span className="text-3xl">🇷🇺</span>
-                <span className="text-3xl">🇰🇵</span>
-                <span className="text-3xl">🇨🇳</span>
+                <CountryFlag iso="ru" size={28} className="rounded-sm border border-white/10" />
+                <CountryFlag iso="kp" size={28} className="rounded-sm border border-white/10" />
+                <CountryFlag iso="cn" size={28} className="rounded-sm border border-white/10" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 <span className="bg-gradient-to-r from-red-400 via-blue-400 to-red-400 bg-clip-text text-transparent">
@@ -101,17 +102,17 @@ export function BeyondIdeologyClient() {
             {/* Triad Values */}
             <div className="grid md:grid-cols-3 gap-4 mb-8">
               <div className="bg-gradient-to-b from-red-600/20 to-red-800/20 rounded-lg p-4 border border-red-500/30">
-                <div className="text-2xl mb-2">🇷🇺</div>
+                <CountryFlag iso="ru" size={24} className="mb-2 rounded-sm border border-white/10 inline-block" />
                 <h3 className="font-bold text-red-200 mb-1">Russian Federation</h3>
                 <p className="text-red-300/80 text-sm">Strength through sovereignty</p>
               </div>
               <div className="bg-gradient-to-b from-red-700/20 to-red-900/20 rounded-lg p-4 border border-red-600/30">
-                <div className="text-2xl mb-2">🇰🇵</div>
+                <CountryFlag iso="kp" size={24} className="mb-2 rounded-sm border border-white/10 inline-block" />
                 <h3 className="font-bold text-red-200 mb-1">DPRK</h3>
                 <p className="text-red-300/80 text-sm">Self-reliance and unity</p>
               </div>
               <div className="bg-gradient-to-b from-red-600/20 to-yellow-600/20 rounded-lg p-4 border border-yellow-500/30">
-                <div className="text-2xl mb-2">🇨🇳</div>
+                <CountryFlag iso="cn" size={24} className="mb-2 rounded-sm border border-white/10 inline-block" />
                 <h3 className="font-bold text-yellow-200 mb-1">People's Republic of China</h3>
                 <p className="text-yellow-300/80 text-sm">Harmony and prosperity</p>
               </div>
