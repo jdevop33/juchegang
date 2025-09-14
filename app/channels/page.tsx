@@ -210,7 +210,7 @@ export default function ChannelsPage() {
   return (
     <>
       <JucheHeader />
-      <main className="min-h-screen bg-gradient-to-b from-black via-gray-950 to-black pt-20">
+      <main id="main-content" className="min-h-screen bg-gradient-to-b from-black via-gray-950 to-black pt-20">
         {/* Hero Section */}
         <section className="relative py-16 px-4">
           <motion.div

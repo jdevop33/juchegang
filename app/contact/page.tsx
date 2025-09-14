@@ -25,7 +25,7 @@ function ContactPageContent() {
 export default function ContactPage() {
   const { t } = useLanguage()
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black">
+    <main id="main-content" className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black">
       <JucheHeader />
       <div className="container mx-auto px-4 py-10 pt-28">
         <header className="mb-8">

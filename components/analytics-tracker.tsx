@@ -8,6 +8,8 @@ export function AnalyticsTracker() {
   const pathname = usePathname()
 
   useEffect(() => {
+    const consent = localStorage.getItem('analytics-consent')
+    if (consent === 'denied') return
     // Track page view on route change  
     analytics.pageView(pathname)
 
@@ -75,6 +77,8 @@ export function AnalyticsTracker() {
 
   // Track time on page
   useEffect(() => {
+    const consent = localStorage.getItem('analytics-consent')
+    if (consent === 'denied') return
     const startTime = Date.now()
     
     const handleBeforeUnload = () => {

@@ -64,7 +64,7 @@ export default function MissionPage() {
   return (
     <>
       <JucheHeader />
-      <main className="min-h-screen bg-gradient-to-b from-black via-red-950 to-black pt-20">
+      <main id="main-content" className="min-h-screen bg-gradient-to-b from-black via-red-950 to-black pt-20">
       {/* Hero Section */}
       <section className="relative py-20 px-4">
         <div className="container mx-auto max-w-6xl">

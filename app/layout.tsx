@@ -8,6 +8,7 @@ import { getDictionary } from "@/lib/dictionary"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Analytics } from "@vercel/analytics/next"
 import { AnalyticsTracker } from "@/components/analytics-tracker"
+import ConsentBanner from "@/components/consent-banner"
 import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -123,6 +124,7 @@ export default async function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <LanguageProvider initialLanguage={serverLang} dictionary={dict}>
             <AnalyticsTracker />
+            <ConsentBanner />
             <Breadcrumbs />
             {children}
           </LanguageProvider>

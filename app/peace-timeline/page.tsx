@@ -169,7 +169,7 @@ export default function PeaceTimelinePage() {
   return (
     <>
       <JucheHeader />
-      <main className="min-h-screen bg-gradient-to-b from-black via-blue-950 to-black pt-20">
+      <main id="main-content" className="min-h-screen bg-gradient-to-b from-black via-blue-950 to-black pt-20">
       {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
         <motion.div
