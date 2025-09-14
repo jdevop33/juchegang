@@ -66,7 +66,7 @@ export function CategorySection({ title, description, laws, imagePath, bgClass }
 
           <div className="relative h-80 md:h-[500px] rounded-xl overflow-hidden shadow-2xl">
             <SafeFocalImage 
-              src={getLawImage(laws[0]?.number || 1)} 
+              src={imagePath} 
               alt={title} 
               fill 
               className="object-cover" 
