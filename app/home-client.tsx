@@ -18,13 +18,43 @@ import { StructuredData } from "@/components/structured-data"
 import { useEffect, useState } from "react"
 import CountryFlag from "@/components/country-flag"
 
-const PeaceCounter = dynamic(() => import("@/components/peace-counter").then(mod => ({ default: mod.PeaceCounter })), { ssr: false, loading: () => <div className="h-32 animate-pulse bg-gradient-to-r from-gray-200 to-gray-300 rounded-lg" /> })
-const CulturalCalendar = dynamic(() => import("@/components/cultural-calendar").then(mod => ({ default: mod.CulturalCalendar })), { ssr: false, loading: () => <CardSkeleton /> })
-const AboutSection = dynamic(() => import("@/components/about-section").then(mod => ({ default: mod.AboutSection })), { ssr: false, loading: () => <div className="h-64 animate-pulse bg-gray-200 rounded-lg" /> })
-const CategorySection = dynamic(() => import("@/components/category-section").then(mod => ({ default: mod.CategorySection })), { ssr: false, loading: () => <div className="h-96 animate-pulse bg-gray-200 rounded-lg" /> })
-const EnhancedFloatingAction = dynamic(() => import("@/components/enhanced-floating-action").then(mod => ({ default: mod.EnhancedFloatingAction })), { ssr: false, loading: () => null })
-const ContactForm = dynamic(() => import("@/components/contact-form").then(mod => ({ default: mod.ContactForm })), { ssr: false, loading: () => <div className="h-96 animate-pulse bg-gray-200 rounded-lg" /> })
-const ResponsiveInstagramEmbed = dynamic(() => import("@/components/responsive-instagram-embed").then(m => ({ default: m.ResponsiveInstagramEmbed })), { ssr: false })
+// Dynamic imports with better optimization
+const PeaceCounter = dynamic(() => import("@/components/peace-counter").then(mod => ({ default: mod.PeaceCounter })), {
+  ssr: false,
+  loading: () => <div className="h-32 animate-pulse bg-gradient-to-r from-gray-200 to-gray-300 rounded-lg" />,
+  // Load when user scrolls near the component
+})
+
+const CulturalCalendar = dynamic(() => import("@/components/cultural-calendar").then(mod => ({ default: mod.CulturalCalendar })), {
+  ssr: false,
+  loading: () => <CardSkeleton />
+})
+
+const AboutSection = dynamic(() => import("@/components/about-section").then(mod => ({ default: mod.AboutSection })), {
+  ssr: false,
+  loading: () => <div className="h-64 animate-pulse bg-gray-200 rounded-lg" />
+})
+
+const CategorySection = dynamic(() => import("@/components/category-section").then(mod => ({ default: mod.CategorySection })), {
+  ssr: false,
+  loading: () => <div className="h-96 animate-pulse bg-gray-200 rounded-lg" />
+})
+
+// Lower priority components - load only when needed
+const EnhancedFloatingAction = dynamic(() => import("@/components/enhanced-floating-action").then(mod => ({ default: mod.EnhancedFloatingAction })), {
+  ssr: false,
+  loading: () => null
+})
+
+const ContactForm = dynamic(() => import("@/components/contact-form").then(mod => ({ default: mod.ContactForm })), {
+  ssr: false,
+  loading: () => <div className="h-96 animate-pulse bg-gray-200 rounded-lg" />
+})
+
+const ResponsiveInstagramEmbed = dynamic(() => import("@/components/responsive-instagram-embed").then(m => ({ default: m.ResponsiveInstagramEmbed })), {
+  ssr: false,
+  loading: () => <div className="h-64 animate-pulse bg-gradient-to-r from-gray-200 to-gray-300 rounded-lg" />
+})
 
 export default function HomeClient({ laws }: { laws: Law[] }) {
   const [isLoaded, setIsLoaded] = useState(false)
