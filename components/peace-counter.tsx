@@ -39,14 +39,14 @@ export function PeaceCounter() {
   ]
 
   return (
-    <div className="bg-gradient-to-r from-blue-950 via-purple-950 to-blue-950 py-8 border-y border-white/10">
+    <div className="bg-gradient-to-r from-blue-950 via-red-950 to-blue-950 py-8 border-y border-white/10">
       <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-6"
         >
-          <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-red-400 to-blue-400 bg-clip-text text-transparent mb-2">
             Journey to Unity
           </h3>
           <p className="text-white/60 text-sm">
@@ -64,7 +64,7 @@ export function PeaceCounter() {
               className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-white/20 transition-all"
             >
               <div className="flex flex-col items-center text-center">
-                <stat.icon className="w-8 h-8 text-purple-400 mb-2" />
+                <stat.icon className="w-8 h-8 text-blue-400 mb-2" />
                 <div className="text-2xl font-bold text-white mb-1">
                   {stat.value}
                 </div>
