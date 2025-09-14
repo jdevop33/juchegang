@@ -31,6 +31,8 @@ function twemojiSrc(iso: string): string {
 // Prefer local assets when available (guaranteed rendering)
 const LOCAL_FLAG_MAP: Record<string, string> = {
 	kp: "/flags/kp.svg",
+	ru: "/flags/640pxFlagofRussia.png",
+	cn: "/flags/640pxFlagofthePeople%27sRepublicofChina.png",
 }
 
 export default function CountryFlag({ iso, size = 24, className, alt }: Props) {
