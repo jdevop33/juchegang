@@ -5,15 +5,20 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Heart, Globe, Handshake, Star } from "lucide-react"
 
 const messages = [
-  { text: "和平与友谊", lang: "zh", translation: "Peace and Friendship", flag: "🇨🇳" },
-  { text: "Мир и дружба", lang: "ru", translation: "Peace and Friendship", flag: "🇷🇺" },
-  { text: "평화와 우정", lang: "ko", translation: "Peace and Friendship", flag: "🇰🇵" },
-  { text: "Solidarität und Einheit", lang: "de", translation: "Solidarity and Unity", flag: "🇩🇪" },
-  { text: "Unidos en paz", lang: "es", translation: "United in Peace", flag: "🇪🇸" },
-  { text: "团结就是力量", lang: "zh", translation: "Unity is Strength", flag: "🇨🇳" },
-  { text: "Вместе мы сильнее", lang: "ru", translation: "Together We Are Stronger", flag: "🇷🇺" },
-  { text: "하나된 세계", lang: "ko", translation: "One World United", flag: "🇰🇵" },
+  { text: "和平与友谊", lang: "zh", translation: "Peace and Friendship", flag: "🇨🇳", iso: "cn" },
+  { text: "Мир и дружба", lang: "ru", translation: "Peace and Friendship", flag: "🇷🇺", iso: "ru" },
+  { text: "평화와 우정", lang: "ko", translation: "Peace and Friendship", flag: "🇰🇵", iso: "kp" },
+  { text: "Solidarität und Einheit", lang: "de", translation: "Solidarity and Unity", flag: "🇩🇪", iso: "de" },
+  { text: "Unidos en paz", lang: "es", translation: "United in Peace", flag: "🇪🇸", iso: "es" },
+  { text: "团结就是力量", lang: "zh", translation: "Unity is Strength", flag: "🇨🇳", iso: "cn" },
+  { text: "Вместе мы сильнее", lang: "ru", translation: "Together We Are Stronger", flag: "🇷🇺", iso: "ru" },
+  { text: "하나된 세계", lang: "ko", translation: "One World United", flag: "🇰🇵", iso: "kp" },
 ]
+
+function flagSrc(iso: string): string {
+  // Use flagcdn PNGs (small, widely cached). Height 24 keeps it crisp.
+  return `https://flagcdn.com/h24/${iso}.png`
+}
 
 export function SolidarityBanner() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -55,7 +60,17 @@ export function SolidarityBanner() {
               transition={{ duration: 0.5 }}
               className="flex items-center gap-3"
             >
-              <span className="text-2xl">{currentMessage.flag}</span>
+              <img
+                src={flagSrc(currentMessage.iso)}
+                alt={`${currentMessage.lang} flag`}
+                width={24}
+                height={18}
+                className="rounded-sm shadow-sm border border-white/10"
+                onError={(e) => {
+                  // Fallback to emoji if CDN blocked
+                  (e.currentTarget as HTMLImageElement).replaceWith(Object.assign(document.createElement('span'), { textContent: currentMessage.flag, className: 'text-2xl' }))
+                }}
+              />
               <div className="text-center">
                 <p className="text-white font-bold text-lg sm:text-xl">
                   {currentMessage.text}
