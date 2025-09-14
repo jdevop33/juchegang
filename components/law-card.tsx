@@ -5,7 +5,7 @@ import { lawsKr } from "@/data/laws.kr"
 import { ArrowUpRight, Star, ChevronDown, ChevronUp } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
-import { getLawImage } from "@/lib/law-images"
+import { getLawImageCandidates } from "@/lib/law-images"
 import FocalImage from "./focal-image"
 import SafeFocalImage from "./safe-focal-image"
 import { useState } from "react"
@@ -60,7 +60,7 @@ export function LawCard({ law }: LawCardProps) {
       {/* Unique image for each law */}
       <div className="relative h-48 overflow-hidden">
         <SafeFocalImage
-          src={getLawImage(law.number)}
+          src={getLawImageCandidates(law.number)}
           alt={`Visual representation of ${t('lawLabel')} ${law.number}: ${displayTitle}`}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
