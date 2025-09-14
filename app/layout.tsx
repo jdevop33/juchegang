@@ -8,6 +8,7 @@ import { getDictionary } from "@/lib/dictionary"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Analytics } from "@vercel/analytics/next"
 import { AnalyticsTracker } from "@/components/analytics-tracker"
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -82,7 +83,7 @@ export default async function RootLayout({
     dict = {}
   }
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={serverLang === 'en' ? 'en' : serverLang === 'kr' ? 'ko-KR' : 'ko-KP'} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
@@ -90,36 +91,35 @@ export default async function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKQ6PF3Q8W"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-WKQ6PF3Q8W');
-            `,
-          }}
-        />
-        {/* End Google Analytics */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-WKQ6PF3Q8W" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);} 
+            gtag('js', new Date());
+            gtag('config', 'G-WKQ6PF3Q8W');
+          `}
+        </Script>
         {/* Microsoft Clarity */}
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "qxe1et76wh");
-            `,
-          }}
-        />
-        {/* End Microsoft Clarity */}
+        <Script id="ms-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, 'clarity', 'script', 'qxe1et76wh');
+          `}
+        </Script>
         {/* Instagram Embed Script */}
-        <script async src="//www.instagram.com/embed.js"></script>
+        <Script async src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
       </head>
       <body className={inter.className}>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:rounded-md focus:bg-primary focus:text-primary-foreground"
+        >
+          Skip to content
+        </a>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <LanguageProvider initialLanguage={serverLang} dictionary={dict}>
             <AnalyticsTracker />

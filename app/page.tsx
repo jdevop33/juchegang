@@ -53,9 +53,9 @@ const ContactForm = dynamic(() => import("@/components/contact-form").then(mod =
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [showLoading, setShowLoading] = useState(false) // Disable enhanced loading screen for now
+  const [showLoading, setShowLoading] = useState(false)
   const [selectedLaw, setSelectedLaw] = useState<Law | null>(null)
-  const [useEnhancedCards, setUseEnhancedCards] = useState(false) // Use simple cards for now
+  const [useEnhancedCards, setUseEnhancedCards] = useState(false)
   const [lawsLoading, setLawsLoading] = useState(true)
 
   useScrollAnimation()
@@ -64,7 +64,7 @@ export default function Home() {
   const { t } = useLanguage()
 
   useEffect(() => {
-    // Simulate loading time for stellar experience
+    // Initialize loading state
     const timer = setTimeout(() => {
       setIsLoaded(true)
       setLawsLoading(false)
@@ -161,7 +161,7 @@ export default function Home() {
           <div className="section-divider"></div>
         </div>
 
-        {/* Simplified for now */}
+        {/* Laws grid */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {lawsLoading ? (

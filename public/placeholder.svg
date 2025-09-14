@@ -1,0 +1,7 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1f2937"/>
+  <rect x="50" y="50" width="300" height="200" fill="#374151" rx="8"/>
+  <path d="M175 125L200 150L225 125M200 150V175" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="180" cy="110" r="5" fill="#9ca3af"/>
+  <text x="200" y="210" text-anchor="middle" fill="#9ca3af" font-family="system-ui" font-size="12">Excellence Image</text>
+</svg>

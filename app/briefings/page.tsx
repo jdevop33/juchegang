@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function BriefingsIndexPage() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main id="main-content" className="min-h-screen bg-background text-foreground">
       <JucheHeader />
       <BriefingsContent />
       <JucheFooter />

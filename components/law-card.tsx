@@ -25,7 +25,7 @@ export function LawCard({ law }: LawCardProps) {
     triggerOnce: true,
   })
 
-  // Auto-translate if Korean selected and no localized text present
+  // Auto-translate Korean content when needed
   const shouldAuto = language === 'kr'
   const { translated: autoTitle } = useAutoTranslate(
     !localized?.title ? law.title : undefined,
@@ -122,7 +122,6 @@ export function LawCard({ law }: LawCardProps) {
           </div>
         )}
         
-        {/* Removed non-functional 'View full details' link per request */}
       </div>
     </article>
   )
