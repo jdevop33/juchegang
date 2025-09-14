@@ -6,7 +6,6 @@ import { JucheFooter } from "@/components/juche-footer"
 import { SolidarityBanner } from "@/components/solidarity-banner"
 import { CardSkeleton } from "@/components/ui/skeleton-loader"
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll"
-import { useInstagramEmbeds } from "@/hooks/use-instagram-embeds"
 import { HeroSection } from "@/components/hero-section"
 import { FeaturedLaw } from "@/components/featured-law"
 import { useLanguage } from "@/contexts/language-context"
@@ -64,7 +63,6 @@ export default function Home() {
 
   useScrollAnimation()
   useSmoothScroll()
-  useInstagramEmbeds()
   const { t } = useLanguage()
 
   useEffect(() => {
@@ -74,9 +72,10 @@ export default function Home() {
       setLawsLoading(false)
     }, 100)
     
-    // Register service worker for PWA
+    // Register service worker for PWA (idle so it never affects LCP)
     if ('serviceWorker' in navigator && typeof window !== 'undefined') {
-      navigator.serviceWorker.register('/sw.js')
+      const idle = (window as any).requestIdleCallback || ((cb: any) => setTimeout(cb, 2000))
+      idle(() => navigator.serviceWorker.register('/sw.js'))
     }
     
     return () => clearTimeout(timer)
