@@ -183,10 +183,6 @@ export default function Home() {
         <div className="section-divider"></div>
       </div>
 
-      <div className="section-transition">
-        <div className="section-divider"></div>
-      </div>
-
       <div className="section-reveal">
         <CategorySection
           title={t('selfDisciplineTitle')}

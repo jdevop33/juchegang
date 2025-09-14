@@ -9,17 +9,25 @@ import { useLanguage } from "@/contexts/language-context"
 export function HeroSection() {
   const [scrollY, setScrollY] = useState(0)
   const [isLoaded, setIsLoaded] = useState(false)
+  const [reducedMotion, setReducedMotion] = useState(false)
   const { t } = useLanguage()
 
   useEffect(() => {
     setIsLoaded(true)
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const update = () => setReducedMotion(!!mq.matches)
+    update()
+    mq.addEventListener?.('change', update)
 
     const handleScroll = () => {
-      setScrollY(window.scrollY)
+      if (!mq.matches) setScrollY(window.scrollY)
     }
 
     window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+      mq.removeEventListener?.('change', update)
+    }
   }, [])
   return (
     <div className="relative w-full h-[90vh] overflow-hidden">
@@ -27,7 +35,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 parallax"
         style={{
-          transform: `translateY(${scrollY * 0.5}px)`,
+          transform: reducedMotion ? undefined : `translateY(${scrollY * 0.5}px)`,
         }}
       >
         <FocalImage
