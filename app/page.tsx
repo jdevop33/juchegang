@@ -19,6 +19,7 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import type { Law } from "@/types/law"
 import dynamic from "next/dynamic"
 import { StructuredData } from "@/components/structured-data"
+import { useRef } from "react"
 import CountryFlag from "@/components/country-flag"
 
 // Lazy load heavy components that are below the fold
@@ -51,6 +52,8 @@ const ContactForm = dynamic(() => import("@/components/contact-form").then(mod =
   loading: () => <div className="h-96 animate-pulse bg-gray-200 rounded-lg" />,
   ssr: false
 })
+
+const ResponsiveInstagramEmbed = dynamic(() => import("@/components/responsive-instagram-embed").then(m => ({ default: m.ResponsiveInstagramEmbed })), { ssr: false })
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -242,26 +245,7 @@ export default function Home() {
             </div>
             
             <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <div className="max-w-lg mx-auto">
-                <blockquote 
-                  className="instagram-media" 
-                  data-instgrm-captioned 
-                  data-instgrm-permalink="https://www.instagram.com/reel/DOIDrdtDoHN/?utm_source=ig_embed&utm_campaign=loading" 
-                  data-instgrm-version="14" 
-                  style={{
-                    background: '#FFF',
-                    border: '0',
-                    borderRadius: '3px',
-                    boxShadow: '0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)',
-                    margin: '1px',
-                    maxWidth: '540px',
-                    minWidth: '326px',
-                    padding: '0',
-                    width: '99.375%'
-                  }}
-                >
-                </blockquote>
-              </div>
+              <ResponsiveInstagramEmbed postUrl="https://www.instagram.com/reel/DOIDrdtDoHN/?utm_source=ig_embed&utm_campaign=loading" />
             </div>
           </div>
         </div>

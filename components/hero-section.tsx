@@ -52,8 +52,10 @@ export function HeroSection() {
           alt="Juche 2025"
           fill
           className="object-cover object-center scale-105"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           priority
+          placeholder="blur"
+          blurDataURL="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cfilter id='b'%3E%3CfeGaussianBlur stdDeviation='1'/%3E%3C/filter%3E%3Crect width='10' height='6' fill='%23000'/%3E%3Crect width='10' height='6' fill='%23000' filter='url(%23b)'/%3E%3C/svg%3E"
         />
 
         {/* Enhanced overlay for better flow */}
