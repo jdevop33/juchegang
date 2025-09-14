@@ -89,6 +89,7 @@ export default async function RootLayout({
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         {/* Google Analytics */}

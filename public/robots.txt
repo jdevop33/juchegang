@@ -5,17 +5,8 @@ Allow: /
 # Sitemap
 Sitemap: https://juche.org/sitemap.xml
 
-# Crawl-delay
+# Crawl-delay (gentle)
 Crawl-delay: 1
 
-# Disallow admin/api paths
+# Protect dynamic endpoints
 Disallow: /api/
-Disallow: /_next/
-Disallow: /admin/
-
-# Allow search engines to index all content
-Allow: /truth-project/
-Allow: /briefings/
-Allow: /gallery/
-Allow: /social/
-Allow: /contact/

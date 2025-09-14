@@ -17,6 +17,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "name": "The 48 Laws of Excellence - JucheGang",
           "description": "A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering commitment to your highest potential.",
           "url": baseUrl,
+          "license": "https://creativecommons.org/licenses/by/4.0/",
           "potentialAction": {
             "@type": "SearchAction",
             "target": {
@@ -46,6 +47,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "@type": "Article",
           "headline": data?.title || "Law of Excellence",
           "description": data?.content?.substring(0, 160) || "A principle for achieving personal excellence",
+          "license": "https://creativecommons.org/licenses/by/4.0/",
           "author": {
             "@type": "Person",
             "name": "Dr. Henry Jekyll"
@@ -81,6 +83,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "name": "JucheGang",
           "description": "Dedicated to promoting peace, understanding, and excellence through education and cultural exchange.",
           "url": baseUrl,
+          "license": "https://creativecommons.org/licenses/by/4.0/",
           "logo": {
             "@type": "ImageObject",
             "url": `${baseUrl}/images/logo.png`,
@@ -110,6 +113,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "@type": "Article",
           "headline": data?.title || "Truth Project Analysis",
           "description": data?.description || "Comprehensive analysis promoting peace and understanding",
+          "license": "https://creativecommons.org/licenses/by/4.0/",
           "author": {
             "@type": "Person",
             "name": "JucheGang Research Team"
