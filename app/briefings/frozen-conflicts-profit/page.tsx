@@ -1,7 +1,13 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { BriefingBanner } from "@/components/briefing-banner"
-import FrozenConflictsContent from "./frozen-conflicts-content"
+import dynamic from "next/dynamic"
+
+const FrozenConflictsContent = dynamic(() => import("./frozen-conflicts-content"), {
+  loading: () => <div className="flex justify-center items-center min-h-[400px]">
+    <div className="animate-pulse text-muted-foreground">Loading briefing content...</div>
+  </div>,
+})
 
 export const metadata = {
   title: "Eisenhower's Warning: How Frozen Conflicts Fund the Military-Industrial Complex",

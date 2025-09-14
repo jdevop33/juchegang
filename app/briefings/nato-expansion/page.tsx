@@ -1,8 +1,15 @@
+import dynamic from "next/dynamic"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import SafeFocalImage from "@/components/safe-focal-image"
 import { BriefingBanner } from "@/components/briefing-banner"
-import NATOExpansionContent from "./nato-expansion-content"
+
+// Dynamic import for better code splitting
+const NATOExpansionContent = dynamic(() => import("./nato-expansion-content"), {
+  loading: () => <div className="flex justify-center items-center min-h-[400px]">
+    <div className="animate-pulse text-muted-foreground">Loading briefing content...</div>
+  </div>,
+})
 
 export const metadata = {
   title: "The Ukraine Deception: How NATO Expansion Manufactured a War",

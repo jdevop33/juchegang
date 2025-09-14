@@ -29,13 +29,18 @@ const nextConfig = {
       '@radix-ui/react-dialog',
       '@radix-ui/react-dropdown-menu',
       'framer-motion',
-      'recharts',
-      'date-fns'
+      'date-fns',
+      'react-hook-form',
+      'embla-carousel-react'
     ],
   },
   // Performance optimizations
   compress: true,
   poweredByHeader: false,
+  // SWC compiler settings
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error'] } : false,
+  },
   async redirects() {
     return [
       {
