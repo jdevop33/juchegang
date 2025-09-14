@@ -21,7 +21,7 @@ const focalMap: Record<string, FocalPoint> = {
   "/gallery/North_Korean_Bibimbap_비빔밥_(12330376074).jpg": { x: 50, y: 35 }, // Cuisine hero focal
   "/gallery/gallery-041.webp": { x: 50, y: 35 },
   "/gallery/gallery-042.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-040.webp": { x: 50, y: 35 },
+  "/gallery/gallery-040.webp": { x: 50, y: 18 },
   "/gallery/gallery-039.jpg": { x: 50, y: 35 },
   "/gallery/gallery-038.jpg": { x: 50, y: 35 },
   "/gallery/gallery-037.jpg": { x: 50, y: 35 },
@@ -41,9 +41,9 @@ const focalMap: Record<string, FocalPoint> = {
   "/gallery/gallery-012.webp": { x: 50, y: 20 }, // Law 12 (come down a bit more)
   "/gallery/gallery-016.webp": { x: 50, y: 32 }, // Law 16
   "/gallery/gallery-020.webp": { x: 50, y: 32 }, // Law 20
-  "/gallery/gallery-023.jpg": { x: 50, y: 24 },  // Law 23 (move further down)
-  "/gallery/gallery-030.jpg": { x: 50, y: 20 },  // Law 30 (move further down to show face)
-  "/gallery/gallery-034.jpg": { x: 50, y: 32 },  // Law 34
+  "/gallery/gallery-023.jpg": { x: 50, y: 15 },  // Law 23 (more top/sky, full face visible)
+  "/gallery/gallery-030.jpg": { x: 50, y: 15 },  // Law 30 (more top/sky)
+  "/gallery/gallery-034.jpg": { x: 50, y: 20 },  // Law 34 (more top/sky)
   // Law 4 dynamic file varies, but we bias downward crop
   "/gallery/gallery-004.jpg": { x: 50, y: 35 },
   "/gallery/gallery-004.webp": { x: 50, y: 35 },
