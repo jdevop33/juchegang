@@ -14,14 +14,15 @@ const focalMap: Record<string, FocalPoint> = {
   "/gallery/gallery-054.webp": { x: 50, y: 35 }, // Law 5
   "/gallery/gallery-046.webp": { x: 50, y: 20 }, // Law 7 (nudge further down)
   "/gallery/gallery-044.jpg": { x: 50, y: 35 }, // Law 8
-  "/gallery/gallery-055.webp": { x: 50, y: 38 }, // Law 46 (more headroom)
-  "/gallery/gallery-057.jpg": { x: 50, y: 35 }, // Law 47
+  "/gallery/gallery-055.webp": { x: 50, y: 12 }, // Law 46 (moved down to show more top)
+  "/gallery/gallery-057.jpg": { x: 50, y: 12 }, // Law 47 (moved down to show more top)
   "/images/SupremeLeader.png": { x: 70, y: 85 }, // Social hero focal (legacy)
   "/gallery/herosocial.jpg": { x: 50, y: 40 }, // Social hero focal (preferred)
   "/gallery/North_Korean_Bibimbap_비빔밥_(12330376074).jpg": { x: 50, y: 35 }, // Cuisine hero focal
   "/gallery/gallery-041.webp": { x: 50, y: 35 },
-  "/gallery/gallery-042.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-040.webp": { x: 50, y: 18 },
+  "/gallery/gallery-042.jpg": { x: 50, y: 12 }, // Law 44 (moved down to show more top)
+  "/gallery/gallery-043.jpg": { x: 50, y: 12 }, // Law 42 (moved down to show more top)
+  "/gallery/gallery-040.webp": { x: 50, y: 12 }, // Law 40 (moved down to show more top)
   "/gallery/gallery-039.jpg": { x: 50, y: 35 },
   "/gallery/gallery-038.jpg": { x: 50, y: 35 },
   "/gallery/gallery-037.jpg": { x: 50, y: 35 },
@@ -41,9 +42,9 @@ const focalMap: Record<string, FocalPoint> = {
   "/gallery/gallery-012.webp": { x: 50, y: 20 }, // Law 12 (come down a bit more)
   "/gallery/gallery-016.webp": { x: 50, y: 32 }, // Law 16
   "/gallery/gallery-020.webp": { x: 50, y: 32 }, // Law 20
-  "/gallery/gallery-023.jpg": { x: 50, y: 15 },  // Law 23 (more top/sky, full face visible)
-  "/gallery/gallery-030.jpg": { x: 50, y: 15 },  // Law 30 (more top/sky)
-  "/gallery/gallery-034.jpg": { x: 50, y: 20 },  // Law 34 (more top/sky)
+  "/gallery/gallery-023.jpg": { x: 50, y: 10 },  // Law 23 (moved down to show more top)
+  "/gallery/gallery-030.jpg": { x: 50, y: 10 },  // Law 30 (moved down to show more top)
+  "/gallery/gallery-034.jpg": { x: 50, y: 12 },  // Law 34 (moved down to show more top)
   // Law 4 dynamic file varies, but we bias downward crop
   "/gallery/gallery-004.jpg": { x: 50, y: 35 },
   "/gallery/gallery-004.webp": { x: 50, y: 35 },

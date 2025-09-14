@@ -17,6 +17,7 @@ import dynamic from "next/dynamic"
 import { StructuredData } from "@/components/structured-data"
 import { useEffect, useState } from "react"
 import CountryFlag from "@/components/country-flag"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 // Dynamic imports with better optimization
 const PeaceCounter = dynamic(() => import("@/components/peace-counter").then(mod => ({ default: mod.PeaceCounter })), {
@@ -61,6 +62,7 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
   const [showLoading, setShowLoading] = useState(false)
   const [lawsLoading, setLawsLoading] = useState(true)
   useSmoothScroll()
+  useScrollAnimation()
   const { t } = useLanguage()
 
   useEffect(() => {
@@ -137,19 +139,19 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
           </div>
         </div>
 
-        <div className="section-transition"><div className="section-divider"></div></div>
+        <div className="section-divider"></div>
 
         <div className="section-reveal">
           <CategorySection title={t('selfDisciplineTitle')} description={t('selfDisciplineDesc')} laws={selfDisciplineLaws} imagePath="/images/brothers.jpg" bgClass="bg-muted/50 backdrop-blur-sm" />
         </div>
 
-        <div className="section-transition"><div className="section-divider"></div></div>
+        <div className="section-divider"></div>
 
         <div className="section-reveal">
           <CategorySection title={t('relationshipsTitle')} description={t('relationshipsDesc')} laws={relationshipLaws} imagePath="/images/jj.png" bgClass="bg-secondary/50 backdrop-blur-sm" />
         </div>
 
-        <div className="section-transition"><div className="section-divider"></div></div>
+        <div className="section-divider"></div>
 
         <div className="section-reveal"><AboutSection /></div>
 
