@@ -25,6 +25,14 @@ export default function BriefingsContent() {
           </h2>
           <p className="text-white/70">How humanitarian rhetoric masks geopolitical operations. The sophisticated network deploying $300M+ annually across 100+ countries for regime change.</p>
         </li>
+        <li className="rounded-xl border border-purple-500/30 p-6 bg-purple-900/20 hover:bg-purple-900/30 transition">
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/soros-government-nexus" className="hover:underline text-purple-300">
+              The Soros-Government Nexus
+            </Link>
+          </h2>
+          <p className="text-white/70">Documented relationships spanning financial partnerships, personnel exchanges, and policy influence. Over $300M in government funding revealed through comprehensive examination.</p>
+        </li>
         <li className="rounded-xl border border-red-500/30 p-6 bg-red-900/20 hover:bg-red-900/30 transition">
           <h2 className="text-2xl font-semibold mb-2">
             <Link href="/briefings/media-manipulation-decoded" className="hover:underline text-red-300">
