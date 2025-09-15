@@ -17,6 +17,14 @@ export default function BriefingsContent() {
       </header>
 
       <ul className="max-w-3xl mx-auto space-y-6">
+        <li className="rounded-xl border border-orange-500/30 p-6 bg-orange-900/20 hover:bg-orange-900/30 transition">
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/ngo-regime-change" className="hover:underline text-orange-300">
+              NGOs and Regime Change
+            </Link>
+          </h2>
+          <p className="text-white/70">How humanitarian rhetoric masks geopolitical operations. The sophisticated network deploying $300M+ annually across 100+ countries for regime change.</p>
+        </li>
         <li className="rounded-xl border border-red-500/30 p-6 bg-red-900/20 hover:bg-red-900/30 transition">
           <h2 className="text-2xl font-semibold mb-2">
             <Link href="/briefings/media-manipulation-decoded" className="hover:underline text-red-300">
