@@ -1,6 +1,6 @@
 "use client"
 
-import { Menu, X, Sparkles, Home, Globe, Users, Heart, Calendar, Image as ImageIcon, BookOpen, MessageCircle } from "lucide-react"
+import { Menu, X, Sparkles, Home, Globe, Users, Heart, Calendar, Image as ImageIcon, BookOpen, MessageCircle, FileText } from "lucide-react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
@@ -48,6 +48,7 @@ export function EnhancedHeader() {
 
   const navItems = [
     { href: "/", label: t('home'), icon: Home, color: "red" },
+    { href: "/briefings", label: "Briefings", icon: FileText, color: "orange", featured: true },
     { href: "/mission", label: t('mission'), icon: Globe, color: "blue" },
     { href: "/cultural-exchange", label: t('culture'), icon: Users, color: "purple" },
     { href: "/youth-empowerment", label: t('youth'), icon: Heart, color: "green" },

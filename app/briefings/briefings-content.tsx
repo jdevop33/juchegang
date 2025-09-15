@@ -33,6 +33,14 @@ export default function BriefingsContent() {
           </h2>
           <p className="text-white/70">Documented relationships spanning financial partnerships, personnel exchanges, and policy influence. Over $300M in government funding revealed through comprehensive examination.</p>
         </li>
+        <li className="rounded-xl border border-amber-500/30 p-6 bg-amber-900/20 hover:bg-amber-900/30 transition">
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/koch-venezuelan-oil" className="hover:underline text-amber-300">
+              Koch Industries and Venezuelan Oil
+            </Link>
+          </h2>
+          <p className="text-white/70">Uncovering the complex web of economic interests and strategic dependencies. $409M dispute, refineries built for Venezuelan crude, and $3B in potential annual savings revealed.</p>
+        </li>
         <li className="rounded-xl border border-red-500/30 p-6 bg-red-900/20 hover:bg-red-900/30 transition">
           <h2 className="text-2xl font-semibold mb-2">
             <Link href="/briefings/media-manipulation-decoded" className="hover:underline text-red-300">
