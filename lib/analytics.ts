@@ -46,6 +46,16 @@ export const analytics = {
 
 // Hook for analytics (simplified for Umami)
 export const useAnalytics = () => {
+  // Return no-op functions for SSR, real functions for client
+  if (typeof window === 'undefined') {
+    return {
+      trackEvent: () => {},
+      trackLaw: () => {},
+      trackSolidarity: () => {},
+      trackPeace: () => {},
+    }
+  }
+
   return {
     trackEvent: analytics.event,
     trackLaw: analytics.trackLaw,

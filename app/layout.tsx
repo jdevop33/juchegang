@@ -90,7 +90,7 @@ export default async function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         {/* Umami Analytics - Privacy-focused, no cookies */}
-        <script defer src="https://cloud.umami.is/script.js" data-website-id="e42c2739-f5a9-4dbf-8325-2e5b80eeee19"></script>
+        <Script defer src="https://cloud.umami.is/script.js" data-website-id="e42c2739-f5a9-4dbf-8325-2e5b80eeee19" strategy="afterInteractive" />
         {/* Instagram Embed Script */}
         <Script async src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
       </head>
