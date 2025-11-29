@@ -35,19 +35,13 @@ export function SEOEnhancedLayout({
   useEffect(() => {
     // Enhanced Analytics and SEO tracking
     if (typeof window !== 'undefined') {
-      // Track page views with enhanced metadata
-      if (window.gtag) {
-        window.gtag('config', process.env.NEXT_PUBLIC_GA_ID || 'GA-MEASUREMENT-ID', {
+      // Umami tracking - page views are automatic
+      // Custom event tracking for metadata
+      if (window.umami) {
+        window.umami.track('page_view_enhanced', {
           page_title: title,
-          page_location: url,
-          content_group1: section,
+          page_section: section,
         })
-      }
-      
-      // Microsoft Clarity enhanced tracking
-      if (window.clarity) {
-        window.clarity('set', 'page_title', title)
-        window.clarity('set', 'page_section', section)
       }
     }
   }, [title, url, section])
@@ -201,12 +195,10 @@ export function SEOEnhancedLayout({
         {/* Preconnect to external domains */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.clarity.ms" />
+        <link rel="preconnect" href="https://cloud.umami.is" />
         
         {/* DNS Prefetch */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="//www.google-analytics.com" />
         
         {/* Canonical URL */}
         <link rel="canonical" href={url} />
@@ -246,10 +238,11 @@ export function SEOEnhancedLayout({
   )
 }
 
-// Global type definitions for analytics
+// Global type definitions for Umami analytics
 declare global {
   interface Window {
-    gtag?: (...args: any[]) => void
-    clarity?: (...args: any[]) => void
+    umami?: {
+      track: (eventName: string, eventData?: Record<string, any>) => void
+    }
   }
 }
