@@ -6,9 +6,6 @@ import { LanguageProvider } from "@/contexts/language-context"
 import { getServerLanguage, type Language } from "@/lib/i18n-server"
 import { getDictionary } from "@/lib/dictionary"
 import { Breadcrumbs } from "@/components/breadcrumbs"
-import { Analytics } from "@vercel/analytics/next"
-import { AnalyticsTracker } from "@/components/analytics-tracker"
-import ConsentBanner from "@/components/consent-banner"
 import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -92,26 +89,8 @@ export default async function RootLayout({
         <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-WKQ6PF3Q8W" strategy="afterInteractive" />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);} 
-            gtag('js', new Date());
-            gtag('config', 'G-WKQ6PF3Q8W');
-          `}
-        </Script>
-        {/* Microsoft Clarity */}
-        <Script id="ms-clarity" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, 'clarity', 'script', 'qxe1et76wh');
-          `}
-        </Script>
+        {/* Umami Analytics - Privacy-focused, no cookies */}
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="e42c2739-f5a9-4dbf-8325-2e5b80eeee19"></script>
         {/* Instagram Embed Script */}
         <Script async src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
       </head>
@@ -124,13 +103,10 @@ export default async function RootLayout({
         </a>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <LanguageProvider initialLanguage={serverLang} dictionary={dict}>
-            <AnalyticsTracker />
-            <ConsentBanner />
             <Breadcrumbs />
             {children}
           </LanguageProvider>
         </ThemeProvider>
-        <Analytics />
       </body>
     </html>
   )
