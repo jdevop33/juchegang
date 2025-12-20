@@ -136,6 +136,11 @@ export function JucheHeader() {
                   </Link>
                 </li>
                 <li className="transform transition-all duration-300 hover:scale-105">
+                  <Link href="/library" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-white/5 hover:bg-purple-500/20 text-white/90 hover:text-white transition-all duration-300 border border-white/10 hover:border-purple-400/40">
+                    <span className="font-medium">Library</span>
+                  </Link>
+                </li>
+                <li className="transform transition-all duration-300 hover:scale-105">
                   <Link href="/channels" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-white/5 hover:bg-pink-500/20 text-white/90 hover:text-white transition-all duration-300 border border-white/10 hover:border-pink-400/40">
                     <span className="font-medium">{t('channels')}</span>
                   </Link>
