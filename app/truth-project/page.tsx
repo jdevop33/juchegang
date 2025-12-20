@@ -92,6 +92,11 @@ export default function TruthProjectPage() {
             <div className="font-semibold">Sovereign Wealth Seizures</div>
             <div className="text-sm text-white/60 mt-1">From colonial plunder to frozen Russian assets</div>
           </Link>
+          <Link href="/truth-project/eu-fiscal-gamble" className="block rounded-lg border border-blue-500/30 bg-blue-900/20 px-6 py-4 text-center text-white hover:bg-blue-900/30 transition-colors">
+            <div className="text-sm text-blue-400 mb-1">NEW - DEC 2025</div>
+            <div className="font-semibold">EU's &euro;90B Fiscal Gamble</div>
+            <div className="text-sm text-white/60 mt-1">Deep analysis of Europe's riskiest financial commitment</div>
+          </Link>
           <Link href="/briefings/ai-censorship-matrix" className="block rounded-lg border border-green-500/30 bg-green-900/20 px-6 py-4 text-center text-white hover:bg-green-900/30 transition-colors">
             <div className="text-sm text-green-400 mb-1">BRIEFING</div>
             <div className="font-semibold">The AI Censorship Matrix</div>

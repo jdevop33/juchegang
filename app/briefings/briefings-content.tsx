@@ -17,6 +17,18 @@ export default function BriefingsContent() {
       </header>
 
       <ul className="max-w-3xl mx-auto space-y-6">
+        <li className="rounded-xl border border-blue-500/30 p-6 bg-blue-900/20 hover:bg-blue-900/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-blue-600/30 text-blue-300 text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-amber-600/30 text-amber-300 text-xs font-medium rounded">Dec 2025</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/eu-ukraine-aid" className="hover:underline text-blue-300">
+              The Tipping Point: EU's &euro;90 Billion Ukraine Gamble
+            </Link>
+          </h2>
+          <p className="text-white/70">How Europe's latest support package transfers unprecedented fiscal risk to taxpayers. Fact-checked analysis of the December 2025 decision.</p>
+        </li>
         <li className="rounded-xl border border-orange-500/30 p-6 bg-orange-900/20 hover:bg-orange-900/30 transition">
           <h2 className="text-2xl font-semibold mb-2">
             <Link href="/briefings/ngo-regime-change" className="hover:underline text-orange-300">
