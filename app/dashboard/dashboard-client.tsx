@@ -1,13 +1,17 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { RefreshCw, TrendingUp, DollarSign, Zap, Droplets, Atom, Users, Scale, Building2, Battery, Globe } from 'lucide-react'
+import { RefreshCw, TrendingUp, DollarSign, Zap, Droplets, Atom, Users, Scale, Building2, Battery, Globe, Bitcoin, BarChart3, FileText, Newspaper } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { TickerTape, TickerBar } from '@/components/dashboard/ticker-tape'
 import { MetricCard } from '@/components/dashboard/metric-card'
 import { DataTable, CountryCell, TrendCell, RiskBadge } from '@/components/dashboard/data-table'
 import { CountrySelector, CountryPresets } from '@/components/dashboard/country-selector'
 import { getCountryFlag } from '@/data/countries'
+import { CryptoWidget } from '@/components/dashboard/crypto-widget'
+import { EarningsWidget } from '@/components/dashboard/earnings-widget'
+import { IndicesWidget } from '@/components/dashboard/indices-widget'
+import { NewsFeed } from '@/components/dashboard/news-feed'
 
 interface DashboardData {
   markets: {
@@ -40,11 +44,12 @@ interface DashboardData {
   error?: string
 }
 
-type TabId = 'overview' | 'markets' | 'rates' | 'indicators' | 'edge'
+type TabId = 'overview' | 'markets' | 'assets' | 'rates' | 'indicators' | 'edge'
 
 const TABS: { id: TabId; label: string; icon: React.ReactNode }[] = [
   { id: 'overview', label: 'OVERVIEW', icon: <Globe className="w-4 h-4" /> },
   { id: 'markets', label: 'MARKETS', icon: <TrendingUp className="w-4 h-4" /> },
+  { id: 'assets', label: 'ASSETS', icon: <Bitcoin className="w-4 h-4" /> },
   { id: 'rates', label: 'RATES', icon: <DollarSign className="w-4 h-4" /> },
   { id: 'indicators', label: 'INDICATORS', icon: <Building2 className="w-4 h-4" /> },
   { id: 'edge', label: 'EDGE FACTORS', icon: <Atom className="w-4 h-4" /> },
@@ -169,6 +174,9 @@ export function DashboardClient({ initialData }: { initialData: DashboardData })
         )}
         {activeTab === 'markets' && (
           <MarketsTab data={data.markets} />
+        )}
+        {activeTab === 'assets' && (
+          <AssetsTab />
         )}
         {activeTab === 'rates' && (
           <RatesTab data={data.rates} />
@@ -743,6 +751,24 @@ function EdgeFactorsTab({ data }: { data: DashboardData['edge'] }) {
           ]}
         />
       )}
+    </div>
+  )
+}
+
+function AssetsTab() {
+  return (
+    <div className="space-y-6">
+      {/* Top row: Crypto and Indices */}
+      <div className="grid lg:grid-cols-2 gap-6">
+        <CryptoWidget />
+        <IndicesWidget />
+      </div>
+
+      {/* Bottom row: Earnings and News */}
+      <div className="grid lg:grid-cols-2 gap-6">
+        <EarningsWidget />
+        <NewsFeed limit={15} autoRefresh />
+      </div>
     </div>
   )
 }
