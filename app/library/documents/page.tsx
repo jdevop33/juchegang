@@ -21,19 +21,18 @@ interface Document {
 
 // Document data - add your documents here
 const documents: Document[] = [
-  // Example structure:
-  // {
-  //   id: "reunification-economics",
-  //   title: "The Economics of Korean Reunification",
-  //   description: "Analysis of potential GDP growth, infrastructure needs, and integration challenges",
-  //   category: "Economics",
-  //   date: "2025-01-15",
-  //   fileSize: "2.4 MB",
-  //   fileType: "PDF",
-  //   downloadUrl: "/documents/reunification-economics.pdf",
-  //   downloads: 142,
-  //   featured: true
-  // }
+  {
+    id: "eu-ukraine-factcheck",
+    title: "EU Ukraine Funding Factcheck Report",
+    description: "Analysis of EU funding commitments to Ukraine - separating fact from narrative",
+    category: "Geopolitics",
+    date: "2025-12-20",
+    fileSize: "23 KB",
+    fileType: "PDF",
+    downloadUrl: "/documents/eu_ukraine_factcheck_report.pdf",
+    downloads: 0,
+    featured: true
+  }
 ]
 
 const categories = ["All", "Economics", "History", "Geopolitics", "Culture", "Peace Initiatives"]
