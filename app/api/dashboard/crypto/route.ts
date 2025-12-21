@@ -1,9 +1,11 @@
 // Dashboard API: Crypto Prices
-// Using CoinGecko API (FREE, no auth required)
+// Using CoinGecko API with Demo API key
 // Real-time cryptocurrency prices
 
 import { NextResponse } from 'next/server'
 import { TrendDirection } from '@/types/dashboard'
+
+const COINGECKO_KEY = process.env.COINGECKO_KEY || 'CG-UM9rA8Fw21XFYwFzJ9spveaH'
 
 // Cache for 1 minute
 export const revalidate = 60
@@ -39,9 +41,9 @@ async function fetchCryptoPrices(): Promise<CryptoPrice[]> {
   try {
     const ids = CRYPTO_IDS.join(',')
 
-    // CoinGecko free API - no auth needed!
+    // CoinGecko API with demo key for better rate limits
     const response = await fetch(
-      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${ids}&order=market_cap_desc&sparkline=false&price_change_percentage=24h,7d`,
+      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${ids}&order=market_cap_desc&sparkline=false&price_change_percentage=24h,7d&x_cg_demo_api_key=${COINGECKO_KEY}`,
       {
         headers: {
           'Accept': 'application/json',
