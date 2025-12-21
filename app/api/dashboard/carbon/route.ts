@@ -103,11 +103,12 @@ const COUNTRY_NAMES: Record<string, string> = {
   US: 'United States',
   CA: 'Canada',
   CN: 'China',
+  KR: 'South Korea',
 }
 
 export async function GET() {
   try {
-    const countryCodes = ['US', 'CA', 'CN']
+    const countryCodes = ['US', 'CA', 'CN', 'KR']
 
     const results = await Promise.all(
       countryCodes.map(async code => {
