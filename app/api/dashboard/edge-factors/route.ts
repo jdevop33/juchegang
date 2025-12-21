@@ -187,7 +187,7 @@ export async function GET() {
       taxRate: getTaxRate(code), // Curated tax data
       regulatoryBurden: 100 - score,
       arbitrageScore: score * 0.9 + (100 - getTaxRate(code)) * 0.1,
-      trend: score > 75 ? 'up' : score < 50 ? 'down' : 'neutral',
+      trend: (score > 75 ? 'up' : score < 50 ? 'down' : 'neutral') as 'up' | 'down' | 'neutral',
     })).filter(d => !isNaN(d.easeOfBusiness))
 
     // ============================================
@@ -224,7 +224,7 @@ export async function GET() {
           renewableShare: Number(renewableShare.toFixed(1)),
           importDependency: Number(imports.toFixed(1)),
           strategicReserves: getStrategicReserves(code), // Curated IEA data
-          trend: independenceRatio > 1 ? 'up' : independenceRatio < 0.5 ? 'down' : 'neutral',
+          trend: (independenceRatio > 1 ? 'up' : independenceRatio < 0.5 ? 'down' : 'neutral') as 'up' | 'down' | 'neutral',
         }
       })
       .filter(d => d.renewableShare > 0 || d.importDependency < 100)

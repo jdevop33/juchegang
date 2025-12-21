@@ -56,6 +56,7 @@ export function NewsFeed({
       const interval = setInterval(fetchNews, 300000) // 5 minutes
       return () => clearInterval(interval)
     }
+    return undefined
   }, [category, limit, autoRefresh])
 
   const getSentimentIcon = (s: 'positive' | 'negative' | 'neutral') => {

@@ -179,7 +179,7 @@ export async function POST(request: Request) {
       success: true,
       message,
       data,
-      channel: TELEGRAM_CHANNEL,
+      channel: TELEGRAM_CHANNEL_ID,
       note: 'Message formatted. Use Telegram MCP to post.',
     })
   } catch (error) {
@@ -200,7 +200,7 @@ export async function GET() {
       success: true,
       message,
       data,
-      channel: TELEGRAM_CHANNEL,
+      channel: TELEGRAM_CHANNEL_ID,
     })
   } catch (error) {
     console.error('Digest error:', error)
