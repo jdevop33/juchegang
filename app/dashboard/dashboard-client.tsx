@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { RefreshCw, TrendingUp, DollarSign, Zap, Droplets, Atom, Users, Scale, Building2, Battery, Globe, Bitcoin, BarChart3, FileText, Newspaper } from 'lucide-react'
+import { RefreshCw, TrendingUp, DollarSign, Zap, Droplets, Atom, Users, Scale, Building2, Battery, Globe, Bitcoin, BarChart3, FileText, Newspaper, LineChart } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { TickerTape, TickerBar } from '@/components/dashboard/ticker-tape'
 import { MetricCard } from '@/components/dashboard/metric-card'
@@ -13,6 +13,7 @@ import { EarningsWidget } from '@/components/dashboard/earnings-widget'
 import { IndicesWidget } from '@/components/dashboard/indices-widget'
 import { NewsFeed } from '@/components/dashboard/news-feed'
 import { SmartMoneyWidget } from '@/components/dashboard/smart-money-widget'
+import { TradingViewChart, TradingViewMarketOverview, TradingViewTechnicalAnalysis, TradingViewCryptoHeatmap } from '@/components/dashboard/tradingview-widgets'
 
 interface DashboardData {
   markets: {
@@ -45,12 +46,13 @@ interface DashboardData {
   error?: string
 }
 
-type TabId = 'overview' | 'markets' | 'assets' | 'rates' | 'indicators' | 'edge'
+type TabId = 'overview' | 'markets' | 'assets' | 'charts' | 'rates' | 'indicators' | 'edge'
 
 const TABS: { id: TabId; label: string; icon: React.ReactNode }[] = [
   { id: 'overview', label: 'OVERVIEW', icon: <Globe className="w-4 h-4" /> },
   { id: 'markets', label: 'MARKETS', icon: <TrendingUp className="w-4 h-4" /> },
   { id: 'assets', label: 'ASSETS', icon: <Bitcoin className="w-4 h-4" /> },
+  { id: 'charts', label: 'CHARTS', icon: <LineChart className="w-4 h-4" /> },
   { id: 'rates', label: 'RATES', icon: <DollarSign className="w-4 h-4" /> },
   { id: 'indicators', label: 'INDICATORS', icon: <Building2 className="w-4 h-4" /> },
   { id: 'edge', label: 'EDGE FACTORS', icon: <Atom className="w-4 h-4" /> },
@@ -178,6 +180,9 @@ export function DashboardClient({ initialData }: { initialData: DashboardData })
         )}
         {activeTab === 'assets' && (
           <AssetsTab />
+        )}
+        {activeTab === 'charts' && (
+          <ChartsTab />
         )}
         {activeTab === 'rates' && (
           <RatesTab data={data.rates} />
@@ -772,6 +777,57 @@ function AssetsTab() {
       <div className="grid lg:grid-cols-2 gap-6">
         <EarningsWidget />
         <NewsFeed limit={15} autoRefresh />
+      </div>
+    </div>
+  )
+}
+
+function ChartsTab() {
+  const [selectedSymbol, setSelectedSymbol] = useState('BINANCE:BTCUSDT')
+
+  const symbols = [
+    { id: 'BINANCE:BTCUSDT', label: 'BTC/USDT' },
+    { id: 'BINANCE:ETHUSDT', label: 'ETH/USDT' },
+    { id: 'BINANCE:SOLUSDT', label: 'SOL/USDT' },
+    { id: 'FOREXCOM:SPXUSD', label: 'S&P 500' },
+    { id: 'FOREXCOM:NSXUSD', label: 'Nasdaq' },
+    { id: 'FX:EURUSD', label: 'EUR/USD' },
+    { id: 'COMEX:GC1!', label: 'Gold' },
+    { id: 'NYMEX:CL1!', label: 'Crude Oil' },
+  ]
+
+  return (
+    <div className="space-y-6">
+      {/* Symbol selector */}
+      <div className="flex gap-2 flex-wrap">
+        {symbols.map(sym => (
+          <button
+            key={sym.id}
+            onClick={() => setSelectedSymbol(sym.id)}
+            className={cn(
+              'terminal-btn text-sm',
+              selectedSymbol === sym.id && 'border-green-400 bg-green-500/10'
+            )}
+          >
+            {sym.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Main chart and technical analysis */}
+      <div className="grid lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-2">
+          <TradingViewChart symbol={selectedSymbol} height={500} />
+        </div>
+        <div>
+          <TradingViewTechnicalAnalysis symbol={selectedSymbol} height={500} />
+        </div>
+      </div>
+
+      {/* Crypto heatmap and market overview */}
+      <div className="grid lg:grid-cols-2 gap-6">
+        <TradingViewCryptoHeatmap height={400} />
+        <TradingViewMarketOverview height={400} />
       </div>
     </div>
   )
