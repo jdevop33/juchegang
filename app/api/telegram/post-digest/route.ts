@@ -3,9 +3,9 @@
 
 import { NextResponse } from 'next/server'
 
-// Sovereign Alpha Channel
+// TelegrAlpha Channel
 const TELEGRAM_CHANNEL_ID = 3513940012
-const TELEGRAM_CHANNEL_INVITE = 'https://t.me/+Ccd8bPTjJyc2MzFh'
+const TELEGRAM_CHANNEL_INVITE = 'https://t.me/telegralpha'
 
 interface MarketDigest {
   crypto: {
@@ -157,7 +157,7 @@ function formatDigestMessage(data: MarketDigest): string {
 
   // Footer
   msg += `━━━━━━━━━━━━━━━━━━━━━━\n`
-  msg += `🔗 Full Dashboard: juchegang.vercel.app/dashboard\n`
+  msg += `🔗 Full Dashboard: sovereign-alpha.vercel.app/dashboard\n`
   msg += `#Macro #Crypto #Markets #SovereignAlpha`
 
   return msg

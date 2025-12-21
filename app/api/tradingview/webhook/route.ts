@@ -1,6 +1,6 @@
 // TradingView Webhook Receiver
 // Receives alerts from TradingView Premium and forwards to Telegram
-// Webhook URL: https://juchegang.vercel.app/api/tradingview/webhook
+// Webhook URL: https://sovereign-alpha.vercel.app/api/tradingview/webhook
 
 import { NextResponse } from 'next/server'
 
@@ -153,7 +153,7 @@ export async function GET() {
   return NextResponse.json({
     status: 'ok',
     service: 'TradingView Webhook Receiver',
-    webhook_url: 'https://juchegang.vercel.app/api/tradingview/webhook',
+    webhook_url: 'https://sovereign-alpha.vercel.app/api/tradingview/webhook',
     method: 'POST',
     accepts: ['application/json', 'text/plain'],
     telegram_channel: TELEGRAM_CHANNEL_ID,

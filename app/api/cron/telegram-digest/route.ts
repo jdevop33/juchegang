@@ -104,7 +104,7 @@ function formatDigestMessage(data: any): string {
   }
 
   msg += `━━━━━━━━━━━━━━━━━━━━\n`
-  msg += `🔗 juchegang.vercel.app/dashboard`
+  msg += `🔗 sovereign-alpha.vercel.app/dashboard`
 
   return msg
 }

@@ -35,7 +35,7 @@ Fear & Greed Index: **${value}** (${classification})
 Current BTC: $${data.stats.btcPrice?.toLocaleString()}
 
 ━━━━━━━━━━━━━━━━━━━━━━
-🔗 juchegang.vercel.app/dashboard
+🔗 sovereign-alpha.vercel.app/dashboard
 #FearGreed #Crypto #BuyTheFear`
   }
 
@@ -50,7 +50,7 @@ Fear & Greed Index: **${value}** (${classification})
 Current BTC: $${data.stats.btcPrice?.toLocaleString()}
 
 ━━━━━━━━━━━━━━━━━━━━━━
-🔗 juchegang.vercel.app/dashboard
+🔗 sovereign-alpha.vercel.app/dashboard
 #FearGreed #Crypto #Euphoria`
   }
 
@@ -100,7 +100,7 @@ async function generateEdgeFactorAlert(): Promise<string | null> {
   }
 
   msg += `━━━━━━━━━━━━━━━━━━━━━━\n`
-  msg += `🔗 Full analysis: juchegang.vercel.app/dashboard\n`
+  msg += `🔗 Full analysis: sovereign-alpha.vercel.app/dashboard\n`
   msg += `#EdgeFactors #Geopolitics #SupplyChain`
 
   return msg
@@ -137,7 +137,7 @@ S&P 500: ${spyChange > 0 ? '📈' : '📉'} ${spyChange > 0 ? '+' : ''}${spyChan
 This often precedes regime changes in risk appetite.
 
 ━━━━━━━━━━━━━━━━━━━━━━
-🔗 juchegang.vercel.app/dashboard
+🔗 sovereign-alpha.vercel.app/dashboard
 #Divergence #Macro #RiskRegime`
   }
 

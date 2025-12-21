@@ -48,7 +48,7 @@ Fear & Greed: *${fg.value}* (${fg.classification})
 
 BTC: $${data.stats.btcPrice?.toLocaleString()}
 
-🔗 juchegang.vercel.app/dashboard`
+🔗 sovereign-alpha.vercel.app/dashboard`
   }
 
   if (fg.value >= 85) {
@@ -61,7 +61,7 @@ Fear & Greed: *${fg.value}* (${fg.classification})
 
 BTC: $${data.stats.btcPrice?.toLocaleString()}
 
-🔗 juchegang.vercel.app/dashboard`
+🔗 sovereign-alpha.vercel.app/dashboard`
   }
 
   return null
@@ -95,7 +95,7 @@ ${data.articles?.slice(0, 3).map((a: any) => `• ${a.title.slice(0, 50)}...`).j
 
 ⚠️ Extreme bullish sentiment often precedes corrections
 
-🔗 juchegang.vercel.app/dashboard`
+🔗 sovereign-alpha.vercel.app/dashboard`
   }
 
   if (negativeRatio > 0.7) {
@@ -109,7 +109,7 @@ ${data.articles?.slice(0, 3).map((a: any) => `• ${a.title.slice(0, 50)}...`).j
 
 💡 Extreme bearish sentiment often marks bottoms
 
-🔗 juchegang.vercel.app/dashboard`
+🔗 sovereign-alpha.vercel.app/dashboard`
   }
 
   return null
@@ -163,7 +163,7 @@ async function checkSmartMoneyAlert(): Promise<string | null> {
     }
 
     msg += `Sentiment: ${smartMoneySentiment.toUpperCase()}\n\n`
-    msg += `🔗 juchegang.vercel.app/dashboard`
+    msg += `🔗 sovereign-alpha.vercel.app/dashboard`
 
     return msg
   }
@@ -203,7 +203,7 @@ async function checkEarningsAlert(): Promise<string | null> {
     msg += `Filed: ${e.filingDate}\n\n`
   })
 
-  msg += `🔗 juchegang.vercel.app/dashboard`
+  msg += `🔗 sovereign-alpha.vercel.app/dashboard`
 
   return msg
 }
