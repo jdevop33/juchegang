@@ -1,5 +1,35 @@
 # Multi-Site Architecture Strategy
 
+## The JPanda Constellation
+
+```
+                         jesse-resume.vercel.app
+                              (Professional Hub)
+                                     │
+                                     │ "by Jesse James"
+                                     │
+    ┌────────────────────────────────┼────────────────────────────────┐
+    │                                │                                │
+    ▼                                ▼                                ▼
+┌─────────────┐              ┌─────────────┐              ┌─────────────┐
+│ PEACE WING  │              │ ECON WING   │              │ FUTURE      │
+│             │              │             │              │             │
+│ juche.org   │◄────────────►│ 1929.world  │◄────────────►│ juchegang.ca│
+│ tiger.juche │              │             │              │ (TBD)       │
+│             │              │             │              │             │
+│ Red/Blue    │              │ Black/Gold  │              │ Black/Gold? │
+│ Unity Focus │              │ Debt Focus  │              │ Personal?   │
+└─────────────┘              └─────────────┘              └─────────────┘
+```
+
+### Cross-Pollination Strategy
+- Economic briefings on juche.org link to 1929.world deep dives
+- 1929.world mentions geopolitical context → links to juche.org
+- All sites have subtle "JPanda Network" or constellation footer
+- jesse-resume lists all properties as "Projects"
+
+---
+
 ## Current Properties
 
 | Domain | Repo | Vercel Account | Purpose |
