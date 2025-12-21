@@ -229,6 +229,34 @@ export interface EnergyIndependence {
   trend: TrendDirection
 }
 
+// News Types
+export interface NewsArticle {
+  title: string
+  description: string
+  url: string
+  source: string
+  published_at: string
+  tickers: string[]
+  keywords: string[]
+  sentiment: 'positive' | 'negative' | 'neutral'
+}
+
+export interface NewsSentiment {
+  positive: number
+  negative: number
+  neutral: number
+  marketMood: 'bullish' | 'bearish' | 'neutral'
+  score: string | number
+}
+
+export interface NewsData {
+  articles: NewsArticle[]
+  count: number
+  category: string
+  sentiment: NewsSentiment
+  timestamp: string
+}
+
 // ============================================
 // DASHBOARD STATE
 // ============================================
