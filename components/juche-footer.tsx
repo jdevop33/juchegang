@@ -1,5 +1,5 @@
 "use client"
-import { Star, Heart, Mail, Instagram } from "lucide-react"
+import { Star, Heart, Mail, Instagram, Send } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { KimYoJongPortrait } from "./kim-yo-jong-portrait"
 
@@ -72,6 +72,10 @@ export function JucheFooter() {
                 <Instagram className="h-4 w-4" />
                 <span>@kimjongunwins</span>
               </a>
+              <a href="https://t.me/tigerrising" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-red-200 hover:text-white transition-colors">
+                <Send className="h-4 w-4" />
+                <span>@tigerrising</span>
+              </a>
             </div>
             <div className="mt-6">
               <h4 className="text-sm font-semibold text-red-300 mb-2">{t('followUs')}</h4>
@@ -94,12 +98,21 @@ export function JucheFooter() {
                 >
                   <Instagram className="h-4 w-4 text-red-200" />
                 </a>
-                <a 
+                <a
                   href="mailto:panda@juche.org"
                   className="w-8 h-8 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors"
                   aria-label="Email"
                 >
                   <Mail className="h-4 w-4 text-red-200" />
+                </a>
+                <a
+                  href="https://t.me/tigerrising"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors"
+                  aria-label="Telegram"
+                >
+                  <Send className="h-4 w-4 text-red-200" />
                 </a>
               </div>
             </div>
