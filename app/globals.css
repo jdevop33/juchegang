@@ -70,6 +70,27 @@
     --border: 220 13% 20%;               /* Dark borders */
     --input: 220 13% 15%;                /* Dark inputs */
     --ring: 213 96% 45%;                 /* Brighter blue focus rings */
+
+    /* Bloomberg Terminal Colors */
+    --terminal-bg: 0 0% 4%;              /* Near-black terminal background */
+    --terminal-green: 142 71% 45%;       /* #22C55E - positive/up */
+    --terminal-red: 0 84% 60%;           /* #EF4444 - negative/down */
+    --terminal-amber: 38 92% 50%;        /* #F59E0B - neutral/warning */
+    --terminal-cyan: 187 85% 53%;        /* #22D3EE - info/highlight */
+    --terminal-border: 142 30% 25%;      /* Subtle green border */
+    --terminal-text: 142 71% 45%;        /* Green text */
+    --terminal-header: 38 92% 50%;       /* Amber headers */
+  }
+
+  /* Bloomberg Terminal Theme Class */
+  .terminal-theme {
+    --background: 0 0% 4%;
+    --foreground: 142 71% 45%;
+    --card: 0 0% 6%;
+    --card-foreground: 142 71% 45%;
+    --border: 142 30% 20%;
+    --muted: 0 0% 8%;
+    --muted-foreground: 142 40% 60%;
   }
 }
 
@@ -1366,4 +1387,338 @@
 .page-transition.loaded {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ============================================ */
+/* BLOOMBERG TERMINAL STYLES                   */
+/* ============================================ */
+
+/* Terminal base styles */
+.terminal-dashboard {
+  background: hsl(0 0% 4%);
+  color: hsl(142 71% 45%);
+  font-family: 'JetBrains Mono', 'Fira Code', 'Roboto Mono', 'Courier New', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Terminal text colors */
+.terminal-green {
+  color: hsl(var(--terminal-green));
+}
+
+.terminal-red {
+  color: hsl(var(--terminal-red));
+}
+
+.terminal-amber {
+  color: hsl(var(--terminal-amber));
+}
+
+.terminal-cyan {
+  color: hsl(var(--terminal-cyan));
+}
+
+/* Terminal glow effects */
+.terminal-glow {
+  text-shadow: 0 0 5px hsl(var(--terminal-green) / 0.5);
+}
+
+.terminal-glow-amber {
+  text-shadow: 0 0 5px hsl(var(--terminal-amber) / 0.5);
+}
+
+.terminal-glow-red {
+  text-shadow: 0 0 5px hsl(var(--terminal-red) / 0.5);
+}
+
+/* Terminal card/widget */
+.terminal-widget {
+  background: hsl(0 0% 6%);
+  border: 1px solid hsl(var(--terminal-border));
+  font-family: 'JetBrains Mono', 'Roboto Mono', monospace;
+}
+
+.terminal-widget-header {
+  background: hsl(0 0% 8%);
+  border-bottom: 1px solid hsl(var(--terminal-border));
+  color: hsl(var(--terminal-amber));
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+}
+
+/* Terminal table */
+.terminal-table {
+  width: 100%;
+  font-size: 0.75rem;
+  border-collapse: collapse;
+}
+
+.terminal-table th {
+  text-align: left;
+  padding: 0.5rem;
+  color: hsl(var(--terminal-amber));
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid hsl(var(--terminal-border));
+  white-space: nowrap;
+}
+
+.terminal-table td {
+  padding: 0.375rem 0.5rem;
+  border-bottom: 1px solid hsl(var(--terminal-border) / 0.3);
+  white-space: nowrap;
+}
+
+.terminal-table tr:hover {
+  background: hsl(var(--terminal-green) / 0.05);
+}
+
+/* Terminal metric value */
+.terminal-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.terminal-value-sm {
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Terminal change indicators */
+.terminal-change-up {
+  color: hsl(var(--terminal-green));
+}
+
+.terminal-change-up::before {
+  content: '▲ ';
+  font-size: 0.625em;
+}
+
+.terminal-change-down {
+  color: hsl(var(--terminal-red));
+}
+
+.terminal-change-down::before {
+  content: '▼ ';
+  font-size: 0.625em;
+}
+
+.terminal-change-neutral {
+  color: hsl(var(--terminal-amber));
+}
+
+.terminal-change-neutral::before {
+  content: '─ ';
+  font-size: 0.625em;
+}
+
+/* Terminal ticker tape */
+@keyframes terminal-ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.terminal-ticker {
+  display: flex;
+  animation: terminal-ticker 60s linear infinite;
+  gap: 2rem;
+}
+
+.terminal-ticker:hover {
+  animation-play-state: paused;
+}
+
+.terminal-ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  padding: 0.25rem 0;
+}
+
+/* Terminal sparkline */
+.terminal-sparkline {
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+  height: 24px;
+}
+
+.terminal-sparkline-bar {
+  width: 3px;
+  background: hsl(var(--terminal-green) / 0.6);
+  transition: height 0.2s ease;
+}
+
+.terminal-sparkline-bar:last-child {
+  background: hsl(var(--terminal-green));
+}
+
+/* Terminal pulse indicator */
+@keyframes terminal-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.terminal-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.terminal-live::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: hsl(var(--terminal-green));
+  animation: terminal-pulse 2s ease-in-out infinite;
+  box-shadow: 0 0 8px hsl(var(--terminal-green));
+}
+
+/* Terminal grid layout */
+.terminal-grid {
+  display: grid;
+  gap: 1px;
+  background: hsl(var(--terminal-border) / 0.3);
+}
+
+.terminal-grid > * {
+  background: hsl(0 0% 4%);
+}
+
+/* Terminal scrollbar */
+.terminal-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.terminal-scrollbar::-webkit-scrollbar-track {
+  background: hsl(0 0% 8%);
+}
+
+.terminal-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(var(--terminal-green) / 0.3);
+  border-radius: 3px;
+}
+
+.terminal-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--terminal-green) / 0.5);
+}
+
+/* Terminal loading state */
+@keyframes terminal-scan {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.terminal-loading {
+  background: linear-gradient(
+    90deg,
+    hsl(0 0% 8%) 25%,
+    hsl(var(--terminal-green) / 0.1) 50%,
+    hsl(0 0% 8%) 75%
+  );
+  background-size: 200% 100%;
+  animation: terminal-scan 1.5s linear infinite;
+}
+
+/* Terminal button */
+.terminal-btn {
+  background: transparent;
+  border: 1px solid hsl(var(--terminal-border));
+  color: hsl(var(--terminal-green));
+  padding: 0.375rem 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.terminal-btn:hover {
+  background: hsl(var(--terminal-green) / 0.1);
+  border-color: hsl(var(--terminal-green));
+  box-shadow: 0 0 10px hsl(var(--terminal-green) / 0.2);
+}
+
+.terminal-btn:active {
+  transform: scale(0.98);
+}
+
+/* Terminal input */
+.terminal-input {
+  background: hsl(0 0% 6%);
+  border: 1px solid hsl(var(--terminal-border));
+  color: hsl(var(--terminal-green));
+  padding: 0.5rem 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+}
+
+.terminal-input:focus {
+  outline: none;
+  border-color: hsl(var(--terminal-green));
+  box-shadow: 0 0 10px hsl(var(--terminal-green) / 0.2);
+}
+
+.terminal-input::placeholder {
+  color: hsl(var(--terminal-green) / 0.4);
+}
+
+/* Terminal badge */
+.terminal-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+}
+
+.terminal-badge-green {
+  background: hsl(var(--terminal-green) / 0.2);
+  color: hsl(var(--terminal-green));
+  border: 1px solid hsl(var(--terminal-green) / 0.3);
+}
+
+.terminal-badge-red {
+  background: hsl(var(--terminal-red) / 0.2);
+  color: hsl(var(--terminal-red));
+  border: 1px solid hsl(var(--terminal-red) / 0.3);
+}
+
+.terminal-badge-amber {
+  background: hsl(var(--terminal-amber) / 0.2);
+  color: hsl(var(--terminal-amber));
+  border: 1px solid hsl(var(--terminal-amber) / 0.3);
+}
+
+/* Terminal country flag */
+.terminal-flag {
+  font-size: 1em;
+  line-height: 1;
 }
