@@ -115,6 +115,62 @@ ${data.articles?.slice(0, 3).map((a: any) => `• ${a.title.slice(0, 50)}...`).j
   return null
 }
 
+async function checkSmartMoneyAlert(): Promise<string | null> {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
+
+  const res = await fetch(`${baseUrl}/api/dashboard/smart-money`, { cache: 'no-store' })
+  const data = await res.json()
+
+  if (!data?.summary) return null
+
+  const { strongBuySignals, strongSellSignals, netFlow, smartMoneySentiment } = data.summary
+
+  // Alert on significant smart money movement
+  if (strongBuySignals >= 5 || strongSellSignals >= 3) {
+    const formatVol = (v: number) => v >= 1e6 ? `$${(v / 1e6).toFixed(1)}M` : `$${(v / 1e3).toFixed(0)}K`
+
+    let msg = `🐋 *SMART MONEY ALERT*\n\n`
+
+    if (strongBuySignals >= 5) {
+      msg += `🟢 *ACCUMULATION DETECTED*\n`
+      msg += `${strongBuySignals} tokens with strong buy signals\n`
+      msg += `Net inflow: ${formatVol(netFlow)}\n\n`
+
+      // Top tokens
+      const topBuys = data.alerts?.strongBuys?.slice(0, 3) || []
+      if (topBuys.length > 0) {
+        msg += `Top accumulation:\n`
+        topBuys.forEach((t: any) => {
+          msg += `• ${t.chain.toUpperCase()}: ${t.symbol !== 'UNKNOWN' ? t.symbol : t.token.slice(0, 8)} (+${formatVol(t.netFlow)})\n`
+        })
+        msg += `\n`
+      }
+    }
+
+    if (strongSellSignals >= 3) {
+      msg += `🔴 *DISTRIBUTION DETECTED*\n`
+      msg += `${strongSellSignals} tokens with strong sell signals\n\n`
+
+      const topSells = data.alerts?.strongSells?.slice(0, 3) || []
+      if (topSells.length > 0) {
+        msg += `Top distribution:\n`
+        topSells.forEach((t: any) => {
+          msg += `• ${t.chain.toUpperCase()}: ${t.symbol !== 'UNKNOWN' ? t.symbol : t.token.slice(0, 8)} (${formatVol(t.netFlow)})\n`
+        })
+        msg += `\n`
+      }
+    }
+
+    msg += `Sentiment: ${smartMoneySentiment.toUpperCase()}\n\n`
+    msg += `🔗 juchegang.vercel.app/dashboard`
+
+    return msg
+  }
+
+  return null
+}
+
 async function checkEarningsAlert(): Promise<string | null> {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ||
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
@@ -185,6 +241,13 @@ export async function GET(request: Request) {
       alerts.push(earningsAlert)
       const result = await sendTelegramMessage(TELEGRAM_CHANNEL_ID, earningsAlert)
       results.push({ type: 'earnings', result })
+    }
+
+    const smartMoneyAlert = await checkSmartMoneyAlert()
+    if (smartMoneyAlert) {
+      alerts.push(smartMoneyAlert)
+      const result = await sendTelegramMessage(TELEGRAM_CHANNEL_ID, smartMoneyAlert)
+      results.push({ type: 'smart_money', result })
     }
 
     return NextResponse.json({

@@ -12,6 +12,7 @@ import { CryptoWidget } from '@/components/dashboard/crypto-widget'
 import { EarningsWidget } from '@/components/dashboard/earnings-widget'
 import { IndicesWidget } from '@/components/dashboard/indices-widget'
 import { NewsFeed } from '@/components/dashboard/news-feed'
+import { SmartMoneyWidget } from '@/components/dashboard/smart-money-widget'
 
 interface DashboardData {
   markets: {
@@ -758,11 +759,14 @@ function EdgeFactorsTab({ data }: { data: DashboardData['edge'] }) {
 function AssetsTab() {
   return (
     <div className="space-y-6">
-      {/* Top row: Crypto and Indices */}
+      {/* Top row: Crypto and Smart Money */}
       <div className="grid lg:grid-cols-2 gap-6">
         <CryptoWidget />
-        <IndicesWidget />
+        <SmartMoneyWidget />
       </div>
+
+      {/* Middle row: Indices */}
+      <IndicesWidget />
 
       {/* Bottom row: Earnings and News */}
       <div className="grid lg:grid-cols-2 gap-6">
