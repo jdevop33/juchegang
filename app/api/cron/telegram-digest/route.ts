@@ -3,7 +3,7 @@
 
 import { NextResponse } from 'next/server'
 
-const TELEGRAM_CHANNEL_ID = 3513940012
+const TELEGRAM_CHANNEL_ID = -1003513940012 // Note: -100 prefix for channels
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN
 
 // Telegram Bot API (for cron - can't use MCP here)
