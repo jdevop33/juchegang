@@ -1,7 +1,14 @@
 // Sovereign Wealth Fund Dashboard - Country Data
 // 100+ countries with ISO codes, regions, and metadata
 
-import { Region } from '@/types/dashboard'
+export type Region =
+  | 'north_america'
+  | 'south_america'
+  | 'europe'
+  | 'asia'
+  | 'africa'
+  | 'oceania'
+  | 'middle_east'
 
 export interface Country {
   code: string // ISO 3166-1 alpha-2
