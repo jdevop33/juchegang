@@ -4,9 +4,11 @@ This file provides guidance to Claude Code when working with this repository.
 
 ## Project Overview
 
-**juche.org** (deployed at sovereign-alpha.vercel.app) - A Next.js 15 application showcasing "The 48 Laws of Excellence" with Korean reunification/peace advocacy content, multilingual support, and a real-time financial dashboard ("Sovereign Alpha").
+**juche.org** (deployed at sovereign-alpha.vercel.app) - A Next.js 15 application showcasing "The 48 Laws of Excellence" with Korean reunification/peace advocacy content and multilingual support.
 
 Part of the **JPanda Network** of sites (see ARCHITECTURE.md, OPERATING-MODEL.md for multi-site strategy).
+
+> **NOTE (Dec 26, 2024)**: Financial dashboard ("Sovereign Alpha") has been migrated to **1929.world** (jessejamesvictoria/v0-global-debt-analysis). This repo is now content-focused only.
 
 ## Key Commands
 
@@ -40,26 +42,20 @@ npm run lint         # ESLint checks
 ├── layout.tsx            # Root layout (fonts, providers, metadata)
 ├── globals.css           # Tailwind + CSS variables (light/dark/terminal themes)
 ├── api/                  # API routes
-│   ├── dashboard/        # 17 endpoints for financial data
-│   │   ├── markets/      # Commodities, currencies
-│   │   ├── rates/        # Interest rates, arbitrage
-│   │   ├── indicators/   # GDP, inflation, unemployment
-│   │   ├── edge-factors/ # Water, rare earth, brain drain, etc.
-│   │   ├── crypto/       # Cryptocurrency data
-│   │   └── ...
 │   ├── telegram/         # Telegram bot integrations
 │   ├── tradingview/      # TradingView webhook receiver
 │   └── cron/             # Scheduled tasks (daily digests/alerts)
+│   # NOTE: Dashboard APIs moved to 1929.world (Dec 2024)
 ├── briefings/            # 22+ research briefings (geopolitics, media analysis)
 ├── truth-project/        # AI bias/propaganda analysis content
-├── dashboard/            # Sovereign Alpha financial terminal
+├── dashboard/            # DEPRECATED - UI moved to 1929.world
 ├── gallery/              # Photo gallery with focal point system
 ├── library/              # Documents and slide decks
 └── [other-pages]/        # mission, contact, channels, etc.
 
 /components/
 ├── ui/                   # shadcn/ui primitives (50+ components)
-├── dashboard/            # Financial widgets (TradingView, crypto, etc.)
+├── dashboard/            # DEPRECATED - widgets moved to 1929.world
 ├── juche-header.tsx      # Main navigation header
 ├── juche-footer.tsx      # Site footer with network links
 ├── peace-counter.tsx     # Days since armistice counter
