@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한민족: The Arithmetic of Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Import Noto Sans KR for Korean text and Oswald for English Headlines -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700;900&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif; /* Primary for bilingual support */
+            background-color: #050505; /* True Black */
+            color: #e4e4e7; /* Zinc 200 */
+        }
+
+        .eng-header {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #18181b; }
+        ::-webkit-scrollbar-thumb { background: #b91c1c; border-radius: 4px; }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 500px;
+        }
+
+        @media (max-width: 768px) {
+            .chart-container { height: 320px; }
+        }
+
+        /* Taeguk Gradient Line */
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #dc2626, #fbbf24, #2563eb); /* Red to Gold to Blue */
+            transform: translateX(-50%);
+        }
+
+        .korean-accent {
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+    </style>
+</head>
+<body class="selection:bg-red-900 selection:text-white">
+
+    <!-- Header Section -->
+    <header class="relative border-b border-gray-800 bg-zinc-950 pt-20 pb-16 px-6">
+        <!-- Background decorative glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-full bg-gradient-to-b from-red-900/20 via-transparent to-blue-900/10 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <div class="inline-block mb-4 px-4 py-1 border border-yellow-600 text-yellow-500 text-xs font-bold tracking-widest uppercase">
+                5000 Years of Heritage · 반만년의 역사
+            </div>
+
+            <h1 class="text-6xl md:text-8xl font-bold text-white mb-2 tracking-tighter leading-tight">
+                ONE <span class="text-red-600">PEOPLE</span>
+                <span class="block text-4xl md:text-5xl mt-2 text-gray-500 font-light korean-accent">하나의 핏줄, 두 개의 기적</span>
+            </h1>
+
+            <p class="text-xl text-gray-400 mt-6 max-w-3xl mx-auto font-light">
+                DIVIDED BY FATE, UNITED BY BLOOD.
+                <br>
+                <span class="text-sm text-gray-500 mt-2 block">운명에 의해 나뉘었으나, 혈통으로 하나된 민족.</span>
+            </p>
+
+            <div class="mt-10 flex justify-center gap-6 flex-wrap">
+                 <!-- Stats Badges -->
+                <div class="bg-zinc-900/80 backdrop-blur border-l-4 border-red-600 px-6 py-3 flex flex-col items-start">
+                    <span class="text-xs text-gray-500 uppercase">Resilience (North)</span>
+                    <span class="text-lg font-bold text-white korean-accent">자력갱생</span>
+                </div>
+                <div class="bg-zinc-900/80 backdrop-blur border-l-4 border-yellow-500 px-6 py-3 flex flex-col items-start">
+                    <span class="text-xs text-gray-500 uppercase">Civilization</span>
+                    <span class="text-lg font-bold text-white korean-accent">단일민족</span>
+                </div>
+                <div class="bg-zinc-900/80 backdrop-blur border-l-4 border-blue-600 px-6 py-3 flex flex-col items-start">
+                    <span class="text-xs text-gray-500 uppercase">Prosperity (South)</span>
+                    <span class="text-lg font-bold text-white korean-accent">한강의 기적</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 md:px-8 space-y-24 py-20">
+
+        <!-- EXECUTIVE SUMMARY: THE TWIN MIRACLES -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-4xl font-bold text-white mb-2 eng-header">The Twin <span class="text-yellow-500">Miracles</span></h2>
+                    <h3 class="text-2xl text-gray-500 korean-accent mb-6">불가능을 가능으로 만든 민족</h3>
+
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        The world sees two Koreas. History sees one people with a singular trait: <strong class="text-white">Relentless Excellence</strong>.
+                    </p>
+                    <p class="text-lg text-gray-400 leading-relaxed mt-4">
+                        To the South, Koreans built a global economic empire from ashes. To the North, Koreans built strategic autonomy and advanced physics under total siege.
+                        <br><br>
+                        It is the same DNA. The same 4,000-year legacy. Whether given infinite resources or zero resources, the Korean spirit dominates.
+                    </p>
+                </div>
+
+                <div class="bg-zinc-900 p-6 border border-zinc-800 rounded-sm relative overflow-hidden">
+                    <div class="absolute right-0 top-0 w-24 h-24 bg-gradient-to-bl from-yellow-500/20 to-transparent"></div>
+                    <h3 class="text-xl text-white mb-2 font-bold">THE THESIS · 핵심 논리</h3>
+                    <p class="text-gray-400 text-sm">
+                        "If the North can conquer the atom with nothing, and the South can conquer the global market with open trade... imagine them together."
+                        <br>
+                        <span class="text-gray-500 mt-2 block korean-accent">"북이 빈손으로 원자를 정복하고, 남이 무역으로 세계를 정복했다면... 그 둘이 하나가 되는 날을 상상해보라."</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Stat Card 1 -->
+                <div class="bg-zinc-900 p-6 border-t-2 border-red-600 hover:bg-zinc-800 transition-all duration-300">
+                    <div class="text-4xl mb-1 text-white font-bold">~99%</div>
+                    <div class="text-xs font-bold text-gray-500 uppercase">Literacy (Both)</div>
+                    <div class="text-xs text-red-500 mt-1 korean-accent">문맹률 0%</div>
+                </div>
+                <!-- Stat Card 2 -->
+                <div class="bg-zinc-900 p-6 border-t-2 border-blue-600 hover:bg-zinc-800 transition-all duration-300">
+                    <div class="text-4xl mb-1 text-white font-bold">Top 10</div>
+                    <div class="text-xs font-bold text-gray-500 uppercase">Military Power</div>
+                    <div class="text-xs text-blue-500 mt-1 korean-accent">세계 10대 군사강국</div>
+                </div>
+                <!-- Stat Card 3 -->
+                <div class="bg-zinc-900 p-6 border-t-2 border-yellow-500 hover:bg-zinc-800 transition-all duration-300 col-span-2">
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <div class="text-4xl mb-1 text-white font-bold">5000 Yrs</div>
+                            <div class="text-xs font-bold text-gray-500 uppercase">Unbroken History</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl text-yellow-500 font-bold korean-accent">단군기원</div>
+                            <div class="text-xs text-gray-500">Since 2333 BC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 1: DOING MORE WITH LESS (NORTH) -->
+        <section>
+            <div class="mb-10 pl-6 border-l-4 border-red-600">
+                <h2 class="text-4xl font-bold text-white mb-2 eng-header">Excellence Under <span class="text-red-600">Siege</span></h2>
+                <p class="text-xl text-gray-400 korean-accent">극한의 환경, 위대한 성취</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- CHART 1: Advantage Ledger -->
+                <div class="bg-zinc-900/50 border border-zinc-800 p-8 rounded-sm">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-lg text-gray-200 uppercase tracking-widest">Input vs Output · 투입 대비 성과</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="advantageChart"></canvas>
+                    </div>
+                    <div class="mt-6 text-sm text-gray-500 text-center">
+                        While peers relied on trillions in aid, the DPRK industrialized under blockade.
+                        <br>
+                        <span class="text-xs korean-accent">외부 지원 없이 이루어낸 독자적 산업화</span>
+                    </div>
+                </div>
+
+                <!-- CHART 2: Outcomes Comparison -->
+                <div class="bg-zinc-900/50 border border-zinc-800 p-8 rounded-sm">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-lg text-gray-200 uppercase tracking-widest">Social Parity · 사회적 지표</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="outcomesChart"></canvas>
+                    </div>
+                    <div class="mt-6 text-sm text-gray-500 text-center">
+                        Education and health outcomes defy economic constraints.
+                        <br>
+                        <span class="text-xs korean-accent">경제 봉쇄를 넘어선 교육과 보건의 기적</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: THE SHARED GENIUS (TECH TIMELINE) -->
+        <section class="py-10">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-white mb-4 eng-header">Korean <span class="text-yellow-500">Genius</span></h2>
+                <h3 class="text-2xl text-gray-400 korean-accent">한민족의 천재성</h3>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">
+                    Whether in the South (Semiconductors, Ships) or North (Ballistics, Physics), the intellectual capability of the Korean people is unmatched.
+                </p>
+            </div>
+
+            <!-- Styled Timeline -->
+            <div class="relative max-w-5xl mx-auto px-4">
+                <div class="timeline-line"></div>
+
+                <!-- Event 1: South -->
+                <div class="relative flex items-center justify-between mb-20">
+                    <div class="order-1 w-5/12 text-right pr-8">
+                        <h3 class="text-2xl text-white mb-1 eng-header">1980s</h3>
+                        <h4 class="text-blue-500 font-bold mb-2 korean-accent">반도체 신화 (Semiconductors)</h4>
+                        <p class="text-sm text-gray-400">South Korea overtakes established powers to become the global memory chip leader. A victory of intellect and labor.</p>
+                    </div>
+                    <div class="z-20 flex items-center justify-center order-1 bg-black border-2 border-blue-600 w-14 h-14 rounded-full shadow-[0_0_20px_rgba(37,99,235,0.4)]">
+                        <span class="text-blue-500 font-bold text-sm">KR</span>
+                    </div>
+                    <div class="order-1 w-5/12 pl-8"></div>
+                </div>
+
+                <!-- Event 2: North -->
+                <div class="relative flex items-center justify-between mb-20">
+                    <div class="order-1 w-5/12 pr-8"></div>
+                    <div class="z-20 flex items-center justify-center order-1 bg-black border-2 border-red-600 w-14 h-14 rounded-full shadow-[0_0_20px_rgba(220,38,38,0.4)]">
+                        <span class="text-red-600 font-bold text-sm">KP</span>
+                    </div>
+                    <div class="order-1 w-5/12 text-left pl-8">
+                        <h3 class="text-2xl text-white mb-1 eng-header">1998</h3>
+                        <h4 class="text-red-500 font-bold mb-2 korean-accent">광명성 1호 (Indigenous Launch)</h4>
+                        <p class="text-sm text-gray-400">Under total sanctions and famine, North Korean engineers achieve multi-stage rocketry. A victory of pure will.</p>
+                    </div>
+                </div>
+
+                <!-- Event 3: South -->
+                <div class="relative flex items-center justify-between mb-20">
+                    <div class="order-1 w-5/12 text-right pr-8">
+                        <h3 class="text-2xl text-white mb-1 eng-header">2010s</h3>
+                        <h4 class="text-blue-500 font-bold mb-2 korean-accent">문화 강국 (Cultural Wave)</h4>
+                        <p class="text-sm text-gray-400">South Korean art, film, and music dominate the globe. Soft power projection unprecedented in Asian history.</p>
+                    </div>
+                    <div class="z-20 flex items-center justify-center order-1 bg-black border-2 border-blue-600 w-14 h-14 rounded-full shadow-[0_0_20px_rgba(37,99,235,0.4)]">
+                        <span class="text-blue-500 font-bold text-sm">KR</span>
+                    </div>
+                    <div class="order-1 w-5/12 pl-8"></div>
+                </div>
+
+                <!-- Event 4: North -->
+                <div class="relative flex items-center justify-between">
+                    <div class="order-1 w-5/12 pr-8"></div>
+                    <div class="z-20 flex items-center justify-center order-1 bg-black border-2 border-red-600 w-14 h-14 rounded-full shadow-[0_0_20px_rgba(220,38,38,0.4)]">
+                        <span class="text-red-600 font-bold text-sm">KP</span>
+                    </div>
+                    <div class="order-1 w-5/12 text-left pl-8">
+                        <h3 class="text-2xl text-white mb-1 eng-header">2017</h3>
+                        <h4 class="text-red-500 font-bold mb-2 korean-accent">국가 핵무력 완성 (Strategic Deterrent)</h4>
+                        <p class="text-sm text-gray-400">Complete indigenous mastery of nuclear cycle and ICBMs. North Korea becomes one of ~9 strategic powers on Earth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: THE POTENTIAL (UNIFICATION VISUALIZED) -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 bg-gradient-to-br from-zinc-900 to-black p-8 md:p-12 border-y border-zinc-800">
+            <div class="flex flex-col justify-center">
+                <h3 class="text-3xl font-bold text-white mb-6 eng-header">Strategic <span class="text-yellow-500">Independence</span></h3>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                    Compare the strengths. The South excels in global trade and tech integration. The North excels in self-reliance, defense, and heavy industry independence.
+                </p>
+                <div class="space-y-4">
+                    <div class="p-4 bg-zinc-800/50 border-l-4 border-red-600">
+                        <strong class="text-white block uppercase">North (북)</strong>
+                        <span class="text-sm text-gray-500">Resource Independent, Military Autonomy.</span>
+                    </div>
+                    <div class="p-4 bg-zinc-800/50 border-l-4 border-blue-600">
+                        <strong class="text-white block uppercase">South (남)</strong>
+                        <span class="text-sm text-gray-500">Capital Rich, Global Network Hub.</span>
+                    </div>
+                    <div class="p-4 bg-yellow-900/10 border-l-4 border-yellow-500 mt-4">
+                        <strong class="text-yellow-500 block uppercase korean-accent">통일 한국 (Unified Korea)</strong>
+                        <span class="text-sm text-gray-400">Resource + Capital + Autonomy + Network = Unstoppable.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-black/40 p-4 rounded-sm">
+                <h3 class="text-lg text-center text-gray-300 mb-4 uppercase tracking-widest">Capabilities Profile · 역량 분석</h3>
+                <div class="chart-container">
+                    <canvas id="autarkyChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONCLUSION -->
+        <footer class="text-center py-20 px-6">
+            <h2 class="text-6xl md:text-8xl font-bold text-white mb-6 eng-header tracking-tighter opacity-10">KOREA</h2>
+
+            <div class="max-w-4xl mx-auto relative -mt-16 z-10">
+                <h3 class="text-3xl font-bold text-white mb-8">THE ARITHMETIC OF DESTINY</h3>
+                <p class="text-xl text-gray-300 leading-relaxed font-light mb-6">
+                    "Arbitrary lines cannot erase 5,000 years of brotherhood. The achievements of both North and South prove one undeniable fact: The Korean people are capable of anything."
+                </p>
+                <p class="text-2xl text-yellow-500 font-bold korean-accent">
+                    우리는 하나다. (We Are One.)
+                </p>
+            </div>
+
+            <div class="mt-16 flex justify-center space-x-2 text-zinc-800 font-mono text-xs">
+                <span>JUCHE GANG</span>
+                <span>//</span>
+                <span>PAN-KOREAN ANALYSIS</span>
+                <span>//</span>
+                <span>2025</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Chart Configuration Script -->
+    <script>
+        // --- UTILITY: Label Wrapping Helper ---
+        function splitLabel(label) {
+            if (typeof label !== 'string' || label.length <= 16) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if ((currentLine + ' ' + words[i]).length <= 20) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // --- DARK MODE CONFIGS ---
+        Chart.defaults.font.family = "'Noto Sans KR', sans-serif";
+        Chart.defaults.color = '#a1a1aa'; // Zinc 400
+        Chart.defaults.scale.grid.color = '#27272a'; // Zinc 800
+
+        const tooltipConfig = {
+            backgroundColor: '#000',
+            titleColor: '#fbbf24',
+            bodyColor: '#fff',
+            borderColor: '#333',
+            borderWidth: 1,
+            titleFont: { family: 'Noto Sans KR', weight: 'bold' },
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) return label.join(' ');
+                    return label;
+                }
+            }
+        };
+
+        // --- CHART 1: ADVANTAGE LEDGER ---
+        const ctxAdvantage = document.getElementById('advantageChart').getContext('2d');
+        new Chart(ctxAdvantage, {
+            type: 'bar',
+            data: {
+                labels: ['Australia (Advantage)', 'DPRK (Advantage)', 'DPRK (Obstacles)'].map(splitLabel),
+                datasets: [{
+                    label: 'Economic Value (USD Billions)',
+                    data: [2500, 50, -1500],
+                    backgroundColor: [
+                        '#2563eb', // Blue (Standard Western)
+                        '#fbbf24', // Gold (DPRK Aid)
+                        '#dc2626'  // Red (Sanctions)
+                    ],
+                    borderColor: '#000',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: tooltipConfig,
+                },
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Billions USD (Est.)', color: '#52525b' },
+                        grid: { color: '#18181b' }
+                    },
+                    y: { grid: { display: false } }
+                }
+            }
+        });
+
+        // --- CHART 2: OUTCOMES ---
+        const ctxOutcomes = document.getElementById('outcomesChart').getContext('2d');
+        new Chart(ctxOutcomes, {
+            type: 'bar',
+            data: {
+                labels: ['Literacy / 문맹률 (%)', 'Immunization / 예방접종 (%)', 'Secondary Edu / 중등교육 (%)'].map(splitLabel),
+                datasets: [
+                    {
+                        label: 'Advantaged Peers (유사 국가)',
+                        data: [99, 94, 95],
+                        backgroundColor: '#3b82f6', // Blue
+                        barPercentage: 0.6
+                    },
+                    {
+                        label: 'DPRK (북한)',
+                        data: [99, 96, 92],
+                        backgroundColor: '#dc2626', // Red
+                        barPercentage: 0.6
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: tooltipConfig,
+                    legend: { position: 'bottom', labels: { color: '#e4e4e7' } }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: { color: '#27272a' }
+                    },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+
+        // --- CHART 3: CAPABILITIES (RADAR) ---
+        const ctxAutarky = document.getElementById('autarkyChart').getContext('2d');
+        new Chart(ctxAutarky, {
+            type: 'radar',
+            data: {
+                labels: ['Global Trade (무역)', 'Food Self-Sufficiency (식량자급)', 'Energy Independence (에너지자립)', 'Space Tech (우주기술)', 'Heavy Industry (중공업)'].map(splitLabel),
+                datasets: [{
+                    label: 'DPRK (North)',
+                    data: [10, 85, 90, 95, 80],
+                    fill: true,
+                    backgroundColor: 'rgba(220, 38, 38, 0.2)', // Red
+                    borderColor: '#dc2626',
+                    pointBackgroundColor: '#dc2626',
+                    pointBorderColor: '#fff',
+                }, {
+                    label: 'ROK (South)',
+                    data: [100, 45, 20, 90, 95],
+                    fill: true,
+                    backgroundColor: 'rgba(37, 99, 235, 0.2)', // Blue
+                    borderColor: '#2563eb',
+                    pointBackgroundColor: '#2563eb',
+                    pointBorderColor: '#fff',
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: '#333' },
+                        grid: { color: '#222' },
+                        pointLabels: {
+                            color: '#e4e4e7',
+                            font: { size: 11, family: 'Noto Sans KR' }
+                        },
+                        ticks: { display: false, backdropColor: 'transparent' }
+                    }
+                },
+                plugins: {
+                    tooltip: tooltipConfig,
+                    legend: { labels: { color: '#e4e4e7' } }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
