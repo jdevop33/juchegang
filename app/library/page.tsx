@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { FileText, Presentation, Video, Download, ArrowRight, BookOpen, FolderOpen } from "lucide-react"
+import { FileText, Presentation, Video, Download, ArrowRight, BookOpen, FolderOpen, MessageCircle } from "lucide-react"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 
@@ -11,7 +11,7 @@ const categories = [
     title: "Documents & Reports",
     description: "Research papers, fact sheets, and primary source analysis",
     icon: FileText,
-    count: 0,
+    count: 1, // EU Ukraine factcheck report
     color: "blue",
     href: "/library/documents"
   },
@@ -37,14 +37,14 @@ const categories = [
 ]
 
 const featuredResources = [
-  // Add your featured documents here
-  // {
-  //   title: "The Economics of Korean Reunification",
-  //   type: "PDF",
-  //   size: "2.4 MB",
-  //   downloads: 142,
-  //   href: "/library/documents/reunification-economics"
-  // }
+  {
+    title: "EU Ukraine Funding Factcheck Report",
+    type: "PDF",
+    size: "23 KB",
+    downloads: 0,
+    href: "/documents/eu_ukraine_factcheck_report.pdf",
+    description: "Analysis of EU funding commitments to Ukraine - separating fact from narrative"
+  }
 ]
 
 export default function LibraryPage() {
@@ -133,7 +133,29 @@ export default function LibraryPage() {
               Featured Downloads
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              {/* Featured resource cards would go here */}
+              {featuredResources.map((resource) => (
+                <a
+                  key={resource.title}
+                  href={resource.href}
+                  download
+                  className="group flex items-center gap-4 p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors"
+                >
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center shrink-0">
+                    <FileText className="w-6 h-6 text-blue-400" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-bold text-white group-hover:text-blue-400 transition-colors truncate">
+                      {resource.title}
+                    </h3>
+                    <p className="text-white/60 text-sm truncate">{resource.description}</p>
+                    <div className="flex items-center gap-3 mt-1 text-xs text-white/40">
+                      <span>{resource.type}</span>
+                      <span>{resource.size}</span>
+                    </div>
+                  </div>
+                  <Download className="w-5 h-5 text-white/40 group-hover:text-green-400 transition-colors shrink-0" />
+                </a>
+              ))}
             </div>
           </section>
         )}

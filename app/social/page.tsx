@@ -14,6 +14,8 @@ import { featuredChannels } from "@/data/featured-channels"
 import { FeaturedChannel } from "@/components/featured-channel"
 import { personalInspiration } from "@/data/personal-inspiration"
 import { PersonalInspiration } from "@/components/personal-inspiration"
+import { TelegramFeed } from "@/components/telegram-feed"
+import { telegramFeed, telegramChannels } from "@/data/telegram-feed"
 
 export const metadata = {
   title: "Social Media",
@@ -164,6 +166,17 @@ export default async function SocialPage() {
             sources={personalInspiration.sources}
           />
         ) : null}
+
+        {/* Telegram Feed */}
+        <section className="mb-16">
+          <TelegramFeed
+            posts={telegramFeed}
+            channels={telegramChannels}
+            autoPlay={true}
+            autoPlayInterval={10000}
+          />
+        </section>
+
         {/* Featured Channels */}
         {featuredChannels.length > 0 ? (
           <section className="mb-16">

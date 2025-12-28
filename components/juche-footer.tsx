@@ -168,14 +168,17 @@ export function JucheFooter() {
         {/* Network Links */}
         <div className="border-t border-red-800 pt-6 mb-6">
           <div className="text-center">
-            <p className="text-xs uppercase tracking-wider text-red-400/60 mb-3">Part of the JPanda Network</p>
-            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
+            <a href="/network" className="inline-block text-xs uppercase tracking-wider text-red-400/60 hover:text-red-300 mb-3 transition-colors">
+              JPanda Network →
+            </a>
+            {/* Peace & Analysis */}
+            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm mb-3">
               <a href="https://tiger.juche.org" target="_blank" rel="noopener noreferrer" className="text-amber-400/80 hover:text-amber-300 transition-colors flex items-center gap-1">
                 <span>🐅</span> Tiger Unity
               </a>
               <span className="text-red-700 hidden sm:inline">•</span>
-              <a href="https://1929.world" target="_blank" rel="noopener noreferrer" className="text-yellow-400/80 hover:text-yellow-300 transition-colors flex items-center gap-1">
-                <span>📉</span> 1929 World
+              <a href="https://www.1929.world" target="_blank" rel="noopener noreferrer" className="text-yellow-400/80 hover:text-yellow-300 transition-colors flex items-center gap-1">
+                <span>📊</span> 1929 World
               </a>
               <span className="text-red-700 hidden sm:inline">•</span>
               <a href="/library" className="text-blue-400/80 hover:text-blue-300 transition-colors flex items-center gap-1">
@@ -185,9 +188,19 @@ export function JucheFooter() {
               <a href="/briefings" className="text-purple-400/80 hover:text-purple-300 transition-colors flex items-center gap-1">
                 <span>📋</span> Briefings
               </a>
-              <span className="text-red-700 hidden sm:inline">•</span>
-              <a href="/truth-project" className="text-green-400/80 hover:text-green-300 transition-colors flex items-center gap-1">
-                <span>🔍</span> Truth Project
+            </div>
+            {/* Commerce & Build */}
+            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-white/40">
+              <a href="https://outlierclothiers.com" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 transition-colors">
+                Outlier Clothiers
+              </a>
+              <span className="hidden sm:inline">•</span>
+              <a href="https://notaryton.com" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 transition-colors">
+                NotaryTON
+              </a>
+              <span className="hidden sm:inline">•</span>
+              <a href="https://jesse-resume.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 transition-colors">
+                Jesse James
               </a>
             </div>
           </div>
