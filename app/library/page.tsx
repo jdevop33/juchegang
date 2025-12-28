@@ -4,6 +4,7 @@ import Link from "next/link"
 import { FileText, Presentation, Video, Download, ArrowRight, BookOpen, FolderOpen, MessageCircle } from "lucide-react"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
+import { documents, decks, media, getFeaturedResources, type LibraryResource } from "@/data/library-resources"
 
 const categories = [
   {
@@ -11,7 +12,7 @@ const categories = [
     title: "Documents & Reports",
     description: "Research papers, fact sheets, and primary source analysis",
     icon: FileText,
-    count: 1, // EU Ukraine factcheck report
+    count: documents.length,
     color: "blue",
     href: "/library/documents"
   },
@@ -20,7 +21,7 @@ const categories = [
     title: "Slide Decks",
     description: "Presentations on geopolitics, history, and peace initiatives",
     icon: Presentation,
-    count: 0,
+    count: decks.length,
     color: "purple",
     href: "/library/decks"
   },
@@ -29,23 +30,14 @@ const categories = [
     title: "Media Archive",
     description: "Curated videos, podcasts, and visual resources",
     icon: Video,
-    count: 0,
+    count: media.length,
     color: "red",
     href: "/library/media",
-    comingSoon: true
+    comingSoon: media.length === 0
   }
 ]
 
-const featuredResources = [
-  {
-    title: "EU Ukraine Funding Factcheck Report",
-    type: "PDF",
-    size: "23 KB",
-    downloads: 0,
-    href: "/documents/eu_ukraine_factcheck_report.pdf",
-    description: "Analysis of EU funding commitments to Ukraine - separating fact from narrative"
-  }
-]
+const featuredResources = getFeaturedResources()
 
 export default function LibraryPage() {
   return (
@@ -133,15 +125,21 @@ export default function LibraryPage() {
               Featured Downloads
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              {featuredResources.map((resource) => (
+              {featuredResources.map((resource: LibraryResource) => (
                 <a
-                  key={resource.title}
-                  href={resource.href}
+                  key={resource.id}
+                  href={resource.downloadUrl}
                   download
                   className="group flex items-center gap-4 p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors"
                 >
-                  <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center shrink-0">
-                    <FileText className="w-6 h-6 text-blue-400" />
+                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center shrink-0 ${
+                    resource.type === 'slides' ? 'bg-purple-500/20' : 'bg-blue-500/20'
+                  }`}>
+                    {resource.type === 'slides' ? (
+                      <Presentation className="w-6 h-6 text-purple-400" />
+                    ) : (
+                      <FileText className="w-6 h-6 text-blue-400" />
+                    )}
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="font-bold text-white group-hover:text-blue-400 transition-colors truncate">
@@ -149,8 +147,9 @@ export default function LibraryPage() {
                     </h3>
                     <p className="text-white/60 text-sm truncate">{resource.description}</p>
                     <div className="flex items-center gap-3 mt-1 text-xs text-white/40">
-                      <span>{resource.type}</span>
-                      <span>{resource.size}</span>
+                      <span>{resource.type.toUpperCase()}</span>
+                      <span>{resource.fileSize}</span>
+                      {resource.pageCount && <span>{resource.pageCount} pages</span>}
                     </div>
                   </div>
                   <Download className="w-5 h-5 text-white/40 group-hover:text-green-400 transition-colors shrink-0" />
