@@ -133,10 +133,13 @@ export default function LibraryPage() {
                   className="group flex items-center gap-4 p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors"
                 >
                   <div className={`w-12 h-12 rounded-lg flex items-center justify-center shrink-0 ${
-                    resource.type === 'slides' ? 'bg-purple-500/20' : 'bg-blue-500/20'
+                    resource.type === 'slides' ? 'bg-purple-500/20' :
+                    resource.type === 'docx' ? 'bg-green-500/20' : 'bg-blue-500/20'
                   }`}>
                     {resource.type === 'slides' ? (
                       <Presentation className="w-6 h-6 text-purple-400" />
+                    ) : resource.type === 'docx' ? (
+                      <FileText className="w-6 h-6 text-green-400" />
                     ) : (
                       <FileText className="w-6 h-6 text-blue-400" />
                     )}

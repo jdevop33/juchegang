@@ -15,7 +15,7 @@ export interface LibraryResource {
   id: string
   title: string
   description: string
-  type: 'pdf' | 'slides' | 'video' | 'audio' | 'link'
+  type: 'pdf' | 'docx' | 'slides' | 'video' | 'audio' | 'link'
   category: 'documents' | 'decks' | 'media'
   fileSize?: string
   pageCount?: number
@@ -104,6 +104,32 @@ export const documents: LibraryResource[] = [
     author: 'JPanda',
     publishedAt: '2024-12-27',
     tags: ['tiger', 'ai', 'system-prompt', 'campaign'],
+  },
+  {
+    id: 'gold-hydride-discovery',
+    title: 'Gold Hydride Discovery: The Prepared Mind',
+    description: 'Essay on Mungo Frost\'s accidental discovery of gold hydride at 40 GPa - serendipity in high-pressure chemistry',
+    type: 'docx',
+    category: 'documents',
+    fileSize: '67 KB',
+    downloadUrl: '/documents/Gold_Hydride_Discovery_JPanda_1.docx',
+    author: 'JPanda',
+    publishedAt: '2024-12-28',
+    tags: ['science', 'chemistry', 'discovery', 'serendipity', 'physics'],
+    featured: true,
+  },
+  {
+    id: 'mathematics-as-language',
+    title: 'Mathematics As Language: The Beautiful Nonsense',
+    description: 'Essay on mathematical grammar, symbolic beauty, and the humility of learning new languages of thought',
+    type: 'docx',
+    category: 'documents',
+    fileSize: '234 KB',
+    downloadUrl: '/documents/JPanda_Mathematics_As_Language.docx',
+    author: 'JPanda',
+    publishedAt: '2024-12-28',
+    tags: ['mathematics', 'language', 'philosophy', 'learning', 'symbols'],
+    featured: true,
   },
 ]
 
