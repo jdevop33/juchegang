@@ -107,8 +107,8 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
         <div className="container mx-auto px-4 py-8 relative z-10">
           <div className="featured-laws-section relative">
             <div className="max-w-4xl mx-auto mb-20 text-center section-reveal relative z-10" id="featured">
-              <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-yellow-500/20 to-amber-400/20 text-yellow-400 rounded-full text-sm font-medium animate-staggered-fade-in backdrop-blur-sm border border-yellow-500/30">
-                ⭐ {t('featuredExcellence')}
+              <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-sovereign-gold/20 to-sovereign-dark/20 text-sovereign-gold rounded-full text-sm font-medium animate-staggered-fade-in backdrop-blur-sm border border-sovereign-gold/30">
+                ✦ {t('featuredExcellence')}
               </div>
               <h2 className="text-headline text-foreground mb-8 animate-staggered-fade-in stagger-delay-1">{t('foundationLaws')}</h2>
               <p className="text-body-large text-muted-foreground max-w-2xl mx-auto animate-staggered-fade-in stagger-delay-2">{t('foundationDesc')}</p>
@@ -122,7 +122,7 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
           <div className="section-transition"><TriptychDivider /></div>
 
           <div id="laws" className="scroll-mt-nav max-w-4xl mx-auto mb-20 text-center section-reveal">
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-blue-600/20 to-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30 backdrop-blur-sm">📚 {t('completeCollection')}</div>
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-river-current/20 to-river-mid/20 text-river-mid rounded-full text-sm font-medium border border-river-current/30 backdrop-blur-sm">📚 {t('completeCollection')}</div>
             <h2 className="text-headline text-foreground mb-8">{t('laws48')}</h2>
             <p className="text-body-large text-muted-foreground max-w-3xl mx-auto mb-8">{t('lawsSubtitle')}</p>
             <div className="section-divider"></div>
@@ -157,19 +157,19 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
 
         <div className="container mx-auto px-4 py-12"><div className="max-w-md mx-auto"><CulturalCalendar /></div></div>
 
-        <div className="bg-gradient-to-r from-red-950/20 via-blue-950/20 to-red-950/20 border-y border-yellow-500/10">
+        <div className="bg-gradient-to-r from-river-depths via-river-deep to-river-depths border-y border-sovereign-gold/20">
           <div className="container mx-auto px-4 py-16">
             <div className="max-w-3xl mx-auto text-center">
               <div className="mb-8">
-                <div className="inline-flex items-center gap-3 mb-4 px-6 py-3 bg-gradient-to-r from-red-600/20 via-blue-600/20 to-red-600/20 rounded-full border border-yellow-500/30">
-                  <CountryFlag iso="ru" size={24} className="rounded-sm border border-white/10" />
-                  <CountryFlag iso="kp" size={24} className="rounded-sm border border-white/10" />
-                  <CountryFlag iso="cn" size={24} className="rounded-sm border border-white/10" />
+                <div className="inline-flex items-center gap-3 mb-4 px-6 py-3 bg-gradient-to-r from-river-current/30 via-river-mid/30 to-river-current/30 rounded-full border border-sovereign-gold/30">
+                  <CountryFlag iso="ru" size={24} className="rounded-sm border border-river-mist/20" />
+                  <CountryFlag iso="kp" size={24} className="rounded-sm border border-river-mist/20" />
+                  <CountryFlag iso="cn" size={24} className="rounded-sm border border-river-mist/20" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4"><span className="bg-gradient-to-r from-red-400 via-blue-400 to-red-400 bg-clip-text text-transparent">JucheGanG Triad Unity</span></h2>
-                <p className="text-white/80 max-w-xl mx-auto">Celebrating the bonds of friendship and mutual respect between three sovereign nations</p>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4"><span className="bg-gradient-to-r from-sovereign-gold via-river-mist to-sovereign-gold bg-clip-text text-transparent">Sovereign Unity</span></h2>
+                <p className="text-river-mist/80 max-w-xl mx-auto">Celebrating the bonds of friendship and mutual respect between sovereign nations navigating their own currents</p>
               </div>
-              <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-white/10"><ResponsiveInstagramEmbed postUrl="https://www.instagram.com/reel/DOIDrdtDoHN/?utm_source=ig_embed&utm_campaign=loading" /></div>
+              <div className="bg-river-depths/50 backdrop-blur-sm rounded-2xl p-6 border border-river-current/30"><ResponsiveInstagramEmbed postUrl="https://www.instagram.com/reel/DOIDrdtDoHN/?utm_source=ig_embed&utm_campaign=loading" /></div>
             </div>
           </div>
         </div>

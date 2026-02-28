@@ -1,7 +1,5 @@
 import type { Law } from "@/types/law"
 import { ArrowRight } from "lucide-react"
-import Image from "next/image"
-import FocalImage from "./focal-image"
 import SafeFocalImage from "./safe-focal-image"
 import { getLawImage } from "@/lib/law-images"
 import { useLanguage } from "@/contexts/language-context"
@@ -22,63 +20,55 @@ export function FeaturedLaw({ law, imagePath }: FeaturedLawProps) {
   const displayTitle = language === 'kr' ? (localized?.title ?? autoTitle ?? law.title) : law.title
   const displayContent = language === 'kr' ? (localized?.content ?? autoContent ?? law.content) : law.content
   return (
-    <div className="relative rounded-xl overflow-hidden shadow-2xl border-2 border-red-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-      {/* Communist Revolutionary Background */}
+    <div className="relative rounded-xl overflow-hidden shadow-2xl border border-sovereign-gold/40 hover:border-sovereign-gold/60 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+      {/* River Depths Background */}
       <div className="absolute inset-0">
-        {/* Base Communist Red Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-red-700 to-red-900"></div>
-        
-        {/* Revolutionary Pattern Overlay */}
-        <div 
-          className="absolute inset-0 opacity-20" 
+        {/* Base River Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-river-depths via-river-current to-river-depths"></div>
+
+        {/* Subtle water flow pattern */}
+        <div
+          className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M30 30l15-15v30h-30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-            backgroundSize: '40px 40px'
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q25 0 50 10 T100 10' stroke='%23d4a74a' fill='none' stroke-width='1' opacity='0.5'/%3E%3C/svg%3E")`,
+            backgroundSize: '100px 20px'
           }}
         ></div>
-        
-        {/* Hammer and Sickle Symbol */}
-        <div className="absolute top-4 right-4 text-yellow-400 opacity-40">
-          <div className="text-4xl font-bold">☭</div>
+
+        {/* Korean excellence symbol */}
+        <div className="absolute top-4 right-4 text-sovereign-gold/30">
+          <div className="font-korean text-3xl font-bold">강</div>
         </div>
-        
-        {/* Korean-style text overlay */}
-        <div className="absolute bottom-4 left-4 text-yellow-300 opacity-50 font-bold text-sm transform -rotate-3">
-          주체사상 • 자력갱생
+
+        {/* Korean text overlay */}
+        <div className="absolute bottom-4 left-4 text-sovereign-gold/40 font-korean text-sm">
+          주체의 흐름을 따라
         </div>
-        
-        {/* Dramatic gradient overlays for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
-        
-        {/* Revolutionary stars pattern */}
-        <div className="absolute top-8 left-8 text-yellow-400 opacity-30">
-          <div className="text-2xl">★</div>
-        </div>
-        <div className="absolute top-12 right-12 text-yellow-400 opacity-30">
-          <div className="text-xl">★</div>
-        </div>
-        <div className="absolute bottom-12 right-8 text-yellow-400 opacity-30">
-          <div className="text-lg">★</div>
-        </div>
+
+        {/* Gradient overlays for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-river-depths/90 via-transparent to-river-depths/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-river-depths/90 via-transparent to-river-depths/50"></div>
+
+        {/* Subtle gold accents */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-sovereign-gold/40 to-transparent"></div>
       </div>
-      
+
       {/* Content */}
       <div className="relative z-10 grid md:grid-cols-2 gap-6">
         <div className="p-8 flex flex-col justify-center">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-yellow-500 text-red-900 font-bold border-2 border-yellow-400 shadow-lg">
+          <div className="inline-flex items-center gap-3 mb-4">
+            <div className="h-12 w-12 flex items-center justify-center rounded-full bg-sovereign-gold text-river-depths font-heading font-bold text-lg border-2 border-sovereign-gold/60 shadow-lg">
               {law.number}
             </div>
-            <h3 className="text-xl font-bold text-yellow-300 drop-shadow-lg">{t('lawLabel')} {law.number}</h3>
+            <h3 className="text-lg font-semibold text-sovereign-gold">{t('lawLabel')} {law.number}</h3>
           </div>
-          <h2 className="text-4xl font-bold mb-6 text-white drop-shadow-2xl leading-tight">{displayTitle}</h2>
-          <div className="prose prose-invert prose-red max-w-none mb-8">
-            <p className="text-red-50 leading-relaxed drop-shadow-lg text-lg">{displayContent}</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-river-mist leading-tight">{displayTitle}</h2>
+          <div className="prose prose-invert max-w-none mb-8">
+            <p className="text-cream-muted leading-relaxed text-lg">{displayContent}</p>
           </div>
           <a
             href={`#law-${law.number}`}
-            className="inline-flex items-center gap-2 text-yellow-300 hover:text-yellow-200 font-bold group bg-black/40 px-6 py-3 rounded-lg backdrop-blur-sm border-2 border-yellow-400/50 hover:border-yellow-400 transition-all shadow-lg"
+            className="inline-flex items-center gap-2 text-sovereign-gold hover:text-river-mist font-semibold group bg-river-current/30 px-6 py-3 rounded-lg backdrop-blur-sm border border-sovereign-gold/40 hover:border-sovereign-gold hover:bg-river-current/50 transition-all shadow-lg"
           >
             {t('readMore')}
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -92,7 +82,7 @@ export function FeaturedLaw({ law, imagePath }: FeaturedLawProps) {
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-red-900/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-river-depths/80 to-transparent"></div>
         </div>
       </div>
     </div>

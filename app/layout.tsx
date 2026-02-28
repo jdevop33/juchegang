@@ -1,6 +1,6 @@
 import type React from "react"
 import "@/app/globals.css"
-import { Inter } from "next/font/google"
+import { Source_Sans_3 } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
 import { getServerLanguage, type Language } from "@/lib/i18n-server"
@@ -9,12 +9,19 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import ConsentBanner from "@/components/consent-banner"
 import Script from "next/script"
 
-const inter = Inter({ subsets: ["latin"] })
+// Performance-optimized: Single font family with system fallbacks
+// Headings use Georgia (system), Korean uses system Korean fonts
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-body",
+  display: "swap", // Text visible immediately, font upgrades when loaded
+})
 
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#034DA2",
+  themeColor: "#0d1b2a", // River Depths
   colorScheme: "dark",
 }
 
@@ -100,7 +107,7 @@ export default async function RootLayout({
         {/* Instagram Embed Script */}
         <Script async src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
       </head>
-      <body className={inter.className}>
+      <body className={`${sourceSans.variable} font-sans`}>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:rounded-md focus:bg-primary focus:text-primary-foreground"

@@ -50,24 +50,46 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Friendship Club Colors
+        // ═══════════════════════════════════════════════════════════════
+        // RIVER PALETTE v2.0 — "Navigate the Current"
+        // ═══════════════════════════════════════════════════════════════
+        river: {
+          depths: "#0d1b2a",    // Primary background - deep navy
+          current: "#1b4965",   // Supporting blue - the visible flow
+          deep: "#142638",      // Card surfaces - where depth creates dimension
+          mid: "#2a6f8e",       // Accent blue - lighter current
+          mist: "#e8dfd0",      // Light text - morning fog on water
+        },
+        korean: {
+          red: "#c73032",       // Cultural accent - fire of Korean identity
+        },
+        sovereign: {
+          gold: "#d4a74a",      // Wisdom, highlights - the gold thread
+          dark: "#8b6914",      // Gold shadow - depth
+        },
+        // Text colors
+        cream: {
+          DEFAULT: "#f0ebe3",   // Primary text
+          muted: "#a0b4c8",     // Secondary text
+        },
+        // Legacy support - maps to new palette
         friendship: {
-          blue: "#034DA2",
-          red: "#EC1D25",
-          white: "#FFFFFF",
+          blue: "#1b4965",      // Now Current Blue
+          red: "#c73032",       // Now Korean Red
+          white: "#f0ebe3",     // Now Cream
         },
         blue: {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#60a5fa",
-          500: "#3b82f6",
-          600: "#034DA2", // Main friendship blue
-          700: "#1d4ed8",
-          800: "#1e40af",
-          900: "#1e3a8a",
-          950: "#172554",
+          50: "#e8f4f8",
+          100: "#d1e9f1",
+          200: "#a3d3e3",
+          300: "#75bdd5",
+          400: "#47a7c7",
+          500: "#2a6f8e",        // River Mid
+          600: "#1b4965",        // Current Blue (primary)
+          700: "#163b52",
+          800: "#112d3f",
+          900: "#0d1b2a",        // River Depths
+          950: "#091420",
         },
         red: {
           50: "#fef2f2",
@@ -75,13 +97,19 @@ const config: Config = {
           200: "#fecaca",
           300: "#fca5a5",
           400: "#f87171",
-          500: "#EC1D25", // Main friendship red
-          600: "#dc2626",
-          700: "#b91c1c",
-          800: "#991b1b",
-          900: "#7f1d1d",
+          500: "#c73032",        // Korean Red (primary)
+          600: "#b12b2d",
+          700: "#9b2628",
+          800: "#852123",
+          900: "#6f1c1e",
           950: "#450a0a",
         },
+      },
+      fontFamily: {
+        sans: ["var(--font-body)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+        heading: ["Georgia", "Times New Roman", "serif"],
+        korean: ["Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic", "sans-serif"],
+        mono: ["JetBrains Mono", "Fira Code", "Consolas", "monospace"],
       },
       borderRadius: {
         lg: "var(--radius)",

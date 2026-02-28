@@ -38,9 +38,9 @@ export function SolidarityBanner() {
   const Icon = icons[currentIndex % icons.length]
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-r from-red-900 via-red-800 to-red-900 border-y border-yellow-500/20">
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-500/10 to-transparent animate-pulse" />
-      
+    <div className="relative overflow-hidden bg-gradient-to-r from-river-depths via-river-current to-river-depths border-y border-sovereign-gold/20">
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-sovereign-gold/10 to-transparent animate-pulse" />
+
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-center gap-4">
           <motion.div
@@ -48,7 +48,7 @@ export function SolidarityBanner() {
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
             className="hidden sm:block"
           >
-            <Icon className="w-5 h-5 text-yellow-400" />
+            <Icon className="w-5 h-5 text-sovereign-gold" />
           </motion.div>
 
           <AnimatePresence mode="wait">
@@ -65,17 +65,17 @@ export function SolidarityBanner() {
                 alt={`${currentMessage.lang} flag`}
                 width={24}
                 height={18}
-                className="rounded-sm shadow-sm border border-white/10"
+                className="rounded-sm shadow-sm border border-river-mist/20"
                 onError={(e) => {
                   // Fallback to emoji if CDN blocked
                   (e.currentTarget as HTMLImageElement).replaceWith(Object.assign(document.createElement('span'), { textContent: currentMessage.flag, className: 'text-2xl' }))
                 }}
               />
               <div className="text-center">
-                <p className="text-white font-bold text-lg sm:text-xl">
+                <p className="text-river-mist font-bold text-lg sm:text-xl">
                   {currentMessage.text}
                 </p>
-                <p className="text-yellow-300 text-xs sm:text-sm">
+                <p className="text-sovereign-gold text-xs sm:text-sm">
                   {currentMessage.translation}
                 </p>
               </div>
@@ -84,16 +84,16 @@ export function SolidarityBanner() {
 
           <button
             onClick={() => setIsVisible(!isVisible)}
-            className="hidden sm:block p-1 rounded hover:bg-white/10 transition-colors"
+            className="hidden sm:block p-1 rounded hover:bg-river-mist/10 transition-colors"
             aria-label="Toggle banner"
           >
-            <Star className="w-5 h-5 text-yellow-400" />
+            <Star className="w-5 h-5 text-sovereign-gold" />
           </button>
         </div>
       </div>
 
       {/* Animated border effect */}
-      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-yellow-400 to-transparent animate-slide" />
+      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-sovereign-gold to-transparent animate-slide" />
     </div>
   )
 }
