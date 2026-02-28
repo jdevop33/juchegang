@@ -93,9 +93,9 @@ export function EnhancedHeader() {
                   <Image
                     src="/logo-icon-gang.png"
                     alt="JucheGang"
-                    width={120}
-                    height={56}
-                    className="sm:w-[140px] sm:h-auto"
+                    width={64}
+                    height={64}
+                    className="sm:w-[72px] sm:h-[72px]"
                     priority
                   />
                   <div className="absolute inset-0 bg-sovereign-gold/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />

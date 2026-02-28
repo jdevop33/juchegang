@@ -56,8 +56,8 @@ export function JucheHeader() {
                 <Image
                   src="/logo-icon-gang.png"
                   alt="JucheGang"
-                  width={120}
-                  height={56}
+                  width={64}
+                  height={64}
                   priority
                   className="transition-all duration-300 group-hover:drop-shadow-[0_0_15px_rgba(212,167,74,0.6)] group-hover:brightness-110"
                 />
