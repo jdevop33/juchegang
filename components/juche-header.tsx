@@ -54,14 +54,14 @@ export function JucheHeader() {
             >
               <div className="relative">
                 <Image
-                  src="/uselogo.svg"
+                  src="/logo-primary.png"
                   alt="JucheGang"
-                  width={56}
+                  width={120}
                   height={56}
                   priority
-                  className="transition-all duration-300 group-hover:drop-shadow-[0_0_15px_rgba(212,167,74,0.6)] group-hover:brightness-110 group-hover:rotate-[5deg]"
+                  className="transition-all duration-300 group-hover:drop-shadow-[0_0_15px_rgba(212,167,74,0.6)] group-hover:brightness-110"
                 />
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-sovereign-gold/20 via-transparent to-river-current/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-sovereign-gold/20 via-transparent to-river-current/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <span className="sr-only">JucheGang</span>
             </Link>
@@ -98,8 +98,14 @@ export function JucheHeader() {
         <Drawer.Portal>
           <Drawer.Overlay className="fixed inset-0 bg-river-depths/90 backdrop-blur-md transition-opacity duration-300" />
           <Drawer.Content className="fixed right-0 top-0 h-screen w-[92vw] max-w-[560px] bg-gradient-to-br from-river-depths via-river-deep to-river-depths border-l border-sovereign-gold/20 shadow-2xl shadow-river-depths/80 will-change-transform backdrop-blur-xl">
-            <div className="flex items-center justify-between px-6 py-5 border-b border-river-current/30">
-              <span className="text-xl font-heading font-bold text-sovereign-gold">Navigate the Current</span>
+            <div className="flex items-center justify-between px-4 py-4 border-b border-river-current/30">
+              <Image
+                src="/banner-horizontal.png"
+                alt="JucheGang - Navigate the Current"
+                width={240}
+                height={60}
+                className="h-12 w-auto"
+              />
               <button onClick={() => setIsMenuOpen(false)} aria-label="Close menu" className="group p-2 text-river-mist hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-90">
                 <X className="h-6 w-6 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(212,167,74,0.8)]" />
               </button>

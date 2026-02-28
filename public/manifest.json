@@ -4,27 +4,21 @@
   "description": "A platform for peace, unity, and excellence. Building bridges between nations through understanding and solidarity.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#EC1D25",
+  "background_color": "#0a1628",
+  "theme_color": "#d4a74a",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/uselogo.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "src": "/logo-icon-gang.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/faviconjuche.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/kffav.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     }
   ],
   "categories": ["education", "social", "news"],

@@ -91,23 +91,16 @@ export function EnhancedHeader() {
               >
                 <div className="relative">
                   <Image
-                    src="/uselogo.svg"
+                    src="/logo-primary.png"
                     alt="JucheGang"
-                    width={48}
-                    height={48}
-                    className="sm:w-14 sm:h-14"
+                    width={120}
+                    height={56}
+                    className="sm:w-[140px] sm:h-auto"
                     priority
                   />
                   <div className="absolute inset-0 bg-sovereign-gold/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <div className="hidden sm:block">
-                  <h1 className="text-xl sm:text-2xl font-heading font-bold bg-gradient-to-r from-sovereign-gold via-river-mist to-sovereign-gold bg-clip-text text-transparent">
-                    주체강
-                  </h1>
-                  <p className="text-[10px] sm:text-xs text-cream-muted uppercase tracking-wider">
-                    Navigate the Current
-                  </p>
-                </div>
+                {/* Text hidden - logo contains branding */}
               </Link>
             </motion.div>
 
