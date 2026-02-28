@@ -6,7 +6,6 @@ import { LanguageProvider } from "@/contexts/language-context"
 import { getServerLanguage, type Language } from "@/lib/i18n-server"
 import { getDictionary } from "@/lib/dictionary"
 import { Breadcrumbs } from "@/components/breadcrumbs"
-import ConsentBanner from "@/components/consent-banner"
 import Script from "next/script"
 
 // Performance-optimized: Single font family with system fallbacks
@@ -116,7 +115,6 @@ export default async function RootLayout({
         </a>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <LanguageProvider initialLanguage={serverLang} dictionary={dict}>
-            <ConsentBanner />
             <Breadcrumbs />
             {children}
           </LanguageProvider>
