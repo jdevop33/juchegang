@@ -52,6 +52,7 @@ export function EnhancedHeader() {
     { href: "/mission", label: t('mission'), icon: Globe },
     { href: "/cultural-exchange", label: t('culture'), icon: Users },
     { href: "/youth-empowerment", label: t('youth'), icon: Heart },
+    { href: "/social", label: "Social", icon: MessageCircle },
     { href: "/peace-timeline", label: t('peace'), icon: Calendar },
     { href: "/gallery", label: t('gallery'), icon: ImageIcon, featured: true },
     { href: "/truth-project", label: t('truthProject'), icon: BookOpen, featured: true },

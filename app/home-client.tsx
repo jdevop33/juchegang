@@ -42,11 +42,6 @@ const CategorySection = dynamic(() => import("@/components/category-section").th
 })
 
 // Lower priority components - load only when needed
-const EnhancedFloatingAction = dynamic(() => import("@/components/enhanced-floating-action").then(mod => ({ default: mod.EnhancedFloatingAction })), {
-  ssr: false,
-  loading: () => null
-})
-
 const ContactForm = dynamic(() => import("@/components/contact-form").then(mod => ({ default: mod.ContactForm })), {
   ssr: false,
   loading: () => <div className="h-96 animate-pulse bg-gray-200 rounded-lg" />
@@ -177,7 +172,6 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
         <div id="contact" className="bg-gradient-to-b from-background to-muted/30"><ContactForm /></div>
 
         <JucheFooter />
-        <EnhancedFloatingAction />
       </main>
     </>
   )
