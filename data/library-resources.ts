@@ -195,3 +195,26 @@ export function getCategoryCounts(): Record<string, number> {
     media: media.length,
   }
 }
+
+// File type display info
+export const fileTypeInfo: Record<string, { label: string; color: string; bgColor: string }> = {
+  pdf: { label: 'PDF Documents', color: 'text-red-400', bgColor: 'bg-red-500/20' },
+  docx: { label: 'Word Documents', color: 'text-blue-400', bgColor: 'bg-blue-500/20' },
+  slides: { label: 'Slide Decks', color: 'text-purple-400', bgColor: 'bg-purple-500/20' },
+  video: { label: 'Videos', color: 'text-pink-400', bgColor: 'bg-pink-500/20' },
+  audio: { label: 'Audio', color: 'text-green-400', bgColor: 'bg-green-500/20' },
+  link: { label: 'External Links', color: 'text-cyan-400', bgColor: 'bg-cyan-500/20' },
+}
+
+// Get resources grouped by file type
+export function getResourcesByFileType(): Record<string, LibraryResource[]> {
+  const all = getAllResources()
+  const grouped: Record<string, LibraryResource[]> = {}
+  for (const resource of all) {
+    if (!grouped[resource.type]) {
+      grouped[resource.type] = []
+    }
+    grouped[resource.type].push(resource)
+  }
+  return grouped
+}

@@ -172,6 +172,14 @@ export function JucheHeader() {
                     </span>
                   </Link>
                 </li>
+                <li className="transform transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+                  <Link href="/about" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-gradient-to-r from-[#1B4965]/80 to-[#0D1B2A]/80 hover:from-[#1B4965] hover:to-[#2A6F8E]/80 text-white font-semibold transition-all duration-300 shadow-md hover:shadow-lg border border-[#D4A74A]/40">
+                    <span className="flex items-center gap-2">
+                      <span className="text-lg">🌊</span>
+                      <span>The Movement</span>
+                    </span>
+                  </Link>
+                </li>
                 <li className="pt-6 mt-4 border-t border-white/20">
                   <div className="px-1">
                     <LanguageToggle />
