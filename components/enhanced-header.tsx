@@ -91,7 +91,7 @@ export function EnhancedHeader() {
               >
                 <div className="relative">
                   <Image
-                    src="/logo-primary.png"
+                    src="/logo-icon-gang.png"
                     alt="JucheGang"
                     width={120}
                     height={56}
