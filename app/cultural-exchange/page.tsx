@@ -21,7 +21,7 @@ export default function CulturalExchangePage() {
       examples: language === 'kr'
         ? ['전통 국악', '민요와 판소리', '현대 음악', '무용과 공연']
         : ['Traditional Gugak', 'Folk Songs & Pansori', 'Contemporary Music', 'Dance & Performance'],
-      color: 'from-[#1b4965] to-[#d4a74a]'
+      color: 'border-[#d4a74a]'
     },
     {
       icon: Utensils,
@@ -32,7 +32,7 @@ export default function CulturalExchangePage() {
       examples: language === 'kr'
         ? ['발효 음식의 과학', '계절 요리', '전통 차 문화', '공동체 식사 문화']
         : ['Fermentation Science', 'Seasonal Dishes', 'Tea Culture', 'Communal Dining'],
-      color: 'from-[#d4a74a] to-[#c73032]'
+      color: 'border-[#c73032]'
     },
     {
       icon: Book,
@@ -43,7 +43,7 @@ export default function CulturalExchangePage() {
       examples: language === 'kr'
         ? ['한글의 창제 원리', '고전 문학', '현대 시와 소설', '구전 전통']
         : ['Hangul Creation Principles', 'Classical Literature', 'Modern Poetry & Novels', 'Oral Traditions'],
-      color: 'from-[#1b4965] to-[#0d1b2a]'
+      color: 'border-[#1b4965]'
     },
     {
       icon: Users,
@@ -54,7 +54,7 @@ export default function CulturalExchangePage() {
       examples: language === 'kr'
         ? ['대가족 문화', '마을 공동체', '상부상조 정신', '세대간 지혜 전수']
         : ['Extended Family Culture', 'Village Communities', 'Mutual Aid Spirit', 'Intergenerational Wisdom'],
-      color: 'from-[#1b4965] to-[#d4a74a]'
+      color: 'border-[#d4a74a]'
     }
   ]
 
@@ -185,8 +185,8 @@ export default function CulturalExchangePage() {
               >
                 <Card className="bg-[#0d1b2a]/80 border-[#1b4965]/40 hover:border-[#d4a74a]/40 transition-all h-full">
                   <CardHeader>
-                    <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${pillar.color} flex items-center justify-center mb-4`}>
-                      <pillar.icon className="h-8 w-8 text-[#e8e4df]" />
+                    <div className={`w-16 h-16 rounded-full border-2 ${pillar.color} bg-[#0d1b2a]/50 flex items-center justify-center mb-4`}>
+                      <pillar.icon className="h-8 w-8 text-[#d4a74a]" />
                     </div>
                     <CardTitle className="text-2xl text-[#e8e4df]">{pillar.title}</CardTitle>
                   </CardHeader>

@@ -20,7 +20,7 @@ export default function PeaceTimelinePage() {
         ? '단군왕검이 세운 고조선, 홍익인간의 이념으로 평화와 번영의 기초를 마련'
         : 'Gojoseon founded by Dangun, establishing the foundation of peace and prosperity with the ideal of Hongik Ingan (benefiting humanity)',
       significance: language === 'kr' ? '5000년 평화 전통의 시작' : 'Beginning of 5000-year peace tradition',
-      color: 'from-[#d4a74a] to-[#c73032]'
+      color: 'border-[#d4a74a]'
     },
     {
       year: language === 'kr' ? '고구려, 백제, 신라 (기원전 57년~668년)' : 'Three Kingdoms (57 BCE - 668 CE)',
@@ -30,7 +30,7 @@ export default function PeaceTimelinePage() {
         ? '고구려의 기상, 백제의 문화, 신라의 통합으로 한민족 문화의 기틀 완성'
         : 'Completion of Korean cultural foundation through Goguryeo\'s spirit, Baekje\'s culture, and Silla\'s unification',
       significance: language === 'kr' ? '다양성 속 통일의 지혜' : 'Wisdom of unity in diversity',
-      color: 'from-[#1b4965] to-[#d4a74a]'
+      color: 'border-[#1b4965]'
     },
     {
       year: language === 'kr' ? '조선 건국 (1392년)' : 'Founding of Joseon (1392)',
@@ -40,7 +40,7 @@ export default function PeaceTimelinePage() {
         ? '500년간 지속된 조선왕조, 평화를 기반으로 한 외교와 문화 발전의 전성기'
         : '500-year Joseon Dynasty, golden age of peace-based diplomacy and cultural development',
       significance: language === 'kr' ? '장기 평화의 모범' : 'Model of long-term peace',
-      color: 'from-[#1b4965] to-[#0d1b2a]'
+      color: 'border-[#1b4965]'
     },
     {
       year: language === 'kr' ? '일제강점기 (1910-1945년)' : 'Japanese Occupation (1910-1945)',
@@ -50,7 +50,7 @@ export default function PeaceTimelinePage() {
         ? '35년간의 시련 속에서도 꺾이지 않은 광복 의지와 독립 투쟁'
         : 'Unbroken will for liberation and independence struggle despite 35 years of trials',
       significance: language === 'kr' ? '불굴의 자주 정신' : 'Indomitable spirit of independence',
-      color: 'from-[#c73032] to-[#d4a74a]'
+      color: 'border-[#c73032]'
     },
     {
       year: language === 'kr' ? '분단과 한국전쟁 (1950-1953년)' : 'Division & Korean War (1950-1953)',
@@ -60,7 +60,7 @@ export default function PeaceTimelinePage() {
         ? '한민족 분단의 비극과 전쟁의 상처, 그 속에서 더욱 간절해진 평화에 대한 염원'
         : 'Tragedy of Korean division and wounds of war, deepening the earnest desire for peace',
       significance: language === 'kr' ? '평화 통일의 절실함' : 'Urgency of peaceful unification',
-      color: 'from-[#0d1b2a] to-[#1b4965]'
+      color: 'border-[#1b4965]'
     },
     {
       year: language === 'kr' ? '남북 대화 시작 (1970년대)' : 'Inter-Korean Dialogue Begins (1970s)',
@@ -70,7 +70,7 @@ export default function PeaceTimelinePage() {
         ? '7.4 남북공동성명을 통한 대화 시작, 평화통일 원칙 합의'
         : 'Beginning of dialogue through July 4th Joint Communique, agreement on peaceful unification principles',
       significance: language === 'kr' ? '대화를 통한 해결 의지' : 'Will to resolve through dialogue',
-      color: 'from-[#1b4965] to-[#d4a74a]'
+      color: 'border-[#d4a74a]'
     },
     {
       year: language === 'kr' ? '2000년 6.15 정상회담' : '2000 June 15 Summit',
@@ -80,7 +80,7 @@ export default function PeaceTimelinePage() {
         ? '김대중-김정일 정상회담으로 한반도 평화 프로세스의 새로운 장 개막'
         : 'Kim Dae-jung and Kim Jong-il Summit opening new chapter in Korean Peninsula peace process',
       significance: language === 'kr' ? '평화 공존의 가능성' : 'Possibility of peaceful coexistence',
-      color: 'from-[#0d1b2a] to-[#1b4965]'
+      color: 'border-[#1b4965]'
     },
     {
       year: language === 'kr' ? '미래 비전 (2030년)' : 'Future Vision (2030)',
@@ -90,7 +90,7 @@ export default function PeaceTimelinePage() {
         ? '남북이 하나 되어 동북아 평화의 중심지로 도약, 세계 평화에 기여하는 통일 한국'
         : 'North and South united as one, leaping forward as Northeast Asia\'s peace center, unified Korea contributing to world peace',
       significance: language === 'kr' ? '세계 평화의 새로운 모델' : 'New model for world peace',
-      color: 'from-[#d4a74a] to-[#c73032]'
+      color: 'border-[#d4a74a]'
     }
   ]
 
@@ -224,8 +224,8 @@ export default function PeaceTimelinePage() {
                   className="relative flex items-start gap-6"
                 >
                   {/* Timeline Icon */}
-                  <div className={`relative z-10 w-16 h-16 rounded-full bg-gradient-to-r ${event.color} flex items-center justify-center flex-shrink-0`}>
-                    <event.icon className="h-8 w-8 text-[#e8e4df]" />
+                  <div className={`relative z-10 w-16 h-16 rounded-full border-2 ${event.color} bg-[#0d1b2a]/50 flex items-center justify-center flex-shrink-0`}>
+                    <event.icon className="h-8 w-8 text-[#d4a74a]" />
                   </div>
 
                   {/* Timeline Content */}

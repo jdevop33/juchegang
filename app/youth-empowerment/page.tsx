@@ -2,7 +2,7 @@
 
 import { useLanguage } from "@/contexts/language-context"
 import { motion } from "framer-motion"
-import { Rocket, Users, Lightbulb, Earth, BookOpen, Code, Palette, Music, Camera, Mic, Globe, Heart, Target, Trophy, Star } from "lucide-react"
+import { Sunrise, Users, Flame, Earth, Scroll, Compass, Feather, Music, Eye, MessageCircle, Globe, Heart, Leaf, Star } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
@@ -13,13 +13,13 @@ export default function YouthEmpowermentPage() {
 
   const empowermentPillars = [
     {
-      icon: Lightbulb,
+      icon: Flame,
       title: language === 'kr' ? '창조적 사고력' : 'Creative Thinking',
       description: language === 'kr'
         ? '기성 관념을 뛰어넘어 새로운 해답을 찾는 혁신적 사고력을 기릅니다'
         : 'Developing innovative thinking that transcends conventional ideas to find new solutions',
       skills: language === 'kr' ? ['문제해결', '혁신', '상상력', '비판적사고'] : ['Problem Solving', 'Innovation', 'Imagination', 'Critical Thinking'],
-      color: 'from-[#d4a74a] to-[#c73032]'
+      color: 'border-[#d4a74a]'
     },
     {
       icon: Users,
@@ -28,7 +28,7 @@ export default function YouthEmpowermentPage() {
         ? '다양한 문화와 관점을 이해하고 세계를 이끌어가는 포용적 리더십을 함양합니다'
         : 'Cultivating inclusive leadership that understands diverse cultures and leads the world',
       skills: language === 'kr' ? ['소통', '공감', '협력', '비전제시'] : ['Communication', 'Empathy', 'Collaboration', 'Vision'],
-      color: 'from-[#1b4965] to-[#0d1b2a]'
+      color: 'border-[#1b4965]'
     },
     {
       icon: Earth,
@@ -37,26 +37,26 @@ export default function YouthEmpowermentPage() {
         ? '인류 공동의 과제를 자신의 일로 여기고 지속가능한 미래를 위해 행동합니다'
         : 'Taking humanity\'s common challenges as our own and acting for a sustainable future',
       skills: language === 'kr' ? ['환경의식', '평화', '정의감', '책임감'] : ['Environmental Awareness', 'Peace', 'Justice', 'Responsibility'],
-      color: 'from-[#1b4965] to-[#d4a74a]'
+      color: 'border-[#d4a74a]'
     },
     {
-      icon: Rocket,
+      icon: Compass,
       title: language === 'kr' ? '미래 기술 역량' : 'Future Tech Skills',
       description: language === 'kr'
         ? '4차 산업혁명 시대의 핵심 기술을 습득하고 인간 중심의 기술 윤리를 실현합니다'
         : 'Mastering key technologies of the 4th industrial revolution and realizing human-centered tech ethics',
       skills: language === 'kr' ? ['AI/ML', '블록체인', '로보틱스', '바이오텍'] : ['AI/ML', 'Blockchain', 'Robotics', 'Biotech'],
-      color: 'from-[#0d1b2a] to-[#1b4965]'
+      color: 'border-[#1b4965]'
     }
   ]
 
   const creativeFields = [
-    { icon: Code, name: language === 'kr' ? '프로그래밍' : 'Programming', participants: '50K+' },
-    { icon: Palette, name: language === 'kr' ? '디지털 아트' : 'Digital Art', participants: '30K+' },
+    { icon: Compass, name: language === 'kr' ? '프로그래밍' : 'Programming', participants: '50K+' },
+    { icon: Feather, name: language === 'kr' ? '디지털 아트' : 'Digital Art', participants: '30K+' },
     { icon: Music, name: language === 'kr' ? '음악 제작' : 'Music Production', participants: '25K+' },
-    { icon: Camera, name: language === 'kr' ? '영상 제작' : 'Video Production', participants: '40K+' },
-    { icon: Mic, name: language === 'kr' ? '팟캐스트' : 'Podcasting', participants: '15K+' },
-    { icon: BookOpen, name: language === 'kr' ? '창작 문학' : 'Creative Writing', participants: '20K+' }
+    { icon: Eye, name: language === 'kr' ? '영상 제작' : 'Video Production', participants: '40K+' },
+    { icon: MessageCircle, name: language === 'kr' ? '팟캐스트' : 'Podcasting', participants: '15K+' },
+    { icon: Scroll, name: language === 'kr' ? '창작 문학' : 'Creative Writing', participants: '20K+' }
   ]
 
   const globalProjects = [
@@ -142,7 +142,7 @@ export default function YouthEmpowermentPage() {
           animate={{ opacity: 1, y: 0 }}
           className="container mx-auto max-w-6xl text-center"
         >
-          <Rocket className="h-16 w-16 text-[#d4a74a] mx-auto mb-6" />
+          <Sunrise className="h-16 w-16 text-[#d4a74a] mx-auto mb-6" />
           <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] bg-gradient-to-r from-[#1b4965] via-[#d4a74a] to-[#1b4965] bg-clip-text text-transparent">
             {language === 'kr' ? '청년 임파워먼트' : 'Youth Empowerment'}
           </h1>
@@ -189,8 +189,8 @@ export default function YouthEmpowermentPage() {
               >
                 <Card className="bg-[#0d1b2a]/80 border-[#1b4965]/40 hover:border-[#d4a74a]/40 transition-all h-full">
                   <CardHeader>
-                    <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${pillar.color} flex items-center justify-center mb-4`}>
-                      <pillar.icon className="h-8 w-8 text-[#e8e4df]" />
+                    <div className={`w-16 h-16 rounded-full border-2 ${pillar.color} bg-[#0d1b2a]/50 flex items-center justify-center mb-4`}>
+                      <pillar.icon className="h-8 w-8 text-[#d4a74a]" />
                     </div>
                     <CardTitle className="text-2xl text-[#e8e4df]">{pillar.title}</CardTitle>
                   </CardHeader>
@@ -267,7 +267,7 @@ export default function YouthEmpowermentPage() {
                     <div className="space-y-2">
                       {project.achievements.map((achievement, i) => (
                         <div key={i} className="flex items-center gap-2">
-                          <Trophy className="h-4 w-4 text-[#d4a74a]" />
+                          <Leaf className="h-4 w-4 text-[#d4a74a]" />
                           <span className="text-[#e8e4df]/70 text-sm">{achievement}</span>
                         </div>
                       ))}
@@ -320,8 +320,8 @@ export default function YouthEmpowermentPage() {
                 className="bg-[#0d1b2a]/60 rounded-xl p-6 border border-[#1b4965]/40"
               >
                 <div className="text-center mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-r from-[#1b4965] to-[#d4a74a] rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Heart className="h-8 w-8 text-[#e8e4df]" />
+                  <div className="w-16 h-16 rounded-full border-2 border-[#d4a74a] bg-[#0d1b2a]/50 flex items-center justify-center mx-auto mb-3">
+                    <Heart className="h-8 w-8 text-[#d4a74a]" />
                   </div>
                   <h3 className="text-lg font-bold text-[#e8e4df]">{story.name}</h3>
                   <p className="text-[#d4a74a] text-sm">{story.role}</p>
@@ -330,7 +330,7 @@ export default function YouthEmpowermentPage() {
                 <p className="text-[#e8e4df]/80 text-sm mb-4">{story.story}</p>
 
                 <div className="bg-[#0d1b2a]/80 rounded-lg p-3 text-center">
-                  <Target className="h-5 w-5 text-[#d4a74a] mx-auto mb-2" />
+                  <Star className="h-5 w-5 text-[#d4a74a] mx-auto mb-2" />
                   <p className="text-[#d4a74a] text-sm font-semibold">{story.achievement}</p>
                 </div>
               </motion.div>
