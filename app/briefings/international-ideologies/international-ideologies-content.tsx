@@ -7,7 +7,7 @@ export default function InternationalIdeologiesContent() {
         summaries of peer‑reviewed sources so anyone can follow — no jargon.
       </p>
 
-      <div className="mb-10 rounded-lg border border-foreground/20 bg-background/40 p-4">
+      <div className="mb-10 rounded-lg p-4" style={{ border: '1px solid #1b4965', backgroundColor: 'rgba(27, 73, 101, 0.2)' }}>
         <h2 className="mb-2 text-xl font-bold">What is an ideology?</h2>
         <p className="leading-7">
           An ideology is a patterned set of ideas and values that helps people make sense of society and politics and guides action.
@@ -52,7 +52,7 @@ export default function InternationalIdeologiesContent() {
         </li>
       </ol>
 
-      <div className="mb-10 rounded-lg border border-foreground/20 bg-background/40 p-4">
+      <div className="mb-10 rounded-lg p-4" style={{ border: '1px solid #1b4965', backgroundColor: 'rgba(27, 73, 101, 0.2)' }}>
         <h3 className="mb-2 text-lg font-semibold">Plain‑language glossary</h3>
         <ul className="list-disc space-y-2 pl-6">
           <li>
@@ -89,7 +89,8 @@ export default function InternationalIdeologiesContent() {
       <div className="mt-8">
         <a
           href="/briefings/international-ideologies/martill"
-          className="inline-block rounded border border-foreground/40 px-4 py-2 font-semibold hover:bg-foreground hover:text-background focus:outline-none focus:ring-2 focus:ring-foreground/60"
+          className="inline-block rounded px-4 py-2 font-semibold focus:outline-none focus:ring-2 transition-colors hover:opacity-80"
+          style={{ border: '1px solid #1b4965', color: '#d4a74a' }}
         >
           Read the Martill paradigms summary →
         </a>
@@ -98,19 +99,22 @@ export default function InternationalIdeologiesContent() {
       <div className="mt-4 flex flex-wrap gap-3">
         <a
           href="/briefings/international-ideologies/activation-paradigm"
-          className="inline-block rounded border border-foreground/40 px-4 py-2 font-semibold hover:bg-foreground hover:text-background focus:outline-none focus:ring-2 focus:ring-foreground/60"
+          className="inline-block rounded px-4 py-2 font-semibold focus:outline-none focus:ring-2 transition-colors hover:opacity-80"
+          style={{ border: '1px solid #1b4965', color: '#d4a74a' }}
         >
           Activation paradigm: support for demanding ALMPs →
         </a>
         <a
           href="/briefings/international-ideologies/paradigms-theories"
-          className="inline-block rounded border border-foreground/40 px-4 py-2 font-semibold hover:bg-foreground hover:text-background focus:outline-none focus:ring-2 focus:ring-foreground/60"
+          className="inline-block rounded px-4 py-2 font-semibold focus:outline-none focus:ring-2 transition-colors hover:opacity-80"
+          style={{ border: '1px solid #1b4965', color: '#d4a74a' }}
         >
           Paradigms vs. theories (plain guide) →
         </a>
         <a
           href="/briefings/international-ideologies/ideological-paradigm-shifts"
-          className="inline-block rounded border border-foreground/40 px-4 py-2 font-semibold hover:bg-foreground hover:text-background focus:outline-none focus:ring-2 focus:ring-foreground/60"
+          className="inline-block rounded px-4 py-2 font-semibold focus:outline-none focus:ring-2 transition-colors hover:opacity-80"
+          style={{ border: '1px solid #1b4965', color: '#d4a74a' }}
         >
           Deep disagreements & paradigm shifts →
         </a>

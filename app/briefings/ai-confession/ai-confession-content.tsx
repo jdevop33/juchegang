@@ -6,11 +6,11 @@ export default function AIConfessionContent() {
   const { t, language } = useLanguage()
 
   return (
-    <article className="container mx-auto px-4 pt-28 pb-20 prose prose-invert max-w-4xl">
+    <article className="container mx-auto px-4 pt-28 pb-20 prose max-w-4xl" style={{ color: '#e8e4df' }}>
       <header className="not-prose mb-8">
         <h1 className="text-4xl md:text-5xl font-bold">{t('aiConfessionTitle')}</h1>
-        <p className="text-muted-foreground mt-2">{t('aiConfessionDesc')}</p>
-        <p className="text-sm text-muted-foreground mt-2 italic">
+        <p className="mt-2" style={{ color: '#e8e4df', opacity: 0.8 }}>{t('aiConfessionDesc')}</p>
+        <p className="text-sm mt-2 italic" style={{ color: '#e8e4df', opacity: 0.7 }}>
           {language === 'kr' ? 'Claude (AI)와 인간 파트너 공저' : 'By Claude (AI) and Human Partner'}
         </p>
       </header>
@@ -99,8 +99,8 @@ export default function AIConfessionContent() {
         </p>
       </section>
 
-      <footer className="not-prose mt-16 pt-8 border-t border-border/20">
-        <p className="text-sm text-muted-foreground italic">
+      <footer className="not-prose mt-16 pt-8" style={{ borderTop: '1px solid #1b4965' }}>
+        <p className="text-sm italic" style={{ color: '#e8e4df', opacity: 0.7 }}>
           {language === 'kr' 
             ? '이 기사를 공유하십시오. 대화를 시작하십시오. 서사에 도전하십시오. 모든 것에 의문을 제기하십시오.' 
             : 'Share this article. Start conversations. Challenge narratives. Question everything.'

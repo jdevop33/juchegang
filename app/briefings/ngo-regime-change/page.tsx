@@ -14,56 +14,56 @@ export default function NGORegimeChangePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black">
+    <div className="min-h-screen bg-gradient-to-b from-[#0d1b2a] via-[#1b4965]/20 to-[#0d1b2a]">
       <div className="container mx-auto px-4 py-8">
-        <Link href="/briefings" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-8 transition-colors">
+        <Link href="/briefings" className="inline-flex items-center gap-2 text-[#e8e4df]/70 hover:text-[#e8e4df] mb-8 transition-colors">
           <ArrowLeft className="h-4 w-4" />
           Back to Briefings
         </Link>
 
         <div className="mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#e8e4df] mb-4">
             NGOs and Regime Change
           </h1>
-          <p className="text-xl text-white/80 max-w-4xl">
+          <p className="text-xl text-[#e8e4df]/80 max-w-4xl">
             How humanitarian rhetoric masks geopolitical operations. The sophisticated network of organizations that serve as instruments of foreign influence rather than genuine humanitarian assistance.
           </p>
         </div>
 
         {/* Key Statistics Alert */}
-        <div className="mb-12 bg-gradient-to-r from-red-900/30 via-orange-900/30 to-red-900/30 rounded-2xl p-8 border border-red-500/20">
+        <div className="mb-12 bg-gradient-to-r from-[#c73032]/30 via-[#d4a74a]/30 to-[#c73032]/30 rounded-2xl p-8 border border-[#c73032]/20">
           <div className="flex items-start gap-4">
-            <AlertTriangle className="w-8 h-8 text-red-400 flex-shrink-0 mt-1" />
+            <AlertTriangle className="w-8 h-8 text-[#c73032] flex-shrink-0 mt-1" />
             <div>
-              <h2 className="text-2xl font-bold text-red-400 mb-3">The Scale of Operations</h2>
-              <p className="text-white/90 mb-4">
+              <h2 className="text-2xl font-bold text-[#c73032] mb-3">The Scale of Operations</h2>
+              <p className="text-[#e8e4df]/90 mb-4">
                 What the CIA once did covertly, organizations like the National Endowment for Democracy now do openly—as admitted by **NED's own founder**—with massive budgets and operations spanning the globe.
               </p>
               <div className="grid md:grid-cols-3 gap-4">
-                <div className="bg-black/30 rounded p-4">
-                  <h3 className="text-red-300 font-bold mb-2">Annual Budgets</h3>
-                  <ul className="text-white/80 text-sm space-y-1">
+                <div className="bg-[#0d1b2a]/30 rounded p-4">
+                  <h3 className="text-[#c73032] font-bold mb-2">Annual Budgets</h3>
+                  <ul className="text-[#e8e4df]/80 text-sm space-y-1">
                     <li>• NED: **$300 million** annually</li>
                     <li>• USAID: **$3 billion** democracy programs</li>
                     <li>• Open Society: **$1.2 billion** annual budget</li>
                     <li>• EU: **€1 billion** similar activities</li>
                   </ul>
                 </div>
-                <div className="bg-black/30 rounded p-4">
-                  <h3 className="text-orange-300 font-bold mb-2">Global Reach</h3>
-                  <ul className="text-white/80 text-sm space-y-1">
+                <div className="bg-[#0d1b2a]/30 rounded p-4">
+                  <h3 className="text-[#d4a74a] font-bold mb-2">Global Reach</h3>
+                  <ul className="text-[#e8e4df]/80 text-sm space-y-1">
                     <li>• **100+** countries with operations</li>
                     <li>• **130+** countries enacted restrictions</li>
                     <li>• **39** projects in Venezuela alone</li>
                     <li>• **8,000** trained Nicaraguan activists</li>
                   </ul>
                 </div>
-                <div className="bg-black/30 rounded p-4">
-                  <h3 className="text-yellow-300 font-bold mb-2">Admission of Purpose</h3>
-                  <blockquote className="text-white/80 text-sm italic">
+                <div className="bg-[#0d1b2a]/30 rounded p-4">
+                  <h3 className="text-[#d4a74a] font-bold mb-2">Admission of Purpose</h3>
+                  <blockquote className="text-[#e8e4df]/80 text-sm italic">
                     "A lot of what we do today was done covertly 25 years ago by the CIA."
                     <br />
-                    <span className="text-yellow-400">— Allen Weinstein, NED co-founder, 1991</span>
+                    <span className="text-[#d4a74a]">— Allen Weinstein, NED co-founder, 1991</span>
                   </blockquote>
                 </div>
               </div>
@@ -81,16 +81,16 @@ export default function NGORegimeChangePage() {
           color="red"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-red-400 mb-4">The Network Structure</h3>
+            <div className="bg-[#0d1b2a]/30 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-[#c73032] mb-4">The Network Structure</h3>
 
               <div className="space-y-6">
-                <div className="bg-red-900/20 rounded-lg p-6 border border-red-500/30">
-                  <h4 className="font-bold text-white mb-3">Core Organizations</h4>
+                <div className="bg-[#c73032]/20 rounded-lg p-6 border border-[#c73032]/30">
+                  <h4 className="font-bold text-[#e8e4df] mb-3">Core Organizations</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <h5 className="text-red-400 font-bold mb-2">National Endowment for Democracy (NED)</h5>
-                      <ul className="text-white/80 text-sm space-y-1">
+                      <h5 className="text-[#c73032] font-bold mb-2">National Endowment for Democracy (NED)</h5>
+                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
                         <li>• Created in 1983</li>
                         <li>• $300M congressional funding</li>
                         <li>• Four core institutes:</li>
@@ -101,8 +101,8 @@ export default function NGORegimeChangePage() {
                       </ul>
                     </div>
                     <div>
-                      <h5 className="text-orange-400 font-bold mb-2">Funding Network</h5>
-                      <ul className="text-white/80 text-sm space-y-1">
+                      <h5 className="text-[#d4a74a] font-bold mb-2">Funding Network</h5>
+                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
                         <li>• USAID: $3B democracy assistance</li>
                         <li>• State Department programs</li>
                         <li>• Westminster Foundation (UK): £14M</li>
@@ -130,8 +130,8 @@ export default function NGORegimeChangePage() {
           color="purple"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-purple-400 mb-4">Color Revolutions to Modern Operations</h3>
+            <div className="bg-[#0d1b2a]/30 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-[#1b4965] mb-4">Color Revolutions to Modern Operations</h3>
 
               <div className="space-y-6">
                 <CaseStudyCard
@@ -192,8 +192,8 @@ export default function NGORegimeChangePage() {
           color="blue"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-blue-400 mb-4">Scholarly Research Exposes the Methods</h3>
+            <div className="bg-[#0d1b2a]/30 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-[#1b4965] mb-4">Scholarly Research Exposes the Methods</h3>
 
               <div className="space-y-6">
                 <AcademicCard
@@ -210,36 +210,36 @@ export default function NGORegimeChangePage() {
                   significance="Reveals the 'informational mode of development' where corporate-dominated information economies enable disguised operations"
                 />
 
-                <div className="bg-blue-900/20 rounded-lg p-6 border border-blue-500/30">
-                  <h4 className="font-bold text-white mb-3">Operational Strategy Patterns</h4>
+                <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
+                  <h4 className="font-bold text-[#e8e4df] mb-3">Operational Strategy Patterns</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <h5 className="text-blue-400 font-bold mb-2">Phase 1: Infrastructure</h5>
-                      <ul className="text-white/80 text-sm space-y-1">
+                      <h5 className="text-[#1b4965] font-bold mb-2">Phase 1: Infrastructure</h5>
+                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
                         <li>• Establish local NGOs and media outlets</li>
                         <li>• Build funding relationships</li>
                         <li>• Create plausible deniability chains</li>
                       </ul>
                     </div>
                     <div>
-                      <h5 className="text-purple-400 font-bold mb-2">Phase 2: Training</h5>
-                      <ul className="text-white/80 text-sm space-y-1">
+                      <h5 className="text-[#1b4965] font-bold mb-2">Phase 2: Training</h5>
+                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
                         <li>• Political training for activists</li>
                         <li>• Opposition leader development</li>
                         <li>• Youth mobilization programs</li>
                       </ul>
                     </div>
                     <div>
-                      <h5 className="text-green-400 font-bold mb-2">Phase 3: Narrative</h5>
-                      <ul className="text-white/80 text-sm space-y-1">
+                      <h5 className="text-[#d4a74a] font-bold mb-2">Phase 3: Narrative</h5>
+                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
                         <li>• Human rights and democracy framing</li>
                         <li>• International crisis justification</li>
                         <li>• Media coordination</li>
                       </ul>
                     </div>
                     <div>
-                      <h5 className="text-yellow-400 font-bold mb-2">Phase 4: Action</h5>
-                      <ul className="text-white/80 text-sm space-y-1">
+                      <h5 className="text-[#d4a74a] font-bold mb-2">Phase 4: Action</h5>
+                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
                         <li>• Election monitoring and contesting</li>
                         <li>• Opposition candidate support</li>
                         <li>• International legitimization</li>
@@ -262,37 +262,37 @@ export default function NGORegimeChangePage() {
           color="yellow"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-yellow-400 mb-4">Overt and Covert Financial Channels</h3>
+            <div className="bg-[#0d1b2a]/30 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-[#d4a74a] mb-4">Overt and Covert Financial Channels</h3>
 
               <div className="space-y-6">
-                <div className="bg-yellow-900/20 rounded-lg p-6 border border-yellow-500/30">
-                  <h4 className="font-bold text-white mb-3">Congressional Appropriations (Overt)</h4>
+                <div className="bg-[#d4a74a]/20 rounded-lg p-6 border border-[#d4a74a]/30">
+                  <h4 className="font-bold text-[#e8e4df] mb-3">Congressional Appropriations (Overt)</h4>
                   <div className="grid md:grid-cols-3 gap-4">
-                    <div className="bg-black/20 rounded p-3">
-                      <h5 className="text-yellow-400 font-bold text-lg">$300M</h5>
-                      <p className="text-white/80 text-sm">NED (2023)</p>
+                    <div className="bg-[#0d1b2a]/20 rounded p-3">
+                      <h5 className="text-[#d4a74a] font-bold text-lg">$300M</h5>
+                      <p className="text-[#e8e4df]/80 text-sm">NED (2023)</p>
                     </div>
-                    <div className="bg-black/20 rounded p-3">
-                      <h5 className="text-yellow-400 font-bold text-lg">$3B</h5>
-                      <p className="text-white/80 text-sm">USAID + State Dept</p>
+                    <div className="bg-[#0d1b2a]/20 rounded p-3">
+                      <h5 className="text-[#d4a74a] font-bold text-lg">$3B</h5>
+                      <p className="text-[#e8e4df]/80 text-sm">USAID + State Dept</p>
                     </div>
-                    <div className="bg-black/20 rounded p-3">
-                      <h5 className="text-yellow-400 font-bold text-lg">€1B+</h5>
-                      <p className="text-white/80 text-sm">EU Programs</p>
+                    <div className="bg-[#0d1b2a]/20 rounded p-3">
+                      <h5 className="text-[#d4a74a] font-bold text-lg">€1B+</h5>
+                      <p className="text-[#e8e4df]/80 text-sm">EU Programs</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-orange-900/20 rounded-lg p-6 border border-orange-500/30">
-                  <h4 className="font-bold text-white mb-3">Private Foundation Layer</h4>
-                  <p className="text-white/90 mb-4">
+                <div className="bg-[#d4a74a]/20 rounded-lg p-6 border border-[#d4a74a]/30">
+                  <h4 className="font-bold text-[#e8e4df] mb-3">Private Foundation Layer</h4>
+                  <p className="text-[#e8e4df]/90 mb-4">
                     George Soros has contributed over **$32 billion** to Open Society Foundations,
                     funding operations in 120+ countries. These private funds coordinate with government programs.
                   </p>
-                  <div className="bg-black/20 rounded p-4">
-                    <h5 className="text-orange-400 font-bold mb-2">Durham Report Revelation</h5>
-                    <p className="text-white/80 text-sm">
+                  <div className="bg-[#0d1b2a]/20 rounded p-4">
+                    <h5 className="text-[#d4a74a] font-bold mb-2">Durham Report Revelation</h5>
+                    <p className="text-[#e8e4df]/80 text-sm">
                       Declassified documents showed OSF coordination with political campaigns
                       to "demonize Putin and Trump," demonstrating coordination between private
                       foundations and government objectives.
@@ -316,13 +316,13 @@ export default function NGORegimeChangePage() {
           color="green"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-green-400 mb-4">Defensive Measures Worldwide</h3>
+            <div className="bg-[#0d1b2a]/30 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-[#d4a74a] mb-4">Defensive Measures Worldwide</h3>
 
               <div className="space-y-6">
-                <div className="bg-green-900/20 rounded-lg p-6 border border-green-500/30">
-                  <h4 className="font-bold text-white mb-3">Legislative Responses</h4>
-                  <p className="text-white/90 mb-4">
+                <div className="bg-[#d4a74a]/20 rounded-lg p-6 border border-[#d4a74a]/30">
+                  <h4 className="font-bold text-[#e8e4df] mb-3">Legislative Responses</h4>
+                  <p className="text-[#e8e4df]/90 mb-4">
                     Over **130 countries** have enacted restrictions on foreign-funded NGOs since 2002,
                     reflecting widespread recognition of these organizations as tools of foreign influence.
                   </p>
@@ -355,26 +355,26 @@ export default function NGORegimeChangePage() {
                   />
                 </div>
 
-                <div className="bg-blue-900/20 rounded-lg p-6 border border-blue-500/30">
-                  <h4 className="font-bold text-white mb-3">Perspectives from Targeted Countries</h4>
+                <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
+                  <h4 className="font-bold text-[#e8e4df] mb-3">Perspectives from Targeted Countries</h4>
                   <div className="space-y-3">
-                    <div className="bg-black/20 rounded p-3">
-                      <h5 className="text-blue-400 font-bold mb-1">China's Position</h5>
-                      <p className="text-white/80 text-sm">
+                    <div className="bg-[#0d1b2a]/20 rounded p-3">
+                      <h5 className="text-[#1b4965] font-bold mb-1">China's Position</h5>
+                      <p className="text-[#e8e4df]/80 text-sm">
                         Foreign Ministry characterizes NED as "white gloves" for the CIA,
                         documenting operations in Hong Kong, Xinjiang, and Tibet.
                       </p>
                     </div>
-                    <div className="bg-black/20 rounded p-3">
-                      <h5 className="text-red-400 font-bold mb-1">Russian Analysis</h5>
-                      <p className="text-white/80 text-sm">
+                    <div className="bg-[#0d1b2a]/20 rounded p-3">
+                      <h5 className="text-[#c73032] font-bold mb-1">Russian Analysis</h5>
+                      <p className="text-[#e8e4df]/80 text-sm">
                         Academics analyze Western NGO activities within military doctrines
                         of "hidden subversion" and "cognitive manipulation."
                       </p>
                     </div>
-                    <div className="bg-black/20 rounded p-3">
-                      <h5 className="text-yellow-400 font-bold mb-1">Latin American Documentation</h5>
-                      <p className="text-white/80 text-sm">
+                    <div className="bg-[#0d1b2a]/20 rounded p-3">
+                      <h5 className="text-[#d4a74a] font-bold mb-1">Latin American Documentation</h5>
+                      <p className="text-[#e8e4df]/80 text-sm">
                         Venezuela and Bolivia have extensively documented how NGOs prepared
                         ground for coups, with detailed mapping of funding networks.
                       </p>
@@ -396,12 +396,12 @@ export default function NGORegimeChangePage() {
           color="cyan"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-cyan-400 mb-4">Information Warfare Goes Digital</h3>
+            <div className="bg-[#0d1b2a]/30 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-[#1b4965] mb-4">Information Warfare Goes Digital</h3>
 
               <div className="space-y-6">
-                <div className="bg-cyan-900/20 rounded-lg p-6 border border-cyan-500/30">
-                  <h4 className="font-bold text-white mb-3">Recent Digital Operations</h4>
+                <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
+                  <h4 className="font-bold text-[#e8e4df] mb-3">Recent Digital Operations</h4>
                   <div className="space-y-4">
                     <DigitalOpCard
                       operation="ZunZuneo (Cuba)"
@@ -427,12 +427,12 @@ export default function NGORegimeChangePage() {
                   </div>
                 </div>
 
-                <div className="bg-purple-900/20 rounded-lg p-6 border border-purple-500/30">
-                  <h4 className="font-bold text-white mb-3">Modern Techniques</h4>
+                <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
+                  <h4 className="font-bold text-[#e8e4df] mb-3">Modern Techniques</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <h5 className="text-purple-400 font-bold mb-2">Targeting Methods</h5>
-                      <ul className="text-white/80 text-sm space-y-1">
+                      <h5 className="text-[#1b4965] font-bold mb-2">Targeting Methods</h5>
+                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
                         <li>• Audience segmentation and data analytics</li>
                         <li>• Behavioral trigger identification</li>
                         <li>• A/B testing of political messages</li>
@@ -440,8 +440,8 @@ export default function NGORegimeChangePage() {
                       </ul>
                     </div>
                     <div>
-                      <h5 className="text-pink-400 font-bold mb-2">Youth Focus</h5>
-                      <ul className="text-white/80 text-sm space-y-1">
+                      <h5 className="text-[#c73032] font-bold mb-2">Youth Focus</h5>
+                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
                         <li>• Viral content creation training</li>
                         <li>• Hashtag campaign coordination</li>
                         <li>• Circumvention tools for censorship</li>
@@ -449,7 +449,7 @@ export default function NGORegimeChangePage() {
                       </ul>
                     </div>
                   </div>
-                  <blockquote className="text-cyan-300 italic mt-4 p-4 bg-black/20 rounded">
+                  <blockquote className="text-[#1b4965] italic mt-4 p-4 bg-[#0d1b2a]/20 rounded">
                     "This represents what Sussman calls 'branding democracy,' where political
                     change is marketed like consumer products."
                   </blockquote>
@@ -469,13 +469,13 @@ export default function NGORegimeChangePage() {
           color="emerald"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-emerald-400 mb-4">Red Flags vs. Authentic Characteristics</h3>
+            <div className="bg-[#0d1b2a]/30 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-[#d4a74a] mb-4">Red Flags vs. Authentic Characteristics</h3>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-green-900/20 rounded-lg p-6 border border-green-500/30">
-                  <h4 className="text-green-400 font-bold mb-3">✅ Authentic Organizations</h4>
-                  <ul className="space-y-2 text-white/80 text-sm">
+                <div className="bg-[#d4a74a]/20 rounded-lg p-6 border border-[#d4a74a]/30">
+                  <h4 className="text-[#d4a74a] font-bold mb-3">✅ Authentic Organizations</h4>
+                  <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
                     <li>• **5+ years** consistent presence before prominence</li>
                     <li>• Leadership with deep personal connections to issues</li>
                     <li>• Organic growth through community engagement</li>
@@ -487,9 +487,9 @@ export default function NGORegimeChangePage() {
                   </ul>
                 </div>
 
-                <div className="bg-red-900/20 rounded-lg p-6 border border-red-500/30">
-                  <h4 className="text-red-400 font-bold mb-3">🚩 Co-option Warning Signs</h4>
-                  <ul className="space-y-2 text-white/80 text-sm">
+                <div className="bg-[#c73032]/20 rounded-lg p-6 border border-[#c73032]/30">
+                  <h4 className="text-[#c73032] font-bold mb-3">🚩 Co-option Warning Signs</h4>
+                  <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
                     <li>• Sudden funding influxes before elections/crises</li>
                     <li>• Leadership extensively trained in foreign countries</li>
                     <li>• Messaging mirrors foreign policy positions</li>
@@ -502,14 +502,14 @@ export default function NGORegimeChangePage() {
                 </div>
               </div>
 
-              <div className="mt-6 bg-emerald-900/20 rounded-lg p-6 border border-emerald-500/30">
-                <h4 className="text-emerald-400 font-bold mb-3">Case Study: Maintaining Authenticity</h4>
-                <p className="text-white/90 mb-3">
+              <div className="mt-6 bg-[#d4a74a]/20 rounded-lg p-6 border border-[#d4a74a]/30">
+                <h4 className="text-[#d4a74a] font-bold mb-3">Case Study: Maintaining Authenticity</h4>
+                <p className="text-[#e8e4df]/90 mb-3">
                   **Centre for Natural Resource Governance (Zimbabwe)** provides an instructive example.
                   When board members were co-opted by mining companies, the organization restructured
                   to preserve community control rather than simply purging individuals.
                 </p>
-                <p className="text-white/80 text-sm">
+                <p className="text-[#e8e4df]/80 text-sm">
                   This sophisticated response maintained credibility while managing internal conflicts,
                   demonstrating how authentic organizations prioritize community accountability over
                   external validation or funding convenience.
@@ -520,20 +520,20 @@ export default function NGORegimeChangePage() {
         </Section>
 
         {/* Call to Action */}
-        <div className="mt-12 bg-gradient-to-r from-blue-900/20 via-purple-900/20 to-blue-900/20 rounded-xl p-8 border border-blue-500/30">
-          <h2 className="text-3xl font-bold text-white mb-6 text-center">The Path Forward</h2>
+        <div className="mt-12 bg-gradient-to-r from-[#1b4965]/20 via-[#1b4965]/20 to-[#1b4965]/20 rounded-xl p-8 border border-[#1b4965]/30">
+          <h2 className="text-3xl font-bold text-[#e8e4df] mb-6 text-center">The Path Forward</h2>
 
           <div className="text-center max-w-4xl mx-auto">
-            <p className="text-lg text-white/90 mb-6">
+            <p className="text-lg text-[#e8e4df]/90 mb-6">
               The documented evidence establishes beyond reasonable doubt that certain NGOs have been systematically employed as instruments of regime change. This reality creates profound challenges for authentic human rights work.
             </p>
 
-            <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 rounded-lg p-6 mb-8 border border-green-500/20">
-              <h3 className="text-green-400 font-bold text-xl mb-3">Supporting Authentic Civil Society</h3>
-              <p className="text-white/90 text-lg mb-4">
+            <div className="bg-gradient-to-r from-[#d4a74a]/20 to-[#1b4965]/20 rounded-lg p-6 mb-8 border border-[#d4a74a]/20">
+              <h3 className="text-[#d4a74a] font-bold text-xl mb-3">Supporting Authentic Civil Society</h3>
+              <p className="text-[#e8e4df]/90 text-lg mb-4">
                 The path forward requires recognizing that both government repression and foreign interference threaten genuine civil society.
               </p>
-              <ul className="text-white/80 text-left max-w-2xl mx-auto space-y-2">
+              <ul className="text-[#e8e4df]/80 text-left max-w-2xl mx-auto space-y-2">
                 <li>• Prioritize community-led initiatives with transparent, diverse funding</li>
                 <li>• Respect indigenous forms of organization and resistance</li>
                 <li>• Provide solidarity without imposing external agendas</li>
@@ -542,18 +542,18 @@ export default function NGORegimeChangePage() {
               </ul>
             </div>
 
-            <p className="text-xl text-white font-medium mb-8">
-              Democracy must grow from communities themselves, shaped by their own <span className="text-emerald-400">aspirations for justice</span>.
+            <p className="text-xl text-[#e8e4df] font-medium mb-8">
+              Democracy must grow from communities themselves, shaped by their own <span className="text-[#d4a74a]">aspirations for justice</span>.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/briefings/media-manipulation-decoded" className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors">
+              <Link href="/briefings/media-manipulation-decoded" className="px-6 py-3 bg-[#c73032] hover:bg-[#c73032]/80 text-[#e8e4df] font-medium rounded-lg transition-colors">
                 Media Manipulation
               </Link>
-              <Link href="/briefings/nato-expansion" className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+              <Link href="/briefings/nato-expansion" className="px-6 py-3 bg-[#1b4965] hover:bg-[#1b4965]/80 text-[#e8e4df] font-medium rounded-lg transition-colors">
                 NATO Expansion
               </Link>
-              <Link href="/briefings" className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-colors border border-white/20">
+              <Link href="/briefings" className="px-6 py-3 bg-[#e8e4df]/10 hover:bg-[#e8e4df]/20 text-[#e8e4df] font-medium rounded-lg transition-colors border border-[#e8e4df]/20">
                 All Briefings
               </Link>
             </div>
@@ -582,29 +582,29 @@ function Section({
   children: React.ReactNode
 }) {
   const colorClasses = {
-    red: "border-red-500/30 bg-red-900/10",
-    blue: "border-blue-500/30 bg-blue-900/10",
-    purple: "border-purple-500/30 bg-purple-900/10",
-    green: "border-green-500/30 bg-green-900/10",
-    yellow: "border-yellow-500/30 bg-yellow-900/10",
-    cyan: "border-cyan-500/30 bg-cyan-900/10",
-    emerald: "border-emerald-500/30 bg-emerald-900/10"
+    red: "border-[#c73032]/30 bg-[#c73032]/10",
+    blue: "border-[#1b4965]/30 bg-[#1b4965]/10",
+    purple: "border-[#1b4965]/30 bg-[#1b4965]/10",
+    green: "border-[#d4a74a]/30 bg-[#d4a74a]/10",
+    yellow: "border-[#d4a74a]/30 bg-[#d4a74a]/10",
+    cyan: "border-[#1b4965]/30 bg-[#1b4965]/10",
+    emerald: "border-[#d4a74a]/30 bg-[#d4a74a]/10"
   }
 
   return (
     <div className={`mb-8 rounded-xl border ${colorClasses[color as keyof typeof colorClasses]} overflow-hidden`}>
       <button
         onClick={onToggle}
-        className="w-full px-6 py-4 flex items-center justify-between hover:bg-white/5 transition-colors"
+        className="w-full px-6 py-4 flex items-center justify-between hover:bg-[#e8e4df]/5 transition-colors"
       >
         <div className="flex items-center gap-3">
           <Icon className={`w-6 h-6 text-${color}-400`} />
-          <h2 className="text-2xl font-bold text-white text-left">{title}</h2>
+          <h2 className="text-2xl font-bold text-[#e8e4df] text-left">{title}</h2>
         </div>
         {expanded ? (
-          <ChevronUp className="w-5 h-5 text-white/60" />
+          <ChevronUp className="w-5 h-5 text-[#e8e4df]/60" />
         ) : (
-          <ChevronDown className="w-5 h-5 text-white/60" />
+          <ChevronDown className="w-5 h-5 text-[#e8e4df]/60" />
         )}
       </button>
 
@@ -619,29 +619,29 @@ function Section({
 
 function FundingFlowCard() {
   return (
-    <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-      <h4 className="text-white font-bold mb-4">Funding Flow: The Laundering Process</h4>
+    <div className="bg-[#e8e4df]/5 rounded-lg p-6 border border-[#e8e4df]/10">
+      <h4 className="text-[#e8e4df] font-bold mb-4">Funding Flow: The Laundering Process</h4>
       <div className="space-y-3">
         <div className="flex items-center gap-3">
-          <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center text-white text-xs font-bold">1</div>
-          <p className="text-white/80 text-sm">Congressional appropriations to core organizations</p>
+          <div className="w-6 h-6 bg-[#c73032] rounded-full flex items-center justify-center text-[#e8e4df] text-xs font-bold">1</div>
+          <p className="text-[#e8e4df]/80 text-sm">Congressional appropriations to core organizations</p>
         </div>
         <div className="flex items-center gap-3">
-          <div className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center text-white text-xs font-bold">2</div>
-          <p className="text-white/80 text-sm">Distribution to intermediary institutions and think tanks</p>
+          <div className="w-6 h-6 bg-[#d4a74a] rounded-full flex items-center justify-center text-[#e8e4df] text-xs font-bold">2</div>
+          <p className="text-[#e8e4df]/80 text-sm">Distribution to intermediary institutions and think tanks</p>
         </div>
         <div className="flex items-center gap-3">
-          <div className="w-6 h-6 bg-yellow-600 rounded-full flex items-center justify-center text-white text-xs font-bold">3</div>
-          <p className="text-white/80 text-sm">Flow to academic centers and policy institutes</p>
+          <div className="w-6 h-6 bg-[#d4a74a] rounded-full flex items-center justify-center text-[#e8e4df] text-xs font-bold">3</div>
+          <p className="text-[#e8e4df]/80 text-sm">Flow to academic centers and policy institutes</p>
         </div>
         <div className="flex items-center gap-3">
-          <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center text-white text-xs font-bold">4</div>
-          <p className="text-white/80 text-sm">Final distribution to local NGOs and opposition groups</p>
+          <div className="w-6 h-6 bg-[#d4a74a] rounded-full flex items-center justify-center text-[#e8e4df] text-xs font-bold">4</div>
+          <p className="text-[#e8e4df]/80 text-sm">Final distribution to local NGOs and opposition groups</p>
         </div>
       </div>
-      <div className="mt-4 p-3 bg-black/20 rounded">
-        <p className="text-yellow-300 text-xs font-bold">Result:</p>
-        <p className="text-white/70 text-xs">
+      <div className="mt-4 p-3 bg-[#0d1b2a]/20 rounded">
+        <p className="text-[#d4a74a] text-xs font-bold">Result:</p>
+        <p className="text-[#e8e4df]/70 text-xs">
           This laundering process allows recipient organizations to claim independence
           while serving coordinated foreign policy objectives with plausible deniability.
         </p>
@@ -662,22 +662,22 @@ function CaseStudyCard({
   outcome: string
 }) {
   return (
-    <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-      <h4 className="text-purple-400 font-bold mb-3">{title}</h4>
+    <div className="bg-[#e8e4df]/5 rounded-lg p-6 border border-[#e8e4df]/10">
+      <h4 className="text-[#1b4965] font-bold mb-3">{title}</h4>
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <p className="text-purple-300 text-xs font-bold mb-1">Funding:</p>
-          <p className="text-white/80 text-sm mb-3">{funding}</p>
-          <p className="text-blue-300 text-xs font-bold mb-1">Operations:</p>
-          <ul className="text-white/70 text-sm space-y-1">
+          <p className="text-[#1b4965] text-xs font-bold mb-1">Funding:</p>
+          <p className="text-[#e8e4df]/80 text-sm mb-3">{funding}</p>
+          <p className="text-[#1b4965] text-xs font-bold mb-1">Operations:</p>
+          <ul className="text-[#e8e4df]/70 text-sm space-y-1">
             {operations.map((op, i) => (
               <li key={i}>• {op}</li>
             ))}
           </ul>
         </div>
         <div>
-          <p className="text-green-300 text-xs font-bold mb-1">Outcome:</p>
-          <p className="text-white/80 text-sm">{outcome}</p>
+          <p className="text-[#d4a74a] text-xs font-bold mb-1">Outcome:</p>
+          <p className="text-[#e8e4df]/80 text-sm">{outcome}</p>
         </div>
       </div>
     </div>
@@ -696,18 +696,18 @@ function AcademicCard({
   significance: string
 }) {
   return (
-    <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
       <div className="flex items-start gap-4">
-        <div className="w-12 h-12 bg-blue-600/20 rounded-full flex items-center justify-center flex-shrink-0">
-          <FileText className="w-6 h-6 text-blue-400" />
+        <div className="w-12 h-12 bg-[#1b4965]/20 rounded-full flex items-center justify-center flex-shrink-0">
+          <FileText className="w-6 h-6 text-[#1b4965]" />
         </div>
         <div className="flex-1">
-          <h4 className="text-blue-400 font-bold mb-1">{scholar}</h4>
-          <p className="text-blue-300 text-sm mb-2 italic">{work}</p>
-          <p className="text-white/80 text-sm mb-3">{finding}</p>
-          <div className="p-3 bg-black/20 rounded">
-            <p className="text-yellow-300 text-xs font-bold mb-1">Significance:</p>
-            <p className="text-white/70 text-xs">{significance}</p>
+          <h4 className="text-[#1b4965] font-bold mb-1">{scholar}</h4>
+          <p className="text-[#1b4965] text-sm mb-2 italic">{work}</p>
+          <p className="text-[#e8e4df]/80 text-sm mb-3">{finding}</p>
+          <div className="p-3 bg-[#0d1b2a]/20 rounded">
+            <p className="text-[#d4a74a] text-xs font-bold mb-1">Significance:</p>
+            <p className="text-[#e8e4df]/70 text-xs">{significance}</p>
           </div>
         </div>
       </div>
@@ -717,15 +717,15 @@ function AcademicCard({
 
 function YouthTargetingCard() {
   return (
-    <div className="bg-red-900/20 rounded-lg p-6 border border-red-500/30">
-      <h4 className="font-bold text-white mb-3">Youth Mobilization Strategy</h4>
-      <p className="text-white/90 mb-4">
+    <div className="bg-[#c73032]/20 rounded-lg p-6 border border-[#c73032]/30">
+      <h4 className="font-bold text-[#e8e4df] mb-3">Youth Mobilization Strategy</h4>
+      <p className="text-[#e8e4df]/90 mb-4">
         Youth receive particular emphasis in regime change operations, with programs providing:
       </p>
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <h5 className="text-red-400 font-bold mb-2">Training Programs</h5>
-          <ul className="text-white/80 text-sm space-y-1">
+          <h5 className="text-[#c73032] font-bold mb-2">Training Programs</h5>
+          <ul className="text-[#e8e4df]/80 text-sm space-y-1">
             <li>• Social media campaign creation</li>
             <li>• Viral content development</li>
             <li>• Circumvention tools for censorship</li>
@@ -733,8 +733,8 @@ function YouthTargetingCard() {
           </ul>
         </div>
         <div>
-          <h5 className="text-orange-400 font-bold mb-2">Economic Incentives</h5>
-          <ul className="text-white/80 text-sm space-y-1">
+          <h5 className="text-[#d4a74a] font-bold mb-2">Economic Incentives</h5>
+          <ul className="text-[#e8e4df]/80 text-sm space-y-1">
             <li>• Scholarships and fellowships</li>
             <li>• Employment opportunities</li>
             <li>• Career path development</li>
@@ -742,9 +742,9 @@ function YouthTargetingCard() {
           </ul>
         </div>
       </div>
-      <div className="mt-4 p-3 bg-black/20 rounded">
-        <p className="text-red-300 text-xs font-bold">Effect:</p>
-        <p className="text-white/70 text-xs">
+      <div className="mt-4 p-3 bg-[#0d1b2a]/20 rounded">
+        <p className="text-[#c73032] text-xs font-bold">Effect:</p>
+        <p className="text-[#e8e4df]/70 text-xs">
           Creates dependencies and career paths that require continued alignment with funder interests,
           ensuring long-term influence over future leaders.
         </p>
@@ -765,13 +765,13 @@ function CountryResponseCard({
   requirement: string
 }) {
   return (
-    <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
       <div className="flex items-center gap-3 mb-2">
-        <h4 className="text-green-400 font-bold">{country}</h4>
-        <span className="text-white/60 text-sm">({year})</span>
+        <h4 className="text-[#d4a74a] font-bold">{country}</h4>
+        <span className="text-[#e8e4df]/60 text-sm">({year})</span>
       </div>
-      <p className="text-green-300 text-sm font-medium mb-2">{law}</p>
-      <p className="text-white/80 text-xs">{requirement}</p>
+      <p className="text-[#d4a74a] text-sm font-medium mb-2">{law}</p>
+      <p className="text-[#e8e4df]/80 text-xs">{requirement}</p>
     </div>
   )
 }
@@ -790,18 +790,18 @@ function DigitalOpCard({
   status: string
 }) {
   return (
-    <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
       <div className="grid md:grid-cols-4 gap-3">
         <div>
-          <h5 className="font-bold text-cyan-400 mb-1">{operation}</h5>
-          <p className="text-white/60 text-xs">{year} • {agency}</p>
+          <h5 className="font-bold text-[#1b4965] mb-1">{operation}</h5>
+          <p className="text-[#e8e4df]/60 text-xs">{year} • {agency}</p>
         </div>
         <div className="md:col-span-2">
-          <p className="text-white/80 text-sm">{description}</p>
+          <p className="text-[#e8e4df]/80 text-sm">{description}</p>
         </div>
         <div>
-          <p className="text-green-300 text-xs font-medium mb-1">Status:</p>
-          <p className="text-white/70 text-xs">{status}</p>
+          <p className="text-[#d4a74a] text-xs font-medium mb-1">Status:</p>
+          <p className="text-[#e8e4df]/70 text-xs">{status}</p>
         </div>
       </div>
     </div>

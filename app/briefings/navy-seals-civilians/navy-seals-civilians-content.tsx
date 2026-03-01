@@ -138,50 +138,48 @@ export default function NavySealsCiviliansContent() {
       <article className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-blue-500/10 text-blue-500 rounded-full text-sm font-medium">
-              🎯 Interactive Journey
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full text-sm font-medium" style={{ backgroundColor: 'rgba(27, 73, 101, 0.2)', color: '#d4a74a' }}>
+              Interactive Journey
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#e8e4df' }}>
               The Perspective Challenge
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-xl max-w-2xl mx-auto mb-8" style={{ color: '#e8e4df', opacity: 0.8 }}>
               How do our judgments change when we know who's making the decisions? Take this interactive journey through history to discover your own perspective biases.
             </p>
           </div>
 
-          <Card className="mb-8">
+          <Card className="mb-8" style={{ backgroundColor: 'rgba(27, 73, 101, 0.3)', borderColor: '#1b4965' }}>
             <CardHeader>
-              <CardTitle className="text-center">🌍 Your Historical Journey Awaits</CardTitle>
+              <CardTitle className="text-center" style={{ color: '#e8e4df' }}>Your Historical Journey Awaits</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="text-lg mb-6">
+              <p className="text-lg mb-6" style={{ color: '#e8e4df' }}>
                 You'll encounter 3 real historical scenarios. Each time, you'll judge a leader's actions based on the information available to people at the time.
               </p>
-              <p className="text-muted-foreground mb-6">
+              <p className="mb-6" style={{ color: '#e8e4df', opacity: 0.7 }}>
                 Then you'll see how history - and perspective - can completely change our understanding.
               </p>
-              <Button 
+              <Button
                 onClick={() => setCurrentStep(0)}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 touch-manipulation min-h-[48px]"
+                className="font-semibold px-8 py-4 touch-manipulation min-h-[48px]"
+                style={{ backgroundColor: '#1b4965', color: '#e8e4df' }}
                 size="lg"
               >
-                Begin Your Journey 🚀
+                Begin Your Journey
               </Button>
             </CardContent>
           </Card>
 
-          <div className="grid md:grid-cols-3 gap-4 text-center text-sm text-muted-foreground">
-            <div className="p-4 bg-muted/30 rounded-lg">
-              <div className="text-2xl mb-2">📚</div>
-              <div>Learn real history</div>
+          <div className="grid md:grid-cols-3 gap-4 text-center text-sm" style={{ color: '#e8e4df', opacity: 0.8 }}>
+            <div className="p-4 rounded-lg" style={{ backgroundColor: 'rgba(27, 73, 101, 0.2)' }}>
+              <div className="text-2xl mb-2">Learn real history</div>
             </div>
-            <div className="p-4 bg-muted/30 rounded-lg">
-              <div className="text-2xl mb-2">🤔</div>
-              <div>Question perspectives</div>
+            <div className="p-4 rounded-lg" style={{ backgroundColor: 'rgba(27, 73, 101, 0.2)' }}>
+              <div className="text-2xl mb-2">Question perspectives</div>
             </div>
-            <div className="p-4 bg-muted/30 rounded-lg">
-              <div className="text-2xl mb-2">🌟</div>
-              <div>Discover truth</div>
+            <div className="p-4 rounded-lg" style={{ backgroundColor: 'rgba(27, 73, 101, 0.2)' }}>
+              <div className="text-2xl mb-2">Discover truth</div>
             </div>
           </div>
         </div>
@@ -199,10 +197,10 @@ export default function NavySealsCiviliansContent() {
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
             <div className="flex items-center justify-between mb-4">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/10 text-yellow-600 rounded-full text-sm font-medium">
-                📊 Scenario {currentStep + 1} of {scenarios.length}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium" style={{ backgroundColor: 'rgba(212, 167, 74, 0.15)', color: '#d4a74a' }}>
+                Scenario {currentStep + 1} of {scenarios.length}
               </div>
-              <div className="text-sm text-muted-foreground">
+              <div className="text-sm" style={{ color: '#e8e4df', opacity: 0.7 }}>
                 Progress: {Math.round(progress)}%
               </div>
             </div>
@@ -210,20 +208,21 @@ export default function NavySealsCiviliansContent() {
           </div>
 
           {!showConsequence ? (
-            <Card className="mb-8">
+            <Card className="mb-8" style={{ backgroundColor: 'rgba(27, 73, 101, 0.3)', borderColor: '#1b4965' }}>
               <CardHeader>
-                <CardTitle className="text-2xl">{scenario.title}</CardTitle>
+                <CardTitle className="text-2xl" style={{ color: '#e8e4df' }}>{scenario.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg mb-8 leading-relaxed">{scenario.description}</p>
-                
+                <p className="text-lg mb-8 leading-relaxed" style={{ color: '#e8e4df' }}>{scenario.description}</p>
+
                 <div className="space-y-4">
-                  <p className="font-semibold text-muted-foreground mb-4">What's your judgment?</p>
+                  <p className="font-semibold mb-4" style={{ color: '#e8e4df', opacity: 0.8 }}>What's your judgment?</p>
                   {scenario.choices.map((choice) => (
                     <Button
                       key={choice.id}
                       variant="outline"
-                      className="w-full p-6 min-h-[60px] h-auto text-left justify-start hover:bg-accent/50 touch-manipulation"
+                      className="w-full p-6 min-h-[60px] h-auto text-left justify-start touch-manipulation"
+                      style={{ borderColor: '#1b4965', color: '#e8e4df' }}
                       onClick={() => handleChoice(choice.id)}
                     >
                       <div className="text-base leading-relaxed">{choice.text}</div>
@@ -234,38 +233,39 @@ export default function NavySealsCiviliansContent() {
             </Card>
           ) : (
             <div className="space-y-6">
-              <Card className="border-yellow-200 bg-yellow-50/50 dark:bg-yellow-900/20 dark:border-yellow-800">
+              <Card style={{ backgroundColor: 'rgba(212, 167, 74, 0.15)', borderColor: '#d4a74a' }}>
                 <CardHeader>
-                  <CardTitle className="text-yellow-800 dark:text-yellow-200">Your Choice: {currentChoice?.text}</CardTitle>
+                  <CardTitle style={{ color: '#d4a74a' }}>Your Choice: {currentChoice?.text}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg mb-4 text-yellow-800 dark:text-yellow-200">{currentChoice?.consequence}</p>
+                  <p className="text-lg mb-4" style={{ color: '#e8e4df' }}>{currentChoice?.consequence}</p>
                 </CardContent>
               </Card>
 
-              <Card className="border-blue-200 bg-blue-50/50 dark:bg-blue-900/20 dark:border-blue-800">
+              <Card style={{ backgroundColor: 'rgba(27, 73, 101, 0.3)', borderColor: '#1b4965' }}>
                 <CardHeader>
-                  <CardTitle className="text-blue-800 dark:text-blue-200">📚 The Historical Reality</CardTitle>
+                  <CardTitle style={{ color: '#e8e4df' }}>The Historical Reality</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg text-blue-800 dark:text-blue-200">{currentChoice?.historicalExample}</p>
+                  <p className="text-lg" style={{ color: '#e8e4df' }}>{currentChoice?.historicalExample}</p>
                 </CardContent>
               </Card>
 
               <div className="text-center">
-                <Button 
+                <Button
                   onClick={handleContinue}
-                  className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 min-h-[48px] touch-manipulation"
+                  className="font-semibold px-8 py-4 min-h-[48px] touch-manipulation"
+                  style={{ backgroundColor: '#1b4965', color: '#e8e4df' }}
                   size="lg"
                 >
-                  {currentStep < scenarios.length - 1 ? "Continue Journey →" : "See Final Results 🎯"}
+                  {currentStep < scenarios.length - 1 ? "Continue Journey" : "See Final Results"}
                 </Button>
               </div>
             </div>
           )}
 
           {!showConsequence && (
-            <div className="text-center text-sm text-muted-foreground">
+            <div className="text-center text-sm" style={{ color: '#e8e4df', opacity: 0.7 }}>
               Choose based on the information presented - just like people had to at the time.
             </div>
           )}
@@ -279,26 +279,26 @@ export default function NavySealsCiviliansContent() {
     <article className="container mx-auto px-4 py-16">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-green-500/10 text-green-500 rounded-full text-sm font-medium">
-            ✅ Journey Complete
+          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full text-sm font-medium" style={{ backgroundColor: 'rgba(212, 167, 74, 0.15)', color: '#d4a74a' }}>
+            Journey Complete
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#e8e4df' }}>
             Now for the Real Test
           </h1>
         </div>
 
-        <Card className="mb-8 border-red-200 bg-red-50/50 dark:bg-red-900/20 dark:border-red-800">
+        <Card className="mb-8" style={{ backgroundColor: 'rgba(199, 48, 50, 0.15)', borderColor: '#c73032' }}>
           <CardHeader>
-            <CardTitle className="text-red-800 dark:text-red-200">🚨 BREAKING: Foreign Special Forces Kill American Civilians</CardTitle>
+            <CardTitle style={{ color: '#c73032' }}>BREAKING: Foreign Special Forces Kill American Civilians</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="space-y-4 text-red-800 dark:text-red-200">
+            <div className="space-y-4" style={{ color: '#e8e4df' }}>
               <p>Elite foreign naval commandos launched a covert operation to plant surveillance equipment near American territory to spy on US leadership, but the mission went catastrophically wrong, resulting in the deaths of multiple American civilians.</p>
-              
+
               <p>The foreign special forces - from the same unit that conducted high-profile assassinations - approached in mini-submarines, then swam to shore under cover of darkness.</p>
-              
+
               <p>Believing their mission was compromised when a small American fishing boat approached, the foreign operatives opened fire, killing 2-3 American civilians who were simply fishing to make a living.</p>
-              
+
               <p>To cover their tracks, the foreign soldiers used knives to puncture the victims' lungs so their bodies would sink to the bottom.</p>
             </div>
           </CardContent>
@@ -306,78 +306,81 @@ export default function NavySealsCiviliansContent() {
 
         {!feelingSelected ? (
           <div className="text-center mb-8">
-            <p className="text-xl font-semibold mb-6">How does this story make you feel? What's your judgment?</p>
-            <p className="text-base text-muted-foreground mb-6">Tap your reaction below ↓</p>
+            <p className="text-xl font-semibold mb-6" style={{ color: '#e8e4df' }}>How does this story make you feel? What's your judgment?</p>
+            <p className="text-base mb-6" style={{ color: '#e8e4df', opacity: 0.7 }}>Tap your reaction below</p>
             <div className="grid gap-4 max-w-2xl mx-auto">
-              <Button 
-                variant="outline" 
-                className="w-full p-4 min-h-[60px] text-left justify-start hover:bg-red-50 hover:border-red-300 dark:hover:bg-red-950 touch-manipulation"
+              <Button
+                variant="outline"
+                className="w-full p-4 min-h-[60px] text-left justify-start touch-manipulation"
+                style={{ borderColor: '#1b4965', color: '#e8e4df' }}
                 onClick={() => handleFeeling('outrage')}
               >
-                <span className="text-lg">😡 Outrage - This is terrorism!</span>
+                <span className="text-lg">Outrage - This is terrorism!</span>
               </Button>
-              <Button 
-                variant="outline" 
-                className="w-full p-4 min-h-[60px] text-left justify-start hover:bg-orange-50 hover:border-orange-300 dark:hover:bg-orange-950 touch-manipulation"
+              <Button
+                variant="outline"
+                className="w-full p-4 min-h-[60px] text-left justify-start touch-manipulation"
+                style={{ borderColor: '#1b4965', color: '#e8e4df' }}
                 onClick={() => handleFeeling('concern')}
               >
-                <span className="text-lg">😰 Concern - Investigate this!</span>
+                <span className="text-lg">Concern - Investigate this!</span>
               </Button>
-              <Button 
-                variant="outline" 
-                className="w-full p-4 min-h-[60px] text-left justify-start hover:bg-red-50 hover:border-red-300 dark:hover:bg-red-950 touch-manipulation"
+              <Button
+                variant="outline"
+                className="w-full p-4 min-h-[60px] text-left justify-start touch-manipulation"
+                style={{ borderColor: '#1b4965', color: '#e8e4df' }}
                 onClick={() => handleFeeling('anger')}
               >
-                <span className="text-lg">😠 Anger - Punish the perpetrators!</span>
+                <span className="text-lg">Anger - Punish the perpetrators!</span>
               </Button>
             </div>
           </div>
         ) : !showPlotTwist ? (
           <div className="text-center mb-8">
-            <Card className="border-blue-200 bg-blue-50/50 dark:bg-blue-900/20 dark:border-blue-800">
+            <Card style={{ backgroundColor: 'rgba(27, 73, 101, 0.3)', borderColor: '#1b4965' }}>
               <CardContent className="p-6">
-                <p className="text-xl font-semibold mb-3 text-blue-800 dark:text-blue-200">
-                  Your reaction: {feelingSelected === 'outrage' ? '😡 Outrage' : feelingSelected === 'concern' ? '😰 Concern' : '😠 Anger'}
+                <p className="text-xl font-semibold mb-3" style={{ color: '#e8e4df' }}>
+                  Your reaction: {feelingSelected === 'outrage' ? 'Outrage' : feelingSelected === 'concern' ? 'Concern' : 'Anger'}
                 </p>
-                <p className="text-lg text-blue-800 dark:text-blue-200 mb-4">
+                <p className="text-lg mb-4" style={{ color: '#e8e4df' }}>
                   That's a completely natural response to reading about foreign forces killing innocent civilians...
                 </p>
                 <div className="flex items-center justify-center space-x-2">
-                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
-                  <span className="text-blue-800 dark:text-blue-200">Preparing to reveal the truth...</span>
+                  <div className="animate-spin rounded-full h-6 w-6" style={{ borderBottomWidth: '2px', borderColor: '#1b4965' }}></div>
+                  <span style={{ color: '#e8e4df' }}>Preparing to reveal the truth...</span>
                 </div>
               </CardContent>
             </Card>
           </div>
         ) : (
           <>
-            <Card className="mb-8 border-yellow-200 bg-yellow-50/50 dark:bg-yellow-900/20 dark:border-yellow-800">
+            <Card className="mb-8" style={{ backgroundColor: 'rgba(212, 167, 74, 0.15)', borderColor: '#d4a74a' }}>
               <CardHeader>
-                <CardTitle className="text-yellow-800 dark:text-yellow-200">⚠️ Plot Twist</CardTitle>
+                <CardTitle style={{ color: '#d4a74a' }}>Plot Twist</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-xl font-semibold mb-4 text-yellow-800 dark:text-yellow-200">
+                <p className="text-xl font-semibold mb-4" style={{ color: '#e8e4df' }}>
                   The "foreign forces" were US Navy SEALs.
                 </p>
-                <p className="text-xl font-semibold mb-4 text-yellow-800 dark:text-yellow-200">
+                <p className="text-xl font-semibold mb-4" style={{ color: '#e8e4df' }}>
                   The "American civilians" were DPRK fishermen.
                 </p>
-                <p className="text-lg text-yellow-800 dark:text-yellow-200">
+                <p className="text-lg" style={{ color: '#e8e4df' }}>
                   This actually happened in 2019. Military reviews found the killings "justified." The details were classified and kept from congressional oversight.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="mb-8 border-purple-200 bg-purple-50/50 dark:bg-purple-900/20 dark:border-purple-800">
+            <Card className="mb-8" style={{ backgroundColor: 'rgba(27, 73, 101, 0.3)', borderColor: '#1b4965' }}>
               <CardHeader>
-                <CardTitle className="text-purple-800 dark:text-purple-200">🤔 Your Reaction Changed?</CardTitle>
+                <CardTitle style={{ color: '#e8e4df' }}>Your Reaction Changed?</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg text-purple-800 dark:text-purple-200">
-                  You felt {feelingSelected === 'outrage' ? 'outrage' : feelingSelected === 'concern' ? 'concern' : 'anger'} when you thought foreign forces killed Americans. 
+                <p className="text-lg" style={{ color: '#e8e4df' }}>
+                  You felt {feelingSelected === 'outrage' ? 'outrage' : feelingSelected === 'concern' ? 'concern' : 'anger'} when you thought foreign forces killed Americans.
                   How do you feel now knowing it was American forces killing DPRK citizens?
                 </p>
-                <p className="text-lg font-semibold mt-3 text-purple-800 dark:text-purple-200">
+                <p className="text-lg font-semibold mt-3" style={{ color: '#e8e4df' }}>
                   This is exactly how perspective shapes our judgment of identical actions.
                 </p>
               </CardContent>
@@ -385,19 +388,19 @@ export default function NavySealsCiviliansContent() {
           </>
         )}
 
-        <Card className="mb-8">
+        <Card className="mb-8" style={{ backgroundColor: 'rgba(27, 73, 101, 0.3)', borderColor: '#1b4965' }}>
           <CardHeader>
-            <CardTitle>🎯 The Point of This Journey</CardTitle>
+            <CardTitle style={{ color: '#d4a74a' }}>The Point of This Journey</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-4" style={{ color: '#e8e4df' }}>
             <p className="text-lg">
               Throughout history, the same actions have been judged completely differently depending on perspective:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Mandela: "Terrorist" → Nobel Peace Prize winner</li>
-              <li>Castro: "Dictator" → Healthcare pioneer (according to WHO)</li>
-              <li>Gaddafi: "Mad Dog" → Provided highest African living standards</li>
-              <li>Navy SEALs: "Heroes" → Killed unarmed civilians (same as above)</li>
+              <li>Mandela: "Terrorist" to Nobel Peace Prize winner</li>
+              <li>Castro: "Dictator" to Healthcare pioneer (according to WHO)</li>
+              <li>Gaddafi: "Mad Dog" to Provided highest African living standards</li>
+              <li>Navy SEALs: "Heroes" to Killed unarmed civilians (same as above)</li>
             </ul>
             <p className="text-lg">
               We are all human. We all make mistakes. We all deserve to be judged by the same standards.
@@ -409,23 +412,25 @@ export default function NavySealsCiviliansContent() {
         </Card>
 
         <div className="text-center">
-          <Button 
+          <Button
             onClick={resetJourney}
             variant="outline"
             className="px-8 py-4 min-h-[48px] touch-manipulation"
+            style={{ borderColor: '#1b4965', color: '#e8e4df' }}
           >
             Take the Journey Again
           </Button>
         </div>
 
-        <div className="mt-8 border-l-4 border-accent pl-6">
-          <h3 className="text-xl font-bold mb-4">Sources</h3>
-          <p className="text-muted-foreground mb-2">Navy SEAL story:</p>
-          <a 
+        <div className="mt-8 pl-6" style={{ borderLeft: '4px solid #d4a74a' }}>
+          <h3 className="text-xl font-bold mb-4" style={{ color: '#e8e4df' }}>Sources</h3>
+          <p className="mb-2" style={{ color: '#e8e4df', opacity: 0.7 }}>Navy SEAL story:</p>
+          <a
             href="https://www.ctvnews.ca/world/article/us-navy-seals-botched-secret-2019-mission-in-north-korea-report/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent hover:underline"
+            className="hover:underline"
+            style={{ color: '#d4a74a' }}
           >
             CTV News: US Navy SEALs botched secret 2019 mission in the DPRK
           </a>

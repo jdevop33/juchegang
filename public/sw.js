@@ -1,9 +1,10 @@
-const CACHE_NAME = 'juche-gang-v4';
+const CACHE_NAME = 'juche-gang-v6';
 const urlsToCache = [
   '/',
   '/manifest.json',
   '/favicon.svg',
   '/logo-icon-gang.png',
+  '/images/hero-strait.png',
   '/offline.html'
 ];
 

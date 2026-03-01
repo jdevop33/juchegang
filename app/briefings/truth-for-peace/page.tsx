@@ -21,7 +21,7 @@ export const metadata = {
 
 export default function TruthForPeaceBriefing() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen" style={{ backgroundColor: '#0d1b2a', color: '#e8e4df' }}>
       <JucheHeader />
   <BriefingBanner src="/images/coolgang2.png" alt="Truth for peace" aspect="12/5" contain overlay="bottom" />
       <TruthForPeaceContent />

@@ -21,7 +21,7 @@ export const metadata = {
 
 export default function UkraineDeceptionBriefing() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-river-depths text-cream">
       <JucheHeader />
   <BriefingBanner src="/images/coolgang2.png" alt="Ukraine deception" aspect="12/5" contain overlay="bottom" />
       <UkraineDeceptionContent />
