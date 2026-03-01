@@ -64,9 +64,21 @@ export default function MissionPage() {
   return (
     <>
       <JucheHeader />
-      <main id="main-content" className="min-h-screen bg-[#0d1b2a] pt-20">
-      {/* Hero Section */}
-      <section className="relative py-20 px-4">
+      <main id="main-content" className="min-h-screen bg-[#0d1b2a]">
+      {/* Hero Image */}
+      <section className="relative h-[50vh] min-h-[400px]">
+        <div className="absolute inset-0">
+          <img
+            src="/images/paektu-golden.jpg"
+            alt="Mount Paektu at sunrise"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/60 via-transparent to-[#0d1b2a]" />
+        </div>
+      </section>
+
+      {/* Content Section */}
+      <section className="relative py-20 px-4 -mt-32">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

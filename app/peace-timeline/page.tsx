@@ -169,9 +169,21 @@ export default function PeaceTimelinePage() {
   return (
     <>
       <JucheHeader />
-      <main id="main-content" className="min-h-screen bg-[#0d1b2a] pt-20">
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden">
+      <main id="main-content" className="min-h-screen bg-[#0d1b2a]">
+      {/* Hero Image */}
+      <section className="relative h-[50vh] min-h-[400px]">
+        <div className="absolute inset-0">
+          <img
+            src="/images/paektu-winter.jpg"
+            alt="Mount Paektu in winter"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/50 via-transparent to-[#0d1b2a]" />
+        </div>
+      </section>
+
+      {/* Content Section */}
+      <section className="relative py-20 px-4 overflow-hidden -mt-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -37,5 +37,3 @@ export default async function OpEdPage() {
     </div>
   )
 }
-
-

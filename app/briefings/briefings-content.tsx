@@ -7,7 +7,20 @@ export default function BriefingsContent() {
   const { t } = useLanguage()
 
   return (
-    <section className="container mx-auto px-4 pt-28 pb-16 bg-[#0d1b2a] min-h-screen">
+    <>
+    {/* Hero Image */}
+    <section className="relative h-[40vh] min-h-[300px]">
+      <div className="absolute inset-0">
+        <img
+          src="/images/paektu-sunset.jpg"
+          alt="Mount Paektu at sunset"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/40 via-transparent to-[#0d1b2a]" />
+      </div>
+    </section>
+
+    <section className="container mx-auto px-4 pb-16 bg-[#0d1b2a] min-h-screen -mt-24 relative z-10">
       <header className="mb-10 text-center">
         <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-[#1b4965]/30 text-[#d4a74a] rounded-full text-sm font-medium">
           {t('briefings')}
@@ -188,5 +201,6 @@ export default function BriefingsContent() {
         </li>
       </ul>
     </section>
+    </>
   )
 }

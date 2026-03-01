@@ -25,32 +25,32 @@ export default function LiberationFrameworksPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black">
+    <div className="min-h-screen" style={{ background: 'linear-gradient(to bottom, #0d1b2a, #0d1b2a)' }}>
       <div className="container mx-auto px-4 py-8">
-        <Link href="/truth-project" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-8 transition-colors">
+        <Link href="/truth-project" className="inline-flex items-center gap-2 mb-8 transition-colors" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>
           <ArrowLeft className="h-4 w-4" />
           Back to Truth Project
         </Link>
 
         <div className="mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4" style={{ color: '#e8e4df' }}>
             Liberation Frameworks
           </h1>
-          <p className="text-xl text-white/80 max-w-4xl">
+          <p className="text-xl max-w-4xl" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
             Practical tools for breaking free from manipulation and building genuine human connection. Your step-by-step guide to liberation.
           </p>
         </div>
 
         {/* Liberation Promise */}
-        <div className="mb-12 bg-gradient-to-r from-green-900/30 via-blue-900/30 to-green-900/30 rounded-2xl p-8 border border-green-500/20">
+        <div className="mb-12 rounded-2xl p-8" style={{ background: 'linear-gradient(to right, rgba(212, 167, 74, 0.15), rgba(27, 73, 101, 0.15), rgba(212, 167, 74, 0.15))', border: '1px solid rgba(212, 167, 74, 0.2)' }}>
           <div className="text-center">
-            <Zap className="w-12 h-12 text-green-400 mx-auto mb-4" />
-            <h2 className="text-3xl font-bold text-white mb-4">The Most Revolutionary Act</h2>
-            <p className="text-xl text-white/90 mb-4">
+            <Zap className="w-12 h-12 mx-auto mb-4" style={{ color: '#d4a74a' }} />
+            <h2 className="text-3xl font-bold mb-4" style={{ color: '#e8e4df' }}>The Most Revolutionary Act</h2>
+            <p className="text-xl mb-4" style={{ color: 'rgba(232, 228, 223, 0.9)' }}>
               In a system built on division, unity is revolution
             </p>
-            <p className="text-white/80 max-w-3xl mx-auto">
-              Every framework here is designed for one purpose: helping you recognize manipulation, build authentic relationships, 
+            <p className="max-w-3xl mx-auto" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
+              Every framework here is designed for one purpose: helping you recognize manipulation, build authentic relationships,
               and create the cooperative future humanity deserves. This isn't theory - it's liberation technology.
             </p>
           </div>
@@ -66,9 +66,9 @@ export default function LiberationFrameworksPage() {
           color="red"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-red-400 mb-4">Step-by-Step Deconditioning</h3>
-              
+            <div className="rounded-lg p-6" style={{ background: 'rgba(0,0,0,0.3)' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#c73032' }}>Step-by-Step Deconditioning</h3>
+
               <div className="space-y-4">
                 <ProtocolStep
                   id="step1"
@@ -84,7 +84,7 @@ export default function LiberationFrameworksPage() {
                     "Ask: 'Who profits from my emotional reaction to this content?'"
                   ]}
                 />
-                
+
                 <ProtocolStep
                   id="step2"
                   number={2}
@@ -99,7 +99,7 @@ export default function LiberationFrameworksPage() {
                     "Use VPN to see what content is geoblocked in your region"
                   ]}
                 />
-                
+
                 <ProtocolStep
                   id="step3"
                   number={3}
@@ -114,7 +114,7 @@ export default function LiberationFrameworksPage() {
                     "Track your emotional responses for a week - what patterns emerge?"
                   ]}
                 />
-                
+
                 <ProtocolStep
                   id="step4"
                   number={4}
@@ -132,12 +132,12 @@ export default function LiberationFrameworksPage() {
               </div>
             </div>
 
-            <div className="bg-red-900/20 rounded-lg p-6 border border-red-500/30">
-              <h4 className="text-red-400 font-bold mb-3">Advanced Deprogram Techniques</h4>
+            <div className="rounded-lg p-6" style={{ background: 'rgba(199, 48, 50, 0.1)', border: '1px solid rgba(199, 48, 50, 0.3)' }}>
+              <h4 className="font-bold mb-3" style={{ color: '#c73032' }}>Advanced Deprogram Techniques</h4>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h5 className="text-white font-medium mb-2">Pattern Recognition</h5>
-                  <ul className="text-white/80 text-sm space-y-1">
+                  <h5 className="font-medium mb-2" style={{ color: '#e8e4df' }}>Pattern Recognition</h5>
+                  <ul className="text-sm space-y-1" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• Notice when multiple outlets use identical phrases</li>
                     <li>• Track how "crises" conveniently distract from other news</li>
                     <li>• Observe which voices get platformed vs silenced</li>
@@ -145,8 +145,8 @@ export default function LiberationFrameworksPage() {
                   </ul>
                 </div>
                 <div>
-                  <h5 className="text-white font-medium mb-2">Historical Context</h5>
-                  <ul className="text-white/80 text-sm space-y-1">
+                  <h5 className="font-medium mb-2" style={{ color: '#e8e4df' }}>Historical Context</h5>
+                  <ul className="text-sm space-y-1" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• Every "new" crisis follows old playbooks</li>
                     <li>• Study how past manufactured conflicts started</li>
                     <li>• Research declassified documents to see patterns</li>
@@ -168,13 +168,13 @@ export default function LiberationFrameworksPage() {
           color="blue"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-blue-400 mb-4">Creating Authentic Connection</h3>
-              
+            <div className="rounded-lg p-6" style={{ background: 'rgba(0,0,0,0.3)' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#1b4965' }}>Creating Authentic Connection</h3>
+
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-blue-900/20 rounded-lg p-4 border border-blue-500/30">
-                  <h4 className="font-bold text-white mb-3">Circle Principles</h4>
-                  <ul className="space-y-2 text-white/80 text-sm">
+                <div className="rounded-lg p-4" style={{ background: 'rgba(27, 73, 101, 0.2)', border: '1px solid rgba(27, 73, 101, 0.3)' }}>
+                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Circle Principles</h4>
+                  <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• Everyone's voice matters equally</li>
                     <li>• Speak from personal experience, not ideology</li>
                     <li>• Listen to understand, not to argue</li>
@@ -182,10 +182,10 @@ export default function LiberationFrameworksPage() {
                     <li>• Focus on what unites rather than divides</li>
                   </ul>
                 </div>
-                
-                <div className="bg-green-900/20 rounded-lg p-4 border border-green-500/30">
-                  <h4 className="font-bold text-white mb-3">Circle Structure</h4>
-                  <ul className="space-y-2 text-white/80 text-sm">
+
+                <div className="rounded-lg p-4" style={{ background: 'rgba(212, 167, 74, 0.1)', border: '1px solid rgba(212, 167, 74, 0.3)' }}>
+                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Circle Structure</h4>
+                  <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• Opening: Share name and current feeling</li>
                     <li>• Check-in: What's alive for you right now?</li>
                     <li>• Topic exploration: Use prompts below</li>
@@ -195,12 +195,12 @@ export default function LiberationFrameworksPage() {
                 </div>
               </div>
 
-              <div className="mt-6 bg-black/20 rounded-lg p-4">
-                <h4 className="text-blue-400 font-bold mb-3">Unity Prompts</h4>
+              <div className="mt-6 rounded-lg p-4" style={{ background: 'rgba(0,0,0,0.2)' }}>
+                <h4 className="font-bold mb-3" style={{ color: '#1b4965' }}>Unity Prompts</h4>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <h5 className="text-white font-medium mb-2">Bridging Questions</h5>
-                    <ul className="text-white/80 text-sm space-y-1">
+                    <h5 className="font-medium mb-2" style={{ color: '#e8e4df' }}>Bridging Questions</h5>
+                    <ul className="text-sm space-y-1" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                       <li>• "When have you felt most connected to others?"</li>
                       <li>• "What do you most want for your children?"</li>
                       <li>• "Describe a time someone showed you unexpected kindness"</li>
@@ -208,8 +208,8 @@ export default function LiberationFrameworksPage() {
                     </ul>
                   </div>
                   <div>
-                    <h5 className="text-white font-medium mb-2">Depth Questions</h5>
-                    <ul className="text-white/80 text-sm space-y-1">
+                    <h5 className="font-medium mb-2" style={{ color: '#e8e4df' }}>Depth Questions</h5>
+                    <ul className="text-sm space-y-1" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                       <li>• "What fear keeps you awake at night?"</li>
                       <li>• "When do you feel most misunderstood?"</li>
                       <li>• "What would you risk everything to protect?"</li>
@@ -220,36 +220,36 @@ export default function LiberationFrameworksPage() {
               </div>
             </div>
 
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-blue-400 mb-4">Practical Implementation</h3>
-              
+            <div className="rounded-lg p-6" style={{ background: 'rgba(0,0,0,0.3)' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#1b4965' }}>Practical Implementation</h3>
+
               <div className="space-y-4">
-                <div className="bg-white/5 rounded p-4">
-                  <h5 className="text-blue-300 font-medium mb-2">Start Small: Family Circles</h5>
-                  <p className="text-white/80 text-sm mb-2">
+                <div className="rounded p-4" style={{ background: 'rgba(255,255,255,0.05)' }}>
+                  <h5 className="font-medium mb-2" style={{ color: '#1b4965' }}>Start Small: Family Circles</h5>
+                  <p className="text-sm mb-2" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     Begin with weekly family check-ins using circle principles. Replace debate with curiosity.
                   </p>
-                  <p className="text-white/60 text-xs">
+                  <p className="text-xs" style={{ color: 'rgba(232, 228, 223, 0.6)' }}>
                     "Instead of arguing about politics, ask: 'What experiences led you to feel this way?'"
                   </p>
                 </div>
-                
-                <div className="bg-white/5 rounded p-4">
-                  <h5 className="text-blue-300 font-medium mb-2">Expand: Neighborhood Circles</h5>
-                  <p className="text-white/80 text-sm mb-2">
+
+                <div className="rounded p-4" style={{ background: 'rgba(255,255,255,0.05)' }}>
+                  <h5 className="font-medium mb-2" style={{ color: '#1b4965' }}>Expand: Neighborhood Circles</h5>
+                  <p className="text-sm mb-2" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     Organize monthly gatherings focused on shared concerns rather than political positions.
                   </p>
-                  <p className="text-white/60 text-xs">
+                  <p className="text-xs" style={{ color: 'rgba(232, 228, 223, 0.6)' }}>
                     "Topics: Community safety, youth programs, supporting local businesses, environmental care"
                   </p>
                 </div>
-                
-                <div className="bg-white/5 rounded p-4">
-                  <h5 className="text-blue-300 font-medium mb-2">Scale: Movement Building</h5>
-                  <p className="text-white/80 text-sm mb-2">
+
+                <div className="rounded p-4" style={{ background: 'rgba(255,255,255,0.05)' }}>
+                  <h5 className="font-medium mb-2" style={{ color: '#1b4965' }}>Scale: Movement Building</h5>
+                  <p className="text-sm mb-2" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     Create networks of circles that share learnings and coordinate action.
                   </p>
-                  <p className="text-white/60 text-xs">
+                  <p className="text-xs" style={{ color: 'rgba(232, 228, 223, 0.6)' }}>
                     "When people feel heard and valued, they naturally want to extend that to others"
                   </p>
                 </div>
@@ -268,13 +268,13 @@ export default function LiberationFrameworksPage() {
           color="green"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-green-400 mb-4">Building Economic Alternatives</h3>
-              
+            <div className="rounded-lg p-6" style={{ background: 'rgba(0,0,0,0.3)' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#d4a74a' }}>Building Economic Alternatives</h3>
+
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-green-900/20 rounded-lg p-4 border border-green-500/30">
-                  <h4 className="font-bold text-white mb-3">Individual Level</h4>
-                  <ul className="space-y-2 text-white/80 text-sm">
+                <div className="rounded-lg p-4" style={{ background: 'rgba(212, 167, 74, 0.1)', border: '1px solid rgba(212, 167, 74, 0.3)' }}>
+                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Individual Level</h4>
+                  <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• Build multiple income streams</li>
                     <li>• Learn practical skills (food, repair, health)</li>
                     <li>• Reduce consumption dependencies</li>
@@ -282,10 +282,10 @@ export default function LiberationFrameworksPage() {
                     <li>• Join or create skill-sharing networks</li>
                   </ul>
                 </div>
-                
-                <div className="bg-blue-900/20 rounded-lg p-4 border border-blue-500/30">
-                  <h4 className="font-bold text-white mb-3">Community Level</h4>
-                  <ul className="space-y-2 text-white/80 text-sm">
+
+                <div className="rounded-lg p-4" style={{ background: 'rgba(27, 73, 101, 0.2)', border: '1px solid rgba(27, 73, 101, 0.3)' }}>
+                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Community Level</h4>
+                  <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• Start time banks for skill exchange</li>
                     <li>• Create community gardens</li>
                     <li>• Establish local currency systems</li>
@@ -293,10 +293,10 @@ export default function LiberationFrameworksPage() {
                     <li>• Organize tool libraries</li>
                   </ul>
                 </div>
-                
-                <div className="bg-purple-900/20 rounded-lg p-4 border border-purple-500/30">
-                  <h4 className="font-bold text-white mb-3">Regional Level</h4>
-                  <ul className="space-y-2 text-white/80 text-sm">
+
+                <div className="rounded-lg p-4" style={{ background: 'rgba(27, 73, 101, 0.15)', border: '1px solid rgba(27, 73, 101, 0.25)' }}>
+                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Regional Level</h4>
+                  <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• Worker-owned enterprises</li>
                     <li>• Community land trusts</li>
                     <li>• Participatory budgeting</li>
@@ -307,9 +307,9 @@ export default function LiberationFrameworksPage() {
               </div>
             </div>
 
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-green-400 mb-4">Success Models to Study</h3>
-              
+            <div className="rounded-lg p-6" style={{ background: 'rgba(0,0,0,0.3)' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#d4a74a' }}>Success Models to Study</h3>
+
               <div className="space-y-4">
                 <ModelCard
                   title="Mondragón Corporation (Spain)"
@@ -317,14 +317,14 @@ export default function LiberationFrameworksPage() {
                   impact="Democratically owned businesses, shared profits, community investment"
                   lesson="Worker ownership creates prosperity and solidarity simultaneously"
                 />
-                
+
                 <ModelCard
                   title="Jackson, Mississippi Cooperation"
                   description="Network of worker cooperatives in historically oppressed communities"
                   impact="Black-owned cooperative economy, local food production, democratic participation"
                   lesson="Economic democracy is racial justice in action"
                 />
-                
+
                 <ModelCard
                   title="Kerala, India Development Model"
                   description="High human development despite low GDP through cooperative economics"
@@ -346,14 +346,14 @@ export default function LiberationFrameworksPage() {
           color="purple"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-purple-400 mb-4">Building Information Independence</h3>
-              
+            <div className="rounded-lg p-6" style={{ background: 'rgba(0,0,0,0.3)' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#1b4965' }}>Building Information Independence</h3>
+
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
-                  <div className="bg-purple-900/20 rounded-lg p-4 border border-purple-500/30">
-                    <h4 className="font-bold text-white mb-3">Personal Information Diet</h4>
-                    <ul className="space-y-2 text-white/80 text-sm">
+                  <div className="rounded-lg p-4" style={{ background: 'rgba(27, 73, 101, 0.2)', border: '1px solid rgba(27, 73, 101, 0.3)' }}>
+                    <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Personal Information Diet</h4>
+                    <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                       <li>• Eliminate corporate social media feeds</li>
                       <li>• Follow independent journalists directly</li>
                       <li>• Read primary sources and documents</li>
@@ -361,10 +361,10 @@ export default function LiberationFrameworksPage() {
                       <li>• Practice information fasting regularly</li>
                     </ul>
                   </div>
-                  
-                  <div className="bg-blue-900/20 rounded-lg p-4 border border-blue-500/30">
-                    <h4 className="font-bold text-white mb-3">Community Media</h4>
-                    <ul className="space-y-2 text-white/80 text-sm">
+
+                  <div className="rounded-lg p-4" style={{ background: 'rgba(27, 73, 101, 0.15)', border: '1px solid rgba(27, 73, 101, 0.25)' }}>
+                    <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Community Media</h4>
+                    <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                       <li>• Start neighborhood newsletters</li>
                       <li>• Create podcast/video collectives</li>
                       <li>• Organize community storytelling events</li>
@@ -373,27 +373,27 @@ export default function LiberationFrameworksPage() {
                     </ul>
                   </div>
                 </div>
-                
-                <div className="bg-black/20 rounded-lg p-4">
-                  <h4 className="text-purple-400 font-bold mb-3">Decentralized Networks</h4>
+
+                <div className="rounded-lg p-4" style={{ background: 'rgba(0,0,0,0.2)' }}>
+                  <h4 className="font-bold mb-3" style={{ color: '#1b4965' }}>Decentralized Networks</h4>
                   <div className="space-y-3">
-                    <div className="p-3 bg-white/5 rounded">
-                      <h5 className="text-yellow-400 font-medium mb-1">Mesh Networks</h5>
-                      <p className="text-white/80 text-sm">
+                    <div className="p-3 rounded" style={{ background: 'rgba(255,255,255,0.05)' }}>
+                      <h5 className="font-medium mb-1" style={{ color: '#d4a74a' }}>Mesh Networks</h5>
+                      <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                         Build communication systems that can't be centrally controlled or shut down
                       </p>
                     </div>
-                    
-                    <div className="p-3 bg-white/5 rounded">
-                      <h5 className="text-green-400 font-medium mb-1">Peer-to-Peer Platforms</h5>
-                      <p className="text-white/80 text-sm">
+
+                    <div className="p-3 rounded" style={{ background: 'rgba(255,255,255,0.05)' }}>
+                      <h5 className="font-medium mb-1" style={{ color: '#d4a74a' }}>Peer-to-Peer Platforms</h5>
+                      <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                         Share information directly without corporate intermediaries
                       </p>
                     </div>
-                    
-                    <div className="p-3 bg-white/5 rounded">
-                      <h5 className="text-blue-400 font-medium mb-1">Encrypted Communication</h5>
-                      <p className="text-white/80 text-sm">
+
+                    <div className="p-3 rounded" style={{ background: 'rgba(255,255,255,0.05)' }}>
+                      <h5 className="font-medium mb-1" style={{ color: '#1b4965' }}>Encrypted Communication</h5>
+                      <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                         Protect organizing conversations from surveillance
                       </p>
                     </div>
@@ -414,25 +414,25 @@ export default function LiberationFrameworksPage() {
           color="yellow"
         >
           <div className="space-y-6">
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-yellow-400 mb-4">Turning Understanding into Movement</h3>
-              
+            <div className="rounded-lg p-6" style={{ background: 'rgba(0,0,0,0.3)' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#d4a74a' }}>Turning Understanding into Movement</h3>
+
               <div className="space-y-6">
-                <div className="bg-yellow-900/20 rounded-lg p-6 border border-yellow-500/30">
-                  <h4 className="font-bold text-white mb-4">The Compassion Bridge</h4>
-                  <p className="text-white/90 mb-4">
-                    Understanding manipulation creates two paths: cynicism or compassion. Choose compassion. 
+                <div className="rounded-lg p-6" style={{ background: 'rgba(212, 167, 74, 0.1)', border: '1px solid rgba(212, 167, 74, 0.3)' }}>
+                  <h4 className="font-bold mb-4" style={{ color: '#e8e4df' }}>The Compassion Bridge</h4>
+                  <p className="mb-4" style={{ color: 'rgba(232, 228, 223, 0.9)' }}>
+                    Understanding manipulation creates two paths: cynicism or compassion. Choose compassion.
                     Everyone caught in manufactured division is a victim of the same system.
                   </p>
-                  <blockquote className="border-l-4 border-yellow-500 pl-4 text-yellow-300 italic">
+                  <blockquote className="pl-4 italic" style={{ borderLeft: '4px solid #d4a74a', color: '#d4a74a' }}>
                     "Hurt people hurt people. Healed people heal people. Which do you choose to be?"
                   </blockquote>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-green-900/20 rounded-lg p-4 border border-green-500/30">
-                    <h4 className="font-bold text-white mb-3">Immediate Actions</h4>
-                    <ul className="space-y-2 text-white/80 text-sm">
+                  <div className="rounded-lg p-4" style={{ background: 'rgba(212, 167, 74, 0.1)', border: '1px solid rgba(212, 167, 74, 0.3)' }}>
+                    <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Immediate Actions</h4>
+                    <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                       <li>• Practice radical listening with someone you disagree with</li>
                       <li>• Find one area of common ground with a "political enemy"</li>
                       <li>• Share resources across ideological lines</li>
@@ -440,10 +440,10 @@ export default function LiberationFrameworksPage() {
                       <li>• Build bridges between divided communities</li>
                     </ul>
                   </div>
-                  
-                  <div className="bg-red-900/20 rounded-lg p-4 border border-red-500/30">
-                    <h4 className="font-bold text-white mb-3">Strategic Actions</h4>
-                    <ul className="space-y-2 text-white/80 text-sm">
+
+                  <div className="rounded-lg p-4" style={{ background: 'rgba(199, 48, 50, 0.1)', border: '1px solid rgba(199, 48, 50, 0.3)' }}>
+                    <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Strategic Actions</h4>
+                    <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                       <li>• Organize around shared material needs</li>
                       <li>• Create alternatives to systems that divide</li>
                       <li>• Document and share success stories</li>
@@ -455,25 +455,25 @@ export default function LiberationFrameworksPage() {
               </div>
             </div>
 
-            <div className="bg-black/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-yellow-400 mb-4">The Liberation Commitment</h3>
-              
-              <div className="bg-gradient-to-r from-yellow-900/20 to-orange-900/20 rounded-lg p-6 border border-yellow-500/30">
+            <div className="rounded-lg p-6" style={{ background: 'rgba(0,0,0,0.3)' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#d4a74a' }}>The Liberation Commitment</h3>
+
+              <div className="rounded-lg p-6" style={{ background: 'linear-gradient(to right, rgba(212, 167, 74, 0.1), rgba(212, 167, 74, 0.15))', border: '1px solid rgba(212, 167, 74, 0.3)' }}>
                 <div className="text-center">
-                  <p className="text-xl text-white/90 mb-4">
+                  <p className="text-xl mb-4" style={{ color: 'rgba(232, 228, 223, 0.9)' }}>
                     "I commit to seeing through manufactured division to our shared humanity."
                   </p>
-                  <p className="text-lg text-white/80 mb-4">
+                  <p className="text-lg mb-4" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     "I will build bridges where others build walls."
                   </p>
-                  <p className="text-lg text-white/80 mb-6">
+                  <p className="text-lg mb-6" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     "I will choose cooperation over competition, understanding over judgment, love over fear."
                   </p>
-                  
-                  <div className="inline-flex items-center gap-4 bg-black/30 rounded-lg p-4">
-                    <Heart className="w-6 h-6 text-red-400" />
-                    <span className="text-white font-medium">Your liberation is bound up with mine</span>
-                    <Heart className="w-6 h-6 text-red-400" />
+
+                  <div className="inline-flex items-center gap-4 rounded-lg p-4" style={{ background: 'rgba(0,0,0,0.3)' }}>
+                    <Heart className="w-6 h-6" style={{ color: '#c73032' }} />
+                    <span className="font-medium" style={{ color: '#e8e4df' }}>Your liberation is bound up with mine</span>
+                    <Heart className="w-6 h-6" style={{ color: '#c73032' }} />
                   </div>
                 </div>
               </div>
@@ -482,38 +482,38 @@ export default function LiberationFrameworksPage() {
         </Section>
 
         {/* Implementation Roadmap */}
-        <div className="mt-12 bg-gradient-to-r from-blue-900/20 via-purple-900/20 to-blue-900/20 rounded-xl p-8 border border-blue-500/30">
-          <h2 className="text-3xl font-bold text-white mb-6 text-center">Your Liberation Journey</h2>
-          
+        <div className="mt-12 rounded-xl p-8" style={{ background: 'linear-gradient(to right, rgba(27, 73, 101, 0.2), rgba(27, 73, 101, 0.15), rgba(27, 73, 101, 0.2))', border: '1px solid rgba(27, 73, 101, 0.3)' }}>
+          <h2 className="text-3xl font-bold mb-6 text-center" style={{ color: '#e8e4df' }}>Your Liberation Journey</h2>
+
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-4xl mb-3">🧠</div>
-              <h3 className="text-xl font-bold text-blue-400 mb-2">Week 1-2: Deprogram</h3>
-              <p className="text-white/80 text-sm">
+              <h3 className="text-xl font-bold mb-2" style={{ color: '#1b4965' }}>Week 1-2: Deprogram</h3>
+              <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                 Break free from manufactured outrage and information manipulation
               </p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-3">🤝</div>
-              <h3 className="text-xl font-bold text-green-400 mb-2">Week 3-4: Connect</h3>
-              <p className="text-white/80 text-sm">
+              <h3 className="text-xl font-bold mb-2" style={{ color: '#d4a74a' }}>Week 3-4: Connect</h3>
+              <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                 Build authentic relationships across difference through circle practices
               </p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-3">🌟</div>
-              <h3 className="text-xl font-bold text-yellow-400 mb-2">Ongoing: Create</h3>
-              <p className="text-white/80 text-sm">
+              <h3 className="text-xl font-bold mb-2" style={{ color: '#d4a74a' }}>Ongoing: Create</h3>
+              <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                 Build cooperative alternatives and share liberation frameworks
               </p>
             </div>
           </div>
-          
+
           <div className="mt-8 text-center">
-            <p className="text-lg text-white/90 mb-4">
+            <p className="text-lg mb-4" style={{ color: 'rgba(232, 228, 223, 0.9)' }}>
               Remember: This isn't about perfection. It's about direction.
             </p>
-            <p className="text-white/80">
+            <p style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
               Every small act of connection in a world designed to divide us is revolutionary.
             </p>
           </div>
@@ -521,13 +521,13 @@ export default function LiberationFrameworksPage() {
 
         {/* Call to Action */}
         <div className="mt-8 flex flex-wrap gap-4 justify-center">
-          <Link href="/truth-project/empires-receipts" className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors">
+          <Link href="/truth-project/empires-receipts" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: '#c73032', color: '#e8e4df' }}>
             Start with Truth
           </Link>
-          <Link href="/gallery/unity-reconnaissance" className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors">
+          <Link href="/gallery/unity-reconnaissance" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: '#d4a74a', color: '#0d1b2a' }}>
             Study Unity History
           </Link>
-          <Link href="/contact" className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+          <Link href="/contact" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: '#1b4965', color: '#e8e4df' }}>
             Join the Movement
           </Link>
         </div>
@@ -536,14 +536,14 @@ export default function LiberationFrameworksPage() {
   )
 }
 
-function Section({ 
-  id, 
-  title, 
-  icon: Icon, 
-  expanded, 
-  onToggle, 
-  color, 
-  children 
+function Section({
+  id,
+  title,
+  icon: Icon,
+  expanded,
+  onToggle,
+  color,
+  children
 }: {
   id: string
   title: string
@@ -553,31 +553,34 @@ function Section({
   color: string
   children: React.ReactNode
 }) {
-  const colorClasses = {
-    red: "border-red-500/30 bg-red-900/10",
-    blue: "border-blue-500/30 bg-blue-900/10",
-    purple: "border-purple-500/30 bg-purple-900/10",
-    green: "border-green-500/30 bg-green-900/10",
-    yellow: "border-yellow-500/30 bg-yellow-900/10"
+  const colorStyles: Record<string, { border: string; background: string; iconColor: string }> = {
+    red: { border: '1px solid rgba(199, 48, 50, 0.3)', background: 'rgba(199, 48, 50, 0.1)', iconColor: '#c73032' },
+    blue: { border: '1px solid rgba(27, 73, 101, 0.3)', background: 'rgba(27, 73, 101, 0.1)', iconColor: '#1b4965' },
+    purple: { border: '1px solid rgba(27, 73, 101, 0.3)', background: 'rgba(27, 73, 101, 0.1)', iconColor: '#1b4965' },
+    green: { border: '1px solid rgba(212, 167, 74, 0.3)', background: 'rgba(212, 167, 74, 0.1)', iconColor: '#d4a74a' },
+    yellow: { border: '1px solid rgba(212, 167, 74, 0.3)', background: 'rgba(212, 167, 74, 0.1)', iconColor: '#d4a74a' }
   }
 
+  const style = colorStyles[color] || colorStyles.blue
+
   return (
-    <div className={`mb-8 rounded-xl border ${colorClasses[color as keyof typeof colorClasses]} overflow-hidden`}>
+    <div className="mb-8 rounded-xl overflow-hidden" style={{ border: style.border, background: style.background }}>
       <button
         onClick={onToggle}
-        className="w-full px-6 py-4 flex items-center justify-between hover:bg-white/5 transition-colors"
+        className="w-full px-6 py-4 flex items-center justify-between transition-colors"
+        style={{ background: 'transparent' }}
       >
         <div className="flex items-center gap-3">
-          <Icon className={`w-6 h-6 text-${color}-400`} />
-          <h2 className="text-2xl font-bold text-white text-left">{title}</h2>
+          <Icon className="w-6 h-6" style={{ color: style.iconColor }} />
+          <h2 className="text-2xl font-bold text-left" style={{ color: '#e8e4df' }}>{title}</h2>
         </div>
         {expanded ? (
-          <ChevronUp className="w-5 h-5 text-white/60" />
+          <ChevronUp className="w-5 h-5" style={{ color: 'rgba(232, 228, 223, 0.6)' }} />
         ) : (
-          <ChevronDown className="w-5 h-5 text-white/60" />
+          <ChevronDown className="w-5 h-5" style={{ color: 'rgba(232, 228, 223, 0.6)' }} />
         )}
       </button>
-      
+
       {expanded && (
         <div className="px-6 pb-6">
           {children}
@@ -605,34 +608,40 @@ function ProtocolStep({
   onToggle: () => void
 }) {
   return (
-    <div className={`bg-white/5 rounded-lg p-4 border transition-all ${completed ? 'border-green-500/50 bg-green-900/20' : 'border-white/10'}`}>
+    <div
+      className="rounded-lg p-4 transition-all"
+      style={{
+        background: completed ? 'rgba(212, 167, 74, 0.2)' : 'rgba(255,255,255,0.05)',
+        border: completed ? '1px solid rgba(212, 167, 74, 0.5)' : '1px solid rgba(255,255,255,0.1)'
+      }}
+    >
       <div className="flex items-start gap-4">
         <button
           onClick={onToggle}
-          className={`w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all ${
-            completed 
-              ? 'border-green-500 bg-green-500' 
-              : 'border-white/30 hover:border-white/50'
-          }`}
+          className="w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all"
+          style={{
+            borderColor: completed ? '#d4a74a' : 'rgba(232, 228, 223, 0.3)',
+            background: completed ? '#d4a74a' : 'transparent'
+          }}
         >
           {completed ? (
-            <CheckCircle className="w-4 h-4 text-white" />
+            <CheckCircle className="w-4 h-4" style={{ color: '#0d1b2a' }} />
           ) : (
-            <span className="text-white/70 text-sm font-bold">{number}</span>
+            <span className="text-sm font-bold" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>{number}</span>
           )}
         </button>
-        
+
         <div className="flex-1">
-          <h4 className={`font-bold mb-2 ${completed ? 'text-green-300' : 'text-white'}`}>
+          <h4 className="font-bold mb-2" style={{ color: completed ? '#d4a74a' : '#e8e4df' }}>
             {title}
           </h4>
-          <p className="text-white/70 text-sm mb-3">{description}</p>
-          
+          <p className="text-sm mb-3" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>{description}</p>
+
           <div className="space-y-2">
             {actions.map((action, index) => (
               <div key={index} className="flex items-start gap-2">
-                <span className="text-white/40 text-xs mt-1">•</span>
-                <span className="text-white/60 text-xs">{action}</span>
+                <span className="text-xs mt-1" style={{ color: 'rgba(232, 228, 223, 0.4)' }}>•</span>
+                <span className="text-xs" style={{ color: 'rgba(232, 228, 223, 0.6)' }}>{action}</span>
               </div>
             ))}
           </div>
@@ -654,11 +663,11 @@ function ModelCard({
   lesson: string
 }) {
   return (
-    <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-      <h5 className="text-green-400 font-bold mb-2">{title}</h5>
-      <p className="text-white/80 text-sm mb-2">{description}</p>
-      <p className="text-white/70 text-xs mb-3"><span className="text-green-300 font-medium">Impact:</span> {impact}</p>
-      <p className="text-white/60 text-xs italic"><span className="text-yellow-300 font-medium">Lesson:</span> {lesson}</p>
+    <div className="rounded-lg p-4" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
+      <h5 className="font-bold mb-2" style={{ color: '#d4a74a' }}>{title}</h5>
+      <p className="text-sm mb-2" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>{description}</p>
+      <p className="text-xs mb-3" style={{ color: 'rgba(232, 228, 223, 0.7)' }}><span className="font-medium" style={{ color: '#d4a74a' }}>Impact:</span> {impact}</p>
+      <p className="text-xs italic" style={{ color: 'rgba(232, 228, 223, 0.6)' }}><span className="font-medium" style={{ color: '#d4a74a' }}>Lesson:</span> {lesson}</p>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'juche-gang-v6';
+const CACHE_NAME = 'juche-gang-v7';
 const urlsToCache = [
   '/',
   '/manifest.json',
