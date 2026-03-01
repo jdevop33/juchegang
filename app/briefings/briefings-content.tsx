@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"
 
 export default function BriefingsContent() {
@@ -11,10 +12,14 @@ export default function BriefingsContent() {
     {/* Hero Image */}
     <section className="relative h-[40vh] min-h-[300px]">
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/images/paektu-sunset.jpg"
-          alt="Mount Paektu at sunset"
-          className="w-full h-full object-cover"
+          alt="Mount Paektu at sunset - where truth meets understanding"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+          quality={85}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/40 via-transparent to-[#0d1b2a]" />
       </div>

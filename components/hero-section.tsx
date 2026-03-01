@@ -19,15 +19,16 @@ export function HeroSection() {
 
   return (
     <section className="relative w-full h-screen overflow-hidden bg-[#0d1b2a]">
-      {/* Breath One — The Strait Painting */}
+      {/* Breath One — Mount Paektu Heaven Lake (Cheonji/천지) */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-strait.png"
-          alt=""
+          src="/gallery/hero.jpg"
+          alt="Heaven Lake at Mount Paektu - sacred birthplace of Korean civilization"
           fill
-          className="object-cover object-center"
+          className="object-cover object-[center_60%]"
           priority
           sizes="100vw"
+          quality={90}
         />
       </div>
 

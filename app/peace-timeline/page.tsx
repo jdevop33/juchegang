@@ -6,6 +6,7 @@ import { Calendar, Heart, Handshake, Globe, Users, TreePine, Building, Mountain,
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
+import Image from "next/image"
 
 export default function PeaceTimelinePage() {
   const { language } = useLanguage()
@@ -173,10 +174,14 @@ export default function PeaceTimelinePage() {
       {/* Hero Image */}
       <section className="relative h-[50vh] min-h-[400px]">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/paektu-winter.jpg"
-            alt="Mount Paektu in winter"
-            className="w-full h-full object-cover"
+            alt="Mount Paektu in winter - symbol of Korean resilience and unity"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+            quality={85}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/50 via-transparent to-[#0d1b2a]" />
         </div>

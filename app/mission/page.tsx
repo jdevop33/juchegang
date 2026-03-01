@@ -6,6 +6,7 @@ import { Globe, Users, Target, Flame, Mountain, Sun } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
+import Image from "next/image"
 
 export default function MissionPage() {
   const { t, language } = useLanguage()
@@ -68,10 +69,14 @@ export default function MissionPage() {
       {/* Hero Image */}
       <section className="relative h-[50vh] min-h-[400px]">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/paektu-golden.jpg"
-            alt="Mount Paektu at sunrise"
-            className="w-full h-full object-cover"
+            alt="Mount Paektu at sunrise - sacred mountain of Korean civilization"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+            quality={85}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/60 via-transparent to-[#0d1b2a]" />
         </div>
