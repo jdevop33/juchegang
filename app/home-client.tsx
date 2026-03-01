@@ -117,6 +117,9 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
           <div className="section-transition"><TriptychDivider /></div>
 
           <div id="laws" className="scroll-mt-nav max-w-4xl mx-auto mb-20 text-center section-reveal">
+            <p className="text-lg font-semibold italic text-sovereign-gold/90 mb-6">
+              These are not the 48 Laws of Power. Those laws teach deception. These laws exist because deception is poison.
+            </p>
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-river-current/20 to-river-mid/20 text-river-mid rounded-full text-sm font-medium border border-river-current/30 backdrop-blur-sm">📚 {t('completeCollection')}</div>
             <h2 className="text-headline text-foreground mb-8">{t('laws48')}</h2>
             <p className="text-body-large text-muted-foreground max-w-3xl mx-auto mb-8">{t('lawsSubtitle')}</p>
