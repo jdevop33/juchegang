@@ -50,8 +50,8 @@ export function CursorTrail() {
 
           ctx.save()
           ctx.globalAlpha = opacity * 0.4
-          // Alternate between friendship colors for trail
-          ctx.fillStyle = index % 2 === 0 ? "#034DA2" : "#EC1D25"
+          // Alternate between River Palette colors for trail
+          ctx.fillStyle = index % 2 === 0 ? "#1b4965" : "#d4a74a"
           ctx.beginPath()
           ctx.arc(point.x, point.y, size, 0, Math.PI * 2)
           ctx.fill()

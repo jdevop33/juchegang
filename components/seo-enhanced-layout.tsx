@@ -175,8 +175,8 @@ export function SEOEnhancedLayout({
         <meta name="twitter:creator" content="@juchegang" />
         
         {/* Additional SEO Meta Tags */}
-        <meta name="theme-color" content="#034DA2" />
-        <meta name="msapplication-TileColor" content="#034DA2" />
+        <meta name="theme-color" content="#0d1b2a" />
+        <meta name="msapplication-TileColor" content="#0d1b2a" />
         <meta name="application-name" content="Juche GanG" />
         <meta name="apple-mobile-web-app-title" content="Juche GanG" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

@@ -13,12 +13,12 @@ export function TriptychDivider() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-red-950/60 via-transparent to-red-950/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0d1b2a]/80 via-transparent to-[#0d1b2a]/80"></div>
 
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center max-w-2xl px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#de2910]">Embrace Excellence</h2>
-              <p className="text-lg text-[#de2910]">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#d4a74a]">Embrace Excellence</h2>
+              <p className="text-lg text-[#e8e4df]">
                 "Excellence is your birthright. If unclaimed, it will forever elude you."
               </p>
             </div>

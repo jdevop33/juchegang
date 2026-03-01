@@ -74,8 +74,8 @@ export function ParticleBackground() {
       particlesRef.current.forEach((particle, index) => {
         ctx.save()
         ctx.globalAlpha = particle.opacity
-        // Alternate between friendship blue and red
-        ctx.fillStyle = index % 2 === 0 ? "#034DA2" : "#EC1D25"
+        // Alternate between River Palette colors
+        ctx.fillStyle = index % 2 === 0 ? "#1b4965" : "#d4a74a"
         ctx.beginPath()
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
         ctx.fill()
@@ -92,10 +92,10 @@ export function ParticleBackground() {
           if (distance < 120) {
             ctx.save()
             ctx.globalAlpha = (1 - distance / 120) * 0.15
-            // Create gradient connections
+            // Create gradient connections with River Palette
             const gradient = ctx.createLinearGradient(particle1.x, particle1.y, particle2.x, particle2.y)
-            gradient.addColorStop(0, "#034DA2")
-            gradient.addColorStop(1, "#EC1D25")
+            gradient.addColorStop(0, "#1b4965")
+            gradient.addColorStop(1, "#d4a74a")
             ctx.strokeStyle = gradient
             ctx.lineWidth = 1.5
             ctx.beginPath()

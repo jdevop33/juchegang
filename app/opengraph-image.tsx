@@ -21,20 +21,20 @@ export default async function OgImage({ params, searchParams }: { params: Record
 					flexDirection: "column",
 					justifyContent: "center",
 					alignItems: "center",
-					background: "linear-gradient(135deg, #0b1220 0%, #101828 30%, #031C3C 100%)",
-					color: "white",
-					fontFamily: "Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji'",
+					background: "linear-gradient(135deg, #0d1b2a 0%, #1b4965 50%, #0d1b2a 100%)",
+					color: "#e8e4df",
+					fontFamily: "Georgia, 'Times New Roman', serif",
 					padding: "60px",
 				}}
 			>
-				<div style={{ fontSize: 64, fontWeight: 800, letterSpacing: -1, textAlign: "center" }}>{title}</div>
-				<div style={{ marginTop: 16, fontSize: 32, opacity: 0.9, textAlign: "center" }}>{subtitle}</div>
+				<div style={{ fontSize: 64, fontWeight: 700, letterSpacing: -1, textAlign: "center", color: "#d4a74a" }}>{title}</div>
+				<div style={{ marginTop: 16, fontSize: 32, opacity: 0.9, textAlign: "center", color: "#e8e4df" }}>{subtitle}</div>
 				<div style={{ position: "absolute", bottom: 40, left: 60, right: 60, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 					<div style={{ fontSize: 24, opacity: 0.8 }}>juche.org</div>
 					<div style={{ display: "flex", gap: 12 }}>
-						<div style={{ width: 18, height: 18, borderRadius: 9999, background: "#EC1D25" }} />
-						<div style={{ width: 18, height: 18, borderRadius: 9999, background: "#FFFFFF" }} />
-						<div style={{ width: 18, height: 18, borderRadius: 9999, background: "#034DA2" }} />
+						<div style={{ width: 18, height: 18, borderRadius: 9999, background: "#c73032" }} />
+						<div style={{ width: 18, height: 18, borderRadius: 9999, background: "#d4a74a" }} />
+						<div style={{ width: 18, height: 18, borderRadius: 9999, background: "#1b4965" }} />
 					</div>
 				</div>
 			</div>

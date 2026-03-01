@@ -150,7 +150,7 @@ export default async function GalleryPage() {
             {/* Historical Context Section */}
             <section className="mt-20 max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium">
+                <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-[#1b4965]/20 text-[#1b4965] dark:text-[#d4a74a] rounded-full text-sm font-medium">
                   📚 Historical Context
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
@@ -165,14 +165,14 @@ export default async function GalleryPage() {
                 {/* Putin's 2007 Munich Speech */}
                 <div className="bg-gradient-to-r from-background to-muted/20 rounded-xl p-6 md:p-8 border border-border/50">
                   <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-red-500/20 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                    <span className="w-8 h-8 bg-[#d4a74a]/20 text-[#d4a74a] rounded-full flex items-center justify-center text-sm font-bold">1</span>
                     Putin's 2007 Munich Security Conference Speech
                   </h3>
                   <div className="prose prose-slate dark:prose-invert max-w-none">
                     <p className="text-muted-foreground leading-relaxed">
                       Vladimir Putin delivered his landmark address at the Munich Conference on Security Policy on <strong>February 10, 2007</strong> - not 2008 as commonly misremembered. The official Kremlin transcript documents Putin's most direct challenge to Western security architecture since the Soviet collapse.
                     </p>
-                    <blockquote className="border-l-4 border-red-500 pl-4 my-6 italic bg-muted/30 p-4 rounded-r">
+                    <blockquote className="border-l-4 border-[#1b4965] pl-4 my-6 italic bg-[#1b4965]/10 p-4 rounded-r">
                       <p className="mb-2">"I think it is obvious that NATO expansion does not have any relation with the modernisation of the Alliance itself or with ensuring security in Europe. On the contrary, it represents a serious provocation that reduces the level of mutual trust. And we have the right to ask: against whom is this expansion intended?"</p>
                     </blockquote>
                     <p className="text-muted-foreground leading-relaxed">
@@ -184,7 +184,7 @@ export default async function GalleryPage() {
                 {/* NATO's Eastward Expansion */}
                 <div className="bg-gradient-to-r from-background to-muted/20 rounded-xl p-6 md:p-8 border border-border/50">
                   <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-blue-500/20 text-blue-600 dark:text-blue-400 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                    <span className="w-8 h-8 bg-[#d4a74a]/20 text-[#d4a74a] rounded-full flex items-center justify-center text-sm font-bold">2</span>
                     NATO's Seven Waves of Expansion
                   </h3>
                   <div className="prose prose-slate dark:prose-invert max-w-none">
@@ -193,23 +193,23 @@ export default async function GalleryPage() {
                     </p>
                     <div className="grid md:grid-cols-2 gap-4 my-6">
                       <div className="bg-muted/20 p-4 rounded-lg">
-                        <div className="font-semibold text-blue-600 dark:text-blue-400">March 12, 1999</div>
+                        <div className="font-semibold text-[#1b4965] dark:text-[#d4a74a]">March 12, 1999</div>
                         <div className="text-sm text-muted-foreground">Czech Republic, Hungary, Poland</div>
                       </div>
                       <div className="bg-muted/20 p-4 rounded-lg">
-                        <div className="font-semibold text-blue-600 dark:text-blue-400">March 29, 2004</div>
+                        <div className="font-semibold text-[#1b4965] dark:text-[#d4a74a]">March 29, 2004</div>
                         <div className="text-sm text-muted-foreground">Bulgaria, Estonia, Latvia, Lithuania, Romania, Slovakia, Slovenia</div>
                       </div>
                       <div className="bg-muted/20 p-4 rounded-lg">
-                        <div className="font-semibold text-blue-600 dark:text-blue-400">April 1, 2009</div>
+                        <div className="font-semibold text-[#1b4965] dark:text-[#d4a74a]">April 1, 2009</div>
                         <div className="text-sm text-muted-foreground">Albania, Croatia</div>
                       </div>
                       <div className="bg-muted/20 p-4 rounded-lg">
-                        <div className="font-semibold text-blue-600 dark:text-blue-400">2017-2024</div>
+                        <div className="font-semibold text-[#1b4965] dark:text-[#d4a74a]">2017-2024</div>
                         <div className="text-sm text-muted-foreground">Montenegro, N. Macedonia, Finland, Sweden</div>
                       </div>
                     </div>
-                    <blockquote className="border-l-4 border-blue-500 pl-4 my-6 italic bg-muted/30 p-4 rounded-r">
+                    <blockquote className="border-l-4 border-[#1b4965] pl-4 my-6 italic bg-[#1b4965]/10 p-4 rounded-r">
                       <p className="mb-2">Secretary of State James Baker told Mikhail Gorbachev on February 9, 1990: <strong>"There would be no extension of NATO's jurisdiction for forces of NATO one inch to the east."</strong></p>
                     </blockquote>
                   </div>
@@ -218,14 +218,14 @@ export default async function GalleryPage() {
                 {/* Cuban Missile Crisis */}
                 <div className="bg-gradient-to-r from-background to-muted/20 rounded-xl p-6 md:p-8 border border-border/50">
                   <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-yellow-500/20 text-yellow-600 dark:text-yellow-400 rounded-full flex items-center justify-center text-sm font-bold">3</span>
+                    <span className="w-8 h-8 bg-[#d4a74a]/20 text-[#d4a74a] rounded-full flex items-center justify-center text-sm font-bold">3</span>
                     The Cuban Missile Crisis Precedent
                   </h3>
                   <div className="prose prose-slate dark:prose-invert max-w-none">
                     <p className="text-muted-foreground leading-relaxed">
                       When U.S. reconnaissance discovered Soviet missiles in Cuba on October 14, 1962, President Kennedy responded with unprecedented military mobilization, raising military readiness to <strong>DEFCON 2</strong> - one step from nuclear war.
                     </p>
-                    <blockquote className="border-l-4 border-yellow-500 pl-4 my-6 italic bg-muted/30 p-4 rounded-r">
+                    <blockquote className="border-l-4 border-[#c73032] pl-4 my-6 italic bg-[#c73032]/10 p-4 rounded-r">
                       <p className="mb-2">"It shall be the policy of this nation to regard any nuclear missile launched from Cuba against any nation in the Western Hemisphere as an attack by the Soviet Union on the United States, requiring a full retaliatory response."</p>
                     </blockquote>
                     <p className="text-muted-foreground leading-relaxed">
@@ -237,7 +237,7 @@ export default async function GalleryPage() {
                 {/* Economic Collapse */}
                 <div className="bg-gradient-to-r from-background to-muted/20 rounded-xl p-6 md:p-8 border border-border/50">
                   <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-red-500/20 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-sm font-bold">4</span>
+                    <span className="w-8 h-8 bg-[#d4a74a]/20 text-[#d4a74a] rounded-full flex items-center justify-center text-sm font-bold">4</span>
                     Russia's Economic Catastrophe
                   </h3>
                   <div className="prose prose-slate dark:prose-invert max-w-none">
@@ -245,16 +245,16 @@ export default async function GalleryPage() {
                       The post-Soviet economic collapse between 1991 and 1998 represented what economists called "the most cataclysmic peacetime economic collapse of an industrial country in history." <strong>Russian GDP contracted 40-50% cumulatively</strong>, exceeding the depth of the Great Depression.
                     </p>
                     <div className="grid md:grid-cols-3 gap-4 my-6">
-                      <div className="bg-red-500/10 p-4 rounded-lg text-center">
-                        <div className="text-2xl font-bold text-red-600 dark:text-red-400">2,520%</div>
+                      <div className="bg-[#c73032]/10 p-4 rounded-lg text-center">
+                        <div className="text-2xl font-bold text-[#c73032]">2,520%</div>
                         <div className="text-xs text-muted-foreground">Inflation in 1992</div>
                       </div>
-                      <div className="bg-red-500/10 p-4 rounded-lg text-center">
-                        <div className="text-2xl font-bold text-red-600 dark:text-red-400">6 years</div>
+                      <div className="bg-[#c73032]/10 p-4 rounded-lg text-center">
+                        <div className="text-2xl font-bold text-[#c73032]">6 years</div>
                         <div className="text-xs text-muted-foreground">Drop in male life expectancy</div>
                       </div>
-                      <div className="bg-red-500/10 p-4 rounded-lg text-center">
-                        <div className="text-2xl font-bold text-red-600 dark:text-red-400">41.5%</div>
+                      <div className="bg-[#c73032]/10 p-4 rounded-lg text-center">
+                        <div className="text-2xl font-bold text-[#c73032]">41.5%</div>
                         <div className="text-xs text-muted-foreground">Poverty rate by 1999</div>
                       </div>
                     </div>
@@ -264,11 +264,11 @@ export default async function GalleryPage() {
                 {/* American Warnings */}
                 <div className="bg-gradient-to-r from-background to-muted/20 rounded-xl p-6 md:p-8 border border-border/50">
                   <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-orange-500/20 text-orange-600 dark:text-orange-400 rounded-full flex items-center justify-center text-sm font-bold">5</span>
+                    <span className="w-8 h-8 bg-[#d4a74a]/20 text-[#d4a74a] rounded-full flex items-center justify-center text-sm font-bold">5</span>
                     American Officials Warned of Russian Backlash
                   </h3>
                   <div className="prose prose-slate dark:prose-invert max-w-none">
-                    <blockquote className="border-l-4 border-orange-500 pl-4 my-6 italic bg-muted/30 p-4 rounded-r">
+                    <blockquote className="border-l-4 border-[#1b4965] pl-4 my-6 italic bg-[#1b4965]/10 p-4 rounded-r">
                       <p className="mb-2">George Kennan, architect of containment, called NATO expansion <strong>"the most fateful error of American policy in the entire post-Cold War era"</strong>, warning it would "inflame the nationalistic, anti-Western and militaristic tendencies in Russian opinion."</p>
                     </blockquote>
                     <p className="text-muted-foreground leading-relaxed">
@@ -280,7 +280,7 @@ export default async function GalleryPage() {
                 {/* Monroe Doctrine */}
                 <div className="bg-gradient-to-r from-background to-muted/20 rounded-xl p-6 md:p-8 border border-border/50">
                   <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-green-500/20 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center text-sm font-bold">6</span>
+                    <span className="w-8 h-8 bg-[#d4a74a]/20 text-[#d4a74a] rounded-full flex items-center justify-center text-sm font-bold">6</span>
                     America's Monroe Doctrine Sphere
                   </h3>
                   <div className="prose prose-slate dark:prose-invert max-w-none">
