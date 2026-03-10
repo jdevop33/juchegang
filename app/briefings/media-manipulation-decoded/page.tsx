@@ -16,16 +16,16 @@ export default function MediaManipulationPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0d1b2a] via-[#1b4965]/20 to-[#0d1b2a]">
       <div className="container mx-auto px-4 py-8">
-        <Link href="/briefings" className="inline-flex items-center gap-2 text-[#e8e4df]/70 hover:text-[#e8e4df] mb-8 transition-colors">
+        <Link href="/briefings" className="inline-flex items-center gap-2 text-[#f0ebe3]/70 hover:text-[#f0ebe3] mb-8 transition-colors">
           <ArrowLeft className="h-4 w-4" />
           Back to Briefings
         </Link>
 
         <div className="mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#e8e4df] mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#f0ebe3] mb-4">
             Media Manipulation Decoded
           </h1>
-          <p className="text-xl text-[#e8e4df]/80 max-w-4xl">
+          <p className="text-xl text-[#f0ebe3]/80 max-w-4xl">
             How six corporations control 90% of what you see, think, and believe. The psychological weapons of mass distraction exposed.
           </p>
         </div>
@@ -36,14 +36,14 @@ export default function MediaManipulationPage() {
             <AlertTriangle className="w-8 h-8 text-[#d4a74a] flex-shrink-0 mt-1" />
             <div>
               <h2 className="text-2xl font-bold text-[#d4a74a] mb-3">The Concentration Crisis</h2>
-              <p className="text-[#e8e4df]/90 mb-4">
+              <p className="text-[#f0ebe3]/90 mb-4">
                 In 1983, 50 companies controlled American media. Today, just **6 corporations** control 90% of everything you see, hear, and read.
                 This isn't accidental - it's the architecture of manufactured consent.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-[#0d1b2a]/30 rounded p-4">
                   <h3 className="text-[#d4a74a] font-bold mb-2">The Big Six</h3>
-                  <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                  <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                     <li>• Comcast (NBC, MSNBC, Universal)</li>
                     <li>• Disney (ABC, ESPN, Marvel)</li>
                     <li>• Warner Bros Discovery (CNN, HBO)</li>
@@ -54,7 +54,7 @@ export default function MediaManipulationPage() {
                 </div>
                 <div className="bg-[#0d1b2a]/30 rounded p-4">
                   <h3 className="text-[#c73032] font-bold mb-2">What They Control</h3>
-                  <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                  <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                     <li>• 90% of TV programming</li>
                     <li>• 90% of radio stations</li>
                     <li>• 80% of movie theaters</li>
@@ -82,12 +82,12 @@ export default function MediaManipulationPage() {
               <h3 className="text-xl font-bold text-[#c73032] mb-4">Facebook's Internal Research: Division by Design</h3>
 
               <div className="bg-[#c73032]/20 rounded-lg p-6 border border-[#c73032]/30 mb-6">
-                <h4 className="font-bold text-[#e8e4df] mb-3">The Frances Haugen Revelations</h4>
-                <p className="text-[#e8e4df]/90 mb-4">
+                <h4 className="font-bold text-[#f0ebe3] mb-3">The Frances Haugen Revelations</h4>
+                <p className="text-[#f0ebe3]/90 mb-4">
                   Facebook's own research confirmed their algorithms weighted "angry" reactions 5x more than "likes"
                   because divisive content generates more engagement and profit. Internal documents showed executives knew:
                 </p>
-                <ul className="space-y-2 text-[#e8e4df]/80">
+                <ul className="space-y-2 text-[#f0ebe3]/80">
                   <li>• Anger and outrage drive 6x more engagement than positive content</li>
                   <li>• Political polarization increased 70% after algorithm changes</li>
                   <li>• Misinformation spreads 6x faster than factual information</li>
@@ -97,8 +97,8 @@ export default function MediaManipulationPage() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-[#d4a74a]/20 rounded-lg p-4 border border-[#d4a74a]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">The Engagement Formula</h4>
-                  <div className="space-y-3 text-[#e8e4df]/80 text-sm">
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">The Engagement Formula</h4>
+                  <div className="space-y-3 text-[#f0ebe3]/80 text-sm">
                     <div>
                       <span className="text-[#d4a74a] font-bold">Fear</span> = 3x engagement boost
                     </div>
@@ -112,21 +112,21 @@ export default function MediaManipulationPage() {
                       <span className="text-[#d4a74a] font-bold">Division</span> = 10x engagement boost
                     </div>
                   </div>
-                  <p className="text-[#e8e4df]/70 text-xs mt-3">
+                  <p className="text-[#f0ebe3]/70 text-xs mt-3">
                     *Internal Facebook metrics leaked by whistleblowers
                   </p>
                 </div>
 
-                <div className="bg-green-900/20 rounded-lg p-4 border border-green-500/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">The Addiction Mechanics</h4>
-                  <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
+                <div className="bg-river-current/15 rounded-lg p-4 border border-river-mid/30">
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">The Addiction Mechanics</h4>
+                  <ul className="space-y-2 text-[#f0ebe3]/80 text-sm">
                     <li>• Variable reward schedules (like slot machines)</li>
                     <li>• Social approval feedback loops</li>
                     <li>• Fear of missing out (FOMO) triggers</li>
                     <li>• Infinite scroll = dopamine drip</li>
                     <li>• Notification intermittent reinforcement</li>
                   </ul>
-                  <blockquote className="text-green-300 italic text-xs mt-3">
+                  <blockquote className="text-river-mid italic text-xs mt-3">
                     "If you're not paying for the product, you ARE the product"
                   </blockquote>
                 </div>
@@ -237,12 +237,12 @@ export default function MediaManipulationPage() {
               <h3 className="text-xl font-bold text-[#d4a74a] mb-4">The Synchronicity That Isn't Coincidence</h3>
 
               <div className="bg-[#d4a74a]/20 rounded-lg p-6 border border-[#d4a74a]/30 mb-6">
-                <h4 className="font-bold text-[#e8e4df] mb-3">Operation Mockingbird Never Ended</h4>
-                <p className="text-[#e8e4df]/90 mb-4">
+                <h4 className="font-bold text-[#f0ebe3] mb-3">Operation Mockingbird Never Ended</h4>
+                <p className="text-[#f0ebe3]/90 mb-4">
                   The CIA's 1950s program to infiltrate media continues today through different mechanisms.
                   Rather than directly paying journalists, the system now operates through:
                 </p>
-                <ul className="space-y-2 text-[#e8e4df]/80">
+                <ul className="space-y-2 text-[#f0ebe3]/80">
                   <li>• Think tank 'experts' funded by defense contractors</li>
                   <li>• Former intelligence officials as news contributors</li>
                   <li>• Government press releases copied verbatim as 'news'</li>
@@ -290,11 +290,11 @@ export default function MediaManipulationPage() {
         >
           <div className="space-y-6">
             <div className="bg-[#0d1b2a]/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-green-400 mb-4">Your Liberation Toolkit</h3>
+              <h3 className="text-xl font-bold text-river-mid mb-4">Your Liberation Toolkit</h3>
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
-                  <h4 className="text-green-300 font-bold mb-3">Immediate Actions</h4>
+                  <h4 className="text-river-mid font-bold mb-3">Immediate Actions</h4>
                   <div className="space-y-3">
                     <TechniqueCard
                       title="Algorithm Audit"
@@ -330,12 +330,12 @@ export default function MediaManipulationPage() {
                 </div>
               </div>
 
-              <div className="mt-6 p-6 bg-gradient-to-r from-green-900/20 to-[#1b4965]/20 rounded-lg border border-green-500/20">
-                <h4 className="text-green-400 font-bold mb-3">The Ultimate Filter</h4>
-                <p className="text-[#e8e4df]/90 text-lg">
+              <div className="mt-6 p-6 bg-gradient-to-r from-river-current/15 to-[#1b4965]/20 rounded-lg border border-river-mid/20">
+                <h4 className="text-river-mid font-bold mb-3">The Ultimate Filter</h4>
+                <p className="text-[#f0ebe3]/90 text-lg">
                   <span className="text-[#d4a74a] font-bold">Actions reveal truth. Narratives create illusions.</span>
                 </p>
-                <p className="text-[#e8e4df]/80 mt-2">
+                <p className="text-[#f0ebe3]/80 mt-2">
                   Don't listen to what they say. Watch what they do. Follow the money. Count the bodies.
                   Check the receipts. The pattern never lies.
                 </p>
@@ -346,26 +346,26 @@ export default function MediaManipulationPage() {
 
         {/* Call to Action */}
         <div className="mt-12 bg-gradient-to-r from-[#1b4965]/20 via-[#1b4965]/20 to-[#1b4965]/20 rounded-xl p-8 border border-[#1b4965]/30">
-          <h2 className="text-3xl font-bold text-[#e8e4df] mb-6 text-center">The Choice Is Yours</h2>
+          <h2 className="text-3xl font-bold text-[#f0ebe3] mb-6 text-center">The Choice Is Yours</h2>
 
           <div className="text-center max-w-4xl mx-auto">
-            <p className="text-lg text-[#e8e4df]/90 mb-6">
+            <p className="text-lg text-[#f0ebe3]/90 mb-6">
               Every moment you spend consuming manufactured outrage is a moment stolen from building genuine connections.
               Every click on divisive content funds the system that profits from your separation.
             </p>
 
-            <p className="text-xl text-[#e8e4df] font-medium mb-8">
-              The most revolutionary act in a system built on division is to <span className="text-green-400">unite</span>.
+            <p className="text-xl text-[#f0ebe3] font-medium mb-8">
+              The most revolutionary act in a system built on division is to <span className="text-river-mid">unite</span>.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/truth-project/empires-receipts" className="px-6 py-3 bg-[#c73032] hover:bg-[#c73032]/80 text-[#e8e4df] font-medium rounded-lg transition-colors">
+              <Link href="/truth-project/empires-receipts" className="px-6 py-3 bg-[#c73032] hover:bg-[#c73032]/80 text-[#f0ebe3] font-medium rounded-lg transition-colors">
                 Read The Receipts
               </Link>
-              <Link href="/briefings" className="px-6 py-3 bg-[#1b4965] hover:bg-[#1b4965]/80 text-[#e8e4df] font-medium rounded-lg transition-colors">
+              <Link href="/briefings" className="px-6 py-3 bg-[#1b4965] hover:bg-[#1b4965]/80 text-[#f0ebe3] font-medium rounded-lg transition-colors">
                 More Briefings
               </Link>
-              <Link href="/contact" className="px-6 py-3 bg-[#e8e4df]/10 hover:bg-[#e8e4df]/20 text-[#e8e4df] font-medium rounded-lg transition-colors border border-[#e8e4df]/20">
+              <Link href="/contact" className="px-6 py-3 bg-[#f0ebe3]/10 hover:bg-[#f0ebe3]/20 text-[#f0ebe3] font-medium rounded-lg transition-colors border border-[#f0ebe3]/20">
                 Share Your Story
               </Link>
             </div>
@@ -397,7 +397,7 @@ function Section({
     red: "border-[#c73032]/30 bg-[#c73032]/10",
     blue: "border-[#1b4965]/30 bg-[#1b4965]/10",
     purple: "border-[#1b4965]/30 bg-[#1b4965]/10",
-    green: "border-green-500/30 bg-green-900/10",
+    green: "border-river-mid/30 bg-river-current/10",
     yellow: "border-[#d4a74a]/30 bg-[#d4a74a]/10"
   }
 
@@ -405,16 +405,16 @@ function Section({
     <div className={`mb-8 rounded-xl border ${colorClasses[color as keyof typeof colorClasses]} overflow-hidden`}>
       <button
         onClick={onToggle}
-        className="w-full px-6 py-4 flex items-center justify-between hover:bg-[#e8e4df]/5 transition-colors"
+        className="w-full px-6 py-4 flex items-center justify-between hover:bg-[#f0ebe3]/5 transition-colors"
       >
         <div className="flex items-center gap-3">
           <Icon className={`w-6 h-6 text-${color}-400`} />
-          <h2 className="text-2xl font-bold text-[#e8e4df] text-left">{title}</h2>
+          <h2 className="text-2xl font-bold text-[#f0ebe3] text-left">{title}</h2>
         </div>
         {expanded ? (
-          <ChevronUp className="w-5 h-5 text-[#e8e4df]/60" />
+          <ChevronUp className="w-5 h-5 text-[#f0ebe3]/60" />
         ) : (
-          <ChevronDown className="w-5 h-5 text-[#e8e4df]/60" />
+          <ChevronDown className="w-5 h-5 text-[#f0ebe3]/60" />
         )}
       </button>
 
@@ -441,26 +441,26 @@ function FilterCard({
   example: string
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
+    <div className="bg-[#f0ebe3]/5 rounded-lg p-4 border border-[#f0ebe3]/10">
       <div className="flex items-start gap-4">
-        <div className="w-8 h-8 bg-[#1b4965] rounded-full flex items-center justify-center text-[#e8e4df] font-bold text-sm flex-shrink-0">
+        <div className="w-8 h-8 bg-[#1b4965] rounded-full flex items-center justify-center text-[#f0ebe3] font-bold text-sm flex-shrink-0">
           {number}
         </div>
         <div className="flex-1">
           <h4 className="text-[#1b4965] font-bold mb-2">{title}</h4>
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <p className="text-[#e8e4df]/60 text-xs mb-1">1980s Original:</p>
-              <p className="text-[#e8e4df]/80 text-sm mb-3">{original}</p>
+              <p className="text-[#f0ebe3]/60 text-xs mb-1">1980s Original:</p>
+              <p className="text-[#f0ebe3]/80 text-sm mb-3">{original}</p>
             </div>
             <div>
               <p className="text-[#1b4965] text-xs mb-1">2024 Updated:</p>
-              <p className="text-[#e8e4df]/80 text-sm mb-3">{updated}</p>
+              <p className="text-[#f0ebe3]/80 text-sm mb-3">{updated}</p>
             </div>
           </div>
           <div className="mt-2 p-3 bg-[#0d1b2a]/20 rounded">
             <p className="text-[#d4a74a] text-xs font-medium mb-1">Example:</p>
-            <p className="text-[#e8e4df]/70 text-xs">{example}</p>
+            <p className="text-[#f0ebe3]/70 text-xs">{example}</p>
           </div>
         </div>
       </div>
@@ -482,22 +482,22 @@ function AlgorithmCase({
   evidence: string
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
+    <div className="bg-[#f0ebe3]/5 rounded-lg p-4 border border-[#f0ebe3]/10">
       <div className="grid md:grid-cols-4 gap-3">
         <div>
           <h5 className="font-bold text-[#c73032] mb-1">{platform}</h5>
-          <p className="text-[#e8e4df]/60 text-xs">{manipulation}</p>
+          <p className="text-[#f0ebe3]/60 text-xs">{manipulation}</p>
         </div>
         <div>
-          <p className="text-[#e8e4df]/80 text-sm">{description}</p>
+          <p className="text-[#f0ebe3]/80 text-sm">{description}</p>
         </div>
         <div>
           <p className="text-[#d4a74a] text-xs font-medium mb-1">Example:</p>
-          <p className="text-[#e8e4df]/70 text-xs">{example}</p>
+          <p className="text-[#f0ebe3]/70 text-xs">{example}</p>
         </div>
         <div>
-          <p className="text-green-300 text-xs font-medium mb-1">Evidence:</p>
-          <p className="text-[#e8e4df]/60 text-xs">{evidence}</p>
+          <p className="text-river-mid text-xs font-medium mb-1">Evidence:</p>
+          <p className="text-[#f0ebe3]/60 text-xs">{evidence}</p>
         </div>
       </div>
     </div>
@@ -518,20 +518,20 @@ function CoordinatedCase({
   result: string
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
+    <div className="bg-[#f0ebe3]/5 rounded-lg p-4 border border-[#f0ebe3]/10">
       <h5 className="font-bold text-[#d4a74a] mb-3">{event}</h5>
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <p className="text-[#d4a74a] text-xs font-medium mb-1">Outlets:</p>
-          <p className="text-[#e8e4df]/70 text-sm mb-3">{outlets}</p>
-          <p className="text-green-300 text-xs font-medium mb-1">Coordinated Message:</p>
-          <p className="text-[#e8e4df]/80 text-sm">{message}</p>
+          <p className="text-[#f0ebe3]/70 text-sm mb-3">{outlets}</p>
+          <p className="text-river-mid text-xs font-medium mb-1">Coordinated Message:</p>
+          <p className="text-[#f0ebe3]/80 text-sm">{message}</p>
         </div>
         <div>
           <p className="text-[#c73032] text-xs font-medium mb-1">Reality:</p>
-          <p className="text-[#e8e4df]/80 text-sm mb-3">{reality}</p>
+          <p className="text-[#f0ebe3]/80 text-sm mb-3">{reality}</p>
           <p className="text-[#1b4965] text-xs font-medium mb-1">Result:</p>
-          <p className="text-[#e8e4df]/70 text-sm">{result}</p>
+          <p className="text-[#f0ebe3]/70 text-sm">{result}</p>
         </div>
       </div>
     </div>
@@ -546,9 +546,9 @@ function TechniqueCard({
   description: string
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded p-3 border border-[#e8e4df]/10">
-      <h5 className="text-[#e8e4df] font-medium text-sm mb-2">{title}</h5>
-      <p className="text-[#e8e4df]/70 text-xs">{description}</p>
+    <div className="bg-[#f0ebe3]/5 rounded p-3 border border-[#f0ebe3]/10">
+      <h5 className="text-[#f0ebe3] font-medium text-sm mb-2">{title}</h5>
+      <p className="text-[#f0ebe3]/70 text-xs">{description}</p>
     </div>
   )
 }

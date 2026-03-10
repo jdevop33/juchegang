@@ -25,7 +25,7 @@ export default function TtsButton({ text }: Props) {
     <button
       type="button"
       onClick={onSpeak}
-      className={`px-3 py-1 rounded text-sm border transition-colors ${speaking ? "bg-red-700 border-red-500 text-white" : "bg-black/30 border-white/10 text-white hover:bg-black/50"}`}
+      className={`px-3 py-1 rounded text-sm border transition-colors ${speaking ? "bg-korean-red/80 border-korean-red text-cream" : "bg-river-depths/30 border-cream/10 text-cream hover:bg-river-depths/50"}`}
       aria-pressed={speaking}
       aria-label={speaking ? "Stop narration" : "Play narration"}
     >

@@ -40,7 +40,7 @@ export function LanguageToggle() {
       onClick={toggleLanguage}
       disabled={isToggling}
       aria-label={language === 'en' ? t('switchToKorean') : t('switchToEnglish')}
-      className="flex items-center gap-2 px-3 py-2 rounded text-sm font-medium text-white hover:text-friendship-blue transition-all duration-200 hover:bg-white/10 disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-friendship-blue/50 min-h-[44px] min-w-[44px]"
+      className="flex items-center gap-2 px-3 py-2 rounded text-sm font-medium text-cream hover:text-friendship-blue transition-all duration-200 hover:bg-cream/10 disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-friendship-blue/50 min-h-[44px] min-w-[44px]"
       type="button"
     >
       <Globe className={`h-5 w-5 transition-transform duration-300 ${isToggling ? 'animate-spin' : ''}`} />

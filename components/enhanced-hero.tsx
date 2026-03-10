@@ -25,13 +25,13 @@ export function EnhancedHero() {
   }, [quotes.length])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-red-950 to-black">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-river-depths via-river-depths to-river-depths">
       {/* Animated background particles */}
       <div className="absolute inset-0">
         {[...Array(50)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-yellow-400 rounded-full"
+            className="absolute w-1 h-1 bg-sovereign-gold rounded-full"
             initial={{
               x: Math.random() * window.innerWidth,
               y: Math.random() * window.innerHeight,
@@ -55,8 +55,8 @@ export function EnhancedHero() {
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
           <pattern id="korean-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-red-500" />
-            <rect x="5" y="5" width="10" height="10" fill="none" stroke="currentColor" strokeWidth="0.3" className="text-yellow-500" />
+            <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-korean-red" />
+            <rect x="5" y="5" width="10" height="10" fill="none" stroke="currentColor" strokeWidth="0.3" className="text-sovereign-gold" />
           </pattern>
           <rect width="100" height="100" fill="url(#korean-pattern)" />
         </svg>
@@ -70,18 +70,18 @@ export function EnhancedHero() {
           transition={{ duration: 1 }}
           className="mb-8"
         >
-          <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-red-500 via-yellow-500 to-red-500 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-korean-red via-sovereign-gold to-korean-red bg-clip-text text-transparent">
             {t('heroTitle')}
           </h1>
           
           {/* Korean characters for emphasis */}
           {language === 'kr' && (
-            <div className="text-3xl md:text-5xl text-white mb-4 font-bold">
+            <div className="text-3xl md:text-5xl text-cream mb-4 font-bold">
               自主 • 自立 • 自衛
             </div>
           )}
           
-          <p className="text-xl md:text-2xl text-white/90 mb-2">
+          <p className="text-xl md:text-2xl text-cream/90 mb-2">
             {t('heroSubtitle')}
           </p>
         </motion.div>
@@ -95,7 +95,7 @@ export function EnhancedHero() {
           transition={{ duration: 0.5 }}
           className="mb-12 max-w-3xl mx-auto"
         >
-          <blockquote className="text-lg md:text-xl text-yellow-300 italic">
+          <blockquote className="text-lg md:text-xl text-sovereign-gold italic">
             "{quotes[currentQuote]}"
           </blockquote>
         </motion.div>
@@ -108,8 +108,8 @@ export function EnhancedHero() {
             transition={{ delay: 0.2 }}
             className="flex flex-col items-center"
           >
-            <Star className="h-12 w-12 text-yellow-400 mb-2" />
-            <span className="text-white text-sm">{language === 'kr' ? '자주' : 'Self-Reliance'}</span>
+            <Star className="h-12 w-12 text-sovereign-gold mb-2" />
+            <span className="text-cream text-sm">{language === 'kr' ? '자주' : 'Self-Reliance'}</span>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -117,8 +117,8 @@ export function EnhancedHero() {
             transition={{ delay: 0.4 }}
             className="flex flex-col items-center"
           >
-            <Shield className="h-12 w-12 text-red-400 mb-2" />
-            <span className="text-white text-sm">{language === 'kr' ? '자립' : 'Independence'}</span>
+            <Shield className="h-12 w-12 text-korean-red mb-2" />
+            <span className="text-cream text-sm">{language === 'kr' ? '자립' : 'Independence'}</span>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -126,8 +126,8 @@ export function EnhancedHero() {
             transition={{ delay: 0.6 }}
             className="flex flex-col items-center"
           >
-            <Zap className="h-12 w-12 text-blue-400 mb-2" />
-            <span className="text-white text-sm">{language === 'kr' ? '자위' : 'Self-Defense'}</span>
+            <Zap className="h-12 w-12 text-river-mid mb-2" />
+            <span className="text-cream text-sm">{language === 'kr' ? '자위' : 'Self-Defense'}</span>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -135,8 +135,8 @@ export function EnhancedHero() {
             transition={{ delay: 0.8 }}
             className="flex flex-col items-center"
           >
-            <Heart className="h-12 w-12 text-pink-400 mb-2" />
-            <span className="text-white text-sm">{language === 'kr' ? '단결' : 'Unity'}</span>
+            <Heart className="h-12 w-12 text-korean-red mb-2" />
+            <span className="text-cream text-sm">{language === 'kr' ? '단결' : 'Unity'}</span>
           </motion.div>
         </div>
 
@@ -149,14 +149,14 @@ export function EnhancedHero() {
         >
           <Button
             size="lg"
-            className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold px-8 py-6 text-lg"
+            className="bg-gradient-to-r from-korean-red to-korean-red/80 hover:from-korean-red/80 hover:to-korean-red/70 text-cream font-bold px-8 py-6 text-lg"
           >
             {t('joinMovement')}
           </Button>
           <Button
             size="lg"
             variant="outline"
-            className="border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-bold px-8 py-6 text-lg"
+            className="border-sovereign-gold text-sovereign-gold hover:bg-sovereign-gold hover:text-river-depths font-bold px-8 py-6 text-lg"
           >
             {t('learnMore')}
           </Button>

@@ -14,7 +14,7 @@ export default function EUUkraineAidPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0d1b2a] via-[#1b4965]/30 to-[#0d1b2a]">
       <div className="container mx-auto px-4 py-8">
-        <Link href="/briefings" className="inline-flex items-center gap-2 text-[#e8e4df]/70 hover:text-[#e8e4df] mb-8 transition-colors">
+        <Link href="/briefings" className="inline-flex items-center gap-2 text-[#f0ebe3]/70 hover:text-[#f0ebe3] mb-8 transition-colors">
           <ArrowLeft className="h-4 w-4" />
           Back to Briefings
         </Link>
@@ -28,13 +28,13 @@ export default function EUUkraineAidPage() {
               Fact-Checked
             </span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-[#e8e4df] mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#f0ebe3] mb-4">
             The Tipping Point
           </h1>
           <p className="text-xl md:text-2xl text-[#d4a74a] font-medium mb-4">
             How Europe's &euro;90 Billion Gamble on Ukraine Could Reshape Global Finance
           </p>
-          <p className="text-lg text-[#e8e4df]/80 max-w-4xl">
+          <p className="text-lg text-[#f0ebe3]/80 max-w-4xl">
             On December 18, 2025, the European Union approved a &euro;90 billion interest-free loan package for Ukraine.
             Behind the headlines lies a complex financial architecture built on uncertain assumptions about Russian reparations
             and significant risks for European taxpayers.
@@ -46,19 +46,19 @@ export default function EUUkraineAidPage() {
           <div className="grid md:grid-cols-4 gap-6 text-center">
             <div>
               <p className="text-4xl font-bold text-[#d4a74a]">&euro;90B</p>
-              <p className="text-[#e8e4df]/70 text-sm mt-1">New EU Loan Package</p>
+              <p className="text-[#f0ebe3]/70 text-sm mt-1">New EU Loan Package</p>
             </div>
             <div>
               <p className="text-4xl font-bold text-[#d4a74a]">&euro;3B</p>
-              <p className="text-[#e8e4df]/70 text-sm mt-1">Annual Interest (from 2028)</p>
+              <p className="text-[#f0ebe3]/70 text-sm mt-1">Annual Interest (from 2028)</p>
             </div>
             <div>
               <p className="text-4xl font-bold text-[#c73032]">&euro;43B</p>
-              <p className="text-[#e8e4df]/70 text-sm mt-1">Ukraine's 2026 Budget Gap</p>
+              <p className="text-[#f0ebe3]/70 text-sm mt-1">Ukraine's 2026 Budget Gap</p>
             </div>
             <div>
               <p className="text-4xl font-bold text-[#d4a74a]">15hrs</p>
-              <p className="text-[#e8e4df]/70 text-sm mt-1">Negotiation Duration</p>
+              <p className="text-[#f0ebe3]/70 text-sm mt-1">Negotiation Duration</p>
             </div>
           </div>
         </div>
@@ -74,20 +74,20 @@ export default function EUUkraineAidPage() {
         >
           <div className="space-y-6">
             <div className="bg-[#0d1b2a]/50 rounded-lg p-6">
-              <p className="text-[#e8e4df]/90 mb-6">
+              <p className="text-[#f0ebe3]/90 mb-6">
                 The European Council approved the &euro;90 billion package late on December 18 after 15 grueling hours of talks,
                 abandoning a bolder &euro;135-140 billion plan backed by &euro;210 billion in frozen Russian assets held at Euroclear.
               </p>
 
               <div className="bg-[#c73032]/20 rounded-lg p-6 border border-[#c73032]/40 mb-6">
-                <h4 className="font-bold text-[#e8e4df] mb-3 flex items-center gap-2">
+                <h4 className="font-bold text-[#f0ebe3] mb-3 flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5 text-[#c73032]" />
                   Why the Pivot?
                 </h4>
-                <p className="text-[#e8e4df]/90 mb-4">
+                <p className="text-[#f0ebe3]/90 mb-4">
                   Legal red flags from the IMF, ECB, and Belgium's government warned that seizing assets could:
                 </p>
-                <ul className="space-y-2 text-[#e8e4df]/80">
+                <ul className="space-y-2 text-[#f0ebe3]/80">
                   <li>• Trigger expensive lawsuits challenging the legality</li>
                   <li>• Erode international trust in Europe's financial system</li>
                   <li>• Invite Russian retaliation costing billions in countermeasures</li>
@@ -98,7 +98,7 @@ export default function EUUkraineAidPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-[#1b4965]/20 rounded-lg p-4 border border-[#1b4965]/50">
                   <h4 className="font-bold text-[#d4a74a] mb-3">The Unconventional Structure</h4>
-                  <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
+                  <ul className="space-y-2 text-[#f0ebe3]/80 text-sm">
                     <li>• Ukraine receives cash upfront for budgets and arms</li>
                     <li>• Repayment hinges on future Russian reparations post-war</li>
                     <li>• No fixed maturity date specified</li>
@@ -108,7 +108,7 @@ export default function EUUkraineAidPage() {
 
                 <div className="bg-[#d4a74a]/20 rounded-lg p-4 border border-[#d4a74a]/40">
                   <h4 className="font-bold text-[#d4a74a] mb-3">The Opt-Outs</h4>
-                  <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
+                  <ul className="space-y-2 text-[#f0ebe3]/80 text-sm">
                     <li>• <span className="text-[#d4a74a]">Hungary</span> - Declined participation</li>
                     <li>• <span className="text-[#d4a74a]">Slovakia</span> - Opted out</li>
                     <li>• <span className="text-[#d4a74a]">Czechia</span> - Shielding citizens from liability</li>
@@ -131,7 +131,7 @@ export default function EUUkraineAidPage() {
         >
           <div className="space-y-6">
             <div className="bg-[#0d1b2a]/50 rounded-lg p-6">
-              <p className="text-[#e8e4df]/90 mb-6">
+              <p className="text-[#f0ebe3]/90 mb-6">
                 This new &euro;90B package piles onto the &euro;750 billion NextGenerationEU bonds from 2021,
                 whose maturities stretch to 2058 and already add &euro;10-15 billion yearly in EU-wide interest payments.
               </p>
@@ -139,46 +139,46 @@ export default function EUUkraineAidPage() {
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="border-b border-[#e8e4df]/20">
-                      <th className="text-left py-3 px-4 text-[#e8e4df] font-bold">Country</th>
-                      <th className="text-center py-3 px-4 text-[#e8e4df] font-bold">Debt-to-GDP (Q3 2025)</th>
-                      <th className="text-center py-3 px-4 text-[#e8e4df] font-bold">Projected 2026 Increase</th>
-                      <th className="text-left py-3 px-4 text-[#e8e4df] font-bold">Key Pressure</th>
+                    <tr className="border-b border-[#f0ebe3]/20">
+                      <th className="text-left py-3 px-4 text-[#f0ebe3] font-bold">Country</th>
+                      <th className="text-center py-3 px-4 text-[#f0ebe3] font-bold">Debt-to-GDP (Q3 2025)</th>
+                      <th className="text-center py-3 px-4 text-[#f0ebe3] font-bold">Projected 2026 Increase</th>
+                      <th className="text-left py-3 px-4 text-[#f0ebe3] font-bold">Key Pressure</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-[#e8e4df]/10">
-                      <td className="py-3 px-4 text-[#e8e4df]">France</td>
+                    <tr className="border-b border-[#f0ebe3]/10">
+                      <td className="py-3 px-4 text-[#f0ebe3]">France</td>
                       <td className="py-3 px-4 text-[#c73032] text-center font-bold">114%</td>
                       <td className="py-3 px-4 text-[#d4a74a] text-center">+2-3%</td>
-                      <td className="py-3 px-4 text-[#e8e4df]/70">&euro;50B deficit, pension reforms</td>
+                      <td className="py-3 px-4 text-[#f0ebe3]/70">&euro;50B deficit, pension reforms</td>
                     </tr>
-                    <tr className="border-b border-[#e8e4df]/10">
-                      <td className="py-3 px-4 text-[#e8e4df]">Italy</td>
+                    <tr className="border-b border-[#f0ebe3]/10">
+                      <td className="py-3 px-4 text-[#f0ebe3]">Italy</td>
                       <td className="py-3 px-4 text-[#c73032] text-center font-bold">138%</td>
                       <td className="py-3 px-4 text-[#d4a74a] text-center">+1-2%</td>
-                      <td className="py-3 px-4 text-[#e8e4df]/70">&euro;60B debt service, slow growth</td>
+                      <td className="py-3 px-4 text-[#f0ebe3]/70">&euro;60B debt service, slow growth</td>
                     </tr>
-                    <tr className="border-b border-[#e8e4df]/10">
-                      <td className="py-3 px-4 text-[#e8e4df]">Germany</td>
+                    <tr className="border-b border-[#f0ebe3]/10">
+                      <td className="py-3 px-4 text-[#f0ebe3]">Germany</td>
                       <td className="py-3 px-4 text-[#d4a74a] text-center font-bold">68%</td>
                       <td className="py-3 px-4 text-[#d4a74a] text-center">+3-4%</td>
-                      <td className="py-3 px-4 text-[#e8e4df]/70">&euro;100B defense fund, energy crisis</td>
+                      <td className="py-3 px-4 text-[#f0ebe3]/70">&euro;100B defense fund, energy crisis</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 text-[#e8e4df]">Spain</td>
+                      <td className="py-3 px-4 text-[#f0ebe3]">Spain</td>
                       <td className="py-3 px-4 text-[#d4a74a] text-center font-bold">105%</td>
                       <td className="py-3 px-4 text-[#d4a74a] text-center">+1%</td>
-                      <td className="py-3 px-4 text-[#e8e4df]/70">Tourism rebound insufficient</td>
+                      <td className="py-3 px-4 text-[#f0ebe3]/70">Tourism rebound insufficient</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <p className="text-[#e8e4df]/50 text-xs mt-4">Sources: Eurostat, IMF projections</p>
+              <p className="text-[#f0ebe3]/50 text-xs mt-4">Sources: Eurostat, IMF projections</p>
 
               <div className="mt-6 p-4 bg-[#1b4965]/20 rounded-lg border border-[#1b4965]/50">
-                <h4 className="font-bold text-[#e8e4df] mb-2">The Hidden Cost</h4>
-                <p className="text-[#e8e4df]/80 text-sm">
+                <h4 className="font-bold text-[#f0ebe3] mb-2">The Hidden Cost</h4>
+                <p className="text-[#f0ebe3]/80 text-sm">
                   From 2028 onward, EU taxpayers face &euro;3 billion annually in interest payments on these bonds,
                   plus the &euro;90 billion principal that may never be repaid if Russia refuses reparations.
                   No fixed maturity date makes these bonds toxic to traditional investors,
@@ -203,15 +203,15 @@ export default function EUUkraineAidPage() {
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="bg-[#d4a74a]/20 rounded-lg p-4 border border-[#d4a74a]/40">
                   <h4 className="font-bold text-[#d4a74a] mb-3">Official Numbers</h4>
-                  <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
+                  <ul className="space-y-2 text-[#f0ebe3]/80 text-sm">
                     <li>• <span className="text-[#d4a74a] font-bold">&euro;43B</span> - Kyiv's projected 2026 budget gap</li>
-                    <li>• <span className="text-[#e8e4df]/60">18.5% of GDP</span></li>
+                    <li>• <span className="text-[#f0ebe3]/60">18.5% of GDP</span></li>
                   </ul>
                 </div>
 
                 <div className="bg-[#c73032]/20 rounded-lg p-4 border border-[#c73032]/40">
                   <h4 className="font-bold text-[#c73032] mb-3">Expert Estimates</h4>
-                  <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
+                  <ul className="space-y-2 text-[#f0ebe3]/80 text-sm">
                     <li>• <span className="text-[#c73032] font-bold">&euro;60B+</span> - If fronts collapse further</li>
                     <li>• IMF's new $8.2B lifeline flags $136B gap through 2029</li>
                   </ul>
@@ -220,7 +220,7 @@ export default function EUUkraineAidPage() {
 
               <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/50">
                 <h4 className="font-bold text-[#d4a74a] mb-3">Where Does the &euro;90B Go?</h4>
-                <p className="text-[#e8e4df]/90 mb-4">
+                <p className="text-[#f0ebe3]/90 mb-4">
                   The &euro;90 billion likely rolls over a &euro;40 billion prior loan,
                   netting Ukraine approximately &euro;50 billion in fresh cash—just enough for one year,
                   according to Ukrainian MPs.
@@ -228,22 +228,22 @@ export default function EUUkraineAidPage() {
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="text-center p-3 bg-[#0d1b2a]/50 rounded">
                     <p className="text-2xl font-bold text-[#d4a74a]">&euro;40B</p>
-                    <p className="text-xs text-[#e8e4df]/60">Prior Loan Rollover</p>
+                    <p className="text-xs text-[#f0ebe3]/60">Prior Loan Rollover</p>
                   </div>
                   <div className="text-center p-3 bg-[#0d1b2a]/50 rounded">
                     <p className="text-2xl font-bold text-[#d4a74a]">&euro;50B</p>
-                    <p className="text-xs text-[#e8e4df]/60">Fresh Cash</p>
+                    <p className="text-xs text-[#f0ebe3]/60">Fresh Cash</p>
                   </div>
                   <div className="text-center p-3 bg-[#0d1b2a]/50 rounded">
                     <p className="text-2xl font-bold text-[#d4a74a]">~1yr</p>
-                    <p className="text-xs text-[#e8e4df]/60">Coverage Duration</p>
+                    <p className="text-xs text-[#f0ebe3]/60">Coverage Duration</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-6 p-4 bg-[#1b4965]/30 rounded-lg border border-[#1b4965]/50">
-                <h4 className="font-bold text-[#e8e4df] mb-2">U.S. Support Comparison</h4>
-                <p className="text-[#e8e4df]/80 text-sm">
+                <h4 className="font-bold text-[#f0ebe3] mb-2">U.S. Support Comparison</h4>
+                <p className="text-[#f0ebe3]/80 text-sm">
                   The December 17 NDAA allocates $800 million over two years ($400M annually)—
                   a fraction of the $40B+ Ukraine needs, signaling "Ukraine fatigue" even among previous supporters.
                 </p>
@@ -265,8 +265,8 @@ export default function EUUkraineAidPage() {
             <div className="bg-[#0d1b2a]/50 rounded-lg p-6">
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="bg-[#1b4965]/20 rounded-lg p-4 border border-[#1b4965]/50">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Russian Advances (Dec 2025)</h4>
-                  <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Russian Advances (Dec 2025)</h4>
+                  <ul className="space-y-2 text-[#f0ebe3]/80 text-sm">
                     <li>• 50% control of Kurakhove</li>
                     <li>• Lyman region advancing</li>
                     <li>• Pokrovsk (Mirnograd) encircled</li>
@@ -275,14 +275,14 @@ export default function EUUkraineAidPage() {
                 </div>
 
                 <div className="bg-[#1b4965]/30 rounded-lg p-4 border border-[#1b4965]/50">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Economic Comparison</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Economic Comparison</h4>
                   <div className="space-y-3">
                     <div>
-                      <p className="text-xs text-[#e8e4df]/60 mb-1">Russia Inflation</p>
+                      <p className="text-xs text-[#f0ebe3]/60 mb-1">Russia Inflation</p>
                       <p className="text-xl font-bold text-[#d4a74a]">5.6%</p>
                     </div>
                     <div>
-                      <p className="text-xs text-[#e8e4df]/60 mb-1">Russia Debt-to-GDP</p>
+                      <p className="text-xs text-[#f0ebe3]/60 mb-1">Russia Debt-to-GDP</p>
                       <p className="text-xl font-bold text-[#d4a74a]">18%</p>
                     </div>
                   </div>
@@ -291,7 +291,7 @@ export default function EUUkraineAidPage() {
 
               <div className="p-4 bg-[#d4a74a]/20 rounded-lg border border-[#d4a74a]/40">
                 <h4 className="font-bold text-[#d4a74a] mb-2">ISW Assessment</h4>
-                <p className="text-[#e8e4df]/80 text-sm">
+                <p className="text-[#f0ebe3]/80 text-sm">
                   Institute for the Study of War confirms: Russian forces continue to squeeze positions
                   east of Oskil River, with no significant Ukrainian gains reported in recent weeks.
                   Infrastructure attacks on Odessa bridges continue, with widespread blackouts reported.
@@ -312,7 +312,7 @@ export default function EUUkraineAidPage() {
         >
           <div className="space-y-6">
             <div className="bg-[#0d1b2a]/50 rounded-lg p-6">
-              <p className="text-[#e8e4df]/90 mb-6">
+              <p className="text-[#f0ebe3]/90 mb-6">
                 Reports indicate Kirill Dmitriev—described as Putin's economic envoy—has engaged in
                 discussions with U.S. representatives in Florida. No trilateral meetings with Ukrainian
                 officials have been confirmed due to reported tensions.
@@ -321,7 +321,7 @@ export default function EUUkraineAidPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-[#1b4965]/20 rounded-lg p-4 border border-[#1b4965]/50">
                   <h4 className="font-bold text-[#d4a74a] mb-3">Reported Discussion Points</h4>
-                  <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
+                  <ul className="space-y-2 text-[#f0ebe3]/80 text-sm">
                     <li>• Potential ceasefire frameworks</li>
                     <li>• Security guarantee mechanisms</li>
                     <li>• Economic normalization paths</li>
@@ -330,7 +330,7 @@ export default function EUUkraineAidPage() {
 
                 <div className="bg-[#1b4965]/20 rounded-lg p-4 border border-[#1b4965]/50">
                   <h4 className="font-bold text-[#d4a74a] mb-3">Russian Position (Public)</h4>
-                  <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
+                  <ul className="space-y-2 text-[#f0ebe3]/80 text-sm">
                     <li>• Reference to "Istanbul Plus" framework</li>
                     <li>• Territorial acknowledgments</li>
                     <li>• NATO membership restrictions</li>
@@ -354,7 +354,7 @@ export default function EUUkraineAidPage() {
             <div className="bg-[#0d1b2a]/50 rounded-lg p-6">
               <div className="bg-[#d4a74a]/20 rounded-lg p-6 border border-[#d4a74a]/40 mb-6">
                 <h4 className="font-bold text-[#d4a74a] mb-3">Key Takeaways</h4>
-                <ul className="space-y-3 text-[#e8e4df]/90">
+                <ul className="space-y-3 text-[#f0ebe3]/90">
                   <li className="flex items-start gap-3">
                     <span className="text-[#d4a74a] font-bold">1.</span>
                     <span>The &euro;90B loan structure assumes Russian reparations that may never materialize</span>
@@ -379,8 +379,8 @@ export default function EUUkraineAidPage() {
               </div>
 
               <div className="p-6 bg-gradient-to-r from-[#1b4965]/30 via-[#0d1b2a] to-[#1b4965]/30 rounded-lg border border-[#1b4965]/50">
-                <h4 className="text-[#e8e4df] font-bold mb-3">The Bottom Line</h4>
-                <p className="text-[#e8e4df]/90">
+                <h4 className="text-[#f0ebe3] font-bold mb-3">The Bottom Line</h4>
+                <p className="text-[#f0ebe3]/90">
                   This isn't simply aid—it's a complex financial instrument that transfers significant
                   risk to European taxpayers while providing temporary relief to Ukraine.
                   The absence of fixed repayment terms and reliance on hypothetical Russian reparations
@@ -393,21 +393,21 @@ export default function EUUkraineAidPage() {
 
         {/* Cross-links */}
         <div className="mt-12 bg-gradient-to-r from-[#1b4965]/30 via-[#0d1b2a] to-[#1b4965]/30 rounded-xl p-8 border border-[#1b4965]/50">
-          <h2 className="text-2xl font-bold text-[#e8e4df] mb-6 text-center">Continue Your Research</h2>
+          <h2 className="text-2xl font-bold text-[#f0ebe3] mb-6 text-center">Continue Your Research</h2>
 
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/truth-project/eu-fiscal-gamble" className="px-6 py-3 bg-[#1b4965] hover:bg-[#1b4965]/80 text-[#e8e4df] font-medium rounded-lg transition-colors">
+            <Link href="/truth-project/eu-fiscal-gamble" className="px-6 py-3 bg-[#1b4965] hover:bg-[#1b4965]/80 text-[#f0ebe3] font-medium rounded-lg transition-colors">
               Deep Dive: Fiscal Analysis
             </Link>
-            <Link href="/briefings/nato-expansion" className="px-6 py-3 bg-[#c73032] hover:bg-[#c73032]/80 text-[#e8e4df] font-medium rounded-lg transition-colors">
+            <Link href="/briefings/nato-expansion" className="px-6 py-3 bg-[#c73032] hover:bg-[#c73032]/80 text-[#f0ebe3] font-medium rounded-lg transition-colors">
               NATO Expansion Context
             </Link>
-            <Link href="/briefings/sanctions-warfare" className="px-6 py-3 bg-[#e8e4df]/10 hover:bg-[#e8e4df]/20 text-[#e8e4df] font-medium rounded-lg transition-colors border border-[#e8e4df]/20">
+            <Link href="/briefings/sanctions-warfare" className="px-6 py-3 bg-[#f0ebe3]/10 hover:bg-[#f0ebe3]/20 text-[#f0ebe3] font-medium rounded-lg transition-colors border border-[#f0ebe3]/20">
               Sanctions Analysis
             </Link>
           </div>
 
-          <p className="text-center text-[#e8e4df]/60 text-sm mt-6">
+          <p className="text-center text-[#f0ebe3]/60 text-sm mt-6">
             Sources: European Council statements, IMF projections, U.S. Congressional records, ISW assessments
           </p>
         </div>
@@ -445,7 +445,7 @@ function Section({
   const iconColorClasses: Record<string, string> = {
     red: "text-[#c73032]",
     blue: "text-[#d4a74a]",
-    purple: "text-[#e8e4df]",
+    purple: "text-[#f0ebe3]",
     green: "text-[#d4a74a]",
     yellow: "text-[#d4a74a]",
     amber: "text-[#d4a74a]"
@@ -455,16 +455,16 @@ function Section({
     <div className={`mb-8 rounded-xl border ${colorClasses[color]} overflow-hidden`}>
       <button
         onClick={onToggle}
-        className="w-full px-6 py-4 flex items-center justify-between hover:bg-[#e8e4df]/5 transition-colors"
+        className="w-full px-6 py-4 flex items-center justify-between hover:bg-[#f0ebe3]/5 transition-colors"
       >
         <div className="flex items-center gap-3">
           <Icon className={`w-6 h-6 ${iconColorClasses[color]}`} />
-          <h2 className="text-xl md:text-2xl font-bold text-[#e8e4df] text-left">{title}</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-[#f0ebe3] text-left">{title}</h2>
         </div>
         {expanded ? (
-          <ChevronUp className="w-5 h-5 text-[#e8e4df]/60 flex-shrink-0" />
+          <ChevronUp className="w-5 h-5 text-[#f0ebe3]/60 flex-shrink-0" />
         ) : (
-          <ChevronDown className="w-5 h-5 text-[#e8e4df]/60 flex-shrink-0" />
+          <ChevronDown className="w-5 h-5 text-[#f0ebe3]/60 flex-shrink-0" />
         )}
       </button>
 

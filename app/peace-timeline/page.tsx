@@ -198,7 +198,7 @@ export default function PeaceTimelinePage() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] bg-gradient-to-r from-[#1b4965] via-[#d4a74a] to-[#1b4965] bg-clip-text text-transparent">
             {language === 'kr' ? '평화 통일의 역사' : 'History of Peaceful Unification'}
           </h1>
-          <p className="text-xl md:text-2xl text-[#e8e4df]/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-[#f0ebe3]/90 mb-8 max-w-3xl mx-auto">
             {language === 'kr'
               ? '5000년 평화 전통에서 시작되어 미래 통일로 이어지는 한민족의 평화 여정'
               : 'The Korean people\'s peace journey from 5000 years of peace tradition to future unification'}
@@ -232,12 +232,12 @@ export default function PeaceTimelinePage() {
                   <Card className="flex-1 bg-[#0d1b2a]/80 border-[#1b4965]/40 hover:border-[#d4a74a]/40 transition-all">
                     <CardHeader>
                       <div className="flex justify-between items-start mb-2">
-                        <CardTitle className="text-xl text-[#e8e4df]">{event.title}</CardTitle>
+                        <CardTitle className="text-xl text-[#f0ebe3]">{event.title}</CardTitle>
                         <span className="text-sm text-[#d4a74a] font-mono">{event.year}</span>
                       </div>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <p className="text-[#e8e4df]/80">{event.description}</p>
+                      <p className="text-[#f0ebe3]/80">{event.description}</p>
                       <div className="bg-[#1b4965]/30 rounded-lg p-3">
                         <p className="text-[#d4a74a] text-sm font-semibold">
                           {language === 'kr' ? '역사적 의의: ' : 'Historical Significance: '}{event.significance}
@@ -261,10 +261,10 @@ export default function PeaceTimelinePage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#e8e4df] mb-4 font-[family-name:var(--font-heading)]">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#f0ebe3] mb-4 font-[family-name:var(--font-heading)]">
               {language === 'kr' ? '평화 통일 원칙' : 'Peaceful Unification Principles'}
             </h2>
-            <p className="text-[#e8e4df]/80 max-w-2xl mx-auto">
+            <p className="text-[#f0ebe3]/80 max-w-2xl mx-auto">
               {language === 'kr'
                 ? '지속가능하고 포용적인 통일을 위한 핵심 가치와 원칙'
                 : 'Core values and principles for sustainable and inclusive unification'}
@@ -283,10 +283,10 @@ export default function PeaceTimelinePage() {
               >
                 <div className="flex items-center gap-4 mb-4">
                   <principle.icon className="h-10 w-10 text-[#d4a74a]" />
-                  <h3 className="text-xl font-bold text-[#e8e4df]">{principle.title}</h3>
+                  <h3 className="text-xl font-bold text-[#f0ebe3]">{principle.title}</h3>
                 </div>
 
-                <p className="text-[#e8e4df]/80 mb-4">{principle.description}</p>
+                <p className="text-[#f0ebe3]/80 mb-4">{principle.description}</p>
 
                 <div className="flex flex-wrap gap-2">
                   {principle.values.map((value, i) => (
@@ -312,8 +312,8 @@ export default function PeaceTimelinePage() {
           >
             <div className="text-center mb-8">
               <Star className="h-12 w-12 text-[#d4a74a] mx-auto mb-4" />
-              <h2 className="text-3xl font-bold text-[#e8e4df] mb-4 font-[family-name:var(--font-heading)]">{unificationBenefits.title}</h2>
-              <p className="text-[#e8e4df]/80 max-w-2xl mx-auto">
+              <h2 className="text-3xl font-bold text-[#f0ebe3] mb-4 font-[family-name:var(--font-heading)]">{unificationBenefits.title}</h2>
+              <p className="text-[#f0ebe3]/80 max-w-2xl mx-auto">
                 {language === 'kr'
                   ? '한반도 통일이 세계에 미칠 긍정적 영향과 변화'
                   : 'Positive global impact and changes from Korean Peninsula unification'}
@@ -331,7 +331,7 @@ export default function PeaceTimelinePage() {
                   className="bg-[#0d1b2a]/60 rounded-lg p-6"
                 >
                   <h3 className="text-lg font-bold text-[#d4a74a] mb-3">{benefit.category}</h3>
-                  <p className="text-[#e8e4df]/80 mb-3">{benefit.description}</p>
+                  <p className="text-[#f0ebe3]/80 mb-3">{benefit.description}</p>
 
                   <div className="space-y-2">
                     <div className="bg-[#1b4965]/30 rounded p-3">
@@ -356,13 +356,13 @@ export default function PeaceTimelinePage() {
           viewport={{ once: true }}
           className="container mx-auto max-w-4xl text-center"
         >
-          <Bird className="h-16 w-16 text-[#e8e4df] mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-bold text-[#e8e4df] mb-6 font-[family-name:var(--font-heading)]">
+          <Bird className="h-16 w-16 text-[#f0ebe3] mx-auto mb-6" />
+          <h2 className="text-3xl md:text-4xl font-bold text-[#f0ebe3] mb-6 font-[family-name:var(--font-heading)]">
             {language === 'kr'
               ? '평화 통일의 미래 비전'
               : 'Future Vision of Peaceful Unification'}
           </h2>
-          <p className="text-xl text-[#e8e4df]/80 mb-8">
+          <p className="text-xl text-[#f0ebe3]/80 mb-8">
             {language === 'kr'
               ? '한반도에서 시작되는 세계 평화의 새로운 장, 인류 공동번영의 시대'
               : 'A new chapter of world peace beginning from the Korean Peninsula, an era of common human prosperity'}
@@ -372,7 +372,7 @@ export default function PeaceTimelinePage() {
             <h3 className="text-2xl font-bold text-[#d4a74a] mb-6 font-[family-name:var(--font-heading)]">
               {language === 'kr' ? '2030 통일 한국의 모습' : '2030 Vision of Unified Korea'}
             </h3>
-            <div className="grid md:grid-cols-3 gap-6 text-[#e8e4df]/80">
+            <div className="grid md:grid-cols-3 gap-6 text-[#f0ebe3]/80">
               <div className="text-center">
                 <Building className="h-12 w-12 text-[#1b4965] mx-auto mb-3" />
                 <h4 className="font-bold mb-2">{language === 'kr' ? '경제 강국' : 'Economic Powerhouse'}</h4>
@@ -394,7 +394,7 @@ export default function PeaceTimelinePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/cultural-exchange"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#1b4965] to-[#0d1b2a] hover:from-[#143a52] hover:to-[#0a1521] text-[#e8e4df] font-bold rounded-lg transition-all transform hover:scale-105"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#1b4965] to-[#0d1b2a] hover:from-[#143a52] hover:to-[#0a1521] text-[#f0ebe3] font-bold rounded-lg transition-all transform hover:scale-105"
             >
               {language === 'kr' ? '문화 교류 참여' : 'Join Cultural Exchange'}
               <ArrowRight className="ml-2 h-5 w-5" />

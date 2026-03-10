@@ -91,10 +91,10 @@ export default function MissionPage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] bg-gradient-to-r from-[#d4a74a] via-[#e8e4df] to-[#d4a74a] bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] bg-gradient-to-r from-[#d4a74a] via-[#f0ebe3] to-[#d4a74a] bg-clip-text text-transparent">
               {t('missionTitle')}
             </h1>
-            <p className="text-xl md:text-2xl text-[#e8e4df]/90 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-[#f0ebe3]/90 max-w-4xl mx-auto leading-relaxed">
               {t('missionText')}
             </p>
             {/* Korean Mission Statement */}
@@ -115,7 +115,7 @@ export default function MissionPage() {
             <h2 className="text-3xl font-bold text-[#d4a74a] mb-4 font-[family-name:var(--font-heading)]">
               {language === 'kr' ? '우리의 비전' : 'Our Vision'}
             </h2>
-            <p className="text-[#e8e4df] text-lg leading-relaxed">
+            <p className="text-[#f0ebe3] text-lg leading-relaxed">
               {language === 'kr'
                 ? '우리는 자주, 평화, 친선의 이념 아래 전 인류가 진정한 자유와 평등을 누리는 세계를 건설한다. 각 개인이 자신의 잠재력을 최대한 발휘하면서도 집단의 이익과 조화를 이루는 사회, 그것이 우리가 추구하는 미래이다.'
                 : 'Under the ideals of independence, peace, and friendship, we build a world where all humanity enjoys true freedom and equality. A society where each individual maximizes their potential while harmonizing with collective interests - this is the future we pursue.'}
@@ -136,10 +136,10 @@ export default function MissionPage() {
                     <div className={`mb-4 ${principle.color}`}>
                       <principle.icon className="h-12 w-12" />
                     </div>
-                    <h3 className="text-xl font-bold text-[#e8e4df] mb-2">
+                    <h3 className="text-xl font-bold text-[#f0ebe3] mb-2">
                       {principle.title}
                     </h3>
-                    <p className="text-[#e8e4df]/80 text-sm">
+                    <p className="text-[#f0ebe3]/80 text-sm">
                       {principle.description}
                     </p>
                   </CardContent>
@@ -158,7 +158,7 @@ export default function MissionPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#d4a74a] mb-6 font-[family-name:var(--font-heading)]">
               {language === 'kr' ? '역사의 주인공이 되라' : 'Become the Protagonist of History'}
             </h2>
-            <p className="text-[#e8e4df] text-lg mb-8 max-w-3xl mx-auto">
+            <p className="text-[#f0ebe3] text-lg mb-8 max-w-3xl mx-auto">
               {language === 'kr'
                 ? '우리 시대의 위대한 변혁에 동참하라. 당신의 의지와 행동이 새로운 세계를 만드는 초석이 된다.'
                 : 'Join the great transformation of our time. Your will and actions become the cornerstone of building a new world.'}
@@ -166,7 +166,7 @@ export default function MissionPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/social"
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#1b4965] to-[#0d1b2a] hover:from-[#0d1b2a] hover:to-[#1b4965] text-[#e8e4df] font-bold rounded-lg transition-all duration-300 transform hover:scale-105 border border-[#d4a74a]/30"
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#1b4965] to-[#0d1b2a] hover:from-[#0d1b2a] hover:to-[#1b4965] text-[#f0ebe3] font-bold rounded-lg transition-all duration-300 transform hover:scale-105 border border-[#d4a74a]/30"
               >
                 {language === 'kr' ? '함께하기' : 'Join Us'}
               </a>

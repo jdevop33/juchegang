@@ -49,12 +49,12 @@ export default function DocumentsPage() {
   })
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black">
+    <main className="min-h-screen bg-gradient-to-b from-river-depths via-river-deep to-river-depths">
       <JucheHeader />
 
       <div className="container mx-auto px-4 pt-28 pb-16">
         {/* Back Link */}
-        <Link href="/library" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-8 transition-colors">
+        <Link href="/library" className="inline-flex items-center gap-2 text-cream/70 hover:text-cream mb-8 transition-colors">
           <ArrowLeft className="h-4 w-4" />
           Back to Library
         </Link>
@@ -62,12 +62,12 @@ export default function DocumentsPage() {
         {/* Header */}
         <header className="mb-8">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
-              <FileText className="w-6 h-6 text-blue-400" />
+            <div className="w-12 h-12 bg-river-mid/20 rounded-lg flex items-center justify-center">
+              <FileText className="w-6 h-6 text-river-mid" />
             </div>
             <div>
-              <h1 className="text-3xl font-bold text-white">Documents & Reports</h1>
-              <p className="text-white/60">{documents.length} resources available</p>
+              <h1 className="text-3xl font-bold text-cream">Documents & Reports</h1>
+              <p className="text-cream/60">{documents.length} resources available</p>
             </div>
           </div>
         </header>
@@ -75,13 +75,13 @@ export default function DocumentsPage() {
         {/* Search & Filter */}
         <div className="flex flex-col md:flex-row gap-4 mb-8">
           <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-white/40" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-cream/40" />
             <input
               type="text"
               placeholder="Search documents..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder:text-white/40 focus:outline-none focus:border-blue-500/50"
+              className="w-full pl-10 pr-4 py-3 bg-cream/5 border border-cream/10 rounded-lg text-cream placeholder:text-cream/40 focus:outline-none focus:border-river-mid/50"
             />
           </div>
           <div className="flex gap-2 flex-wrap">
@@ -91,8 +91,8 @@ export default function DocumentsPage() {
                 onClick={() => setActiveCategory(category)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   activeCategory === category
-                    ? "bg-blue-600 text-white"
-                    : "bg-white/5 text-white/70 hover:bg-white/10"
+                    ? "bg-river-current text-cream"
+                    : "bg-cream/5 text-cream/70 hover:bg-cream/10"
                 }`}
               >
                 {category}
@@ -107,28 +107,28 @@ export default function DocumentsPage() {
             {filteredDocuments.map((doc) => (
               <div
                 key={doc.id}
-                className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors"
+                className="group bg-cream/5 border border-cream/10 rounded-xl p-6 hover:bg-cream/10 transition-colors"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs font-medium rounded">
+                      <span className="px-2 py-1 bg-river-mid/20 text-river-mid text-xs font-medium rounded">
                         {doc.fileType}
                       </span>
-                      <span className="px-2 py-1 bg-white/10 text-white/60 text-xs rounded">
+                      <span className="px-2 py-1 bg-cream/10 text-cream/60 text-xs rounded">
                         {doc.category}
                       </span>
                       {doc.featured && (
-                        <span className="px-2 py-1 bg-amber-500/20 text-amber-400 text-xs font-medium rounded">
+                        <span className="px-2 py-1 bg-sovereign-gold/20 text-sovereign-gold text-xs font-medium rounded">
                           Featured
                         </span>
                       )}
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                    <h3 className="text-xl font-bold text-cream mb-2 group-hover:text-river-mid transition-colors">
                       {doc.title}
                     </h3>
-                    <p className="text-white/60 text-sm mb-4">{doc.description}</p>
-                    <div className="flex items-center gap-4 text-sm text-white/40">
+                    <p className="text-cream/60 text-sm mb-4">{doc.description}</p>
+                    <div className="flex items-center gap-4 text-sm text-cream/40">
                       <span className="flex items-center gap-1">
                         <Calendar className="w-4 h-4" />
                         {new Date(doc.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
@@ -143,7 +143,7 @@ export default function DocumentsPage() {
                   <a
                     href={doc.downloadUrl}
                     download
-                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors whitespace-nowrap"
+                    className="flex items-center gap-2 px-4 py-2 bg-river-current hover:bg-river-current text-cream font-medium rounded-lg transition-colors whitespace-nowrap"
                   >
                     <Download className="w-4 h-4" />
                     Download
@@ -153,12 +153,12 @@ export default function DocumentsPage() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-16 border border-dashed border-white/20 rounded-xl">
-            <FileText className="w-16 h-16 text-white/20 mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-white mb-2">
+          <div className="text-center py-16 border border-dashed border-cream/20 rounded-xl">
+            <FileText className="w-16 h-16 text-cream/20 mx-auto mb-4" />
+            <h3 className="text-xl font-bold text-cream mb-2">
               {documents.length === 0 ? "Documents coming soon" : "No matches found"}
             </h3>
-            <p className="text-white/60 max-w-md mx-auto">
+            <p className="text-cream/60 max-w-md mx-auto">
               {documents.length === 0
                 ? "We're preparing research documents and reports. Check back soon!"
                 : "Try adjusting your search or filter criteria."

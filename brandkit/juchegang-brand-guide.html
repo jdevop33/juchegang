@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JucheGang 주체강 — Brand Guide</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Sans+3:wght@300;400;600;700&family=Noto+Serif+KR:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  /* ═══════════════════════════════════════════ */
+  /* CSS VARIABLES — THE RIVER PALETTE          */
+  /* ═══════════════════════════════════════════ */
+  :root {
+    --river-depths: #0d1b2a;
+    --current-blue: #1b4965;
+    --deep-water: #142638;
+    --korean-red: #c73032;
+    --sovereign-gold: #d4a74a;
+    --gold-dark: #8b6914;
+    --river-mist: #e8dfd0;
+    --text-primary: #f0ebe3;
+    --text-secondary: #a0b4c8;
+    --river-mid: #2a6f8e;
+
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+    --font-korean: 'Noto Serif KR', serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* RESET & BASE                               */
+  /* ═══════════════════════════════════════════ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--river-depths);
+    color: var(--text-primary);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* WATER TEXTURE OVERLAY                      */
+  /* ═══════════════════════════════════════════ */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(27,73,101,0.15) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(42,111,142,0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 80%, rgba(199,48,50,0.04) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* NAVIGATION                                 */
+  /* ═══════════════════════════════════════════ */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(13,27,42,0.92);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(212,167,74,0.15);
+    padding: 0 2rem;
+  }
+  nav .nav-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+  }
+  nav .nav-brand {
+    font-family: var(--font-heading);
+    font-weight: 900; font-size: 1.3rem;
+    color: var(--sovereign-gold);
+    letter-spacing: 0.02em;
+  }
+  nav .nav-brand span { 
+    font-family: var(--font-korean); 
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-left: 0.5rem;
+    font-size: 0.95rem;
+  }
+  nav .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+  nav .nav-links a {
+    color: var(--text-secondary); text-decoration: none;
+    font-size: 0.85rem; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  nav .nav-links a:hover { color: var(--sovereign-gold); }
+
+  /* ═══════════════════════════════════════════ */
+  /* SECTIONS                                   */
+  /* ═══════════════════════════════════════════ */
+  section {
+    position: relative; z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+  }
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--sovereign-gold);
+    margin-bottom: 0.75rem;
+    opacity: 0.8;
+  }
+
+  h1, h2, h3 { font-family: var(--font-heading); line-height: 1.2; }
+
+  h2 {
+    font-size: 2.4rem; font-weight: 900;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--text-primary), var(--sovereign-gold));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  h3 {
+    font-size: 1.4rem; font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  p { margin-bottom: 1rem; color: var(--text-secondary); font-size: 1.05rem; }
+  p.lead { font-size: 1.25rem; color: var(--text-primary); line-height: 1.8; }
+
+  .divider {
+    width: 80px; height: 2px;
+    background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+    margin: 2rem 0;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* HERO                                       */
+  /* ═══════════════════════════════════════════ */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding-top: 64px;
+    position: relative;
+  }
+
+  /* Animated river flow lines */
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 120px,
+        rgba(27,73,101,0.06) 120px,
+        rgba(27,73,101,0.06) 121px
+      );
+    animation: riverFlow 20s linear infinite;
+    pointer-events: none;
+  }
+
+  @keyframes riverFlow {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(121px); }
+  }
+
+  .hero-korean {
+    font-family: var(--font-korean);
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 80px rgba(27,73,101,0.5);
+  }
+
+  .hero-english {
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 4vw, 3.2rem);
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, var(--sovereign-gold), #f0d78c, var(--sovereign-gold));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-meaning {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 500px;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-meaning em {
+    color: var(--sovereign-gold);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .hero-tagline {
+    margin-top: 2.5rem;
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--river-mid);
+    opacity: 0.7;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* PHILOSOPHY SECTION                         */
+  /* ═══════════════════════════════════════════ */
+  .philosophy-block {
+    background: linear-gradient(135deg, var(--deep-water), rgba(27,73,101,0.2));
+    border-left: 3px solid var(--sovereign-gold);
+    border-radius: 0 12px 12px 0;
+    padding: 2.5rem 3rem;
+    margin: 2rem 0;
+    position: relative;
+  }
+  .philosophy-block::before {
+    content: '江';
+    position: absolute;
+    top: 1rem; right: 2rem;
+    font-family: var(--font-korean);
+    font-size: 6rem;
+    color: rgba(212,167,74,0.05);
+    line-height: 1;
+  }
+  .philosophy-block p {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    line-height: 1.9;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* COLOR PALETTE                              */
+  /* ═══════════════════════════════════════════ */
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .color-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--deep-water);
+    border: 1px solid rgba(160,180,200,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .color-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  }
+
+  .color-swatch {
+    height: 120px;
+    position: relative;
+  }
+  .color-swatch .hex-overlay {
+    position: absolute;
+    bottom: 0.75rem; left: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+  }
+
+  .color-info {
+    padding: 1rem 1.25rem;
+  }
+  .color-info h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+  }
+  .color-info .color-usage {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+  .color-info .color-rgb {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    margin-top: 0.4rem;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* GRADIENTS                                  */
+  /* ═══════════════════════════════════════════ */
+  .gradient-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .gradient-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--deep-water);
+    border: 1px solid rgba(160,180,200,0.08);
+  }
+  .gradient-swatch {
+    height: 100px;
+    display: flex; align-items: flex-end; justify-content: flex-start;
+    padding: 1rem;
+  }
+  .gradient-swatch span {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    background: rgba(0,0,0,0.4);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+  }
+  .gradient-info {
+    padding: 1rem 1.25rem;
+  }
+  .gradient-info h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  .gradient-info p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* TYPOGRAPHY SHOWCASE                        */
+  /* ═══════════════════════════════════════════ */
+  .type-specimen {
+    background: var(--deep-water);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(160,180,200,0.06);
+  }
+
+  .type-meta {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; gap: 0.5rem;
+  }
+  .type-meta .font-name {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--sovereign-gold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .type-meta .font-role {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+
+  .type-sample-heading {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 1.15;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .type-sample-body {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    max-width: 680px;
+  }
+
+  .type-sample-korean {
+    font-family: var(--font-korean);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+
+  .type-sample-mono {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: var(--river-mid);
+    line-height: 1.6;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* BRAND NARRATIVE CARDS                      */
+  /* ═══════════════════════════════════════════ */
+  .narrative-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .narrative-card {
+    background: var(--deep-water);
+    border: 1px solid rgba(160,180,200,0.08);
+    border-radius: 12px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .narrative-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 3px;
+  }
+  .narrative-card.card-red::before { background: var(--korean-red); }
+  .narrative-card.card-gold::before { background: var(--sovereign-gold); }
+  .narrative-card.card-blue::before { background: var(--current-blue); }
+
+  .narrative-card .card-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+  .narrative-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* LOGO CONCEPTS                              */
+  /* ═══════════════════════════════════════════ */
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .logo-concept {
+    background: var(--deep-water);
+    border: 1px solid rgba(160,180,200,0.08);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex; flex-direction: column;
+    align-items: center; gap: 1.5rem;
+  }
+
+  .logo-mark {
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-mark.mark-primary {
+    background: linear-gradient(135deg, var(--current-blue), var(--river-depths));
+    border: 2px solid var(--sovereign-gold);
+    box-shadow: 0 0 40px rgba(27,73,101,0.3), inset 0 0 20px rgba(0,0,0,0.2);
+  }
+  .logo-mark.mark-red {
+    background: linear-gradient(135deg, var(--korean-red), #8b1a1c);
+    border: 2px solid var(--sovereign-gold);
+    box-shadow: 0 0 40px rgba(199,48,50,0.2);
+  }
+  .logo-mark.mark-gold {
+    background: linear-gradient(135deg, var(--river-depths), var(--deep-water));
+    border: 2px solid var(--sovereign-gold);
+    box-shadow: 0 0 40px rgba(212,167,74,0.15);
+  }
+
+  .logo-mark .mark-text {
+    font-family: var(--font-korean);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    z-index: 1;
+  }
+
+  .logo-mark .mark-text-gold {
+    font-family: var(--font-korean);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--sovereign-gold);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    z-index: 1;
+  }
+
+  /* Water ripple effect */
+  .logo-mark.mark-primary::after {
+    content: '';
+    position: absolute;
+    width: 200%; height: 200%;
+    top: 60%;
+    background: radial-gradient(ellipse, rgba(42,111,142,0.3) 0%, transparent 70%);
+    animation: ripple 4s ease-in-out infinite;
+  }
+  @keyframes ripple {
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.5; }
+    50% { transform: translateY(-10%) scale(1.1); opacity: 0.8; }
+  }
+
+  .logo-concept h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--text-primary);
+  }
+  .logo-concept .concept-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* SOCIAL PREVIEW MOCKUPS                     */
+  /* ═══════════════════════════════════════════ */
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .social-mockup {
+    background: var(--deep-water);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(160,180,200,0.08);
+  }
+
+  .social-banner {
+    height: 120px;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .social-banner.banner-linkedin {
+    background: linear-gradient(135deg, var(--river-depths), var(--current-blue), var(--river-mid));
+  }
+  .social-banner.banner-facebook {
+    background: linear-gradient(180deg, var(--river-depths), var(--current-blue));
+  }
+
+  .social-banner .banner-text {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--sovereign-gold);
+    letter-spacing: 0.05em;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  }
+  .social-banner .banner-sub {
+    position: absolute;
+    bottom: 0.75rem; right: 1rem;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: var(--river-mist);
+    opacity: 0.7;
+  }
+
+  .social-body {
+    padding: 1.5rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+
+  .social-avatar {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-korean);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--text-primary);
+  }
+  .social-avatar.avatar-blue {
+    background: linear-gradient(135deg, var(--current-blue), var(--river-depths));
+    border: 2px solid var(--sovereign-gold);
+  }
+
+  .social-meta h5 {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  .social-meta p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+  }
+
+  .social-platform-label {
+    padding: 0.75rem 1.5rem;
+    border-top: 1px solid rgba(160,180,200,0.06);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* ASSET CHECKLIST                            */
+  /* ═══════════════════════════════════════════ */
+  .asset-table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+  }
+  .asset-table th {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sovereign-gold);
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(212,167,74,0.2);
+  }
+  .asset-table td {
+    font-size: 0.9rem;
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid rgba(160,180,200,0.06);
+    color: var(--text-secondary);
+  }
+  .asset-table td:first-child { color: var(--text-primary); font-weight: 600; }
+  .asset-table td .dim {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--river-mid);
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* AI PROMPT SECTION                          */
+  /* ═══════════════════════════════════════════ */
+  .prompt-block {
+    background: rgba(20,38,56,0.8);
+    border: 1px solid rgba(42,111,142,0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--river-mid);
+    white-space: pre-wrap;
+    position: relative;
+  }
+  .prompt-block .prompt-label {
+    position: absolute;
+    top: -0.6rem; left: 1rem;
+    background: var(--deep-water);
+    padding: 0 0.5rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sovereign-gold);
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* FOOTER                                     */
+  /* ═══════════════════════════════════════════ */
+  footer {
+    position: relative; z-index: 1;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 1px solid rgba(212,167,74,0.1);
+  }
+  footer .footer-mark {
+    font-family: var(--font-korean);
+    font-size: 2.5rem;
+    color: rgba(212,167,74,0.15);
+    margin-bottom: 1rem;
+  }
+  footer p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    opacity: 0.5;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* RESPONSIVE                                 */
+  /* ═══════════════════════════════════════════ */
+  @media (max-width: 768px) {
+    section { padding: 3rem 1.25rem; }
+    h2 { font-size: 1.8rem; }
+    .hero-korean { font-size: 3.5rem; }
+    .hero-english { font-size: 1.5rem; }
+    nav .nav-links { display: none; }
+    .type-sample-heading { font-size: 2rem; }
+    .philosophy-block { padding: 1.5rem; }
+    .philosophy-block::before { font-size: 4rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════ NAVIGATION ═══════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand">JUCHEGANG <span>주체강</span></div>
+    <ul class="nav-links">
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#palette">Palette</a></li>
+      <li><a href="#typography">Type</a></li>
+      <li><a href="#narrative">Narrative</a></li>
+      <li><a href="#identity">Identity</a></li>
+      <li><a href="#social">Social</a></li>
+      <li><a href="#assets">Assets</a></li>
+      <li><a href="#prompts">AI Prompts</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="hero">
+  <div class="hero-korean">주체강</div>
+  <div class="hero-english">JucheGang</div>
+  <div class="hero-meaning">
+    <em>Subjective River</em> — life as a personal current<br>
+    you navigate, not fight
+  </div>
+  <div class="hero-tagline">Navigate the Current</div>
+</section>
+
+<!-- ═══════════════════════ PHILOSOPHY ═══════════════════════ -->
+<section id="philosophy">
+  <div class="section-label">01 — Brand Philosophy</div>
+  <h2>The River Runs Through Everything</h2>
+
+  <div class="philosophy-block">
+    <p>Life is a subjective river — a personal current you cannot fight. You can struggle against it and fail, or turn around, read the flow, and let the current carry you forward. Self-reliance isn't brute force against reality. It's understanding your own agency within forces bigger than you. The river is different for everyone. Your current isn't my current. Your experience navigating this life — the monkey suit, the ego, the material world — is uniquely yours. Nobody else can tell you what the water feels like from where you're standing.</p>
+    <br>
+    <p>That's radical subjectivity. That's 주체 at its philosophical core.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="lead">The dual-language meaning is the brand's secret weapon. In English, <strong>JucheGang</strong> is the crew — the movement, the people riding together. In Korean, <strong>주체강</strong> is the philosophy underneath — Subjective River — the <em>why</em> behind the <em>what</em>.</p>
+</section>
+
+<!-- ═══════════════════════ COLOR PALETTE ═══════════════════════ -->
+<section id="palette">
+  <div class="section-label">02 — Color Palette</div>
+  <h2>The River Palette</h2>
+  <p>Deep blues that move like water. Korean red for passion and cultural identity. Sovereign gold for wisdom and authority. Every color tells part of the story.</p>
+
+  <div class="color-grid">
+    <div class="color-card">
+      <div class="color-swatch" style="background: #0d1b2a;">
+        <span class="hex-overlay">#0d1b2a</span>
+      </div>
+      <div class="color-info">
+        <h4>River Depths</h4>
+        <div class="color-usage">Primary background, headers, brand authority. The deep water where the current is strongest.</div>
+        <div class="color-rgb">RGB: 13, 27, 42</div>
+      </div>
+    </div>
+
+    <div class="color-card">
+      <div class="color-swatch" style="background: #1b4965;">
+        <span class="hex-overlay">#1b4965</span>
+      </div>
+      <div class="color-info">
+        <h4>Current Blue</h4>
+        <div class="color-usage">Supporting elements, cards, sections. The visible flow of the river.</div>
+        <div class="color-rgb">RGB: 27, 73, 101</div>
+      </div>
+    </div>
+
+    <div class="color-card">
+      <div class="color-swatch" style="background: #142638;">
+        <span class="hex-overlay">#142638</span>
+      </div>
+      <div class="color-info">
+        <h4>Deep Water</h4>
+        <div class="color-usage">Surface cards, elevated elements. Where depth creates dimension.</div>
+        <div class="color-rgb">RGB: 20, 38, 56</div>
+      </div>
+    </div>
+
+    <div class="color-card">
+      <div class="color-swatch" style="background: #c73032; ">
+        <span class="hex-overlay" style="color: #fff;">#c73032</span>
+      </div>
+      <div class="color-info">
+        <h4>Korean Red / 한국 빨강</h4>
+        <div class="color-usage">CTAs, emphasis, passion points. The fire of Korean cultural identity.</div>
+        <div class="color-rgb">RGB: 199, 48, 50</div>
+      </div>
+    </div>
+
+    <div class="color-card">
+      <div class="color-swatch" style="background: linear-gradient(135deg, #d4a74a, #f0d78c);">
+        <span class="hex-overlay" style="color: #0d1b2a;">#d4a74a</span>
+      </div>
+      <div class="color-info">
+        <h4>Sovereign Gold</h4>
+        <div class="color-usage">Highlights, premium elements, wisdom. The gold thread that ties everything together.</div>
+        <div class="color-rgb">RGB: 212, 167, 74</div>
+      </div>
+    </div>
+
+    <div class="color-card">
+      <div class="color-swatch" style="background: #e8dfd0;">
+        <span class="hex-overlay" style="color: #0d1b2a;">#e8dfd0</span>
+      </div>
+      <div class="color-info">
+        <h4>River Mist</h4>
+        <div class="color-usage">Light backgrounds, body text on dark. Morning fog on the water.</div>
+        <div class="color-rgb">RGB: 232, 223, 208</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gradients -->
+  <h3 style="margin-top: 3rem;">Gradients</h3>
+
+  <div class="gradient-grid">
+    <div class="gradient-card">
+      <div class="gradient-swatch" style="background: linear-gradient(135deg, #0d1b2a, #1b4965, #2a6f8e);">
+        <span>River Flow — 135°</span>
+      </div>
+      <div class="gradient-info">
+        <h4>River Flow</h4>
+        <p>Hero sections, feature backgrounds. The flowing current in motion.</p>
+      </div>
+    </div>
+
+    <div class="gradient-card">
+      <div class="gradient-swatch" style="background: linear-gradient(180deg, #0d1b2a, #1b4965, #c73032);">
+        <span>Korean Dawn — 180°</span>
+      </div>
+      <div class="gradient-info">
+        <h4>Korean Dawn</h4>
+        <p>Special moments. Where the river meets the Korean sunrise.</p>
+      </div>
+    </div>
+
+    <div class="gradient-card">
+      <div class="gradient-swatch" style="background: linear-gradient(135deg, #d4a74a, #8b6914);">
+        <span>Sovereign — 135°</span>
+      </div>
+      <div class="gradient-info">
+        <h4>Sovereign</h4>
+        <p>Premium badges, gold accents. Authority and wisdom moments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TYPOGRAPHY ═══════════════════════ -->
+<section id="typography">
+  <div class="section-label">03 — Typography</div>
+  <h2>East Meets West</h2>
+  <p>A type system that bridges cultures. Editorial authority in English, authentic beauty in Korean, precision for data.</p>
+
+  <div class="type-specimen">
+    <div class="type-meta">
+      <span class="font-name">Playfair Display — Headings</span>
+      <span class="font-role">Authority, editorial gravitas, brand moments</span>
+    </div>
+    <div class="type-sample-heading">Navigate the Current.<br>주체강.</div>
+  </div>
+
+  <div class="type-specimen">
+    <div class="type-meta">
+      <span class="font-name">Noto Serif KR — Korean Typography</span>
+      <span class="font-role">Bilingual moments, cultural authenticity</span>
+    </div>
+    <div class="type-sample-korean">주체강 — 주관적인 강<br>인생은 당신만의 흐름입니다</div>
+    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">Subjective River — Life is your own flow</p>
+  </div>
+
+  <div class="type-specimen">
+    <div class="type-meta">
+      <span class="font-name">Source Sans 3 — Body</span>
+      <span class="font-role">Clean, readable, professional content</span>
+    </div>
+    <div class="type-sample-body">Life is a subjective river — a personal current you navigate, not fight. Self-reliance isn't about brute-forcing against reality. It's understanding your own agency within the flow of forces bigger than you. The English name carries the boldness. The Korean meaning carries the wisdom.</div>
+  </div>
+
+  <div class="type-specimen">
+    <div class="type-meta">
+      <span class="font-name">JetBrains Mono — Data & Technical</span>
+      <span class="font-role">Stats, labels, metadata, code</span>
+    </div>
+    <div class="type-sample-mono">PLATFORM: LinkedIn · FOLLOWERS: 17,000+<br>WEEKLY IMPRESSIONS: 600K–800K<br>ACCOUNTS: 100+ · DOMAINS: 22</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ BRAND NARRATIVE ═══════════════════════ -->
+<section id="narrative">
+  <div class="section-label">04 — Brand Narratives</div>
+  <h2>One Brand, Three Voices</h2>
+  <p>The same core truth, adapted for different audiences. Philosophical at the center, bold on the outside, professional when it matters.</p>
+
+  <div class="narrative-grid">
+    <div class="narrative-card card-gold">
+      <div class="card-label">For Korean Audiences</div>
+      <p style="font-family: var(--font-korean); margin-bottom: 0.75rem;">주체강 — 주관적인 강. 인생은 당신만의 흐름입니다. 우리는 문화를 연결하고, 사실에 기반한 대화를 나누며, 한반도 통일을 위한 다리를 놓습니다.</p>
+      <p style="font-size: 0.85rem; font-style: italic;">Subjective River. Life is your own flow. We connect cultures, engage in factual dialogue, and build bridges toward Korean reunification.</p>
+    </div>
+
+    <div class="narrative-card card-red">
+      <div class="card-label">The "Gang" Reframe</div>
+      <p>"Gang" in English carries baggage. But in Korean, our name translates to 주체강 — "Subjective River." It's not about crews on corners. It's about navigating life's current together. The English name carries the boldness. The Korean meaning carries the wisdom. Both are intentional.</p>
+    </div>
+
+    <div class="narrative-card card-blue">
+      <div class="card-label">Professional / Elevator Pitch</div>
+      <p>JucheGang.ca is an independent platform dedicated to factual analysis and cross-cultural bridge-building, with a focus on Korean reunification and challenging Western narratives through data-driven discourse. In Korean, our name means "Subjective River" — a philosophical anchor for the work we do.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ LOGO IDENTITY ═══════════════════════ -->
+<section id="identity">
+  <div class="section-label">05 — Visual Identity</div>
+  <h2>Logo Concepts</h2>
+  <p>Three directions for the visual mark, all rooted in the dual-language identity. These are concept directions to be refined with a designer or AI image generation tools.</p>
+
+  <div class="logo-grid">
+    <div class="logo-concept">
+      <div class="logo-mark mark-primary">
+        <span class="mark-text">주체강</span>
+      </div>
+      <h4>The Flowing Mark</h4>
+      <p class="concept-desc">Korean characters on a river-blue gradient with gold border. The water ripple effect suggests constant movement. Primary mark for digital use.</p>
+    </div>
+
+    <div class="logo-concept">
+      <div class="logo-mark mark-red">
+        <span class="mark-text">강</span>
+      </div>
+      <h4>The River Seal</h4>
+      <p class="concept-desc">Single character 강 (River) in Korean red — a bold cultural stamp. Used as a secondary mark, favicon, or social avatar when space is limited.</p>
+    </div>
+
+    <div class="logo-concept">
+      <div class="logo-mark mark-gold">
+        <span class="mark-text-gold">JG</span>
+      </div>
+      <h4>The Monogram</h4>
+      <p class="concept-desc">Gold initials on deep navy for professional contexts where the full Korean mark may not fit. LinkedIn, business cards, email signatures.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SOCIAL PREVIEWS ═══════════════════════ -->
+<section id="social">
+  <div class="section-label">06 — Social Media</div>
+  <h2>Platform Presence</h2>
+  <p>How the brand appears across platforms. Consistent identity, adapted for each context.</p>
+
+  <div class="social-grid">
+    <div class="social-mockup">
+      <div class="social-banner banner-linkedin">
+        <span class="banner-text">주체강 · JUCHEGANG</span>
+        <span class="banner-sub">Navigate the Current</span>
+      </div>
+      <div class="social-body">
+        <div class="social-avatar avatar-blue">강</div>
+        <div class="social-meta">
+          <h5>Jesse James</h5>
+          <p>CEO, iPurpose Consulting · Korean Reunification Advocate</p>
+        </div>
+      </div>
+      <div class="social-platform-label">LinkedIn — 1584×396 banner / 400×400 profile</div>
+    </div>
+
+    <div class="social-mockup">
+      <div class="social-banner banner-facebook">
+        <span class="banner-text">Subjective River · 주체강</span>
+        <span class="banner-sub">JucheGang.ca</span>
+      </div>
+      <div class="social-body">
+        <div class="social-avatar avatar-blue">강</div>
+        <div class="social-meta">
+          <h5>JucheGang</h5>
+          <p>Navigate the Current · Korean Reunification · Radical Transparency</p>
+        </div>
+      </div>
+      <div class="social-platform-label">Facebook — 820×312 cover / 170×170 profile</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ASSET SPECS ═══════════════════════ -->
+<section id="assets">
+  <div class="section-label">07 — Asset Specifications</div>
+  <h2>Production Assets</h2>
+  <p>Complete dimensions for all required brand assets across platforms.</p>
+
+  <h3 style="margin-top: 2rem;">PWA &amp; Favicon</h3>
+  <table class="asset-table">
+    <thead>
+      <tr><th>Asset</th><th>Dimensions</th><th>Filename</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>PWA Icon (Primary)</td><td><span class="dim">512×512</span></td><td>icon-512x512.png</td></tr>
+      <tr><td>PWA Icon (Android)</td><td><span class="dim">192×192</span></td><td>icon-192x192.png</td></tr>
+      <tr><td>PWA Icon (Splash)</td><td><span class="dim">384×384</span></td><td>icon-384x384.png</td></tr>
+      <tr><td>Apple Touch Icon</td><td><span class="dim">180×180</span></td><td>apple-touch-icon.png</td></tr>
+      <tr><td>Favicon</td><td><span class="dim">32×32</span></td><td>favicon-32x32.png</td></tr>
+      <tr><td>Favicon (Small)</td><td><span class="dim">16×16</span></td><td>favicon-16x16.png</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top: 2rem;">Social Media Profiles</h3>
+  <table class="asset-table">
+    <thead>
+      <tr><th>Platform</th><th>Profile</th><th>Banner/Cover</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>LinkedIn</td><td><span class="dim">400×400</span></td><td><span class="dim">1584×396</span></td></tr>
+      <tr><td>Facebook</td><td><span class="dim">170×170</span></td><td><span class="dim">820×312</span></td></tr>
+      <tr><td>X / Twitter</td><td><span class="dim">400×400</span></td><td><span class="dim">1500×500</span></td></tr>
+      <tr><td>Instagram</td><td><span class="dim">320×320</span></td><td>—</td></tr>
+      <tr><td>Telegram</td><td><span class="dim">512×512</span></td><td>—</td></tr>
+      <tr><td>VK</td><td><span class="dim">400×400</span></td><td><span class="dim">1590×400</span></td></tr>
+      <tr><td>WeChat</td><td><span class="dim">300×300</span></td><td>—</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top: 2rem;">Sharing &amp; OG</h3>
+  <table class="asset-table">
+    <thead>
+      <tr><th>Asset</th><th>Dimensions</th><th>Filename</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>OG Image (Universal)</td><td><span class="dim">1200×630</span></td><td>og-image.png</td></tr>
+      <tr><td>Twitter Card</td><td><span class="dim">1200×628</span></td><td>twitter-card.png</td></tr>
+      <tr><td>LinkedIn Share</td><td><span class="dim">1200×627</span></td><td>linkedin-share.png</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ═══════════════════════ AI PROMPTS ═══════════════════════ -->
+<section id="prompts">
+  <div class="section-label">08 — AI Image Generation Prompts</div>
+  <h2>Ready-to-Use Prompts</h2>
+  <p>Copy-paste prompts for Grok, Midjourney, DALL-E, or any AI image tool. These maintain brand consistency across all generated visuals.</p>
+
+  <h3>Logo / Icon Generation</h3>
+  <div class="prompt-block">
+    <span class="prompt-label">Logo Prompt</span>Circular logo mark, deep navy blue #0d1b2a background, Korean character 강 (river) in cream #e8dfd0, thin gold #d4a74a circular border, subtle water ripple texture, minimalist, professional, clean vector style, suitable for social media avatar, centered composition, high contrast, 8k quality</div>
+
+  <h3 style="margin-top: 2rem;">Banner / Header Generation</h3>
+  <div class="prompt-block">
+    <span class="prompt-label">LinkedIn Banner</span>Wide panoramic banner, deep river blue gradient from #0d1b2a to #1b4965 to #2a6f8e, subtle flowing water texture, Korean calligraphy 주체강 in gold #d4a74a on left side, "JUCHEGANG" in elegant serif typography on right, thin gold line accents, professional editorial style, east-meets-west aesthetic, clean composition, 1584x396 aspect ratio</div>
+
+  <h3 style="margin-top: 2rem;">OG / Social Share Image</h3>
+  <div class="prompt-block">
+    <span class="prompt-label">OG Image</span>Social media share card, deep navy #0d1b2a background with subtle flowing water current pattern, large Korean text 주체강 in gold #d4a74a, subtitle "Subjective River" in cream serif font below, thin Korean red #c73032 accent line, professional diplomatic aesthetic, bridge imagery subtly integrated, 1200x630 aspect ratio, high quality</div>
+
+  <h3 style="margin-top: 2rem;">Photography / Content Style</h3>
+  <div class="prompt-block">
+    <span class="prompt-label">Content Style</span>Editorial photography style, high contrast, deep blue color grading #0d1b2a tones, international diplomatic setting, bridge or river imagery, gold and navy color palette, cinematic lighting, east-meets-west cultural fusion aesthetic, professional gravitas, documentary feel</div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer>
+  <div class="footer-mark">주체강</div>
+  <p>JucheGang Brand Guide · February 2026 · Navigate the Current</p>
+</footer>
+
+</body>
+</html>

@@ -17,15 +17,15 @@ export default function FrozenConflictsContent() {
         </div>
 
         <div className="bg-[#1b4965]/10 dark:bg-[#1b4965]/20 border border-[#1b4965]/30 dark:border-[#1b4965]/40 rounded-lg p-6 mb-8">
-          <h3 className="text-xl font-bold mb-3 text-[#1b4965] dark:text-[#e8e4df]">
+          <h3 className="text-xl font-bold mb-3 text-[#1b4965] dark:text-[#f0ebe3]">
             Eisenhower's Prophetic Warning (1961)
           </h3>
-          <blockquote className="text-lg italic text-[#1b4965] dark:text-[#e8e4df]">
+          <blockquote className="text-lg italic text-[#1b4965] dark:text-[#f0ebe3]">
             "In the councils of government, we must guard against the acquisition of unwarranted influence,
             whether sought or unsought, by the military-industrial complex. The potential for the disastrous
             rise of misplaced power exists and will persist."
           </blockquote>
-          <p className="text-[#1b4965] dark:text-[#e8e4df] mt-3">
+          <p className="text-[#1b4965] dark:text-[#f0ebe3] mt-3">
             A Republican president and former Supreme Allied Commander warned that the military-industrial complex
             would corrupt American democracy. He was right.
           </p>
@@ -41,7 +41,7 @@ export default function FrozenConflictsContent() {
 
           <div className="bg-[#d4a74a]/10 dark:bg-[#d4a74a]/20 border border-[#d4a74a]/30 dark:border-[#d4a74a]/40 rounded-lg p-6 mb-8">
             <h4 className="font-bold mb-3 text-[#d4a74a] dark:text-[#d4a74a]">Why Frozen Conflicts Are Profitable</h4>
-            <ul className="text-[#0d1b2a] dark:text-[#e8e4df] space-y-2">
+            <ul className="text-[#0d1b2a] dark:text-[#f0ebe3] space-y-2">
               <li>• <strong>Perpetual tension:</strong> Justifies massive defense spending</li>
               <li>• <strong>No resolution:</strong> Contracts never end</li>
               <li>• <strong>Arms races:</strong> Both sides keep buying weapons</li>
@@ -62,8 +62,8 @@ export default function FrozenConflictsContent() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-[#c73032]/10 dark:bg-[#c73032]/20 border border-[#c73032]/30 dark:border-[#c73032]/40 rounded-lg p-6">
-              <h4 className="font-bold mb-3 text-[#c73032] dark:text-[#e8e4df]">The Korea Profit Machine</h4>
-              <ul className="text-[#0d1b2a] dark:text-[#e8e4df] space-y-2">
+              <h4 className="font-bold mb-3 text-[#c73032] dark:text-[#f0ebe3]">The Korea Profit Machine</h4>
+              <ul className="text-[#0d1b2a] dark:text-[#f0ebe3] space-y-2">
                 <li>• 30,000+ US troops permanently stationed</li>
                 <li>• Billions in annual defense spending</li>
                 <li>• Constant "readiness" exercises</li>
@@ -74,10 +74,10 @@ export default function FrozenConflictsContent() {
 
             <div className="bg-[#d4a74a]/10 dark:bg-[#d4a74a]/20 border border-[#d4a74a]/30 dark:border-[#d4a74a]/40 rounded-lg p-6">
               <h4 className="font-bold mb-3 text-[#d4a74a] dark:text-[#d4a74a]">The Peace Problem</h4>
-              <p className="text-[#0d1b2a] dark:text-[#e8e4df]">
+              <p className="text-[#0d1b2a] dark:text-[#f0ebe3]">
                 If Korea achieved peace tomorrow, what would happen to the:
               </p>
-              <ul className="text-[#0d1b2a] dark:text-[#e8e4df] mt-2 space-y-1">
+              <ul className="text-[#0d1b2a] dark:text-[#f0ebe3] mt-2 space-y-1">
                 <li>• Hundreds of billions in defense contracts?</li>
                 <li>• Military bases across Asia?</li>
                 <li>• Justification for missile defense systems?</li>
@@ -97,8 +97,8 @@ export default function FrozenConflictsContent() {
           </p>
 
           <div className="bg-[#1b4965]/10 dark:bg-[#1b4965]/20 border border-[#1b4965]/30 dark:border-[#1b4965]/40 rounded-lg p-6 mb-8">
-            <h4 className="font-bold mb-3 text-[#1b4965] dark:text-[#e8e4df]">The Taiwan Two-Step</h4>
-            <p className="text-[#1b4965] dark:text-[#e8e4df] mb-3">The US plays both sides:</p>
+            <h4 className="font-bold mb-3 text-[#1b4965] dark:text-[#f0ebe3]">The Taiwan Two-Step</h4>
+            <p className="text-[#1b4965] dark:text-[#f0ebe3] mb-3">The US plays both sides:</p>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <p className="font-semibold mb-2">Official Position:</p>
@@ -134,8 +134,8 @@ export default function FrozenConflictsContent() {
           </p>
 
           <div className="bg-[#0d1b2a]/10 dark:bg-[#0d1b2a]/40 border border-[#1b4965]/30 dark:border-[#1b4965]/40 rounded-lg p-6 mb-8">
-            <h4 className="font-bold mb-3 text-[#1b4965] dark:text-[#e8e4df]">The Ukraine Business Model</h4>
-            <ul className="text-[#0d1b2a] dark:text-[#e8e4df] space-y-2">
+            <h4 className="font-bold mb-3 text-[#1b4965] dark:text-[#f0ebe3]">The Ukraine Business Model</h4>
+            <ul className="text-[#0d1b2a] dark:text-[#f0ebe3] space-y-2">
               <li>• <strong>2014-2022:</strong> $2.5 billion in US military aid to Ukraine</li>
               <li>• <strong>2022-present:</strong> $100+ billion allocated</li>
               <li>• <strong>Arms manufacturers:</strong> Record profits and stock prices</li>
@@ -160,22 +160,22 @@ export default function FrozenConflictsContent() {
 
           <div className="grid md:grid-cols-3 gap-4 mb-8">
             <div className="bg-[#c73032]/10 dark:bg-[#c73032]/20 border border-[#c73032]/30 dark:border-[#c73032]/40 rounded-lg p-4">
-              <h5 className="font-bold mb-2 text-[#c73032] dark:text-[#e8e4df]">Korea (70+ years)</h5>
-              <p className="text-sm text-[#0d1b2a] dark:text-[#e8e4df]">No peace treaty. Permanent US presence. Endless arms sales.</p>
+              <h5 className="font-bold mb-2 text-[#c73032] dark:text-[#f0ebe3]">Korea (70+ years)</h5>
+              <p className="text-sm text-[#0d1b2a] dark:text-[#f0ebe3]">No peace treaty. Permanent US presence. Endless arms sales.</p>
             </div>
             <div className="bg-[#1b4965]/10 dark:bg-[#1b4965]/20 border border-[#1b4965]/30 dark:border-[#1b4965]/40 rounded-lg p-4">
-              <h5 className="font-bold mb-2 text-[#1b4965] dark:text-[#e8e4df]">Taiwan (75+ years)</h5>
-              <p className="text-sm text-[#0d1b2a] dark:text-[#e8e4df]">Deliberate ambiguity. Military buildup. Strategic tension.</p>
+              <h5 className="font-bold mb-2 text-[#1b4965] dark:text-[#f0ebe3]">Taiwan (75+ years)</h5>
+              <p className="text-sm text-[#0d1b2a] dark:text-[#f0ebe3]">Deliberate ambiguity. Military buildup. Strategic tension.</p>
             </div>
             <div className="bg-[#0d1b2a]/10 dark:bg-[#0d1b2a]/40 border border-[#1b4965]/30 dark:border-[#1b4965]/40 rounded-lg p-4">
-              <h5 className="font-bold mb-2 text-[#1b4965] dark:text-[#e8e4df]">Ukraine (10+ years)</h5>
-              <p className="text-sm text-[#0d1b2a] dark:text-[#e8e4df]">Minsk Agreements sabotaged. Peace talks discouraged.</p>
+              <h5 className="font-bold mb-2 text-[#1b4965] dark:text-[#f0ebe3]">Ukraine (10+ years)</h5>
+              <p className="text-sm text-[#0d1b2a] dark:text-[#f0ebe3]">Minsk Agreements sabotaged. Peace talks discouraged.</p>
             </div>
           </div>
 
           <div className="bg-[#d4a74a]/10 dark:bg-[#d4a74a]/20 border border-[#d4a74a]/30 dark:border-[#d4a74a]/40 rounded-lg p-6 mb-8">
             <h4 className="font-bold mb-3 text-[#d4a74a] dark:text-[#d4a74a]">The Ceasefire Theater</h4>
-            <p className="text-[#0d1b2a] dark:text-[#e8e4df]">
+            <p className="text-[#0d1b2a] dark:text-[#f0ebe3]">
               Politicians perform "concern" for peace while their donors profit from war. They call for ceasefires
               they know won't happen, while blocking actual peace negotiations. It's theater designed to appear
               reasonable while maintaining profitable conflicts.
@@ -193,7 +193,7 @@ export default function FrozenConflictsContent() {
 
           <div className="bg-[#d4a74a]/10 dark:bg-[#d4a74a]/20 border border-[#d4a74a]/30 dark:border-[#d4a74a]/40 rounded-lg p-6 mb-8">
             <h4 className="font-bold mb-3 text-[#d4a74a] dark:text-[#d4a74a]">The Revolving Door</h4>
-            <ul className="text-[#0d1b2a] dark:text-[#e8e4df] space-y-2">
+            <ul className="text-[#0d1b2a] dark:text-[#f0ebe3] space-y-2">
               <li>• <strong>Defense Secretaries:</strong> Often from Raytheon, Boeing, Lockheed</li>
               <li>• <strong>Generals:</strong> Retire to defense contractor board positions</li>
               <li>• <strong>Congress members:</strong> Receive millions in defense contractor donations</li>
@@ -218,8 +218,8 @@ export default function FrozenConflictsContent() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-[#1b4965]/10 dark:bg-[#1b4965]/20 border border-[#1b4965]/30 dark:border-[#1b4965]/40 rounded-lg p-6">
-              <h4 className="font-bold mb-3 text-[#1b4965] dark:text-[#e8e4df]">Original American Values</h4>
-              <ul className="text-[#0d1b2a] dark:text-[#e8e4df] space-y-2">
+              <h4 className="font-bold mb-3 text-[#1b4965] dark:text-[#f0ebe3]">Original American Values</h4>
+              <ul className="text-[#0d1b2a] dark:text-[#f0ebe3] space-y-2">
                 <li>• Self-determination of nations</li>
                 <li>• Opposition to imperialism</li>
                 <li>• Avoiding foreign entanglements</li>
@@ -229,8 +229,8 @@ export default function FrozenConflictsContent() {
             </div>
 
             <div className="bg-[#c73032]/10 dark:bg-[#c73032]/20 border border-[#c73032]/30 dark:border-[#c73032]/40 rounded-lg p-6">
-              <h4 className="font-bold mb-3 text-[#c73032] dark:text-[#e8e4df]">Military-Industrial Values</h4>
-              <ul className="text-[#0d1b2a] dark:text-[#e8e4df] space-y-2">
+              <h4 className="font-bold mb-3 text-[#c73032] dark:text-[#f0ebe3]">Military-Industrial Values</h4>
+              <ul className="text-[#0d1b2a] dark:text-[#f0ebe3] space-y-2">
                 <li>• Permanent global military presence</li>
                 <li>• Profits over peace</li>
                 <li>• Endless foreign interventions</li>
@@ -250,8 +250,8 @@ export default function FrozenConflictsContent() {
           </p>
 
           <div className="bg-[#c73032]/10 dark:bg-[#c73032]/20 border border-[#c73032]/30 dark:border-[#c73032]/40 rounded-lg p-6 mb-8">
-            <h4 className="font-bold mb-3 text-[#c73032] dark:text-[#e8e4df]">The Real Casualties</h4>
-            <ul className="text-[#0d1b2a] dark:text-[#e8e4df] space-y-2">
+            <h4 className="font-bold mb-3 text-[#c73032] dark:text-[#f0ebe3]">The Real Casualties</h4>
+            <ul className="text-[#0d1b2a] dark:text-[#f0ebe3] space-y-2">
               <li>• <strong>Korean families:</strong> Separated for 70+ years</li>
               <li>• <strong>Chinese families:</strong> Unable to reunify across Taiwan Strait</li>
               <li>• <strong>Ukrainian families:</strong> Torn apart by manufactured conflict</li>
@@ -272,7 +272,7 @@ export default function FrozenConflictsContent() {
           <div className="space-y-6 mb-8">
             <div className="bg-[#d4a74a]/10 dark:bg-[#d4a74a]/20 border border-[#d4a74a]/30 dark:border-[#d4a74a]/40 rounded-lg p-6">
               <h4 className="font-bold mb-3 text-[#d4a74a] dark:text-[#d4a74a]">Real Peace Solutions</h4>
-              <ul className="text-[#0d1b2a] dark:text-[#e8e4df] space-y-2">
+              <ul className="text-[#0d1b2a] dark:text-[#f0ebe3] space-y-2">
                 <li>• <strong>Korea:</strong> Sign peace treaty, normalize relations, remove troops</li>
                 <li>• <strong>Taiwan:</strong> Honor One China policy consistently, stop arms sales</li>
                 <li>• <strong>Ukraine:</strong> Implement Minsk Agreements, negotiate neutrality</li>
@@ -282,8 +282,8 @@ export default function FrozenConflictsContent() {
             </div>
 
             <div className="bg-[#1b4965]/10 dark:bg-[#1b4965]/20 border border-[#1b4965]/30 dark:border-[#1b4965]/40 rounded-lg p-6">
-              <h4 className="font-bold mb-3 text-[#1b4965] dark:text-[#e8e4df]">What Citizens Can Do</h4>
-              <ul className="text-[#0d1b2a] dark:text-[#e8e4df] space-y-2">
+              <h4 className="font-bold mb-3 text-[#1b4965] dark:text-[#f0ebe3]">What Citizens Can Do</h4>
+              <ul className="text-[#0d1b2a] dark:text-[#f0ebe3] space-y-2">
                 <li>• Demand candidates reject defense contractor money</li>
                 <li>• Support peace organizations and activists</li>
                 <li>• Question media narratives about "threats"</li>
@@ -329,7 +329,7 @@ export default function FrozenConflictsContent() {
           <h3 className="text-xl font-bold mb-3 text-[#d4a74a] dark:text-[#d4a74a]">
             A Different Path Forward
           </h3>
-          <p className="text-[#0d1b2a] dark:text-[#e8e4df]">
+          <p className="text-[#0d1b2a] dark:text-[#f0ebe3]">
             Imagine American resources invested in infrastructure, education, healthcare, and diplomacy instead of
             permanent war. Imagine Korean families reunited, Chinese families connected across the strait,
             Ukrainian families living in peace. This is possible - but only if we reject the military-industrial

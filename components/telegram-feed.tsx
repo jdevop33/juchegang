@@ -42,26 +42,26 @@ function PostCard({ post, channel }: { post: TelegramPost; channel?: TelegramCha
     <div className="h-full flex flex-col">
       {/* Channel header */}
       <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
-          <TelegramIcon className="w-5 h-5 text-white" />
+        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-river-mid to-river-mid flex items-center justify-center">
+          <TelegramIcon className="w-5 h-5 text-cream" />
         </div>
         <div className="flex-1">
           <div className="flex items-center gap-2">
-            <span className="font-semibold text-white">{post.channelName}</span>
+            <span className="font-semibold text-cream">{post.channelName}</span>
             {channel?.category === 'owned' && (
-              <span className="px-1.5 py-0.5 text-[10px] bg-blue-500/30 text-blue-300 rounded">OWNED</span>
+              <span className="px-1.5 py-0.5 text-[10px] bg-river-mid/30 text-river-mid rounded">OWNED</span>
             )}
           </div>
           <a
             href={`https://t.me/${post.channelUsername}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-white/50 hover:text-white/70 transition-colors"
+            className="text-sm text-cream/50 hover:text-cream/70 transition-colors"
           >
             @{post.channelUsername}
           </a>
         </div>
-        <span className="text-xs text-white/40">
+        <span className="text-xs text-cream/40">
           {new Date(post.date).toLocaleDateString('en-US', {
             month: 'short',
             day: 'numeric',
@@ -72,20 +72,20 @@ function PostCard({ post, channel }: { post: TelegramPost; channel?: TelegramCha
       </div>
 
       {/* Post title */}
-      <h3 className="text-xl font-bold text-white mb-3 leading-tight">
+      <h3 className="text-xl font-bold text-cream mb-3 leading-tight">
         {title}
       </h3>
 
       {/* Post body - scrollable */}
       <div className="flex-1 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
-        <div className="text-white/80 text-sm leading-relaxed whitespace-pre-line">
+        <div className="text-cream/80 text-sm leading-relaxed whitespace-pre-line">
           {cleanBody}
         </div>
 
         {/* Korean translation */}
         {koreanPart && (
-          <div className="mt-4 pt-4 border-t border-white/10">
-            <div className="text-white/60 text-sm whitespace-pre-line italic">
+          <div className="mt-4 pt-4 border-t border-cream/10">
+            <div className="text-cream/60 text-sm whitespace-pre-line italic">
               {koreanPart.replace(/#[\w]+/g, '').trim()}
             </div>
           </div>
@@ -94,17 +94,17 @@ function PostCard({ post, channel }: { post: TelegramPost; channel?: TelegramCha
 
       {/* Hashtags */}
       {post.hashtags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-white/10">
+        <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-cream/10">
           {post.hashtags.slice(0, 5).map((tag, i) => (
             <span
               key={i}
-              className="px-2 py-1 text-xs bg-white/5 text-blue-400 rounded-md hover:bg-white/10 transition-colors cursor-default"
+              className="px-2 py-1 text-xs bg-cream/5 text-river-mid rounded-md hover:bg-cream/10 transition-colors cursor-default"
             >
               {tag}
             </span>
           ))}
           {post.hashtags.length > 5 && (
-            <span className="px-2 py-1 text-xs text-white/40">
+            <span className="px-2 py-1 text-xs text-cream/40">
               +{post.hashtags.length - 5} more
             </span>
           )}
@@ -116,7 +116,7 @@ function PostCard({ post, channel }: { post: TelegramPost; channel?: TelegramCha
         href={`https://t.me/${post.channelUsername}/${post.id}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 flex items-center justify-center gap-2 py-2 px-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white text-sm font-medium rounded-lg transition-all"
+        className="mt-4 flex items-center justify-center gap-2 py-2 px-4 bg-gradient-to-r from-river-current to-river-mid hover:from-river-mid hover:to-river-mid text-cream text-sm font-medium rounded-lg transition-all"
       >
         <TelegramIcon className="w-4 h-4" />
         View on Telegram
@@ -159,7 +159,7 @@ export function TelegramFeed({
 
   if (posts.length === 0) {
     return (
-      <div className="text-center py-12 text-white/60">
+      <div className="text-center py-12 text-cream/60">
         <TelegramIcon className="w-12 h-12 mx-auto mb-4 opacity-50" />
         <p>No Telegram posts available</p>
       </div>
@@ -190,30 +190,30 @@ export function TelegramFeed({
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
-            <TelegramIcon className="w-5 h-5 text-white" />
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-river-mid to-river-mid flex items-center justify-center">
+            <TelegramIcon className="w-5 h-5 text-cream" />
           </div>
           <div>
-            <h2 className="text-xl font-bold text-white">Telegram Feed</h2>
-            <p className="text-sm text-white/50">Live from our channels</p>
+            <h2 className="text-xl font-bold text-cream">Telegram Feed</h2>
+            <p className="text-sm text-cream/50">Live from our channels</p>
           </div>
         </div>
 
         {/* Navigation */}
         <div className="flex items-center gap-2">
-          <span className="text-sm text-white/40 mr-2">
+          <span className="text-sm text-cream/40 mr-2">
             {currentIndex + 1} / {posts.length}
           </span>
           <button
             onClick={goToPrev}
-            className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors"
+            className="p-2 rounded-lg bg-cream/5 hover:bg-cream/10 text-cream/70 hover:text-cream transition-colors"
             aria-label="Previous post"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={goToNext}
-            className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors"
+            className="p-2 rounded-lg bg-cream/5 hover:bg-cream/10 text-cream/70 hover:text-cream transition-colors"
             aria-label="Next post"
           >
             <ChevronRight className="w-5 h-5" />
@@ -222,7 +222,7 @@ export function TelegramFeed({
       </div>
 
       {/* Carousel */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border border-white/10">
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-river-depths via-river-deep to-river-depths border border-cream/10">
         <div className="min-h-[500px] p-6">
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
@@ -244,10 +244,10 @@ export function TelegramFeed({
 
         {/* Progress bar */}
         {autoPlay && (
-          <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/5">
+          <div className="absolute bottom-0 left-0 right-0 h-1 bg-cream/5">
             <motion.div
               key={`progress-${currentIndex}`}
-              className="h-full bg-gradient-to-r from-blue-500 to-cyan-500"
+              className="h-full bg-gradient-to-r from-river-mid to-river-mid"
               initial={{ width: '0%' }}
               animate={{ width: isPaused ? undefined : '100%' }}
               transition={{ duration: autoPlayInterval / 1000, ease: 'linear' }}
@@ -268,14 +268,14 @@ export function TelegramFeed({
             }}
             className={`w-2 h-2 rounded-full transition-all ${
               index === currentIndex
-                ? 'bg-blue-500 w-6'
-                : 'bg-white/20 hover:bg-white/40'
+                ? 'bg-river-mid w-6'
+                : 'bg-cream/20 hover:bg-cream/40'
             }`}
             aria-label={`Go to post ${index + 1}`}
           />
         ))}
         {posts.length > 10 && (
-          <span className="text-xs text-white/40 ml-2">+{posts.length - 10}</span>
+          <span className="text-xs text-cream/40 ml-2">+{posts.length - 10}</span>
         )}
       </div>
 
@@ -289,14 +289,14 @@ export function TelegramFeed({
             rel="noopener noreferrer"
             className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all ${
               channel.category === 'owned'
-                ? 'bg-gradient-to-r from-blue-600/20 to-cyan-600/20 text-blue-300 border border-blue-500/30 hover:border-blue-400/50'
-                : 'bg-white/5 text-white/70 border border-white/10 hover:bg-white/10'
+                ? 'bg-gradient-to-r from-river-current/20 to-river-mid/20 text-river-mid border border-river-mid/30 hover:border-river-mid/50'
+                : 'bg-cream/5 text-cream/70 border border-cream/10 hover:bg-cream/10'
             }`}
           >
             <TelegramIcon className="w-4 h-4" />
             @{channel.username}
             {channel.category === 'owned' && (
-              <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-river-mid animate-pulse" />
             )}
           </a>
         ))}

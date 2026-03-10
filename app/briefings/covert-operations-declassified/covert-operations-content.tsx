@@ -20,7 +20,7 @@ export default function CovertOperationsContent() {
           <h3 className="text-xl font-bold mb-3 text-[#d4a74a]">
             Content Warning
           </h3>
-          <p className="text-[#e8e4df]">
+          <p className="text-[#f0ebe3]">
             This briefing contains detailed accounts of civilian casualties, torture, and state violence.
             All information is sourced from official documents, congressional investigations, and credible journalism.
             We honor the victims by telling their stories truthfully.
@@ -76,7 +76,7 @@ export default function CovertOperationsContent() {
 
           <div className="bg-[#1b4965]/20 border border-[#1b4965]/30 rounded-lg p-6 mb-8">
             <h4 className="font-bold mb-3 text-[#1b4965]">The Kabul Strike Timeline</h4>
-            <ul className="text-[#e8e4df] space-y-2">
+            <ul className="text-[#f0ebe3] space-y-2">
               <li>Pentagon tracks Ahmadi for 8 hours, watching him go to work</li>
               <li>They interpret his water containers as "explosives"</li>
               <li>Children run to greet him when he arrives home</li>
@@ -107,7 +107,7 @@ export default function CovertOperationsContent() {
           <h3 className="text-xl font-bold mb-3 text-[#1b4965]">
             Path Forward: Truth and Reconciliation
           </h3>
-          <p className="text-[#e8e4df]">
+          <p className="text-[#f0ebe3]">
             Acknowledging this history is not anti-American - it's pro-humanity. Every nation has made mistakes.
             The path forward requires honest accounting, genuine accountability, and commitment to preventing future atrocities.
             Only through truth can we build a world where all people, regardless of nationality, are valued equally.

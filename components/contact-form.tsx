@@ -177,9 +177,9 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                   )}
 
                   {submitStatus === "error" && (
-                    <Alert className="border-red-500/50 bg-red-500/10">
-                      <AlertCircle className="h-4 w-4 text-red-500" />
-                      <AlertDescription className="text-red-500">
+                    <Alert className="border-korean-red/50 bg-korean-red/10">
+                      <AlertCircle className="h-4 w-4 text-korean-red" />
+                      <AlertDescription className="text-korean-red">
                         {t('errorBanner')}
                       </AlertDescription>
                     </Alert>
@@ -188,7 +188,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full sm:w-auto bg-gradient-to-r from-friendship-blue to-friendship-red hover:from-friendship-blue/90 hover:to-friendship-red/90 text-white font-semibold py-2 px-6 md:py-3 md:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                    className="w-full sm:w-auto bg-gradient-to-r from-friendship-blue to-friendship-red hover:from-friendship-blue/90 hover:to-friendship-red/90 text-cream font-semibold py-2 px-6 md:py-3 md:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                   >
                     {isSubmitting ? (
                       <>

@@ -51,10 +51,10 @@ export default function LibraryPage() {
             <BookOpen className="w-4 h-4" />
             Resource Library
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#e8e4df] mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#f0ebe3] mb-4">
             Knowledge is Power
           </h1>
-          <p className="text-xl text-[#e8e4df]/70 max-w-2xl mx-auto">
+          <p className="text-xl text-[#f0ebe3]/70 max-w-2xl mx-auto">
             Documents, presentations, and resources for understanding the real story.
             Download, share, and spread the truth.
           </p>
@@ -81,14 +81,14 @@ export default function LibraryPage() {
                   key={category.id}
                   className={`relative rounded-xl border ${colorClasses[category.color as keyof typeof colorClasses]} p-6 opacity-60`}
                 >
-                  <div className="absolute top-4 right-4 px-2 py-1 bg-[#e8e4df]/10 text-[#e8e4df]/60 text-xs rounded">
+                  <div className="absolute top-4 right-4 px-2 py-1 bg-[#f0ebe3]/10 text-[#f0ebe3]/60 text-xs rounded">
                     Coming Soon
                   </div>
                   <div className={`w-12 h-12 rounded-lg ${iconColorClasses[category.color as keyof typeof iconColorClasses]} flex items-center justify-center mb-4`}>
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h2 className="text-xl font-bold text-[#e8e4df] mb-2">{category.title}</h2>
-                  <p className="text-[#e8e4df]/60 text-sm mb-4">{category.description}</p>
+                  <h2 className="text-xl font-bold text-[#f0ebe3] mb-2">{category.title}</h2>
+                  <p className="text-[#f0ebe3]/60 text-sm mb-4">{category.description}</p>
                 </div>
               )
             }
@@ -102,15 +102,15 @@ export default function LibraryPage() {
                 <div className={`w-12 h-12 rounded-lg ${iconColorClasses[category.color as keyof typeof iconColorClasses]} flex items-center justify-center mb-4`}>
                   <Icon className="w-6 h-6" />
                 </div>
-                <h2 className="text-xl font-bold text-[#e8e4df] mb-2 group-hover:text-[#d4a74a] transition-colors">
+                <h2 className="text-xl font-bold text-[#f0ebe3] mb-2 group-hover:text-[#d4a74a] transition-colors">
                   {category.title}
                 </h2>
-                <p className="text-[#e8e4df]/60 text-sm mb-4">{category.description}</p>
+                <p className="text-[#f0ebe3]/60 text-sm mb-4">{category.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-[#e8e4df]/40 text-sm">
+                  <span className="text-[#f0ebe3]/40 text-sm">
                     {category.count} {category.count === 1 ? 'item' : 'items'}
                   </span>
-                  <ArrowRight className="w-4 h-4 text-[#e8e4df]/40 group-hover:text-[#e8e4df] group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="w-4 h-4 text-[#f0ebe3]/40 group-hover:text-[#f0ebe3] group-hover:translate-x-1 transition-all" />
                 </div>
               </Link>
             )
@@ -120,7 +120,7 @@ export default function LibraryPage() {
         {/* Featured Resources */}
         {featuredResources.length > 0 && (
           <section className="mb-16">
-            <h2 className="text-2xl font-bold text-[#e8e4df] mb-6 flex items-center gap-2">
+            <h2 className="text-2xl font-bold text-[#f0ebe3] mb-6 flex items-center gap-2">
               <Download className="w-6 h-6 text-[#d4a74a]" />
               Featured Downloads
             </h2>
@@ -145,17 +145,17 @@ export default function LibraryPage() {
                     )}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-bold text-[#e8e4df] group-hover:text-[#d4a74a] transition-colors truncate">
+                    <h3 className="font-bold text-[#f0ebe3] group-hover:text-[#d4a74a] transition-colors truncate">
                       {resource.title}
                     </h3>
-                    <p className="text-[#e8e4df]/60 text-sm truncate">{resource.description}</p>
-                    <div className="flex items-center gap-3 mt-1 text-xs text-[#e8e4df]/40">
+                    <p className="text-[#f0ebe3]/60 text-sm truncate">{resource.description}</p>
+                    <div className="flex items-center gap-3 mt-1 text-xs text-[#f0ebe3]/40">
                       <span>{resource.type.toUpperCase()}</span>
                       <span>{resource.fileSize}</span>
                       {resource.pageCount && <span>{resource.pageCount} pages</span>}
                     </div>
                   </div>
-                  <Download className="w-5 h-5 text-[#e8e4df]/40 group-hover:text-[#d4a74a] transition-colors shrink-0" />
+                  <Download className="w-5 h-5 text-[#f0ebe3]/40 group-hover:text-[#d4a74a] transition-colors shrink-0" />
                 </a>
               ))}
             </div>
@@ -165,15 +165,15 @@ export default function LibraryPage() {
         {/* Empty State */}
         {featuredResources.length === 0 && (
           <section className="text-center py-16 border border-dashed border-[#1b4965] rounded-xl">
-            <FolderOpen className="w-16 h-16 text-[#e8e4df]/20 mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-[#e8e4df] mb-2">Library is being built</h3>
-            <p className="text-[#e8e4df]/60 max-w-md mx-auto mb-6">
+            <FolderOpen className="w-16 h-16 text-[#f0ebe3]/20 mx-auto mb-4" />
+            <h3 className="text-xl font-bold text-[#f0ebe3] mb-2">Library is being built</h3>
+            <p className="text-[#f0ebe3]/60 max-w-md mx-auto mb-6">
               We're adding documents, slide decks, and resources.
               Check back soon or explore our briefings in the meantime.
             </p>
             <Link
               href="/briefings"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#1b4965] hover:bg-[#1b4965]/80 text-[#e8e4df] font-medium rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#1b4965] hover:bg-[#1b4965]/80 text-[#f0ebe3] font-medium rounded-lg transition-colors"
             >
               <FileText className="w-4 h-4" />
               Browse Briefings
@@ -183,22 +183,22 @@ export default function LibraryPage() {
 
         {/* How to Use */}
         <section className="mt-16 bg-gradient-to-r from-[#0d1b2a]/70 to-[#1b4965]/30 rounded-xl p-8 border border-[#1b4965]">
-          <h2 className="text-2xl font-bold text-[#e8e4df] mb-6">How to Use This Library</h2>
+          <h2 className="text-2xl font-bold text-[#f0ebe3] mb-6">How to Use This Library</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div>
               <div className="w-10 h-10 bg-[#1b4965]/30 text-[#d4a74a] rounded-lg flex items-center justify-center mb-3 text-lg font-bold">1</div>
-              <h3 className="font-bold text-[#e8e4df] mb-2">Browse & Download</h3>
-              <p className="text-[#e8e4df]/60 text-sm">All resources are free to download and share. No signup required.</p>
+              <h3 className="font-bold text-[#f0ebe3] mb-2">Browse & Download</h3>
+              <p className="text-[#f0ebe3]/60 text-sm">All resources are free to download and share. No signup required.</p>
             </div>
             <div>
               <div className="w-10 h-10 bg-[#d4a74a]/20 text-[#d4a74a] rounded-lg flex items-center justify-center mb-3 text-lg font-bold">2</div>
-              <h3 className="font-bold text-[#e8e4df] mb-2">Share Widely</h3>
-              <p className="text-[#e8e4df]/60 text-sm">Use in your own presentations, articles, or conversations. Attribution appreciated.</p>
+              <h3 className="font-bold text-[#f0ebe3] mb-2">Share Widely</h3>
+              <p className="text-[#f0ebe3]/60 text-sm">Use in your own presentations, articles, or conversations. Attribution appreciated.</p>
             </div>
             <div>
               <div className="w-10 h-10 bg-[#c73032]/20 text-[#c73032] rounded-lg flex items-center justify-center mb-3 text-lg font-bold">3</div>
-              <h3 className="font-bold text-[#e8e4df] mb-2">Contribute</h3>
-              <p className="text-[#e8e4df]/60 text-sm">Have resources to add? Contact us to contribute to the library.</p>
+              <h3 className="font-bold text-[#f0ebe3] mb-2">Contribute</h3>
+              <p className="text-[#f0ebe3]/60 text-sm">Have resources to add? Contact us to contribute to the library.</p>
             </div>
           </div>
         </section>

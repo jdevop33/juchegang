@@ -20,7 +20,7 @@ export default function GlobalError({ error, reset }: { error: Error & { digest?
 							<a href="/" className="px-4 py-2 rounded-md border border-border">Home</a>
 						</div>
 						{process.env.NODE_ENV !== "production" && (
-							<pre className="text-left text-xs overflow-auto p-3 bg-black/20 rounded-md border border-border">
+							<pre className="text-left text-xs overflow-auto p-3 bg-river-depths/20 rounded-md border border-border">
 								{error?.stack || error?.message}
 							</pre>
 						)}

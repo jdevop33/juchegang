@@ -97,7 +97,7 @@ export default function TelegramMiniApp() {
   const formatChange = (c: number) => (
     <span className={cn(
       'flex items-center gap-1',
-      c > 0 ? 'text-green-400' : c < 0 ? 'text-red-400' : 'text-gray-400'
+      c > 0 ? 'text-green-400' : c < 0 ? 'text-korean-red' : 'text-cream-muted'
     )}>
       {c > 0 ? <TrendingUp className="w-3 h-3" /> : c < 0 ? <TrendingDown className="w-3 h-3" /> : null}
       {c > 0 ? '+' : ''}{c.toFixed(2)}%
@@ -105,17 +105,17 @@ export default function TelegramMiniApp() {
   )
 
   return (
-    <div className="min-h-screen bg-[#1a1a2e] text-white p-4">
+    <div className="min-h-screen bg-river-depths text-cream p-4">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h1 className="text-lg font-bold text-amber-400">SOVEREIGN ALPHA</h1>
-          <p className="text-xs text-gray-400">Macro Intelligence</p>
+          <h1 className="text-lg font-bold text-sovereign-gold">SOVEREIGN ALPHA</h1>
+          <p className="text-xs text-cream-muted">Macro Intelligence</p>
         </div>
         <button
           onClick={fetchData}
           disabled={loading}
-          className="p-2 bg-white/10 rounded-lg"
+          className="p-2 bg-cream/10 rounded-lg"
         >
           <RefreshCw className={cn('w-4 h-4', loading && 'animate-spin')} />
         </button>
@@ -125,7 +125,7 @@ export default function TelegramMiniApp() {
       {crypto?.fearGreed && (
         <div className={cn(
           'mb-4 p-3 rounded-xl',
-          crypto.fearGreed.value >= 50 ? 'bg-green-500/20' : 'bg-red-500/20'
+          crypto.fearGreed.value >= 50 ? 'bg-green-500/20' : 'bg-korean-red/20'
         )}>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
@@ -142,18 +142,18 @@ export default function TelegramMiniApp() {
 
       {/* Crypto */}
       <div className="mb-4">
-        <div className="flex items-center gap-2 mb-2 text-sm text-gray-400">
+        <div className="flex items-center gap-2 mb-2 text-sm text-cream-muted">
           <Bitcoin className="w-4 h-4" />
           CRYPTO
         </div>
         <div className="grid grid-cols-2 gap-2">
-          <div className="bg-white/5 rounded-xl p-3">
-            <div className="text-xs text-amber-400 mb-1">BTC</div>
+          <div className="bg-cream/5 rounded-xl p-3">
+            <div className="text-xs text-sovereign-gold mb-1">BTC</div>
             <div className="text-lg font-bold text-green-400">{formatPrice(crypto?.btcPrice || 0)}</div>
             {formatChange(crypto?.btcChange || 0)}
           </div>
-          <div className="bg-white/5 rounded-xl p-3">
-            <div className="text-xs text-amber-400 mb-1">ETH</div>
+          <div className="bg-cream/5 rounded-xl p-3">
+            <div className="text-xs text-sovereign-gold mb-1">ETH</div>
             <div className="text-lg font-bold text-green-400">{formatPrice(crypto?.ethPrice || 0)}</div>
             {formatChange(crypto?.ethChange || 0)}
           </div>
@@ -162,13 +162,13 @@ export default function TelegramMiniApp() {
 
       {/* Indices */}
       <div className="mb-4">
-        <div className="flex items-center gap-2 mb-2 text-sm text-gray-400">
+        <div className="flex items-center gap-2 mb-2 text-sm text-cream-muted">
           <BarChart3 className="w-4 h-4" />
           EQUITIES
           {indices?.marketStatus && (
             <span className={cn(
               'ml-auto text-xs px-2 py-0.5 rounded',
-              indices.marketStatus === 'risk-on' ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'
+              indices.marketStatus === 'risk-on' ? 'bg-green-500/20 text-green-400' : 'bg-korean-red/20 text-korean-red'
             )}>
               {indices.marketStatus.toUpperCase()}
             </span>
@@ -176,15 +176,15 @@ export default function TelegramMiniApp() {
         </div>
         <div className="grid grid-cols-2 gap-2">
           {indices?.spy && (
-            <div className="bg-white/5 rounded-xl p-3">
-              <div className="text-xs text-amber-400 mb-1">S&P 500</div>
+            <div className="bg-cream/5 rounded-xl p-3">
+              <div className="text-xs text-sovereign-gold mb-1">S&P 500</div>
               <div className="text-lg font-bold text-green-400">{formatPrice(indices.spy.close)}</div>
               {formatChange(indices.spy.change)}
             </div>
           )}
           {indices?.qqq && (
-            <div className="bg-white/5 rounded-xl p-3">
-              <div className="text-xs text-amber-400 mb-1">Nasdaq</div>
+            <div className="bg-cream/5 rounded-xl p-3">
+              <div className="text-xs text-sovereign-gold mb-1">Nasdaq</div>
               <div className="text-lg font-bold text-green-400">{formatPrice(indices.qqq.close)}</div>
               {formatChange(indices.qqq.change)}
             </div>
@@ -194,31 +194,31 @@ export default function TelegramMiniApp() {
 
       {/* Edge Factors */}
       <div className="mb-4">
-        <div className="flex items-center gap-2 mb-2 text-sm text-gray-400">
+        <div className="flex items-center gap-2 mb-2 text-sm text-cream-muted">
           <Atom className="w-4 h-4" />
           EDGE FACTORS
         </div>
-        <div className="bg-white/5 rounded-xl p-3 space-y-2">
+        <div className="bg-cream/5 rounded-xl p-3 space-y-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-sm">
-              <Droplets className="w-4 h-4 text-blue-400" />
+              <Droplets className="w-4 h-4 text-river-mid" />
               Water Crisis
             </div>
             <span className={cn(
               'text-sm font-medium',
-              (edge?.waterCrisis || 0) > 0 ? 'text-red-400' : 'text-green-400'
+              (edge?.waterCrisis || 0) > 0 ? 'text-korean-red' : 'text-green-400'
             )}>
               {edge?.waterCrisis || 0} nations
             </span>
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-sm">
-              <Atom className="w-4 h-4 text-purple-400" />
+              <Atom className="w-4 h-4 text-river-mid" />
               Rare Earth Risk
             </div>
             <span className={cn(
               'text-sm font-medium',
-              (edge?.rareEarthRisk || 0) > 0 ? 'text-red-400' : 'text-green-400'
+              (edge?.rareEarthRisk || 0) > 0 ? 'text-korean-red' : 'text-green-400'
             )}>
               {edge?.rareEarthRisk || 0} elements
             </span>
@@ -230,7 +230,7 @@ export default function TelegramMiniApp() {
       <a
         href="/dashboard"
         target="_blank"
-        className="flex items-center justify-center gap-2 w-full p-3 bg-amber-500/20 text-amber-400 rounded-xl font-medium"
+        className="flex items-center justify-center gap-2 w-full p-3 bg-sovereign-gold/20 text-sovereign-gold rounded-xl font-medium"
       >
         <ExternalLink className="w-4 h-4" />
         Open Full Dashboard
@@ -238,7 +238,7 @@ export default function TelegramMiniApp() {
 
       {/* Footer */}
       {lastUpdate && (
-        <div className="mt-4 text-center text-xs text-gray-500">
+        <div className="mt-4 text-center text-xs text-cream-muted/70">
           Updated: {lastUpdate.toLocaleTimeString()}
         </div>
       )}

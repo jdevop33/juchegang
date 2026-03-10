@@ -107,8 +107,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-body)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
-        heading: ["Georgia", "Times New Roman", "serif"],
-        korean: ["Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic", "sans-serif"],
+        heading: ["var(--font-heading)", "Playfair Display", "Georgia", "Times New Roman", "serif"],
+        korean: ["var(--font-korean)", "Noto Serif KR", "Apple SD Gothic Neo", "Malgun Gothic", "serif"],
         mono: ["JetBrains Mono", "Fira Code", "Consolas", "monospace"],
       },
       borderRadius: {

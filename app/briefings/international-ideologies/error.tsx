@@ -10,7 +10,7 @@ export default function Error({ error }: { error: Error & { digest?: string } })
 
   return (
     <div className="mx-auto w-full max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
-      <div className="rounded border border-red-500/60 bg-red-500/10 p-4 text-red-200">
+      <div className="rounded border border-korean-red/60 bg-korean-red/10 p-4 text-cream/80">
         <h2 className="mb-2 text-xl font-bold">Something went wrong</h2>
         <p className="mb-1">Please refresh the page. If the problem continues, try again later.</p>
         {error?.digest ? (

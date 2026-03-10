@@ -16,7 +16,7 @@ export const metadata = {
 export default function WikipediaBureaucratsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <Link href="/truth-project" className="inline-flex items-center gap-2 text-[#e8e4df]/70 hover:text-[#e8e4df] mb-8 transition-colors">
+      <Link href="/truth-project" className="inline-flex items-center gap-2 text-[#f0ebe3]/70 hover:text-[#f0ebe3] mb-8 transition-colors">
         <ArrowLeft className="h-4 w-4" />
         Back to Truth Project
       </Link>
@@ -26,8 +26,8 @@ export default function WikipediaBureaucratsPage() {
           <AlertTriangle className="h-4 w-4" />
           Investigative Report
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-[#e8e4df] mb-6">Wikipedia's Hidden Power: Inside the bureaucrat system</h1>
-        <p className="text-xl text-[#e8e4df]/80 max-w-4xl">
+        <h1 className="text-4xl md:text-6xl font-bold text-[#f0ebe3] mb-6">Wikipedia's Hidden Power: Inside the bureaucrat system</h1>
+        <p className="text-xl text-[#f0ebe3]/80 max-w-4xl">
           Wikipedia currently operates under the control of just 16 bureaucrats who wield significant power over the world's largest encyclopedia, yet only one has publicly disclosed their real identity. This investigation reveals a governance system dominated by Western, educated males operating behind pseudonyms.
         </p>
       </header>
@@ -40,7 +40,7 @@ export default function WikipediaBureaucratsPage() {
               <AlertTriangle className="h-5 w-5" />
               Key Findings
             </h2>
-            <ul className="space-y-3 text-[#e8e4df]/90">
+            <ul className="space-y-3 text-[#f0ebe3]/90">
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-[#c73032] rounded-full mt-2 flex-shrink-0"></div>
                 <span><strong>16 bureaucrats</strong> control administrator appointments for billions of readers</span>
@@ -62,22 +62,22 @@ export default function WikipediaBureaucratsPage() {
 
           {/* The sixteen gatekeepers */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold text-[#e8e4df] flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[#f0ebe3] flex items-center gap-3">
               <Users className="h-6 w-6" />
               The sixteen gatekeepers who control Wikipedia
             </h2>
             <div className="prose prose-lg prose-invert max-w-none">
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Wikipedia's bureaucrats represent the platform's most exclusive administrative tier, positioned between regular administrators and global stewards. As of 2025, only 16 individuals hold this role on English Wikipedia, down from historical highs and reflecting an increasingly selective appointment process. These bureaucrats possess unique technical abilities that make them essential to Wikipedia's operations: they alone can promote users to administrator status, grant bureaucrat privileges to others, manage bot permissions, and interpret community consensus in critical governance decisions.
               </p>
 
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 The most remarkable aspect of this power structure is its anonymity. Among all current bureaucrats, only <strong>Lee Vilenski</strong> has comprehensively disclosed his identity as Edward, a 33-year-old from Devon, England, who specializes in snooker articles and became the first user with a post-2010 account to achieve bureaucrat status. The remaining 15 operate under pseudonyms including Xaosflux, Primefac, Barkeep49, and others, maintaining strict separation between their Wikipedia authority and real-world identities. This anonymity, while protecting privacy, also shields bureaucrats from accountability and prevents assessment of potential conflicts of interest.
               </p>
 
-              <div className="bg-[#e8e4df]/5 border border-[#e8e4df]/10 rounded-xl p-6 my-8">
-                <h3 className="text-xl font-bold text-[#e8e4df] mb-3">Selection Process</h3>
-                <p className="text-[#e8e4df]/80">
+              <div className="bg-[#f0ebe3]/5 border border-[#f0ebe3]/10 rounded-xl p-6 my-8">
+                <h3 className="text-xl font-bold text-[#f0ebe3] mb-3">Selection Process</h3>
+                <p className="text-[#f0ebe3]/80">
                   The selection process for bureaucrats requires approximately <strong>85% community support</strong> in a seven-day public discussion, significantly higher than the 75% threshold for administrators. Candidates typically must already be administrators with extensive policy knowledge and demonstrated consensus-building abilities. Recent appointments have been rare: only Barkeep49 joined in March 2025 with a 219/5/8 vote, following Lee Vilenski in 2022.
                 </p>
               </div>
@@ -86,19 +86,19 @@ export default function WikipediaBureaucratsPage() {
 
           {/* Community theater */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold text-[#e8e4df]">Selection through community theater masks deeper power dynamics</h2>
+            <h2 className="text-3xl font-bold text-[#f0ebe3]">Selection through community theater masks deeper power dynamics</h2>
             <div className="prose prose-lg prose-invert max-w-none">
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 The Request for Bureaucratship (RfB) process appears democratic on its surface, allowing any registered user to participate in discussions and vote. However, research reveals this masks a more complex reality where existing power structures heavily influence outcomes. The process isn't technically a vote but rather a consensus determination made by current bureaucrats, who interpret community discussion with significant discretion. Quality of arguments theoretically matters more than raw numbers, but in practice, well-connected editors can mobilize support networks to influence results.
               </p>
 
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Cambridge University's 2024 study on Wikipedia governance found that <strong>social capital significantly affects administrative outcomes</strong>, with well-connected editors receiving preferential treatment throughout the selection process. The research documented how "factions" and "cliques" coordinate to support preferred candidates while opposing outsiders. One former Arbitration Committee member admitted that "if enough people push it, it is very hard for the Arbitration Committee to go the other way," revealing how organized groups can manufacture consensus.
               </p>
 
               <div className="bg-[#1b4965]/20 border border-[#1b4965]/40 rounded-xl p-6 my-8">
                 <h3 className="text-xl font-bold text-[#1b4965] mb-3">Policy Requirements</h3>
-                <p className="text-[#e8e4df]/80">
+                <p className="text-[#f0ebe3]/80">
                   The requirements for bureaucrat candidacy create substantial barriers to entry. Candidates must demonstrate deep understanding of Wikipedia's labyrinthine policies, which now total <strong>over 150,000 words</strong> across more than 50 official documents. They need extensive participation in administrator discussions, proven ability to interpret complex community debates, and clean conduct records.
                 </p>
               </div>
@@ -107,16 +107,16 @@ export default function WikipediaBureaucratsPage() {
 
           {/* Limited transparency */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold text-[#e8e4df] flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[#f0ebe3] flex items-center gap-3">
               <Shield className="h-6 w-6" />
               Behind the pseudonyms: Limited transparency in positions and statements
             </h2>
             <div className="prose prose-lg prose-invert max-w-none">
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Public statements from Wikipedia bureaucrats remain remarkably scarce, with most communication occurring within Wikipedia's internal channels rather than external media. The most significant public controversy involved Ryan Jordan, known as "Essjay," who served as administrator, bureaucrat, and Arbitration Committee member while falsely claiming to be a tenured theology professor with multiple advanced degrees. His 2007 exposure in The New Yorker, revealing him as a 24-year-old college dropout, sparked community-wide debates about identity verification that ultimately changed nothing substantial about Wikipedia's anonymity policies.
               </p>
 
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Academic researchers conducting interviews with Wikipedia administrators found consistent themes in their private statements: awareness of increasing bureaucratization, concern about power concentration, but <strong>resignation to the system's inertia</strong>. A 2021 Dutch study interviewing 118 Wikipedia participants, including bureaucrats, documented the platform's evolution from "charismatic" to "bureaucratic" organization, with administrators acknowledging but feeling powerless to reverse these trends.
               </p>
             </div>
@@ -124,22 +124,22 @@ export default function WikipediaBureaucratsPage() {
 
           {/* Systemic bias */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold text-[#e8e4df]">Systemic bias confirmed by academic research and internal scandals</h2>
+            <h2 className="text-3xl font-bold text-[#f0ebe3]">Systemic bias confirmed by academic research and internal scandals</h2>
             <div className="prose prose-lg prose-invert max-w-none">
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Academic research has definitively confirmed what Wikipedia critics long suspected: the platform's dispute resolution systems <strong>systematically favor well-connected editors</strong> over policy compliance. Cambridge University's 2024 study published in Law & Social Inquiry found strong negative correlation between editors' social capital and sanction severity, with well-connected users receiving lighter punishments for identical violations.
               </p>
 
               <div className="bg-[#c73032]/20 border border-[#c73032]/40 rounded-xl p-6 my-8">
                 <h3 className="text-xl font-bold text-[#c73032] mb-3">Internal Scandals</h3>
-                <ul className="space-y-2 text-[#e8e4df]/80">
+                <ul className="space-y-2 text-[#f0ebe3]/80">
                   <li>• <strong>Lourdes/Wifione case (2023):</strong> Banned paid editor obtained administrator privileges under new identity</li>
                   <li>• <strong>Runcorn sockpuppetry:</strong> Administrator operated multiple accounts to influence deletion debates and elections</li>
                   <li>• <strong>Essjay controversy (2007):</strong> High-level administrator falsified academic credentials for years</li>
                 </ul>
               </div>
 
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Wikipediocracy, a criticism site founded in 2012, has documented extensive patterns of administrative abuse described as "the norm rather than the exception." Their research identifies an "entrenched and over-powerful elite" of 200-300 editors who coordinate to maintain control, using social capital to "obfuscate normative breaches" and escape consequences for policy violations.
               </p>
             </div>
@@ -147,27 +147,27 @@ export default function WikipediaBureaucratsPage() {
 
           {/* Geographic monopoly */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold text-[#e8e4df] flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[#f0ebe3] flex items-center gap-3">
               <Globe className="h-6 w-6" />
               Geographic monopoly reflects digital colonialism
             </h2>
             <div className="prose prose-lg prose-invert max-w-none">
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Wikipedia's bureaucrats exhibit extreme geographic concentration that amplifies the platform's documented Western bias. Research shows approximately <strong>70% of Wikipedia contributors come from Europe and North America</strong> despite these regions representing only 15% of global population. Among administrators and bureaucrats, this concentration intensifies, with the United States, Germany, and United Kingdom providing disproportionate representation in governance roles.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-[#e8e4df]/5 border border-[#e8e4df]/10 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-[#e8e4df] mb-3">Global South Representation</h3>
-                  <ul className="space-y-2 text-[#e8e4df]/80">
+                <div className="bg-[#f0ebe3]/5 border border-[#f0ebe3]/10 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#f0ebe3] mb-3">Global South Representation</h3>
+                  <ul className="space-y-2 text-[#f0ebe3]/80">
                     <li>• Africa: <strong>1.5%</strong> of editors (17% of global population)</li>
                     <li>• Latin America: Minimal representation among bureaucrats</li>
                     <li>• Asia: Severely underrepresented in governance</li>
                   </ul>
                 </div>
-                <div className="bg-[#e8e4df]/5 border border-[#e8e4df]/10 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-[#e8e4df] mb-3">Bureaucrat Demographics</h3>
-                  <ul className="space-y-2 text-[#e8e4df]/80">
+                <div className="bg-[#f0ebe3]/5 border border-[#f0ebe3]/10 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#f0ebe3] mb-3">Bureaucrat Demographics</h3>
+                  <ul className="space-y-2 text-[#f0ebe3]/80">
                     <li>• <strong>85-88%</strong> hold university degrees</li>
                     <li>• Heavily skewed toward academia and tech</li>
                     <li>• Women represent only <strong>10-15%</strong> of administrators</li>
@@ -175,7 +175,7 @@ export default function WikipediaBureaucratsPage() {
                 </div>
               </div>
 
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 The implications extend beyond simple representation gaps. Research demonstrates that editors exhibit strong nationality-based self-selection, disproportionately editing articles about their home countries and cultures. This creates expertise concentration in already well-represented areas while leaving vast knowledge domains underserved.
               </p>
             </div>
@@ -183,19 +183,19 @@ export default function WikipediaBureaucratsPage() {
 
           {/* Failed reforms */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold text-[#e8e4df]">Failed reforms reveal entrenched resistance to change</h2>
+            <h2 className="text-3xl font-bold text-[#f0ebe3]">Failed reforms reveal entrenched resistance to change</h2>
             <div className="prose prose-lg prose-invert max-w-none">
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Wikipedia's governance reform efforts spanning two decades have consistently failed despite widespread acknowledgment of systemic problems. The administrator recall system, discussed for "almost two decades" according to internal sources, finally gained adoption in 2024 only after extraordinary community pressure. This glacial pace of change reflects what researchers identify as <strong>elite resistance to reforms that might dilute existing power structures</strong>.
               </p>
 
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Multiple comprehensive reform initiatives have produced thousands of pages of discussion without meaningful change. The 2011 RfA Reform generated "thousands of kilobytes of text" but resulted in no substantial modifications to administrator selection. The Wikipedia Governance Reform proposal explicitly identified policy stagnation and failure to scale, yet ended with the familiar "no consensus" that kills most reform efforts.
               </p>
 
               <div className="bg-[#d4a74a]/20 border border-[#d4a74a]/40 rounded-xl p-6 my-8">
                 <h3 className="text-xl font-bold text-[#d4a74a] mb-3">The Pattern of Reform Failure</h3>
-                <p className="text-[#e8e4df]/80">
+                <p className="text-[#f0ebe3]/80">
                   Critics note that those with power to implement changes are the same individuals who benefit from the status quo, creating an inherent conflict of interest. The platform operates through increasingly bureaucratic structures that concentrate power in fewer hands, evolving from a "charismatic" organization to a "bureaucratic" entity dominated by rules that favor insiders.
                 </p>
               </div>
@@ -204,13 +204,13 @@ export default function WikipediaBureaucratsPage() {
 
           {/* Conclusion */}
           <section className="space-y-6 bg-[#0d1b2a]/50 border border-[#1b4965]/40 rounded-xl p-8">
-            <h2 className="text-3xl font-bold text-[#e8e4df]">Conclusion: Concentrated power undermines encyclopedic neutrality</h2>
+            <h2 className="text-3xl font-bold text-[#f0ebe3]">Conclusion: Concentrated power undermines encyclopedic neutrality</h2>
             <div className="prose prose-lg prose-invert max-w-none">
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Wikipedia's bureaucrat system embodies the platform's transformation from open collaboration to closed governance by a small, homogeneous elite operating behind pseudonyms. The concentration of power in 16 anonymous individuals, predominantly Western educated males, creates systematic biases that affect billions of readers worldwide. Academic research confirms that social capital trumps merit in Wikipedia's governance, while documented scandals reveal fundamental failures in accountability and oversight.
               </p>
 
-              <p className="text-[#e8e4df]/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Most critically, the research reveals Wikipedia's vulnerability to capture by coordinated groups who understand how to manipulate its social dynamics. The combination of anonymous administration, secret proceedings, and social capital-based decision-making creates opportunities for organized interests to shape content while maintaining plausible deniability. Until Wikipedia addresses these fundamental governance flaws, its claim to neutral, reliable information remains compromised by the narrow perspectives and unchecked power of its bureaucratic elite.
               </p>
             </div>
@@ -221,12 +221,12 @@ export default function WikipediaBureaucratsPage() {
         <aside className="space-y-6">
           <div className="bg-[#1b4965]/20 border border-[#1b4965]/40 rounded-xl p-5">
             <h3 className="text-lg font-semibold text-[#1b4965] mb-2">Research Sources</h3>
-            <p className="text-[#e8e4df]/80 mb-3 text-sm">Cambridge University study, academic journals, and internal Wikipedia documentation analyzed.</p>
+            <p className="text-[#f0ebe3]/80 mb-3 text-sm">Cambridge University study, academic journals, and internal Wikipedia documentation analyzed.</p>
           </div>
 
           <div className="bg-[#c73032]/20 border border-[#c73032]/40 rounded-xl p-5">
             <h3 className="text-lg font-semibold text-[#c73032] mb-2">Impact Assessment</h3>
-            <ul className="text-sm text-[#e8e4df]/80 space-y-2">
+            <ul className="text-sm text-[#f0ebe3]/80 space-y-2">
               <li>• Billions of readers affected</li>
               <li>• AI training data compromised</li>
               <li>• Global South perspectives marginalized</li>
@@ -236,16 +236,16 @@ export default function WikipediaBureaucratsPage() {
 
           <div className="bg-[#1b4965]/20 border border-[#1b4965]/40 rounded-xl p-5">
             <h3 className="text-lg font-semibold text-[#d4a74a] mb-2">Share This Investigation</h3>
-            <p className="text-[#e8e4df]/80 mb-3 text-sm">Help expose Wikipedia's hidden power structures.</p>
-            <Link href="/social" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1b4965] text-[#e8e4df] hover:bg-[#1b4965]/80 text-sm">
+            <p className="text-[#f0ebe3]/80 mb-3 text-sm">Help expose Wikipedia's hidden power structures.</p>
+            <Link href="/social" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1b4965] text-[#f0ebe3] hover:bg-[#1b4965]/80 text-sm">
               Share on Social
             </Link>
           </div>
 
           <div className="bg-[#1b4965]/20 border border-[#1b4965]/40 rounded-xl p-5">
             <h3 className="text-lg font-semibold text-[#d4a74a] mb-2">Truth Project</h3>
-            <p className="text-[#e8e4df]/80 mb-3 text-sm">More investigative reports exposing hidden power structures.</p>
-            <Link href="/truth-project" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1b4965] text-[#e8e4df] hover:bg-[#1b4965]/80 text-sm">
+            <p className="text-[#f0ebe3]/80 mb-3 text-sm">More investigative reports exposing hidden power structures.</p>
+            <Link href="/truth-project" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1b4965] text-[#f0ebe3] hover:bg-[#1b4965]/80 text-sm">
               View All Reports
             </Link>
           </div>

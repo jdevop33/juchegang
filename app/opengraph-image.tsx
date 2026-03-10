@@ -22,13 +22,13 @@ export default async function OgImage({ params, searchParams }: { params: Record
 					justifyContent: "center",
 					alignItems: "center",
 					background: "linear-gradient(135deg, #0d1b2a 0%, #1b4965 50%, #0d1b2a 100%)",
-					color: "#e8e4df",
+					color: "#f0ebe3",
 					fontFamily: "Georgia, 'Times New Roman', serif",
 					padding: "60px",
 				}}
 			>
 				<div style={{ fontSize: 64, fontWeight: 700, letterSpacing: -1, textAlign: "center", color: "#d4a74a" }}>{title}</div>
-				<div style={{ marginTop: 16, fontSize: 32, opacity: 0.9, textAlign: "center", color: "#e8e4df" }}>{subtitle}</div>
+				<div style={{ marginTop: 16, fontSize: 32, opacity: 0.9, textAlign: "center", color: "#f0ebe3" }}>{subtitle}</div>
 				<div style={{ position: "absolute", bottom: 40, left: 60, right: 60, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 					<div style={{ fontSize: 24, opacity: 0.8 }}>juche.org</div>
 					<div style={{ display: "flex", gap: 12 }}>

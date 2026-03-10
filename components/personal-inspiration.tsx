@@ -8,18 +8,18 @@ type Props = {
 export function PersonalInspiration({ title, description, youtubeEmbedUrl, sources }: Props) {
   return (
     <section aria-labelledby="inspiration-title" className="mb-16">
-      <div className="bg-gradient-to-b from-red-900/40 to-black/40 border border-red-700/40 rounded-2xl overflow-hidden">
+      <div className="bg-gradient-to-b from-korean-red/25 to-river-depths/40 border border-korean-red/40 rounded-2xl overflow-hidden">
         <div className="p-6 pb-0">
-          <h2 id="inspiration-title" className="text-2xl md:text-3xl font-bold text-yellow-300">
+          <h2 id="inspiration-title" className="text-2xl md:text-3xl font-bold text-sovereign-gold">
             {title}
           </h2>
           {description ? (
-            <p className="text-white/85 mt-2 max-w-3xl">
+            <p className="text-cream/85 mt-2 max-w-3xl">
               {description}
             </p>
           ) : null}
         </div>
-        <div className="aspect-video w-full bg-black/40 mt-4">
+        <div className="aspect-video w-full bg-river-depths/40 mt-4">
           <iframe
             src={youtubeEmbedUrl}
             title={title}
@@ -31,11 +31,11 @@ export function PersonalInspiration({ title, description, youtubeEmbedUrl, sourc
         </div>
         {sources?.length ? (
           <div className="p-6">
-            <h3 className="text-white/80 font-semibold mb-2">Sources</h3>
+            <h3 className="text-cream/80 font-semibold mb-2">Sources</h3>
             <ul className="flex flex-wrap gap-3">
               {sources.map((s) => (
                 <li key={s.url}>
-                  <a href={s.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-white/80 hover:bg-white/10">
+                  <a href={s.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-3 py-2 rounded-lg bg-cream/5 border border-cream/10 text-cream/80 hover:bg-cream/10">
                     {s.label}
                   </a>
                 </li>

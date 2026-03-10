@@ -141,7 +141,7 @@ export default function CulturalExchangePage() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] bg-gradient-to-r from-[#1b4965] via-[#d4a74a] to-[#1b4965] bg-clip-text text-transparent">
             {language === 'kr' ? '문화 교류와 세계 평화' : 'Cultural Exchange & World Peace'}
           </h1>
-          <p className="text-xl md:text-2xl text-[#e8e4df]/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-[#f0ebe3]/90 mb-8 max-w-3xl mx-auto">
             {language === 'kr'
               ? '5000년 역사의 지혜를 세계와 나누고, 세계의 아름다움을 품는 열린 한반도'
               : '5000 years of wisdom shared with the world, an open peninsula embracing global beauty'}
@@ -158,7 +158,7 @@ export default function CulturalExchangePage() {
             <h2 className="text-2xl font-bold text-[#d4a74a] mb-4 font-[family-name:var(--font-heading)]">
               {language === 'kr' ? '우리의 꿈' : 'Our Dream'}
             </h2>
-            <p className="text-[#e8e4df] text-lg leading-relaxed">
+            <p className="text-[#f0ebe3] text-lg leading-relaxed">
               {language === 'kr'
                 ? '한반도가 동서양 문명의 가교가 되고, 남북이 하나 되어 인류 평화의 중심지가 되는 그날. 우리 음식으로 세계인의 건강을 지키고, 우리 정신으로 인류애를 실현하며, 우리 예술로 영혼을 치유하는 미래.'
                 : 'The Korean Peninsula as a bridge between Eastern and Western civilizations, North and South united as a center for human peace. A future where our food protects global health, our spirit realizes humanity, and our art heals souls.'}
@@ -170,7 +170,7 @@ export default function CulturalExchangePage() {
       {/* Cultural Pillars */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#e8e4df] mb-12 font-[family-name:var(--font-heading)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#f0ebe3] mb-12 font-[family-name:var(--font-heading)]">
             {language === 'kr' ? '문화 교류의 네 기둥' : 'Four Pillars of Cultural Exchange'}
           </h2>
 
@@ -188,15 +188,15 @@ export default function CulturalExchangePage() {
                     <div className={`w-16 h-16 rounded-full border-2 ${pillar.color} bg-[#0d1b2a]/50 flex items-center justify-center mb-4`}>
                       <pillar.icon className="h-8 w-8 text-[#d4a74a]" />
                     </div>
-                    <CardTitle className="text-2xl text-[#e8e4df]">{pillar.title}</CardTitle>
+                    <CardTitle className="text-2xl text-[#f0ebe3]">{pillar.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#e8e4df]/80 mb-4">{pillar.description}</p>
+                    <p className="text-[#f0ebe3]/80 mb-4">{pillar.description}</p>
                     <div className="space-y-2">
                       {pillar.examples.map((example, i) => (
                         <div key={i} className="flex items-center gap-2">
                           <div className="w-2 h-2 rounded-full bg-[#d4a74a]" />
-                          <span className="text-[#e8e4df]/70 text-sm">{example}</span>
+                          <span className="text-[#f0ebe3]/70 text-sm">{example}</span>
                         </div>
                       ))}
                     </div>
@@ -211,10 +211,10 @@ export default function CulturalExchangePage() {
       {/* Exchange Programs */}
       <section className="py-16 px-4 bg-[#1b4965]/20">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#e8e4df] mb-4 font-[family-name:var(--font-heading)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#f0ebe3] mb-4 font-[family-name:var(--font-heading)]">
             {language === 'kr' ? '글로벌 교류 프로그램' : 'Global Exchange Programs'}
           </h2>
-          <p className="text-center text-[#e8e4df]/80 mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-[#f0ebe3]/80 mb-12 max-w-2xl mx-auto">
             {language === 'kr'
               ? '미래 세대가 함께 만드는 평화롭고 번영하는 세계'
               : 'Future generations creating a peaceful and prosperous world together'}
@@ -231,14 +231,14 @@ export default function CulturalExchangePage() {
                 className="bg-[#0d1b2a]/60 rounded-xl p-6 border border-[#1b4965]/40"
               >
                 <h3 className="text-xl font-bold text-[#d4a74a] mb-3">{program.title}</h3>
-                <p className="text-[#e8e4df]/80 mb-4">{program.description}</p>
+                <p className="text-[#f0ebe3]/80 mb-4">{program.description}</p>
                 <div className="flex justify-between items-center">
                   <div>
-                    <p className="text-sm text-[#e8e4df]/60">{language === 'kr' ? '참가자' : 'Participants'}</p>
+                    <p className="text-sm text-[#f0ebe3]/60">{language === 'kr' ? '참가자' : 'Participants'}</p>
                     <p className="text-lg font-bold text-[#d4a74a]">{program.participants}</p>
                   </div>
                   <div>
-                    <p className="text-sm text-[#e8e4df]/60">{language === 'kr' ? '영향력' : 'Impact'}</p>
+                    <p className="text-sm text-[#f0ebe3]/60">{language === 'kr' ? '영향력' : 'Impact'}</p>
                     <p className="text-lg font-bold text-[#1b4965]">{program.impact}</p>
                   </div>
                 </div>
@@ -254,7 +254,7 @@ export default function CulturalExchangePage() {
           <div className="bg-[#1b4965]/20 rounded-2xl p-8 border border-[#1b4965]/40">
             <div className="flex items-center justify-center mb-6">
               <Plane className="h-12 w-12 text-[#d4a74a] mr-3" />
-              <h2 className="text-3xl font-bold text-[#e8e4df] font-[family-name:var(--font-heading)]">{tourismVision.title}</h2>
+              <h2 className="text-3xl font-bold text-[#f0ebe3] font-[family-name:var(--font-heading)]">{tourismVision.title}</h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -268,7 +268,7 @@ export default function CulturalExchangePage() {
                   className="bg-[#0d1b2a]/60 rounded-lg p-6"
                 >
                   <h3 className="text-xl font-bold text-[#d4a74a] mb-2">{dest.name}</h3>
-                  <p className="text-[#e8e4df]/80 mb-3">{dest.description}</p>
+                  <p className="text-[#f0ebe3]/80 mb-3">{dest.description}</p>
                   <div className="flex items-center gap-2">
                     <Camera className="h-4 w-4 text-[#d4a74a]" />
                     <span className="text-[#d4a74a] font-medium">{dest.visitors}</span>
@@ -289,12 +289,12 @@ export default function CulturalExchangePage() {
           className="container mx-auto max-w-4xl text-center"
         >
           <HandHeart className="h-16 w-16 text-[#c73032] mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-bold text-[#e8e4df] mb-6 font-[family-name:var(--font-heading)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#f0ebe3] mb-6 font-[family-name:var(--font-heading)]">
             {language === 'kr'
               ? '함께 만드는 평화로운 미래'
               : 'Creating a Peaceful Future Together'}
           </h2>
-          <p className="text-xl text-[#e8e4df]/80 mb-8">
+          <p className="text-xl text-[#f0ebe3]/80 mb-8">
             {language === 'kr'
               ? '문화의 힘으로 마음의 장벽을 허물고, 이해와 사랑으로 새로운 세계를 열어갑니다.'
               : 'Breaking down barriers with cultural power, opening a new world with understanding and love.'}
@@ -303,13 +303,13 @@ export default function CulturalExchangePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/cuisine-traditions"
-              className="px-8 py-4 bg-gradient-to-r from-[#c73032] to-[#d4a74a] hover:from-[#a82628] hover:to-[#c4973a] text-[#e8e4df] font-bold rounded-lg transition-all transform hover:scale-105"
+              className="px-8 py-4 bg-gradient-to-r from-[#c73032] to-[#d4a74a] hover:from-[#a82628] hover:to-[#c4973a] text-[#f0ebe3] font-bold rounded-lg transition-all transform hover:scale-105"
             >
               {language === 'kr' ? '한식과 전통 탐험' : 'Explore Cuisine & Traditions'}
             </Link>
             <Link
               href="/peace-timeline"
-              className="px-8 py-4 bg-gradient-to-r from-[#1b4965] to-[#0d1b2a] hover:from-[#143a52] hover:to-[#0a1521] text-[#e8e4df] font-bold rounded-lg transition-all transform hover:scale-105"
+              className="px-8 py-4 bg-gradient-to-r from-[#1b4965] to-[#0d1b2a] hover:from-[#143a52] hover:to-[#0a1521] text-[#f0ebe3] font-bold rounded-lg transition-all transform hover:scale-105"
             >
               {language === 'kr' ? '평화의 역사' : 'History of Peace'}
             </Link>

@@ -45,7 +45,7 @@ export function HeroSection() {
             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6 text-[#d4a74a] font-[family-name:var(--font-korean)]">
               필사즉생 필생즉사
             </p>
-            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8 text-[#e8e4df] font-[family-name:var(--font-heading)]">
+            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8 text-[#f0ebe3] font-[family-name:var(--font-heading)]">
               "If you seek death, you will live.<br />
               If you seek life, you will die."
             </p>
@@ -53,7 +53,7 @@ export function HeroSection() {
               <cite className="not-italic text-sm sm:text-base tracking-widest uppercase text-[#d4a74a]">
                 — Admiral Yi Sun-shin · 이순신
               </cite>
-              <p className="text-xs sm:text-sm mt-2 opacity-70 text-[#e8e4df]">
+              <p className="text-xs sm:text-sm mt-2 opacity-70 text-[#f0ebe3]">
                 Battle of Myeongnyang, 1597
               </p>
             </footer>
@@ -70,7 +70,7 @@ export function HeroSection() {
             <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-[#d4a74a] font-[family-name:var(--font-korean)]">
               주체강
             </p>
-            <p className="text-xl sm:text-2xl md:text-3xl mb-6 text-[#e8e4df] font-[family-name:var(--font-heading)]">
+            <p className="text-xl sm:text-2xl md:text-3xl mb-6 text-[#f0ebe3] font-[family-name:var(--font-heading)]">
               Subjective River
             </p>
             <p className="text-base sm:text-lg tracking-[0.3em] uppercase text-[#d4a74a]">
@@ -89,7 +89,7 @@ export function HeroSection() {
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-relaxed mb-4 text-[#d4a74a] font-[family-name:var(--font-korean)]">
               한 호랑이. 한 강. 한 조선.
             </p>
-            <p className="text-lg sm:text-xl md:text-2xl text-[#e8e4df] font-[family-name:var(--font-heading)]">
+            <p className="text-lg sm:text-xl md:text-2xl text-[#f0ebe3] font-[family-name:var(--font-heading)]">
               One Tiger. One River. One Korea.
             </p>
           </div>

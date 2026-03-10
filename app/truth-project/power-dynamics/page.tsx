@@ -22,7 +22,7 @@ export default function PowerDynamicsPage() {
         </Link>
 
         <div className="mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4" style={{ color: '#e8e4df' }}>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4" style={{ color: '#f0ebe3' }}>
             How Major Powers Actually Behave
           </h1>
           <p className="text-xl" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
@@ -63,7 +63,7 @@ export default function PowerDynamicsPage() {
               <h3 className="text-xl font-bold mb-4" style={{ color: '#c73032' }}>The Numbers Tell a Different Story</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div>
-                  <div className="text-2xl font-bold" style={{ color: '#e8e4df' }}>United States</div>
+                  <div className="text-2xl font-bold" style={{ color: '#f0ebe3' }}>United States</div>
                   <ul className="mt-3 space-y-2" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• 251 interventions (1991-2022)</li>
                     <li>• 750+ overseas bases</li>
@@ -73,7 +73,7 @@ export default function PowerDynamicsPage() {
                   </ul>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold" style={{ color: '#e8e4df' }}>China</div>
+                  <div className="text-2xl font-bold" style={{ color: '#f0ebe3' }}>China</div>
                   <ul className="mt-3 space-y-2" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• &lt;10 interventions since 1991</li>
                     <li>• 1 official overseas base</li>
@@ -83,7 +83,7 @@ export default function PowerDynamicsPage() {
                   </ul>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold" style={{ color: '#e8e4df' }}>Russia</div>
+                  <div className="text-2xl font-bold" style={{ color: '#f0ebe3' }}>Russia</div>
                   <ul className="mt-3 space-y-2" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• 20-30 major operations</li>
                     <li>• Primarily regional</li>
@@ -129,7 +129,7 @@ export default function PowerDynamicsPage() {
 
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="rounded-lg p-4" style={{ background: 'rgba(27, 73, 101, 0.2)', border: '1px solid rgba(27, 73, 101, 0.3)' }}>
-                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Chinese Finance to Africa</h4>
+                  <h4 className="font-bold mb-3" style={{ color: '#f0ebe3' }}>Chinese Finance to Africa</h4>
                   <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• $170 billion in loans (2000-2022)</li>
                     <li>• 3.2% average interest rate</li>
@@ -139,7 +139,7 @@ export default function PowerDynamicsPage() {
                   </ul>
                 </div>
                 <div className="rounded-lg p-4" style={{ background: 'rgba(27, 73, 101, 0.15)', border: '1px solid rgba(27, 73, 101, 0.25)' }}>
-                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Western Finance to Africa</h4>
+                  <h4 className="font-bold mb-3" style={{ color: '#f0ebe3' }}>Western Finance to Africa</h4>
                   <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <li>• 35% held by Western banks</li>
                     <li>• 6.9% commercial lending rates</li>
@@ -164,21 +164,21 @@ export default function PowerDynamicsPage() {
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ background: '#d4a74a' }}></div>
                   <div>
-                    <p className="font-medium" style={{ color: '#e8e4df' }}>Kenya Standard Gauge Railway</p>
+                    <p className="font-medium" style={{ color: '#f0ebe3' }}>Kenya Standard Gauge Railway</p>
                     <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>Completed 18 months early, employed 25,000 Kenyans, reduced travel time 60%</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ background: '#d4a74a' }}></div>
                   <div>
-                    <p className="font-medium" style={{ color: '#e8e4df' }}>Ethiopia's Infrastructure</p>
+                    <p className="font-medium" style={{ color: '#f0ebe3' }}>Ethiopia's Infrastructure</p>
                     <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>China built 70% of road infrastructure while Ethiopia receives only $13/capita Western aid</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ background: '#d4a74a' }}></div>
                   <div>
-                    <p className="font-medium" style={{ color: '#e8e4df' }}>Belt and Road Initiative</p>
+                    <p className="font-medium" style={{ color: '#f0ebe3' }}>Belt and Road Initiative</p>
                     <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>$1.3 trillion mobilized since 2013 for ports, railways, power plants</p>
                   </div>
                 </div>
@@ -222,15 +222,15 @@ export default function PowerDynamicsPage() {
                   <h4 className="font-bold mb-2" style={{ color: '#1b4965' }}>UN Security Council Vetoes</h4>
                   <div className="grid grid-cols-3 gap-4 mt-3">
                     <div>
-                      <div className="text-2xl font-bold" style={{ color: '#e8e4df' }}>82</div>
+                      <div className="text-2xl font-bold" style={{ color: '#f0ebe3' }}>82</div>
                       <div className="text-xs" style={{ color: 'rgba(232, 228, 223, 0.6)' }}>US (mostly for Israel)</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold" style={{ color: '#e8e4df' }}>120</div>
+                      <div className="text-2xl font-bold" style={{ color: '#f0ebe3' }}>120</div>
                       <div className="text-xs" style={{ color: 'rgba(232, 228, 223, 0.6)' }}>USSR/Russia</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold" style={{ color: '#e8e4df' }}>16</div>
+                      <div className="text-2xl font-bold" style={{ color: '#f0ebe3' }}>16</div>
                       <div className="text-xs" style={{ color: 'rgba(232, 228, 223, 0.6)' }}>China</div>
                     </div>
                   </div>
@@ -266,7 +266,7 @@ export default function PowerDynamicsPage() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="rounded-lg p-4" style={{ background: 'rgba(212, 167, 74, 0.1)', border: '1px solid rgba(212, 167, 74, 0.3)' }}>
-                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Africa-China Trade</h4>
+                  <h4 className="font-bold mb-3" style={{ color: '#f0ebe3' }}>Africa-China Trade</h4>
                   <div className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <div className="flex justify-between">
                       <span>Raw material exports:</span>
@@ -284,7 +284,7 @@ export default function PowerDynamicsPage() {
                 </div>
 
                 <div className="rounded-lg p-4" style={{ background: 'rgba(212, 167, 74, 0.15)', border: '1px solid rgba(212, 167, 74, 0.3)' }}>
-                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>US FDI Pattern</h4>
+                  <h4 className="font-bold mb-3" style={{ color: '#f0ebe3' }}>US FDI Pattern</h4>
                   <div className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <div className="flex justify-between">
                       <span>Services focus:</span>
@@ -338,19 +338,19 @@ export default function PowerDynamicsPage() {
 
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="rounded-lg p-4" style={{ background: 'rgba(199, 48, 50, 0.1)', border: '1px solid rgba(199, 48, 50, 0.3)' }}>
-                  <h4 className="font-bold mb-2" style={{ color: '#e8e4df' }}>Russia</h4>
+                  <h4 className="font-bold mb-2" style={{ color: '#f0ebe3' }}>Russia</h4>
                   <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>200,000 tons grain to Africa</p>
                   <p className="text-xs mt-2" style={{ color: 'rgba(232, 228, 223, 0.6)' }}>Only to 6 countries with Wagner presence</p>
                 </div>
 
                 <div className="rounded-lg p-4" style={{ background: 'rgba(27, 73, 101, 0.2)', border: '1px solid rgba(27, 73, 101, 0.3)' }}>
-                  <h4 className="font-bold mb-2" style={{ color: '#e8e4df' }}>China</h4>
+                  <h4 className="font-bold mb-2" style={{ color: '#f0ebe3' }}>China</h4>
                   <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>2.2 billion COVID vaccines</p>
                   <p className="text-xs mt-2" style={{ color: 'rgba(232, 228, 223, 0.6)' }}>Prioritized BRI participants</p>
                 </div>
 
                 <div className="rounded-lg p-4" style={{ background: 'rgba(212, 167, 74, 0.1)', border: '1px solid rgba(212, 167, 74, 0.3)' }}>
-                  <h4 className="font-bold mb-2" style={{ color: '#e8e4df' }}>United States</h4>
+                  <h4 className="font-bold mb-2" style={{ color: '#f0ebe3' }}>United States</h4>
                   <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>$71.9 billion annually</p>
                   <p className="text-xs mt-2" style={{ color: 'rgba(232, 228, 223, 0.6)' }}>Political freezes risk 1,200 deaths in Afghanistan</p>
                 </div>
@@ -381,7 +381,7 @@ export default function PowerDynamicsPage() {
 
               <div className="space-y-4">
                 <div className="rounded-lg p-4" style={{ background: 'rgba(27, 73, 101, 0.2)', border: '1px solid rgba(27, 73, 101, 0.3)' }}>
-                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Africa (Afrobarometer)</h4>
+                  <h4 className="font-bold mb-3" style={{ color: '#f0ebe3' }}>Africa (Afrobarometer)</h4>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <div className="text-2xl font-bold" style={{ color: '#1b4965' }}>59%</div>
@@ -396,7 +396,7 @@ export default function PowerDynamicsPage() {
                 </div>
 
                 <div className="rounded-lg p-4" style={{ background: 'rgba(27, 73, 101, 0.15)', border: '1px solid rgba(27, 73, 101, 0.25)' }}>
-                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>Arab World</h4>
+                  <h4 className="font-bold mb-3" style={{ color: '#f0ebe3' }}>Arab World</h4>
                   <div className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     <div className="flex justify-between">
                       <span>View Israel as threat:</span>
@@ -414,7 +414,7 @@ export default function PowerDynamicsPage() {
                 </div>
 
                 <div className="rounded-lg p-4" style={{ background: 'rgba(212, 167, 74, 0.1)', border: '1px solid rgba(212, 167, 74, 0.3)' }}>
-                  <h4 className="font-bold mb-3" style={{ color: '#e8e4df' }}>ASEAN Strategic Hedging</h4>
+                  <h4 className="font-bold mb-3" style={{ color: '#f0ebe3' }}>ASEAN Strategic Hedging</h4>
                   <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
                     50.5% would choose China if forced to align, but prefer not choosing at all
                   </p>
@@ -466,21 +466,21 @@ export default function PowerDynamicsPage() {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ background: '#d4a74a' }}></div>
                   <div>
-                    <p className="font-medium" style={{ color: '#e8e4df' }}>New Development Bank</p>
+                    <p className="font-medium" style={{ color: '#f0ebe3' }}>New Development Bank</p>
                     <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>$32.8 billion approved, equal voting rights</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ background: '#d4a74a' }}></div>
                   <div>
-                    <p className="font-medium" style={{ color: '#e8e4df' }}>Payment Systems</p>
+                    <p className="font-medium" style={{ color: '#f0ebe3' }}>Payment Systems</p>
                     <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>52.9% of China's payments in RMB vs 42.8% USD</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ background: '#d4a74a' }}></div>
                   <div>
-                    <p className="font-medium" style={{ color: '#e8e4df' }}>SCO Coverage</p>
+                    <p className="font-medium" style={{ color: '#f0ebe3' }}>SCO Coverage</p>
                     <p className="text-sm" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>42% of global population</p>
                   </div>
                 </div>
@@ -501,7 +501,7 @@ export default function PowerDynamicsPage() {
 
         {/* Conclusions */}
         <div className="mt-12 rounded-xl p-8" style={{ background: 'linear-gradient(to right, rgba(27, 73, 101, 0.15), rgba(27, 73, 101, 0.2), rgba(27, 73, 101, 0.15))', border: '1px solid rgba(27, 73, 101, 0.3)' }}>
-          <h2 className="text-3xl font-bold mb-6" style={{ color: '#e8e4df' }}>Conclusions Challenge Fundamental Assumptions</h2>
+          <h2 className="text-3xl font-bold mb-6" style={{ color: '#f0ebe3' }}>Conclusions Challenge Fundamental Assumptions</h2>
 
           <div className="space-y-4" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
             <p>
@@ -523,7 +523,7 @@ export default function PowerDynamicsPage() {
             </p>
 
             <div className="mt-6 p-6 rounded-lg" style={{ background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.1)' }}>
-              <p className="text-lg font-medium mb-3" style={{ color: '#e8e4df' }}>The Real Challenge</p>
+              <p className="text-lg font-medium mb-3" style={{ color: '#f0ebe3' }}>The Real Challenge</p>
               <p style={{ color: 'rgba(232, 228, 223, 0.9)' }}>
                 The fundamental challenge isn't choosing between powers but transforming structural relationships. The documented
                 realities call for moving beyond Cold War frameworks to understand contemporary multipolarity where Global South
@@ -535,13 +535,13 @@ export default function PowerDynamicsPage() {
 
         {/* Call to Action */}
         <div className="mt-8 flex flex-wrap gap-4 justify-center">
-          <Link href="/truth-project" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: '#1b4965', color: '#e8e4df' }}>
+          <Link href="/truth-project" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: '#1b4965', color: '#f0ebe3' }}>
             Explore More Analysis
           </Link>
-          <Link href="/briefings" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: '#1b4965', color: '#e8e4df' }}>
+          <Link href="/briefings" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: '#1b4965', color: '#f0ebe3' }}>
             Read Briefings
           </Link>
-          <Link href="/contact" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: 'rgba(255,255,255,0.1)', color: '#e8e4df', border: '1px solid rgba(255,255,255,0.2)' }}>
+          <Link href="/contact" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: 'rgba(255,255,255,0.1)', color: '#f0ebe3', border: '1px solid rgba(255,255,255,0.2)' }}>
             Share Your Perspective
           </Link>
         </div>
@@ -588,7 +588,7 @@ function Section({
       >
         <div className="flex items-center gap-3">
           <Icon className="w-6 h-6" style={{ color: style.iconColor }} />
-          <h2 className="text-2xl font-bold text-left" style={{ color: '#e8e4df' }}>{title}</h2>
+          <h2 className="text-2xl font-bold text-left" style={{ color: '#f0ebe3' }}>{title}</h2>
         </div>
         {expanded ? (
           <ChevronUp className="w-5 h-5" style={{ color: 'rgba(232, 228, 223, 0.6)' }} />

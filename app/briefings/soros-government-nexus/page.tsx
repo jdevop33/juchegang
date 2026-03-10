@@ -16,16 +16,16 @@ export default function SorosGovernmentNexusPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0d1b2a] via-[#0d1b2a]/95 to-[#0d1b2a]">
       <div className="container mx-auto px-4 py-8">
-        <Link href="/briefings" className="inline-flex items-center gap-2 text-[#e8e4df]/70 hover:text-[#e8e4df] mb-8 transition-colors">
+        <Link href="/briefings" className="inline-flex items-center gap-2 text-[#f0ebe3]/70 hover:text-[#f0ebe3] mb-8 transition-colors">
           <ArrowLeft className="h-4 w-4" />
           Back to Briefings
         </Link>
 
         <div className="mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#e8e4df] mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#f0ebe3] mb-4">
             The Soros-Government Nexus
           </h1>
-          <p className="text-xl text-[#e8e4df]/80 max-w-4xl">
+          <p className="text-xl text-[#f0ebe3]/80 max-w-4xl">
             A comprehensive examination of documented relationships spanning financial partnerships, personnel exchanges, and policy influence operations. Over $300 million in government funding revealed.
           </p>
         </div>
@@ -36,13 +36,13 @@ export default function SorosGovernmentNexusPage() {
             <AlertTriangle className="w-8 h-8 text-[#d4a74a] flex-shrink-0 mt-1" />
             <div>
               <h2 className="text-2xl font-bold text-[#d4a74a] mb-3">The Scale of Integration</h2>
-              <p className="text-[#e8e4df]/90 mb-4">
+              <p className="text-[#f0ebe3]/90 mb-4">
                 This examination reveals a complex web of documented relationships showing systematic fusion of private wealth and government power through legal channels.
               </p>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="bg-[#0d1b2a]/50 rounded p-4">
                   <h3 className="text-[#d4a74a] font-bold mb-2">Financial Scale</h3>
-                  <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                  <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                     <li>• **$300M+** government partnerships</li>
                     <li>• **$500M+** political contributions since 2020</li>
                     <li>• **$32B** charitable giving since 1984</li>
@@ -51,7 +51,7 @@ export default function SorosGovernmentNexusPage() {
                 </div>
                 <div className="bg-[#0d1b2a]/50 rounded p-4">
                   <h3 className="text-[#1b4965] font-bold mb-2">Personnel Pipeline</h3>
-                  <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                  <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                     <li>• **70+** CAP staff to Biden admin</li>
                     <li>• State Dept-OSF revolving door</li>
                     <li>• Prosecutors representing **70M** Americans</li>
@@ -59,8 +59,8 @@ export default function SorosGovernmentNexusPage() {
                   </ul>
                 </div>
                 <div className="bg-[#0d1b2a]/50 rounded p-4">
-                  <h3 className="text-[#e8e4df] font-bold mb-2">Global Operations</h3>
-                  <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                  <h3 className="text-[#f0ebe3] font-bold mb-2">Global Operations</h3>
+                  <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                     <li>• **120+** countries with operations</li>
                     <li>• Direct Ukraine policy access</li>
                     <li>• Eastern Europe democracy programs</li>
@@ -87,11 +87,11 @@ export default function SorosGovernmentNexusPage() {
 
               <div className="space-y-6">
                 <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Major Funding Relationships</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Major Funding Relationships</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <h5 className="text-[#d4a74a] font-bold mb-2">East-West Management Institute</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• **$270 million** from USAID (15 years)</li>
                         <li>• **$90 million** additional contracts</li>
                         <li>• Partnership with Open Society</li>
@@ -101,7 +101,7 @@ export default function SorosGovernmentNexusPage() {
                     </div>
                     <div>
                       <h5 className="text-[#1b4965] font-bold mb-2">Direct Government Funding</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• **$30 million** State Dept (1998-2003)</li>
                         <li>• **$55 million** "Making All Voices Count"</li>
                         <li>• Palestinian Faculty Development Program</li>
@@ -145,15 +145,15 @@ export default function SorosGovernmentNexusPage() {
 
               <div className="space-y-6">
                 <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">CAP Foundation & Biden Administration</h4>
-                  <p className="text-[#e8e4df]/90 mb-4">
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">CAP Foundation & Biden Administration</h4>
+                  <p className="text-[#f0ebe3]/90 mb-4">
                     Founded by John Podesta in 2003 with **over $3 million in Soros seed funding**,
                     CAP has become the primary pipeline for staffing Democratic administrations.
                   </p>
                   <div className="bg-[#0d1b2a]/30 rounded p-4 mb-4">
                     <div className="text-center">
                       <div className="text-3xl font-bold text-[#1b4965] mb-2">70+</div>
-                      <p className="text-[#e8e4df]/80 text-sm">Former CAP employees joined Biden administration (2021-2022)</p>
+                      <p className="text-[#f0ebe3]/80 text-sm">Former CAP employees joined Biden administration (2021-2022)</p>
                       <p className="text-[#1b4965] text-xs mt-2 italic">
                         CAP internal communications: "taking all our good people"
                       </p>
@@ -219,25 +219,25 @@ export default function SorosGovernmentNexusPage() {
 
               <div className="space-y-6">
                 <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Lobbying Expenditures</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Lobbying Expenditures</h4>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="bg-[#0d1b2a]/30 rounded p-3 text-center">
                       <div className="text-2xl font-bold text-[#d4a74a]">$2.66M</div>
-                      <p className="text-[#e8e4df]/80 text-sm">OSF Lobbying (2024)</p>
+                      <p className="text-[#f0ebe3]/80 text-sm">OSF Lobbying (2024)</p>
                     </div>
                     <div className="bg-[#0d1b2a]/30 rounded p-3 text-center">
                       <div className="text-2xl font-bold text-[#d4a74a]">$1.5M</div>
-                      <p className="text-[#e8e4df]/80 text-sm">OSA Fund (Q1 2023)</p>
+                      <p className="text-[#f0ebe3]/80 text-sm">OSA Fund (Q1 2023)</p>
                     </div>
                     <div className="bg-[#0d1b2a]/30 rounded p-3 text-center">
                       <div className="text-2xl font-bold text-[#d4a74a]">$140M</div>
-                      <p className="text-[#e8e4df]/80 text-sm">Political Advocacy (2021)</p>
+                      <p className="text-[#f0ebe3]/80 text-sm">Political Advocacy (2021)</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-[#d4a74a]/10 rounded-lg p-6 border border-[#d4a74a]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Campaign Contributions Since 2020</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Campaign Contributions Since 2020</h4>
                   <div className="space-y-3">
                     <ContributionCard org="Total Political Contributions" amount="$500M+" note="Largest individual donor category" />
                     <ContributionCard org="2022 Midterm Elections" amount="$128.5M" note="Single largest individual contributor" />
@@ -246,7 +246,7 @@ export default function SorosGovernmentNexusPage() {
                   </div>
                   <div className="mt-4 p-3 bg-[#0d1b2a]/30 rounded">
                     <p className="text-[#d4a74a] text-xs font-bold">Historical Context:</p>
-                    <p className="text-[#e8e4df]/70 text-xs">
+                    <p className="text-[#f0ebe3]/70 text-xs">
                       2004: $23.5 million to defeat President Bush marked the beginning
                       of systematic mega-donor political influence in American elections.
                     </p>
@@ -274,15 +274,15 @@ export default function SorosGovernmentNexusPage() {
 
               <div className="space-y-6">
                 <div className="bg-[#c73032]/10 rounded-lg p-6 border border-[#c73032]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Strategic Electoral Investment</h4>
-                  <p className="text-[#e8e4df]/90 mb-4">
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Strategic Electoral Investment</h4>
+                  <p className="text-[#f0ebe3]/90 mb-4">
                     Systematic campaign to elect progressive prosecutors representing **over 70 million Americans**
                     through targeted investment in low-turnout local elections.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="bg-[#0d1b2a]/30 rounded p-4">
                       <h5 className="text-[#c73032] font-bold mb-2">Major Elections</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• Larry Krasner (Philadelphia): $1.7M</li>
                         <li>• Kim Foxx (Chicago): Significant support</li>
                         <li>• George Gascon (Los Angeles): Major funding</li>
@@ -291,7 +291,7 @@ export default function SorosGovernmentNexusPage() {
                     </div>
                     <div className="bg-[#0d1b2a]/30 rounded p-4">
                       <h5 className="text-[#d4a74a] font-bold mb-2">Electoral Strategy</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• Target low-turnout elections</li>
                         <li>• Krasner: 38% of 17% turnout</li>
                         <li>• Relatively small investments</li>
@@ -302,11 +302,11 @@ export default function SorosGovernmentNexusPage() {
                 </div>
 
                 <div className="bg-[#d4a74a]/10 rounded-lg p-6 border border-[#d4a74a]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Policy Impact & Consequences</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Policy Impact & Consequences</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <h5 className="text-[#d4a74a] font-bold mb-2">Implemented Policies</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• Reduced prosecutions</li>
                         <li>• Eliminated cash bail programs</li>
                         <li>• Declined certain crime categories</li>
@@ -315,7 +315,7 @@ export default function SorosGovernmentNexusPage() {
                     </div>
                     <div>
                       <h5 className="text-[#c73032] font-bold mb-2">Public Response</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• Chesa Boudin: Recalled (San Francisco)</li>
                         <li>• Kimberly Gardner: Resigned (St. Louis)</li>
                         <li>• Rachel Rollins: Resigned (Boston)</li>
@@ -325,7 +325,7 @@ export default function SorosGovernmentNexusPage() {
                   </div>
                   <div className="mt-4 p-3 bg-[#0d1b2a]/30 rounded">
                     <p className="text-[#d4a74a] text-xs font-bold">Congressional Findings (2024):</p>
-                    <p className="text-[#e8e4df]/70 text-xs">
+                    <p className="text-[#f0ebe3]/70 text-xs">
                       House testimony documented correlations between progressive prosecutor
                       policies and crime increases in multiple jurisdictions.
                     </p>
@@ -353,8 +353,8 @@ export default function SorosGovernmentNexusPage() {
 
               <div className="space-y-6">
                 <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Eastern Europe & Former Soviet States</h4>
-                  <p className="text-[#e8e4df]/90 mb-4">
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Eastern Europe & Former Soviet States</h4>
+                  <p className="text-[#f0ebe3]/90 mb-4">
                     OSF operations align extensively with US foreign policy objectives,
                     functioning as de facto partners in democracy promotion efforts.
                   </p>
@@ -425,7 +425,7 @@ export default function SorosGovernmentNexusPage() {
 
               <div className="space-y-6">
                 <div className="bg-[#d4a74a]/10 rounded-lg p-6 border border-[#d4a74a]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Strategic Regulatory Avoidance</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Strategic Regulatory Avoidance</h4>
                   <div className="space-y-4">
                     <RegulatoryCard
                       structure="Family Office Conversion (2011)"
@@ -449,11 +449,11 @@ export default function SorosGovernmentNexusPage() {
                 </div>
 
                 <div className="bg-[#c73032]/10 rounded-lg p-6 border border-[#c73032]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">International vs Domestic Treatment</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">International vs Domestic Treatment</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <h5 className="text-[#c73032] font-bold mb-2">International Restrictions</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• Russia: Banned as security threat</li>
                         <li>• Hungary: "Stop Soros" laws enacted</li>
                         <li>• Multiple countries restrict activities</li>
@@ -462,7 +462,7 @@ export default function SorosGovernmentNexusPage() {
                     </div>
                     <div>
                       <h5 className="text-[#d4a74a] font-bold mb-2">US Treatment</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• No special oversight mechanisms</li>
                         <li>• FEC violations: Minimal penalties</li>
                         <li>• No parallel SEC enforcement</li>
@@ -491,7 +491,7 @@ export default function SorosGovernmentNexusPage() {
 
               <div className="space-y-6">
                 <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Intelligence & Regulatory Favoritism</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Intelligence & Regulatory Favoritism</h4>
                   <div className="space-y-4">
                     <ProtectionCard
                       incident="FBI Intelligence (2016)"
@@ -515,14 +515,14 @@ export default function SorosGovernmentNexusPage() {
                 </div>
 
                 <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Consistent Government Defense</h4>
-                  <p className="text-[#e8e4df]/90 mb-4">
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Consistent Government Defense</h4>
+                  <p className="text-[#f0ebe3]/90 mb-4">
                     Government responses consistently defend Soros activities as legitimate philanthropy
                     protected by free speech and association rights.
                   </p>
                   <div className="bg-[#0d1b2a]/30 rounded p-4">
                     <h5 className="text-[#1b4965] font-bold mb-2">Standard Response Pattern</h5>
-                    <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                    <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                       <li>• Currency speculation: "Legal market operations"</li>
                       <li>• Foreign criticism: "Legitimate democracy promotion"</li>
                       <li>• Sovereignty concerns: "Protected free speech rights"</li>
@@ -550,7 +550,7 @@ export default function SorosGovernmentNexusPage() {
 
               <div className="space-y-6">
                 <div className="bg-[#d4a74a]/10 rounded-lg p-6 border border-[#d4a74a]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Multiple Congressional Investigations</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Multiple Congressional Investigations</h4>
                   <div className="space-y-4">
                     <CongressionalCard
                       investigation="House Oversight Committee (2024-2025)"
@@ -574,11 +574,11 @@ export default function SorosGovernmentNexusPage() {
                 </div>
 
                 <div className="bg-[#c73032]/10 rounded-lg p-6 border border-[#c73032]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">The Partisan Divide Dynamic</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">The Partisan Divide Dynamic</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <h5 className="text-[#c73032] font-bold mb-2">Republican Position</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• Document and criticize activities</li>
                         <li>• Investigate funding relationships</li>
                         <li>• Highlight policy consequences</li>
@@ -587,7 +587,7 @@ export default function SorosGovernmentNexusPage() {
                     </div>
                     <div>
                       <h5 className="text-[#1b4965] font-bold mb-2">Democratic Position</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• Defend as legitimate philanthropy</li>
                         <li>• Facilitate government partnerships</li>
                         <li>• Protect operational freedom</li>
@@ -597,7 +597,7 @@ export default function SorosGovernmentNexusPage() {
                   </div>
                   <div className="mt-4 p-3 bg-[#0d1b2a]/30 rounded">
                     <p className="text-[#d4a74a] text-xs font-bold">Result:</p>
-                    <p className="text-[#e8e4df]/70 text-xs">
+                    <p className="text-[#f0ebe3]/70 text-xs">
                       Consistent dynamic ensures no bipartisan consensus for meaningful reform emerges,
                       allowing operations to continue without substantial restrictions.
                     </p>
@@ -625,7 +625,7 @@ export default function SorosGovernmentNexusPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-[#c73032]/10 rounded-lg p-6 border border-[#c73032]/30">
                     <h4 className="text-[#c73032] font-bold mb-3">Conservative Critique</h4>
-                    <ul className="text-[#e8e4df]/80 text-sm space-y-2">
+                    <ul className="text-[#f0ebe3]/80 text-sm space-y-2">
                       <li>• Progressive prosecutors = crime increases</li>
                       <li>• Allied government destabilization (Israel BDS)</li>
                       <li>• Democratic process circumvention</li>
@@ -637,7 +637,7 @@ export default function SorosGovernmentNexusPage() {
 
                   <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
                     <h4 className="text-[#d4a74a] font-bold mb-3">Progressive Defense</h4>
-                    <ul className="text-[#e8e4df]/80 text-sm space-y-2">
+                    <ul className="text-[#f0ebe3]/80 text-sm space-y-2">
                       <li>• Holocaust survivor promoting democracy</li>
                       <li>• $32B charitable giving since 1984</li>
                       <li>• Helped end Soviet communism</li>
@@ -649,7 +649,7 @@ export default function SorosGovernmentNexusPage() {
                 </div>
 
                 <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">International Perspectives Vary Dramatically</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">International Perspectives Vary Dramatically</h4>
                   <div className="space-y-4">
                     <InternationalViewCard
                       region="Viktor Orban's Hungary"
@@ -675,13 +675,13 @@ export default function SorosGovernmentNexusPage() {
                 </div>
 
                 <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Academic Research Findings</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Academic Research Findings</h4>
                   <blockquote className="text-[#1b4965] italic bg-[#0d1b2a]/30 p-4 rounded mb-4">
                     "No evidence that OSF grants produce destabilization" despite critics' claims.
                     <br />
                     <span className="text-[#d4a74a]">- Global Studies Quarterly research</span>
                   </blockquote>
-                  <p className="text-[#e8e4df]/80 text-sm">
+                  <p className="text-[#f0ebe3]/80 text-sm">
                     Academic analysis suggests the reality lies between extremes - neither the pure
                     philanthropy claimed by supporters nor the destabilization conspiracy alleged by critics,
                     but a sophisticated influence operation operating within legal frameworks.
@@ -707,11 +707,11 @@ export default function SorosGovernmentNexusPage() {
 
               <div className="space-y-6">
                 <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Legal Framework Advantages</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Legal Framework Advantages</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <h5 className="text-[#1b4965] font-bold mb-2">Regulatory Environment</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• Campaign finance laws permit unlimited expenditures</li>
                         <li>• Tax laws enable foundation structures</li>
                         <li>• Family office exemption benefits</li>
@@ -721,7 +721,7 @@ export default function SorosGovernmentNexusPage() {
                     </div>
                     <div>
                       <h5 className="text-[#d4a74a] font-bold mb-2">Strategic Investments</h5>
-                      <ul className="text-[#e8e4df]/80 text-sm space-y-1">
+                      <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
                         <li>• $500M+ Democratic causes (since 2020)</li>
                         <li>• CAP personnel pipeline guarantee</li>
                         <li>• Low-visibility, high-impact positions</li>
@@ -733,7 +733,7 @@ export default function SorosGovernmentNexusPage() {
                 </div>
 
                 <div className="bg-[#d4a74a]/10 rounded-lg p-6 border border-[#d4a74a]/30">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">Succession and Institutional Momentum</h4>
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">Succession and Institutional Momentum</h4>
                   <div className="space-y-4">
                     <SuccessionCard
                       aspect="Leadership Transition"
@@ -751,13 +751,13 @@ export default function SorosGovernmentNexusPage() {
                 </div>
 
                 <div className="bg-gradient-to-r from-[#1b4965]/20 to-[#1b4965]/10 rounded-lg p-6 border border-[#1b4965]/20">
-                  <h4 className="font-bold text-[#e8e4df] mb-3">The Deeper Reality</h4>
-                  <p className="text-[#e8e4df]/90 text-lg mb-4">
+                  <h4 className="font-bold text-[#f0ebe3] mb-3">The Deeper Reality</h4>
+                  <p className="text-[#f0ebe3]/90 text-lg mb-4">
                     This examination reveals not a conspiracy but something more profound:
                     <span className="text-[#d4a74a] font-bold"> a systematic fusion of private wealth and government power</span>
                     that operates through legal channels.
                   </p>
-                  <p className="text-[#e8e4df]/80">
+                  <p className="text-[#f0ebe3]/80">
                     The scale and sophistication creates a parallel structure of influence operating
                     alongside, and often through, official government channels - unprecedented in American history.
                   </p>
@@ -769,16 +769,16 @@ export default function SorosGovernmentNexusPage() {
 
         {/* Conclusion */}
         <div className="mt-12 bg-gradient-to-r from-[#1b4965]/20 via-[#1b4965]/10 to-[#1b4965]/20 rounded-xl p-8 border border-[#1b4965]/30">
-          <h2 className="text-3xl font-bold text-[#e8e4df] mb-6 text-center">Understanding Modern Influence</h2>
+          <h2 className="text-3xl font-bold text-[#f0ebe3] mb-6 text-center">Understanding Modern Influence</h2>
 
           <div className="text-center max-w-4xl mx-auto">
-            <p className="text-lg text-[#e8e4df]/90 mb-6">
+            <p className="text-lg text-[#f0ebe3]/90 mb-6">
               Whether viewed as visionary philanthropy or dangerous manipulation depends largely on one's political perspective, but the documented evidence reveals unprecedented integration of private wealth with government power.
             </p>
 
             <div className="bg-gradient-to-r from-[#1b4965]/20 to-[#1b4965]/10 rounded-lg p-6 mb-8 border border-[#1b4965]/20">
               <h3 className="text-[#d4a74a] font-bold text-xl mb-3">The Fundamental Questions</h3>
-              <div className="text-[#e8e4df]/90 text-left max-w-3xl mx-auto space-y-3">
+              <div className="text-[#f0ebe3]/90 text-left max-w-3xl mx-auto space-y-3">
                 <p>• Can democracy function when private wealth achieves such systematic government integration?</p>
                 <p>• Do legal channels legitimize influence that would be illegal if conducted directly?</p>
                 <p>• How do we distinguish between legitimate philanthropy and sophisticated manipulation?</p>
@@ -786,18 +786,18 @@ export default function SorosGovernmentNexusPage() {
               </div>
             </div>
 
-            <p className="text-xl text-[#e8e4df] font-medium mb-8">
+            <p className="text-xl text-[#f0ebe3] font-medium mb-8">
               The evidence speaks for itself - <span className="text-[#d4a74a]">the scale and sophistication remain unprecedented</span>.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/briefings/ngo-regime-change" className="px-6 py-3 bg-[#1b4965] hover:bg-[#1b4965]/80 text-[#e8e4df] font-medium rounded-lg transition-colors">
+              <Link href="/briefings/ngo-regime-change" className="px-6 py-3 bg-[#1b4965] hover:bg-[#1b4965]/80 text-[#f0ebe3] font-medium rounded-lg transition-colors">
                 NGO Regime Change
               </Link>
-              <Link href="/briefings/media-manipulation-decoded" className="px-6 py-3 bg-[#c73032] hover:bg-[#c73032]/80 text-[#e8e4df] font-medium rounded-lg transition-colors">
+              <Link href="/briefings/media-manipulation-decoded" className="px-6 py-3 bg-[#c73032] hover:bg-[#c73032]/80 text-[#f0ebe3] font-medium rounded-lg transition-colors">
                 Media Manipulation
               </Link>
-              <Link href="/briefings" className="px-6 py-3 bg-[#e8e4df]/10 hover:bg-[#e8e4df]/20 text-[#e8e4df] font-medium rounded-lg transition-colors border border-[#e8e4df]/20">
+              <Link href="/briefings" className="px-6 py-3 bg-[#f0ebe3]/10 hover:bg-[#f0ebe3]/20 text-[#f0ebe3] font-medium rounded-lg transition-colors border border-[#f0ebe3]/20">
                 All Briefings
               </Link>
             </div>
@@ -842,16 +842,16 @@ function Section({
     <div className={`mb-8 rounded-xl border ${colorClasses[color as keyof typeof colorClasses]} overflow-hidden`}>
       <button
         onClick={onToggle}
-        className="w-full px-6 py-4 flex items-center justify-between hover:bg-[#e8e4df]/5 transition-colors"
+        className="w-full px-6 py-4 flex items-center justify-between hover:bg-[#f0ebe3]/5 transition-colors"
       >
         <div className="flex items-center gap-3">
           <Icon className={`w-6 h-6 ${iconColors[color as keyof typeof iconColors]}`} />
-          <h2 className="text-2xl font-bold text-[#e8e4df] text-left">{title}</h2>
+          <h2 className="text-2xl font-bold text-[#f0ebe3] text-left">{title}</h2>
         </div>
         {expanded ? (
-          <ChevronUp className="w-5 h-5 text-[#e8e4df]/60" />
+          <ChevronUp className="w-5 h-5 text-[#f0ebe3]/60" />
         ) : (
-          <ChevronDown className="w-5 h-5 text-[#e8e4df]/60" />
+          <ChevronDown className="w-5 h-5 text-[#f0ebe3]/60" />
         )}
       </button>
 
@@ -876,20 +876,20 @@ function FundingExampleCard({
   operation: string
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
+    <div className="bg-[#f0ebe3]/5 rounded-lg p-4 border border-[#f0ebe3]/10">
       <h4 className="text-[#d4a74a] font-bold mb-3">{title}</h4>
       <div className="grid md:grid-cols-3 gap-4">
         <div>
           <p className="text-[#d4a74a] text-xs font-bold mb-1">Government Funding:</p>
-          <p className="text-[#e8e4df]/80 text-sm">{government}</p>
+          <p className="text-[#f0ebe3]/80 text-sm">{government}</p>
         </div>
         <div>
           <p className="text-[#1b4965] text-xs font-bold mb-1">Soros Connection:</p>
-          <p className="text-[#e8e4df]/80 text-sm">{soros}</p>
+          <p className="text-[#f0ebe3]/80 text-sm">{soros}</p>
         </div>
         <div>
           <p className="text-[#d4a74a] text-xs font-bold mb-1">Operation:</p>
-          <p className="text-[#e8e4df]/80 text-sm">{operation}</p>
+          <p className="text-[#f0ebe3]/80 text-sm">{operation}</p>
         </div>
       </div>
     </div>
@@ -904,7 +904,7 @@ function PersonnelCard({
   pathway: string[]
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
+    <div className="bg-[#f0ebe3]/5 rounded-lg p-4 border border-[#f0ebe3]/10">
       <h4 className="text-[#1b4965] font-bold mb-3">{name}</h4>
       <div className="space-y-2">
         {pathway.map((step, i) => (
@@ -912,7 +912,7 @@ function PersonnelCard({
             <div className="w-6 h-6 bg-[#1b4965]/20 rounded-full flex items-center justify-center text-[#1b4965] text-xs font-bold flex-shrink-0">
               {i + 1}
             </div>
-            <p className="text-[#e8e4df]/80 text-sm">{step}</p>
+            <p className="text-[#f0ebe3]/80 text-sm">{step}</p>
           </div>
         ))}
       </div>
@@ -933,7 +933,7 @@ function ContributionCard({
     <div className="flex items-center justify-between bg-[#0d1b2a]/30 rounded p-3">
       <div>
         <h5 className="text-[#d4a74a] font-bold text-sm">{org}</h5>
-        <p className="text-[#e8e4df]/70 text-xs">{note}</p>
+        <p className="text-[#f0ebe3]/70 text-xs">{note}</p>
       </div>
       <div className="text-right">
         <div className="text-lg font-bold text-[#d4a74a]">{amount}</div>
@@ -945,14 +945,14 @@ function ContributionCard({
 function PolicyInfluenceCard() {
   return (
     <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
-      <h4 className="font-bold text-[#e8e4df] mb-3">Direct Policy Impact</h4>
+      <h4 className="font-bold text-[#f0ebe3] mb-3">Direct Policy Impact</h4>
       <div className="space-y-4">
         <div className="bg-[#0d1b2a]/30 rounded p-4">
           <h5 className="text-[#1b4965] font-bold mb-2">Senate Commerce Committee (2008)</h5>
-          <p className="text-[#e8e4df]/80 text-sm mb-2">
+          <p className="text-[#f0ebe3]/80 text-sm mb-2">
             Soros testified on energy market manipulation, successfully advocating for:
           </p>
-          <ul className="text-[#e8e4df]/70 text-xs space-y-1">
+          <ul className="text-[#f0ebe3]/70 text-xs space-y-1">
             <li>• Increased margin requirements</li>
             <li>• Speculation limits implementation</li>
             <li>• FTC anti-manipulation authority (Dec 2007)</li>
@@ -960,7 +960,7 @@ function PolicyInfluenceCard() {
         </div>
         <div className="bg-[#0d1b2a]/30 rounded p-4">
           <h5 className="text-[#d4a74a] font-bold mb-2">State Department Access (2016)</h5>
-          <p className="text-[#e8e4df]/80 text-sm">
+          <p className="text-[#f0ebe3]/80 text-sm">
             FOIA documents show direct communication with Assistant Secretary Victoria Nuland
             on Ukraine policy, with advisors providing analysis on Russian bond markets and
             European migration policy.
@@ -974,8 +974,8 @@ function PolicyInfluenceCard() {
 function ObfuscationCard() {
   return (
     <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
-      <h4 className="font-bold text-[#e8e4df] mb-3">Funding Obfuscation Strategy</h4>
-      <p className="text-[#e8e4df]/90 mb-4">
+      <h4 className="font-bold text-[#f0ebe3] mb-3">Funding Obfuscation Strategy</h4>
+      <p className="text-[#f0ebe3]/90 mb-4">
         The prosecutor funding operates through intermediary organizations to obscure direct connections
         and create plausible deniability while maintaining influence.
       </p>
@@ -983,16 +983,16 @@ function ObfuscationCard() {
         <h5 className="text-[#d4a74a] font-bold mb-2">Example: Color of Change</h5>
         <div className="space-y-2">
           <div className="flex items-center gap-3">
-            <div className="w-6 h-6 bg-[#1b4965] rounded-full flex items-center justify-center text-[#e8e4df] text-xs font-bold">1</div>
-            <p className="text-[#e8e4df]/80 text-sm">Soros funds Color of Change organization</p>
+            <div className="w-6 h-6 bg-[#1b4965] rounded-full flex items-center justify-center text-[#f0ebe3] text-xs font-bold">1</div>
+            <p className="text-[#f0ebe3]/80 text-sm">Soros funds Color of Change organization</p>
           </div>
           <div className="flex items-center gap-3">
-            <div className="w-6 h-6 bg-[#1b4965] rounded-full flex items-center justify-center text-[#e8e4df] text-xs font-bold">2</div>
-            <p className="text-[#e8e4df]/80 text-sm">Color of Change supports specific prosecutor candidates</p>
+            <div className="w-6 h-6 bg-[#1b4965] rounded-full flex items-center justify-center text-[#f0ebe3] text-xs font-bold">2</div>
+            <p className="text-[#f0ebe3]/80 text-sm">Color of Change supports specific prosecutor candidates</p>
           </div>
           <div className="flex items-center gap-3">
-            <div className="w-6 h-6 bg-[#1b4965] rounded-full flex items-center justify-center text-[#e8e4df] text-xs font-bold">3</div>
-            <p className="text-[#e8e4df]/80 text-sm">Creates plausible deniability for direct Soros connection</p>
+            <div className="w-6 h-6 bg-[#1b4965] rounded-full flex items-center justify-center text-[#f0ebe3] text-xs font-bold">3</div>
+            <p className="text-[#f0ebe3]/80 text-sm">Creates plausible deniability for direct Soros connection</p>
           </div>
         </div>
       </div>
@@ -1010,16 +1010,16 @@ function InternationalOpCard({
   impact: string
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
+    <div className="bg-[#f0ebe3]/5 rounded-lg p-4 border border-[#f0ebe3]/10">
       <h4 className="text-[#1b4965] font-bold mb-3">{country}</h4>
       <div className="space-y-2 mb-4">
         {operations.map((op, i) => (
-          <div key={i} className="text-[#e8e4df]/80 text-sm">• {op}</div>
+          <div key={i} className="text-[#f0ebe3]/80 text-sm">• {op}</div>
         ))}
       </div>
       <div className="p-3 bg-[#0d1b2a]/30 rounded">
         <p className="text-[#d4a74a] text-xs font-bold mb-1">Impact:</p>
-        <p className="text-[#e8e4df]/70 text-xs">{impact}</p>
+        <p className="text-[#f0ebe3]/70 text-xs">{impact}</p>
       </div>
     </div>
   )
@@ -1037,18 +1037,18 @@ function RegulatoryCard({
   impact: string
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
+    <div className="bg-[#f0ebe3]/5 rounded-lg p-4 border border-[#f0ebe3]/10">
       <h4 className="text-[#d4a74a] font-bold mb-2">{structure}</h4>
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <p className="text-[#d4a74a] text-xs font-bold mb-1">Benefit:</p>
-          <p className="text-[#e8e4df]/80 text-sm mb-3">{benefit}</p>
+          <p className="text-[#f0ebe3]/80 text-sm mb-3">{benefit}</p>
           <p className="text-[#1b4965] text-xs font-bold mb-1">Details:</p>
-          <p className="text-[#e8e4df]/70 text-sm">{details}</p>
+          <p className="text-[#f0ebe3]/70 text-sm">{details}</p>
         </div>
         <div>
           <p className="text-[#d4a74a] text-xs font-bold mb-1">Impact:</p>
-          <p className="text-[#e8e4df]/80 text-sm">{impact}</p>
+          <p className="text-[#f0ebe3]/80 text-sm">{impact}</p>
         </div>
       </div>
     </div>
@@ -1067,17 +1067,17 @@ function ProtectionCard({
   significance: string
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
+    <div className="bg-[#f0ebe3]/5 rounded-lg p-4 border border-[#f0ebe3]/10">
       <h4 className="text-[#1b4965] font-bold mb-2">{incident}</h4>
-      <p className="text-[#e8e4df]/80 text-sm mb-3">{description}</p>
+      <p className="text-[#f0ebe3]/80 text-sm mb-3">{description}</p>
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <p className="text-[#d4a74a] text-xs font-bold mb-1">Outcome:</p>
-          <p className="text-[#e8e4df]/70 text-sm">{outcome}</p>
+          <p className="text-[#f0ebe3]/70 text-sm">{outcome}</p>
         </div>
         <div>
           <p className="text-[#d4a74a] text-xs font-bold mb-1">Significance:</p>
-          <p className="text-[#e8e4df]/70 text-sm">{significance}</p>
+          <p className="text-[#f0ebe3]/70 text-sm">{significance}</p>
         </div>
       </div>
     </div>
@@ -1096,18 +1096,18 @@ function CongressionalCard({
   outcome: string
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
+    <div className="bg-[#f0ebe3]/5 rounded-lg p-4 border border-[#f0ebe3]/10">
       <h4 className="text-[#d4a74a] font-bold mb-2">{investigation}</h4>
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <p className="text-[#d4a74a] text-xs font-bold mb-1">Focus:</p>
-          <p className="text-[#e8e4df]/80 text-sm mb-3">{focus}</p>
+          <p className="text-[#f0ebe3]/80 text-sm mb-3">{focus}</p>
           <p className="text-[#1b4965] text-xs font-bold mb-1">Findings:</p>
-          <p className="text-[#e8e4df]/70 text-sm">{findings}</p>
+          <p className="text-[#f0ebe3]/70 text-sm">{findings}</p>
         </div>
         <div>
           <p className="text-[#c73032] text-xs font-bold mb-1">Outcome:</p>
-          <p className="text-[#e8e4df]/80 text-sm">{outcome}</p>
+          <p className="text-[#f0ebe3]/80 text-sm">{outcome}</p>
         </div>
       </div>
     </div>
@@ -1124,16 +1124,16 @@ function InternationalViewCard({
   context: string
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
+    <div className="bg-[#f0ebe3]/5 rounded-lg p-4 border border-[#f0ebe3]/10">
       <h4 className="text-[#1b4965] font-bold mb-2">{region}</h4>
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <p className="text-[#1b4965] text-xs font-bold mb-1">Position:</p>
-          <p className="text-[#e8e4df]/80 text-sm">{position}</p>
+          <p className="text-[#f0ebe3]/80 text-sm">{position}</p>
         </div>
         <div>
           <p className="text-[#d4a74a] text-xs font-bold mb-1">Context:</p>
-          <p className="text-[#e8e4df]/70 text-sm">{context}</p>
+          <p className="text-[#f0ebe3]/70 text-sm">{context}</p>
         </div>
       </div>
     </div>
@@ -1148,9 +1148,9 @@ function SuccessionCard({
   details: string
 }) {
   return (
-    <div className="bg-[#e8e4df]/5 rounded-lg p-4 border border-[#e8e4df]/10">
+    <div className="bg-[#f0ebe3]/5 rounded-lg p-4 border border-[#f0ebe3]/10">
       <h4 className="text-[#d4a74a] font-bold mb-2">{aspect}</h4>
-      <p className="text-[#e8e4df]/80 text-sm">{details}</p>
+      <p className="text-[#f0ebe3]/80 text-sm">{details}</p>
     </div>
   )
 }

@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ═══════════════════════════════════════════════════════════════
+   BRAND GRADIENT UTILITIES — River Palette v2.0
+   ═══════════════════════════════════════════════════════════════ */
+@layer utilities {
+  .gradient-river-flow {
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b4965 50%, #2a6f8e 100%);
+  }
+  .gradient-korean-dawn {
+    background: linear-gradient(180deg, #0d1b2a 0%, #1b4965 50%, #c73032 100%);
+  }
+  .gradient-sovereign {
+    background: linear-gradient(135deg, #d4a74a 0%, #8b6914 100%);
+  }
+  .text-gradient-sovereign {
+    background: linear-gradient(135deg, #d4a74a, #f0d78c, #d4a74a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-river {
+    background: linear-gradient(135deg, #f0ebe3, #d4a74a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
 @layer base {
   :root {
     /* ═══════════════════════════════════════════════════════════════
@@ -21,10 +48,10 @@
     --text-primary: 37 35% 92%;          /* #f0ebe3 - primary text */
     --text-secondary: 210 30% 71%;       /* #a0b4c8 - secondary text */
 
-    /* Typography - System-optimized for performance */
-    --font-heading: Georgia, 'Times New Roman', serif;
+    /* Typography — Brand fonts loaded via next/font/google in layout.tsx */
+    --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
     --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-korean: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Nanum Gothic', sans-serif;
+    --font-korean: 'Noto Serif KR', 'Apple SD Gothic Neo', 'Malgun Gothic', serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
 
     /* Light mode foundation */

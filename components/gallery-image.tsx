@@ -88,8 +88,8 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
           />
           
           {/* Hover overlay */}
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-            <Maximize2 className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute inset-0 bg-river-depths/0 group-hover:bg-river-depths/20 transition-colors duration-300 flex items-center justify-center">
+            <Maximize2 className="w-6 h-6 text-cream opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
           
           {/* Loading skeleton with shimmer effect */}
@@ -101,21 +101,21 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
         </div>
       </DialogTrigger>
       
-      <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 border-none bg-black/95 backdrop-blur-sm">
+      <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 border-none bg-river-depths/95 backdrop-blur-sm">
         <DialogTitle className="sr-only">
           Gallery Image {currentIndex + 1}: {currentImage.alt}
         </DialogTitle>
         
         {/* Header with controls */}
         <div className="absolute top-4 left-4 right-4 z-50 flex justify-between items-center">
-          <div className="text-white/80 text-sm font-medium bg-black/50 px-3 py-1 rounded-full">
+          <div className="text-cream/80 text-sm font-medium bg-river-depths/50 px-3 py-1 rounded-full">
             {currentIndex + 1} / {allImages.length || 1}
           </div>
           
           <div className="flex gap-2">
             <button
               onClick={handleDownload}
-              className="p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors"
+              className="p-2 bg-river-depths/50 hover:bg-river-depths/70 text-cream rounded-full transition-colors"
               title="Download image"
             >
               <Download className="w-4 h-4" />
@@ -123,7 +123,7 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
             
             <button
               onClick={() => setIsOpen(false)}
-              className="p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors"
+              className="p-2 bg-river-depths/50 hover:bg-river-depths/70 text-cream rounded-full transition-colors"
               title="Close"
             >
               <X className="w-4 h-4" />
@@ -136,7 +136,7 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
           <>
             <button
               onClick={() => navigateImage('prev')}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-50 p-3 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors"
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-50 p-3 bg-river-depths/50 hover:bg-river-depths/70 text-cream rounded-full transition-colors"
               title="Previous image"
             >
               <ChevronLeft className="w-6 h-6" />
@@ -144,7 +144,7 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
             
             <button
               onClick={() => navigateImage('next')}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-50 p-3 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors"
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-50 p-3 bg-river-depths/50 hover:bg-river-depths/70 text-cream rounded-full transition-colors"
               title="Next image"
             >
               <ChevronRight className="w-6 h-6" />
@@ -168,7 +168,7 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
         
         {/* Image info */}
         <div className="absolute bottom-4 left-4 right-4 z-50 text-center">
-          <p className="text-white/80 text-sm bg-black/50 px-4 py-2 rounded-full inline-block max-w-md truncate">
+          <p className="text-cream/80 text-sm bg-river-depths/50 px-4 py-2 rounded-full inline-block max-w-md truncate">
             {currentImage.alt.replace(/gallery-\d+/, 'Image').replace(/\.(jpg|jpeg|png|webp)$/i, '')}
           </p>
         </div>

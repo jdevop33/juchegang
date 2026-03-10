@@ -18,7 +18,7 @@ export function TriptychDivider() {
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center max-w-2xl px-4">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#d4a74a]">Embrace Excellence</h2>
-              <p className="text-lg text-[#e8e4df]">
+              <p className="text-lg text-[#f0ebe3]">
                 "Excellence is your birthright. If unclaimed, it will forever elude you."
               </p>
             </div>

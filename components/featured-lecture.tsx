@@ -33,8 +33,8 @@ export function FeaturedLecture(props: Props) {
 
   return (
     <section aria-labelledby="featured-lecture-title" className="mb-16">
-      <div className="bg-black/30 border border-white/10 rounded-2xl overflow-hidden">
-        <div className="aspect-video w-full bg-black/40">
+      <div className="bg-river-depths/30 border border-cream/10 rounded-2xl overflow-hidden">
+        <div className="aspect-video w-full bg-river-depths/40">
           <iframe
             src={youtubeEmbedUrl}
             title={title}
@@ -47,25 +47,25 @@ export function FeaturedLecture(props: Props) {
         <div className="p-6 space-y-4">
           <div className="flex items-start justify-between gap-4">
             <div>
-              <h2 id="featured-lecture-title" className="text-2xl md:text-3xl font-bold text-white">
+              <h2 id="featured-lecture-title" className="text-2xl md:text-3xl font-bold text-cream">
                 {title}
               </h2>
-              <p className="text-white/70 text-sm">
+              <p className="text-cream/70 text-sm">
                 {series ? `${series} • ` : ""}{speaker}{date ? ` • ${date}` : ""}{views ? ` • ${views} views` : ""}
               </p>
             </div>
             <TtsButton text={ttsText} />
           </div>
 
-          {description ? <p className="text-white/85 leading-relaxed">{description}</p> : null}
+          {description ? <p className="text-cream/85 leading-relaxed">{description}</p> : null}
 
           {chapters.length > 0 ? (
             <div>
-              <h3 className="text-white font-semibold mb-2">Chapters</h3>
-              <ul className="grid md:grid-cols-2 gap-2 text-white/80 text-sm">
+              <h3 className="text-cream font-semibold mb-2">Chapters</h3>
+              <ul className="grid md:grid-cols-2 gap-2 text-cream/80 text-sm">
                 {chapters.map((c) => (
                   <li key={`${c.time}-${c.label}`} className="flex items-center gap-2">
-                    <span className="text-white/60 font-mono text-xs px-2 py-0.5 rounded bg-white/5 border border-white/10">
+                    <span className="text-cream/60 font-mono text-xs px-2 py-0.5 rounded bg-cream/5 border border-cream/10">
                       {c.time}
                     </span>
                     <span>{c.label}</span>
@@ -78,7 +78,7 @@ export function FeaturedLecture(props: Props) {
           {hashtags && hashtags.length > 0 ? (
             <div className="flex flex-wrap gap-2">
               {hashtags.map((h) => (
-                <span key={h} className="px-2 py-1 rounded bg-white/5 border border-white/10 text-white/70 text-xs">
+                <span key={h} className="px-2 py-1 rounded bg-cream/5 border border-cream/10 text-cream/70 text-xs">
                   #{h}
                 </span>
               ))}
@@ -86,7 +86,7 @@ export function FeaturedLecture(props: Props) {
           ) : null}
 
           {attributionHtml ? (
-            <p className="text-white/60 text-xs leading-relaxed" dangerouslySetInnerHTML={{ __html: attributionHtml }} />
+            <p className="text-cream/60 text-xs leading-relaxed" dangerouslySetInnerHTML={{ __html: attributionHtml }} />
           ) : null}
         </div>
       </div>

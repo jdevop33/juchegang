@@ -66,11 +66,11 @@ export function LawCard({ law }: LawCardProps) {
           className="object-cover group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-river-depths/60 via-transparent to-transparent"></div>
         
         {/* Law number overlay */}
         <div className="absolute top-3 right-3">
-          <div className="h-8 w-8 sm:h-9 sm:w-9 flex items-center justify-center rounded-full bg-accent/90 backdrop-blur-sm text-accent-foreground font-bold text-sm shadow-lg border border-white/20">
+          <div className="h-8 w-8 sm:h-9 sm:w-9 flex items-center justify-center rounded-full bg-accent/90 backdrop-blur-sm text-accent-foreground font-bold text-sm shadow-lg border border-cream/20">
             {law.number}
           </div>
         </div>

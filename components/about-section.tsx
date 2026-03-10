@@ -23,9 +23,9 @@ export function AboutSection() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-[#e8e4df] mb-2">Jesse James</h3>
+                <h3 className="text-2xl font-bold text-[#f0ebe3] mb-2">Jesse James</h3>
                 <p className="text-[#d4a74a] mb-4 italic">Canadian Managing Director • Juche Community Relations</p>
-                <div className="prose prose-invert max-w-none text-[#e8e4df]/80">
+                <div className="prose prose-invert max-w-none text-[#f0ebe3]/80">
                   <p>
                     {t('aboutText1') || 'Specializing in cross-cultural diplomatic initiatives and community engagement strategies. Coordinating educational outreach programs that promote understanding of Korean political philosophy and self-reliance principles across North American academic institutions.'}
                   </p>

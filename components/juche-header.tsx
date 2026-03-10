@@ -73,7 +73,7 @@ export function JucheHeader() {
           <Link href="/contact" className="group px-4 py-2 rounded-full bg-gradient-to-r from-sovereign-gold to-sovereign-dark hover:from-sovereign-gold hover:to-sovereign-gold text-river-depths font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sovereign-gold/30 border border-sovereign-dark/20">
             {t('contact')}
           </Link>
-          <button onClick={() => setIsMenuOpen(true)} className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-full border border-river-current/40 text-river-mist hover:text-white bg-river-current/10 hover:bg-river-current/20 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm overflow-hidden" aria-label="Open menu">
+          <button onClick={() => setIsMenuOpen(true)} className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-full border border-river-current/40 text-river-mist hover:text-cream bg-river-current/10 hover:bg-river-current/20 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm overflow-hidden" aria-label="Open menu">
             <div className="absolute inset-0 bg-gradient-to-r from-sovereign-gold/5 via-river-current/10 to-sovereign-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <Menu className="h-5 w-5 relative z-10 transition-all duration-300 group-hover:rotate-180" />
             <span className="uppercase tracking-wide text-sm font-semibold relative z-10">Menu</span>
@@ -87,7 +87,7 @@ export function JucheHeader() {
           <Link href="/contact" className="px-3 py-1.5 rounded-full bg-sovereign-gold hover:bg-sovereign-gold/90 text-river-depths font-bold transition-all duration-300 transform hover:scale-105 text-sm shadow-md hover:shadow-lg">
             {t('contact')}
           </Link>
-          <button className="group relative text-river-mist hover:text-white p-3 transition-all duration-300 transform hover:scale-110 hover:rotate-12" aria-label="Toggle menu" onClick={() => setIsMenuOpen(true)}>
+          <button className="group relative text-river-mist hover:text-cream p-3 transition-all duration-300 transform hover:scale-110 hover:rotate-12" aria-label="Toggle menu" onClick={() => setIsMenuOpen(true)}>
             {isMenuOpen ? <X className="h-6 w-6 transition-all duration-300" /> : <Menu className="h-6 w-6 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(212,167,74,0.8)]" />}
             <div className="absolute inset-0 rounded-full bg-sovereign-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-ping"></div>
           </button>
@@ -106,54 +106,54 @@ export function JucheHeader() {
                 height={60}
                 className="h-12 w-auto"
               />
-              <button onClick={() => setIsMenuOpen(false)} aria-label="Close menu" className="group p-2 text-river-mist hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-90">
+              <button onClick={() => setIsMenuOpen(false)} aria-label="Close menu" className="group p-2 text-river-mist hover:text-cream transition-all duration-300 transform hover:scale-110 hover:rotate-90">
                 <X className="h-6 w-6 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(212,167,74,0.8)]" />
               </button>
             </div>
             <nav className="px-6 py-6 overflow-y-auto h-[calc(100vh-64px)]">
               <ul className="space-y-3">
                 <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-white transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
+                  <Link href="/" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
                     <span className="font-medium">{t('home')}</span>
                   </Link>
                 </li>
                 <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/mission" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-white transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
+                  <Link href="/mission" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
                     <span className="font-medium">{t('mission')}</span>
                   </Link>
                 </li>
                 <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/cultural-exchange" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-white transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
+                  <Link href="/cultural-exchange" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
                     <span className="font-medium">{t('culture')}</span>
                   </Link>
                 </li>
                 <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/youth-empowerment" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-white transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
+                  <Link href="/youth-empowerment" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
                     <span className="font-medium">{t('youth')}</span>
                   </Link>
                 </li>
                 <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/peace-timeline" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-white transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
+                  <Link href="/peace-timeline" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
                     <span className="font-medium">{t('peace')}</span>
                   </Link>
                 </li>
                 <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/briefings" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-white transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
+                  <Link href="/briefings" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
                     <span className="font-medium">{t('briefings')}</span>
                   </Link>
                 </li>
                 <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/library" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-white transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
+                  <Link href="/library" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
                     <span className="font-medium">Library</span>
                   </Link>
                 </li>
                 <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/channels" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-white transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
+                  <Link href="/channels" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
                     <span className="font-medium">{t('channels')}</span>
                   </Link>
                 </li>
                 <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/social" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-white transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
+                  <Link href="/social" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
                     <span className="font-medium">{t('social')}</span>
                   </Link>
                 </li>
@@ -164,7 +164,7 @@ export function JucheHeader() {
                 </li>
 
                 <li className="transform transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1">
-                  <Link href="/gallery" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-gradient-to-r from-river-current to-river-mid text-white font-semibold transition-all duration-300 shadow-md hover:shadow-lg border border-sovereign-gold/30">
+                  <Link href="/gallery" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-gradient-to-r from-river-current to-river-mid text-cream font-semibold transition-all duration-300 shadow-md hover:shadow-lg border border-sovereign-gold/30">
                     <span className="flex items-center gap-2">
                       <span className="text-lg">📸</span>
                       <span>{t('gallery')}</span>
@@ -172,7 +172,7 @@ export function JucheHeader() {
                   </Link>
                 </li>
                 <li className="transform transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1">
-                  <Link href="/truth-project" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-gradient-to-r from-korean-red/80 to-korean-red text-white font-semibold transition-all duration-300 shadow-md hover:shadow-lg border border-korean-red/40">
+                  <Link href="/truth-project" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-gradient-to-r from-korean-red/80 to-korean-red text-cream font-semibold transition-all duration-300 shadow-md hover:shadow-lg border border-korean-red/40">
                     <span className="flex items-center gap-2">
                       <span className="text-lg">🌍</span>
                       <span>{t('truthProject')}</span>

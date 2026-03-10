@@ -28,9 +28,9 @@ export function SimpleLanguageToggle() {
       onClick={toggleLanguage}
       className={`
         flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium
-        text-white hover:text-friendship-blue 
+        text-cream hover:text-friendship-blue 
         transition-all duration-200 ease-out
-        hover:bg-white/10 hover:shadow-sm hover:-translate-y-0.5
+        hover:bg-cream/10 hover:shadow-sm hover:-translate-y-0.5
         active:scale-95 active:translate-y-0
         focus:outline-none focus:ring-2 focus:ring-friendship-blue/50
         ${isClicked ? 'scale-95 translate-y-0' : ''}

@@ -204,8 +204,8 @@ export function InteractiveFeatures({ laws, onLawSelect }: InteractiveFeaturesPr
                       </div>
                       <div className="text-sm text-muted-foreground">In Progress</div>
                     </div>
-                    <div className="text-center p-4 rounded-lg bg-green-500/10">
-                      <div className="text-2xl font-bold text-green-500">
+                    <div className="text-center p-4 rounded-lg bg-river-mid/10">
+                      <div className="text-2xl font-bold text-river-mid">
                         {Object.values(readingProgress).filter(p => p === 100).length}
                       </div>
                       <div className="text-sm text-muted-foreground">Completed</div>

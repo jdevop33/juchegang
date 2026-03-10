@@ -13,28 +13,28 @@ export function EnhancedFloatingAction() {
       icon: Heart, 
       label: "Solidarity", 
       href: "/mission", 
-      color: "bg-red-500 hover:bg-red-600",
+      color: "bg-korean-red hover:bg-korean-red",
       delay: 0.1 
     },
     { 
       icon: Globe, 
       label: "Peace Timeline", 
       href: "/peace-timeline", 
-      color: "bg-blue-500 hover:bg-blue-600",
+      color: "bg-river-mid hover:bg-river-current",
       delay: 0.15 
     },
     { 
       icon: MessageCircle, 
       label: "Connect", 
       href: "/social", 
-      color: "bg-purple-500 hover:bg-purple-600",
+      color: "bg-river-current hover:bg-river-current",
       delay: 0.2 
     },
     { 
       icon: Calendar, 
       label: "Cultural Events", 
       href: "/cultural-exchange", 
-      color: "bg-green-500 hover:bg-green-600",
+      color: "bg-river-mid hover:bg-river-current",
       delay: 0.25 
     },
     { 
@@ -52,7 +52,7 @@ export function EnhancedFloatingAction() {
           // Could add a toast notification here
         }
       },
-      color: "bg-yellow-500 hover:bg-yellow-600",
+      color: "bg-sovereign-gold hover:bg-sovereign-dark",
       delay: 0.3 
     }
   ]
@@ -81,9 +81,9 @@ export function EnhancedFloatingAction() {
                     onClick={() => setIsOpen(false)}
                     className={`
                       flex items-center gap-3 ${action.color} 
-                      text-white px-4 py-3 rounded-full shadow-lg 
+                      text-cream px-4 py-3 rounded-full shadow-lg 
                       transform transition-all hover:scale-105 
-                      backdrop-blur-sm border border-white/20
+                      backdrop-blur-sm border border-cream/20
                     `}
                   >
                     <action.icon className="w-5 h-5" />
@@ -99,9 +99,9 @@ export function EnhancedFloatingAction() {
                     }}
                     className={`
                       flex items-center gap-3 ${action.color} 
-                      text-white px-4 py-3 rounded-full shadow-lg 
+                      text-cream px-4 py-3 rounded-full shadow-lg 
                       transform transition-all hover:scale-105 
-                      backdrop-blur-sm border border-white/20
+                      backdrop-blur-sm border border-cream/20
                     `}
                   >
                     <action.icon className="w-5 h-5" />
@@ -125,10 +125,10 @@ export function EnhancedFloatingAction() {
           flex items-center justify-center
           transition-all duration-300
           ${isOpen 
-            ? 'bg-red-500 hover:bg-red-600 rotate-45' 
-            : 'bg-gradient-to-r from-red-500 to-yellow-500 hover:from-red-600 hover:to-yellow-600'
+            ? 'bg-korean-red hover:bg-korean-red rotate-45' 
+            : 'bg-gradient-to-r from-korean-red to-sovereign-gold hover:from-korean-red hover:to-sovereign-dark'
           }
-          text-white backdrop-blur-sm border border-white/20
+          text-cream backdrop-blur-sm border border-cream/20
         `}
       >
         <AnimatePresence mode="wait">

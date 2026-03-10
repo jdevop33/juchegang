@@ -31,10 +31,10 @@ export function BriefingBanner({
   const overlayClass = clsx(
     "absolute inset-0 pointer-events-none",
     overlay === "none" && "",
-    overlay === "bottom" && "bg-gradient-to-t from-black/60 via-black/10 to-transparent",
-    overlay === "top" && "bg-gradient-to-b from-black/60 via-black/10 to-transparent",
-    overlay === "left" && "bg-gradient-to-r from-black/60 via-black/10 to-transparent",
-    overlay === "right" && "bg-gradient-to-l from-black/60 via-black/10 to-transparent",
+    overlay === "bottom" && "bg-gradient-to-t from-river-depths/60 via-river-depths/10 to-transparent",
+    overlay === "top" && "bg-gradient-to-b from-river-depths/60 via-river-depths/10 to-transparent",
+    overlay === "left" && "bg-gradient-to-r from-river-depths/60 via-river-depths/10 to-transparent",
+    overlay === "right" && "bg-gradient-to-l from-river-depths/60 via-river-depths/10 to-transparent",
   )
 
   return (

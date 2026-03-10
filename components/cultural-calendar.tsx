@@ -53,7 +53,7 @@ export function CulturalCalendar() {
     <div className="bg-gradient-to-br from-[#0d1b2a] via-[#1b4965]/20 to-[#0d1b2a] rounded-2xl p-6 border border-[#1b4965]/30">
       <div className="flex items-center gap-3 mb-6">
         <Calendar className="w-6 h-6 text-[#d4a74a]" />
-        <h3 className="text-xl font-bold text-[#e8e4df]">Cultural Unity Calendar</h3>
+        <h3 className="text-xl font-bold text-[#f0ebe3]">Cultural Unity Calendar</h3>
       </div>
 
       <div className="space-y-3">
@@ -74,11 +74,11 @@ export function CulturalCalendar() {
               <div className="flex items-start gap-3">
                 <span className="text-2xl">{event.flag}</span>
                 <div>
-                  <h4 className="font-semibold text-[#e8e4df]">{event.name}</h4>
-                  <p className="text-sm text-[#e8e4df]/60">
+                  <h4 className="font-semibold text-[#f0ebe3]">{event.name}</h4>
+                  <p className="text-sm text-[#f0ebe3]/60">
                     {format(new Date(event.date), "MMMM d, yyyy")}
                   </p>
-                  <p className="text-xs text-[#e8e4df]/50 mt-1">{event.country}</p>
+                  <p className="text-xs text-[#f0ebe3]/50 mt-1">{event.country}</p>
                 </div>
               </div>
               <Star className="w-4 h-4 text-[#d4a74a]" />
@@ -97,7 +97,7 @@ export function CulturalCalendar() {
           >
             <div className="flex items-center gap-2 mb-2">
               <Heart className="w-4 h-4 text-[#c73032]" />
-              <p className="text-sm text-[#e8e4df]">
+              <p className="text-sm text-[#f0ebe3]">
                 Let's celebrate {selectedEvent.country}'s culture together!
               </p>
             </div>
@@ -106,7 +106,7 @@ export function CulturalCalendar() {
                 e.stopPropagation()
                 setSelectedEvent(null)
               }}
-              className="text-xs text-[#e8e4df]/60 hover:text-[#e8e4df] transition-colors"
+              className="text-xs text-[#f0ebe3]/60 hover:text-[#f0ebe3] transition-colors"
             >
               Close
             </button>
@@ -115,7 +115,7 @@ export function CulturalCalendar() {
       </AnimatePresence>
 
       <div className="mt-6 pt-4 border-t border-[#1b4965]/30">
-        <div className="flex items-center gap-2 text-xs text-[#e8e4df]/50">
+        <div className="flex items-center gap-2 text-xs text-[#f0ebe3]/50">
           <Globe className="w-4 h-4" />
           <span>Celebrating diversity, building unity</span>
         </div>

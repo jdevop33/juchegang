@@ -26,7 +26,7 @@ export default function FictionBecomesFactPage() {
           <Brain className="h-4 w-4" />
           Psychological Investigation
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#e8e4df' }}>When Fiction Becomes Fact</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#f0ebe3' }}>When Fiction Becomes Fact</h1>
         <p className="text-xl max-w-4xl" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>
           Humans are increasingly using fictional narratives from movies and streaming platforms as psychological anchors for real-world decision-making, replacing authentic mentors and lived experiences. This shift represents a fundamental transformation in how humans acquire wisdom, make decisions, and understand reality.
         </p>
@@ -42,7 +42,7 @@ export default function FictionBecomesFactPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 className="text-lg font-bold mb-3" style={{ color: '#e8e4df' }}>Narrative Persuasion</h3>
+                <h3 className="text-lg font-bold mb-3" style={{ color: '#f0ebe3' }}>Narrative Persuasion</h3>
                 <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.9)' }}>
                   <li>• <strong>Meta-analysis of 7,000+ participants</strong></li>
                   <li>• Fictional stories as persuasive as factual accounts</li>
@@ -51,7 +51,7 @@ export default function FictionBecomesFactPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-bold mb-3" style={{ color: '#e8e4df' }}>Cognitive Impact</h3>
+                <h3 className="text-lg font-bold mb-3" style={{ color: '#f0ebe3' }}>Cognitive Impact</h3>
                 <ul className="space-y-2 text-sm" style={{ color: 'rgba(232, 228, 223, 0.9)' }}>
                   <li>• <strong>Attention spans</strong>: 12s → 8s (2000-2013)</li>
                   <li>• Heavy media consumers: reduced brain activity</li>
@@ -64,7 +64,7 @@ export default function FictionBecomesFactPage() {
 
           {/* Psychology of Fictional Anchoring */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold flex items-center gap-3" style={{ color: '#e8e4df' }}>
+            <h2 className="text-3xl font-bold flex items-center gap-3" style={{ color: '#f0ebe3' }}>
               <Film className="h-6 w-6" />
               The psychology of fictional anchoring
             </h2>
@@ -88,7 +88,7 @@ export default function FictionBecomesFactPage() {
 
           {/* Decision-Making Impact */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold flex items-center gap-3" style={{ color: '#e8e4df' }}>
+            <h2 className="text-3xl font-bold flex items-center gap-3" style={{ color: '#f0ebe3' }}>
               <Target className="h-6 w-6" />
               Distorted decision-making and moral reasoning
             </h2>
@@ -112,7 +112,7 @@ export default function FictionBecomesFactPage() {
 
           {/* Cultural Impact */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold flex items-center gap-3" style={{ color: '#e8e4df' }}>
+            <h2 className="text-3xl font-bold flex items-center gap-3" style={{ color: '#f0ebe3' }}>
               <Users className="h-6 w-6" />
               Cultural homogenization replacing wisdom transmission
             </h2>
@@ -150,7 +150,7 @@ export default function FictionBecomesFactPage() {
 
           {/* Cognitive Degradation */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold" style={{ color: '#e8e4df' }}>Cognitive degradation and survival incompetence</h2>
+            <h2 className="text-3xl font-bold" style={{ color: '#f0ebe3' }}>Cognitive degradation and survival incompetence</h2>
             <div className="prose prose-lg prose-invert max-w-none">
               <p className="leading-relaxed" style={{ color: 'rgba(232, 228, 223, 0.9)' }}>
                 Cognitive science research documents alarming impacts on fundamental mental capacities. Reality monitoring – the ability to distinguish internally generated from externally derived information – becomes impaired with heavy media consumption. Studies show increased "source confusion" where people cannot differentiate between events remembered from media versus personal experience. <strong>Neuroimaging reveals heavy media consumers show reduced activity in the medial prefrontal cortex</strong>, the brain region critical for distinguishing real from imagined information.
@@ -174,7 +174,7 @@ export default function FictionBecomesFactPage() {
 
           {/* Information Control */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold flex items-center gap-3" style={{ color: '#e8e4df' }}>
+            <h2 className="text-3xl font-bold flex items-center gap-3" style={{ color: '#f0ebe3' }}>
               <AlertTriangle className="h-6 w-6" />
               Information control and manufactured reality
             </h2>
@@ -198,7 +198,7 @@ export default function FictionBecomesFactPage() {
 
           {/* Conclusion */}
           <section className="space-y-6 rounded-xl p-8" style={{ background: 'rgba(13, 27, 42, 0.5)', border: '1px solid rgba(232, 228, 223, 0.1)' }}>
-            <h2 className="text-3xl font-bold" style={{ color: '#e8e4df' }}>Conclusion</h2>
+            <h2 className="text-3xl font-bold" style={{ color: '#f0ebe3' }}>Conclusion</h2>
             <div className="prose prose-lg prose-invert max-w-none">
               <p className="leading-relaxed" style={{ color: 'rgba(232, 228, 223, 0.9)' }}>
                 The evidence reveals humanity at an unprecedented juncture where fictional narratives increasingly supplant direct experience and authentic relationships as guides for living. This shift transcends individual viewing habits to represent fundamental transformation in how our species acquires wisdom, makes decisions, and maintains cultural knowledge. Transportation into fictional worlds creates psychological anchors as powerful as lived experience but divorced from the feedback mechanisms that correct errors and build genuine competence.
@@ -262,7 +262,7 @@ export default function FictionBecomesFactPage() {
           <div className="rounded-xl p-5" style={{ background: 'rgba(27, 73, 101, 0.2)', border: '1px solid rgba(27, 73, 101, 0.3)' }}>
             <h3 className="text-lg font-semibold mb-2" style={{ color: '#1b4965' }}>Truth Project</h3>
             <p className="mb-3 text-sm" style={{ color: 'rgba(232, 228, 223, 0.8)' }}>Investigating how information systems shape human consciousness and decision-making.</p>
-            <Link href="/truth-project" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm" style={{ background: '#1b4965', color: '#e8e4df' }}>
+            <Link href="/truth-project" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm" style={{ background: '#1b4965', color: '#f0ebe3' }}>
               View All Reports
             </Link>
           </div>

@@ -1,0 +1,229 @@
+# ═══════════════════════════════════════════════════════════════
+# BRAND DNA: JUCHEGANG / 주체강 (SUBJECTIVE RIVER)
+# Updated: February 2026
+# ═══════════════════════════════════════════════════════════════
+
+brand:
+  name: "JucheGang"
+  korean_name: "주체강"
+  korean_meaning: "Subjective River"
+  english_meaning: "The Juche Crew — self-reliant thinkers navigating together"
+  domain: "JucheGang.ca"
+  alternate_domains:
+    - "Juche.org"
+
+  tagline_primary: "Navigate the Current"
+  tagline_secondary: "Your River. Your Path."
+  tagline_korean: "주체의 흐름을 따라" # "Follow the Flow of Juche"
+
+  philosophy: |
+    Life is a subjective river — a personal current you cannot fight.
+    You can struggle against it and fail, or turn around, read the flow,
+    and let the current carry you forward. Self-reliance isn't about
+    brute force against reality. It's understanding your own agency
+    within forces bigger than you. The river is different for everyone.
+    That's radical subjectivity. That's Juche at its core.
+
+  brand_story: |
+    JucheGang was born as a movement — a crew of independent thinkers
+    building bridges across cultures, challenging Western narratives
+    through factual analysis and radical transparency. When Google
+    Translate rendered "JucheGang" into Korean as 주체강 — "Subjective
+    River" — it didn't break the brand. It revealed its soul. The
+    English name carries the energy of community and collective action.
+    The Korean meaning carries the philosophy underneath: life as a
+    flowing, personal current you align with rather than fight. Two
+    languages, one truth.
+
+  industry: "Geopolitical Advocacy / Korean Reunification / Cultural Bridge-Building"
+  target_audience:
+    primary: "Internationally-minded professionals, Korea-interested audiences"
+    secondary: "Defense/aerospace/nuclear professionals engaging with technical content"
+    tertiary: "Korean diaspora, reunification advocates, independent thinkers"
+  personality:
+    - philosophical   # Core — the river, the Dao, Eastern wisdom
+    - bold            # Exterior — unapologetic, radical transparency
+    - professional    # When needed — credible, data-driven, serious
+    - rebellious      # Challenges narratives, questions status quo
+    - bridge-builder  # Connects cultures, not divides them
+
+  tone_of_voice:
+    default: "Confident and grounded, like someone who's been through storms and found their current"
+    social_media: "Bold, provocative but factual, conversation-starting"
+    professional: "Data-driven, credible, measured but not afraid to challenge"
+    philosophical: "Flowing, poetic, Eastern-influenced wisdom"
+
+  platforms:
+    primary:
+      - LinkedIn (17,000+ followers)
+      - Facebook (hundreds of accounts)
+      - VK
+      - WeChat
+    secondary:
+      - X/Twitter
+      - Instagram
+      - Telegram
+    websites:
+      - JucheGang.ca
+      - Juche.org
+
+# ═══════════════════════════════════════════════════════════════
+# VISUAL IDENTITY
+# ═══════════════════════════════════════════════════════════════
+
+visual:
+  colors:
+    # --- Primary: Deep River Navy ---
+    primary: "#0d1b2a"
+    primary_name: "River Depths"
+    primary_usage: "Primary backgrounds, headers, brand authority"
+    primary_rgb: "13, 27, 42"
+
+    # --- Secondary: Flowing Blue ---
+    secondary: "#1b4965"
+    secondary_name: "Current Blue"
+    secondary_usage: "Supporting elements, cards, sections, gradients"
+    secondary_rgb: "27, 73, 101"
+
+    # --- Tertiary: Korean Red ---
+    tertiary: "#c73032"
+    tertiary_name: "Korean Red / 한국 빨강"
+    tertiary_usage: "CTAs, emphasis, passion points, Korean cultural nods"
+    tertiary_rgb: "199, 48, 50"
+
+    # --- Accent: Gold ---
+    accent: "#d4a74a"
+    accent_name: "Sovereign Gold"
+    accent_usage: "Highlights, premium elements, wisdom indicators, borders"
+    accent_rgb: "212, 167, 74"
+
+    # --- Light: River Mist ---
+    light: "#e8dfd0"
+    light_name: "River Mist"
+    light_usage: "Light backgrounds, text on dark, breathing space"
+    light_rgb: "232, 223, 208"
+
+    # --- Surface: Deep Water ---
+    surface: "#142638"
+    surface_name: "Deep Water"
+    surface_usage: "Cards, elevated surfaces on dark backgrounds"
+    surface_rgb: "20, 38, 56"
+
+    # --- Text ---
+    text_primary: "#f0ebe3"
+    text_secondary: "#a0b4c8"
+    text_on_light: "#0d1b2a"
+
+    # --- Gradients ---
+    gradient_river:
+      start: "#0d1b2a"
+      mid: "#1b4965"
+      end: "#2a6f8e"
+      direction: "135deg"
+      usage: "Hero sections, feature backgrounds — the flowing river"
+
+    gradient_dawn:
+      start: "#0d1b2a"
+      mid: "#1b4965"
+      end: "#c73032"
+      direction: "180deg"
+      usage: "Special moments — where the river meets the Korean sunrise"
+
+    gradient_gold:
+      start: "#d4a74a"
+      end: "#8b6914"
+      direction: "135deg"
+      usage: "Premium badges, gold accents, sovereign moments"
+
+  typography:
+    vibe: "East-meets-West, authoritative yet flowing"
+    heading_font: "Playfair Display, serif"
+    heading_weight: "700, 900"
+    heading_note: "Classic authority with editorial gravitas"
+    body_font: "Source Sans 3, sans-serif"
+    body_weight: "400, 600"
+    body_note: "Clean, highly readable, professional"
+    accent_font: "Noto Serif KR, serif"
+    accent_note: "Korean typography for bilingual moments and cultural authenticity"
+    monospace_font: "JetBrains Mono, monospace"
+    monospace_note: "For data, stats, technical content"
+
+  imagery:
+    symbol: "River current / flowing water"
+    supporting_symbols:
+      - "Korean peninsula silhouette"
+      - "Bridge (physical and metaphorical)"
+      - "Mountain and river (산수 — Korean landscape tradition)"
+      - "Compass / navigation"
+    aesthetic_tags:
+      - east-meets-west
+      - flowing-water
+      - diplomatic-bold
+      - editorial
+      - deep-blue-dark
+      - Korean-cultural
+    background_style: "Deep navy with subtle water/current textures"
+    photography_style: "High contrast, editorial, international settings"
+    recurring_elements:
+      - "Water/river flow patterns"
+      - "Korean calligraphy accents"
+      - "Gold line work and borders"
+      - "Map/globe elements"
+      - "Bridge imagery"
+
+  guidelines:
+    contrast_ratio: "4.5:1 minimum (WCAG AA)"
+    safe_zone: "80% center for maskable/circular crops"
+    file_format: "PNG default, SVG for logos"
+    logo_clearspace: "1x logo height minimum on all sides"
+    dark_mode: "Primary mode — brand is dark-first"
+    light_mode: "River Mist (#e8dfd0) background with River Depths (#0d1b2a) text"
+
+# ═══════════════════════════════════════════════════════════════
+# BRAND NARRATIVE LAYERS
+# ═══════════════════════════════════════════════════════════════
+
+narrative:
+  elevator_pitch: |
+    JucheGang is a movement for self-reliant thinkers building bridges
+    across cultures. In Korean, our name means "Subjective River" —
+    because life is a current you navigate, not fight.
+
+  for_korean_audience: |
+    주체강 — 주관적인 강. 인생은 당신만의 흐름입니다.
+    우리는 문화를 연결하고, 사실에 기반한 대화를 나누며,
+    한반도 통일을 위한 다리를 놓습니다.
+
+  for_professional_audience: |
+    JucheGang.ca is an independent platform dedicated to factual analysis
+    and cross-cultural bridge-building, with a focus on Korean reunification
+    and challenging Western narratives through data-driven discourse.
+
+  the_gang_reframe: |
+    "Gang" in English carries baggage. But in Korean, our name translates
+    to 주체강 — "Subjective River." It's not about crews on corners.
+    It's about navigating life's current together. The English name
+    carries the boldness. The Korean meaning carries the wisdom.
+    Both are intentional.
+
+# ═══════════════════════════════════════════════════════════════
+# ASSET REQUIREMENTS
+# ═══════════════════════════════════════════════════════════════
+
+assets_needed:
+  pwa_icons: true
+  favicons: true
+  social_media:
+    linkedin: true      # Primary platform — 17K+ followers
+    facebook: true      # Hundreds of accounts
+    vk: true            # Russian-speaking audience
+    wechat: true        # Chinese audience
+    twitter: true       # X presence
+    instagram: true     # Visual content
+    telegram: true      # Community/messaging
+    youtube: false
+    discord: false
+  og_image: true
+  splash_screens: true  # PWA for JucheGang.ca
+  email_signature: true
+  presentation_template: true

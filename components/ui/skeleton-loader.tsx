@@ -15,7 +15,7 @@ export function Skeleton({
   variant = "text",
   animation = "pulse" 
 }: SkeletonProps) {
-  const baseClass = "bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded"
+  const baseClass = "bg-gradient-to-r from-river-deep via-river-current to-river-deep rounded"
   
   const variantClasses = {
     text: "h-4 w-full",
@@ -56,7 +56,7 @@ export function CardSkeleton() {
 
 export function LawCardSkeleton() {
   return (
-    <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-6 space-y-4">
+    <div className="bg-gradient-to-br from-river-depths to-river-deep rounded-xl p-6 space-y-4">
       <div className="flex items-center justify-between mb-4">
         <Skeleton variant="circular" className="w-12 h-12" />
         <Skeleton className="h-6 w-20" />

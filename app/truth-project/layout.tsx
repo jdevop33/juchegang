@@ -4,7 +4,7 @@ export default function TruthProjectLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black">
+    <div className="min-h-screen bg-gradient-to-b from-river-depths via-river-deep to-river-depths">
       {children}
     </div>
   )

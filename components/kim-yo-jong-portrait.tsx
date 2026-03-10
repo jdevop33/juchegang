@@ -36,7 +36,7 @@ export function KimYoJongPortrait({ size = "medium", className = "" }: KimYoJong
         ${classes.container}
         ${classes.frame}
         rounded-full 
-        bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-500 
+        bg-gradient-to-br from-sovereign-gold via-sovereign-gold to-sovereign-gold 
         shadow-2xl
         transition-all duration-300 ease-in-out
         hover:shadow-3xl hover:scale-105
@@ -45,7 +45,7 @@ export function KimYoJongPortrait({ size = "medium", className = "" }: KimYoJong
         <div className="
           w-full h-full 
           rounded-full overflow-hidden 
-          bg-blue-600 border-2 border-blue-700
+          bg-river-current border-2 border-river-current
           relative
         ">
           {/* SVG Portrait with bulletproof rendering */}
@@ -67,7 +67,7 @@ export function KimYoJongPortrait({ size = "medium", className = "" }: KimYoJong
           />
           
           {/* Fallback overlay for loading states */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 opacity-0 hover:opacity-10 transition-opacity duration-300" />
+          <div className="absolute inset-0 bg-gradient-to-br from-river-mid to-river-current opacity-0 hover:opacity-10 transition-opacity duration-300" />
         </div>
       </div>
       

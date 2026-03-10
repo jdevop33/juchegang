@@ -146,7 +146,7 @@ export default function YouthEmpowermentPage() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] bg-gradient-to-r from-[#1b4965] via-[#d4a74a] to-[#1b4965] bg-clip-text text-transparent">
             {language === 'kr' ? '청년 임파워먼트' : 'Youth Empowerment'}
           </h1>
-          <p className="text-xl md:text-2xl text-[#e8e4df]/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-[#f0ebe3]/90 mb-8 max-w-3xl mx-auto">
             {language === 'kr'
               ? '미래를 이끌어갈 청년들이 창조적 사고와 글로벌 시민의식으로 세상을 변화시키는 힘'
               : 'The power of future-leading youth changing the world with creative thinking and global citizenship'}
@@ -162,7 +162,7 @@ export default function YouthEmpowermentPage() {
             <h2 className="text-2xl font-bold text-[#d4a74a] mb-4 font-[family-name:var(--font-heading)]">
               {language === 'kr' ? '우리 세대의 사명' : 'Our Generation\'s Mission'}
             </h2>
-            <p className="text-[#e8e4df] text-lg leading-relaxed">
+            <p className="text-[#f0ebe3] text-lg leading-relaxed">
               {language === 'kr'
                 ? '분단의 벽을 넘어 통일된 한반도에서 시작되는 새로운 세계. 기술과 인문학이 조화를 이루고, 동서양 문명이 만나는 융합의 시대를 열어가는 것이 우리의 역사적 소명입니다.'
                 : 'A new world beginning from a unified Korean Peninsula beyond the walls of division. Opening an era of convergence where technology and humanities harmonize, where Eastern and Western civilizations meet - this is our historical calling.'}
@@ -174,7 +174,7 @@ export default function YouthEmpowermentPage() {
       {/* Empowerment Pillars */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#e8e4df] mb-12 font-[family-name:var(--font-heading)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#f0ebe3] mb-12 font-[family-name:var(--font-heading)]">
             {language === 'kr' ? '청년 역량 개발의 네 기둥' : 'Four Pillars of Youth Development'}
           </h2>
 
@@ -192,10 +192,10 @@ export default function YouthEmpowermentPage() {
                     <div className={`w-16 h-16 rounded-full border-2 ${pillar.color} bg-[#0d1b2a]/50 flex items-center justify-center mb-4`}>
                       <pillar.icon className="h-8 w-8 text-[#d4a74a]" />
                     </div>
-                    <CardTitle className="text-2xl text-[#e8e4df]">{pillar.title}</CardTitle>
+                    <CardTitle className="text-2xl text-[#f0ebe3]">{pillar.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#e8e4df]/80 mb-4">{pillar.description}</p>
+                    <p className="text-[#f0ebe3]/80 mb-4">{pillar.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {pillar.skills.map((skill, i) => (
                         <span key={i} className="px-3 py-1 bg-[#1b4965]/30 rounded-full text-sm text-[#d4a74a]">
@@ -214,10 +214,10 @@ export default function YouthEmpowermentPage() {
       {/* Creative Fields */}
       <section className="py-16 px-4 bg-[#1b4965]/20">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#e8e4df] mb-4 font-[family-name:var(--font-heading)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#f0ebe3] mb-4 font-[family-name:var(--font-heading)]">
             {language === 'kr' ? '창작 분야별 활동' : 'Creative Field Activities'}
           </h2>
-          <p className="text-center text-[#e8e4df]/80 mb-12">
+          <p className="text-center text-[#f0ebe3]/80 mb-12">
             {language === 'kr'
               ? '청년들이 가장 활발하게 활동하는 창작 분야와 참여자 수'
               : 'Most active creative fields and participant numbers among youth'}
@@ -234,7 +234,7 @@ export default function YouthEmpowermentPage() {
                 className="text-center bg-[#0d1b2a]/60 rounded-xl p-6 border border-[#1b4965]/40"
               >
                 <field.icon className="h-12 w-12 text-[#d4a74a] mx-auto mb-3" />
-                <h3 className="text-[#e8e4df] font-semibold mb-2">{field.name}</h3>
+                <h3 className="text-[#f0ebe3] font-semibold mb-2">{field.name}</h3>
                 <p className="text-[#1b4965] text-lg font-bold">{field.participants}</p>
               </motion.div>
             ))}
@@ -245,7 +245,7 @@ export default function YouthEmpowermentPage() {
       {/* Global Projects */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#e8e4df] mb-12 font-[family-name:var(--font-heading)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#f0ebe3] mb-12 font-[family-name:var(--font-heading)]">
             {language === 'kr' ? '글로벌 청년 프로젝트' : 'Global Youth Projects'}
           </h2>
 
@@ -262,13 +262,13 @@ export default function YouthEmpowermentPage() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-2xl font-bold text-[#d4a74a] mb-4">{project.title}</h3>
-                    <p className="text-[#e8e4df]/80 mb-6">{project.description}</p>
+                    <p className="text-[#f0ebe3]/80 mb-6">{project.description}</p>
 
                     <div className="space-y-2">
                       {project.achievements.map((achievement, i) => (
                         <div key={i} className="flex items-center gap-2">
                           <Leaf className="h-4 w-4 text-[#d4a74a]" />
-                          <span className="text-[#e8e4df]/70 text-sm">{achievement}</span>
+                          <span className="text-[#f0ebe3]/70 text-sm">{achievement}</span>
                         </div>
                       ))}
                     </div>
@@ -276,21 +276,21 @@ export default function YouthEmpowermentPage() {
 
                   <div className="space-y-6">
                     <div className="bg-[#0d1b2a]/60 rounded-lg p-6">
-                      <h4 className="text-lg font-bold text-[#e8e4df] mb-4">
+                      <h4 className="text-lg font-bold text-[#f0ebe3] mb-4">
                         {language === 'kr' ? '프로젝트 규모' : 'Project Scale'}
                       </h4>
                       <div className="grid grid-cols-3 gap-4 text-center">
                         <div>
                           <p className="text-2xl font-bold text-[#d4a74a]">{project.impact.participants}</p>
-                          <p className="text-xs text-[#e8e4df]/60">{language === 'kr' ? '참가자' : 'Participants'}</p>
+                          <p className="text-xs text-[#f0ebe3]/60">{language === 'kr' ? '참가자' : 'Participants'}</p>
                         </div>
                         <div>
                           <p className="text-2xl font-bold text-[#1b4965]">{project.impact.countries}</p>
-                          <p className="text-xs text-[#e8e4df]/60">{language === 'kr' ? '국가' : 'Countries'}</p>
+                          <p className="text-xs text-[#f0ebe3]/60">{language === 'kr' ? '국가' : 'Countries'}</p>
                         </div>
                         <div>
                           <p className="text-2xl font-bold text-[#d4a74a]">{project.impact.projects}</p>
-                          <p className="text-xs text-[#e8e4df]/60">{language === 'kr' ? '프로젝트' : 'Projects'}</p>
+                          <p className="text-xs text-[#f0ebe3]/60">{language === 'kr' ? '프로젝트' : 'Projects'}</p>
                         </div>
                       </div>
                     </div>
@@ -305,7 +305,7 @@ export default function YouthEmpowermentPage() {
       {/* Success Stories */}
       <section className="py-16 px-4 bg-[#1b4965]/10">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#e8e4df] mb-12 font-[family-name:var(--font-heading)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#f0ebe3] mb-12 font-[family-name:var(--font-heading)]">
             {language === 'kr' ? '청년 성공 스토리' : 'Youth Success Stories'}
           </h2>
 
@@ -323,11 +323,11 @@ export default function YouthEmpowermentPage() {
                   <div className="w-16 h-16 rounded-full border-2 border-[#d4a74a] bg-[#0d1b2a]/50 flex items-center justify-center mx-auto mb-3">
                     <Heart className="h-8 w-8 text-[#d4a74a]" />
                   </div>
-                  <h3 className="text-lg font-bold text-[#e8e4df]">{story.name}</h3>
+                  <h3 className="text-lg font-bold text-[#f0ebe3]">{story.name}</h3>
                   <p className="text-[#d4a74a] text-sm">{story.role}</p>
                 </div>
 
-                <p className="text-[#e8e4df]/80 text-sm mb-4">{story.story}</p>
+                <p className="text-[#f0ebe3]/80 text-sm mb-4">{story.story}</p>
 
                 <div className="bg-[#0d1b2a]/80 rounded-lg p-3 text-center">
                   <Star className="h-5 w-5 text-[#d4a74a] mx-auto mb-2" />
@@ -348,12 +348,12 @@ export default function YouthEmpowermentPage() {
           className="container mx-auto max-w-4xl text-center"
         >
           <Globe className="h-16 w-16 text-[#d4a74a] mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-bold text-[#e8e4df] mb-6 font-[family-name:var(--font-heading)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#f0ebe3] mb-6 font-[family-name:var(--font-heading)]">
             {language === 'kr'
               ? '함께 미래를 만들어가요'
               : 'Let\'s Create the Future Together'}
           </h2>
-          <p className="text-xl text-[#e8e4df]/80 mb-8">
+          <p className="text-xl text-[#f0ebe3]/80 mb-8">
             {language === 'kr'
               ? '청년의 창조적 에너지와 글로벌 시민의식으로 평화롭고 번영하는 세계를 만들어갑시다.'
               : 'Let\'s create a peaceful and prosperous world with youth\'s creative energy and global citizenship.'}
@@ -365,16 +365,16 @@ export default function YouthEmpowermentPage() {
             </h3>
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div>
-                <h4 className="font-bold text-[#e8e4df] mb-2">{language === 'kr' ? '우리의 약속' : 'Our Promise'}</h4>
-                <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
+                <h4 className="font-bold text-[#f0ebe3] mb-2">{language === 'kr' ? '우리의 약속' : 'Our Promise'}</h4>
+                <ul className="space-y-2 text-[#f0ebe3]/80 text-sm">
                   <li>* {language === 'kr' ? '창의적 사고로 문제를 해결한다' : 'Solve problems with creative thinking'}</li>
                   <li>* {language === 'kr' ? '다양성을 존중하고 포용한다' : 'Respect and embrace diversity'}</li>
                   <li>* {language === 'kr' ? '지속가능한 미래를 위해 행동한다' : 'Act for a sustainable future'}</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-bold text-[#e8e4df] mb-2">{language === 'kr' ? '우리의 목표' : 'Our Goals'}</h4>
-                <ul className="space-y-2 text-[#e8e4df]/80 text-sm">
+                <h4 className="font-bold text-[#f0ebe3] mb-2">{language === 'kr' ? '우리의 목표' : 'Our Goals'}</h4>
+                <ul className="space-y-2 text-[#f0ebe3]/80 text-sm">
                   <li>* {language === 'kr' ? '평화로운 세계 공동체 건설' : 'Building a peaceful global community'}</li>
                   <li>* {language === 'kr' ? '기술의 인간적 활용' : 'Humanistic use of technology'}</li>
                   <li>* {language === 'kr' ? '문화와 전통의 현대적 계승' : 'Modern succession of culture and tradition'}</li>
@@ -386,7 +386,7 @@ export default function YouthEmpowermentPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/cultural-exchange"
-              className="px-8 py-4 bg-gradient-to-r from-[#1b4965] to-[#0d1b2a] hover:from-[#143a52] hover:to-[#0a1521] text-[#e8e4df] font-bold rounded-lg transition-all transform hover:scale-105"
+              className="px-8 py-4 bg-gradient-to-r from-[#1b4965] to-[#0d1b2a] hover:from-[#143a52] hover:to-[#0a1521] text-[#f0ebe3] font-bold rounded-lg transition-all transform hover:scale-105"
             >
               {language === 'kr' ? '문화 교류 참여' : 'Join Cultural Exchange'}
             </Link>

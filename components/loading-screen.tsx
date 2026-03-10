@@ -37,16 +37,16 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
         {/* Animated logo/icon */}
         <div className="mb-8 relative">
           <div className="w-28 h-28 mx-auto friendship-gradient-reverse rounded-full flex items-center justify-center animate-pulse friendship-glow">
-            <Star className="h-14 w-14 text-white animate-spin" />
+            <Star className="h-14 w-14 text-cream animate-spin" />
           </div>
           <div className="absolute inset-0 w-28 h-28 mx-auto border-4 border-friendship-red/40 rounded-full animate-ping"></div>
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 animate-glow text-shadow-glow">
+        <h1 className="text-4xl md:text-6xl font-bold text-cream mb-4 animate-glow text-shadow-glow">
           Friendship <span className="text-friendship-white animate-friendship-pulse">Club</span>
         </h1>
-        <p className="text-xl text-blue-100 mb-8 animate-pulse glass-effect p-3 rounded-lg">
+        <p className="text-xl text-cream-muted mb-8 animate-pulse glass-effect p-3 rounded-lg">
           The 48 Laws of Excellence
         </p>
 

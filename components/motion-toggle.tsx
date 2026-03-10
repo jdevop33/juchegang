@@ -17,23 +17,23 @@ export default function MotionToggle() {
 	}, [mode])
 
 	return (
-		<div className="hidden md:flex items-center gap-2 text-xs text-white/70">
+		<div className="hidden md:flex items-center gap-2 text-xs text-cream/70">
 			<span>Motion</span>
-			<div className="inline-flex rounded-md overflow-hidden border border-white/20">
+			<div className="inline-flex rounded-md overflow-hidden border border-cream/20">
 				<button
-					className={`px-2 py-1 ${mode==='system' ? 'bg-white/15 text-white' : 'bg-transparent hover:bg-white/10'}`}
+					className={`px-2 py-1 ${mode==='system' ? 'bg-cream/15 text-cream' : 'bg-transparent hover:bg-cream/10'}`}
 					onClick={() => setMode('system')}
 				>
 					System
 				</button>
 				<button
-					className={`px-2 py-1 ${mode==='on' ? 'bg-white/15 text-white' : 'bg-transparent hover:bg-white/10'}`}
+					className={`px-2 py-1 ${mode==='on' ? 'bg-cream/15 text-cream' : 'bg-transparent hover:bg-cream/10'}`}
 					onClick={() => setMode('on')}
 				>
 					On
 				</button>
 				<button
-					className={`px-2 py-1 ${mode==='off' ? 'bg-white/15 text-white' : 'bg-transparent hover:bg-white/10'}`}
+					className={`px-2 py-1 ${mode==='off' ? 'bg-cream/15 text-cream' : 'bg-transparent hover:bg-cream/10'}`}
 					onClick={() => setMode('off')}
 				>
 					Off

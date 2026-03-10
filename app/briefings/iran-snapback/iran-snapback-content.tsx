@@ -140,7 +140,7 @@ function QuoteCard({ expert, language }: { expert: typeof expertQuotes[0], langu
                 href={expert.social.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 px-3 py-1 bg-[#1b4965]/10 text-[#e8e4df] hover:text-[#d4a74a] hover:bg-[#1b4965]/20 rounded-full text-xs sm:text-sm transition-all duration-200 border border-[#1b4965]/30"
+                className="inline-flex items-center gap-1 px-3 py-1 bg-[#1b4965]/10 text-[#f0ebe3] hover:text-[#d4a74a] hover:bg-[#1b4965]/20 rounded-full text-xs sm:text-sm transition-all duration-200 border border-[#1b4965]/30"
               >
                 <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -153,7 +153,7 @@ function QuoteCard({ expert, language }: { expert: typeof expertQuotes[0], langu
                 href={expert.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 px-3 py-1 bg-[#1b4965]/10 text-[#e8e4df] hover:text-[#d4a74a] hover:bg-[#1b4965]/20 rounded-full text-xs sm:text-sm transition-all duration-200 border border-[#1b4965]/30"
+                className="inline-flex items-center gap-1 px-3 py-1 bg-[#1b4965]/10 text-[#f0ebe3] hover:text-[#d4a74a] hover:bg-[#1b4965]/20 rounded-full text-xs sm:text-sm transition-all duration-200 border border-[#1b4965]/30"
               >
                 {expert.social.linkedin.includes('wikipedia.org') ? (
                   <>

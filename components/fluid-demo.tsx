@@ -71,7 +71,7 @@ export function FluidDemo() {
         <button className="magnetic px-6 py-3 bg-primary text-primary-foreground rounded-lg">
           Magnetic Effect
         </button>
-        <button className="btn-premium px-6 py-3 text-white rounded-lg">
+        <button className="btn-premium px-6 py-3 text-cream rounded-lg">
           Premium Button
         </button>
       </div>
