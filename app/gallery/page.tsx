@@ -1,5 +1,6 @@
 import path from "path"
 import { promises as fs } from "fs"
+import Image from "next/image"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import GalleryImage from "@/components/gallery-image"
@@ -78,24 +79,40 @@ export default async function GalleryPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <JucheHeader />
-      <section className="container mx-auto px-4 pt-28 pb-16">
-        <header className="mb-12 text-center">
-          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium">
+
+      {/* Hero Section with Image */}
+      <section className="relative h-[50vh] min-h-[350px] overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/heros/0sunsetpaektu3.jpg"
+            alt="Panoramic sunset over Mount Paektu crater with golden and purple skies"
+            fill
+            className="object-cover object-[center_40%]"
+            priority
+            sizes="100vw"
+            quality={85}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/50 via-[#0d1b2a]/20 to-background" />
+        </div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
+          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-[#0d1b2a]/60 backdrop-blur-sm text-[#d4a74a] rounded-full text-sm font-medium border border-[#d4a74a]/30">
             🎨 Gallery
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-[#f0ebe3] drop-shadow-lg font-[family-name:var(--font-heading)]">
             Media Gallery
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A curated collection of powerful imagery. Click any image to explore in full detail with navigation controls.
+          <p className="text-lg text-[#f0ebe3]/90 max-w-2xl mx-auto drop-shadow-md">
+            A curated collection of powerful imagery. Click any image to explore in full detail.
           </p>
-          
           {images.length > 0 && (
-            <div className="mt-6 text-sm text-muted-foreground">
+            <div className="mt-4 text-sm text-[#f0ebe3]/70">
               {images.length} images • High resolution • Full screen viewing
             </div>
           )}
-        </header>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 pt-12 pb-16">
 
         {/* SoundCloud player */}
         <div className="mb-12">

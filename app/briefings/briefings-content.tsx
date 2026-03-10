@@ -39,6 +39,18 @@ export default function BriefingsContent() {
         <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
           <div className="flex items-center gap-2 mb-2">
             <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Feb 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/war-nobody-wins" className="hover:underline text-[#d4a74a]">
+              The War Nobody Wins: A Behavioral Analysis of WW3
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">JPanda Papers behavioral analysis examining the psychology, industrial asymmetries, and strategic miscalculations driving the world toward a hypothetical global conflict — and why nobody wins.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
             <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Dec 2025</span>
           </div>
           <h2 className="text-2xl font-semibold mb-2">

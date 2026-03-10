@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function YouthEmpowermentPage() {
   const { language } = useLanguage()
@@ -135,28 +136,45 @@ export default function YouthEmpowermentPage() {
     <>
       <JucheHeader />
       <main className="min-h-screen bg-[#0d1b2a] pt-20">
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden">
+      {/* Hero Section with Image */}
+      <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/heros/beautioful4.jpg"
+            alt="Sunrise breaking through snow-capped peaks of Mount Paektu"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+            quality={85}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/50 via-[#0d1b2a]/30 to-[#0d1b2a]" />
+        </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="container mx-auto max-w-6xl text-center"
+          className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center"
         >
-          <Sunrise className="h-16 w-16 text-[#d4a74a] mx-auto mb-6" />
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] bg-gradient-to-r from-[#1b4965] via-[#d4a74a] to-[#1b4965] bg-clip-text text-transparent">
+          <Sunrise className="h-16 w-16 text-[#d4a74a] mx-auto mb-6 drop-shadow-lg" />
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] text-[#f0ebe3] drop-shadow-lg">
             {language === 'kr' ? '청년 임파워먼트' : 'Youth Empowerment'}
           </h1>
-          <p className="text-xl md:text-2xl text-[#f0ebe3]/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-[#f0ebe3]/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
             {language === 'kr'
               ? '미래를 이끌어갈 청년들이 창조적 사고와 글로벌 시민의식으로 세상을 변화시키는 힘'
               : 'The power of future-leading youth changing the world with creative thinking and global citizenship'}
           </p>
+        </motion.div>
+      </section>
 
+      {/* Mission Statement */}
+      <section className="py-12 px-4">
+        <div className="container mx-auto max-w-4xl">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3 }}
-            className="bg-[#1b4965]/30 rounded-2xl p-8 mb-12 border border-[#d4a74a]/30"
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="bg-[#1b4965]/30 rounded-2xl p-8 border border-[#d4a74a]/30 text-center"
           >
             <Star className="h-12 w-12 text-[#d4a74a] mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-[#d4a74a] mb-4 font-[family-name:var(--font-heading)]">
@@ -168,7 +186,7 @@ export default function YouthEmpowermentPage() {
                 : 'A new world beginning from a unified Korean Peninsula beyond the walls of division. Opening an era of convergence where technology and humanities harmonize, where Eastern and Western civilizations meet - this is our historical calling.'}
             </p>
           </motion.div>
-        </motion.div>
+        </div>
       </section>
 
       {/* Empowerment Pillars */}

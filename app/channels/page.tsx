@@ -4,6 +4,7 @@ import { useLanguage } from "@/contexts/language-context"
 import { motion } from "framer-motion"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
+import Image from "next/image"
 import { Play, Calendar, Eye, ThumbsUp, ExternalLink, Globe, TrendingUp, Users } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { useState, useEffect } from "react"
@@ -211,18 +212,30 @@ export default function ChannelsPage() {
     <>
       <JucheHeader />
       <main id="main-content" className="min-h-screen bg-[#0d1b2a] pt-20">
-        {/* Hero Section */}
-        <section className="relative py-16 px-4">
+        {/* Hero Section with Image */}
+        <section className="relative h-[55vh] min-h-[400px] overflow-hidden">
+          <div className="absolute inset-0">
+            <Image
+              src="/images/heros/Paektusan Geopark).jpg"
+              alt="Illuminated mountain city at night near Paektusan Geopark"
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+              quality={85}
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/60 via-[#0d1b2a]/30 to-[#0d1b2a]" />
+          </div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="container mx-auto max-w-6xl text-center"
+            className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center"
           >
-            <Play className="h-16 w-16 text-[#d4a74a] mx-auto mb-6" />
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-[#d4a74a]">
+            <Play className="h-16 w-16 text-[#d4a74a] mx-auto mb-6 drop-shadow-lg" />
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-[#d4a74a] drop-shadow-lg font-[family-name:var(--font-heading)]">
               {language === 'kr' ? '진실의 채널들' : 'Channels of Truth'}
             </h1>
-            <p className="text-xl md:text-2xl text-[#f0ebe3]/90 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-[#f0ebe3]/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
               {language === 'kr'
                 ? '서구 주류 미디어의 편견을 넘어 진실을 추구하는 독립 언론인들의 채널'
                 : 'Independent journalists and analysts seeking truth beyond Western mainstream media bias'}

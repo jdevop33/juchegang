@@ -2,8 +2,11 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import NextImage from "next/image"
 import { ArrowLeft, FileText, Image, Share2, Search, Users, Globe, Brain, Star } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+import { JucheHeader } from "@/components/juche-header"
+import { JucheFooter } from "@/components/juche-footer"
 
 export default function TruthProjectPage() {
   const [activeSection, setActiveSection] = useState("overview")
@@ -19,16 +22,30 @@ export default function TruthProjectPage() {
   ]
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <Link href="/" className="inline-flex items-center gap-2 text-[#f0ebe3]/70 hover:text-[#f0ebe3] mb-8 transition-colors">
-        <ArrowLeft className="h-4 w-4" />
-        {t('backToLaws')}
-      </Link>
+    <>
+    <JucheHeader />
+    <main className="min-h-screen bg-[#0d1b2a] pt-20">
+      {/* Hero Section with Image */}
+      <section className="relative h-[60vh] min-h-[400px] overflow-hidden">
+        <div className="absolute inset-0">
+          <NextImage
+            src="/images/heros/05.jpg"
+            alt="Dramatic clouds parting over Heaven Lake crater at Mount Paektu"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+            quality={85}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/70 via-[#0d1b2a]/40 to-[#0d1b2a]" />
+        </div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
+          <h1 className="text-5xl md:text-7xl font-bold text-[#f0ebe3] mb-4 font-[family-name:var(--font-heading)] drop-shadow-lg">{t('truthProjectTitle')}</h1>
+          <p className="text-xl md:text-2xl text-[#f0ebe3]/90 max-w-3xl drop-shadow-md">{t('truthProjectSubtitle')}</p>
+        </div>
+      </section>
 
-      <div className="mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold text-[#f0ebe3] mb-4">{t('truthProjectTitle')}</h1>
-        <p className="text-xl text-[#f0ebe3]/80">{t('truthProjectSubtitle')}</p>
-      </div>
+      <div className="container mx-auto px-4 py-8">
 
       {/* Featured: Beyond Ideology */}
       <div className="mb-12 bg-gradient-to-r from-[#0d1b2a] via-[#1b4965] to-[#0d1b2a] rounded-2xl p-8 border border-[#d4a74a]/30">
@@ -131,5 +148,8 @@ export default function TruthProjectPage() {
         </div>
       </div>
     </div>
+    </main>
+    <JucheFooter />
+    </>
   )
 }

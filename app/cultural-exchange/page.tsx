@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function CulturalExchangePage() {
   const { language } = useLanguage()
@@ -131,28 +132,44 @@ export default function CulturalExchangePage() {
     <>
       <JucheHeader />
       <main className="min-h-screen bg-[#0d1b2a] pt-20">
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden">
+      {/* Hero Section with Image */}
+      <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/heros/0sobeautiful6.jpg"
+            alt="Traditional Korean pavilion amid cascading waterfalls and lush forest"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+            quality={85}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/60 via-[#0d1b2a]/40 to-[#0d1b2a]" />
+        </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="container mx-auto max-w-6xl text-center"
+          className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] bg-gradient-to-r from-[#1b4965] via-[#d4a74a] to-[#1b4965] bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] text-[#f0ebe3] drop-shadow-lg">
             {language === 'kr' ? '문화 교류와 세계 평화' : 'Cultural Exchange & World Peace'}
           </h1>
-          <p className="text-xl md:text-2xl text-[#f0ebe3]/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-[#f0ebe3]/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
             {language === 'kr'
               ? '5000년 역사의 지혜를 세계와 나누고, 세계의 아름다움을 품는 열린 한반도'
               : '5000 years of wisdom shared with the world, an open peninsula embracing global beauty'}
           </p>
+        </motion.div>
+      </section>
 
-          {/* Vision Statement */}
+      {/* Vision Statement */}
+      <section className="py-12 px-4">
+        <div className="container mx-auto max-w-4xl">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3 }}
-            className="bg-[#1b4965]/30 rounded-2xl p-8 mb-12 border border-[#d4a74a]/30"
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="bg-[#1b4965]/30 rounded-2xl p-8 border border-[#d4a74a]/30 text-center"
           >
             <Star className="h-12 w-12 text-[#d4a74a] mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-[#d4a74a] mb-4 font-[family-name:var(--font-heading)]">
@@ -164,7 +181,7 @@ export default function CulturalExchangePage() {
                 : 'The Korean Peninsula as a bridge between Eastern and Western civilizations, North and South united as a center for human peace. A future where our food protects global health, our spirit realizes humanity, and our art heals souls.'}
             </p>
           </motion.div>
-        </motion.div>
+        </div>
       </section>
 
       {/* Cultural Pillars */}
