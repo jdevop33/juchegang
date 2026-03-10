@@ -17,402 +17,504 @@ export default function F35SystemicFragilityKrContent() {
         {/* Hero section */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
-            JPANDA JAMES 전략 보고서
+            JPANDA JAMES &#51204;&#47029; &#48372;&#44256;&#49436;
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            체계적 취약성과 전략적 현실
+            &#52404;&#44228;&#51201; &#52712;&#50557;&#49457;&#44284; &#51204;&#47029;&#51201; &#54788;&#49892;
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            F-35 라이트닝 II 프로그램의 종합 수명주기 평가
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto italic">
+            F-35 &#46972;&#51060;&#53944;&#45789; II &#54532;&#47196;&#44536;&#47016;&#51032; &#51333;&#54633; &#49688;&#47749;&#51452;&#44592; &#54217;&#44032; &#48143; &#44053;&#45824;&#44397; &#44221;&#51137; &#49884;&#45824;&#51032; &#49436;&#48169; &#48169;&#50948;&#49328;&#50629; &#50669;&#47049; &#48516;&#49437;
           </p>
-          <p className="text-lg text-muted-foreground/80 max-w-2xl mx-auto mt-2">
-            및 강대국 경쟁 시대의 서방 방위산업 역량 분석
-          </p>
-          <div className="mt-6 flex flex-col items-center gap-2 text-sm text-muted-foreground">
-            <span>제시 제임스 (Jesse James)</span>
-            <div className="flex items-center gap-4">
-              <span>2026년 2월</span>
-              <span className="text-sovereign-gold">|</span>
-              <span>공개 문서 // 비밀 아님</span>
-            </div>
+          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
+            <span>2026&#45380; 2&#50900;</span>
+            <span className="text-sovereign-gold">|</span>
+            <span>&#44277;&#44060; &#47928;&#49436; // &#48708;&#48128; &#50500;&#45784;</span>
           </div>
         </div>
 
         {/* Key Findings Grid */}
-        <div className="not-prose grid grid-cols-2 gap-4 mb-12">
-          <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 text-center">
-            <p className="text-3xl md:text-4xl font-bold text-sovereign-gold mb-2">2조 달러+</p>
-            <p className="text-sm text-muted-foreground">프로그램 수명주기 비용</p>
+        <div className="not-prose grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+          <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
+            <p className="text-3xl font-bold text-sovereign-gold">2&#51312; &#45804;&#47084;+</p>
+            <p className="text-sm text-muted-foreground mt-1">&#54532;&#47196;&#44536;&#47016; &#49688;&#47749;&#51452;&#44592; &#48708;&#50857;</p>
           </div>
-          <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
-            <p className="text-3xl md:text-4xl font-bold text-korean-red mb-2">50%</p>
-            <p className="text-sm text-muted-foreground">함대 가동률</p>
+          <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
+            <p className="text-3xl font-bold text-korean-red">232:1</p>
+            <p className="text-sm text-muted-foreground mt-1">&#51473;&#44397;&ndash;&#48120;&#44397; &#51312;&#49440; &#50669;&#47049; &#48708;&#50984;</p>
           </div>
-          <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6 text-center">
-            <p className="text-3xl md:text-4xl font-bold text-river-current dark:text-river-mid mb-2">232:1</p>
-            <p className="text-sm text-muted-foreground">중국-미국 조선 역량 비율</p>
+          <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
+            <p className="text-3xl font-bold text-sovereign-gold">50%</p>
+            <p className="text-sm text-muted-foreground mt-1">&#54632;&#45824; &#44032;&#46041;&#47456;</p>
           </div>
-          <div className="bg-muted/30 border border-muted-foreground/20 rounded-lg p-6 text-center">
-            <p className="text-3xl md:text-4xl font-bold text-foreground mb-2">1,000억$+</p>
-            <p className="text-sm text-muted-foreground">취소된 방위 프로그램</p>
+          <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
+            <p className="text-3xl font-bold text-korean-red">1,000&#50613; &#45804;&#47084;+</p>
+            <p className="text-sm text-muted-foreground mt-1">&#52712;&#49548;&#46108; &#48169;&#50948; &#54532;&#47196;&#44536;&#47016;</p>
+          </div>
+          <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
+            <p className="text-3xl font-bold text-sovereign-gold">3&ndash;4&#48176;</p>
+            <p className="text-sm text-muted-foreground mt-1">&#47084;&#49884;&#50500; &#54252;&#48337; &#50864;&#50948;</p>
+          </div>
+          <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
+            <p className="text-3xl font-bold text-korean-red">238&#51068;</p>
+            <p className="text-sm text-muted-foreground mt-1">&#54217;&#44512; &#45225;&#54408; &#51648;&#50672;</p>
           </div>
         </div>
 
         {/* Strategic Warning */}
         <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-12">
-          <h2 className="text-xl font-bold mb-3 text-korean-red">
-            전략적 경고
+          <h2 className="text-2xl font-bold mb-3 text-korean-red">
+            &#51204;&#47029;&#51201; &#44221;&#44256;
           </h2>
           <p className="text-foreground/90 leading-relaxed">
-            워게임 시뮬레이션 결과, 미군은 대규모 분쟁 발생 시 며칠 내에 장거리 정밀 탄약이 고갈되는 것으로 나타났습니다.
+            &#50892;&#44172;&#51076; &#49884;&#48044;&#47112;&#51060;&#49496; &#44208;&#44284;, &#48120;&#44400;&#51008; &#45824;&#44508;&#47784; &#48516;&#51137; &#48156;&#49373; &#49884; &#47728;&#52832; &#45236;&#50640; &#51109;&#44144;&#47532; &#51221;&#48128; &#53444;&#50557;&#51060; &#44256;&#44040;&#46104;&#45716; &#44163;&#51004;&#47196; &#45208;&#53440;&#45228;&#49845;&#45768;&#45796;. &#54788;&#51116;&#51032; &#48169;&#50948;&#49328;&#50629; &#44592;&#48152;&#51004;&#47196;&#45716; &#49892;&#51228; &#51204;&#51137; &#49884;&#45208;&#47532;&#50724;&#50640; &#45824;&#51025;&#54624; &#47564;&#53372; &#48744;&#47476;&#44172; &#49373;&#49328;&#47049;&#51012; &#51613;&#44032;&#49884;&#53420; &#49688; &#50630;&#49845;&#45768;&#45796;.
           </p>
         </div>
 
         {/* Executive Summary */}
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-sovereign-gold text-2xl font-bold">&#9670;</span>
-            <h2 className="text-3xl font-bold">요약</h2>
+            <span className="text-sovereign-gold text-2xl">&#9670;</span>
+            <h2 className="text-3xl font-bold">&#50836;&#50557;</h2>
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
-            F-35 라이트닝 II 합동 타격 전투기(JSF) 프로그램은 역사상 가장 비싼 무기 체계로, 수명주기 비용이 <strong className="text-sovereign-gold">2조 달러</strong>를 초과합니다. 이 보고서는 프로그램의 재정 구조, 작전 성과, 공급망 취약성, 그리고 급변하는 세계 군사 균형을 종합적으로 평가합니다.
+            F-35 &#46972;&#51060;&#53944;&#45789; II &#54633;&#46041;&#53440;&#44201;&#51204;&#53804;&#44592;&#45716; &#51064;&#47448; &#50669;&#49324;&#49345; &#44032;&#51109; &#48708;&#50857;&#51060; &#47566;&#51060; &#46300;&#45716; &#47924;&#44592; &#52404;&#44228;&#51077;&#45768;&#45796;. 2088&#45380;&#44620;&#51648;&#51032; &#49688;&#47749;&#51452;&#44592; &#48708;&#50857;&#51060; 2&#51312; &#45804;&#47084;&#47484; &#52488;&#44284;&#54624; &#44163;&#51004;&#47196; &#52628;&#51221;&#46121;&#45768;&#45796;. &#48376; &#54217;&#44032;&#49436;&#45716; &#51060; &#54532;&#47196;&#44536;&#47016;&#51032; &#47928;&#49436;&#54868;&#46108; &#49457;&#45733; &#44208;&#54632;&mdash;50% &#54632;&#45824; &#44032;&#46041;&#47456;, &#51648;&#49549;&#51201;&#51064; &#48708;&#50857; &#49345;&#49849;, &#47564;&#49457;&#51201;&#51064; &#51068;&#51221; &#51648;&#50672;, &#52824;&#47749;&#51201;&#51064; &#44277;&#44553;&#47581; &#52712;&#50557;&#51216;&mdash;&#51060; &#44053;&#45824;&#44397; &#44221;&#51137; &#49884;&#45824;&#50640; &#51204;&#47029;&#51201; &#54596;&#50836;&#49457;&#44284; &#50612;&#46523;&#44172; &#51312;&#54868;&#46112; &#49688; &#51080;&#45716;&#51648; &#44160;&#53664;&#54633;&#45768;&#45796;.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
-            핵심 발견: F-35 함대는 지속적으로 <strong className="text-korean-red">50%</strong> 수준의 가동률을 기록하고 있으며, 이는 의회가 요구하는 목표에 크게 못 미칩니다. 러시아는 연간 포탄 생산량을 <strong className="text-sovereign-gold">450만 발</strong>까지 확대했으며, 중국의 조선 역량은 미국을 <strong className="text-sovereign-gold">232대 1</strong>로 압도하고 있습니다.
+            &#51204;&#47029;&#51201; &#47589;&#46973;&#51008; &#51204;&#47168;&#44032; &#50630;&#49845;&#45768;&#45796;. &#47084;&#49884;&#50500;&#45716; &#54788;&#51116; &#50672;&#44036; &#50557; 450&#47564; &#48156;&#51032; &#54252;&#53444;&#51012; &#49373;&#49328;&#54616;&#47728;, &#51060;&#45716; NATO &#51204;&#52404; &#49373;&#49328;&#47049;&#51032; &#44144;&#51032; 4&#48176;&#50640; &#45804;&#54633;&#45768;&#45796;. &#51473;&#44397;&#51008; &#48120;&#44397;&#48372;&#45796; 232&#48176; &#45908; &#53360; &#51312;&#49440; &#50669;&#47049;&#51012; &#45804;&#49457;&#54664;&#51004;&#47728;, &#50672;&#44036; 100&ndash;120&#45824;&#51032; 5&#49464;&#45824; &#51204;&#53804;&#44592;&#47484; &#49373;&#49328;&#54616;&#44256; &#51080;&#49845;&#45768;&#45796;.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
-            &ldquo;동시개발&rdquo;(concurrency) 전략 &mdash; 시험이 완료되기 전에 양산을 시작하는 방식 &mdash; 은 비용 초과와 기술적 부채의 구조적 원인이 되었습니다. 600대 이상이 초기 작전 시험평가(IOT&amp;E) 완료 전에 인도되었습니다.
+            &#48376; &#48516;&#49437;&#51008; F-35 &#54532;&#47196;&#44536;&#47016;&#51060; &#49436;&#48169; &#48169;&#50948; &#54925;&#46301;&#51032; &#52404;&#44228;&#51201; &#44592;&#45733; &#51109;&#50528;&#47484; &#45824;&#54364;&#54620;&#45796;&#44256; &#44208;&#47200;&#51667;&#49845;&#45768;&#45796;. &#44060;&#48156; &#50756;&#47308; &#51204;&#50640; &#45824;&#47049; &#49373;&#49328;&#51012; &#49884;&#51089;&#54616;&#45716; &lsquo;&#46041;&#49884;&#49457;&rsquo; &#44288;&#54665;&#51008; &#50689;&#44396;&#51201;&#51064; &#44060;&#51312; &#48512;&#45812;&#51012; &#47564;&#46308;&#50612;&#45240;&#49845;&#45768;&#45796;. &#48660;&#47197; 4 &#54788;&#45824;&#54868;&#45716; 60&#50613; &#45804;&#47084; &#51060;&#49345;&#51032; &#50696;&#49328; &#52488;&#44284;&#50752; 5&#45380; &#51060;&#49345;&#51032; &#51068;&#51221; &#51648;&#50672; &#49345;&#53468;&#51077;&#45768;&#45796;.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
-            한편, 중국은 2024년 12월 <strong className="text-sovereign-gold">6세대 전투기</strong> 2종을 공개하며 서방의 기술적 우위에 도전하고 있습니다. 서방의 방위산업 기반이 위축되는 가운데, 생산 역량의 비대칭이 전략적 균형을 근본적으로 뒤흔들고 있습니다.
+            &#54620;&#54200;, &#51473;&#44397;&#51008; 2024&#45380; 12&#50900;&#50640; &#46160; &#45824;&#51032; 6&#49464;&#45824; &#51204;&#53804;&#44592; &#49884;&#51228;&#44592;&#47484; &#48708;&#54665;&#49884;&#44192;&#49845;&#45768;&#45796;&mdash;&#48120;&#44397;&#51032; &#50612;&#46496; &#49884;&#50672;&#48372;&#45796;&#46020; &#49688;&#45380; &#50526;&#49440; &#44163;&#51077;&#45768;&#45796;.
+          </p>
+
+          <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
+            &ldquo;&#51204;&#47029;&#51201; &#50976;&#50672;&#49457;&#51008; &#50557;&#51216;&#51060; &#50500;&#45785;&#45768;&#45796;&mdash;&#50896;&#47000;&#51032; &#44032;&#51221;&#51060; &#52824;&#47749;&#51201;&#51004;&#47196; &#51096;&#47803;&#46104;&#50632;&#51020;&#51060; &#51613;&#47749;&#46104;&#50632;&#51012; &#46412;, &#44536;&#44163;&#51008; &#51648;&#54812;&#51077;&#45768;&#45796;.&rdquo;
+          </blockquote>
+        </section>
+
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
+
+        {/* Section I */}
+        <section className="mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-sovereign-gold text-2xl">I</span>
+            <h2 className="text-3xl font-bold">2&#51312; &#45804;&#47084; &#49324;&#50629;</h2>
+          </div>
+
+          <p className="text-lg leading-relaxed mb-6">
+            F-35 &#46972;&#51060;&#53944;&#45789; II &#54633;&#46041;&#53440;&#44201;&#51204;&#53804;&#44592;&#45716; &#51204;&#51137; &#50669;&#49324;&#49345; &#44032;&#51109; &#48708;&#50857;&#51060; &#47566;&#51060; &#46308;&#44256; &#49328;&#50629;&#51201;&#51004;&#47196; &#48373;&#51105;&#54620; &#47924;&#44592; &#52404;&#44228;&#51077;&#45768;&#45796;. A-10, F-16, F/A-18, AV-8B&#47484; &#45824;&#52404;&#54616;&#46020;&#47197; &#49444;&#44228;&#46104;&#50632;&#49845;&#45768;&#45796;. &#49464; &#44032;&#51648; &#48320;&#54805;&#51060; &#44033;&#44400;&#51012; &#50948;&#54644; &#48393;&#49324;&#54633;&#45768;&#45796;: &#44277;&#44400;&#50857; <strong className="text-sovereign-gold">F-35A</strong>(&#51116;&#47000;&#49885; &#51060;&#52265;&#47449;), &#54644;&#48337;&#45824;&#50857; <strong className="text-sovereign-gold">F-35B</strong>(&#45800;&#44144;&#47532; &#51060;&#52265;&#47449;/&#49688;&#51649; &#52265;&#47449;), &#54644;&#44400;&#50857; <strong className="text-sovereign-gold">F-35C</strong>(&#54637;&#44277;&#47784;&#54632; &#50868;&#50857;).
+          </p>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#51060; &ldquo;&#54633;&#46041;&rdquo; &#51217;&#44540;&#48277;&#51008; &#44508;&#47784;&#51032; &#44221;&#51228;&#47484; &#50557;&#49549;&#54664;&#51648;&#47564;, &#54788;&#49892;&#51008; &#48373;&#51105;&#49457;&#51032; &#44221;&#51228;&#47484; &#47564;&#46308;&#50612;&#45240;&#49845;&#45768;&#45796;. &#52509; &#49688;&#47749;&#51452;&#44592; &#48708;&#50857;&#51060; 2088&#45380;&#44620;&#51648; <strong className="text-sovereign-gold">2&#51312; &#45804;&#47084;</strong>&#47484; &#52488;&#44284;&#54616;&#47728;, &#51060;&#45716; &#45824;&#48512;&#48516;&#51032; &#44397;&#44032; GDP&#47484; &#52488;&#44284;&#54616;&#45716; &#44552;&#50529;&#51077;&#45768;&#45796;.
+          </p>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#44544;&#47196;&#48268; &#49328;&#50629; &#44592;&#48152;&#51008; &#48120;&#44397;, &#51060;&#53448;&#47532;&#50500;, &#51068;&#48376;&#51032; &#51312;&#47549;&#49884;&#49444;&#51012; &#54252;&#54632;&#54616;&#47728;, 1,000&#45824; &#51060;&#49345;&#51060; &#45225;&#54408;&#46104;&#50632;&#49845;&#45768;&#45796;. &#44536;&#47084;&#45208; &#54632;&#45824;&#51032; &#51076;&#47924;&#49688;&#54665;&#47456;&#51008; <strong className="text-korean-red">55%</strong>&#50640; &#48520;&#44284;&#54616;&#47728;, &#54532;&#47196;&#44536;&#47016;&#51008; &#50668;&#51204;&#55176; &#50689;&#44396;&#51201;&#51064; &#44060;&#48156; &#49345;&#53468;&#50640; &#44049;&#55176; &#51080;&#49845;&#45768;&#45796;.
           </p>
         </section>
 
-        <div className="text-center text-sovereign-gold text-2xl my-8">&#9670;</div>
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
 
-        {/* Section 1 */}
+        {/* Section II */}
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-sovereign-gold text-2xl">1</span>
-            <h2 className="text-3xl font-bold">2조 달러 사업</h2>
+            <span className="text-sovereign-gold text-2xl">II</span>
+            <h2 className="text-3xl font-bold">&#51116;&#51221; &#44396;&#51312;: &#46041;&#49884;&#49457; &#49464;&#44552;</h2>
           </div>
 
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">2.1 &#46041;&#49884;&#44060;&#48156;: &#54925;&#46301; &#44284;&#49892;</h3>
+
           <p className="text-lg leading-relaxed mb-6">
-            F-35 프로그램은 세 가지 변형을 포괄합니다: 공군용 <strong>F-35A</strong>(재래식 이착륙), 해병대용 <strong>F-35B</strong>(단거리 이착륙/수직 착륙), 해군용 <strong>F-35C</strong>(항공모함 운용). 이 &ldquo;합동&rdquo; 접근법은 효율성을 약속했지만, 현실은 그 약속을 배반했습니다.
+            F-35&#51032; &#50896;&#51396;&#45716; <strong>&#46041;&#49884;&#49457;</strong>(concurrency)&mdash;&#49444;&#44228;&#47484; &#49884;&#54744;&#54616;&#44256; &#44060;&#48156;&#54616;&#45716; &#46041;&#49884;&#50640; &#54637;&#44277;&#44592;&#47484; &#45824;&#44508;&#47784;&#47196; &#49373;&#49328;&#54616;&#44592;&#47196; &#54620; &#44208;&#51221;&#51077;&#45768;&#45796;. &#45817;&#49884; &#44397;&#48169;&#48512; &#54925;&#46301; &#52264;&#44288; &#54532;&#47021;&#53356; &#52992;&#45804;&#51008; &#51060;&#47484; &#45796;&#51020;&#44284; &#44057;&#51060; &#49444;&#47749;&#54664;&#49845;&#45768;&#45796;:
+          </p>
+
+          <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
+            &ldquo;&#54925;&#46301; &#44284;&#49892;&hellip; &#45796;&#49884;&#45716; &#48152;&#48373;&#46104;&#50612;&#49436;&#45716; &#50504; &#46121;&#45768;&#45796;.&rdquo;
+          </blockquote>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#44536;&#47084;&#45208; &#51060; &#44284;&#49892;&#51032; &#44208;&#44284;&#45716; &#47588;&#51068; &#48373;&#47532;&#47196; &#49939;&#51060;&#44256; &#51080;&#49845;&#45768;&#45796;. <strong className="text-sovereign-gold">600&#45824; &#51060;&#49345;</strong>&#51032; &#54637;&#44277;&#44592;&#44032; &#52488;&#44592; &#51089;&#51204; &#49884;&#54744;&#54217;&#44032;(IOT&amp;E) &#50756;&#47308; &#51204;&#50640; &#49373;&#49328;&#46104;&#50632;&#49845;&#45768;&#45796;. &#51060; &#54637;&#44277;&#44592;&#46308;&#51008; &#51060;&#51228; &#48708;&#50857;&#51060; &#47566;&#51060; &#46300;&#45716; &#44060;&#51312;&#44032; &#54596;&#50836;&#54616;&#47728;, &#52628;&#51221; &#48708;&#50857;&#51008; <strong className="text-korean-red">14&#50613;~17&#50613; &#45804;&#47084;</strong>&#50640; &#45804;&#54633;&#45768;&#45796;&mdash;&#49352;&#47196;&#50868; &#45733;&#47141;&#51012; &#44396;&#52629;&#54616;&#45716; &#44163;&#51060; &#50500;&#45768;&#46972;, &#50528;&#52488;&#50640; &#45225;&#54408;&#46108; &#49345;&#53468;&#47196; &#44148;&#51312;&#46104;&#51648; &#47568;&#50520;&#50612;&#50556; &#54624; &#54637;&#44277;&#44592;&#47484; &#49688;&#47532;&#54616;&#45716; &#45936; &#49324;&#50857;&#46104;&#45716; &#46024;&#51077;&#45768;&#45796;.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
-            글로벌 공급망은 수십 개 국가에 걸쳐 있으며, 단일 부품의 지연이 전체 생산라인을 중단시킬 수 있는 구조입니다. 지금까지 1,000대 이상이 인도되었지만, 프로그램은 여전히 &ldquo;영구적 개발&rdquo; 상태에 있습니다.
+            &#52509; &#54925;&#46301; &#48708;&#50857;&#51008; &#52488;&#44592; &#52628;&#51221;&#52824; 3,957&#50613; &#45804;&#47084;&#50640;&#49436; <strong className="text-korean-red">4,852&#50613; &#45804;&#47084;</strong>&#47196; &#54253;&#46321;&#54664;&#49845;&#45768;&#45796;.
           </p>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">2.2 &#50976;&#51648;&#48708;&#50857; &#54253;&#48156;</h3>
 
           <p className="text-lg leading-relaxed mb-6">
-            <strong className="text-korean-red">임무 수행 가능률은 55%</strong>에 불과합니다. 즉, 역사상 가장 비싼 전투기의 거의 절반이 어떤 시점에서든 비행할 수 없는 상태입니다. 이것은 단순한 유지보수 문제가 아니라 &mdash; 체계적 설계 결함입니다.
-          </p>
-        </section>
-
-        <div className="text-center text-sovereign-gold text-2xl my-8">&#9670;</div>
-
-        {/* Section 2 */}
-        <section className="mb-12">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="text-sovereign-gold text-2xl">2</span>
-            <h2 className="text-3xl font-bold">재정 구조: 동시성 세금</h2>
-          </div>
-
-          <p className="text-lg leading-relaxed mb-6">
-            &ldquo;동시개발&rdquo;은 F-35 프로그램의 핵심 <strong className="text-korean-red">&ldquo;획득 과실&rdquo;</strong>입니다. 국방부는 시험이 완료되기 전에 양산을 승인했고, 그 결과 600대 이상의 항공기가 초기 작전 시험평가(IOT&amp;E) 완료 전에 인도되었습니다. 이 항공기들은 이제 <strong className="text-sovereign-gold">14억~17억 달러</strong>의 비용을 들여 개수해야 합니다.
+            &#54925;&#46301;&#51060; &#49345;&#52376;&#46972;&#47732;, &#50976;&#51648;&#48708;&#50857;&#51008; &#52636;&#54792;&#51077;&#45768;&#45796;. GAO&#51032; 2024&#45380; &#54217;&#44032;&#50640; &#46384;&#47476;&#47732; &#52509; &#49688;&#47749;&#51452;&#44592; &#50976;&#51648;&#48708;&#50857;&#51008; <strong className="text-korean-red">5&#45380; &#47564;&#50640; 44% &#51613;&#44032;</strong>&#54664;&#49845;&#45768;&#45796;. &#48708;&#54665;&#49884;&#44036;&#45817; &#48708;&#50857;&#51060; &#44536; &#51060;&#50556;&#44592;&#47484; &#44036;&#44208;&#55176; &#47568;&#54644;&#51469;&#45768;&#45796;:
           </p>
 
-          <div className="not-prose bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-8">
-            <h3 className="text-lg font-bold text-sovereign-gold mb-4">비용 비교: 시간당 비행 비용</h3>
-            <div className="grid grid-cols-2 gap-4">
+          <div className="not-prose bg-muted/30 border border-sovereign-gold/20 rounded-lg p-6 mb-8">
+            <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <p className="text-2xl font-bold text-korean-red">$42,000</p>
-                <p className="text-sm text-muted-foreground">F-35A 시간당 비행 비용</p>
-              </div>
-              <div className="text-center">
-                <p className="text-2xl font-bold text-river-current dark:text-river-mid">$26,000</p>
-                <p className="text-sm text-muted-foreground">F-16 시간당 비행 비용</p>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-lg leading-relaxed mb-6">
-            프로그램 비용은 초기 추정치 <strong>3,957억 달러</strong>에서 <strong className="text-sovereign-gold">4,852억 달러</strong>로 증가했습니다. 미 회계감사원(GAO)은 총 수명주기 비용을 <strong className="text-korean-red">2조 630억 달러</strong>로 산정했습니다 &mdash; 이는 대부분의 국가 GDP를 초과하는 금액입니다.
-          </p>
-        </section>
-
-        <div className="text-center text-sovereign-gold text-2xl my-8">&#9670;</div>
-
-        {/* Section 3 */}
-        <section className="mb-12">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="text-sovereign-gold text-2xl">3</span>
-            <h2 className="text-3xl font-bold">작전 현실: 절반의 시간도 비행하지 못하는 함대</h2>
-          </div>
-
-          <div className="not-prose bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 mb-8">
-            <h3 className="text-lg font-bold text-korean-red mb-4">준비태세 지표</h3>
-            <div className="space-y-3">
-              <div className="flex justify-between items-center border-b border-korean-red/20 pb-2">
-                <span className="text-foreground/80">임무 수행 가능률 (2021)</span>
-                <span className="font-bold text-sovereign-gold">69%</span>
-              </div>
-              <div className="flex justify-between items-center border-b border-korean-red/20 pb-2">
-                <span className="text-foreground/80">임무 수행 가능률 (2024)</span>
-                <span className="font-bold text-korean-red">51.5%</span>
-              </div>
-              <div className="flex justify-between items-center border-b border-korean-red/20 pb-2">
-                <span className="text-foreground/80">완전 임무 수행 가능률</span>
-                <span className="font-bold text-korean-red">~30%</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-foreground/80">목표 달성 연속 미달</span>
-                <span className="font-bold text-korean-red">6년 연속</span>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-lg leading-relaxed mb-6">
-            가동률 추세는 악화되고 있습니다. 2021년 69%에서 2024년 <strong className="text-korean-red">51.5%</strong>로 하락했습니다. 완전 임무 수행 가능률 &mdash; 모든 센서와 무장이 작동하는 상태 &mdash; 은 약 <strong>30%</strong>에 불과합니다. 의회가 설정한 목표를 <strong className="text-korean-red">6년 연속 달성하지 못했습니다.</strong>
-          </p>
-
-          <p className="text-lg leading-relaxed mb-6">
-            이는 단순한 수치가 아닙니다. 실전에서 이 수치는 전투기 함대의 절반이 비행할 수 없고, 비행 가능한 항공기의 3분의 1만이 설계된 모든 임무를 수행할 수 있다는 것을 의미합니다.
-          </p>
-        </section>
-
-        <div className="text-center text-sovereign-gold text-2xl my-8">&#9670;</div>
-
-        {/* Section 4 */}
-        <section className="mb-12">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="text-sovereign-gold text-2xl">4</span>
-            <h2 className="text-3xl font-bold">작전 사고: 바다가 또 한 대를 삼키다</h2>
-          </div>
-
-          <p className="text-lg leading-relaxed mb-6">
-            F-35의 운용 취약성을 극적으로 보여주는 사례가 있습니다. 남중국해에서 발생한 <strong className="text-korean-red">F-35C 추락 사고</strong>는 <strong className="text-sovereign-gold">1억 달러</strong> 이상의 자산이 수심 <strong>12,400피트(약 3,780미터)</strong>에 가라앉는 결과를 낳았습니다.
-          </p>
-
-          <p className="text-lg leading-relaxed mb-6">
-            회수 작전에 <strong className="text-sovereign-gold">37일</strong>이 소요되었습니다. 이 기간 동안 극비 기술이 세계에서 가장 분쟁이 심한 해역의 해저에 노출되어 있었습니다. 중국 해군이 잔해에 접근을 시도했다는 보고도 있었습니다.
-          </p>
-
-          <p className="text-lg leading-relaxed mb-6">
-            이 사건은 F-35의 세 가지 근본적 문제를 드러냅니다: 극한 환경에서의 운용 위험, 기밀 기술의 노출 가능성, 그리고 단일 사고의 천문학적 비용.
-          </p>
-        </section>
-
-        <div className="text-center text-sovereign-gold text-2xl my-8">&#9670;</div>
-
-        {/* Section 5 */}
-        <section className="mb-12">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="text-sovereign-gold text-2xl">5</span>
-            <h2 className="text-3xl font-bold">공급망 취약성</h2>
-          </div>
-
-          <p className="text-lg leading-relaxed mb-6">
-            F-35 한 대에는 약 <strong className="text-sovereign-gold">400kg의 희토류</strong>가 사용됩니다. 이 희토류의 공급은 전략적 경쟁 상대국인 중국에 치명적으로 의존하고 있습니다.
-          </p>
-
-          <div className="not-prose bg-river-current/10 border border-river-current/30 rounded-lg p-6 mb-8">
-            <h3 className="text-lg font-bold text-river-current dark:text-river-mid mb-4">중국의 희토류 독점 현황</h3>
-            <div className="space-y-3">
-              <div className="flex justify-between items-center border-b border-river-current/20 pb-2">
-                <span className="text-foreground/80">희토류 채굴</span>
-                <span className="font-bold text-sovereign-gold">70%</span>
-              </div>
-              <div className="flex justify-between items-center border-b border-river-current/20 pb-2">
-                <span className="text-foreground/80">희토류 가공</span>
-                <span className="font-bold text-korean-red">90%</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-foreground/80">특정 핵심 원소 가공</span>
-                <span className="font-bold text-korean-red">100%</span>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-lg leading-relaxed mb-6">
-            2022년부터 2024년 사이, 공급망 중단이 반복적으로 발생했습니다. 엔진 부품 부족, 소프트웨어 업그레이드 지연, 희토류 수급 불안정이 생산과 유지보수를 동시에 마비시켰습니다. 가장 첨단의 전투기가 가장 취약한 공급망에 의존하고 있다는 역설은 전략적 차원의 위험입니다.
-          </p>
-        </section>
-
-        <div className="text-center text-sovereign-gold text-2xl my-8">&#9670;</div>
-
-        {/* Section 6 */}
-        <section className="mb-12">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="text-sovereign-gold text-2xl">6</span>
-            <h2 className="text-3xl font-bold">변화하는 세계 군사 균형</h2>
-          </div>
-
-          <p className="text-lg leading-relaxed mb-6">
-            중국의 <strong className="text-sovereign-gold">J-20</strong> 스텔스 전투기는 이미 <strong>300대 이상</strong> 운용 중이며, 이는 세계 최대의 5세대 전투기 함대 중 하나입니다. 그러나 진정한 전환점은 6세대 전투기의 등장입니다.
-          </p>
-
-          <div className="not-prose bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-8">
-            <h3 className="text-lg font-bold text-sovereign-gold mb-4">6세대 전투기 개발 일정</h3>
-            <div className="space-y-3">
-              <div className="flex justify-between items-center border-b border-sovereign-gold/20 pb-2">
-                <span className="text-foreground/80">중국 J-36 / J-50 공개</span>
-                <span className="font-bold text-korean-red">2024년 12월</span>
-              </div>
-              <div className="flex justify-between items-center border-b border-sovereign-gold/20 pb-2">
-                <span className="text-foreground/80">J-36 시제기 3대 확인</span>
-                <span className="font-bold text-korean-red">2025년 12월</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-foreground/80">미국 F-47 예상 취역</span>
-                <span className="font-bold text-river-current dark:text-river-mid">2028년</span>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-lg leading-relaxed mb-6">
-            2024년 12월, 중국은 <strong className="text-sovereign-gold">J-36</strong>과 <strong className="text-sovereign-gold">J-50</strong>으로 알려진 두 종의 6세대 전투기를 공개하여 세계를 놀라게 했습니다. 2025년 12월까지 3대의 J-36 시제기가 확인되었습니다. 이에 비해 미국의 차세대 전투기인 <strong>F-47</strong>은 2028년 이전에는 취역하지 못할 전망입니다.
-          </p>
-
-          <p className="text-lg leading-relaxed mb-6">
-            이 격차는 단순한 기술 경쟁 이상의 의미를 갖습니다. 서방이 5세대 전투기의 문제를 해결하는 동안, 중국은 이미 다음 세대로 도약하고 있습니다.
-          </p>
-        </section>
-
-        <div className="text-center text-sovereign-gold text-2xl my-8">&#9670;</div>
-
-        {/* Section 7 */}
-        <section className="mb-12">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="text-sovereign-gold text-2xl">7</span>
-            <h2 className="text-3xl font-bold">생산 역량 비교</h2>
-          </div>
-
-          <div className="not-prose bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 mb-8">
-            <h3 className="text-lg font-bold text-korean-red mb-4">포탄 생산 역량 비교</h3>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="text-center">
-                <p className="text-2xl font-bold text-korean-red">400만~450만 발/년</p>
-                <p className="text-sm text-muted-foreground">러시아 (2025)</p>
+                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">F-35A &#48708;&#54665;&#49884;&#44036;&#45817; &#48708;&#50857;</p>
+                <p className="text-4xl font-bold text-korean-red">$42,000</p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-bold text-river-current dark:text-river-mid">170만~200만 발/년</p>
-                <p className="text-sm text-muted-foreground">NATO 전체 (2025)</p>
+                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">F-16 &#48708;&#54665;&#49884;&#44036;&#45817; &#48708;&#50857;</p>
+                <p className="text-4xl font-bold text-sovereign-gold">$26,000</p>
               </div>
             </div>
+            <p className="text-center text-sm text-muted-foreground mt-4">F-35&#44032; &#45824;&#52404;&#54616;&#46020;&#47197; &#49444;&#44228;&#46108; &#54637;&#44277;&#44592;&#51032; &#50868;&#50689;&#48708;&#44032; 60% &#45230;&#49845;&#45768;&#45796;.</p>
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
-            러시아는 연간 <strong className="text-korean-red">400만~450만 발</strong>의 포탄을 생산하고 있으며, 이는 NATO 전체의 <strong>170만~200만 발</strong>을 2배 이상 초과합니다. 이 격차는 고강도 분쟁에서 소모전의 결과를 결정하는 핵심 변수입니다.
-          </p>
-
-          <p className="text-lg leading-relaxed mb-6">
-            해양 영역에서 비대칭은 더욱 극적입니다. 중국의 조선 역량은 미국의 <strong className="text-sovereign-gold">232배</strong>에 달합니다. 중국은 동시에 <strong className="text-sovereign-gold">7~8척의 Type 093B 핵잠수함</strong>을 건조하면서, 세계 최대의 해군 함대를 더욱 확장하고 있습니다.
-          </p>
-
-          <p className="text-lg leading-relaxed mb-6">
-            이러한 생산 역량의 비대칭은 억지력의 근본을 흔들고 있습니다. 전쟁은 무기의 품질만으로 결정되지 않습니다 &mdash; <strong className="text-sovereign-gold">생산 역량이 곧 억지력입니다.</strong>
+            GAO&#45716; &#52509; &#49688;&#47749;&#51452;&#44592; &#48708;&#50857;&#51012; <strong className="text-sovereign-gold">2&#51312; 630&#50613; &#45804;&#47084;</strong>&#47196; &#49328;&#51221;&#54664;&#49845;&#45768;&#45796;. &#44277;&#44400;&#51008; &#50896;&#47000; &#50976;&#51648;&#48708;&#50857; &#47785;&#54364;&#47484; &#50672;&#44036; &#44592;&#52404;&#45817; <strong>410&#47564; &#45804;&#47084;</strong>&#47196; &#49444;&#51221;&#54664;&#51004;&#45208;, &#51060;&#44163;&#51060; &#48520;&#44032;&#45733;&#54616;&#51088; <strong className="text-korean-red">680&#47564; &#45804;&#47084;</strong>&#47196; &#47785;&#54364;&#47484; &#49345;&#54693;&#54664;&#49845;&#45768;&#45796;&mdash;66% &#51613;&#44032;&#51077;&#45768;&#45796;. &#51060;&#44163;&#51008; &#44288;&#47532;&#44032; &#50500;&#45768;&#46972; &#54637;&#48373;&#51077;&#45768;&#45796;.
           </p>
         </section>
 
-        <div className="text-center text-sovereign-gold text-2xl my-8">&#9670;</div>
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
 
-        {/* Section 8 */}
+        {/* Section III */}
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-sovereign-gold text-2xl">8</span>
-            <h2 className="text-3xl font-bold">워게임 시사점</h2>
+            <span className="text-sovereign-gold text-2xl">III</span>
+            <h2 className="text-3xl font-bold">&#51089;&#51204; &#54788;&#49892;: &#51208;&#48152;&#51032; &#49884;&#44036;&#46020; &#48708;&#54665;&#54616;&#51648; &#47803;&#54616;&#45716; &#54632;&#45824;</h2>
+          </div>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">3.1 &#54616;&#46973;&#54616;&#45716; &#51076;&#47924;&#49688;&#54665;&#45733;&#47141;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            F-35 &#54632;&#45824;&#51032; &#51456;&#48708;&#53468;&#49464; &#52628;&#49464;&#45716; &#51221;&#52404;&#44032; &#50500;&#45768;&#46972; &#54616;&#46973;&#54616;&#44256; &#51080;&#49845;&#45768;&#45796;. &#51076;&#47924;&#49688;&#54665;&#45733;&#47141;&#47456;&#51008; <strong>2021&#45380; 69%</strong>&#50640;&#49436; <strong className="text-korean-red">2024&#45380; 51.5%</strong>&#47196; &#54616;&#46973;&#54664;&#51004;&#47728;, &#51060;&#45716; &#54632;&#45824;&#44032; &#49457;&#49689;&#54616;&#44256; &#51456;&#48708;&#53468;&#49464;&#44032; &#44060;&#49440;&#46104;&#50612;&#50556; &#54624; &#49884;&#44592;&#50752; &#51068;&#52824;&#54633;&#45768;&#45796;.
+          </p>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#50756;&#51204;&#51076;&#47924;&#49688;&#54665;&#45733;&#47141;(FMC)&#47456;&mdash;&#47784;&#46304; &#54624;&#45817;&#46108; &#51076;&#47924;&#47484; &#49688;&#54665;&#54624; &#49688; &#51080;&#45716; &#54637;&#44277;&#44592;&#51032; &#48708;&#50984;&mdash;&#51008; &#50557; <strong className="text-korean-red">30%</strong>&#50640; &#47672;&#47932;&#47084; &#51080;&#51004;&#47728;, &#51060;&#45716; 10&#45824; &#51473; 7&#45824;&#44032; &#47588;&#51068; &#50756;&#51204;&#54620; &#51076;&#47924; &#49464;&#53944;&#47484; &#49688;&#54665;&#54624; &#49688; &#50630;&#45796;&#45716; &#44163;&#51012; &#51032;&#48120;&#54633;&#45768;&#45796;. &#54532;&#47196;&#44536;&#47016;&#51008; <strong className="text-korean-red">6&#45380; &#50672;&#49549;</strong> &#51456;&#48708;&#53468;&#49464; &#47785;&#54364;&#47484; &#45804;&#49457;&#54616;&#51648; &#47803;&#54664;&#49845;&#45768;&#45796;.
+          </p>
+
+          <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4 mb-8">
+            <h4 className="font-bold text-korean-red mb-2">&#51456;&#48708;&#53468;&#49464;&#51032; &#50669;&#49444;</h4>
+            <p className="text-foreground/90">&#45908; &#47566;&#51008; &#54637;&#44277;&#44592;&#44032; &#45225;&#54408;&#46112;&#49688;&#47197; &#51456;&#48708;&#53468;&#49464;&#50984;&#51008; &#45908;&#50865; &#54616;&#46973;&#54633;&#45768;&#45796;. &#50976;&#51648;&#48372;&#49688; &#51064;&#54532;&#46972;&mdash;&#50668;&#48516; &#48512;&#54408;, &#51221;&#48708;&#49548; &#50669;&#47049;, &#54984;&#47144;&#46108; &#51221;&#48708;&#49324;&mdash;&#44032; &#54632;&#45824;&#50752; &#54632;&#44760; &#54869;&#51109;&#46104;&#51648; &#50506;&#50520;&#49845;&#45768;&#45796;. &#49352;&#47196;&#50868; &#54637;&#44277;&#44592; &#54620; &#45824;&#44032; &#52628;&#44032;&#46112; &#46412;&#47560;&#45796; &#51060;&#48120; &#50669;&#47049;&#51012; &#52488;&#44284;&#54620; &#44277;&#44553;&#47581;&#50640; &#49688;&#50836;&#44032; &#45908;&#54644;&#51665;&#45768;&#45796;.</p>
+          </div>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">3.2 &#48660;&#47197; 4 &#54788;&#45824;&#54868; &#50948;&#44592;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#48660;&#47197; 4 &#54788;&#45824;&#54868; &#45432;&#47141;&mdash;&#54532;&#47196;&#44536;&#47016;&#51060; &#51032;&#54924;&#50752; &#46041;&#47609;&#44397;&#50640; &#54032;&#47588;&#46112; &#46412; &#50557;&#49549;&#46108; &#45733;&#47141;&#51012; &#51228;&#44277;&#54616;&#44592; &#50948;&#54620;&mdash;&#51008; &#44536; &#51088;&#52404;&#47196; &#50948;&#44592;&#44032; &#46104;&#50632;&#49845;&#45768;&#45796;. &#54532;&#47196;&#44536;&#47016;&#51008; &#54788;&#51116; <strong className="text-korean-red">60&#50613; &#45804;&#47084; &#51060;&#49345;&#51032; &#50696;&#49328; &#52488;&#44284;</strong>&#50752; <strong className="text-korean-red">5&#45380; &#51060;&#49345;&#51032; &#51068;&#51221; &#51648;&#50672;</strong> &#49345;&#53468;&#51077;&#45768;&#45796;.
+          </p>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#44592;&#49696; &#49352;&#47196;&#44256;&#52840; 3(TR-3) &#54616;&#46300;&#50920;&#50612; &#48143; &#49548;&#54532;&#53944;&#50920;&#50612; &#50629;&#44536;&#47112;&#51060;&#46300;&#45716; &#47197;&#55176;&#46300; &#47560;&#54004;&#51060; &#49352;&#47196;&#50868; &#49884;&#49828;&#53596;&#51012; &#53685;&#54633;&#54616;&#45716; &#45936; &#50612;&#47140;&#50880;&#51012; &#44202;&#51004;&#47732;&#49436; <strong>1&#45380;&#44036;&#51032; &#49373;&#49328; &#51473;&#45800;</strong>&#51012; &#52488;&#47000;&#54664;&#49845;&#45768;&#45796;. &#54637;&#44277;&#44592;&#45716; &#44228;&#49549; &#49373;&#49328;&#46104;&#50632;&#51648;&#47564; &#45225;&#54408;&#46112; &#49688; &#50630;&#50612;, &#52285;&#44256;&#50640; &#48372;&#44288;&#46104;&#47728; &#50976;&#51648;&#48372;&#49688; &#48708;&#50857;&#47564; &#52629;&#51201;&#46104;&#50632;&#49845;&#45768;&#45796;.
+          </p>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#54217;&#44512; &#45225;&#54408; &#51648;&#50672;&#51008; <strong className="text-korean-red">238&#51068;</strong>&#50640; &#45804;&#54664;&#49845;&#45768;&#45796;. F-35&#50640; &#48169;&#44277; &#51204;&#47029;&#51012; &#44148; &#46041;&#47609;&#44397;&#46308;&#50640;&#44172; &#51060;&#47084;&#54620; &#51648;&#50672;&#51008; &#54665;&#51221;&#51201; &#48520;&#54200;&#51060; &#50500;&#45768;&#46972; &#51204;&#47029;&#51201; &#52712;&#50557;&#51216;&#51077;&#45768;&#45796;.
+          </p>
+        </section>
+
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
+
+        {/* Section IV */}
+        <section className="mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-sovereign-gold text-2xl">IV</span>
+            <h2 className="text-3xl font-bold">&#51089;&#51204; &#49324;&#44256;: &#48148;&#45796;&#44032; &#46608; &#54620; &#45824;&#47484; &#49340;&#53412;&#45796;</h2>
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
-            전략국제문제연구소(CSIS)는 대만 해협 시나리오에 대해 <strong className="text-sovereign-gold">24차례의 워게임</strong>을 실시했습니다. 결과는 일관되게 충격적이었습니다.
+            2022&#45380; 1&#50900; 24&#51068;, &#54637;&#44277;&#47784;&#54632; USS &#52860; &#48712;&#49832;&#50640;&#49436; &#52265;&#47449; &#51089;&#51204; &#51473; F-35C &#46972;&#51060;&#53944;&#45789; II&#44032; &#45224;&#51473;&#44397;&#54644;&#50640; &#52628;&#46973;&#54664;&#49845;&#45768;&#45796;. &#48120;&#44400; &#47924;&#44592;&#44256; &#51473; &#44032;&#51109; &#44592;&#48128;&#49828;&#47084;&#50868; &#44592;&#49696;&#51012; &#53456;&#51116;&#54620; <strong className="text-sovereign-gold">1&#50613; &#45804;&#47084;</strong>&#51676;&#47532; &#54637;&#44277;&#44592;&#44032; &#50557; <strong>12,400&#54588;&#53944;</strong>(3,780&#48120;&#53552;) &#44618;&#51060;&#47196; &#52840;&#47792;&#54664;&#49845;&#45768;&#45796;.
+          </p>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#51060;&#50612;&#51652; &#44163;&#51008; &#49884;&#44036;&#44284;&#51032;&mdash;&#44536;&#47532;&#44256; &#51473;&#44397;&#44284;&#51032;&mdash;37&#51068;&#44036;&#51032; &#51064;&#50577; &#44221;&#51137;&#51060;&#50632;&#49845;&#45768;&#45796;. &#51221;&#48372; &#52712;&#50557;&#49457;&#51008; &#49900;&#44033;&#54664;&#49845;&#45768;&#45796;: &#54637;&#44277;&#44592;&#51032; &#49828;&#53588;&#49828; &#53076;&#54021;, &#49468;&#49436; &#50997;&#54633; &#50500;&#53412;&#53581;&#52376;, &#51204;&#51088;&#51204; &#49884;&#49828;&#53596;&#51060; &#51473;&#44397; &#54644;&#44400; &#54632;&#51221;&#51060; &#51068;&#49345;&#51201;&#51004;&#47196; &#50868;&#54637;&#54616;&#45716; &#54644;&#50669;&#51032; &#54644;&#51200;&#50640; &#45459;&#50668; &#51080;&#50632;&#49845;&#45768;&#45796;. &#48120;&#44397; &#54644;&#44400;&#51008; &#50669;&#49324;&#49345; &#44032;&#51109; &#44618;&#51008; &#54637;&#44277;&#44592; &#51064;&#50577; &#51089;&#51204; &#51473; &#54616;&#45208;&#47484; &#49688;&#54665;&#54664;&#49845;&#45768;&#45796;.
+          </p>
+
+          <div className="bg-muted/30 border-l-4 border-river-current pl-6 py-4 mb-8">
+            <h4 className="font-bold text-river-current dark:text-river-mid mb-2">&#51221;&#48372; &#49884;&#49324;&#51216;</h4>
+            <p className="text-foreground/90">&#51060; &#49324;&#44148;&#51008; &#48516;&#51137; &#49688;&#50669;&#50640; &#49828;&#53588;&#49828; &#54637;&#44277;&#44592;&#47484; &#51204;&#48169;&#48176;&#52824;&#54616;&#45716; &#44163;&#51032; &#44540;&#48376;&#51201; &#44596;&#51109;&#51012; &#45432;&#52636;&#54664;&#49845;&#45768;&#45796;. &#45224;&#51473;&#44397;&#54644; &#49345;&#44277;&#50640;&#49436; &#50868;&#50857;&#46104;&#45716; &#47784;&#46304; F-35&#45716; &#52824;&#47749;&#51201;&#51064; &#51221;&#48372; &#50976;&#52636;&#51032; &#44032;&#45733;&#49457;&#51012; &#45236;&#54252;&#54616;&#44256; &#51080;&#49845;&#45768;&#45796;. &#54637;&#44277;&#44592;&#51032; &#51221;&#52272; &#54540;&#47019;&#54268;&#51004;&#47196;&#49436;&#51032; &#44032;&#52824;&#45716; &#51221;&#48372; &#54364;&#51201;&#51004;&#47196;&#49436;&#51032; &#52712;&#50557;&#49457;&#44284; &#48516;&#47532;&#54624; &#49688; &#50630;&#49845;&#45768;&#45796;.</p>
+          </div>
+        </section>
+
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
+
+        {/* Section V */}
+        <section className="mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-sovereign-gold text-2xl">V</span>
+            <h2 className="text-3xl font-bold">&#44277;&#44553;&#47581; &#52712;&#50557;&#49457;: &#51201;&#44397;&#50640; &#51032;&#51316;&#54616;&#45716; &#44396;&#51312;</h2>
+          </div>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">5.1 &#55148;&#53664;&#47448; &#51032;&#51316;&#49457;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#44033; F-35&#50640;&#45716; &#50557; <strong className="text-sovereign-gold">400kg&#51032; &#55148;&#53664;&#47448; &#50896;&#49548;</strong>&#44032; &#54596;&#50836;&#54633;&#45768;&#45796;&mdash;&#54637;&#44277;&#44592;&#51032; &#50689;&#44396;&#51088;&#49437;, &#50976;&#46020; &#49884;&#49828;&#53596;, &#52392;&#45800; &#51204;&#51088;&#51109;&#52824;&#50640; &#54596;&#49688;&#51201;&#51064; &#51116;&#47308;&#51077;&#45768;&#45796;. &#51060;&#47084;&#54620; &#51116;&#47308;&#51032; &#44277;&#44553;&#47581;&#51008; &#52280;&#45812;&#54620; &#50500;&#51060;&#47084;&#45768;&#47196;, F-35&#44032; &#50613;&#51228;&#54616;&#46020;&#47197; &#49444;&#44228;&#46108; &#44397;&#44032;&#47196; &#51649;&#51217; &#51060;&#50612;&#51665;&#45768;&#45796;.
           </p>
 
           <div className="space-y-4 mb-8">
             <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4">
-              <h4 className="font-bold text-korean-red mb-2">1주 차: 탄약 고갈</h4>
-              <p className="text-foreground/90">미군의 장거리 정밀 유도 탄약(JASSM, LRASM 등)은 분쟁 발생 <strong>첫 주</strong>에 고갈됩니다. 이후 미군은 열세한 대안 무기에 의존해야 합니다.</p>
+              <h4 className="font-bold text-korean-red mb-2">&#51473;&#44397;&#51032; &#55148;&#53664;&#47448; &#46021;&#51216;</h4>
+              <p className="text-foreground/90"><strong>70%</strong> &#44544;&#47196;&#48268; &#55148;&#53664;&#47448; &#52292;&#44404;. <strong>90%</strong> &#51060;&#49345;&#51032; &#44544;&#47196;&#48268; &#44032;&#44277; &#45733;&#47141;. <strong>100%</strong> &#46356;&#49828;&#54532;&#47196;&#49816;&mdash;F-35 &#49884;&#49828;&#53596;&#50640; &#49324;&#50857;&#46104;&#45716; &#44256;&#50728; &#50689;&#44396;&#51088;&#49437;&#50640; &#54596;&#49688;&#51201;&#51064; &#50896;&#49548;&mdash;&#50640; &#45824;&#54620; &#50756;&#51204; &#46021;&#51216;.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4">
-              <h4 className="font-bold text-sovereign-gold mb-2">5,000발 이상의 미사일</h4>
-              <p className="text-foreground/90">시뮬레이션에서 양측이 사용한 미사일은 <strong>5,000발</strong>을 초과했습니다. 현재 재고와 생산 능력으로는 이러한 소모를 감당할 수 없습니다.</p>
+              <h4 className="font-bold text-sovereign-gold mb-2">&#49373;&#49328; &#51473;&#45800;</h4>
+              <p className="text-foreground/90">2022&#45380;&#48512;&#53552; 2024&#45380; &#49324;&#51060;, &#55148;&#53664;&#47448; &#44277;&#44553; &#51228;&#50557;&#51060; &#50668;&#47084; &#52264;&#47168;&#51032; &#49373;&#49328; &#51473;&#45800;&#50640; &#44592;&#50668;&#54664;&#49845;&#45768;&#45796;. 2022, 2023, 2024&#45380;&#50640; &#44033;&#44033; &#51473;&#44397;&#49328; &#48512;&#54408;&#51060; &#48156;&#44204;&#46104;&#50632;&#49845;&#45768;&#45796;. &#51473;&#44397;&#51032; &#49688;&#52636; &#53685;&#51228; &#47924;&#44592;&#54868; &#51032;&#51648;&mdash;2010&#45380; &#51068;&#48376;&#44284;&#51032; &#50808;&#44368;&#51201; &#48516;&#51137; &#49884; &#49884;&#50672;&#46104;&#44256; 2023&ndash;2024&#45380; &#49352;&#47196;&#50868; &#44508;&#51221;&#51004;&#47196; &#54869;&#45824;&#46108;&mdash;&#51008; F-35&#51032; &#49373;&#49328;&#47456;&#51060; &#49324;&#49892;&#49345; &#48288;&#51060;&#51669;&#51032; &#49849;&#51064;&#50640; &#45804;&#47140; &#51080;&#51020;&#51012; &#51032;&#48120;&#54633;&#45768;&#45796;.</p>
+            </div>
+          </div>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">5.2 &#45800;&#51068;&#52636;&#52376; &#52712;&#50557;&#49457;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#47084;&#49884;&#50500; S-400 &#48169;&#44277; &#49884;&#49828;&#53596; &#44396;&#47588; &#54980; &#53552;&#53412;&#47484; F-35 &#54532;&#47196;&#44536;&#47016;&#50640;&#49436; &#51228;&#50808;&#54620; &#44163;&#51008; &#44397;&#51228; &#44277;&#44553;&#47581;&#51032; &#52712;&#50557;&#49457;&#51012; &#45432;&#52636;&#54664;&#49845;&#45768;&#45796;. &#53552;&#53412;&#45716; F-35&#50857; 900&#44060; &#51060;&#49345;&#51032; &#48512;&#54408;&#51012; &#51228;&#51312;&#54664;&#51004;&#47728;, &#51228;&#50808; &#48708;&#50857;&#51008; &#52628;&#51221; <strong className="text-korean-red">5&#50613;~6&#50613; &#45804;&#47084;</strong>&#50640; &#45804;&#54664;&#49845;&#45768;&#45796;.
+          </p>
+
+          <p className="text-lg leading-relaxed mb-6">
+            <strong className="text-sovereign-gold">&#54532;&#47019; &amp; &#55072;&#53944;&#45768; F135</strong>&#45716; &#47784;&#46304; F-35 &#48320;&#54805;&#51032; &#50976;&#51068;&#54620; &#50644;&#51652;&#51004;&#47196; &#45224;&#50500; &#51080;&#49845;&#45768;&#45796;. &#51060; &#45800;&#51068;&#52636;&#52376; &#51032;&#51316;&#49457;&#51008; &#54532;&#47019; &amp; &#55072;&#53944;&#45768;&#51032; &#49373;&#49328; &#46608;&#45716; &#50976;&#51648;&#48372;&#49688; &#50669;&#47049;&#50640; &#45824;&#54620; &#50612;&#46496;&#54620; &#51473;&#45800;&#51060;&#46304; &#51204; &#49464;&#44228; F-35 &#54632;&#45824; &#51204;&#52404;&#50640; &#50689;&#54693;&#51012; &#48120;&#52828;&#45796;&#45716; &#44163;&#51012; &#51032;&#48120;&#54633;&#45768;&#45796;. &#45824;&#50504;&#51060; &#50630;&#49845;&#45768;&#45796;. &#48177;&#50629;&#51060; &#50630;&#49845;&#45768;&#45796;.
+          </p>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#48512;&#54408; &#48512;&#51313;&#51008; &#50948;&#44592; &#49688;&#51456;&#50640; &#46020;&#45804;&#54664;&#49845;&#45768;&#45796;: &#50612;&#45712; &#49884;&#51216;&#50640;&#49436;&#46304; <strong className="text-korean-red">4,000&#44060; &#51060;&#49345;&#51032; &#48512;&#54408;&#51060; &#48512;&#51313;</strong>&#54616;&#47728;, &#49688;&#47532; &#48177;&#47196;&#44536;&#44032; <strong className="text-korean-red">10,000&#44148; &#51060;&#49345;</strong>&#51077;&#45768;&#45796;. &#54637;&#44277;&#44592;&#46308;&#51008; &#51221;&#44592;&#51201;&#51004;&#47196; &#49885;&#51064;&#46121;&#45768;&#45796;&mdash;&#45796;&#47480; &#54637;&#44277;&#44592;&#51032; &#51089;&#46041; &#48512;&#54408;&#51012; &#48988;&#50612;&#49436; &#50868;&#50857;&#54616;&#45716; &#44288;&#54665;&#51004;&#47196;, &#51204;&#52404; &#54632;&#45824;&#51032; &#47560;&#47784;&#47484; &#44032;&#49549;&#54868;&#54633;&#45768;&#45796;.
+          </p>
+        </section>
+
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
+
+        {/* Section VI */}
+        <section className="mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-sovereign-gold text-2xl">VI</span>
+            <h2 className="text-3xl font-bold">&#51340;&#55176;&#45716; &#52285;: &#44221;&#51137;&#44397; &#50669;&#47049;</h2>
+          </div>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">6.1 &#51473;&#44397;&#51032; &#44032;&#49549;&#54868;&#46104;&#45716; &#54637;&#44277;&#47141;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            F-35 &#54532;&#47196;&#44536;&#47016;&#51060; &#51456;&#48708;&#53468;&#49464;&#50752; &#54788;&#45824;&#54868;&#50640; &#50612;&#47140;&#50880;&#51012; &#44202;&#45716; &#46041;&#50504;, &#51473;&#44397;&#51032; &#54637;&#44277;&#49328;&#50629;&#51008; &#45440;&#46972;&#50868; &#44032;&#49549;&#51032; &#49884;&#44592;&#50640; &#51652;&#51077;&#54664;&#49845;&#45768;&#45796;. <strong className="text-sovereign-gold">&#52397;&#46160; J-20</strong> &#54632;&#45824;&#45716; <strong>300&#45824;</strong>&#47484; &#52488;&#44284;&#54664;&#51004;&#47728; &#50672;&#44036; <strong>70&ndash;100&#45824;</strong>&#51032; &#49549;&#46020;&#47196; &#51613;&#44032;&#54616;&#44256; &#51080;&#49845;&#45768;&#45796;&mdash;&#51060;&#48120; F-22 &#47017;&#53552;&#51032; &#52509; &#49373;&#49328;&#47049;(187&#45824;)&#51012; &#52488;&#44284;&#54620; &#49373;&#49328; &#49549;&#46020;&#51077;&#45768;&#45796;.
+          </p>
+
+          <p className="text-lg leading-relaxed mb-6">
+            J-20&#51008; F-35&#51032; &#46041;&#47308;&#44032; &#50500;&#45785;&#45768;&#45796;&mdash;F-22&#51032; &#46041;&#47308;&#47196;, &#49933;&#48156; &#50644;&#51652;, &#52488;&#51020;&#49549; &#49692;&#54637; &#45733;&#47141;, &#44032;&#49884;&#44144;&#47532; &#48150; &#51204;&#53804;&#50857; &#47924;&#51109;&#52285;&#51012; &#44054;&#52632; &#51204;&#50857; &#51228;&#44277;&#44428; &#54540;&#47019;&#54268;&#51077;&#45768;&#45796;. &#51473;&#44397;&#51060; F-22 &#49373;&#49328;&#47049;&#51012; &#50531;&#46020;&#54616;&#45716; &#49549;&#46020;&#47196; J-20&#51012; &#49373;&#49328;&#54616;&#44256; &#51080;&#45796;&#45716; &#49324;&#49892;&#51008; &#49828;&#53588;&#49828; &#54637;&#44277;&#47141; &#44512;&#54805;&#51032; &#44540;&#48376;&#51201; &#48320;&#54868;&#47484; &#45208;&#53440;&#45253;&#45768;&#45796;.
+          </p>
+
+          <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-8">
+            <h4 className="text-xl font-bold mb-3 text-korean-red">&#51473;&#44397;&#51032; 6&#49464;&#45824; &#49440;&#46160;</h4>
+            <p className="text-foreground/90 leading-relaxed mb-3">
+              <strong>2024&#45380; 12&#50900;</strong>, &#51473;&#44397;&#51008; &#49436;&#48169; &#51221;&#48372;&#44592;&#44288;&#51012; &#44221;&#50501;&#49884;&#53412;&#47728; &#46160; &#45824;&#51032; 6&#49464;&#45824; &#49884;&#51228;&#44592;&#47484; &#48708;&#54665;&#49884;&#44192;&#49845;&#45768;&#45796;&mdash;&#51104;&#51221;&#51201;&#51004;&#47196; <strong>J-36</strong>&#44284; <strong>J-50</strong>&#51004;&#47196; &#47749;&#47749;&#46108;&mdash;&#49436;&#48169;&#51032; &#50696;&#49345;&#48372;&#45796; &#49688;&#45380; &#50526;&#49440; &#44163;&#51077;&#45768;&#45796;.
+            </p>
+            <p className="text-foreground/90 leading-relaxed mb-3">
+              <strong>2025&#45380; 12&#50900;</strong>&#44620;&#51648;, &#50948;&#49457; &#50689;&#49345;&#44284; &#44277;&#44060;&#52636;&#52376; &#51221;&#48372;&#44032; <strong>3&#45824;&#51032; J-36 &#44592;&#52404;</strong>&#44032; &#54876;&#48156;&#54620; &#48708;&#54665; &#49884;&#54744; &#51473;&#51076;&#51012; &#54869;&#51064;&#54664;&#49845;&#45768;&#45796;&mdash;&#45800;&#51068; &#49884;&#51228;&#44592; &#45432;&#47141;&#51060; &#50500;&#45772; &#52649;&#48516;&#54620; &#51088;&#44552;&#51060; &#53804;&#51077;&#46108; &#48337;&#47148; &#44060;&#48156; &#54532;&#47196;&#44536;&#47016;&#51012; &#49884;&#49324;&#54616;&#45716; &#49549;&#46020;&#51077;&#45768;&#45796;.
+            </p>
+            <p className="text-foreground/90 leading-relaxed">
+              &#48120;&#44397; &#44277;&#44400;&#51032; &#52264;&#49464;&#45824; &#51204;&#53804;&#44592; <strong>F-47</strong>(&#51060;&#51204; NGAD)&#51008; <strong>2028&#45380; &#51060;&#51204;&#50640;&#45716; &#48708;&#54665;&#54616;&#51648; &#47803;&#54624; &#44163;</strong>&#51004;&#47196; &#50696;&#49345;&#46121;&#45768;&#45796;. &#51204;&#53804; &#54637;&#44277;&#50640;&#49436; &#49436;&#48169;&#51032; &#44592;&#49696;&#51201; &#50864;&#50948;&#51032; &#52285;&#51060; &#44397;&#48169;&#48512;&#44032; &#50696;&#49345;&#54620; &#44163;&#48372;&#45796; &#48744;&#47476;&#44172; &#51340;&#55176;&#44256; &#51080;&#49845;&#45768;&#45796;.
+            </p>
+          </div>
+        </section>
+
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
+
+        {/* Section VII */}
+        <section className="mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-sovereign-gold text-2xl">VII</span>
+            <h2 className="text-3xl font-bold">&#49436;&#48169; &#48169;&#50948;&#49328;&#50629;&#51032; &#49632;&#53748;</h2>
+          </div>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">7.1 300&#50613; &#45804;&#47084;&#51032; &#51648;&#49345;&#52264;&#47049; &#47924;&#45924;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            F-35&#51032; &#47928;&#51228;&#45716; &#44256;&#47549;&#46108; &#44163;&#51060; &#50500;&#45785;&#45768;&#45796;. &#44536;&#44163;&#51008; &#49436;&#48169; &#48169;&#50948; &#54925;&#46301;&#51032; &#45908; &#45331;&#51008; &#44592;&#45733; &#51109;&#50528; &#54056;&#53556;&#51032; &#51613;&#49345;&#51077;&#45768;&#45796;. &#51648;&#49345;&#52264;&#47049; &#48516;&#50556;&#45716; &#49892;&#54056;&#51032; &#52280;&#45812;&#54620; &#47785;&#47197;&#51012; &#51228;&#44277;&#54633;&#45768;&#45796;:
+          </p>
+
+          <div className="space-y-4 mb-8">
+            <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4">
+              <h4 className="font-bold text-korean-red mb-2">&#48120;&#47000;&#51204;&#53804;&#49884;&#49828;&#53596;(FCS) &mdash; 180&#50613;~200&#50613; &#45804;&#47084;</h4>
+              <p className="text-foreground/90">&#50977;&#44400;&#51032; &#44592;&#54632; &#54788;&#45824;&#54868; &#54532;&#47196;&#44536;&#47016;&#51004;&#47196;, &#44144;&#51032; 20&#45380;&#51032; &#51228;&#46020;&#51201; &#50640;&#45320;&#51648;&#47484; &#49548;&#48708;&#54616;&#44256; &#50612;&#46496;&#54620; &#51204;&#47141;&#54868;&#46108; &#45733;&#47141;&#46020; &#49373;&#49328;&#54616;&#51648; &#47803;&#54620; &#52292; 2009&#45380;&#50640; &#52712;&#49548;&#46104;&#50632;&#49845;&#45768;&#45796;.</p>
             </div>
 
-            <div className="bg-muted/30 border-l-4 border-river-current pl-6 py-4">
-              <h4 className="font-bold text-river-current dark:text-river-mid mb-2">8.4년의 보충 기간</h4>
-              <p className="text-foreground/90">소모된 탄약을 현재 생산 속도로 보충하려면 <strong>8.4년</strong>이 필요합니다. 이는 단일 전역 후 미군이 수년간 전투 능력이 크게 저하됨을 의미합니다.</p>
+            <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4">
+              <h4 className="font-bold text-korean-red mb-2">RAH-66 &#53076;&#47564;&#52824; &mdash; 69&#50613; &#45804;&#47084;</h4>
+              <p className="text-foreground/90">&#50977;&#44400;&#51032; &#49828;&#53588;&#49828; &#51221;&#52272; &#54764;&#47532;&#53093;&#53552;&#47196;, 22&#45380;&#51032; &#44060;&#48156; &#54980; 2004&#45380;&#50640; &#52712;&#49548;&#46104;&#50632;&#49845;&#45768;&#45796;. &#49884;&#51228;&#44592; 2&#45824;&#47564; &#51228;&#51089;&#46104;&#50632;&#49845;&#45768;&#45796;.</p>
+            </div>
+
+            <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4">
+              <h4 className="font-bold text-korean-red mb-2">XM2001 &#53356;&#47336;&#49464;&#51060;&#45908; &mdash; 20&#50613; &#45804;&#47084;</h4>
+              <p className="text-foreground/90">&#49888;&#49549;&#48176;&#52824;&#50640;&#45716; &#45320;&#47924; &#47924;&#44144;&#50892; &#51088;&#51452;&#54252; &#54253;&#53444;&#54252;&#47196;, 2002&#45380;&#50640; &#52712;&#49548;&#46104;&#50632;&#49845;&#45768;&#45796;&mdash;&#50528;&#52488;&#50640; &#54644;&#44208;&#54616;&#47140;&#45912; &#47928;&#51228; &#44536; &#51088;&#52404;&#50640; &#51032;&#54644; &#49892;&#54056;&#54664;&#49845;&#45768;&#45796;.</p>
+            </div>
+
+            <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4">
+              <h4 className="font-bold text-korean-red mb-2">&#51648;&#49345;&#51204;&#53804;&#52264;&#47049;(GCV) &mdash; 10&#50613; &#45804;&#47084;</h4>
+              <p className="text-foreground/90">&#48652;&#47000;&#46308;&#47532; &#45824;&#52404; &#52264;&#47049;&#51004;&#47196;, 2014&#45380;&#50640; &#52712;&#49548;&#46104;&#50632;&#49845;&#45768;&#45796;. &#50977;&#44400;&#51008; &#50668;&#51204;&#55176; 1970&#45380;&#45824;&#50640; &#49444;&#44228;&#46108; &#50629;&#44536;&#47112;&#51060;&#46300; &#48652;&#47000;&#46308;&#47532;&#47484; &#50868;&#50857;&#54616;&#44256; &#51080;&#49845;&#45768;&#45796;.</p>
             </div>
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
-            이러한 워게임 결과는 F-35 프로그램의 근본적 모순을 드러냅니다: 소수의 고가 플랫폼에 의존하는 전략은 고강도 소모전 시대에 <strong className="text-korean-red">지속 불가능</strong>합니다.
+            &#51060;&#47084;&#54620; &#52712;&#49548;&#46108; &#54532;&#47196;&#44536;&#47016;&#46308;&#51012; &#54633;&#52824;&#47732; <strong className="text-korean-red">1,000&#50613; &#45804;&#47084;</strong> &#51060;&#49345;&#51032; &#47588;&#47792;&#48708;&#50857;&#51060; &#50612;&#46496;&#54620; &#51089;&#51204; &#45733;&#47141;&#46020; &#49373;&#49328;&#54616;&#51648; &#47803;&#54664;&#49845;&#45768;&#45796;&mdash;&#49373;&#49328;&#46972;&#51064;&#50640; &#53804;&#51088;&#54616;&#44144;&#45208;, &#53444;&#50557;&#51012; &#48708;&#52629;&#54616;&#44144;&#45208;, &#49328;&#50629;&#51201; &#44553;&#51613; &#50669;&#47049;&#51012; &#44396;&#52629;&#54624; &#49688; &#51080;&#50632;&#45912; &#46024;&#51077;&#45768;&#45796;.
+          </p>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">7.2 &#54644;&#44400; &#51312;&#45804; &#44592;&#45733; &#51109;&#50528;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#54644;&#44400; &#50689;&#50669;&#46020; &#47560;&#52268;&#44032;&#51648;&#47196; &#44221;&#44033;&#49828;&#47084;&#50868; &#49324;&#47168;&#47484; &#51228;&#44277;&#54633;&#45768;&#45796;. <strong className="text-sovereign-gold">&#51564;&#50940;&#53944;&#44553; &#44396;&#52629;&#54632;</strong>&#51008; &#50896;&#47000; 32&#52377;&#51004;&#47196; &#44228;&#54925;&#46104;&#50632;&#51004;&#45208; 3&#52377;&#51004;&#47196; &#52629;&#49548;&#46104;&#50632;&#49845;&#45768;&#45796;. &#45824;&#45817; &#48708;&#50857;&#51060; &#54253;&#51613;&#54616;&#50668; &#54645;&#49900; &#47924;&#44592; &#49884;&#49828;&#53596;&#51064; &#52392;&#45800;&#54252;&#48337; &#49884;&#49828;&#53596;&#51032; &#54252;&#53444; &#54620; &#48156;&#45817; &#48708;&#50857;&#51060; <strong className="text-korean-red">80&#47564;~100&#47564; &#45804;&#47084;</strong>&#50640; &#45804;&#54644; &#47924;&#50857;&#51648;&#47932;&#51060; &#46104;&#50632;&#49845;&#45768;&#45796;. &#54644;&#44400;&#51008; &#54252;&#47484; &#49468; &#50668;&#50976;&#44032; &#50630;&#45716; &#44400;&#54632;&#51012; &#44148;&#51312;&#54620; &#44163;&#51077;&#45768;&#45796;.
+          </p>
+
+          <p className="text-lg leading-relaxed mb-6">
+            <strong>&#50672;&#50504;&#51204;&#53804;&#54632;(LCS)</strong> &#54532;&#47196;&#44536;&#47016;&#51008; &#45908;&#50865; &#49900;&#44033;&#54664;&#49845;&#45768;&#45796;. &#50672;&#50504; &#51089;&#51204;&#50857;&#51004;&#47196; &#49444;&#44228;&#46108; &#51060; &#54632;&#51221;&#51008; &#44592;&#44228;&#51201; &#44256;&#51109;&#44284; &#51076;&#47924; &#47784;&#46280; &#51648;&#50672;&#50640; &#49884;&#45804;&#47160;&#49845;&#45768;&#45796;. &#50668;&#47084; LCS &#54632;&#51221;&#51060; &#48520;&#44284; <strong className="text-korean-red">5&#45380;&#51032; &#48373;&#47924;</strong> &#54980; &#53748;&#50669;&#54664;&#49845;&#45768;&#45796;&mdash;&#54644;&#44400; &#51204;&#53804;&#54632;&#51032; &#51204;&#54805;&#51201;&#51064; 25&#45380; &#49688;&#47749;&#51032; &#44537;&#55176; &#51068;&#48512;&#51077;&#45768;&#45796;.
+          </p>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">7.3 &#44537;&#52488;&#51020;&#49549; &#44201;&#52264;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#44537;&#52488;&#51020;&#49549; &#47924;&#44592;&mdash;2020&#45380;&#45824;&#50640;&#49436; &#44032;&#51109; &#51204;&#47029;&#51201;&#51004;&#47196; &#51473;&#50836;&#54620; &#50689;&#50669;&mdash;&#50640;&#49436; &#48120;&#44397;&#51008; &#51473;&#44397;&#44284; &#47084;&#49884;&#50500;&#50640; &#50557; <strong className="text-korean-red">6&#45380;</strong> &#46244;&#52376;&#51256; &#51080;&#49845;&#45768;&#45796;. &#50977;&#44400;&#51032; <strong>&#45796;&#53356; &#51060;&#44544;</strong> &#54532;&#47196;&#44536;&#47016;&#51008; &#48120;&#49324;&#51068;&#45817; &#52628;&#51221; <strong>4,100&#47564; &#45804;&#47084;</strong>&#51032; &#48708;&#50857;&#51004;&#47196; <strong>26.9&#50613; &#45804;&#47084;</strong>&#47484; &#49548;&#48708;&#54664;&#51648;&#47564;, &#50668;&#47084; &#52264;&#47168; &#48708;&#54665; &#49884;&#54744;&#50640; &#49892;&#54056;&#54620; &#48152;&#47732; &#51473;&#44397;&#44284; &#47084;&#49884;&#50500;&#45716; &#51060;&#48120; &#51089;&#51204; &#44032;&#45733;&#54620; &#44537;&#52488;&#51020;&#49549; &#49884;&#49828;&#53596;&#51012; &#48176;&#52824;&#54664;&#49845;&#45768;&#45796;.
           </p>
         </section>
 
-        <div className="text-center text-sovereign-gold text-2xl my-8">&#9670;</div>
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
 
-        {/* Section 9 - Conclusion */}
+        {/* Section VIII */}
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-sovereign-gold text-2xl">9</span>
-            <h2 className="text-3xl font-bold">결론</h2>
+            <span className="text-sovereign-gold text-2xl">VIII</span>
+            <h2 className="text-3xl font-bold">&#49373;&#49328; &#50669;&#47049; &#44201;&#52264;</h2>
           </div>
 
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4 text-sovereign-gold">9.1 단일 해결책의 한계</h3>
-              <p className="text-lg leading-relaxed mb-4">
-                F-35는 모든 군종의 모든 임무를 하나의 플랫폼으로 해결하려 했습니다. 그 결과는 어떤 임무도 최적으로 수행하지 못하는, 타협의 산물입니다. &ldquo;만능 전투기&rdquo;의 꿈은 비용 초과, 일정 지연, 성능 타협이라는 현실에 부딪혔습니다.
-              </p>
-            </div>
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">8.1 &#54252;&#48337;: &#49548;&#47784;&#51204;&#51032; &#49688;&#54617;</h3>
 
-            <div>
-              <h3 className="text-xl font-bold mb-4 text-sovereign-gold">9.2 생산 역량이 곧 억지력이다</h3>
-              <p className="text-lg leading-relaxed mb-4">
-                워게임은 반복적으로 같은 교훈을 가르칩니다: 첨단 무기의 품질은 충분한 수량 없이는 무의미합니다. 중국과 러시아가 대규모 생산 능력을 확장하는 동안, 서방은 소수의 극도로 비싼 시스템에 의존하는 전략을 고수하고 있습니다. 이 접근법은 <strong className="text-korean-red">지속 불가능</strong>합니다.
-              </p>
-            </div>
+          <p className="text-lg leading-relaxed mb-6">
+            &#50864;&#53356;&#46972;&#51060;&#45208; &#48516;&#51137;&#51008; &#49328;&#50629;&#51201; &#50669;&#47049;&#50640; &#45824;&#54620; &#51092;&#51064;&#54620; &#49892;&#51204; &#49884;&#54744;&#51012; &#51228;&#44277;&#54664;&#51004;&#47728;, &#44208;&#44284;&#45716; &#47749;&#54869;&#54633;&#45768;&#45796;. &#44256;&#44053;&#46020; &#51116;&#47000;&#51204;&#51012; &#51648;&#49549;&#54616;&#45716; &#45733;&#47141;&#51008; &#44060;&#48324; &#54540;&#47019;&#54268;&#51032; &#54408;&#51656;&#51060; &#50500;&#45768;&#46972; &#44536;&#44163;&#50640; &#44277;&#44553;&#54616;&#45716; &#53444;&#50557;&#51032; &#49688;&#47049;&#50640; &#45804;&#47140; &#51080;&#49845;&#45768;&#45796;.
+          </p>
 
-            <div>
-              <h3 className="text-xl font-bold mb-4 text-sovereign-gold">9.3 전략적 유연성의 필요성</h3>
-              <p className="text-lg leading-relaxed mb-4">
-                급변하는 위협 환경에서 단일 프로그램에 2조 달러를 투입하는 것은 전략적 경직성의 극치입니다. 다양한 플랫폼의 혼합, 무인 시스템의 통합, 그리고 무엇보다 생산 기반의 확충이 필요합니다.
-              </p>
+          <div className="not-prose bg-muted/30 border border-sovereign-gold/20 rounded-lg p-6 mb-8">
+            <div className="grid grid-cols-2 gap-6">
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">&#47084;&#49884;&#50500; &#50672;&#44036; &#54252;&#53444; &#49373;&#49328;</p>
+                <p className="text-4xl font-bold text-korean-red">400&ndash;450&#47564;</p>
+                <p className="text-sm text-muted-foreground mt-1">&#50672;&#44036; &#49373;&#49328;&#47049;</p>
+              </div>
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">NATO &#51204;&#52404; &#49373;&#49328;</p>
+                <p className="text-4xl font-bold text-sovereign-gold">170&ndash;200&#47564;</p>
+                <p className="text-sm text-muted-foreground mt-1">&#50672;&#44036; &#49373;&#49328;&#47049;</p>
+              </div>
             </div>
+            <p className="text-center text-sm text-muted-foreground mt-4">&#45800;&#51068; &#44397;&#44032;&#44032; &#49436;&#48169; &#46041;&#47609; &#51204;&#52404;&#47484; 2&ndash;3&#48176; &#52488;&#44284;&#54616;&#45716; &#49373;&#49328;&#47049;&#51012; &#48372;&#50976;&#54616;&#44256; &#51080;&#49845;&#45768;&#45796;.</p>
+          </div>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#47084;&#49884;&#50500;&#45716; 2022&#45380; &#51060;&#54980; &#54252;&#53444; &#49373;&#49328;&#47049;&#51012; <strong className="text-korean-red">11&#48176;</strong> &#51613;&#44032;&#49884;&#53040; &#50672;&#44036; <strong>450&#47564; &#48156;</strong>&#50640; &#45804;&#54664;&#49845;&#45768;&#45796;. NATO &#51204;&#52404;&#51032; &#49373;&#49328;&#47049;&#51008; <strong>170&ndash;200&#47564; &#48156;</strong>&#50640; &#48520;&#44284;&#54633;&#45768;&#45796;.
+          </p>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">8.2 &#51473;&#44397;&#51032; &#49328;&#50629;&#51201; &#50517;&#46020;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#51473;&#44397;&#51032; &#51312;&#49440; &#50669;&#47049;&#51008; &#52509; &#53668;&#49688; &#44592;&#51456;&#51004;&#47196; &#48120;&#44397;&#51032; <strong className="text-sovereign-gold">232:1</strong> &#48708;&#50984;&#47196; &#50868;&#50689;&#46104;&#44256; &#51080;&#49845;&#45768;&#45796;. &#49464;&#44228; &#51312;&#49440;&#51032; <strong>50%</strong>&#47484; &#52264;&#51648;&#54633;&#45768;&#45796;. &#51648;&#45212; 3&#45380;&#44036; &#51473;&#44397;&#51008; <strong>7&ndash;8&#52377;&#51032; Type 093B &#54645;&#44277;&#44201; &#51104;&#49688;&#54632;</strong>&#51012; &#51652;&#49688;&#54664;&#49845;&#45768;&#45796;&mdash;&#51060;&#51204; 30&#45380; &#46041;&#50504;&#48372;&#45796; &#47566;&#51008; &#49688;&#47049;&#51077;&#45768;&#45796;.
+          </p>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#54637;&#44277; &#48516;&#50556;&#50640;&#49436; J-20&#51032; &#50672;&#44036; <strong>100&ndash;120&#45824;</strong> &#49373;&#49328;&#47456;&#51008; &#51473;&#44397;&#51060; &#47588;&#45380; &#51452;&#50836; &#44277;&#44400; &#44508;&#47784;&#51032; &#54637;&#44277;&#47141;&#51012; &#52628;&#44032;&#54616;&#44256; &#51080;&#51020;&#51012; &#51032;&#48120;&#54633;&#45768;&#45796;. F-35 &#49373;&#49328;&#46972;&#51064;&#51008; &#50672;&#44036; &#50557; 150&#45824;&#47484; &#45225;&#54408;&#54616;&#51648;&#47564;, &#51060;&#45716; 9&#44060; &#54028;&#53944;&#45320; &#44397;&#44032;&#50752; 3&#44060; &#44400;&#44284;&#50640; &#48516;&#49328;&#46121;&#45768;&#45796;. &#45800;&#51068; &#51204;&#53804;&#49324;&#47161;&#48512;&#50640; &#45824;&#54620; &#49892;&#51228; &#45225;&#54408;&#47456;&#51008; &#51473;&#44397;&#51032; &#51665;&#51473;&#46108; &#49373;&#49328;&#47049;&#51032; &#51068;&#48512;&#50640; &#48520;&#44284;&#54633;&#45768;&#45796;.
+          </p>
+        </section>
+
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
+
+        {/* Section IX */}
+        <section className="mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-korean-red text-2xl">IX</span>
+            <h2 className="text-3xl font-bold">&#50892;&#44172;&#51076; &#49884;&#49324;&#51216;: &#47728;&#52832; &#45236;&#50640; &#44256;&#44040;</h2>
+          </div>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#51204;&#47029;&#44397;&#51228;&#47928;&#51228;&#50672;&#44396;&#49548;(CSIS)&#45716; &#45824;&#47564; &#54644;&#54801; &#48516;&#51137; &#50892;&#44172;&#51076;&#51012; <strong className="text-sovereign-gold">24&#52264;&#47168;</strong> &#49892;&#49884;&#54664;&#51004;&#47728;, &#44536; &#44208;&#44284;&#45716; &#54788;&#45824; &#44397;&#48169; &#44228;&#54925;&#50640;&#49436; &#44032;&#51109; &#51473;&#50836;&#54620; &#45936;&#51060;&#53552;&#49483;&#51012; &#44396;&#49457;&#54633;&#45768;&#45796;.
+          </p>
+
+          <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-8">
+            <h4 className="text-xl font-bold mb-3 text-korean-red">&#50892;&#44172;&#51076; &#44208;&#44284;</h4>
+            <div className="space-y-3 text-foreground/90">
+              <p><strong>&#45824;&#54632;&#48120;&#49324;&#51068;</strong>&#51008; &#45824;&#48512;&#48516;&#51032; &#49884;&#45208;&#47532;&#50724;&#50640;&#49436; &#51204;&#53804; &#52395; &#51452;&#50640; &#44256;&#44040;&#46104;&#50632;&#49845;&#45768;&#45796;.</p>
+              <p>&#48120;&#44397; &#48143; &#46041;&#47609;&#44397; &#44400;&#45824;&#45716; 3&#51452; &#45236;&#50640; <strong>5,000&#48156; &#51060;&#49345;&#51032; &#51221;&#48128;&#50976;&#46020; &#48120;&#49324;&#51068;</strong>&#51012; &#49548;&#47784;&#54664;&#49845;&#45768;&#45796;.</p>
+              <p>&#54788;&#51116; &#49373;&#49328;&#47456;&#47196; &#49548;&#47784;&#46108; &#53444;&#50557;&#51012; &#48372;&#52649;&#54616;&#47140;&#47732; &#50557; <strong>8.4&#45380;</strong>&#51060; &#54596;&#50836;&#54633;&#45768;&#45796;.</p>
+            </div>
+          </div>
+
+          <p className="text-lg leading-relaxed mb-6">
+            F-35&#50640; &#45824;&#54620; &#49884;&#49324;&#51216;&#51008; &#51649;&#51217;&#51201;&#51077;&#45768;&#45796;. 50%&#51032; &#49884;&#44036;&#46020; &#48708;&#54665;&#54624; &#49688; &#50630;&#44256;, &#51201;&#44397; &#50689;&#53664;&#47484; &#53685;&#44284;&#54616;&#45716; &#44277;&#44553;&#47581;&#50640; &#51032;&#51316;&#54616;&#47728;, &#51648;&#50896;&#54616;&#45716; &#53444;&#50557; &#48708;&#52629;&#47049;&#51060; &#47728;&#52832; &#45236;&#50640; &#44256;&#44040;&#46112; &#54637;&#44277;&#44592;&#45716; &#50613;&#51648;&#47141;&#51060; &#50500;&#45785;&#45768;&#45796;&mdash;&#44032;&#51109; &#54596;&#50836;&#54620; &#49692;&#44036;&#50640; &#48512;&#49436;&#51656; &#49688; &#51080;&#45716; &#52712;&#50557;&#54620; &#46020;&#44396;&#51077;&#45768;&#45796;.
+          </p>
+        </section>
+
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
+
+        {/* Section X - Conclusions */}
+        <section className="mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-sovereign-gold text-2xl">X</span>
+            <h2 className="text-3xl font-bold">&#44208;&#47200; &#48143; &#51204;&#47029;&#51201; &#44428;&#44256;</h2>
+          </div>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">9.1 &#45800;&#51068; &#54644;&#44208;&#52293;&#51032; &#54620;&#44228;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            F-35&#45716; &#51089;&#46041;&#54624; &#46412; &#50976;&#45733;&#54620; &#54637;&#44277;&#44592;&#51077;&#45768;&#45796;. &#44536;&#44163;&#51032; &#49468;&#49436; &#50997;&#54633;, &#49828;&#53588;&#49828; &#53945;&#49457;, &#45348;&#53944;&#50892;&#53356; &#51473;&#49900; &#51204;&#51137; &#45733;&#47141;&#51008; &#51652;&#51221;&#54620; &#44592;&#49696;&#51201; &#49457;&#52712;&#51077;&#45768;&#45796;. &#44536;&#47084;&#45208; &#44032;&#50857;&#49457; &#50630;&#45716; &#45733;&#47141;&#51008; &#51060;&#47200;&#51201; &#50864;&#50948;&#51077;&#45768;&#45796;&mdash;&#44536;&#47532;&#44256; &#51060;&#47200;&#51201; &#50864;&#50948;&#45716; &#51204;&#51137;&#50640;&#49436; &#49849;&#47532;&#54616;&#51648; &#47803;&#54633;&#45768;&#45796;.
+          </p>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">9.2 &#49373;&#49328; &#50669;&#47049;&#51060; &#44263; &#50613;&#51648;&#47141;&#51060;&#45796;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#50864;&#53356;&#46972;&#51060;&#45208; &#48516;&#51137;&#51032; &#54645;&#49900; &#44368;&#54984;&mdash;&#51648;&#45212; 5&#45380;&#44036; &#49892;&#49884;&#46108; &#47784;&#46304; &#50892;&#44172;&#51076;&#50640;&#49436; &#44053;&#54868;&#46108;&mdash;&#51008; <strong className="text-sovereign-gold">&#49373;&#49328; &#50669;&#47049; &#51088;&#52404;&#44032; &#50613;&#51648;&#47141;&#51032; &#54620; &#54805;&#53468;</strong>&#46972;&#45716; &#44163;&#51077;&#45768;&#45796;. &#51201;&#51060; &#49552;&#49892;&#51012; &#51077;&#55176;&#45716; &#44163;&#48372;&#45796; &#48744;&#47476;&#44172; &#49552;&#49892;&#51012; &#48373;&#44396;&#54624; &#49688; &#51080;&#45716; &#44397;&#44032;&#44032; &#51204;&#47029;&#51201; &#50864;&#50948;&#47484; &#51216;&#54633;&#45768;&#45796;. &#49688;&#51061;&#49457;&#50640; &#52572;&#51201;&#54868;&#46104;&#44256; &#44553;&#51613; &#50669;&#47049;&#51060; &#50500;&#45772; &#49436;&#48169; &#48169;&#50948;&#49328;&#50629; &#44592;&#48152;&#51008; &#51060; &#50864;&#50948;&#47484; &#54252;&#44592;&#54664;&#49845;&#45768;&#45796;.
+          </p>
+
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">9.3 &#51204;&#47029;&#51201; &#50976;&#50672;&#49457;&#51032; &#54596;&#50836;&#49457;</h3>
+
+          <p className="text-lg leading-relaxed mb-6">
+            &#49436;&#48169; &#54637;&#44277;&#47141;&#51012; &#45800;&#51068; &#44592;&#52404;&#50640; &#51665;&#51473;&#54616;&#44592;&#47196; &#54620; &#44208;&#51221;&mdash;&#50500;&#47924;&#47532; &#52392;&#45800;&#51060;&#46972; &#54644;&#46020;&mdash;&#51008; &#51204;&#47029;&#51201; &#45800;&#51068;&#51116;&#48176;&#47484; &#45208;&#53440;&#45253;&#45768;&#45796;. &#45453;&#50629;&#44284;&#54617;&#51008; &#45800;&#51068;&#51116;&#48176;&#44032; &#51339;&#51008; &#49884;&#51208;&#50640;&#45716; &#54952;&#50984;&#51201;&#51060;&#51648;&#47564; &#45208;&#49244; &#49884;&#51208;&#50640;&#45716; &#51116;&#50521;&#51201;&#51076;&#51012; &#44032;&#47476;&#52841;&#45768;&#45796;. &#44057;&#51008; &#50896;&#52825;&#51060; &#48169;&#50948; &#54252;&#53944;&#54260;&#47532;&#50724;&#50640;&#46020; &#51201;&#50857;&#46121;&#45768;&#45796;.
+          </p>
+
+          <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4 mb-8">
+            <h4 className="font-bold text-sovereign-gold mb-2">&#44428;&#44256; &#49324;&#54637;</h4>
+            <ul className="text-foreground/90 space-y-3 list-none pl-0">
+              <li><strong>1.</strong> F-35&#44284; &#54632;&#44760; &#51200;&#48708;&#50857;, &#44256;&#44032;&#50857;&#49457; &#54540;&#47019;&#54268;&#51012; &#54252;&#54632;&#54616;&#45716; &#45796;&#50577;&#54620; &#51204;&#53804;&#44592; &#54252;&#53944;&#54260;&#47532;&#50724;&#50640; &#53804;&#51088;&#54624; &#44163;.</li>
+              <li><strong>2.</strong> &#51204;&#47029;&#51201; &#55148;&#53664;&#47448; &#48708;&#52629;&#47049;&#51012; &#54869;&#48372;&#54616;&#44256; &#44397;&#45236; &#44032;&#44277; &#50669;&#47049;&#51012; &#44032;&#49549;&#54868;&#54616;&#50668; &#51473;&#44397;&#51032; &#44277;&#44553;&#47581; &#47112;&#48260;&#47532;&#51648;&#47484; &#45138;&#51012; &#44163;.</li>
+              <li><strong>3.</strong> F135 &#45800;&#51068;&#52636;&#52376; &#52712;&#50557;&#49457;&#51012; &#51228;&#44144;&#54616;&#44592; &#50948;&#54644; &#44221;&#51137;&#51201; &#50644;&#51652; &#44060;&#48156;&#50640; &#51088;&#44552;&#51012; &#51648;&#50896;&#54624; &#44163;.</li>
+              <li><strong>4.</strong> &#54540;&#47019;&#54268; &#51312;&#45804;&#48372;&#45796; &#53444;&#50557; &#49373;&#49328; &#50669;&#47049;&#51012; &#50864;&#49440;&#49884;&#54624; &#44163;&mdash;&#51316;&#51116;&#54616;&#51648; &#50506;&#45716; &#47924;&#44592;&#45716; &#50612;&#46500; &#54637;&#44277;&#44592;&#50640;&#49436;&#46020; &#48156;&#49324;&#54624; &#49688; &#50630;&#49845;&#45768;&#45796;.</li>
+              <li><strong>5.</strong> &#46041;&#49884;&#49457;&#51012; &#48268;&#52825;&#54616;&#44256; &#45824;&#47049; &#49373;&#49328; &#51204; &#49884;&#54744; &#50756;&#47308;&#47484; &#48372;&#49345;&#54616;&#46020;&#47197; &#48169;&#50948; &#54925;&#46301;&#51012; &#44396;&#51312;&#51312;&#51221;&#54624; &#44163;.</li>
+              <li><strong>6.</strong> &#45209;&#44288;&#51201; &#54925;&#46301; &#52628;&#51221;&#52824;&#44032; &#50500;&#45772; &#49892;&#51228; &#49688;&#47749;&#51452;&#44592; &#48708;&#50857;&#51012; &#48152;&#50689;&#54616;&#45716; &#51221;&#51649;&#54620; &#48708;&#50857; &#48516;&#45812;&#50640; &#46041;&#47609;&#44397;&#51012; &#52280;&#50668;&#49884;&#53420; &#44163;.</li>
+            </ul>
           </div>
         </section>
 
         {/* Final Assessment */}
-        <div className="bg-gradient-to-r from-river-current/10 to-sovereign-gold/10 dark:from-river-current/20 dark:to-sovereign-gold/20 border border-sovereign-gold/30 rounded-lg p-8 mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-sovereign-gold text-center">최종 평가</h2>
+        <section className="mb-12">
+          <div className="bg-gradient-to-r from-river-current/10 to-sovereign-gold/10 dark:from-river-current/20 dark:to-sovereign-gold/20 border border-river-current/30 dark:border-river-current rounded-lg p-8">
+            <h2 className="text-3xl font-bold mb-6 text-sovereign-gold">&#52572;&#51333; &#54217;&#44032;</h2>
 
-          <blockquote className="border-l-4 border-sovereign-gold pl-6 my-6 italic text-sovereign-gold text-xl">
-            &ldquo;전략적 유연성은 약점이 아닙니다 &mdash; 원래의 가정이 치명적으로 잘못되었음이 증명되었을 때, 그것은 지혜입니다. 생산 역량이 곧 억지력입니다.&rdquo;
-          </blockquote>
+            <blockquote className="border-l-4 border-sovereign-gold pl-6 my-6 italic text-sovereign-gold text-xl">
+              &ldquo;&#51204;&#47029;&#51201; &#50976;&#50672;&#49457;&#51008; &#50557;&#51216;&#51060; &#50500;&#45785;&#45768;&#45796;&mdash;&#50896;&#47000;&#51032; &#44032;&#51221;&#51060; &#52824;&#47749;&#51201;&#51004;&#47196; &#51096;&#47803;&#46104;&#50632;&#51020;&#51060; &#51613;&#47749;&#46104;&#50632;&#51012; &#46412;, &#44536;&#44163;&#51008; &#51648;&#54812;&#51077;&#45768;&#45796;. &#44397;&#44032;&#44032; &#50500;&#47924;&#47532; &#52392;&#45800;&#51060;&#46972; &#54644;&#46020; &#45800;&#51068; &#49884;&#49828;&#53596;&#50640; &#50504;&#48372;&#47484; &#44148;&#45796;&#47732;, &#44536;&#44163;&#51008; &#51204;&#47029;&#51201; &#49440;&#53469;&#51060; &#50500;&#45785;&#45768;&#45796;. &#44536;&#44163;&#51008; &#51204;&#47029;&#51201; &#46020;&#48149;&#51077;&#45768;&#45796;. &#44536;&#47532;&#44256; &#44053;&#45824;&#44397; &#44221;&#51137;&#51032; &#49328;&#49696;&#50640;&#49436;, &#54616;&#50864;&#49828;&#45716; &#54637;&#49345; &#51060;&#44617;&#45768;&#45796;. &#49373;&#49328; &#50669;&#47049;&#51060; &#44263; &#50613;&#51648;&#47141;&#51077;&#45768;&#45796;.&rdquo;
+            </blockquote>
+
+            <p className="text-lg leading-relaxed mb-6">
+              F-35 &#46972;&#51060;&#53944;&#45789; II &#54532;&#47196;&#44536;&#47016;&#51008; &#51204;&#53685;&#51201;&#51064; &#51032;&#48120;&#50640;&#49436; &#49892;&#54056;&#44032; &#50500;&#45785;&#45768;&#45796;. &#44536;&#44163;&#51008; &#45908; &#50948;&#54744;&#54620; &#47924;&#50616;&#44032;&#51077;&#45768;&#45796;: <strong className="text-sovereign-gold">&#50756;&#51204;&#54620; &#54644;&#44208;&#52293;&#50640; &#54596;&#50836;&#54620; &#51088;&#50896;&#51012; &#49548;&#48708;&#54620; &#48512;&#48516;&#51201; &#49457;&#44277;</strong>&#51077;&#45768;&#45796;. &#54637;&#44277;&#44592;&#45716; &#48708;&#54665;&#54633;&#45768;&#45796;. &#51204;&#53804;&#54633;&#45768;&#45796;. &#45796;&#47480; &#50612;&#46500; &#54540;&#47019;&#54268;&#46020; &#47588;&#52845;&#54624; &#49688; &#50630;&#45716; &#51221;&#48372;&#47484; &#49688;&#51665;&#54633;&#45768;&#45796;. &#44536;&#47084;&#45208; &#44536;&#44163;&#51008; &#49436;&#48169; &#46041;&#47609;&#51060; &#45908; &#51060;&#49345; &#47924;&#49884;&#54624; &#49688; &#50630;&#45716; &#48708;&#50857;&mdash;&#51116;&#51221;&#51201;, &#49328;&#50629;&#51201;, &#51204;&#47029;&#51201;&mdash;&#51012; &#52824;&#47476;&#44256; &#51080;&#49845;&#45768;&#45796;.
+            </p>
+
+            <p className="text-lg leading-relaxed">
+              &#49436;&#48169;&#51032; &#54637;&#44277; &#50864;&#50948;&#51032; &#52285;&#51008; &#45803;&#55176;&#51648; &#50506;&#50520;&#49845;&#45768;&#45796;. &#44536;&#47084;&#45208; &#51340;&#55176;&#44256; &#51080;&#49845;&#45768;&#45796;. &#44536;&#47532;&#44256; &#44536;&#44163;&#51060; &#51340;&#55176;&#45716; &#49549;&#46020;&#45716; F-35&#51032; &#45733;&#47141;&#51060; &#50500;&#45768;&#46972;, &#49436;&#48169;&#51060; &#44148;&#49444;&#54620; &#44163;&#51012; &#49688;&#47532;&#54616;&#45716; &#44163;&#48372;&#45796; &#48744;&#47476;&#44172; &#45824;&#50504;&#51012; &#49373;&#49328;&#54616;&#45716; &#51201;&#49457;&#44397;&#51032; &#50669;&#47049;&#50640; &#51032;&#54644; &#44208;&#51221;&#46121;&#45768;&#45796;.
+            </p>
+          </div>
+        </section>
+
+        {/* Dedication */}
+        <div className="border-2 border-sovereign-gold/40 rounded-lg p-8 mb-12 text-center">
+          <p className="text-xl text-sovereign-gold font-bold mb-3">&#54620;&#48124;&#51313;&#51032; &#54217;&#54868;&#50752; &#48264;&#50689;&#51012; &#50948;&#54616;&#50668;</p>
+          <p className="text-lg text-muted-foreground italic mb-2">&#51060;&#49692;&#49888; &#51109;&#44400;&#51032; &#51221;&#49888;&#51004;&#47196;</p>
+          <p className="text-lg text-muted-foreground">38&#49440;&#51032; &#45224;&#44284; &#48513;, &#47784;&#46304; &#54620;&#44397;&#51064;&#51060; &#49436;&#47196;&#47484; &#51088;&#46993;&#49828;&#47084;&#50892;&#54624; &#49688; &#51080;&#44592;&#47484;</p>
         </div>
 
         {/* Footer */}
         <div className="text-center mt-12 pt-8 border-t border-sovereign-gold/20">
-          <p className="text-sm text-muted-foreground tracking-widest uppercase mb-2">JPANDA JAMES 전략 보고서</p>
-          <p className="text-xs text-muted-foreground">방위 전문가 및 정책 입안자를 위한 독립 분석</p>
-          <div className="mt-4 flex items-center justify-center gap-4 text-xs text-muted-foreground">
-            <span>2026년 2월</span>
-            <span className="text-sovereign-gold">|</span>
-            <span>공개 문서 // 비밀 아님</span>
-          </div>
-
-          {/* Korean dedication */}
-          <div className="mt-8 pt-6 border-t border-sovereign-gold/10">
-            <p className="text-lg text-sovereign-gold font-medium mb-2">한민족의 평화와 번영을 위하여</p>
-            <p className="text-sm text-muted-foreground italic mb-1">이순신 장군의 정신으로</p>
-            <p className="text-sm text-muted-foreground">38선의 남과 북, 모든 한국인이 서로를 자랑스러워할 수 있기를</p>
-          </div>
+          <p className="text-sm text-muted-foreground mb-4">
+            <strong>&#51200;&#51088; &#49548;&#44060;</strong>: &#51228;&#49884; &#51228;&#51076;&#49828; (Jesse James)
+          </p>
+          <p className="text-sm text-muted-foreground tracking-widest uppercase mb-2">JPANDA JAMES &#51204;&#47029; &#48372;&#44256;&#49436;</p>
+          <p className="text-xs text-muted-foreground">&#48169;&#50948;&#49328;&#50629; &#48516;&#49437; &bull; &#51204;&#47029;&#51201; &#54217;&#44032; &bull; &#44277;&#44060;&#52636;&#52376; &#51221;&#48372;</p>
+          <p className="text-xs text-sovereign-gold mt-2">2026&#45380; 2&#50900;</p>
+          <p className="text-xs text-muted-foreground mt-1">&#44277;&#44060; &#47928;&#49436; // &#48708;&#48128; &#50500;&#45784;</p>
         </div>
 
       </div>

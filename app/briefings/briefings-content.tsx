@@ -42,11 +42,62 @@ export default function BriefingsContent() {
             <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Feb 2026</span>
           </div>
           <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/dprk-human-rights-analysis" className="hover:underline text-[#d4a74a]">
+              DPRK Human Rights Claims vs Global Reality
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">The DPRK has ratified more core human rights treaties than the United States &mdash; five versus three. Data-driven comparative analysis across 14 areas with verifiable sources.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Feb 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
             <Link href="/briefings/war-nobody-wins" className="hover:underline text-[#d4a74a]">
               The War Nobody Wins: A Behavioral Analysis of WW3
             </Link>
           </h2>
           <p className="text-[#f0ebe3]/70">JPanda Papers behavioral analysis examining the psychology, industrial asymmetries, and strategic miscalculations driving the world toward a hypothetical global conflict — and why nobody wins.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Feb 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/f35-systemic-fragility" className="hover:underline text-[#d4a74a]">
+              Systemic Fragility: F-35 Lightning II Assessment
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">$2T+ lifecycle cost, 50% fleet availability, 232:1 China-US shipbuilding ratio. Comprehensive life-cycle assessment of the F-35 program and Western defense industrial capacity.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Feb 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/f35-systemic-fragility-kr" className="hover:underline text-[#d4a74a]">
+              체계적 취약성과 전략적 현실 &mdash; F-35 종합 평가
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">F-35 라이트닝 II 프로그램의 종합 수명주기 평가. 2조 달러 이상의 비용, 50% 가동률, 232:1 조선 역량 비율. 한국어 전략 보고서.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Feb 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/new-weapons" className="hover:underline text-[#d4a74a]">
+              The New Weapons: Defense Energy &amp; Materials Guide
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">From 50-year diamond batteries to truck-mounted lasers. A plain-language guide to the materials revolution reshaping modern warfare since 2003.</p>
         </li>
 
         <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
