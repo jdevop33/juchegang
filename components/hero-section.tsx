@@ -35,66 +35,64 @@ export function HeroSection() {
       {/* Content layers — fade in sequentially */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6">
 
-        {/* Breath Two — The Warrior Quote + Sword + War Journal */}
+        {/* Yi's artifacts — fade in at breath 1, stay visible forever */}
+        <div
+          className={`absolute inset-0 pointer-events-none transition-opacity duration-[1500ms] ${
+            breath >= 1 ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          {/* 충무공 장검 — Sword, top center, contained responsively */}
+          {/* 836x361 source, ~2.3:1 ratio — use max-w + aspect-ratio to contain */}
+          <div className="absolute top-[16%] sm:top-[18%] inset-x-0 flex justify-center px-8 sm:px-12">
+            <div className="relative w-full max-w-[280px] sm:max-w-[380px] md:max-w-[480px] lg:max-w-[560px] aspect-[836/361] opacity-50">
+              <Image
+                src="/gallery/총무공_장검.png"
+                alt="충무공 장검 — Admiral Yi Sun-shin's Long Sword"
+                fill
+                className="object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+                sizes="(max-width: 640px) 280px, (max-width: 768px) 380px, (max-width: 1024px) 480px, 560px"
+              />
+            </div>
+          </div>
+
+          {/* 임진장초 — War journal, bottom center, contained responsively */}
+          {/* 692x392 source, ~1.77:1 ratio */}
+          <div className="absolute bottom-[12%] sm:bottom-[14%] inset-x-0 flex justify-center px-12 sm:px-16">
+            <div className="relative w-full max-w-[140px] sm:max-w-[180px] md:max-w-[220px] lg:max-w-[260px] aspect-[692/392] opacity-30">
+              <Image
+                src="/gallery/이순신_난중일기_및_서간첩_임진장초.jpg"
+                alt="임진장초 — Yi Sun-shin's wartime dispatches"
+                fill
+                className="object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+                sizes="(max-width: 640px) 140px, (max-width: 768px) 180px, (max-width: 1024px) 220px, 260px"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Breath Two — The Warrior Quote */}
         <div
           className={`absolute inset-0 flex flex-col items-center justify-center px-6 transition-opacity duration-1000 ${
             breath >= 1 && breath < 2 ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          {/* Yi Sun-shin's war journal — 임진장초 — background layer */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="relative w-[500px] h-[350px] sm:w-[600px] sm:h-[420px] md:w-[700px] md:h-[490px] opacity-[0.08]">
-              <Image
-                src="/gallery/이순신_난중일기_및_서간첩_임진장초.jpg"
-                alt="임진장초 — Admiral Yi Sun-shin's Imjin War Dispatches, 1592"
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 500px, 700px"
-              />
-            </div>
-          </div>
-
-          <div className="relative flex flex-col items-center max-w-3xl">
-            {/* 충무공 장검 — Yi's sword above the quote */}
-            <div className="relative w-[280px] h-[40px] sm:w-[400px] sm:h-[55px] md:w-[520px] md:h-[70px] mb-8 opacity-70">
-              <Image
-                src="/gallery/총무공_장검.png"
-                alt="충무공 장검 — Admiral Yi Sun-shin's Long Sword"
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 280px, (max-width: 1024px) 400px, 520px"
-              />
-            </div>
-
-            <blockquote className="text-center">
-              <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6 text-[#d4a74a] font-[family-name:var(--font-korean)] drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
-                필사즉생 필생즉사
+          <blockquote className="text-center max-w-3xl">
+            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6 text-[#d4a74a] font-[family-name:var(--font-korean)] drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
+              필사즉생 필생즉사
+            </p>
+            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8 text-[#f0ebe3] font-[family-name:var(--font-heading)] drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)]">
+              &ldquo;If you seek death, you will live.<br />
+              If you seek life, you will die.&rdquo;
+            </p>
+            <footer>
+              <cite className="not-italic text-sm sm:text-base tracking-widest uppercase text-[#d4a74a] drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+                — Admiral Yi Sun-shin · 이순신
+              </cite>
+              <p className="text-xs sm:text-sm mt-2 opacity-70 text-[#f0ebe3]">
+                Battle of Myeongnyang, 1597 · 난중일기
               </p>
-              <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8 text-[#f0ebe3] font-[family-name:var(--font-heading)] drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)]">
-                &ldquo;If you seek death, you will live.<br />
-                If you seek life, you will die.&rdquo;
-              </p>
-              <footer>
-                <cite className="not-italic text-sm sm:text-base tracking-widest uppercase text-[#d4a74a] drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
-                  — Admiral Yi Sun-shin · 이순신
-                </cite>
-                <p className="text-xs sm:text-sm mt-2 opacity-70 text-[#f0ebe3]">
-                  Battle of Myeongnyang, 1597 · 난중일기
-                </p>
-              </footer>
-            </blockquote>
-
-            {/* War journal — small, below the attribution */}
-            <div className="relative w-[180px] h-[130px] sm:w-[240px] sm:h-[170px] mt-6 opacity-40">
-              <Image
-                src="/gallery/이순신_난중일기_및_서간첩_임진장초.jpg"
-                alt="임진장초 — Yi Sun-shin's wartime dispatches"
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 180px, 240px"
-              />
-            </div>
-          </div>
+            </footer>
+          </blockquote>
         </div>
 
         {/* Breath Three — The Brand Reveal */}
