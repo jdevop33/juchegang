@@ -63,26 +63,6 @@ export function PeaceCounter() {
           </p>
         </motion.blockquote>
 
-        {/* War Journal — centered, smaller */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-          className="flex flex-col items-center"
-        >
-          <div className="relative w-full max-w-[220px] sm:max-w-[300px] md:max-w-[380px] aspect-[692/392] mb-4">
-            <Image
-              src="/gallery/이순신_난중일기_및_서간첩_임진장초.jpg"
-              alt="임진장초 — Admiral Yi Sun-shin's Imjin War Dispatches, 1592"
-              fill
-              className="object-contain rounded-lg shadow-2xl shadow-black/30"
-              sizes="(max-width: 640px) 220px, (max-width: 768px) 300px, 380px"
-            />
-          </div>
-          <p className="text-xs text-river-mist/40 tracking-wider text-center">
-            난중일기 및 서간첩 임진장초 &middot; War Diary &amp; Dispatches &middot; National Treasure No. 76
-          </p>
-        </motion.div>
 
       </div>
     </div>
