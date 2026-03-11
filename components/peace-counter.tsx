@@ -2,27 +2,21 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Calendar, Heart, Users, Globe } from "lucide-react"
+import { Calendar, Heart, Users, Star } from "lucide-react"
 
 export function PeaceCounter() {
   const [days, setDays] = useState(0)
-  const [hours, setHours] = useState(0)
-  const [minutes, setMinutes] = useState(0)
 
-  // Calculate time since a significant peace initiative (example: June 15, 2000 Summit)
+  // Calculate days since Korea was divided at the 38th parallel (August 15, 1945)
   useEffect(() => {
     const calculateTime = () => {
-      const startDate = new Date('2000-06-15T00:00:00')
+      const startDate = new Date('1945-08-15T00:00:00')
       const now = new Date()
       const diff = now.getTime() - startDate.getTime()
 
       const days = Math.floor(diff / (1000 * 60 * 60 * 24))
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
 
       setDays(days)
-      setHours(hours)
-      setMinutes(minutes)
     }
 
     calculateTime()
@@ -32,10 +26,10 @@ export function PeaceCounter() {
   }, [])
 
   const stats = [
-    { icon: Calendar, value: days.toLocaleString(), label: "Days of Peace Dialogue" },
-    { icon: Heart, value: "∞", label: "Hearts United" },
-    { icon: Users, value: "7.9B", label: "People for Peace" },
-    { icon: Globe, value: "195", label: "Nations Connected" },
+    { icon: Calendar, value: days.toLocaleString(), label: "Days Since Division" },
+    { icon: Users, value: "80M+", label: "Korean People, One Nation" },
+    { icon: Star, value: "4,920", label: "Years of Korean Civilization" },
+    { icon: Heart, value: "1", label: "Korea — 하나의 조선" },
   ]
 
   return (
@@ -46,11 +40,14 @@ export function PeaceCounter() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-6"
         >
-          <h3 className="text-2xl font-heading font-bold bg-gradient-to-r from-sovereign-gold via-river-mist to-sovereign-gold bg-clip-text text-transparent mb-2">
-            Journey to Unity
+          <h3 className="text-3xl font-korean font-bold text-sovereign-gold mb-1">
+            하나의 조선
           </h3>
-          <p className="text-cream-muted text-sm">
-            Building bridges since the historic 2000 Inter-Korean Summit
+          <p className="text-river-mist/70 text-sm font-heading tracking-widest uppercase">
+            One Korea
+          </p>
+          <p className="text-cream-muted text-sm mt-2 italic">
+            The longest peace can begin with the shortest distance
           </p>
         </motion.div>
 
@@ -75,16 +72,6 @@ export function PeaceCounter() {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          className="mt-6 text-center"
-          animate={{ opacity: [0.5, 1, 0.5] }}
-          transition={{ duration: 3, repeat: Infinity }}
-        >
-          <p className="text-sm text-sovereign-gold">
-            ✦ Every moment brings us closer to peaceful reunification ✦
-          </p>
-        </motion.div>
       </div>
     </div>
   )

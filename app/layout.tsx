@@ -45,7 +45,7 @@ export const metadata = {
   description:
     "A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering commitment to your highest potential.",
   keywords: "excellence, personal development, discipline, courage, juche, self-improvement, laws of excellence, leadership, success, motivation",
-  authors: [{ name: "Dr. Henry Jekyll" }],
+  authors: [{ name: "Jesse James" }],
   creator: "Juche GanG",
   publisher: "Juche GanG",
   robots: "index, follow",
@@ -83,7 +83,6 @@ export const metadata = {
     apple: [{ url: "/favicon.svg", sizes: "180x180", type: "image/svg+xml" }],
     shortcut: "/favicon.svg",
   },
-    generator: 'v0.dev'
 }
 
 export default async function RootLayout({

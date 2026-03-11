@@ -58,7 +58,7 @@ export function LawCard({ law }: LawCardProps) {
       style={{ animationDelay: `${(law.number % 6) * 100}ms` }}
     >
       {/* Unique image for each law */}
-      <div className="relative h-48 overflow-hidden">
+      <div className="relative h-52 overflow-hidden">
         <SafeFocalImage
           src={getLawImageCandidates(law.number)}
           alt={`Visual representation of ${t('lawLabel')} ${law.number}: ${displayTitle}`}
@@ -70,7 +70,7 @@ export function LawCard({ law }: LawCardProps) {
         
         {/* Law number overlay */}
         <div className="absolute top-3 right-3">
-          <div className="h-8 w-8 sm:h-9 sm:w-9 flex items-center justify-center rounded-full bg-accent/90 backdrop-blur-sm text-accent-foreground font-bold text-sm shadow-lg border border-cream/20">
+          <div className="h-8 w-8 sm:h-9 sm:w-9 flex items-center justify-center rounded-full bg-sovereign-gold/90 backdrop-blur-sm text-river-depths font-bold text-sm shadow-lg border border-cream/20">
             {law.number}
           </div>
         </div>

@@ -13,6 +13,7 @@ const messages = [
   { text: "团结就是力量", lang: "zh", translation: "Unity is Strength", flag: "🇨🇳", iso: "cn" },
   { text: "Вместе мы сильнее", lang: "ru", translation: "Together We Are Stronger", flag: "🇷🇺", iso: "ru" },
   { text: "하나된 세계", lang: "ko", translation: "One World United", flag: "🇰🇵", iso: "kp" },
+  { text: "평화와 통일", lang: "ko", translation: "Peace and Reunification", flag: "🇰🇷", iso: "kr" },
 ]
 
 function flagSrc(iso: string): string {

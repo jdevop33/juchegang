@@ -8,10 +8,9 @@ import { useAutoTranslate } from "@/hooks/use-auto-translate"
 
 interface FeaturedLawProps {
   law: Law
-  imagePath: string
 }
 
-export function FeaturedLaw({ law, imagePath }: FeaturedLawProps) {
+export function FeaturedLaw({ law }: FeaturedLawProps) {
   const { t, language } = useLanguage()
   const localized = lawsKr[law.number]
   const shouldAuto = language === 'kr'

@@ -109,17 +109,19 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
               <p className="text-body-large text-muted-foreground max-w-2xl mx-auto animate-staggered-fade-in stagger-delay-2">{t('foundationDesc')}</p>
             </div>
             <div className="space-y-16 mb-20 relative z-10">
-              <div className="animate-staggered-fade-in stagger-delay-3"><FeaturedLaw law={featuredLaw1} imagePath="" /></div>
-              <div className="animate-staggered-fade-in stagger-delay-4"><FeaturedLaw law={featuredLaw25} imagePath="" /></div>
+              <div className="animate-staggered-fade-in stagger-delay-3"><FeaturedLaw law={featuredLaw1} /></div>
+              <div className="animate-staggered-fade-in stagger-delay-4"><FeaturedLaw law={featuredLaw25} /></div>
             </div>
           </div>
 
           <div className="section-transition"><TriptychDivider /></div>
 
           <div id="laws" className="scroll-mt-nav max-w-4xl mx-auto mb-20 text-center section-reveal">
-            <p className="text-lg font-semibold italic text-sovereign-gold/90 mb-6">
-              These are not the 48 Laws of Power. Those laws teach deception. These laws exist because deception is poison.
-            </p>
+            <blockquote className="border-l-4 border-sovereign-gold/40 pl-6 mb-6">
+              <p className="text-lg font-semibold italic text-sovereign-gold/90">
+                These are not the 48 Laws of Power. Those laws teach deception. These laws exist because deception is poison.
+              </p>
+            </blockquote>
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-river-current/20 to-river-mid/20 text-river-mid rounded-full text-sm font-medium border border-river-current/30 backdrop-blur-sm">📚 {t('completeCollection')}</div>
             <h2 className="text-headline text-foreground mb-8">{t('laws48')}</h2>
             <p className="text-body-large text-muted-foreground max-w-3xl mx-auto mb-8">{t('lawsSubtitle')}</p>
