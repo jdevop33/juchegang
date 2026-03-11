@@ -6,26 +6,29 @@ export function AboutSection() {
   const { t } = useLanguage()
   return (
     <section id="about" className="py-16 relative">
+      {/* Gold accent line */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sovereign-gold/60 to-transparent"></div>
+
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
-        <Image src="/images/brothers.jpg" alt="Mountain Bonds" fill className="object-cover opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/90 to-[#1b4965]/95"></div>
+        <Image src="/images/heros/mtpaektu.jpg" alt="Mount Paektu Crater" fill className="object-cover opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-river-depths/90 to-river-depths/95"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-[#d4a74a] font-[family-name:var(--font-heading)]">About Jesse James</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-sovereign-gold font-heading">About Jesse James</h2>
 
-          <div className="bg-[#1b4965]/30 backdrop-blur-sm rounded-xl p-8 border border-[#1b4965]/50 shadow-lg">
+          <div className="bg-river-current/30 backdrop-blur-sm rounded-xl p-8 border border-river-current/50 shadow-lg">
             <div className="flex flex-col md:flex-row gap-8 items-center">
-              <div className="w-40 h-40 relative rounded-full overflow-hidden border-4 border-[#d4a74a]/50 shadow-lg flex-shrink-0">
+              <div className="w-40 h-40 relative rounded-full overflow-hidden border-4 border-sovereign-gold/50 shadow-lg flex-shrink-0">
                 <FocalImage src="/gallery/jesse_james.jpg" alt="Jesse James" fill className="object-cover" focusYPercent={35} />
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-[#f0ebe3] mb-2">Jesse James</h3>
-                <p className="text-[#d4a74a] mb-4 italic">Canadian Managing Director • Juche Community Relations</p>
-                <div className="prose prose-invert max-w-none text-[#f0ebe3]/80">
+                <h3 className="text-2xl font-bold text-river-mist mb-2">Jesse James</h3>
+                <p className="text-sovereign-gold mb-4 italic">Canadian Managing Director • Juche Community Relations</p>
+                <div className="prose prose-invert max-w-none text-river-mist/80">
                   <p>
                     {t('aboutText1') || 'Specializing in cross-cultural diplomatic initiatives and community engagement strategies. Coordinating educational outreach programs that promote understanding of Korean political philosophy and self-reliance principles across North American academic institutions.'}
                   </p>
