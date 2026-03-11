@@ -59,10 +59,10 @@ export const metadata = {
     siteName: "Juche GanG",
     images: [
       {
-        url: "/images/brothers.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Juche GanG - The 48 Laws of Excellence",
+        url: "/images/heros/0sunsetpaektu3.jpg",
+        width: 700,
+        height: 285,
+        alt: "Sunset over Mount Paektu - Juche GanG",
       },
     ],
   },
@@ -71,7 +71,7 @@ export const metadata = {
     title: "The 48 Laws of Excellence - Juche GanG Edition",
     description:
       "A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering commitment to your highest potential.",
-    images: ["/images/brothers.jpg"],
+    images: ["/images/heros/0sunsetpaektu3.jpg"],
   },
   icons: {
     icon: [

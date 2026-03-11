@@ -35,26 +35,39 @@ export function HeroSection() {
       {/* Content layers — fade in sequentially */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6">
 
-        {/* Breath Two — The Warrior Quote */}
+        {/* Breath Two — The Warrior Quote + War Journal */}
         <div
           className={`absolute inset-0 flex flex-col items-center justify-center px-6 transition-opacity duration-1000 ${
             breath >= 1 && breath < 2 ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <blockquote className="text-center max-w-3xl">
-            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6 text-[#d4a74a] font-[family-name:var(--font-korean)]">
+          {/* Yi Sun-shin's actual war journal — 임진장초 */}
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="relative w-[500px] h-[350px] sm:w-[600px] sm:h-[420px] md:w-[700px] md:h-[490px] opacity-15">
+              <Image
+                src="/gallery/이순신_난중일기_및_서간첩_임진장초.jpg"
+                alt="임진장초 — Admiral Yi Sun-shin's Imjin War Dispatches, 1592"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 500px, 700px"
+              />
+            </div>
+          </div>
+
+          <blockquote className="text-center max-w-3xl relative">
+            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6 text-[#d4a74a] font-[family-name:var(--font-korean)] drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
               필사즉생 필생즉사
             </p>
-            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8 text-[#f0ebe3] font-[family-name:var(--font-heading)]">
-              "If you seek death, you will live.<br />
-              If you seek life, you will die."
+            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8 text-[#f0ebe3] font-[family-name:var(--font-heading)] drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)]">
+              &ldquo;If you seek death, you will live.<br />
+              If you seek life, you will die.&rdquo;
             </p>
             <footer>
-              <cite className="not-italic text-sm sm:text-base tracking-widest uppercase text-[#d4a74a]">
+              <cite className="not-italic text-sm sm:text-base tracking-widest uppercase text-[#d4a74a] drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
                 — Admiral Yi Sun-shin · 이순신
               </cite>
               <p className="text-xs sm:text-sm mt-2 opacity-70 text-[#f0ebe3]">
-                Battle of Myeongnyang, 1597
+                Battle of Myeongnyang, 1597 · 임진장초
               </p>
             </footer>
           </blockquote>
