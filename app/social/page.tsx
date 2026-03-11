@@ -24,7 +24,7 @@ export const metadata = {
     title: "Social Media — Juche GanG",
     description: "Follow Juche GanG across platforms. Updates, media and analysis.",
     images: [
-      { url: "/gallery/herosocial.jpg", width: 1200, height: 630, alt: "Juche Social" },
+      { url: "/images/heros/socialmediapagehero.jpg", width: 1200, height: 630, alt: "Juche Social" },
     ],
   },
 }
@@ -142,7 +142,7 @@ export default async function SocialPage() {
         style={{ minHeight: '100svh' }}
       >
         <FocalImage
-          src="/gallery/herosocial.jpg"
+          src="/images/heros/socialmediapagehero.jpg"
           alt="Juche Social"
           fill
           className="object-cover"

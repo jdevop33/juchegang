@@ -42,11 +42,102 @@ export default function BriefingsContent() {
             <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Feb 2026</span>
           </div>
           <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/satellite-eavesdropping" className="hover:underline text-[#d4a74a]">
+              &ldquo;Don&rsquo;t Look Up&rdquo;: The $800 Satellite Eavesdropping Crisis
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">~50% of GEO satellite signals unencrypted. $800 equipment cost. 2,711 T-Mobile numbers in 9 hours. How consumer-grade equipment exposed military secrets and critical infrastructure.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Feb 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
             <Link href="/briefings/dprk-human-rights-analysis" className="hover:underline text-[#d4a74a]">
               DPRK Human Rights Claims vs Global Reality
             </Link>
           </h2>
           <p className="text-[#f0ebe3]/70">The DPRK has ratified more core human rights treaties than the United States &mdash; five versus three. Data-driven comparative analysis across 14 areas with verifiable sources.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Mar 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/performative-ethics-sanctions" className="hover:underline text-[#d4a74a]">
+              Performative Ethics &amp; the Sanctions Regime
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">564,000 annual deaths. 8 of 14 UN sanctions regimes target Africa. 2,500+ Pentagon-edited films. How virtue theater, media manipulation, and moral licensing maintain a codified global caste system.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Mar 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/sleepwalkers-nuclear" className="hover:underline text-[#d4a74a]">
+              Sleepwalkers With Nuclear Weapons
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">Groupthink, conformity, and the Dunning-Kruger apocalypse. How cognitive biases in nuclear-armed governments create existential risk &mdash; from the Bay of Pigs to Able Archer 83.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Mar 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/ot-cybersecurity" className="hover:underline text-[#d4a74a]">
+              OT Cybersecurity in Military Infrastructure
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">From Stuxnet to SolarWinds. How operational technology vulnerabilities in energy grids, weapons systems, and logistics networks threaten military readiness across NATO.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Mar 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/china-collapse-narrative" className="hover:underline text-[#d4a74a]">
+              The &ldquo;China Collapse&rdquo; Narrative &mdash; A Data-Driven Refutation
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">Decades of failed predictions vs. verified economic data. Manufacturing dominance, technological advancement, and the geopolitical function of collapse prophecy.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Mar 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/five-months-broke-bloc" className="hover:underline text-[#d4a74a]">
+              The Five Months That Broke the Bloc &mdash; CIA Declassified
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">Part I: Poland&rsquo;s 134-day journey from the Roundtable Accords to a non-Communist prime minister. Analysis of five Top Secret CIA intelligence briefs, April&ndash;August 1989.</p>
+        </li>
+
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Mar 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/cracks-spread-east" className="hover:underline text-[#d4a74a]">
+              The Cracks Spread East &mdash; CIA Declassified
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">Part II: How the Baltic republics and East Germany slipped Moscow&rsquo;s grip. Three declassified Top Secret intelligence briefs reveal an empire cracking at every seam, June&ndash;July 1989.</p>
         </li>
 
         <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
@@ -63,7 +154,6 @@ export default function BriefingsContent() {
 
         <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
           <div className="flex items-center gap-2 mb-2">
-            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
             <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Feb 2026</span>
           </div>
           <h2 className="text-2xl font-semibold mb-2">
@@ -76,7 +166,6 @@ export default function BriefingsContent() {
 
         <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
           <div className="flex items-center gap-2 mb-2">
-            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
             <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Feb 2026</span>
           </div>
           <h2 className="text-2xl font-semibold mb-2">
@@ -89,7 +178,6 @@ export default function BriefingsContent() {
 
         <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
           <div className="flex items-center gap-2 mb-2">
-            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
             <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Feb 2026</span>
           </div>
           <h2 className="text-2xl font-semibold mb-2">
