@@ -73,15 +73,15 @@ export function FeaturedLaw({ law }: FeaturedLawProps) {
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
-        <div className="relative h-64 md:h-auto">
+        <div className="relative h-64 md:h-auto bg-[#1a1a2e]">
           <SafeFocalImage
             src={getLawImage(law.number)}
             alt={`${t('lawLabel')} ${law.number}: ${displayTitle}`}
             fill
-            className="object-cover"
+            className="object-contain p-3"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-river-depths/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-river-depths/80 to-transparent pointer-events-none"></div>
         </div>
       </div>
     </div>

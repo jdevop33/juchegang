@@ -57,16 +57,16 @@ export function LawCard({ law }: LawCardProps) {
       }`}
       style={{ animationDelay: `${(law.number % 6) * 100}ms` }}
     >
-      {/* Unique image for each law */}
-      <div className="relative h-52 overflow-hidden">
+      {/* Unique image for each law — object-contain preserves full artwork */}
+      <div className="relative h-56 overflow-hidden bg-[#1a1a2e]">
         <SafeFocalImage
           src={getLawImageCandidates(law.number)}
           alt={`Visual representation of ${t('lawLabel')} ${law.number}: ${displayTitle}`}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-river-depths/60 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-river-depths/80 via-transparent to-transparent pointer-events-none"></div>
         
         {/* Law number overlay */}
         <div className="absolute top-3 right-3">
