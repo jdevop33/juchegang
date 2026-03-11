@@ -1,77 +1,89 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import Image from "next/image"
 import { motion } from "framer-motion"
-import { Calendar, Heart, Users, Star } from "lucide-react"
 
 export function PeaceCounter() {
-  const [days, setDays] = useState(0)
-
-  // Calculate days since Korea was divided at the 38th parallel (August 15, 1945)
-  useEffect(() => {
-    const calculateTime = () => {
-      const startDate = new Date('1945-08-15T00:00:00')
-      const now = new Date()
-      const diff = now.getTime() - startDate.getTime()
-
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24))
-
-      setDays(days)
-    }
-
-    calculateTime()
-    const interval = setInterval(calculateTime, 60000) // Update every minute
-
-    return () => clearInterval(interval)
-  }, [])
-
-  const stats = [
-    { icon: Calendar, value: days.toLocaleString(), label: "Days Since Division" },
-    { icon: Users, value: "80M+", label: "Korean People, One Nation" },
-    { icon: Star, value: "4,920", label: "Years of Korean Civilization" },
-    { icon: Heart, value: "1", label: "Korea — 하나의 조선" },
-  ]
-
   return (
-    <div className="bg-gradient-to-r from-river-depths via-river-deep to-river-depths py-8 border-y border-sovereign-gold/20">
+    <div className="bg-gradient-to-b from-[#0d1b2a] via-river-depths to-river-depths py-16 sm:py-20 border-b border-sovereign-gold/20 overflow-hidden">
       <div className="container mx-auto px-4">
+
+        {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-6"
+          transition={{ duration: 0.8 }}
+          className="text-center mb-10 sm:mb-14"
         >
-          <h3 className="text-3xl font-korean font-bold text-sovereign-gold mb-1">
-            하나의 조선
-          </h3>
-          <p className="text-river-mist/70 text-sm font-heading tracking-widest uppercase">
-            One Korea
+          <p className="text-xs sm:text-sm uppercase tracking-[0.3em] text-sovereign-gold/60 mb-3">
+            충무공 이순신
           </p>
-          <p className="text-cream-muted text-sm mt-2 italic">
-            The longest peace can begin with the shortest distance
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-sovereign-gold mb-3">
+            Admiral Yi Sun-shin
+          </h3>
+          <p className="text-river-mist/70 text-sm sm:text-base max-w-xl mx-auto italic">
+            Undefeated in 23 naval engagements. The sword that defended a nation. The diary that recorded a war.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {stats.map((stat, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-river-current/20 backdrop-blur-sm rounded-xl p-4 border border-river-current/30 hover:border-sovereign-gold/40 transition-all"
-            >
-              <div className="flex flex-col items-center text-center">
-                <stat.icon className="w-8 h-8 text-river-mid mb-2" />
-                <div className="text-2xl font-bold text-river-mist mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-xs text-cream-muted">
-                  {stat.label}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        {/* Sword — full width, centered */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          className="flex justify-center mb-10 sm:mb-14 px-4"
+        >
+          <div className="relative w-full max-w-[300px] sm:max-w-[440px] md:max-w-[580px] lg:max-w-[680px] aspect-[836/361]">
+            <Image
+              src="/gallery/총무공_장검.png"
+              alt="충무공 장검 — Admiral Yi Sun-shin's Long Sword, National Treasure of Korea"
+              fill
+              className="object-contain drop-shadow-[0_4px_20px_rgba(212,167,74,0.15)]"
+              sizes="(max-width: 640px) 300px, (max-width: 768px) 440px, (max-width: 1024px) 580px, 680px"
+            />
+          </div>
+        </motion.div>
+
+        {/* Quote */}
+        <motion.blockquote
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="text-center max-w-2xl mx-auto mb-10 sm:mb-14"
+        >
+          <p className="text-xl sm:text-2xl md:text-3xl font-korean font-semibold text-sovereign-gold mb-4">
+            필사즉생 필생즉사
+          </p>
+          <p className="text-base sm:text-lg text-river-mist/80 font-heading italic mb-4">
+            &ldquo;If you seek death, you will live. If you seek life, you will die.&rdquo;
+          </p>
+          <div className="w-16 h-px bg-sovereign-gold/40 mx-auto mb-4" />
+          <p className="text-xs sm:text-sm text-river-mist/50 tracking-widest uppercase">
+            Battle of Myeongnyang &middot; 1597
+          </p>
+        </motion.blockquote>
+
+        {/* War Journal — centered, smaller */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
+          className="flex flex-col items-center"
+        >
+          <div className="relative w-full max-w-[220px] sm:max-w-[300px] md:max-w-[380px] aspect-[692/392] mb-4">
+            <Image
+              src="/gallery/이순신_난중일기_및_서간첩_임진장초.jpg"
+              alt="임진장초 — Admiral Yi Sun-shin's Imjin War Dispatches, 1592"
+              fill
+              className="object-contain rounded-lg shadow-2xl shadow-black/30"
+              sizes="(max-width: 640px) 220px, (max-width: 768px) 300px, 380px"
+            />
+          </div>
+          <p className="text-xs text-river-mist/40 tracking-wider text-center">
+            난중일기 및 서간첩 임진장초 &middot; War Diary &amp; Dispatches &middot; National Treasure No. 76
+          </p>
+        </motion.div>
+
       </div>
     </div>
   )

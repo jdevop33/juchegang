@@ -35,41 +35,6 @@ export function HeroSection() {
       {/* Content layers — fade in sequentially */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6">
 
-        {/* Yi's artifacts — fade in at breath 1, stay visible forever */}
-        <div
-          className={`absolute inset-0 pointer-events-none transition-opacity duration-[1500ms] ${
-            breath >= 1 ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          {/* 충무공 장검 — Sword, top center, contained responsively */}
-          {/* 836x361 source, ~2.3:1 ratio — use max-w + aspect-ratio to contain */}
-          <div className="absolute top-[16%] sm:top-[18%] inset-x-0 flex justify-center px-8 sm:px-12">
-            <div className="relative w-full max-w-[280px] sm:max-w-[380px] md:max-w-[480px] lg:max-w-[560px] aspect-[836/361] opacity-50">
-              <Image
-                src="/gallery/총무공_장검.png"
-                alt="충무공 장검 — Admiral Yi Sun-shin's Long Sword"
-                fill
-                className="object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
-                sizes="(max-width: 640px) 280px, (max-width: 768px) 380px, (max-width: 1024px) 480px, 560px"
-              />
-            </div>
-          </div>
-
-          {/* 임진장초 — War journal, bottom center, contained responsively */}
-          {/* 692x392 source, ~1.77:1 ratio */}
-          <div className="absolute bottom-[12%] sm:bottom-[14%] inset-x-0 flex justify-center px-12 sm:px-16">
-            <div className="relative w-full max-w-[140px] sm:max-w-[180px] md:max-w-[220px] lg:max-w-[260px] aspect-[692/392] opacity-30">
-              <Image
-                src="/gallery/이순신_난중일기_및_서간첩_임진장초.jpg"
-                alt="임진장초 — Yi Sun-shin's wartime dispatches"
-                fill
-                className="object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
-                sizes="(max-width: 640px) 140px, (max-width: 768px) 180px, (max-width: 1024px) 220px, 260px"
-              />
-            </div>
-          </div>
-        </div>
-
         {/* Breath Two — The Warrior Quote */}
         <div
           className={`absolute inset-0 flex flex-col items-center justify-center px-6 transition-opacity duration-1000 ${
