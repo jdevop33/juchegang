@@ -28,3 +28,6 @@ next-env.d.ts
 
 # sensitive data
 accounts.txt
+
+# Raw heritage image sources (350MB+ originals, resized copies in /public/gallery/heritage/)
+/public/images/jucheart/
