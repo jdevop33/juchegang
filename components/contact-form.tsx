@@ -75,9 +75,9 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
           {/* Form Section */}
           <div className="order-2 lg:order-1">
-            <Card className="border-friendship-blue/20 shadow-2xl bg-gradient-to-br from-background to-muted/20">
+            <Card className="border-sovereign-gold/20 shadow-2xl bg-gradient-to-br from-background to-river-depths/30 ring-1 ring-sovereign-gold/10">
               <CardHeader className="space-y-2">
-                <CardTitle className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-friendship-blue to-friendship-red bg-clip-text text-transparent">
+                <CardTitle className="text-2xl md:text-3xl font-heading font-bold bg-gradient-to-r from-sovereign-gold to-river-mist bg-clip-text text-transparent">
                   {t('connectWithExcellence')}
                 </CardTitle>
                 <CardDescription className="text-base md:text-lg">
@@ -105,7 +105,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                         value={formData.Name}
                         onChange={handleChange}
                         required
-                        className="w-full border-muted-foreground/20 focus:border-friendship-blue transition-colors"
+                        className="w-full border-muted-foreground/20 focus:border-sovereign-gold transition-colors"
                       />
                     </div>
                     <div className="space-y-2">
@@ -120,7 +120,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                         value={formData.Email}
                         onChange={handleChange}
                         required
-                        className="w-full border-muted-foreground/20 focus:border-friendship-blue transition-colors"
+                        className="w-full border-muted-foreground/20 focus:border-sovereign-gold transition-colors"
                       />
                     </div>
                   </div>
@@ -136,7 +136,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                       value={formData.Subject}
                       onChange={handleChange}
                       required
-                      className="w-full border-muted-foreground/20 focus:border-friendship-blue transition-colors"
+                      className="w-full border-muted-foreground/20 focus:border-sovereign-gold transition-colors"
                     />
                   </div>
                   <div className="space-y-2">
@@ -151,7 +151,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                       onChange={handleChange}
                       required
                       rows={5}
-                      className="w-full min-h-[120px] md:min-h-[150px] border-muted-foreground/20 focus:border-friendship-blue transition-colors resize-none"
+                      className="w-full min-h-[120px] md:min-h-[150px] border-muted-foreground/20 focus:border-sovereign-gold transition-colors resize-none"
                     />
                   </div>
                   
@@ -188,7 +188,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full sm:w-auto bg-gradient-to-r from-friendship-blue to-friendship-red hover:from-friendship-blue/90 hover:to-friendship-red/90 text-cream font-semibold py-2 px-6 md:py-3 md:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                    className="w-full sm:w-auto bg-gradient-to-r from-sovereign-gold to-sovereign-dark hover:from-sovereign-gold/90 hover:to-sovereign-dark/90 text-river-depths font-semibold py-2 px-6 md:py-3 md:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                   >
                     {isSubmitting ? (
                       <>
@@ -208,15 +208,17 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
 
           {/* Image Section */}
           <div className="order-1 lg:order-2">
-            <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-2xl shadow-2xl">
+            <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-2xl shadow-2xl ring-1 ring-sovereign-gold/20">
               <img
-                src="/images/mountain-bear-sunset.png"
-                alt="Excellence in Nature"
+                src="/images/heros/korean03.jpg"
+                alt="Mount Paektu in golden light — Heaven Lake with wildflowers"
                 className="object-cover w-full h-full transition-transform duration-700 hover:scale-105"
               />
             </AspectRatio>
             <div className="mt-6 text-center lg:text-left">
-              <h3 className="text-xl md:text-2xl font-bold mb-2">{t('embraceTitle')}</h3>
+              <p className="text-lg md:text-xl font-heading font-bold mb-2 bg-gradient-to-r from-sovereign-gold to-sovereign-dark bg-clip-text text-transparent">
+                {t('embraceTitle')}
+              </p>
               <p className="text-muted-foreground text-sm md:text-base">
                 {t('embraceDesc')}
               </p>

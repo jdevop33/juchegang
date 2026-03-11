@@ -140,7 +140,7 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
         <div className="section-divider"></div>
 
         <div className="section-reveal">
-          <CategorySection title={t('selfDisciplineTitle')} description={t('selfDisciplineDesc')} laws={selfDisciplineLaws} imagePath="/images/brothers.jpg" bgClass="bg-muted/50 backdrop-blur-sm" />
+          <CategorySection title={t('selfDisciplineTitle')} description={t('selfDisciplineDesc')} laws={selfDisciplineLaws} imagePath="/images/heros/beautioful4.jpg" bgClass="bg-muted/50 backdrop-blur-sm" />
         </div>
 
         <div className="section-divider"></div>
