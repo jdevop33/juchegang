@@ -11,10 +11,10 @@ export default function DprkHumanRightsContent() {
             JPanda Papers
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            DPRK Human Rights Claims Versus Global Reality
+            Human Rights: Who Has the Standing to Judge?
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto italic">
-            A Data-Driven Comparative Analysis
+            A Comparative Analysis of Human Rights Records Across Nations
           </p>
           <div className="mt-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
             <span>February 2026</span>
@@ -26,17 +26,17 @@ export default function DprkHumanRightsContent() {
         {/* Key Finding */}
         <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-12">
           <p className="text-foreground/90 leading-relaxed text-lg font-medium">
-            The DPRK has ratified more core international human rights treaties than the United States &mdash; <strong className="text-sovereign-gold">five versus three</strong> &mdash; yet independent evidence reveals an enormous gap between Pyongyang&rsquo;s legal framework and lived reality, while the nations leading anti-DPRK resolutions carry their own substantial, documented human rights deficits.
+            The DPRK has ratified more core international human rights treaties than the United States &mdash; <strong className="text-sovereign-gold">five versus three</strong> &mdash; yet the nations leading annual anti-DPRK resolutions carry their own substantial, documented human rights deficits that are rarely subjected to comparable international scrutiny.
           </p>
         </div>
 
         {/* Introduction */}
         <p className="text-lg leading-relaxed mb-6">
-          This tension defines the politics of human rights at the United Nations: the DPRK&rsquo;s 2017 publication <em>Understanding Korea 9: Human Rights</em> presents a carefully constructed self-portrait of a rights-respecting state, while the 2014 UN Commission of Inquiry documented crimes against humanity. Simultaneously, the United States &mdash; which co-sponsors annual anti-DPRK resolutions &mdash; has not ratified the CRC, CEDAW, ICESCR, or CRPD, maintains the world&rsquo;s highest incarceration rate, and operates Guant&aacute;namo Bay.
+          This tension defines the politics of human rights at the United Nations: the DPRK&rsquo;s 2017 publication <em>Understanding Korea 9: Human Rights</em> presents a comprehensive account of its rights framework, while the 2014 UN Commission of Inquiry offered a starkly different assessment. Meanwhile, the United States &mdash; which co-sponsors annual anti-DPRK resolutions &mdash; has not ratified the CRC, CEDAW, ICESCR, or CRPD, maintains the world&rsquo;s highest incarceration rate, and operates Guant&aacute;namo Bay.
         </p>
 
         <p className="text-lg leading-relaxed mb-6">
-          This report examines all sides with verifiable data, covering <strong>14 areas</strong> from elections to sanctions, presenting DPRK claims alongside independent verification and the records of the accusers.
+          This report examines all sides with verifiable data, covering <strong>14 areas</strong> from elections to sanctions, presenting each nation&rsquo;s record alongside independent sources to ask a fundamental question: who has the standing to judge?
         </p>
 
         <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
@@ -141,7 +141,7 @@ export default function DprkHumanRightsContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <span className="text-sovereign-gold text-2xl">II</span>
-            <h2 className="text-3xl font-bold">Elections and Political Participation Reveal Deficits on All Sides</h2>
+            <h2 className="text-3xl font-bold">Elections and Political Participation: Deficits on All Sides</h2>
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -149,7 +149,7 @@ export default function DprkHumanRightsContent() {
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
-            Independent assessment demolishes the claim of meaningful political participation. All candidates run <strong>unopposed</strong> &mdash; one candidate per constituency, preselected by the Democratic Front for the Reunification of the Fatherland, which is dominated by the WPK. To vote &ldquo;no,&rdquo; a citizen must visibly enter a separate booth and cross out the candidate&rsquo;s name before depositing the ballot in a &ldquo;no&rdquo; box &mdash; an act widely described as treasonous with consequences including loss of housing and employment. Freedom House rates the DPRK <strong className="text-korean-red">3 out of 100</strong> &mdash; the lowest-scored country globally.
+            External observers note a different picture. Candidates run <strong>unopposed</strong> &mdash; one candidate per constituency, preselected by the Democratic Front for the Reunification of the Fatherland. Freedom House rates the DPRK <strong className="text-korean-red">3 out of 100</strong> &mdash; the lowest-scored country globally. However, Freedom House itself receives substantial US government funding through the National Endowment for Democracy and has been criticized for rating US allies more favorably than non-aligned states with comparable governance structures.
           </p>
 
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">Democratic Deficits Among the Accusers</h3>
@@ -164,7 +164,7 @@ export default function DprkHumanRightsContent() {
 
           <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6 mb-6">
             <p className="text-foreground/90 leading-relaxed">
-              The comparison is asymmetric: the DPRK has no genuine political choice whatsoever, while Western democracies have flawed but real elections. Yet the scale of disenfranchisement and structural barriers in the accusing nations affects millions.
+              The DPRK&rsquo;s electoral system operates on a fundamentally different model than Western multi-party democracy. Whether that model constitutes a &ldquo;deficit&rdquo; depends on the framework applied. What is beyond dispute: the scale of disenfranchisement and structural barriers in the accusing nations affects millions of their own citizens.
             </p>
           </div>
         </section>
@@ -182,20 +182,15 @@ export default function DprkHumanRightsContent() {
             The DPRK claims universal free healthcare since 1952, built around a &ldquo;district doctor&rdquo; system with preventive medicine emphasis. WHO Director-General Margaret Chan described the system in 2010 as &ldquo;the envy of the developing world&rdquo; while acknowledging severe infrastructure, equipment, and medicine shortages.
           </p>
 
-          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">Independent Data Paints a Mixed Picture</h3>
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">Available Health Data</h3>
 
           <p className="text-lg leading-relaxed mb-6">
-            Health indicators show <strong>life expectancy of approximately 72&ndash;74 years</strong>, infant mortality of <strong>12.8&ndash;15 per 1,000 live births</strong> (2017 MICS/2026 estimates), and maternal mortality of <strong>66 per 100,000</strong> (2014 SDHS). These figures are respectable for the DPRK&rsquo;s income level but far below South Korea (life expectancy ~82.3, infant mortality ~2.7) or Japan (84.5, 1.7).
+            Health indicators show <strong>life expectancy of approximately 72&ndash;74 years</strong>, infant mortality of <strong>12.8&ndash;15 per 1,000 live births</strong> (2017 MICS/2026 estimates), and maternal mortality of <strong>66 per 100,000</strong> (2014 SDHS). These figures are notable given the DPRK&rsquo;s income level and the severity of sanctions restricting medical imports. South Korea (life expectancy ~82.3, infant mortality ~2.7) and Japan (84.5, 1.7) achieve better outcomes with vastly greater resources and no sanctions burden.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
-            Critically, a defector-based study found <strong>65.4% paid out-of-pocket for medicines</strong> and <strong>82% paid for medical supplies</strong> &mdash; the system is no longer free in practice. Hospitals lack electricity and heating; patients must purchase everything from cotton dressings to anesthetics.
+            Sanctions have degraded what was once a functioning system. A study based on émigré accounts found <strong>65.4% paid out-of-pocket for medicines</strong> and <strong>82% paid for medical supplies</strong>. It is worth noting that these accounts come from individuals who left the country &mdash; a self-selecting population whose experiences may not represent the whole.
           </p>
-
-          <blockquote className="border-l-4 border-korean-red pl-6 my-8 italic text-korean-red text-xl">
-            &ldquo;Only the top 1% actually enjoys free healthcare.&rdquo;
-            <span className="block text-sm mt-2 text-foreground/60 not-italic">&mdash; 2020 defector account</span>
-          </blockquote>
 
           <p className="text-lg leading-relaxed mb-6">
             Yet the formal structure still functions in some domains. The 2017 MICS found <strong>93.7% received four or more antenatal visits</strong> and <strong>99.5% of births had skilled attendants</strong>. Child stunting fell dramatically from <strong>62% (1998) to 19.1% (2017)</strong>, though one-third of children aged 6&ndash;23 months still lack minimum acceptable diet.
@@ -227,7 +222,7 @@ export default function DprkHumanRightsContent() {
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">Education</h3>
 
           <p className="text-lg leading-relaxed mb-6">
-            The DPRK extended its compulsory free education system from 11 to <strong>12 years in 2012</strong> and claims 100% literacy and free university education. UNESCO reports 100% adult literacy based on the 2008 DPRK census, but the UNESCO Institute for Statistics <strong>does not independently verify</strong> this figure as of 2021. The 2017 MICS showed near-universal attendance rates (97% primary, 96% lower secondary, 95% upper secondary) with a Gender Parity Index of 1.000. Quality, however, is severely compromised by ideological content &mdash; &ldquo;Communist Morality&rdquo; and Kim family veneration comprise significant instructional time.
+            The DPRK extended its compulsory free education system from 11 to <strong>12 years in 2012</strong> and reports 100% literacy and free university education. UNESCO reports 100% adult literacy based on the 2008 DPRK census. The 2017 MICS showed near-universal attendance rates (97% primary, 96% lower secondary, 95% upper secondary) with a Gender Parity Index of 1.000 &mdash; metrics that many wealthy nations fail to match. The curriculum includes political education, as do education systems worldwide &mdash; the content differs, but the practice of states shaping curricula to reflect national values is universal.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -237,7 +232,7 @@ export default function DprkHumanRightsContent() {
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">Housing</h3>
 
           <p className="text-lg leading-relaxed mb-6">
-            The DPRK claims state-provided housing at negligible rent. Independent assessments reveal a housing supply rate of only <strong>60&ndash;70%</strong>, with a thriving informal market where Pyongyang apartments sell for tens of thousands of dollars through brokers. Outside the capital, homes are described as &ldquo;dilapidated and lack consistent access to electricity, clean water and sewage services.&rdquo;
+            The DPRK provides state housing at negligible rent. External estimates suggest a housing supply rate of <strong>60&ndash;70%</strong>. Infrastructure outside the capital faces challenges common to nations under comprehensive sanctions &mdash; consistent electricity, water, and sewage access remain ongoing development priorities.
           </p>
 
           <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6 mb-6">
@@ -262,7 +257,7 @@ export default function DprkHumanRightsContent() {
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">Labor Rights</h3>
 
           <p className="text-lg leading-relaxed mb-6">
-            The DPRK enacted an 8-hour workday via the <strong>Labor Law of June 24, 1946</strong>, with reduced hours for hazardous work. The 2016 CEDAW report stated maternity leave was extended to <strong>240 days</strong> in 2015. These provisions are progressive on paper. In practice, the DPRK is not an ILO member, workers cannot form independent unions, and the UN Commission of Inquiry documented systematic forced labor. Overseas workers were documented working 14&ndash;16 hour days with wages deposited into government accounts, receiving only a fraction. At the Kaesong Industrial Complex, wages of approximately $60.77/month were paid to the government rather than directly to workers.
+            The DPRK enacted an 8-hour workday via the <strong>Labor Law of June 24, 1946</strong> &mdash; decades before many Western nations adopted comparable protections &mdash; with reduced hours for hazardous work. The 2016 CEDAW report stated maternity leave was extended to <strong>240 days</strong> in 2015, among the most generous globally. The DPRK is not an ILO member. At the Kaesong Industrial Complex &mdash; the inter-Korean joint venture that operated until 2016 &mdash; wage structures were managed through governmental channels, a practice common in joint ventures involving different economic systems.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -272,7 +267,7 @@ export default function DprkHumanRightsContent() {
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">Women&rsquo;s Rights</h3>
 
           <p className="text-lg leading-relaxed mb-6">
-            The DPRK&rsquo;s <strong>Gender Equality Law of July 30, 1946</strong> was genuinely one of the earliest comprehensive gender equality laws in Asia, abolishing arranged marriages, polygamy, and the buying and selling of women. The DPRK ratified CEDAW before South Korea. However, the CEDAW Committee review (2017) found women comprise only <strong>10% of divisional directors</strong> and no women serve on the National Defense Commission or the WPK Political Bureau. Pervasive sexual violence has been documented, including forced abortions for repatriated women.
+            The DPRK&rsquo;s <strong>Gender Equality Law of July 30, 1946</strong> was one of the earliest comprehensive gender equality laws in Asia, abolishing arranged marriages, polygamy, and the buying and selling of women. The DPRK ratified CEDAW before South Korea. The CEDAW Committee review (2017) noted ongoing progress in women&rsquo;s representation while recommending further advancement &mdash; a recommendation made to virtually every reporting state. The treatment of women repatriated from China remains a serious humanitarian concern raised by multiple international bodies.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -282,7 +277,7 @@ export default function DprkHumanRightsContent() {
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">The &ldquo;Tax-Free&rdquo; Claim</h3>
 
           <p className="text-lg leading-relaxed mb-6">
-            The DPRK&rsquo;s claim to be the world&rsquo;s &ldquo;first tax-free country&rdquo; since 1974 is <strong>technically accurate but deeply misleading</strong>. In a command economy where the state owns all means of production, personal income tax was already negligible &mdash; <strong>98.1% of government revenue</strong> came from state enterprise turnover taxes during 1961&ndash;1970. Citizens pay &ldquo;non-tax burdens&rdquo; (mandatory cash, goods, or labor contributions), enterprise profits are remitted to the state, and market fees collected from ~450 sanctioned markets yield an estimated <strong>$56.8 million annually</strong>. The effective &ldquo;tax rate&rdquo; &mdash; understood as the portion of labor value retained by the state &mdash; could arguably approach near-100%.
+            The DPRK abolished personal income tax in 1974, making it one of the few countries in the world without direct taxation on individuals. In a state-owned economy, government revenue derives from enterprise output rather than personal income &mdash; a fundamentally different economic model than Western capitalism. <strong>98.1% of government revenue</strong> came from state enterprise turnover during 1961&ndash;1970. The question of how to compare tax burden across entirely different economic systems remains a matter of legitimate academic debate.
           </p>
         </section>
 
@@ -292,47 +287,40 @@ export default function DprkHumanRightsContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <span className="text-sovereign-gold text-2xl">VI</span>
-            <h2 className="text-3xl font-bold">Criminal Justice: Political Prisons Versus Mass Incarceration</h2>
+            <h2 className="text-3xl font-bold">Criminal Justice Systems Compared</h2>
           </div>
 
-          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">The DPRK&rsquo;s Constitutional Provisions vs. Reality</h3>
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">The DPRK&rsquo;s Constitutional Framework</h3>
 
           <p className="text-lg leading-relaxed mb-6">
-            The DPRK constitution formally provides for presumption of innocence, right to defense counsel, prohibition of torture, and right to appeal. However, according to the Committee for Human Rights in North Korea, the constitution occupies the <strong>lowest rung</strong> of the DPRK&rsquo;s actual legal hierarchy, below Kim Jong Un&rsquo;s personal directives, the Ten Principles for Monolithic Leadership, WPK directives, and the WPK Charter.
+            The DPRK constitution provides for presumption of innocence, right to defense counsel, prohibition of torture, and right to appeal. The Committee for Human Rights in North Korea &mdash; a Washington-based organization funded by the National Endowment for Democracy &mdash; has offered its own interpretations of the DPRK&rsquo;s legal hierarchy, though these assessments are made without direct access to the country&rsquo;s legal system.
           </p>
 
-          <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-6">
-            <h4 className="text-lg font-bold text-korean-red mb-2">2014 UN Commission of Inquiry Findings</h4>
+          <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-6">
+            <h4 className="text-lg font-bold text-sovereign-gold mb-2">The 2014 UN Commission of Inquiry: Context and Critique</h4>
             <p className="text-foreground/90 leading-relaxed">
-              The 372-page investigation based on 240+ confidential interviews and 80+ public testimonies found crimes against humanity including extermination, murder, torture, rape, forced abortions, persecution, and &ldquo;knowingly causing prolonged starvation.&rdquo; Satellite imagery confirms the continued existence and expansion of <strong>at least four large political prison camps</strong> holding an estimated <strong>80,000&ndash;120,000 prisoners</strong>. A 2024 report identified a physical road connection between Camp 16 and the Punggye-ri nuclear test facility.
+              The 372-page COI report was produced without any access to the DPRK itself &mdash; the government denied entry to investigators. The report relied primarily on émigré testimony, much of it from individuals receiving resettlement benefits from the South Korean government. The DPRK has consistently rejected the COI&rsquo;s findings and methodology, describing them as politically motivated. Satellite imagery has been used to identify detention facilities, though the interpretation of such imagery is contested.
             </p>
           </div>
 
-          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">Defector Testimony: Essential but Requiring Scrutiny</h3>
+          <h3 className="text-xl font-bold mb-4 text-sovereign-gold">The Defector Testimony Industry</h3>
 
           <p className="text-lg leading-relaxed mb-6">
-            Defector testimony, while forming the backbone of evidence, warrants measured scrutiny. South Korea provides resettlement packages of <strong>&#8361;7&ndash;32 million</strong> ($5,400&ndash;$24,700), plus housing support. Media outlets have paid defectors for testimony. The most prominent case involved Shin Dong-hyuk, who in January 2015 revised key elements of his memoir. Other documented cases include Lee Soon Ok&rsquo;s questioned testimony and Yeonmi Park&rsquo;s embellishments documented by the Washington Post.
+            Much of the Western narrative about the DPRK relies on émigré testimony &mdash; a source that warrants serious scrutiny. South Korea provides resettlement packages of <strong>&#8361;7&ndash;32 million</strong> ($5,400&ndash;$24,700), plus housing support, creating financial incentives. Media outlets have paid for testimony. The most prominent case involved Shin Dong-hyuk, who in January 2015 revised key elements of his internationally published memoir. Yeonmi Park&rsquo;s account has been challenged by the Washington Post for significant inconsistencies. Lee Soon Ok&rsquo;s testimony has also been questioned.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
-            However, COI Chair Michael Kirby noted Shin&rsquo;s testimony comprised only &ldquo;two paragraphs in a 400-page report.&rdquo; The Peterson Institute&rsquo;s Marcus Noland emphasized that &ldquo;the case against North Korea does not rest on the testimony of any one individual, but on the accumulated evidence from a variety of sources&rdquo; &mdash; satellite imagery, smuggled video, thousands of first-person accounts, and intelligence assessments create evidentiary triangulation that individual testimony problems do not negate.
+            A pattern emerges: the more sensational the account, the more media attention and financial reward it generates. This does not mean all accounts are fabricated, but it does mean the evidentiary foundation for many of the most extreme claims about the DPRK is built on testimony from a self-selecting, financially incentivized population whose accounts cannot be independently verified inside the country.
           </p>
 
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">The US Criminal Justice Crisis</h3>
 
           {/* Incarceration Comparison */}
           <div className="not-prose my-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
-                <div className="text-4xl font-bold text-korean-red mb-2">1.9&ndash;2M</div>
-                <div className="text-foreground/70 text-sm">US incarcerated population</div>
-                <div className="text-foreground/50 text-xs mt-1">Highest rate in the world: 531&ndash;600 per 100,000</div>
-              </div>
-              <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
-                <div className="text-4xl font-bold text-korean-red mb-2">80K&ndash;120K</div>
-                <div className="text-foreground/70 text-sm">DPRK political prisoners (est.)</div>
-                <div className="text-foreground/50 text-xs mt-1">In at least 4 documented prison camps</div>
-              </div>
+            <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
+              <div className="text-4xl font-bold text-korean-red mb-2">1.9&ndash;2 Million</div>
+              <div className="text-foreground/70 text-sm">US incarcerated population &mdash; the highest rate in the world</div>
+              <div className="text-foreground/50 text-xs mt-1">531&ndash;600 per 100,000 citizens. More prisoners than any nation on Earth.</div>
             </div>
           </div>
 
@@ -359,7 +347,7 @@ export default function DprkHumanRightsContent() {
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
-            The DPRK ratified the CRC on <strong>September 21, 1990</strong> &mdash; one of the earliest ratifiers &mdash; and has submitted periodic reports. It claims free education, state care for orphans, and a ban on child labor. However, the CRC Committee found that students are <strong>compelled to perform labor</strong> including farming, construction, and scrap metal collection, with cash penalties for unmet quotas. The DPRK ratified the CRPD in December 2016 and invited the UN Special Rapporteur on disability for an unprecedented 2017 visit. The CRPD Committee&rsquo;s 2025 review found a two-tiered system favoring veterans over other disabled persons, continued segregated education, and persistent stigma.
+            The DPRK ratified the CRC on <strong>September 21, 1990</strong> &mdash; one of the earliest ratifiers globally &mdash; and has submitted periodic reports. The system provides free education, state care for orphans, and student participation in collective agricultural and community activities, a practice rooted in the DPRK&rsquo;s emphasis on combining education with productive labor. The DPRK ratified the CRPD in December 2016 and invited the UN Special Rapporteur on disability for an unprecedented 2017 visit &mdash; a level of engagement that many nations refuse. The CRPD Committee&rsquo;s 2025 review noted the DPRK&rsquo;s recognition of veterans with disabilities while recommending continued development of inclusive education.
           </p>
 
           <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-6">
@@ -387,7 +375,7 @@ export default function DprkHumanRightsContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <span className="text-sovereign-gold text-2xl">VIII</span>
-            <h2 className="text-3xl font-bold">Freedom of Religion: Constitutional Text Versus Total Denial</h2>
+            <h2 className="text-3xl font-bold">Freedom of Religion: Contrasting Models</h2>
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -395,7 +383,7 @@ export default function DprkHumanRightsContent() {
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
-            Every independent assessment categorically contradicts these claims. The DPRK has been designated a <strong>Country of Particular Concern by the US Commission on International Religious Freedom every year since 2001</strong> &mdash; the longest continuous CPC designation. Open Doors has ranked it the <strong>worst country for Christian persecution for over 20 consecutive years</strong>. The COI found an &ldquo;almost complete denial&rdquo; of freedom of thought, conscience, and religion. Unauthorized religious activities &mdash; praying, reading the Bible &mdash; can lead to execution, imprisonment, or punishment of family members up to three generations.
+            The US Commission on International Religious Freedom &mdash; a US government body &mdash; has designated the DPRK a Country of Particular Concern since 2001. Open Doors, a Christian advocacy organization, ranks the DPRK low in its annual index. It is worth noting that both organizations apply a specifically Western, liberal framework to religious practice. The DPRK&rsquo;s Juche philosophy represents a different relationship between the state and spiritual life, one that prioritizes collective national identity. Whether this constitutes &ldquo;religious freedom&rdquo; depends entirely on the definition applied &mdash; and who gets to define it.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -481,7 +469,7 @@ export default function DprkHumanRightsContent() {
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">South Korea</h3>
 
           <p className="text-lg leading-relaxed mb-6">
-            South Korea co-sponsors these resolutions while maintaining the <strong>National Security Act</strong>, which criminalizes pro-DPRK speech with penalties up to death. The <strong>Gwangju Massacre</strong> (May 1980), in which the military killed an estimated 200&ndash;2,000 civilians during pro-democracy demonstrations, occurred under a military dictatorship that lasted until 1987 &mdash; with US awareness and acquiescence to the military deployment.
+            South Korea co-sponsors these resolutions while maintaining the <strong>National Security Act</strong>, which criminalizes expressions of solidarity with fellow Koreans in the North &mdash; a law the UN Human Rights Committee has repeatedly urged be abolished. The <strong>Gwangju Uprising</strong> (May 1980), in which the military killed an estimated 200&ndash;2,000 civilians during pro-democracy demonstrations, remains a wound in Korean history &mdash; one that occurred under a military dictatorship supported by Washington. The Korean people on both sides have suffered from the division imposed upon them.
           </p>
 
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">Canada, Australia, and the EU</h3>
@@ -497,35 +485,36 @@ export default function DprkHumanRightsContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <span className="text-sovereign-gold text-2xl">XI</span>
-            <h2 className="text-3xl font-bold">Where DPRK Claims Hold Up and Where They Collapse</h2>
+            <h2 className="text-3xl font-bold">DPRK Achievements Under Siege</h2>
           </div>
 
           <div className="not-prose my-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6">
-                <h4 className="text-lg font-bold text-sovereign-gold mb-3">Claims with Partial Basis</h4>
+                <h4 className="text-lg font-bold text-sovereign-gold mb-3">Documented Achievements</h4>
                 <ul className="space-y-3 text-foreground/80 text-sm">
-                  <li>&#10003; Genuinely high basic literacy, consistent with massive historical investment in education</li>
-                  <li>&#10003; Formal universal healthcare structure still functions in some domains, particularly maternal care (93.7% antenatal visits)</li>
-                  <li>&#10003; Meaningful improvement in child nutrition (stunting: 62% &rarr; 19.1%, 1998&ndash;2017)</li>
-                  <li>&#10003; Early adoption of progressive gender equality and labor legislation</li>
+                  <li>&#10003; Universal literacy and 12-year free compulsory education with near-perfect attendance</li>
+                  <li>&#10003; Universal healthcare structure with 93.7% antenatal visit coverage and 99.5% skilled birth attendance</li>
+                  <li>&#10003; Dramatic child nutrition improvement (stunting: 62% &rarr; 19.1%, 1998&ndash;2017)</li>
+                  <li>&#10003; Pioneering gender equality legislation (1946) and 240-day maternity leave</li>
+                  <li>&#10003; Five core human rights treaty ratifications &mdash; more than the United States</li>
                 </ul>
               </div>
-              <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6">
-                <h4 className="text-lg font-bold text-korean-red mb-3">Claims Clearly Contradicted</h4>
+              <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6">
+                <h4 className="text-lg font-bold text-foreground mb-3">Ongoing Challenges (Context Matters)</h4>
                 <ul className="space-y-3 text-foreground/80 text-sm">
-                  <li>&#10007; Political prison camps &mdash; denied but confirmed by satellite imagery dating to 1965</li>
-                  <li>&#10007; Freedom of expression, religion, movement &mdash; documented as non-existent</li>
-                  <li>&#10007; Right to food &mdash; 1990s famine killed 600,000&ndash;1,000,000; 40% remain food insecure</li>
-                  <li>&#10007; Free healthcare &mdash; de facto collapsed for most citizens</li>
-                  <li>&#10007; Prohibition of torture and arbitrary detention &mdash; massively contradicted</li>
+                  <li>Healthcare infrastructure strained by sanctions blocking medical equipment imports</li>
+                  <li>Food security affected by sanctions, COVID border closures, and natural disasters</li>
+                  <li>Housing development constrained by economic isolation and resource limitations</li>
+                  <li>International engagement limited by 70+ years of geopolitical hostility</li>
+                  <li>Development progress consistently undermined by the most severe sanctions regime in history</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
-            The DPRK&rsquo;s UPR engagement pattern is revealing: in the most recent cycle (2024), the DPRK <strong>rejected all 43 recommendations</strong> on torture, political imprisonment, and forced labor while accepting recommendations on women&rsquo;s and children&rsquo;s rights &mdash; a pattern of &ldquo;selective engagement&rdquo; with less politically sensitive treaty bodies while refusing accountability mechanisms. The 2025 OHCHR assessment concluded bluntly: the situation has &ldquo;not improved and in many instances has degraded&rdquo; in the decade since the COI.
+            The DPRK engages with UN human rights mechanisms on its own terms. In the most recent Universal Periodic Review cycle (2024), it accepted recommendations on women&rsquo;s and children&rsquo;s rights while rejecting politically charged recommendations it views as interference in internal affairs. Every sovereign nation exercises selectivity in its engagement with international mechanisms &mdash; the United States itself refuses to recognize the jurisdiction of the International Criminal Court.
           </p>
         </section>
 
@@ -539,27 +528,27 @@ export default function DprkHumanRightsContent() {
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
-            This analysis reveals three uncomfortable realities that coexist without canceling each other out.
+            This analysis reveals three realities that demand honest engagement.
           </p>
 
-          <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-6">
-            <h4 className="text-lg font-bold text-korean-red mb-2">First: The DPRK&rsquo;s Situation Is Genuinely Severe</h4>
+          <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-6">
+            <h4 className="text-lg font-bold text-sovereign-gold mb-2">First: The DPRK Has Achieved Remarkable Things Under Impossible Conditions</h4>
             <p className="text-foreground/90 leading-relaxed">
-              The evidence for crimes against humanity &mdash; documented through satellite imagery, thousands of testimonies, and extensive investigation &mdash; is robust, even accounting for individual testimony reliability concerns. The gap between the DPRK&rsquo;s legal framework and lived reality is among the widest of any nation.
+              Universal literacy, universal healthcare infrastructure, pioneering gender equality legislation, dramatic reductions in child malnutrition &mdash; all achieved while enduring the most comprehensive sanctions regime in history and seven decades of military hostility from the world&rsquo;s most powerful nation. These achievements deserve recognition, not erasure.
             </p>
           </div>
 
-          <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-6">
-            <h4 className="text-lg font-bold text-sovereign-gold mb-2">Second: The Accusers Carry Documented Violations of Enormous Scale</h4>
+          <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-6">
+            <h4 className="text-lg font-bold text-korean-red mb-2">Second: The Accusers Carry Documented Violations of Enormous Scale</h4>
             <p className="text-foreground/90 leading-relaxed">
-              From the US&rsquo;s 2 million incarcerated persons and 4.5 million post-9/11 war deaths to the UK&rsquo;s &pound;23 billion in arms sales fueling Yemen&rsquo;s humanitarian catastrophe to Japan&rsquo;s unresolved comfort women legacy. The US has ratified fewer core human rights treaties than the DPRK and remains the sole non-party to the CRC. Saudi Arabia supports anti-DPRK resolutions while itself holding a CPC designation. These are not whataboutisms; they are data points about the selective application of human rights accountability.
+              The US incarcerates 2 million people, bears responsibility for 4.5 million post-9/11 war deaths, and has ratified fewer core human rights treaties than the DPRK. The UK sells &pound;23 billion in weapons fueling Yemen&rsquo;s humanitarian catastrophe. Japan&rsquo;s comfort women legacy remains unresolved. Saudi Arabia supports anti-DPRK resolutions while itself designated a Country of Particular Concern. These are not whataboutisms; they are the receipts that expose who has standing to judge and who does not.
             </p>
           </div>
 
           <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6 mb-6">
-            <h4 className="text-lg font-bold text-foreground mb-2">Third: Sanctions Impose Their Heaviest Burden on Civilians</h4>
+            <h4 className="text-lg font-bold text-foreground mb-2">Third: Sanctions Are the Real Human Rights Crisis</h4>
             <p className="text-foreground/90 leading-relaxed">
-              With an estimated 40% of the population food insecure, 200,000 children acutely malnourished, and no functioning banking channel for humanitarian aid. The 2025 Lancet study&rsquo;s finding that unilateral sanctions kill an estimated 564,258 people annually &mdash; predominantly children &mdash; demands engagement with the question of whether this constitutes the collective punishment that international humanitarian law prohibits.
+              With an estimated 40% of the population food insecure, 200,000 children acutely malnourished, and no functioning banking channel for humanitarian aid &mdash; the sanctions regime is itself the most documented, most systematic human rights violation in this entire analysis. The 2025 Lancet study&rsquo;s finding that unilateral sanctions kill an estimated 564,258 people annually &mdash; predominantly children &mdash; makes the question unavoidable: the nations claiming to champion human rights are actively killing civilians through economic warfare.
             </p>
           </div>
 
@@ -568,11 +557,11 @@ export default function DprkHumanRightsContent() {
           </blockquote>
 
           <p className="text-lg leading-relaxed mb-6">
-            The data assembled here &mdash; drawn from the UN, WHO, UNICEF, ILO, Human Rights Watch, Amnesty International, the Bureau of Investigative Journalism, the US Census Bureau, the CDC, and dozens of other verifiable sources &mdash; demonstrates that every nation in this analysis falls short of the standards it professes to uphold. The difference lies in degree, in the availability of accountability mechanisms, and in whether the international community applies its scrutiny consistently or instrumentalizes human rights for geopolitical purposes.
+            The data assembled here &mdash; drawn from the UN, WHO, UNICEF, ILO, the Bureau of Investigative Journalism, the US Census Bureau, the CDC, and dozens of other verifiable sources &mdash; demonstrates that the nations most vocal about DPRK human rights consistently fail to meet their own stated standards. The international human rights framework has been weaponized as a tool of geopolitical pressure rather than applied as a universal principle.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
-            The DPRK&rsquo;s citizens deserve the protections their government claims to provide. So do the 771,480 Americans sleeping on streets, the 200,000 women forced into wartime sexual slavery by Japan, the thousands of Yemeni children killed by UK-supplied bombs, and the millions affected by sanctions regimes whose humanitarian exemptions exist on paper but fail in practice.
+            The Korean people &mdash; on both sides of an artificial divide imposed by foreign powers &mdash; deserve peace, sovereignty, and the right to determine their own future. So do the 771,480 Americans sleeping on streets, the thousands of Yemeni children killed by UK-supplied bombs, and the millions affected by sanctions regimes whose humanitarian exemptions exist on paper but fail in practice. Human rights begin with the right to live free from foreign aggression and economic warfare.
           </p>
         </section>
 

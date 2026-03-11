@@ -3,17 +3,17 @@ import { JucheFooter } from "@/components/juche-footer"
 import DprkHumanRightsContent from "./dprk-human-rights-content"
 
 export const metadata = {
-  title: "DPRK Human Rights Claims vs Global Reality — A Data-Driven Comparative Analysis",
-  description: "The DPRK has ratified more core human rights treaties than the United States — five versus three. This report examines all sides with verifiable data across 14 areas.",
+  title: "Human Rights: Who Has the Standing to Judge? — A Comparative Analysis",
+  description: "The DPRK has ratified more core human rights treaties than the United States — five versus three. A comparative analysis of human rights records across nations.",
   openGraph: {
-    title: "DPRK Human Rights Claims vs Global Reality — Data-Driven Analysis",
-    description: "Treaty ratification paradoxes, political prison camps, mass incarceration, sanctions mortality, and the politics of selective outrage. 14 areas examined with verifiable data.",
-    images: [{ url: "/images/brothers.jpg", width: 1200, height: 630, alt: "DPRK Human Rights Analysis" }],
+    title: "Human Rights: Who Has the Standing to Judge?",
+    description: "Treaty ratifications, incarceration rates, sanctions mortality, and the politics of selective outrage. A comparative analysis of human rights records across nations.",
+    images: [{ url: "/images/heros/0sunsetpaektu3.jpg", width: 700, height: 285, alt: "Human Rights Comparative Analysis" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DPRK Human Rights Claims vs Global Reality",
-    images: ["/images/brothers.jpg"],
+    title: "Human Rights: Who Has the Standing to Judge?",
+    images: ["/images/heros/0sunsetpaektu3.jpg"],
   },
 }
 
