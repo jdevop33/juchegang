@@ -15,12 +15,13 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
-| #15500 | 3:11 AM | 🔵 | NGO regime change briefing contains no markdown bold syntax | ~316 |
+| #15512 | 3:16 AM | 🔄 | Refactored NGO Regime Change briefing to server component pattern | ~518 |
+| #15509 | 3:15 AM | 🔄 | NGO regime change briefing content extracted to dedicated component | ~480 |
+| #15502 | 3:11 AM | 🔄 | Converted markdown bold to HTML strong tags in NGO briefing page | ~383 |
+| #15500 | " | 🔵 | NGO regime change briefing contains no markdown bold syntax | ~316 |
 | #15499 | " | ✅ | Converting Markdown Bold to HTML Strong Tags in Briefing Pages | ~315 |
 | #15497 | 3:10 AM | 🔴 | Fixed markdown bold syntax in NGO regime change briefing JSX | ~91 |
-| #15495 | " | 🔴 | Fixed Bold Formatting in NGO Regime Change Briefing | ~249 |
 | #15492 | " | 🔴 | Fixed bold formatting syntax in NGO regime change briefing | ~242 |
 | #15491 | " | ✅ | Standardized bold formatting in NGO briefing from markdown to HTML | ~274 |
-| #15490 | " | ✅ | Standardized bold formatting in NGO regime change briefing | ~202 |
 | #15486 | " | 🔴 | NGO briefing Markdown bold syntax converted to HTML strong tags | ~302 |
 </claude-mem-context>

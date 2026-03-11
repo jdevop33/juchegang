@@ -7,6 +7,7 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
+| #15504 | 3:13 AM | 🔄 | Soros briefing refactored to split server/client components with navigation | ~458 |
 | #15494 | 3:10 AM | ✅ | Soros Briefing Standardized Bold Markup from Markdown to HTML | ~265 |
 | #15493 | " | 🔄 | Converting markdown bold to HTML strong tags in Soros briefing | ~85 |
 | #15477 | 3:08 AM | 🔵 | Soros briefing uses markdown bold syntax for emphasis on statistics | ~339 |

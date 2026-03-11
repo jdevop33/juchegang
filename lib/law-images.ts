@@ -41,10 +41,10 @@ const heritageImages: Record<number, string> = {
 	31: '/gallery/heritage/law-31-dongjakjin-ferry.jpg',          // Jeong Seon, Dongjakjin (동작진)
 	32: '/gallery/heritage/law-32-birds-and-flowers.jpg',         // Birds and Flowers Screen (화조도)
 	33: '/gallery/heritage/law-33-kim-hongdo.jpg',                // Kim Hong-do, Painting Appreciation
-	34: '/gallery/heritage/law-34-dragon-carp-detail.jpg',        // Tiger Family / Dragon and Carp detail
+	34: '/gallery/heritage/law-34-tiger-family.jpg',              // Tiger Family (호랑이 가족도), Cleveland Museum CC0
 	35: '/gallery/heritage/law-35-sunrise-peak-jeju.jpg',         // Seongsan Ilchulbong, Jeju (성산일출봉)
 	36: '/gallery/heritage/law-36-heaven-lake-paektu.jpg',        // Heaven Lake, Mt. Paektu (천지)
-	37: '/gallery/heritage/law-37-bamboo-scroll.jpg',             // Bamboo scroll painting
+	37: '/gallery/heritage/law-37-gunseondo-immortals.jpg',       // Kim Hong-do, Gunseondo (군선도), Public Domain
 	38: '/gallery/heritage/law-38-bukchon-hanok.jpg',             // Bukchon Hanok Village, Seoul
 	39: '/gallery/heritage/law-39-seoul-fortress-wall.jpg',       // Seoul Fortress Wall (한양도성)
 	40: '/gallery/heritage/law-40-boating-clear-river.jpg',       // Shin Yun-bok, Juyu Cheonggang (주유청강)
@@ -52,9 +52,9 @@ const heritageImages: Record<number, string> = {
 	42: '/gallery/heritage/law-42-an-junggeun-portrait.jpg',      // An Jung-geun portrait (안중근)
 	43: '/gallery/heritage/law-43-playing-geomungo.jpg',          // Shin Yun-bok, Cheonggeum Sangryeon
 	44: '/gallery/heritage/law-44-diamond-mountains-peaks.jpg',   // Mt. Kumgang rocky peaks (금강산)
-	45: '/gallery/heritage/law-45-plum-branch-alt.jpg',           // Plum branch alternate view
-	46: '/gallery/heritage/law-46-golden-rooster.jpg',            // Golden Rooster with Sipjangsaeng
-	47: '/gallery/heritage/law-47-officials-alt.jpg',             // Joseon officials gathering
+	45: '/gallery/heritage/law-45-seoul-west-gate-1904.jpg',      // Seoul West Gate 1904, Library of Congress
+	46: '/gallery/heritage/law-46-tea-bowl-gold-repair.jpg',      // Celadon tea bowl with gold lacquer repair, Smithsonian CC0
+	47: '/gallery/heritage/law-47-mt-paektu-snow.jpg',            // Mt. Paektu crater rim, CC-BY-SA 2.0
 	48: '/gallery/heritage/law-48-golden-rooster-longevity.jpg',  // Ten Symbols of Longevity (십장생)
 }
 
