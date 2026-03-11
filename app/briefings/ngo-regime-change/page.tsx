@@ -37,25 +37,25 @@ export default function NGORegimeChangePage() {
             <div>
               <h2 className="text-2xl font-bold text-[#c73032] mb-3">The Scale of Operations</h2>
               <p className="text-[#f0ebe3]/90 mb-4">
-                What the CIA once did covertly, organizations like the National Endowment for Democracy now do openly—as admitted by **NED's own founder**—with massive budgets and operations spanning the globe.
+                What the CIA once did covertly, organizations like the National Endowment for Democracy now do openly—as admitted by <strong>NED&apos;s own founder</strong>—with massive budgets and operations spanning the globe.
               </p>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="bg-[#0d1b2a]/30 rounded p-4">
                   <h3 className="text-[#c73032] font-bold mb-2">Annual Budgets</h3>
                   <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
-                    <li>• NED: **$300 million** annually</li>
-                    <li>• USAID: **$3 billion** democracy programs</li>
-                    <li>• Open Society: **$1.2 billion** annual budget</li>
-                    <li>• EU: **€1 billion** similar activities</li>
+                    <li>• NED: <strong>$300 million</strong> annually</li>
+                    <li>• USAID: <strong>$3 billion</strong> democracy programs</li>
+                    <li>• Open Society: <strong>$1.2 billion</strong> annual budget</li>
+                    <li>• EU: <strong>&euro;1 billion</strong> similar activities</li>
                   </ul>
                 </div>
                 <div className="bg-[#0d1b2a]/30 rounded p-4">
                   <h3 className="text-[#d4a74a] font-bold mb-2">Global Reach</h3>
                   <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
-                    <li>• **100+** countries with operations</li>
-                    <li>• **130+** countries enacted restrictions</li>
-                    <li>• **39** projects in Venezuela alone</li>
-                    <li>• **8,000** trained Nicaraguan activists</li>
+                    <li>• <strong>100+</strong> countries with operations</li>
+                    <li>• <strong>130+</strong> countries enacted restrictions</li>
+                    <li>• <strong>39</strong> projects in Venezuela alone</li>
+                    <li>• <strong>8,000</strong> trained Nicaraguan activists</li>
                   </ul>
                 </div>
                 <div className="bg-[#0d1b2a]/30 rounded p-4">
@@ -287,7 +287,7 @@ export default function NGORegimeChangePage() {
                 <div className="bg-[#d4a74a]/20 rounded-lg p-6 border border-[#d4a74a]/30">
                   <h4 className="font-bold text-[#f0ebe3] mb-3">Private Foundation Layer</h4>
                   <p className="text-[#f0ebe3]/90 mb-4">
-                    George Soros has contributed over **$32 billion** to Open Society Foundations,
+                    George Soros has contributed over <strong>$32 billion</strong> to Open Society Foundations,
                     funding operations in 120+ countries. These private funds coordinate with government programs.
                   </p>
                   <div className="bg-[#0d1b2a]/20 rounded p-4">
@@ -323,7 +323,7 @@ export default function NGORegimeChangePage() {
                 <div className="bg-[#d4a74a]/20 rounded-lg p-6 border border-[#d4a74a]/30">
                   <h4 className="font-bold text-[#f0ebe3] mb-3">Legislative Responses</h4>
                   <p className="text-[#f0ebe3]/90 mb-4">
-                    Over **130 countries** have enacted restrictions on foreign-funded NGOs since 2002,
+                    Over <strong>130 countries</strong> have enacted restrictions on foreign-funded NGOs since 2002,
                     reflecting widespread recognition of these organizations as tools of foreign influence.
                   </p>
                 </div>
@@ -476,7 +476,7 @@ export default function NGORegimeChangePage() {
                 <div className="bg-[#d4a74a]/20 rounded-lg p-6 border border-[#d4a74a]/30">
                   <h4 className="text-[#d4a74a] font-bold mb-3">✅ Authentic Organizations</h4>
                   <ul className="space-y-2 text-[#f0ebe3]/80 text-sm">
-                    <li>• **5+ years** consistent presence before prominence</li>
+                    <li>• <strong>5+ years</strong> consistent presence before prominence</li>
                     <li>• Leadership with deep personal connections to issues</li>
                     <li>• Organic growth through community engagement</li>
                     <li>• Diverse funding sources preventing dependency</li>
@@ -505,7 +505,7 @@ export default function NGORegimeChangePage() {
               <div className="mt-6 bg-[#d4a74a]/20 rounded-lg p-6 border border-[#d4a74a]/30">
                 <h4 className="text-[#d4a74a] font-bold mb-3">Case Study: Maintaining Authenticity</h4>
                 <p className="text-[#f0ebe3]/90 mb-3">
-                  **Centre for Natural Resource Governance (Zimbabwe)** provides an instructive example.
+                  <strong>Centre for Natural Resource Governance (Zimbabwe)</strong> provides an instructive example.
                   When board members were co-opted by mining companies, the organization restructured
                   to preserve community control rather than simply purging individuals.
                 </p>

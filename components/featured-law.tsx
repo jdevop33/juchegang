@@ -1,3 +1,5 @@
+"use client"
+
 import type { Law } from "@/types/law"
 import { ArrowRight } from "lucide-react"
 import SafeFocalImage from "./safe-focal-image"

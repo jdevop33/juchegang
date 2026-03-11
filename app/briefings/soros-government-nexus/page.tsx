@@ -43,25 +43,25 @@ export default function SorosGovernmentNexusPage() {
                 <div className="bg-[#0d1b2a]/50 rounded p-4">
                   <h3 className="text-[#d4a74a] font-bold mb-2">Financial Scale</h3>
                   <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
-                    <li>• **$300M+** government partnerships</li>
-                    <li>• **$500M+** political contributions since 2020</li>
-                    <li>• **$32B** charitable giving since 1984</li>
-                    <li>• **$50M+** prosecutor elections</li>
+                    <li>• <strong>$300M+</strong> government partnerships</li>
+                    <li>• <strong>$500M+</strong> political contributions since 2020</li>
+                    <li>• <strong>$32B</strong> charitable giving since 1984</li>
+                    <li>• <strong>$50M+</strong> prosecutor elections</li>
                   </ul>
                 </div>
                 <div className="bg-[#0d1b2a]/50 rounded p-4">
                   <h3 className="text-[#1b4965] font-bold mb-2">Personnel Pipeline</h3>
                   <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
-                    <li>• **70+** CAP staff to Biden admin</li>
+                    <li>• <strong>70+</strong> CAP staff to Biden admin</li>
                     <li>• State Dept-OSF revolving door</li>
-                    <li>• Prosecutors representing **70M** Americans</li>
+                    <li>• Prosecutors representing <strong>70M</strong> Americans</li>
                     <li>• Multiple cabinet-level connections</li>
                   </ul>
                 </div>
                 <div className="bg-[#0d1b2a]/50 rounded p-4">
                   <h3 className="text-[#f0ebe3] font-bold mb-2">Global Operations</h3>
                   <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
-                    <li>• **120+** countries with operations</li>
+                    <li>• <strong>120+</strong> countries with operations</li>
                     <li>• Direct Ukraine policy access</li>
                     <li>• Eastern Europe democracy programs</li>
                     <li>• Coordinated USAID partnerships</li>
@@ -92,8 +92,8 @@ export default function SorosGovernmentNexusPage() {
                     <div>
                       <h5 className="text-[#d4a74a] font-bold mb-2">East-West Management Institute</h5>
                       <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
-                        <li>• **$270 million** from USAID (15 years)</li>
-                        <li>• **$90 million** additional contracts</li>
+                        <li>• <strong>$270 million</strong> from USAID (15 years)</li>
+                        <li>• <strong>$90 million</strong> additional contracts</li>
                         <li>• Partnership with Open Society</li>
                         <li>• Eastern Europe, Central Asia, Africa</li>
                         <li>• Judicial reform initiatives</li>
@@ -102,8 +102,8 @@ export default function SorosGovernmentNexusPage() {
                     <div>
                       <h5 className="text-[#1b4965] font-bold mb-2">Direct Government Funding</h5>
                       <ul className="text-[#f0ebe3]/80 text-sm space-y-1">
-                        <li>• **$30 million** State Dept (1998-2003)</li>
-                        <li>• **$55 million** "Making All Voices Count"</li>
+                        <li>• <strong>$30 million</strong> State Dept (1998-2003)</li>
+                        <li>• <strong>$55 million</strong> "Making All Voices Count"</li>
                         <li>• Palestinian Faculty Development Program</li>
                         <li>• Strategic USAID partnerships</li>
                         <li>• Joint funding structures</li>
@@ -147,7 +147,7 @@ export default function SorosGovernmentNexusPage() {
                 <div className="bg-[#1b4965]/20 rounded-lg p-6 border border-[#1b4965]/30">
                   <h4 className="font-bold text-[#f0ebe3] mb-3">CAP Foundation & Biden Administration</h4>
                   <p className="text-[#f0ebe3]/90 mb-4">
-                    Founded by John Podesta in 2003 with **over $3 million in Soros seed funding**,
+                    Founded by John Podesta in 2003 with <strong>over $3 million in Soros seed funding</strong>,
                     CAP has become the primary pipeline for staffing Democratic administrations.
                   </p>
                   <div className="bg-[#0d1b2a]/30 rounded p-4 mb-4">
@@ -276,7 +276,7 @@ export default function SorosGovernmentNexusPage() {
                 <div className="bg-[#c73032]/10 rounded-lg p-6 border border-[#c73032]/30">
                   <h4 className="font-bold text-[#f0ebe3] mb-3">Strategic Electoral Investment</h4>
                   <p className="text-[#f0ebe3]/90 mb-4">
-                    Systematic campaign to elect progressive prosecutors representing **over 70 million Americans**
+                    Systematic campaign to elect progressive prosecutors representing <strong>over 70 million Americans</strong>
                     through targeted investment in low-turnout local elections.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
