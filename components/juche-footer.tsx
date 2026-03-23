@@ -1,5 +1,5 @@
 "use client"
-import { Star, Heart, Mail, Instagram, Send, Anchor } from "lucide-react"
+import { Star, Heart, Mail, Send, Anchor } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { KimYoJongPortrait } from "./kim-yo-jong-portrait"
 
@@ -87,14 +87,6 @@ export function JucheFooter() {
                 <Mail className="h-4 w-4" />
                 <span>panda@juche.org</span>
               </a>
-              <a href="https://instagram.com/jpandajames39" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-cream-muted hover:text-sovereign-gold transition-colors">
-                <Instagram className="h-4 w-4" />
-                <span>@jpandajames39</span>
-              </a>
-              <a href="https://instagram.com/kimjongunwins" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-cream-muted hover:text-sovereign-gold transition-colors">
-                <Instagram className="h-4 w-4" />
-                <span>@kimjongunwins</span>
-              </a>
               <a href="https://t.me/tigerrising" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-cream-muted hover:text-sovereign-gold transition-colors">
                 <Send className="h-4 w-4" />
                 <span>@tigerrising</span>
@@ -103,24 +95,6 @@ export function JucheFooter() {
             <div className="mt-6">
               <h4 className="text-sm font-semibold text-river-mist mb-2">{t('followUs')}</h4>
               <div className="flex gap-3">
-                <a
-                  href="https://instagram.com/jpandajames39"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 bg-river-current hover:bg-river-mid rounded-full flex items-center justify-center transition-colors"
-                  aria-label="Instagram jpandajames39"
-                >
-                  <Instagram className="h-4 w-4 text-river-mist" />
-                </a>
-                <a
-                  href="https://instagram.com/kimjongunwins"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 bg-river-current hover:bg-river-mid rounded-full flex items-center justify-center transition-colors"
-                  aria-label="Instagram kimjongunwins"
-                >
-                  <Instagram className="h-4 w-4 text-river-mist" />
-                </a>
                 <a
                   href="mailto:panda@juche.org"
                   className="w-8 h-8 bg-river-current hover:bg-river-mid rounded-full flex items-center justify-center transition-colors"

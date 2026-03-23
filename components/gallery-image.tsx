@@ -84,7 +84,6 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
             onLoad={handleImageLoad}
             onError={() => setHasError(true)}
             priority={index < 8}
-            unoptimized
           />
           
           {/* Hover overlay */}
@@ -115,16 +114,16 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
           <div className="flex gap-2">
             <button
               onClick={handleDownload}
-              className="p-2 bg-river-depths/50 hover:bg-river-depths/70 text-cream rounded-full transition-colors"
-              title="Download image"
+              className="p-3 bg-river-depths/50 hover:bg-river-depths/70 text-cream rounded-full transition-colors"
+              aria-label="Download image"
             >
               <Download className="w-4 h-4" />
             </button>
-            
+
             <button
               onClick={() => setIsOpen(false)}
-              className="p-2 bg-river-depths/50 hover:bg-river-depths/70 text-cream rounded-full transition-colors"
-              title="Close"
+              className="p-3 bg-river-depths/50 hover:bg-river-depths/70 text-cream rounded-full transition-colors"
+              aria-label="Close"
             >
               <X className="w-4 h-4" />
             </button>
@@ -137,15 +136,15 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
             <button
               onClick={() => navigateImage('prev')}
               className="absolute left-4 top-1/2 -translate-y-1/2 z-50 p-3 bg-river-depths/50 hover:bg-river-depths/70 text-cream rounded-full transition-colors"
-              title="Previous image"
+              aria-label="Previous image"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
-            
+
             <button
               onClick={() => navigateImage('next')}
               className="absolute right-4 top-1/2 -translate-y-1/2 z-50 p-3 bg-river-depths/50 hover:bg-river-depths/70 text-cream rounded-full transition-colors"
-              title="Next image"
+              aria-label="Next image"
             >
               <ChevronRight className="w-6 h-6" />
             </button>

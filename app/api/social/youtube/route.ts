@@ -26,7 +26,7 @@ export async function GET(request: Request) {
       const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${encodeURIComponent(
         id,
       )}&order=date&maxResults=9&key=${encodeURIComponent(apiKey)}`
-      const res = await fetch(url, { next: { revalidate: 300 } })
+      const res = await fetch(url, { next: { revalidate: 300 }, signal: AbortSignal.timeout(10000) })
       if (!res.ok) throw new Error(`YT error ${res.status}`)
       const json = (await res.json()) as { items: YtItem[] }
       return json.items

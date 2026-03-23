@@ -117,8 +117,6 @@ export default async function RootLayout({
           data-website-id="e42c2739-f5a9-4dbf-8325-2e5b80eeee19"
           strategy="afterInteractive"
         />
-        {/* Instagram Embed Script */}
-        <Script async src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
       </head>
       <body className={`${sourceSans.variable} ${notoSerifKR.variable} ${playfair.variable} font-sans`}>
         <a

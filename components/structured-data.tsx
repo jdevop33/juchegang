@@ -96,8 +96,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             "name": "Dr. Henry Jekyll"
           },
           "sameAs": [
-            "https://www.instagram.com/juchegang",
-            "https://twitter.com/juchegang"
+            "https://t.me/tigerrising"
           ],
           "contactPoint": {
             "@type": "ContactPoint",

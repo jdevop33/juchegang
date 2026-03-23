@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion"
 import { Heart, Globe, Handshake, Star } from "lucide-react"
 
 const messages = [
@@ -24,6 +24,7 @@ function flagSrc(iso: string): string {
 export function SolidarityBanner() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isVisible, setIsVisible] = useState(true)
+  const prefersReducedMotion = useReducedMotion()
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -45,7 +46,7 @@ export function SolidarityBanner() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-center gap-4">
           <motion.div
-            animate={{ rotate: 360 }}
+            animate={prefersReducedMotion ? {} : { rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
             className="hidden sm:block"
           >

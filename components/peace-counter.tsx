@@ -1,18 +1,19 @@
 "use client"
 
 import Image from "next/image"
-import { motion } from "framer-motion"
+import { motion, useReducedMotion } from "framer-motion"
 
 export function PeaceCounter() {
+  const prefersReducedMotion = useReducedMotion()
   return (
     <div className="bg-gradient-to-b from-[#0d1b2a] via-river-depths to-river-depths py-16 sm:py-20 border-b border-sovereign-gold/20 overflow-hidden">
       <div className="container mx-auto px-4">
 
         {/* Title */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: prefersReducedMotion ? 0 : 0.8 }}
           className="text-center mb-10 sm:mb-14"
         >
           <p className="text-xs sm:text-sm uppercase tracking-[0.3em] text-sovereign-gold/60 mb-3">
@@ -28,9 +29,9 @@ export function PeaceCounter() {
 
         {/* Sword — full width, centered */}
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
+          initial={prefersReducedMotion ? false : { opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
+          transition={{ duration: prefersReducedMotion ? 0 : 1, delay: prefersReducedMotion ? 0 : 0.3 }}
           className="flex justify-center mb-10 sm:mb-14 px-4"
         >
           <div className="relative w-full max-w-[300px] sm:max-w-[440px] md:max-w-[580px] lg:max-w-[680px] aspect-[836/361]">
@@ -46,9 +47,9 @@ export function PeaceCounter() {
 
         {/* Quote */}
         <motion.blockquote
-          initial={{ opacity: 0 }}
+          initial={prefersReducedMotion ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: prefersReducedMotion ? 0 : 0.8, delay: prefersReducedMotion ? 0 : 0.6 }}
           className="text-center max-w-2xl mx-auto mb-10 sm:mb-14"
         >
           <p className="text-xl sm:text-2xl md:text-3xl font-korean font-semibold text-sovereign-gold mb-4">
