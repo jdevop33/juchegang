@@ -15,7 +15,7 @@ const nextConfig = {
   },
   // Optimize images for better performance
   images: {
-    domains: ['juche.org', 'localhost', 'cdninstagram.com', 'scontent.cdninstagram.com'],
+    domains: ['juche.org', 'localhost'],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 3600, // 1 hour cache
     deviceSizes: [640, 768, 1024, 1280, 1600],
@@ -86,7 +86,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is https://www.instagram.com https://www.youtube.com https://www.youtube-nocookie.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; media-src 'self' https:; connect-src 'self' https: wss:; frame-src 'self' https://www.instagram.com https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://w.soundcloud.com https://open.spotify.com;",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is https://www.youtube.com https://www.youtube-nocookie.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; media-src 'self' https:; connect-src 'self' https: wss:; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://w.soundcloud.com https://open.spotify.com;",
           },
         ],
       },

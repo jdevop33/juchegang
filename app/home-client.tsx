@@ -16,7 +16,6 @@ import type { Law } from "@/types/law"
 import dynamic from "next/dynamic"
 import { StructuredData } from "@/components/structured-data"
 import { useEffect, useState } from "react"
-import CountryFlag from "@/components/country-flag"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 // Dynamic imports with better optimization
@@ -47,10 +46,6 @@ const ContactForm = dynamic(() => import("@/components/contact-form").then(mod =
   loading: () => <div className="h-96 animate-pulse bg-river-deep rounded-lg" />
 })
 
-const ResponsiveInstagramEmbed = dynamic(() => import("@/components/responsive-instagram-embed").then(m => ({ default: m.ResponsiveInstagramEmbed })), {
-  ssr: false,
-  loading: () => <div className="h-64 animate-pulse bg-gradient-to-r from-river-deep to-river-current/30 rounded-lg" />
-})
 
 export default function HomeClient({ laws }: { laws: Law[] }) {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -128,7 +123,7 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
             <div className="section-divider"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {lawsLoading ? Array.from({ length: 6 }).map((_, i) => (<CardSkeleton key={i} />)) : (
               laws.map((law, index) => (
                 <div key={law.number} className="animate-staggered-fade-in" style={{ animationDelay: `${(index % 6) * 0.1}s` }}>
@@ -156,23 +151,6 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
         <div className="section-reveal"><AboutSection /></div>
 
         <div className="container mx-auto px-4 py-12"><div className="max-w-md mx-auto"><CulturalCalendar /></div></div>
-
-        <div className="bg-gradient-to-r from-river-depths via-river-deep to-river-depths border-y border-sovereign-gold/20">
-          <div className="container mx-auto px-4 py-16">
-            <div className="max-w-3xl mx-auto text-center">
-              <div className="mb-8">
-                <div className="inline-flex items-center gap-3 mb-4 px-6 py-3 bg-gradient-to-r from-river-current/30 via-river-mid/30 to-river-current/30 rounded-full border border-sovereign-gold/30">
-                  <CountryFlag iso="ru" size={24} className="rounded-sm border border-river-mist/20" />
-                  <CountryFlag iso="kp" size={24} className="rounded-sm border border-river-mist/20" />
-                  <CountryFlag iso="cn" size={24} className="rounded-sm border border-river-mist/20" />
-                </div>
-                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4"><span className="bg-gradient-to-r from-sovereign-gold via-river-mist to-sovereign-gold bg-clip-text text-transparent">Sovereign Unity</span></h2>
-                <p className="text-river-mist/80 max-w-xl mx-auto">Celebrating the bonds of friendship and mutual respect between sovereign nations navigating their own currents</p>
-              </div>
-              <div className="bg-river-depths/50 backdrop-blur-sm rounded-2xl p-6 border border-river-current/30"><ResponsiveInstagramEmbed postUrl="https://www.instagram.com/reel/DOIDrdtDoHN/?utm_source=ig_embed&utm_campaign=loading" /></div>
-            </div>
-          </div>
-        </div>
 
         <div id="contact" className="bg-gradient-to-b from-background to-muted/30"><ContactForm /></div>
 

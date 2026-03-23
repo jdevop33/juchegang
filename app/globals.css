@@ -463,12 +463,6 @@
     animation: slide 3s linear infinite;
   }
   
-  /* Instagram Embed Responsive Styles */
-  .instagram-media {
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-  
   /* Ultra-responsive design for all viewports */
   @media (max-width: 320px) {
     .container {

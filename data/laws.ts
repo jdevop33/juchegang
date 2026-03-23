@@ -11,7 +11,7 @@ export const laws: Law[] = [
     number: 2,
     title: "Make Trustworthy Friends",
     content:
-      "Surround yourselves with friends you can trust. No man ever acheived anything great alone. It has never happened. Build trust by being trustworthy, and cultivating a shrewd sense of character. Do not allow yourself to fall into believing what you want to believe about a person because they are beautiful, strong and talented. Be honest with yourself. Make trustworthy friends.",
+      "Surround yourselves with friends you can trust. No man ever achieved anything great alone. It has never happened. Build trust by being trustworthy, and cultivating a shrewd sense of character. Do not allow yourself to fall into believing what you want to believe about a person because they are beautiful, strong and talented. Be honest with yourself. Make trustworthy friends.",
   },
   {
     number: 3,

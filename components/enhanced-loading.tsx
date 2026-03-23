@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Star, Sparkles } from "lucide-react"
 
@@ -11,6 +11,7 @@ interface EnhancedLoadingProps {
 export function EnhancedLoading({ onComplete }: EnhancedLoadingProps) {
   const [progress, setProgress] = useState(0)
   const [phase, setPhase] = useState<'loading' | 'complete' | 'fadeout'>('loading')
+  const prefersReducedMotion = useReducedMotion()
 
   useEffect(() => {
     const duration = 2500 // Total loading time
@@ -75,7 +76,7 @@ export function EnhancedLoading({ onComplete }: EnhancedLoadingProps) {
             transition={{ duration: 0.6 }}
           >
             <motion.div
-              animate={{ rotate: 360 }}
+              animate={prefersReducedMotion ? {} : { rotate: 360 }}
               transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
               className="mx-auto mb-8 w-16 h-16 relative"
             >
