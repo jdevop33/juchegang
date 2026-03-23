@@ -233,10 +233,10 @@ export function SovereigntyProtocolContent() {
               <button
                 key={key}
                 onClick={() => handlePhase(key)}
-                className={`py-3 sm:py-4 px-3 sm:px-4 font-[family-name:var(--font-mono)] text-xs sm:text-sm tracking-wider uppercase flex-1 xl:flex-none text-left transition-all duration-300 border-l-2 xl:border-l-2 ${
+                className={`py-3 sm:py-4 px-3 sm:px-4 font-[family-name:var(--font-mono)] text-xs sm:text-sm tracking-wider uppercase flex-1 xl:flex-none transition-all duration-300 border-b-2 sm:border-b-2 xl:border-b-0 xl:border-l-2 text-center xl:text-left ${
                   activePhase === key
-                    ? "text-[#d4a74a] border-l-[#d4a74a] bg-[#d4a74a]/5 font-bold"
-                    : "text-[#a0b4c8]/50 border-l-transparent hover:text-[#f0ebe3] hover:border-l-[#1b4965] hover:bg-white/[0.02]"
+                    ? "text-[#d4a74a] border-b-[#d4a74a] xl:border-b-transparent xl:border-l-[#d4a74a] bg-[#d4a74a]/5 font-bold"
+                    : "text-[#a0b4c8]/50 border-b-transparent xl:border-l-transparent hover:text-[#f0ebe3] hover:border-b-[#1b4965] xl:hover:border-b-transparent xl:hover:border-l-[#1b4965] hover:bg-white/[0.02]"
                 }`}
               >
                 {label}

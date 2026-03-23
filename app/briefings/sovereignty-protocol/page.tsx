@@ -33,7 +33,7 @@ export default function SovereigntyProtocolPage() {
       <JucheHeader />
 
       {/* Classification Header */}
-      <section className="border-b border-[#1b4965]">
+      <section className="border-b border-[#1b4965] pt-20 sm:pt-24">
         <div className="max-w-[1200px] mx-auto px-6 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <p className="text-[#d4a74a] text-xs font-semibold tracking-[0.2em] uppercase">
