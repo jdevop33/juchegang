@@ -35,7 +35,20 @@ export default function BriefingsContent() {
       </header>
 
       <ul className="max-w-3xl mx-auto space-y-6">
-        {/* Featured: Primary with Gold border */}
+        {/* Featured: The Sovereignty Protocol */}
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Mar 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/sovereignty-protocol" className="hover:underline text-[#d4a74a]">
+              The Sovereignty Protocol
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">Rented umbrellas, magazine maps, and the inheritance of Myeongnyang. A strategic assessment of how two Americans with a magazine split a 5,000-year civilization&mdash;and why 80 million Koreans united would render the arrangement obsolete.</p>
+        </li>
+
         <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
           <div className="flex items-center gap-2 mb-2">
             <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
