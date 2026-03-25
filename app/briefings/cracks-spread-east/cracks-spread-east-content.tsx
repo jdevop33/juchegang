@@ -12,23 +12,23 @@ export default function CracksSpreadEastContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-[#d4a74a]/10 text-[#d4a74a] rounded-full text-sm font-medium tracking-widest uppercase">
             Classified to Declassified &bull; Part II
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#f0ebe3]">
             The Cracks Spread East
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4">
+          <p className="text-xl md:text-2xl text-[#a0b4c8] max-w-3xl mx-auto mb-4">
             How the CIA Watched the Baltic Republics and East Germany Begin to Slip Moscow&rsquo;s Grip
           </p>
-          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base text-[#a0b4c8] max-w-2xl mx-auto">
             A Narrative Analysis of Three Declassified Top Secret Intelligence Briefs, June&ndash;July 1989
           </p>
-          <p className="text-sm text-muted-foreground mt-2">
+          <p className="text-sm text-[#a0b4c8] mt-2">
             Declassified: October 29, 2019
           </p>
         </div>
 
         {/* Series Navigation */}
         <div className="not-prose my-8 p-4 bg-[#1b4965]/10 border border-[#1b4965]/30 rounded-lg text-center">
-          <p className="text-sm text-muted-foreground mb-1">This is Part II of the <strong className="text-[#d4a74a]">Classified to Declassified</strong> series.</p>
+          <p className="text-sm text-[#a0b4c8] mb-1">This is Part II of the <strong className="text-[#d4a74a]">Classified to Declassified</strong> series.</p>
           <Link href="/briefings/five-months-broke-bloc" className="text-[#d4a74a] hover:text-[#d4a74a]/80 underline underline-offset-4 font-medium">
             &larr; Read Part I: The Five Months That Broke the Bloc
           </Link>
@@ -86,10 +86,10 @@ export default function CracksSpreadEastContent() {
 
         {/* Document 1: East Germany */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-foreground">
+          <h2 className="text-3xl font-bold mb-2 text-[#f0ebe3]">
             Document One: East Germany Seeks Fresh Options
           </h2>
-          <p className="text-sm text-muted-foreground mb-6 font-mono">
+          <p className="text-sm text-[#a0b4c8] mb-6 font-mono">
             TCS 2847/89 &bull; June 26, 1989 &bull; TOP SECRET
           </p>
 
@@ -121,10 +121,10 @@ export default function CracksSpreadEastContent() {
 
         {/* Document 2: Baltic Economic Autonomy */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-foreground">
+          <h2 className="text-3xl font-bold mb-2 text-[#f0ebe3]">
             Document Two: The Baltic Republics Move Toward Economic Autonomy
           </h2>
-          <p className="text-sm text-muted-foreground mb-6 font-mono">
+          <p className="text-sm text-[#a0b4c8] mb-6 font-mono">
             TCS 2874/89 &bull; July 28, 1989 &bull; TOP SECRET
           </p>
 
@@ -156,10 +156,10 @@ export default function CracksSpreadEastContent() {
 
         {/* Document 3: Baltic Nationalists Press Ahead */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-foreground">
+          <h2 className="text-3xl font-bold mb-2 text-[#f0ebe3]">
             Document Three: Baltic Nationalists Press Ahead
           </h2>
-          <p className="text-sm text-muted-foreground mb-6 font-mono">
+          <p className="text-sm text-[#a0b4c8] mb-6 font-mono">
             TCS 2876/89 &bull; July 31, 1989 &bull; TOP SECRET &bull; Special Analysis
           </p>
 
@@ -174,7 +174,7 @@ export default function CracksSpreadEastContent() {
             <p className="text-base leading-relaxed text-[#f0ebe3]/90 italic">
               &ldquo;If Moscow would not use force against the Baltics, the entire coercive foundation of the Soviet empire was hollow.&rdquo;
             </p>
-            <p className="text-sm text-muted-foreground mt-2">&mdash; Key analytical finding, TCS 2876/89</p>
+            <p className="text-sm text-[#a0b4c8] mt-2">&mdash; Key analytical finding, TCS 2876/89</p>
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -198,7 +198,7 @@ export default function CracksSpreadEastContent() {
 
         {/* Four Lessons */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">
+          <h2 className="text-3xl font-bold mb-6 text-[#f0ebe3]">
             Four Lessons from the Cracks
           </h2>
 
@@ -241,7 +241,7 @@ export default function CracksSpreadEastContent() {
 
         {/* Conclusion */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">
+          <h2 className="text-3xl font-bold mb-6 text-[#f0ebe3]">
             Reading the Cracks
           </h2>
           <p className="text-lg leading-relaxed mb-6">

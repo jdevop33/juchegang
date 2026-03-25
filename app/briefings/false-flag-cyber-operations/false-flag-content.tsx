@@ -9,8 +9,8 @@ export default function FalseFlagContent() {
   return (
     <article className="container mx-auto px-4 pt-28 pb-20 prose prose-invert max-w-3xl">
       <header className="not-prose mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold">{t('falseFlagOpsTitle')}</h1>
-        <p className="text-xl text-muted-foreground mt-4">{t('falseFlagOpsDesc')}</p>
+        <h1 className="text-4xl md:text-5xl font-bold text-[#f0ebe3]">{t('falseFlagOpsTitle')}</h1>
+        <p className="text-xl text-[#a0b4c8] mt-4">{t('falseFlagOpsDesc')}</p>
       </header>
 
       <h2>Executive Summary</h2>
@@ -43,7 +43,7 @@ export default function FalseFlagContent() {
         <li><a href="https://attack.mitre.org/" target="_blank" rel="noopener noreferrer">MITRE ATT&CK</a></li>
         <li><a href="https://securelist.com/olympic-destroyer/" target="_blank" rel="noopener noreferrer">Olympic Destroyer analyses</a></li>
       </ul>
-      <footer className="not-prose mt-6 text-sm text-muted-foreground">Send preferred citations to expand this bibliography.</footer>
+      <footer className="not-prose mt-6 text-sm text-[#a0b4c8]">Send preferred citations to expand this bibliography.</footer>
       
       <BriefingSignature />
     </article>

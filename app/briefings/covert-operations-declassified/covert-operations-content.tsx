@@ -8,10 +8,10 @@ export default function CovertOperationsContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-[#c73032]/10 text-[#c73032] rounded-full text-sm font-medium">
             DECLASSIFIED
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#f0ebe3]">
             The Human Cost of Covert Operations
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto">
             Documented evidence from declassified files, congressional investigations, and credible historical sources revealing the true human toll.
           </p>
         </div>

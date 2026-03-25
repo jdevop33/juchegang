@@ -77,6 +77,11 @@ export function JucheFooter() {
                   {t('contact')}
                 </a>
               </li>
+              <li>
+                <a href="/corrections" className="text-cream-muted hover:text-sovereign-gold transition-colors">
+                  Corrections
+                </a>
+              </li>
             </ul>
           </div>
 

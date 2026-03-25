@@ -9,8 +9,8 @@ export default function NATOExpansionContent() {
   return (
     <article className="container mx-auto px-4 pt-28 pb-20 prose prose-invert max-w-4xl">
       <header className="not-prose mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold">The Ukraine Deception: How NATO Expansion and Media Manipulation Manufactured a War</h1>
-        <p className="text-muted-foreground mt-2">Analysis of NATO expansion violations, sabotaged peace talks, and systematic manufacturing of conflict for imperial objectives.</p>
+        <h1 className="text-4xl md:text-5xl font-bold text-[#f0ebe3]">The Ukraine Deception: How NATO Expansion and Media Manipulation Manufactured a War</h1>
+        <p className="text-[#a0b4c8] mt-2">Analysis of NATO expansion violations, sabotaged peace talks, and systematic manufacturing of conflict for imperial objectives.</p>
       </header>
 
       <p>
@@ -221,7 +221,7 @@ export default function NATOExpansionContent() {
         <li><a href="https://www.rand.org/" target="_blank" rel="noopener noreferrer">RAND Corporation – Overextending and Unbalancing Russia</a></li>
         <li><a href="https://www.youtube.com/watch?v=H8Kc9p2sSqk" target="_blank" rel="noopener noreferrer">Naftali Bennett – Interview</a></li>
       </ul>
-      <footer className="not-prose mt-6 text-sm text-muted-foreground">Send preferred citations to expand this bibliography.</footer>
+      <footer className="not-prose mt-6 text-sm text-[#a0b4c8]">Send preferred citations to expand this bibliography.</footer>
       
       <BriefingSignature />
     </article>

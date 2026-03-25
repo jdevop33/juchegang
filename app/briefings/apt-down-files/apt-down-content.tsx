@@ -10,8 +10,8 @@ export default function APTDownContent() {
   return (
     <article className="container mx-auto px-4 pt-28 pb-20 prose prose-invert max-w-3xl">
       <header className="not-prose mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold">{t('aptDownTitle')}</h1>
-        <p className="text-muted-foreground mt-2">{t('aptDownSubtitle')}</p>
+        <h1 className="text-4xl md:text-5xl font-bold text-[#f0ebe3]">{t('aptDownTitle')}</h1>
+        <p className="text-[#a0b4c8] mt-2">{t('aptDownSubtitle')}</p>
       </header>
 
       <div dangerouslySetInnerHTML={{ __html: t('aptDownIntro') }} />
@@ -63,7 +63,7 @@ export default function APTDownContent() {
         <li><a href="https://www.trendmicro.com/" target="_blank" rel="noopener noreferrer">Trend Micro – Research</a></li>
         <li><a href="https://www.teamt5.org/en/posts/" target="_blank" rel="noopener noreferrer">TeamT5 – Analysis</a></li>
       </ul>
-      <footer className="not-prose mt-6 text-sm text-muted-foreground">
+      <footer className="not-prose mt-6 text-sm text-[#a0b4c8]">
         <div className="flex items-center justify-between gap-4 flex-wrap">
           <span>Send preferred citations to expand this bibliography.</span>
           <LinkedInShare />

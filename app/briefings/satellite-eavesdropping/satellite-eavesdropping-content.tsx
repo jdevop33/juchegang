@@ -10,16 +10,16 @@ export default function SatelliteEavesdroppingContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             JPanda Papers
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#f0ebe3]">
             &ldquo;Don&rsquo;t Look Up&rdquo;
           </h1>
           <p className="text-2xl text-sovereign-gold font-semibold mb-2">
             The $800 Satellite Eavesdropping Crisis Hiding in Plain Sight
           </p>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto italic">
+          <p className="text-lg text-[#a0b4c8] max-w-2xl mx-auto italic">
             How Consumer-Grade Equipment Exposed Military Secrets, Phone Calls, Banking Data, and Critical Infrastructure Across Two Continents
           </p>
-          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
+          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-[#a0b4c8]">
             <span>February 2026</span>
             <span className="text-sovereign-gold">|</span>
             <span>Cybersecurity Analysis</span>
@@ -31,15 +31,15 @@ export default function SatelliteEavesdroppingContent() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-korean-red mb-1">~50%</div>
-              <div className="text-foreground/70 text-sm">Of GEO Satellite Signals Unencrypted</div>
+              <div className="text-[#f0ebe3]/70 text-sm">Of GEO Satellite Signals Unencrypted</div>
             </div>
             <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-sovereign-gold mb-1">$800</div>
-              <div className="text-foreground/70 text-sm">Total Equipment Cost</div>
+              <div className="text-[#f0ebe3]/70 text-sm">Total Equipment Cost</div>
             </div>
             <div className="bg-river-current/20 border border-river-current/30 rounded-lg p-6 text-center">
-              <div className="text-4xl font-bold text-foreground mb-1">2,711</div>
-              <div className="text-foreground/70 text-sm">T-Mobile Numbers in 9 Hours</div>
+              <div className="text-4xl font-bold text-[#f0ebe3] mb-1">2,711</div>
+              <div className="text-[#f0ebe3]/70 text-sm">T-Mobile Numbers in 9 Hours</div>
             </div>
           </div>
         </div>
@@ -47,16 +47,16 @@ export default function SatelliteEavesdroppingContent() {
         {/* Executive Summary */}
         <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-12">
           <h2 className="text-2xl font-bold mb-3 text-korean-red">Executive Summary</h2>
-          <p className="text-foreground/90 leading-relaxed mb-4">
+          <p className="text-[#f0ebe3]/90 leading-relaxed mb-4">
             Half of all geostationary satellite links broadcast sensitive data &mdash; including phone calls, military movements, and banking traffic &mdash; completely unencrypted, receivable by anyone with consumer-grade equipment costing under $800.
           </p>
-          <p className="text-foreground/90 leading-relaxed mb-4">
+          <p className="text-[#f0ebe3]/90 leading-relaxed mb-4">
             That is the central finding of the most comprehensive public audit of satellite communication security ever conducted, published in October 2025 by researchers at UC San Diego and the University of Maryland. The study, titled &ldquo;Don&rsquo;t Look Up: There Are Sensitive Internal Links in the Clear on GEO Satellites,&rdquo; won the <strong>Distinguished Paper Award at ACM CCS 2025</strong> in Taipei.
           </p>
-          <p className="text-foreground/90 leading-relaxed mb-4">
+          <p className="text-[#f0ebe3]/90 leading-relaxed mb-4">
             It exposed unencrypted cellular backhaul for T-Mobile and AT&amp;T Mexico, real-time Mexican military helicopter and naval vessel tracking, U.S. military ship communications, airline passenger data for ten carriers, Walmart inventory systems, banking ATM traffic, and industrial control systems for critical infrastructure.
           </p>
-          <p className="text-foreground/90 leading-relaxed">
+          <p className="text-[#f0ebe3]/90 leading-relaxed">
             This research reveals a systemic, decades-old failure in satellite communications security that intelligence agencies worldwide have almost certainly been exploiting for years &mdash; and that now, with an open-source tool released on GitHub, <strong>anyone can replicate</strong>.
           </p>
         </div>
@@ -79,18 +79,18 @@ export default function SatelliteEavesdroppingContent() {
           <div className="not-prose my-6">
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 overflow-hidden">
               <div className="bg-river-current/20 px-4 py-3 border-b border-river-current/30">
-                <h4 className="text-sm font-bold text-foreground uppercase tracking-wider">Hardware Breakdown</h4>
+                <h4 className="text-sm font-bold text-[#f0ebe3] uppercase tracking-wider">Hardware Breakdown</h4>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Component</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Specification</th>
-                      <th className="px-4 py-3 text-right text-foreground font-semibold">Cost</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Specification</th>
+                      <th className="px-4 py-3 text-right text-[#f0ebe3] font-semibold">Cost</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2">Ku-band Satellite Dish</td>
                       <td className="px-4 py-2">110cm diameter</td>
@@ -131,8 +131,8 @@ export default function SatelliteEavesdroppingContent() {
           </p>
 
           <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6 mb-6">
-            <h4 className="text-lg font-bold text-foreground mb-2">How GEO Satellites Work</h4>
-            <p className="text-foreground/80 leading-relaxed">
+            <h4 className="text-lg font-bold text-[#f0ebe3] mb-2">How GEO Satellites Work</h4>
+            <p className="text-[#f0ebe3]/80 leading-relaxed">
               GEO satellites operate as &ldquo;bent-pipe&rdquo; repeaters: they receive signals from ground stations, amplify them, frequency-shift them, and rebroadcast them over a footprint covering up to <strong>40% of Earth&rsquo;s surface</strong>. Anyone within that footprint with an appropriate receiver can capture the downlink signal. The reception is entirely passive and <strong>completely undetectable</strong>.
             </p>
           </div>
@@ -146,15 +146,15 @@ export default function SatelliteEavesdroppingContent() {
               <h4 className="text-sm font-bold text-korean-red uppercase tracking-wider mb-3">Encryption Status of Scanned Traffic</h4>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-foreground/80 text-sm">Non-TV transponders using MPEG scrambling</span>
+                  <span className="text-[#f0ebe3]/80 text-sm">Non-TV transponders using MPEG scrambling</span>
                   <span className="text-korean-red font-bold">Only 10%</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-foreground/80 text-sm">GSE transponders with encryption enabled</span>
+                  <span className="text-[#f0ebe3]/80 text-sm">GSE transponders with encryption enabled</span>
                   <span className="text-korean-red font-bold">Only 20%</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-foreground/80 text-sm">Links consistently using IPsec</span>
+                  <span className="text-[#f0ebe3]/80 text-sm">Links consistently using IPsec</span>
                   <span className="text-korean-red font-bold">Only 6%</span>
                 </div>
               </div>
@@ -191,12 +191,12 @@ export default function SatelliteEavesdroppingContent() {
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Carrier</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Exposure</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Data Captured</th>
-                      <th className="px-4 py-3 text-right text-foreground font-semibold">Duration</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Exposure</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Data Captured</th>
+                      <th className="px-4 py-3 text-right text-[#f0ebe3] font-semibold">Duration</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2 font-medium">T-Mobile (US)</td>
                       <td className="px-4 py-2">2,711 phone numbers</td>
@@ -254,10 +254,10 @@ export default function SatelliteEavesdroppingContent() {
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Entity</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Exposed Data</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Exposed Data</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2 font-medium">Walmart Mexico</td>
                       <td className="px-4 py-2">Inventory records, FTP transfers with UPC/SKU &amp; pricing, plaintext telnet credentials, corporate email</td>
@@ -290,7 +290,7 @@ export default function SatelliteEavesdroppingContent() {
             <h2 className="text-3xl font-bold">A 20-Year-Old Problem the Industry Chose to Ignore</h2>
           </div>
 
-          <p className="text-lg leading-relaxed mb-6 italic text-muted-foreground">
+          <p className="text-lg leading-relaxed mb-6 italic text-[#a0b4c8]">
             The watchdog the satellite industry never hired.
           </p>
 
@@ -354,7 +354,7 @@ export default function SatelliteEavesdroppingContent() {
 
           <blockquote className="border-l-4 border-korean-red pl-6 my-8 italic text-korean-red text-xl">
             &ldquo;It&rsquo;s crazy. The fact that this much data is going over satellites that anyone can pick up with an antenna is just incredible. I would be shocked if this is something that intelligence agencies of any size are not already exploiting.&rdquo;
-            <span className="block text-sm mt-2 text-foreground/60 not-italic">&mdash; Matt Green, Johns Hopkins University</span>
+            <span className="block text-sm mt-2 text-[#f0ebe3]/60 not-italic">&mdash; Matt Green, Johns Hopkins University</span>
           </blockquote>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -363,7 +363,7 @@ export default function SatelliteEavesdroppingContent() {
 
           <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
             &ldquo;The threat model that everybody had in mind was that we need to be encrypting everything, because there are governments that are tapping undersea fiber optic cables. And now what we&rsquo;re seeing is, this same kind of data is just being broadcast to a large fraction of the planet.&rdquo;
-            <span className="block text-sm mt-2 text-foreground/60 not-italic">&mdash; Nadia Heninger, UC San Diego</span>
+            <span className="block text-sm mt-2 text-[#f0ebe3]/60 not-italic">&mdash; Nadia Heninger, UC San Diego</span>
           </blockquote>
 
           {/* Snowden vs Satellite comparison */}
@@ -377,11 +377,11 @@ export default function SatelliteEavesdroppingContent() {
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Dimension</th>
-                      <th className="px-4 py-3 text-center text-foreground font-semibold">GCHQ TEMPORA (2013)</th>
-                      <th className="px-4 py-3 text-center text-foreground font-semibold">Satellite Eaves. (2025)</th>
+                      <th className="px-4 py-3 text-center text-[#f0ebe3] font-semibold">GCHQ TEMPORA (2013)</th>
+                      <th className="px-4 py-3 text-center text-[#f0ebe3] font-semibold">Satellite Eaves. (2025)</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2 font-medium">Access Required</td>
                       <td className="px-4 py-2 text-center">State-level fiber tap + secret legal cooperation</td>
@@ -429,7 +429,7 @@ export default function SatelliteEavesdroppingContent() {
 
           <blockquote className="border-l-4 border-korean-red pl-6 my-8 italic text-korean-red text-xl">
             &ldquo;There is no single stakeholder responsible for encrypting GEO satellite communications.&rdquo;
-            <span className="block text-sm mt-2 text-foreground/60 not-italic">&mdash; Don&rsquo;t Look Up, ACM CCS 2025</span>
+            <span className="block text-sm mt-2 text-[#f0ebe3]/60 not-italic">&mdash; Don&rsquo;t Look Up, ACM CCS 2025</span>
           </blockquote>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -439,18 +439,18 @@ export default function SatelliteEavesdroppingContent() {
           <div className="not-prose my-8">
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 overflow-hidden">
               <div className="bg-river-current/20 px-4 py-3 border-b border-river-current/30">
-                <h4 className="text-sm font-bold text-foreground uppercase tracking-wider">U.S. vs. EU Regulatory Comparison</h4>
+                <h4 className="text-sm font-bold text-[#f0ebe3] uppercase tracking-wider">U.S. vs. EU Regulatory Comparison</h4>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Framework</th>
-                      <th className="px-4 py-3 text-center text-foreground font-semibold">Status</th>
-                      <th className="px-4 py-3 text-center text-foreground font-semibold">Enforcement</th>
+                      <th className="px-4 py-3 text-center text-[#f0ebe3] font-semibold">Status</th>
+                      <th className="px-4 py-3 text-center text-[#f0ebe3] font-semibold">Enforcement</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2">FCC Part 25 (US)</td>
                       <td className="px-4 py-2 text-center text-korean-red">No cybersecurity requirements</td>
@@ -528,11 +528,11 @@ export default function SatelliteEavesdroppingContent() {
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Dimension</th>
-                      <th className="px-4 py-3 text-center text-foreground font-semibold">GEO (Legacy)</th>
-                      <th className="px-4 py-3 text-center text-foreground font-semibold">Starlink (LEO)</th>
+                      <th className="px-4 py-3 text-center text-[#f0ebe3] font-semibold">GEO (Legacy)</th>
+                      <th className="px-4 py-3 text-center text-[#f0ebe3] font-semibold">Starlink (LEO)</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2 font-medium">Altitude</td>
                       <td className="px-4 py-2 text-center">35,786 km</td>
@@ -585,12 +585,12 @@ export default function SatelliteEavesdroppingContent() {
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Entity</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Response</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Action Taken</th>
-                      <th className="px-4 py-3 text-center text-foreground font-semibold">Grade</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Response</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Action Taken</th>
+                      <th className="px-4 py-3 text-center text-[#f0ebe3] font-semibold">Grade</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2 font-medium">T-Mobile</td>
                       <td className="px-4 py-2">Weeks to fix</td>
@@ -658,7 +658,7 @@ export default function SatelliteEavesdroppingContent() {
           </p>
 
           <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-6">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               The core lesson of this research is not that satellite communications are uniquely vulnerable &mdash; it is that the satellite industry&rsquo;s assumption that nobody would look up was never a security strategy, merely a bet against curiosity. <strong>That bet has now been lost, publicly and irrevocably.</strong>
             </p>
           </div>
@@ -669,7 +669,7 @@ export default function SatelliteEavesdroppingContent() {
 
           <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
             &ldquo;VSAT systems should be treated as unencrypted wireless networks.&rdquo;
-            <span className="block text-sm mt-2 text-foreground/60 not-italic">&mdash; NSA Advisory, May 2022</span>
+            <span className="block text-sm mt-2 text-[#f0ebe3]/60 not-italic">&mdash; NSA Advisory, May 2022</span>
           </blockquote>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -679,8 +679,8 @@ export default function SatelliteEavesdroppingContent() {
 
         {/* Sources */}
         <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6 mb-8">
-          <h3 className="text-lg font-bold text-foreground mb-4">Key Sources &amp; References</h3>
-          <ul className="space-y-2 text-foreground/70 text-sm">
+          <h3 className="text-lg font-bold text-[#f0ebe3] mb-4">Key Sources &amp; References</h3>
+          <ul className="space-y-2 text-[#f0ebe3]/70 text-sm">
             <li><strong>Primary Paper:</strong> Zhang, Dai, Ryan, Schulman, Heninger, Levin. &ldquo;Don&rsquo;t Look Up: There Are Sensitive Internal Links in the Clear on GEO Satellites.&rdquo; ACM CCS 2025. Distinguished Paper Award.</li>
             <li><strong>NSA Advisory:</strong> CSA: Protecting VSAT Communications (May 2022)</li>
             <li><strong>RAND Corporation:</strong> SIGINT for Anyone: The Growing Availability of Signals Intelligence in the Open-Source Environment</li>
@@ -695,10 +695,10 @@ export default function SatelliteEavesdroppingContent() {
           <div className="text-sovereign-gold font-bold tracking-widest uppercase text-sm mb-2">
             JPanda Papers
           </div>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-[#a0b4c8] text-sm">
             Open Source Intelligence &bull; Cybersecurity Analysis &bull; Geopolitical Research
           </p>
-          <p className="text-muted-foreground text-xs mt-2">
+          <p className="text-[#a0b4c8] text-xs mt-2">
             February 2026 &bull; Unclassified // For Public Release
           </p>
         </div>

@@ -1,5 +1,6 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
+import { LivingDocumentBadge } from "@/components/living-document-badge"
 import Link from "next/link"
 import { ArchitectureOfRuinContent } from "./architecture-of-ruin-content"
 
@@ -42,6 +43,9 @@ export default function ArchitectureOfRuinPage() {
             <p className="text-[#a0b4c8] text-xs tracking-widest uppercase mt-1">
               Clearance: Level_01 // Ref: HOST-750
             </p>
+            <div className="mt-2">
+              <LivingDocumentBadge lastVerified="Mar 24, 2026" version="2.0" reportSlug="architecture-of-ruin" />
+            </div>
           </div>
           <Link
             href="/briefings"

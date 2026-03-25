@@ -121,6 +121,38 @@ const config: Config = {
         bounce: "bounce 2s infinite",
         shimmer: "shimmer 2s linear infinite",
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            "--tw-prose-body": "#a0b4c8",
+            "--tw-prose-headings": "#f0ebe3",
+            "--tw-prose-links": "#d4a74a",
+            "--tw-prose-bold": "#f0ebe3",
+            "--tw-prose-quotes": "#e8dfd0",
+            "--tw-prose-quote-borders": "#d4a74a",
+            "--tw-prose-counters": "#d4a74a",
+            "--tw-prose-bullets": "#d4a74a",
+            "--tw-prose-hr": "#1b4965",
+            "--tw-prose-th-borders": "#1b4965",
+            "--tw-prose-td-borders": "#1b4965",
+            fontFamily: "var(--font-body)",
+            h1: { fontFamily: "var(--font-heading)" },
+            h2: { fontFamily: "var(--font-heading)" },
+            h3: { fontFamily: "var(--font-heading)" },
+            h4: { fontFamily: "var(--font-heading)" },
+          },
+        },
+        invert: {
+          css: {
+            "--tw-prose-invert-body": "#a0b4c8",
+            "--tw-prose-invert-headings": "#f0ebe3",
+            "--tw-prose-invert-links": "#d4a74a",
+            "--tw-prose-invert-bold": "#f0ebe3",
+            "--tw-prose-invert-quotes": "#e8dfd0",
+            "--tw-prose-invert-quote-borders": "#d4a74a",
+          },
+        },
+      },
       keyframes: {
         pulse: {
           "0%, 100%": { opacity: "1" },

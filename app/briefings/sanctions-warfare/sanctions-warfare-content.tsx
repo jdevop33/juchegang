@@ -9,8 +9,8 @@ export default function SanctionsWarfareContent() {
   return (
     <article className="container mx-auto px-4 pt-28 pb-20 prose prose-invert max-w-4xl">
       <header className="not-prose mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold">{t('sanctionsWarfareTitle')}</h1>
-        <p className="text-muted-foreground mt-2">{t('sanctionsWarfareDesc')}</p>
+        <h1 className="text-4xl md:text-5xl font-bold text-[#f0ebe3]">{t('sanctionsWarfareTitle')}</h1>
+        <p className="text-[#a0b4c8] mt-2">{t('sanctionsWarfareDesc')}</p>
       </header>
 
       <section>
@@ -75,9 +75,9 @@ export default function SanctionsWarfareContent() {
           {t('sanctionsConclusionContent')}
         </p>
       </section>
-      <footer className="not-prose mt-12 text-sm text-muted-foreground">
+      <footer className="not-prose mt-12 text-sm text-[#a0b4c8]">
         <div className="flex items-center justify-between gap-4 flex-wrap">
-          <p className="text-muted-foreground">{t('briefingNote')}</p>
+          <p className="text-[#a0b4c8]">{t('briefingNote')}</p>
           <LinkedInShare />
         </div>
       </footer>

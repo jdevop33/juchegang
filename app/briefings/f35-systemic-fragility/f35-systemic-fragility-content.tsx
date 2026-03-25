@@ -10,13 +10,13 @@ export default function F35SystemicFragilityContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             JPanda James Strategic Papers
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#f0ebe3]">
             Systemic Fragility and Strategic Necessity
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto italic">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto italic">
             A Comprehensive Life-Cycle Assessment of the F-35 Lightning II Program
           </p>
-          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
+          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-[#a0b4c8]">
             <span>February 2026</span>
             <span className="text-sovereign-gold">|</span>
             <span>Unclassified // For Public Release</span>
@@ -31,27 +31,27 @@ export default function F35SystemicFragilityContent() {
           <div className="not-prose grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-sovereign-gold">$2+ Trillion</p>
-              <p className="text-sm text-muted-foreground mt-1">Program Lifecycle Cost</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Program Lifecycle Cost</p>
             </div>
             <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-korean-red">50%</p>
-              <p className="text-sm text-muted-foreground mt-1">Fleet Availability Rate</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Fleet Availability Rate</p>
             </div>
             <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-sovereign-gold">232:1</p>
-              <p className="text-sm text-muted-foreground mt-1">China&ndash;US Shipbuilding Capacity</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">China&ndash;US Shipbuilding Capacity</p>
             </div>
             <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-korean-red">3&ndash;4x</p>
-              <p className="text-sm text-muted-foreground mt-1">Russian Artillery Production Advantage</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Russian Artillery Production Advantage</p>
             </div>
             <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-sovereign-gold">$100+ Billion</p>
-              <p className="text-sm text-muted-foreground mt-1">Cancelled Defense Programs</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Cancelled Defense Programs</p>
             </div>
             <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-korean-red">238 Days</p>
-              <p className="text-sm text-muted-foreground mt-1">Average F-35 Delivery Delay (2024)</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Average F-35 Delivery Delay (2024)</p>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function F35SystemicFragilityContent() {
           <h2 className="text-2xl font-bold mb-3 text-korean-red">
             Strategic Warning
           </h2>
-          <p className="text-foreground/90 leading-relaxed">
+          <p className="text-[#f0ebe3]/90 leading-relaxed">
             War games consistently demonstrate that U.S. forces would exhaust long-range precision munitions within days of a major conflict. The defense industrial base cannot surge production quickly enough to matter in plausible warfighting timelines.
           </p>
         </div>
@@ -161,15 +161,15 @@ export default function F35SystemicFragilityContent() {
           <div className="not-prose bg-muted/30 border border-sovereign-gold/20 rounded-lg p-6 mb-8">
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">F-35A Cost Per Flight Hour</p>
+                <p className="text-sm text-[#a0b4c8] uppercase tracking-wider mb-2">F-35A Cost Per Flight Hour</p>
                 <p className="text-4xl font-bold text-korean-red">$42,000</p>
               </div>
               <div className="text-center">
-                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">F-16 Cost Per Flight Hour</p>
+                <p className="text-sm text-[#a0b4c8] uppercase tracking-wider mb-2">F-16 Cost Per Flight Hour</p>
                 <p className="text-4xl font-bold text-sovereign-gold">$26,000</p>
               </div>
             </div>
-            <p className="text-center text-sm text-muted-foreground mt-4">The aircraft the F-35 was designed to replace costs 60% less to operate per hour.</p>
+            <p className="text-center text-sm text-[#a0b4c8] mt-4">The aircraft the F-35 was designed to replace costs 60% less to operate per hour.</p>
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -202,7 +202,7 @@ export default function F35SystemicFragilityContent() {
 
           <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4 mb-8">
             <h4 className="font-bold text-korean-red mb-2">The Readiness Paradox</h4>
-            <p className="text-foreground/90">As more aircraft are delivered, readiness rates decline further. The sustainment infrastructure&mdash;spare parts, depot capacity, trained maintainers&mdash;has not scaled with the fleet. Each new aircraft adds demand to a supply chain already operating beyond capacity.</p>
+            <p className="text-[#f0ebe3]/90">As more aircraft are delivered, readiness rates decline further. The sustainment infrastructure&mdash;spare parts, depot capacity, trained maintainers&mdash;has not scaled with the fleet. Each new aircraft adds demand to a supply chain already operating beyond capacity.</p>
           </div>
 
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">3.2 Block 4 Modernization Crisis</h3>
@@ -239,7 +239,7 @@ export default function F35SystemicFragilityContent() {
 
           <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6 mb-8">
             <h4 className="text-xl font-bold mb-3 text-river-current dark:text-river-mid">Intelligence Implications</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               The incident exposed a fundamental tension in forward-deploying stealth aircraft to contested waters. Every F-35 that operates over the South China Sea carries within it the potential for a catastrophic intelligence compromise. The aircraft&rsquo;s value as a reconnaissance platform is inseparable from its vulnerability as an intelligence target.
             </p>
           </div>
@@ -267,17 +267,17 @@ export default function F35SystemicFragilityContent() {
           <div className="space-y-4 mb-8">
             <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4">
               <h4 className="font-bold text-korean-red mb-2">China&rsquo;s Rare Earth Monopoly</h4>
-              <p className="text-foreground/90"><strong>70%</strong> of global rare earth extraction. <strong>Over 90%</strong> of downstream processing capacity. <strong>100%</strong> monopoly on separation capacity for dysprosium and terbium&mdash;elements essential for the aircraft&rsquo;s advanced electronics and high-temperature permanent magnets.</p>
+              <p className="text-[#f0ebe3]/90"><strong>70%</strong> of global rare earth extraction. <strong>Over 90%</strong> of downstream processing capacity. <strong>100%</strong> monopoly on separation capacity for dysprosium and terbium&mdash;elements essential for the aircraft&rsquo;s advanced electronics and high-temperature permanent magnets.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4">
               <h4 className="font-bold text-sovereign-gold mb-2">Chinese Components Discovered</h4>
-              <p className="text-foreground/90">Production stoppages from discovered Chinese-sourced components occurred in <strong>2022, 2023, and 2024</strong>. Despite security protocols designed to prevent adversary-sourced materials from entering the supply chain, the complexity of rare earth processing makes complete verification practically impossible.</p>
+              <p className="text-[#f0ebe3]/90">Production stoppages from discovered Chinese-sourced components occurred in <strong>2022, 2023, and 2024</strong>. Despite security protocols designed to prevent adversary-sourced materials from entering the supply chain, the complexity of rare earth processing makes complete verification practically impossible.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-river-current pl-6 py-4">
               <h4 className="font-bold text-river-current dark:text-river-mid mb-2">Timeline to Independence</h4>
-              <p className="text-foreground/90">Industry estimates suggest <strong>10&ndash;20 years</strong> to develop independent Western rare earth processing capacity sufficient to support defense production without Chinese sources. In the interim, the F-35&rsquo;s production rate is, in effect, subject to Beijing&rsquo;s approval.</p>
+              <p className="text-[#f0ebe3]/90">Industry estimates suggest <strong>10&ndash;20 years</strong> to develop independent Western rare earth processing capacity sufficient to support defense production without Chinese sources. In the interim, the F-35&rsquo;s production rate is, in effect, subject to Beijing&rsquo;s approval.</p>
             </div>
           </div>
 
@@ -293,7 +293,7 @@ export default function F35SystemicFragilityContent() {
 
           <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-8">
             <h4 className="text-xl font-bold mb-3 text-korean-red">Parts Crisis by the Numbers</h4>
-            <div className="space-y-3 text-foreground/90">
+            <div className="space-y-3 text-[#f0ebe3]/90">
               <p><strong className="text-korean-red">4,000+</strong> parts in shortage at any given time&mdash;double the historic average.</p>
               <p><strong className="text-korean-red">10,000+</strong> items in the repair backlog.</p>
               <p><strong className="text-korean-red">141 days</strong> average repair turnaround time, versus a 60-day target.</p>
@@ -324,13 +324,13 @@ export default function F35SystemicFragilityContent() {
 
           <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-8">
             <h4 className="text-xl font-bold mb-3 text-korean-red">China&rsquo;s Sixth-Generation Lead</h4>
-            <p className="text-foreground/90 leading-relaxed mb-3">
+            <p className="text-[#f0ebe3]/90 leading-relaxed mb-3">
               On <strong>December 26, 2024</strong>, China stunned Western intelligence by flying two sixth-generation prototype aircraft&mdash;tentatively designated the <strong>J-36</strong> and <strong>J-50</strong>&mdash;years ahead of any U.S. demonstration.
             </p>
-            <p className="text-foreground/90 leading-relaxed mb-3">
+            <p className="text-[#f0ebe3]/90 leading-relaxed mb-3">
               By <strong>December 2025</strong>, satellite imagery and open-source intelligence confirmed <strong>three J-36 airframes</strong> in active flight testing&mdash;a pace that suggests a well-funded, parallel development program rather than a single prototype effort.
             </p>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               The U.S. Air Force&rsquo;s next-generation fighter, the <strong>F-47</strong> (formerly NGAD), is not expected to achieve first flight until <strong>2028 at the earliest</strong>. The window of Western technological superiority in combat aviation is closing faster than the Pentagon anticipated.
             </p>
           </div>
@@ -354,22 +354,22 @@ export default function F35SystemicFragilityContent() {
           <div className="space-y-4 mb-8">
             <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4">
               <h4 className="font-bold text-korean-red mb-2">Future Combat Systems (FCS) &mdash; $18&ndash;20 Billion</h4>
-              <p className="text-foreground/90">The Army&rsquo;s flagship modernization program, cancelled in 2009 after consuming nearly two decades of institutional energy and producing no fielded capability.</p>
+              <p className="text-[#f0ebe3]/90">The Army&rsquo;s flagship modernization program, cancelled in 2009 after consuming nearly two decades of institutional energy and producing no fielded capability.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4">
               <h4 className="font-bold text-korean-red mb-2">RAH-66 Comanche &mdash; $6.9 Billion</h4>
-              <p className="text-foreground/90">The Army&rsquo;s stealth reconnaissance helicopter, cancelled in 2004 after 22 years of development. Only two prototypes were built.</p>
+              <p className="text-[#f0ebe3]/90">The Army&rsquo;s stealth reconnaissance helicopter, cancelled in 2004 after 22 years of development. Only two prototypes were built.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4">
               <h4 className="font-bold text-korean-red mb-2">XM2001 Crusader &mdash; $2 Billion</h4>
-              <p className="text-foreground/90">Self-propelled howitzer cancelled in 2002 as too heavy for rapid deployment&mdash;the very problem it was designed to solve.</p>
+              <p className="text-[#f0ebe3]/90">Self-propelled howitzer cancelled in 2002 as too heavy for rapid deployment&mdash;the very problem it was designed to solve.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4">
               <h4 className="font-bold text-korean-red mb-2">Ground Combat Vehicle (GCV) &mdash; $1 Billion</h4>
-              <p className="text-foreground/90">The Bradley replacement, cancelled in 2014. The U.S. Army has not fielded a new manned ground combat vehicle since the M2 Bradley in the early 1980s despite four successive replacement attempts.</p>
+              <p className="text-[#f0ebe3]/90">The Bradley replacement, cancelled in 2014. The U.S. Army has not fielded a new manned ground combat vehicle since the M2 Bradley in the early 1980s despite four successive replacement attempts.</p>
             </div>
           </div>
 
@@ -421,17 +421,17 @@ export default function F35SystemicFragilityContent() {
             <h4 className="text-lg font-bold text-sovereign-gold mb-4 text-center">Artillery Production Comparison</h4>
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">Russia Annual Shell Production</p>
+                <p className="text-sm text-[#a0b4c8] uppercase tracking-wider mb-2">Russia Annual Shell Production</p>
                 <p className="text-4xl font-bold text-korean-red">~4&ndash;4.5M</p>
-                <p className="text-sm text-muted-foreground mt-1">rounds per year (2025)</p>
+                <p className="text-sm text-[#a0b4c8] mt-1">rounds per year (2025)</p>
               </div>
               <div className="text-center">
-                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">NATO Combined Production</p>
+                <p className="text-sm text-[#a0b4c8] uppercase tracking-wider mb-2">NATO Combined Production</p>
                 <p className="text-4xl font-bold text-sovereign-gold">1.7&ndash;2M</p>
-                <p className="text-sm text-muted-foreground mt-1">rounds per year (2025)</p>
+                <p className="text-sm text-[#a0b4c8] mt-1">rounds per year (2025)</p>
               </div>
             </div>
-            <p className="text-center text-sm text-muted-foreground mt-4">A single nation outproduces the entire Western alliance by a factor of 2&ndash;3x.</p>
+            <p className="text-center text-sm text-[#a0b4c8] mt-4">A single nation outproduces the entire Western alliance by a factor of 2&ndash;3x.</p>
           </div>
 
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">8.2 China: Industrial Overmatch</h3>
@@ -460,7 +460,7 @@ export default function F35SystemicFragilityContent() {
 
           <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-8">
             <h4 className="text-xl font-bold mb-3 text-korean-red">Munitions Expenditure: Three Weeks of Combat</h4>
-            <div className="space-y-3 text-foreground/90">
+            <div className="space-y-3 text-[#f0ebe3]/90">
               <p>U.S. and allied forces expended over <strong>5,000+ precision-guided missiles</strong> within three weeks, including:</p>
               <ul className="list-none pl-0 space-y-2 mt-3">
                 <li>&bull; <strong>~4,000 JASSM</strong> (Joint Air-to-Surface Standoff Missile)</li>
@@ -504,14 +504,14 @@ export default function F35SystemicFragilityContent() {
 
           <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-8">
             <h4 className="text-xl font-bold mb-3 text-sovereign-gold">The Australia Model</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               Australia provides a template for a more resilient approach. The Royal Australian Air Force operates a mixed fleet of <strong>72 F-35A</strong> fighters alongside <strong>24 F/A-18F Super Hornets</strong> and <strong>12 EA-18G Growlers</strong>. This portfolio approach provides high-end stealth capability (F-35), a reliable multi-role workhorse (Super Hornet), and dedicated electronic warfare capacity (Growler)&mdash;reducing dependence on any single platform and its associated supply chain.
             </p>
           </div>
 
           <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4 mb-8">
             <h4 className="font-bold text-sovereign-gold mb-2">The Interoperability Trap</h4>
-            <p className="text-foreground/90">Canada chose the F-35 not because it was the optimal platform for Canadian defense requirements, but because interoperability with the United States Air Force was deemed non-negotiable. This decision framework&mdash;where alliance politics override operational suitability&mdash;is replicated across F-35 partner nations, locking the Western alliance into a single platform whose fragility becomes everyone&rsquo;s vulnerability.</p>
+            <p className="text-[#f0ebe3]/90">Canada chose the F-35 not because it was the optimal platform for Canadian defense requirements, but because interoperability with the United States Air Force was deemed non-negotiable. This decision framework&mdash;where alliance politics override operational suitability&mdash;is replicated across F-35 partner nations, locking the Western alliance into a single platform whose fragility becomes everyone&rsquo;s vulnerability.</p>
           </div>
         </section>
 
@@ -544,7 +544,7 @@ export default function F35SystemicFragilityContent() {
 
           <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-8">
             <h4 className="text-xl font-bold mb-4 text-sovereign-gold">11.4 Specific Recommendations</h4>
-            <ul className="text-foreground/90 space-y-3 list-none pl-0">
+            <ul className="text-[#f0ebe3]/90 space-y-3 list-none pl-0">
               <li><strong>1.</strong> Invest in a diversified fighter portfolio that includes lower-cost, higher-availability platforms alongside the F-35 to ensure resilience against supply chain disruption and attrition.</li>
               <li><strong>2.</strong> Establish strategic rare earth reserves and accelerate domestic processing capacity to break China&rsquo;s supply chain leverage within the next decade.</li>
               <li><strong>3.</strong> Fund competitive engine development to eliminate the F135 single-source vulnerability and restore market dynamics to sustainment costs.</li>
@@ -576,10 +576,10 @@ export default function F35SystemicFragilityContent() {
 
         {/* Footer */}
         <div className="text-center mt-12 pt-8 border-t border-sovereign-gold/20">
-          <p className="text-sm text-muted-foreground tracking-widest uppercase mb-2">JPanda James Strategic Papers</p>
-          <p className="text-xs text-muted-foreground">Defense Industrial Analysis &bull; Strategic Assessment &bull; Open Source Intelligence</p>
+          <p className="text-sm text-[#a0b4c8] tracking-widest uppercase mb-2">JPanda James Strategic Papers</p>
+          <p className="text-xs text-[#a0b4c8]">Defense Industrial Analysis &bull; Strategic Assessment &bull; Open Source Intelligence</p>
           <p className="text-xs text-sovereign-gold mt-2">February 2026</p>
-          <p className="text-xs text-muted-foreground mt-1">Unclassified // For Public Release</p>
+          <p className="text-xs text-[#a0b4c8] mt-1">Unclassified // For Public Release</p>
         </div>
 
       </div>

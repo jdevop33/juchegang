@@ -9,7 +9,7 @@ export default function TruthForPeaceContent() {
   return (
     <article className="container mx-auto px-4 pt-28 pb-20 prose max-w-4xl" style={{ color: '#f0ebe3' }}>
       <header className="not-prose mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold">{t('truthForPeaceTitle')}</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-[#f0ebe3]">{t('truthForPeaceTitle')}</h1>
         <p className="mt-2" style={{ color: '#f0ebe3', opacity: 0.8 }}>{t('truthForPeaceDesc')}</p>
         <p className="text-sm mt-2 italic" style={{ color: '#f0ebe3', opacity: 0.7 }}>
           {language === 'kr' ? '인공지능과 인간의 공동 작업' : 'A Collaboration Between AI and Human'}

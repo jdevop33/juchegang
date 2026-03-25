@@ -131,7 +131,7 @@ function QuoteCard({ expert, language }: { expert: typeof expertQuotes[0], langu
           >
             {expert.name}
           </h3>
-          <p className="text-muted-foreground text-sm sm:text-base mt-1 break-words" role="text">
+          <p className="text-[#a0b4c8] text-sm sm:text-base mt-1 break-words" role="text">
             {expert.title}
           </p>
           <div className="flex flex-wrap gap-2 mt-3 justify-center sm:justify-start">
@@ -436,7 +436,7 @@ export default function IranSnapbackContent() {
 
         <footer className="not-prose mt-16 sm:mt-20 pt-8 border-t border-border/20 text-center">
           <div className="space-y-4">
-            <p className="text-sm sm:text-base text-muted-foreground italic max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base text-[#a0b4c8] italic max-w-2xl mx-auto">
               {language === 'kr' 
                 ? '이 기사를 공유하십시오. 대화를 시작하십시오. 서사에 도전하십시오. 모든 것에 의문을 제기하십시오.' 
                 : 'Share this article. Start conversations. Challenge narratives. Question everything.'

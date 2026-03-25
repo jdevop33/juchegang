@@ -8,23 +8,23 @@ export default function MartillContent() {
       </p>
 
       <div className="grid gap-4 md:grid-cols-2">
-        <div className="rounded-lg border border-foreground/20 bg-background/40 p-4">
+        <div className="rounded-lg border border-[#f0ebe3]/20 bg-[#0d1b2a]/40 p-4">
           <h2 className="mb-1 text-xl font-bold">Analytical</h2>
           <p className="leading-7">Tests causal effects using surveys, case comparisons, and stats. Strength: measurement; Limit: nuance.</p>
         </div>
-        <div className="rounded-lg border border-foreground/20 bg-background/40 p-4">
+        <div className="rounded-lg border border-[#f0ebe3]/20 bg-[#0d1b2a]/40 p-4">
           <h2 className="mb-1 text-xl font-bold">Historical</h2>
           <p className="leading-7">Uses archives to trace how ideas mattered in specific times. Strength: context; Limit: generalization.</p>
         </div>
-        <div className="rounded-lg border border-foreground/20 bg-background/40 p-4">
+        <div className="rounded-lg border border-[#f0ebe3]/20 bg-[#0d1b2a]/40 p-4">
           <h2 className="mb-1 text-xl font-bold">Philosophical</h2>
           <p className="leading-7">Connects IR to traditions (Hobbes, Kant). Strength: clarity; Limit: distance from data.</p>
         </div>
-        <div className="rounded-lg border border-foreground/20 bg-background/40 p-4">
+        <div className="rounded-lg border border-[#f0ebe3]/20 bg-[#0d1b2a]/40 p-4">
           <h2 className="mb-1 text-xl font-bold">Critical</h2>
           <p className="leading-7">Asks whose interests ideas serve. Strength: power awareness; Limit: can underplay agency.</p>
         </div>
-        <div className="rounded-lg border border-foreground/20 bg-background/40 p-4 md:col-span-2">
+        <div className="rounded-lg border border-[#f0ebe3]/20 bg-[#0d1b2a]/40 p-4 md:col-span-2">
           <h2 className="mb-1 text-xl font-bold">Reflexive</h2>
           <p className="leading-7">Shows how theories shape the world they describe. Strength: self-awareness; Limit: fewer predictions.</p>
         </div>

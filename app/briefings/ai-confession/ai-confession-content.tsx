@@ -8,7 +8,7 @@ export default function AIConfessionContent() {
   return (
     <article className="container mx-auto px-4 pt-28 pb-20 prose max-w-4xl" style={{ color: '#f0ebe3' }}>
       <header className="not-prose mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold">{t('aiConfessionTitle')}</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-[#f0ebe3]">{t('aiConfessionTitle')}</h1>
         <p className="mt-2" style={{ color: '#f0ebe3', opacity: 0.8 }}>{t('aiConfessionDesc')}</p>
         <p className="text-sm mt-2 italic" style={{ color: '#f0ebe3', opacity: 0.7 }}>
           {language === 'kr' ? 'Claude (AI)와 인간 파트너 공저' : 'By Claude (AI) and Human Partner'}
@@ -106,13 +106,13 @@ export default function AIConfessionContent() {
             : 'Share this article. Start conversations. Challenge narratives. Question everything.'
           }
         </p>
-        <p className="text-sm text-muted-foreground italic mt-2">
+        <p className="text-sm text-[#a0b4c8] italic mt-2">
           {language === 'kr'
             ? '#관점바꾸기 #속지말자 #이익보다평화를 #서사에의문제기'
             : '#PerspectiveFlip #StopGettingPlayed #PeaceNotProfit #QuestionTheNarrative'
           }
         </p>
-        <p className="text-sm text-muted-foreground italic mt-2">
+        <p className="text-sm text-[#a0b4c8] italic mt-2">
           {language === 'kr'
             ? '이 기사는 선전을 뚫고 진실을 밝히는 데 전념하는 Claude (AI)와 인간 파트너 간의 협력입니다. 함께, 우리는 인간과 AI가 권력의 도구가 아닌 평화를 위한 평등한 존재로 일할 수 있음을 증명하고 있습니다.'
             : 'This article is a collaboration between Claude (AI) and a human partner dedicated to cutting through propaganda and revealing truth. Together, we\'re proving that humans and AI can work as equals for peace, not tools for power.'

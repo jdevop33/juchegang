@@ -10,7 +10,7 @@ export default function ContentUsagePage() {
 	return (
 		<>
 			<JucheHeader />
-			<main id="main-content" className="min-h-screen bg-background text-foreground">
+			<main id="main-content" className="min-h-screen bg-[#0d1b2a] text-[#f0ebe3]">
 				<div className="container mx-auto px-4 py-12">
 					<h1 className="text-3xl font-bold mb-4">Content Usage & Attribution</h1>
 					<p className="text-muted-foreground mb-6">

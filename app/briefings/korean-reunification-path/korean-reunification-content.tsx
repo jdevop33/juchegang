@@ -10,10 +10,10 @@ export default function KoreanReunificationContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-river-current/10 text-river-current dark:text-river-mid rounded-full text-sm font-medium">
             Unity
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#f0ebe3]">
             One Korea: The Path to Peace
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto">
             Understanding the artificial division, honoring both Korean systems, and working toward the peaceful reunification that the Korean people deserve.
           </p>
         </div>
@@ -285,7 +285,7 @@ export default function KoreanReunificationContent() {
 
         <div className="border-l-4 border-accent pl-6 mb-8">
           <h3 className="text-xl font-bold mb-4">Further Reading</h3>
-          <div className="space-y-2 text-muted-foreground">
+          <div className="space-y-2 text-[#a0b4c8]">
             <p>"The Cleanest Race" by B.R. Myers</p>
             <p>"North Korea: Another Country" by Bruce Cumings</p>
             <p>"The Korean War" by I.F. Stone</p>

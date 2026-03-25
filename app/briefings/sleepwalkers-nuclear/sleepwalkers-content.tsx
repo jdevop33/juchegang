@@ -10,13 +10,13 @@ export default function SleepwalkersContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             White Tiger Publications
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#f0ebe3]">
             Sleepwalkers With Nuclear Weapons
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto italic">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto italic">
             How Groupthink, Conformity &amp; Drunken Hubris Are Steering Civilization Toward the Abyss
           </p>
-          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
+          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-[#a0b4c8]">
             <span>February 2026</span>
             <span className="text-sovereign-gold">|</span>
             <span>A Deep Dive by J Panda</span>
@@ -31,27 +31,27 @@ export default function SleepwalkersContent() {
           <div className="not-prose grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-sovereign-gold">75%</p>
-              <p className="text-sm text-muted-foreground mt-1">Conformed to Obviously Wrong Answers (Asch)</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Conformed to Obviously Wrong Answers (Asch)</p>
             </div>
             <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-korean-red">65%</p>
-              <p className="text-sm text-muted-foreground mt-1">Administered Maximum 450V Shock (Milgram)</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Administered Maximum 450V Shock (Milgram)</p>
             </div>
             <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-sovereign-gold">8</p>
-              <p className="text-sm text-muted-foreground mt-1">Symptoms of Groupthink (Janis)</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Symptoms of Groupthink (Janis)</p>
             </div>
             <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-korean-red">20M</p>
-              <p className="text-sm text-muted-foreground mt-1">Dead from WWI Sleepwalking</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Dead from WWI Sleepwalking</p>
             </div>
             <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-sovereign-gold">92.5%</p>
-              <p className="text-sm text-muted-foreground mt-1">Obeyed When Distanced from Consequences</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Obeyed When Distanced from Consequences</p>
             </div>
             <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-korean-red">1</p>
-              <p className="text-sm text-muted-foreground mt-1">Dissenter Needed to Break the Spell</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Dissenter Needed to Break the Spell</p>
             </div>
           </div>
         </div>
@@ -59,10 +59,10 @@ export default function SleepwalkersContent() {
         {/* Editor's Note */}
         <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
           <p className="text-sm font-medium text-sovereign-gold uppercase tracking-wider mb-2">A Note from the Editor</p>
-          <p className="text-foreground/90 leading-relaxed italic">
+          <p className="text-[#f0ebe3]/90 leading-relaxed italic">
             You know what&rsquo;s wilder than any conspiracy theory? The documented, peer-reviewed, experimentally verified science of how entire civilizations can collectively lose their minds while being absolutely certain they&rsquo;re the smartest people in the room. This isn&rsquo;t speculation. This is decades of research by psychologists, historians, and political scientists who&rsquo;ve been screaming into the void about the exact mechanisms that are playing out right now on the world stage. Grab a coffee. You&rsquo;re gonna need it.
           </p>
-          <p className="text-muted-foreground text-sm mt-3">&mdash; J Panda, White Tiger Publications</p>
+          <p className="text-[#a0b4c8] text-sm mt-3">&mdash; J Panda, White Tiger Publications</p>
         </div>
 
         {/* Epigraph */}
@@ -76,10 +76,10 @@ export default function SleepwalkersContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-2">
             <span className="font-mono text-sovereign-gold text-lg">01</span>
-            <span className="text-sm text-muted-foreground uppercase tracking-widest">Chapter</span>
+            <span className="text-sm text-[#a0b4c8] uppercase tracking-widest">Chapter</span>
           </div>
           <h2 className="text-3xl font-bold mb-2">The Groupthink Machine</h2>
-          <p className="text-lg text-muted-foreground italic mb-6">How Irving Janis Decoded Elite Stupidity</p>
+          <p className="text-lg text-[#a0b4c8] italic mb-6">How Irving Janis Decoded Elite Stupidity</p>
 
           <p className="text-lg leading-relaxed mb-6">
             In 1961, President John F. Kennedy assembled the most brilliant advisory team in American history. These were not idiots. Harvard graduates, Rhodes Scholars, seasoned diplomats, military strategists with decades of experience. And they unanimously approved what Janis himself would later call a &ldquo;stupid, patchwork plan&rdquo; to invade Cuba at the Bay of Pigs. The result was one of the most embarrassing foreign policy disasters in American history.
@@ -91,7 +91,7 @@ export default function SleepwalkersContent() {
 
           <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
             &ldquo;I use the term groupthink as a quick and easy way to refer to the mode of thinking that persons engage in when concurrence-seeking becomes so dominant in a cohesive ingroup that it tends to override realistic appraisal of alternative courses of action.&rdquo;
-            <footer className="text-sm text-muted-foreground mt-2 not-italic">&mdash; Irving Janis, 1972</footer>
+            <footer className="text-sm text-[#a0b4c8] mt-2 not-italic">&mdash; Irving Janis, 1972</footer>
           </blockquote>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -114,7 +114,7 @@ export default function SleepwalkersContent() {
                   <th className="text-left p-3 text-sovereign-gold font-bold">Description</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/90">
+              <tbody className="text-[#f0ebe3]/90">
                 <tr className="border-b border-muted">
                   <td className="p-3 font-mono text-sovereign-gold">1</td>
                   <td className="p-3 font-semibold">Illusion of Invulnerability</td>
@@ -170,7 +170,7 @@ export default function SleepwalkersContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed font-semibold">
+            <p className="text-[#f0ebe3]/90 leading-relaxed font-semibold">
               The question is: who&rsquo;s learning now?
             </p>
           </div>
@@ -182,10 +182,10 @@ export default function SleepwalkersContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-2">
             <span className="font-mono text-sovereign-gold text-lg">02</span>
-            <span className="text-sm text-muted-foreground uppercase tracking-widest">Chapter</span>
+            <span className="text-sm text-[#a0b4c8] uppercase tracking-widest">Chapter</span>
           </div>
           <h2 className="text-3xl font-bold mb-2">Calling White Black</h2>
-          <p className="text-lg text-muted-foreground italic mb-6">Asch&rsquo;s Conformity Experiments &amp; Why Smart People Lie</p>
+          <p className="text-lg text-[#a0b4c8] italic mb-6">Asch&rsquo;s Conformity Experiments &amp; Why Smart People Lie</p>
 
           <p className="text-lg leading-relaxed mb-6">
             Solomon Asch wanted to prove something reassuring about human nature. In 1951, this Polish-American psychologist at Swarthmore College set up what he thought would be a slam-dunk demonstration that rational people resist social pressure when the truth is obvious. Instead, he accidentally proved the opposite and spent the rest of his career disturbed by what he found.
@@ -202,13 +202,13 @@ export default function SleepwalkersContent() {
           {/* Big Stat Callout */}
           <div className="not-prose my-8 p-8 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg text-center">
             <p className="text-6xl font-bold text-korean-red mb-2">75%</p>
-            <p className="text-lg text-foreground/90 font-semibold">of participants conformed at least once to an obviously wrong answer</p>
-            <p className="text-sm text-muted-foreground mt-2">Average conformity rate across all critical trials: 36.8% &bull; Only 24% never conformed at all</p>
+            <p className="text-lg text-[#f0ebe3]/90 font-semibold">of participants conformed at least once to an obviously wrong answer</p>
+            <p className="text-sm text-[#a0b4c8] mt-2">Average conformity rate across all critical trials: 36.8% &bull; Only 24% never conformed at all</p>
           </div>
 
           <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
             &ldquo;The tendency to conformity in our society is so strong that reasonably intelligent and well-meaning young people are willing to call white black. This is a matter of concern.&rdquo;
-            <footer className="text-sm text-muted-foreground mt-2 not-italic">&mdash; Solomon Asch, 1955</footer>
+            <footer className="text-sm text-[#a0b4c8] mt-2 not-italic">&mdash; Solomon Asch, 1955</footer>
           </blockquote>
 
           <h3 className="text-2xl font-bold mb-4">They Knew They Were Lying</h3>
@@ -224,7 +224,7 @@ export default function SleepwalkersContent() {
           <h3 className="text-2xl font-bold mb-4">The One Finding That Should Change Everything</h3>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               A <strong>single dissenter</strong>&mdash;just one person in the room saying the correct answer&mdash;reduced conformity by <strong className="text-sovereign-gold">75%</strong>. One voice. That&rsquo;s all it takes to break the spell. But when that one voice gets labeled a &ldquo;Putin apologist&rdquo; or a &ldquo;useful idiot&rdquo; and drummed out of the room? The conformity snaps right back. And everyone in the room starts calling white, black.
             </p>
           </div>
@@ -240,10 +240,10 @@ export default function SleepwalkersContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-2">
             <span className="font-mono text-sovereign-gold text-lg">03</span>
-            <span className="text-sm text-muted-foreground uppercase tracking-widest">Chapter</span>
+            <span className="text-sm text-[#a0b4c8] uppercase tracking-widest">Chapter</span>
           </div>
           <h2 className="text-3xl font-bold mb-2">Just Following Orders</h2>
-          <p className="text-lg text-muted-foreground italic mb-6">Milgram&rsquo;s Obedience Studies &amp; the Banality of Evil</p>
+          <p className="text-lg text-[#a0b4c8] italic mb-6">Milgram&rsquo;s Obedience Studies &amp; the Banality of Evil</p>
 
           <p className="text-lg leading-relaxed mb-6">
             In 1961, while Adolf Eichmann sat in a bulletproof glass booth in Jerusalem claiming he was &ldquo;just following orders,&rdquo; Yale psychologist Stanley Milgram was asking the most dangerous question in social psychology: would ordinary Americans do the same thing?
@@ -255,8 +255,8 @@ export default function SleepwalkersContent() {
 
           <div className="not-prose my-8 p-8 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg text-center">
             <p className="text-6xl font-bold text-korean-red mb-2">65%</p>
-            <p className="text-lg text-foreground/90 font-semibold">of participants administered the maximum 450-volt shock</p>
-            <p className="text-sm text-muted-foreground mt-2">100% went to at least 300 volts</p>
+            <p className="text-lg text-[#f0ebe3]/90 font-semibold">of participants administered the maximum 450-volt shock</p>
+            <p className="text-sm text-[#a0b4c8] mt-2">100% went to at least 300 volts</p>
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -265,7 +265,7 @@ export default function SleepwalkersContent() {
 
           <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
             &ldquo;Ordinary people, simply doing their jobs, and without any particular hostility on their part, can become agents in a terrible destructive process.&rdquo;
-            <footer className="text-sm text-muted-foreground mt-2 not-italic">&mdash; Stanley Milgram, 1974</footer>
+            <footer className="text-sm text-[#a0b4c8] mt-2 not-italic">&mdash; Stanley Milgram, 1974</footer>
           </blockquote>
 
           <h3 className="text-2xl font-bold mb-4">The Variations Tell the Real Story</h3>
@@ -283,7 +283,7 @@ export default function SleepwalkersContent() {
                   <th className="text-left p-3 text-sovereign-gold font-bold">Obedience Rate</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/90">
+              <tbody className="text-[#f0ebe3]/90">
                 <tr className="border-b border-muted">
                   <td className="p-3">Original experiment (Yale laboratory)</td>
                   <td className="p-3 font-mono text-korean-red font-bold">65%</td>
@@ -317,7 +317,7 @@ export default function SleepwalkersContent() {
           </div>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               <strong>The crucial finding:</strong> Social support&mdash;other people saying &ldquo;no&rdquo;&mdash;was the most powerful defense against obedience. And when participants were told they would be <em>personally responsible</em> for any harm caused? Almost nobody obeyed.
             </p>
           </div>
@@ -339,10 +339,10 @@ export default function SleepwalkersContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-2">
             <span className="font-mono text-sovereign-gold text-lg">04</span>
-            <span className="text-sm text-muted-foreground uppercase tracking-widest">Chapter</span>
+            <span className="text-sm text-[#a0b4c8] uppercase tracking-widest">Chapter</span>
           </div>
           <h2 className="text-3xl font-bold mb-2">The Mob Inside</h2>
-          <p className="text-lg text-muted-foreground italic mb-6">Deindividuation &amp; the Death of Personal Accountability</p>
+          <p className="text-lg text-[#a0b4c8] italic mb-6">Deindividuation &amp; the Death of Personal Accountability</p>
 
           <p className="text-lg leading-relaxed mb-6">
             In 1895, French social psychologist Gustave Le Bon published <em>The Crowd: A Study of the Popular Mind</em> and freaked everyone out. His core insight: anonymity plus collective emotion equals the dissolution of individual moral restraint. When you become part of a group&mdash;any group&mdash;your personal identity gets submerged. You stop thinking with your own brain and start thinking with the group&rsquo;s brain.
@@ -363,7 +363,7 @@ export default function SleepwalkersContent() {
                   <th className="text-left p-3 text-sovereign-gold font-bold">How It Works</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/90">
+              <tbody className="text-[#f0ebe3]/90">
                 <tr className="border-b border-muted">
                   <td className="p-3 font-mono text-sovereign-gold">1</td>
                   <td className="p-3 font-semibold">Anonymity</td>
@@ -394,7 +394,7 @@ export default function SleepwalkersContent() {
           </div>
 
           <div className="not-prose my-8 p-6 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               <strong>The critical revision:</strong> Crowds aren&rsquo;t actually irrational. Historical analysis shows crowds typically act on moral principles and popular consensus. The behavior is governed by whatever norms the group has adopted. If the group&rsquo;s norms are &ldquo;expand NATO, contain Russia, maintain American primacy at all costs,&rdquo; then every member will act rationally <em>within that framework</em>&mdash;while the framework itself is catastrophically detached from reality.
             </p>
           </div>
@@ -406,10 +406,10 @@ export default function SleepwalkersContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-2">
             <span className="font-mono text-sovereign-gold text-lg">05</span>
-            <span className="text-sm text-muted-foreground uppercase tracking-widest">Chapter</span>
+            <span className="text-sm text-[#a0b4c8] uppercase tracking-widest">Chapter</span>
           </div>
           <h2 className="text-3xl font-bold mb-2">The Sleepwalkers</h2>
-          <p className="text-lg text-muted-foreground italic mb-6">How Europe Stumbled Into WWI Without Meaning To</p>
+          <p className="text-lg text-[#a0b4c8] italic mb-6">How Europe Stumbled Into WWI Without Meaning To</p>
 
           <p className="text-lg leading-relaxed mb-6">
             Christopher Clark&rsquo;s magisterial 2012 study <em>The Sleepwalkers: How Europe Went to War in 1914</em> remains the most chilling book you can read in the current geopolitical moment. Not because it&rsquo;s about 1914. Because it&rsquo;s about right now.
@@ -417,7 +417,7 @@ export default function SleepwalkersContent() {
 
           <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
             &ldquo;The protagonists of 1914 were sleepwalkers, watchful but unseeing, haunted by dreams, yet blind to the reality of the horror they were about to bring into the world.&rdquo;
-            <footer className="text-sm text-muted-foreground mt-2 not-italic">&mdash; Christopher Clark, <em>The Sleepwalkers</em></footer>
+            <footer className="text-sm text-[#a0b4c8] mt-2 not-italic">&mdash; Christopher Clark, <em>The Sleepwalkers</em></footer>
           </blockquote>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -426,7 +426,7 @@ export default function SleepwalkersContent() {
 
           <div className="not-prose my-8 p-8 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg text-center">
             <p className="text-4xl font-bold text-korean-red mb-2">Twenty million dead. Three empires destroyed.</p>
-            <p className="text-lg text-foreground/90">The seeds of an even worse war planted. All because nobody in any of the decision-making rooms could step outside their own assumptions long enough to see what they were actually building.</p>
+            <p className="text-lg text-[#f0ebe3]/90">The seeds of an even worse war planted. All because nobody in any of the decision-making rooms could step outside their own assumptions long enough to see what they were actually building.</p>
           </div>
 
           <h3 className="text-2xl font-bold mb-4">The Austrian Hedgehog Syndrome</h3>
@@ -448,7 +448,7 @@ export default function SleepwalkersContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               Replace &ldquo;mobilization timetables&rdquo; with &ldquo;NATO expansion commitments&rdquo; and &ldquo;alliance obligations&rdquo; with &ldquo;escalation ladders,&rdquo; and you have a pretty accurate description of where we are in 2026.
             </p>
           </div>
@@ -460,10 +460,10 @@ export default function SleepwalkersContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-2">
             <span className="font-mono text-sovereign-gold text-lg">06</span>
-            <span className="text-sm text-muted-foreground uppercase tracking-widest">Chapter</span>
+            <span className="text-sm text-[#a0b4c8] uppercase tracking-widest">Chapter</span>
           </div>
           <h2 className="text-3xl font-bold mb-2">The Blob</h2>
-          <p className="text-lg text-muted-foreground italic mb-6">Washington&rsquo;s Self-Licking Ice Cream Cone</p>
+          <p className="text-lg text-[#a0b4c8] italic mb-6">Washington&rsquo;s Self-Licking Ice Cream Cone</p>
 
           <p className="text-lg leading-relaxed mb-6">
             In 2016, Ben Rhodes&mdash;Obama&rsquo;s Deputy National Security Advisor&mdash;gave the foreign policy establishment a nickname that stuck: <strong className="text-sovereign-gold">&ldquo;The Blob.&rdquo;</strong> He meant the permanent DC foreign policy class committed to perpetuating its own power and reinforcing the status quo. Career officials at State and the Pentagon. Think tank analysts at CFR, Brookings, AEI. Congressional staffers. Media figures. All promoting the same basic worldview: American primacy, military interventionism, NATO expansion, regime change.
@@ -485,7 +485,7 @@ export default function SleepwalkersContent() {
 
           <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
             &ldquo;What Biden needs is not mechanics but architects: people with the imagination and vision to create new arrangements and approaches. Unfortunately, because today&rsquo;s establishment places a high priority on conformity and remaining within a safe and increasingly nostalgic consensus, these are not the sort of people who rise to positions of power.&rdquo;
-            <footer className="text-sm text-muted-foreground mt-2 not-italic">&mdash; Stephen Walt, <em>Foreign Policy</em>, 2022</footer>
+            <footer className="text-sm text-[#a0b4c8] mt-2 not-italic">&mdash; Stephen Walt, <em>Foreign Policy</em>, 2022</footer>
           </blockquote>
 
           <h3 className="text-2xl font-bold mb-4">The 16-Hour Blindfold</h3>
@@ -501,10 +501,10 @@ export default function SleepwalkersContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-2">
             <span className="font-mono text-sovereign-gold text-lg">07</span>
-            <span className="text-sm text-muted-foreground uppercase tracking-widest">Chapter</span>
+            <span className="text-sm text-[#a0b4c8] uppercase tracking-widest">Chapter</span>
           </div>
           <h2 className="text-3xl font-bold mb-2">The Foam Finger Problem</h2>
-          <p className="text-lg text-muted-foreground italic mb-6">Dunning-Kruger at a Civilizational Scale</p>
+          <p className="text-lg text-[#a0b4c8] italic mb-6">Dunning-Kruger at a Civilizational Scale</p>
 
           <p className="text-lg leading-relaxed mb-6">
             Here&rsquo;s where it gets personal. The average American waves a big foam finger and chants &ldquo;We&rsquo;re Number One!&rdquo; while living in a country that can&rsquo;t land on the Moon anymore (despite having done it in 1969 with slide rules and less computing power than a modern phone), can&rsquo;t build a hypersonic missile that works reliably, can&rsquo;t produce enough artillery shells to sustain a single proxy war, and can&rsquo;t build new ships fast enough to replace peacetime losses, let alone wartime ones.
@@ -529,7 +529,7 @@ export default function SleepwalkersContent() {
                   <th className="text-left p-3 text-korean-red font-bold">Reality</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/90">
+              <tbody className="text-[#f0ebe3]/90">
                 <tr className="border-b border-muted">
                   <td className="p-3 font-semibold">Steel Production</td>
                   <td className="p-3">China produces more than the rest of the world combined</td>
@@ -560,7 +560,7 @@ export default function SleepwalkersContent() {
 
           <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
             &ldquo;Most great powers have considered themselves superior to their rivals and have believed that they were advancing some greater good when they imposed their preferences on others. The British thought they were bearing the &lsquo;white man&rsquo;s burden.&rsquo; The French invoked la mission civilisatrice. Even officials of the Soviet Union genuinely believed they were leading the world toward a socialist utopia.&rdquo;
-            <footer className="text-sm text-muted-foreground mt-2 not-italic">&mdash; Stephen Walt, <em>The Myth of American Exceptionalism</em></footer>
+            <footer className="text-sm text-[#a0b4c8] mt-2 not-italic">&mdash; Stephen Walt, <em>The Myth of American Exceptionalism</em></footer>
           </blockquote>
 
           <h3 className="text-2xl font-bold mb-4">The Double Standard Nobody Talks About</h3>
@@ -580,10 +580,10 @@ export default function SleepwalkersContent() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-2">
             <span className="font-mono text-sovereign-gold text-lg">08</span>
-            <span className="text-sm text-muted-foreground uppercase tracking-widest">Chapter</span>
+            <span className="text-sm text-[#a0b4c8] uppercase tracking-widest">Chapter</span>
           </div>
           <h2 className="text-3xl font-bold mb-2">Synthesis</h2>
-          <p className="text-lg text-muted-foreground italic mb-6">Drunken Hubris + Groupthink + Nuclear Weapons = &hellip;</p>
+          <p className="text-lg text-[#a0b4c8] italic mb-6">Drunken Hubris + Groupthink + Nuclear Weapons = &hellip;</p>
 
           <p className="text-lg leading-relaxed mb-6">
             Now put it all together. Every psychological mechanism we&rsquo;ve examined is operating simultaneously in the Western foreign policy establishment right now. This isn&rsquo;t conspiracy theory. This is documented, peer-reviewed social science applied to observable behavior.
@@ -600,7 +600,7 @@ export default function SleepwalkersContent() {
                   <th className="text-left p-3 text-korean-red font-bold">Current Manifestation</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/90">
+              <tbody className="text-[#f0ebe3]/90">
                 <tr className="border-b border-muted">
                   <td className="p-3 font-mono text-korean-red">1</td>
                   <td className="p-3 font-semibold">Illusion of Invulnerability</td>
@@ -658,13 +658,13 @@ export default function SleepwalkersContent() {
           {/* The Equation */}
           <div className="not-prose my-8 p-8 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg">
             <p className="text-sm font-medium text-korean-red uppercase tracking-wider mb-4">The Equation Nobody Wants to Solve</p>
-            <div className="space-y-2 text-foreground/90 font-mono text-sm md:text-base">
-              <p>&nbsp;&nbsp;75% conformity rate <span className="text-muted-foreground">(Asch)</span></p>
-              <p>+ 65% blind obedience <span className="text-muted-foreground">(Milgram)</span></p>
-              <p>+ Groupthink consensus machine <span className="text-muted-foreground">(Janis)</span></p>
-              <p>+ Deindividuated moral abdication <span className="text-muted-foreground">(Le Bon)</span></p>
-              <p>+ Self-perpetuating elite consensus <span className="text-muted-foreground">(The Blob)</span></p>
-              <p>+ Civilizational Dunning-Kruger <span className="text-muted-foreground">(Foam Finger)</span></p>
+            <div className="space-y-2 text-[#f0ebe3]/90 font-mono text-sm md:text-base">
+              <p>&nbsp;&nbsp;75% conformity rate <span className="text-[#a0b4c8]">(Asch)</span></p>
+              <p>+ 65% blind obedience <span className="text-[#a0b4c8]">(Milgram)</span></p>
+              <p>+ Groupthink consensus machine <span className="text-[#a0b4c8]">(Janis)</span></p>
+              <p>+ Deindividuated moral abdication <span className="text-[#a0b4c8]">(Le Bon)</span></p>
+              <p>+ Self-perpetuating elite consensus <span className="text-[#a0b4c8]">(The Blob)</span></p>
+              <p>+ Civilizational Dunning-Kruger <span className="text-[#a0b4c8]">(Foam Finger)</span></p>
               <p className="border-t border-korean-red/30 pt-2 text-korean-red font-bold text-lg">= EXISTENTIAL DANGER</p>
             </div>
           </div>
@@ -684,7 +684,7 @@ export default function SleepwalkersContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed text-lg">
+            <p className="text-[#f0ebe3]/90 leading-relaxed text-lg">
               What&rsquo;s needed are people with the courage to be that <strong className="text-sovereign-gold">one dissenter</strong> in the room. People willing to call white, white&mdash;even when every credentialed expert around them is calling it black. People who understand that the deepest form of patriotism isn&rsquo;t waving a foam finger. It&rsquo;s having the intellectual honesty to ask whether the emperor has clothes.
             </p>
           </div>
@@ -701,7 +701,7 @@ export default function SleepwalkersContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             White Tiger Publications
           </div>
-          <p className="text-muted-foreground text-sm">iPurpose Consulting &bull; Victoria, BC &bull; February 2026</p>
+          <p className="text-[#a0b4c8] text-sm">iPurpose Consulting &bull; Victoria, BC &bull; February 2026</p>
           <p className="text-sovereign-gold text-sm italic mt-2">Stand out. Don&rsquo;t fit in.</p>
         </div>
 

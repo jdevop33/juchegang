@@ -10,13 +10,13 @@ export default function WarNobodyWinsContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             JPanda Papers
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#f0ebe3]">
             The War Nobody Wins
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto italic">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto italic">
             A Behavioral Analysis of a Hypothetical World War 3
           </p>
-          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
+          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-[#a0b4c8]">
             <span>February 2026</span>
             <span className="text-sovereign-gold">|</span>
             <span>Classification: Open-Source Intelligence</span>
@@ -28,7 +28,7 @@ export default function WarNobodyWinsContent() {
           <h2 className="text-2xl font-bold mb-3 text-korean-red">
             Executive Summary: The View from the Edge of the Abyss
           </h2>
-          <p className="text-foreground/90 leading-relaxed">
+          <p className="text-[#f0ebe3]/90 leading-relaxed">
             This analysis examines the behavioral dynamics driving the world toward a hypothetical global conflict. Using open-source intelligence from all sides &mdash; Russian, Chinese, European, and Global South media &mdash; it maps the psychology, industrial asymmetries, and strategic miscalculations that make war increasingly plausible, and victory for anyone increasingly impossible.
           </p>
         </div>
@@ -109,17 +109,17 @@ export default function WarNobodyWinsContent() {
           <div className="space-y-4 mb-8">
             <div className="bg-muted/30 border-l-4 border-korean-red pl-6 py-4">
               <h4 className="font-bold text-korean-red mb-2">The Gunpowder Gap</h4>
-              <p className="text-foreground/90">Europe faces a critical shortage of explosives like TNT and RDX. Der Spiegel notes that the continent relies on a single major TNT producer located in Poland. In a high-intensity conflict, a single Russian cruise missile strike on this facility could effectively demilitarize the entire European artillery corps. The supply chain is so fragile that it resembles a Jenga tower built by a trembling hand.</p>
+              <p className="text-[#f0ebe3]/90">Europe faces a critical shortage of explosives like TNT and RDX. Der Spiegel notes that the continent relies on a single major TNT producer located in Poland. In a high-intensity conflict, a single Russian cruise missile strike on this facility could effectively demilitarize the entire European artillery corps. The supply chain is so fragile that it resembles a Jenga tower built by a trembling hand.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4">
               <h4 className="font-bold text-sovereign-gold mb-2">The &ldquo;Handshake&rdquo; Economy</h4>
-              <p className="text-foreground/90">The procurement process is so sclerotic that the CEO of Rheinmetall, Armin Papperger, admitted to relying on a &ldquo;handshake&rdquo; or a &ldquo;text message&rdquo; from Defense Minister Boris Pistorius to authorize factory expansions, rather than waiting for the years-long bureaucratic process of formal contracts. A war economy cannot run on text messages and goodwill; it runs on binding contracts and guaranteed capital.</p>
+              <p className="text-[#f0ebe3]/90">The procurement process is so sclerotic that the CEO of Rheinmetall, Armin Papperger, admitted to relying on a &ldquo;handshake&rdquo; or a &ldquo;text message&rdquo; from Defense Minister Boris Pistorius to authorize factory expansions, rather than waiting for the years-long bureaucratic process of formal contracts. A war economy cannot run on text messages and goodwill; it runs on binding contracts and guaranteed capital.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-river-current pl-6 py-4">
               <h4 className="font-bold text-river-current dark:text-river-mid mb-2">The &ldquo;Just-in-Time&rdquo; Suicide Pact</h4>
-              <p className="text-foreground/90">Decades of efficiency consultancy have stripped European logistics to the bone. The &ldquo;systemic industrial inertia&rdquo; means that high-end systems like the Patriot air defense network now have delivery delays of up to ten years. In a war that might be decided in ten days, this is not a lag; it is a surrender.</p>
+              <p className="text-[#f0ebe3]/90">Decades of efficiency consultancy have stripped European logistics to the bone. The &ldquo;systemic industrial inertia&rdquo; means that high-end systems like the Patriot air defense network now have delivery delays of up to ten years. In a war that might be decided in ten days, this is not a lag; it is a surrender.</p>
             </div>
           </div>
 
@@ -340,41 +340,41 @@ export default function WarNobodyWinsContent() {
           <div className="space-y-8">
             <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4">
               <h3 className="font-bold text-sovereign-gold mb-2 italic">Phase 1: The Trigger &mdash; The &ldquo;Salami Slicing&rdquo; Goes Wrong</h3>
-              <p className="text-foreground/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 The war does not start with a bang, but with a miscalculation. Emboldened by the &ldquo;Immortality&rdquo; narrative and the perceived weakness of the German &ldquo;boutique&rdquo; military, Russia tests the waters in the Baltics &mdash; perhaps a &ldquo;gray zone&rdquo; incursion involving &ldquo;unidentified&rdquo; troops (Wagner/Africa Corps veterans). Simultaneously, China initiates a &ldquo;quarantine&rdquo; of Taiwan, citing a &ldquo;customs enforcement&rdquo; action. It is not an invasion, but a strangulation.
               </p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-river-current pl-6 py-4">
               <h3 className="font-bold text-river-current dark:text-river-mid mb-2 italic">Phase 2: The Western Paralysis</h3>
-              <p className="text-foreground/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 NATO attempts to respond, but the German bottlenecks mean that the promised tank divisions exist only on PowerPoint slides. The &ldquo;text message&rdquo; procurement system collapses under the strain of real-time logistics. France, bruised by its Sahel humiliation, hesitates, calling for &ldquo;European strategic autonomy&rdquo; and diplomatic off-ramps rather than immediate Article 5 commitment. In the Pacific, the US moves Carrier Strike Groups into position. China activates its &ldquo;denial&rdquo; bubble. A US destroyer is &ldquo;buzzed&rdquo; by a YJ-21 hypersonic missile &mdash; a warning shot that moves at Mach 10. The US Navy realizes that to enter the First Island Chain is to risk losing a carrier. The psychological shock of vulnerability paralyzes decision-making in Washington.
               </p>
             </div>
 
             <div className="bg-korean-red/10 dark:bg-korean-red/20 border-l-4 border-korean-red pl-6 py-4">
               <h3 className="font-bold text-korean-red mb-2 italic">Phase 3: The Escalation &mdash; The Oreshnik Moment</h3>
-              <p className="text-foreground/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Russia, seeing Western hesitation, fires a conventional Oreshnik missile at a logistics hub in Poland. It is a &ldquo;demonstration.&rdquo; The missile penetrates all air defenses. The message is clear: <strong>Next time, it has a nuclear warhead.</strong>
               </p>
-              <p className="text-foreground/90 leading-relaxed mt-3">
+              <p className="text-[#f0ebe3]/90 leading-relaxed mt-3">
                 This is the <strong>&ldquo;Behavioral Checkmate.&rdquo;</strong> The West is faced with a choice: escalate to nuclear war for the sake of a Polish supply depot, or back down. The &ldquo;Immortality Complex&rdquo; of the Eastern leaders suggests they believe the West &mdash; decadent, aging, and risk-averse &mdash; will fold.
               </p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4">
               <h3 className="font-bold text-sovereign-gold mb-2 italic">Phase 4: The Chaos &mdash; The Global South Explodes</h3>
-              <p className="text-foreground/90 leading-relaxed">
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 Seeing the Great Powers locked in a stare-down, the regional &ldquo;hedgers&rdquo; make their moves. Egypt strikes the Ethiopian dam. Turkey occupies islands in the Aegean or expands into Syria, playing both sides. Brazil declares a &ldquo;Zone of Peace&rdquo; in the South Atlantic and charges a 300% premium on food exports to Europe.
               </p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-muted-foreground pl-6 py-4">
-              <h3 className="font-bold text-muted-foreground mb-2 italic">Phase 5: The &ldquo;Peace&rdquo; of the Graveyard</h3>
-              <p className="text-foreground/90 leading-relaxed">
+              <h3 className="font-bold text-[#a0b4c8] mb-2 italic">Phase 5: The &ldquo;Peace&rdquo; of the Graveyard</h3>
+              <p className="text-[#f0ebe3]/90 leading-relaxed">
                 The war likely ends not with a march on Moscow or Beijing, but with a dirty, negotiated armistice that ratifies a new status quo. The US is pushed out of the Western Pacific. NATO fractures as Eastern Europe realizes the &ldquo;German Boutique&rdquo; cannot protect them. The dollar loses its monopoly, replaced by a fragmented system of barter and digital yuan.
               </p>
-              <p className="text-foreground/90 leading-relaxed mt-3">
+              <p className="text-[#f0ebe3]/90 leading-relaxed mt-3">
                 The &ldquo;winners&rdquo; are the leaders who discussed immortality at the parade. They survive. Their populations, however, live in a world that is poorer, hotter, and more dangerous.
               </p>
             </div>
@@ -415,7 +415,7 @@ export default function WarNobodyWinsContent() {
               &ldquo;The problem with the rat race is that even if you win, you are still a rat.&rdquo;
             </blockquote>
 
-            <p className="text-xl font-semibold text-center text-foreground">
+            <p className="text-xl font-semibold text-center text-[#f0ebe3]">
               In World War 3, <strong>we are all rats in a burning maze.</strong>
             </p>
           </div>
@@ -430,12 +430,12 @@ export default function WarNobodyWinsContent() {
               <thead>
                 <tr className="border-b border-sovereign-gold/30">
                   <th className="text-left p-3 text-sovereign-gold font-bold uppercase tracking-wider">Feature</th>
-                  <th className="text-left p-3 text-korean-red font-bold">Russia <span className="font-normal text-muted-foreground">(The Bear)</span></th>
-                  <th className="text-left p-3 text-korean-red font-bold">China <span className="font-normal text-muted-foreground">(The Dragon)</span></th>
-                  <th className="text-left p-3 text-river-current dark:text-river-mid font-bold">NATO / Europe <span className="font-normal text-muted-foreground">(The Sick Man)</span></th>
+                  <th className="text-left p-3 text-korean-red font-bold">Russia <span className="font-normal text-[#a0b4c8]">(The Bear)</span></th>
+                  <th className="text-left p-3 text-korean-red font-bold">China <span className="font-normal text-[#a0b4c8]">(The Dragon)</span></th>
+                  <th className="text-left p-3 text-river-current dark:text-river-mid font-bold">NATO / Europe <span className="font-normal text-[#a0b4c8]">(The Sick Man)</span></th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-b border-muted/30">
                   <td className="p-3 font-bold text-sovereign-gold">Key Weapon</td>
                   <td className="p-3">Oreshnik IRBM &mdash; Hypersonic, MIRV, unstoppable by current defenses</td>
@@ -467,10 +467,10 @@ export default function WarNobodyWinsContent() {
 
         {/* Footer */}
         <div className="text-center mt-12 pt-8 border-t border-sovereign-gold/20">
-          <p className="text-sm text-muted-foreground tracking-widest uppercase mb-2">JPanda Papers</p>
-          <p className="text-xs text-muted-foreground">Open Source Intelligence &bull; Behavioral Analysis &bull; Geopolitical Research</p>
+          <p className="text-sm text-[#a0b4c8] tracking-widest uppercase mb-2">JPanda Papers</p>
+          <p className="text-xs text-[#a0b4c8]">Open Source Intelligence &bull; Behavioral Analysis &bull; Geopolitical Research</p>
           <p className="text-xs text-sovereign-gold mt-2">JucheGang.ca</p>
-          <p className="text-xs text-muted-foreground mt-1">&copy; 2026 JPanda Papers. All rights reserved.</p>
+          <p className="text-xs text-[#a0b4c8] mt-1">&copy; 2026 JPanda Papers. All rights reserved.</p>
         </div>
 
       </div>

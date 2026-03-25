@@ -10,13 +10,13 @@ export default function ChinaCollapseContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             JPanda Papers
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#f0ebe3]">
             The &ldquo;China Collapse&rdquo; Narrative
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto italic">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto italic">
             A Comprehensive Fact-Based Refutation
           </p>
-          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
+          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-[#a0b4c8]">
             <span>March 2026</span>
             <span className="text-sovereign-gold">|</span>
             <span>Unclassified // For Public Release</span>
@@ -28,34 +28,34 @@ export default function ChinaCollapseContent() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-korean-red mb-1">5.0%</div>
-              <div className="text-foreground/70 text-sm">GDP Growth (2024&ndash;2025)</div>
+              <div className="text-[#f0ebe3]/70 text-sm">GDP Growth (2024&ndash;2025)</div>
             </div>
             <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-sovereign-gold mb-1">$992B</div>
-              <div className="text-foreground/70 text-sm">Record Trade Surplus (2024)</div>
+              <div className="text-[#f0ebe3]/70 text-sm">Record Trade Surplus (2024)</div>
             </div>
             <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-korean-red mb-1">30%</div>
-              <div className="text-foreground/70 text-sm">Share of Global Growth</div>
+              <div className="text-[#f0ebe3]/70 text-sm">Share of Global Growth</div>
             </div>
             <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-sovereign-gold mb-1">$3.58T</div>
-              <div className="text-foreground/70 text-sm">Exports (2024), Up 5.9% YoY</div>
+              <div className="text-[#f0ebe3]/70 text-sm">Exports (2024), Up 5.9% YoY</div>
             </div>
             <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-korean-red mb-1">$196B</div>
-              <div className="text-foreground/70 text-sm">Top 6 Banks Combined Profit</div>
+              <div className="text-[#f0ebe3]/70 text-sm">Top 6 Banks Combined Profit</div>
             </div>
             <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-sovereign-gold mb-1">24 Years</div>
-              <div className="text-foreground/70 text-sm">Of Failed Collapse Predictions</div>
+              <div className="text-[#f0ebe3]/70 text-sm">Of Failed Collapse Predictions</div>
             </div>
           </div>
         </div>
 
         {/* Executive Summary Callout */}
         <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-          <p className="text-lg leading-relaxed text-foreground/90">
+          <p className="text-lg leading-relaxed text-[#f0ebe3]/90">
             <strong className="text-sovereign-gold">Executive Summary:</strong> The claims of China&rsquo;s imminent economic collapse are contradicted by systematic data from the IMF, World Bank, major investment banks, and China&rsquo;s own audited statistics. While China faces genuine structural challenges&mdash;property sector adjustment, deflationary pressures, and demographic headwinds&mdash;an economy growing at 5.0%, posting record exports of $3.58 trillion, and contributing 30% of global growth does not meet any standard definition of &ldquo;depression&rdquo; or &ldquo;collapse.&rdquo;
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function ChinaCollapseContent() {
                   <th className="text-left p-3 text-sovereign-gold font-semibold">Trend</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-t border-sovereign-gold/10">
                   <td className="p-3">GDP Growth</td>
                   <td className="p-3 font-semibold">5.0% (Q4: 5.4% YoY)</td>
@@ -127,7 +127,7 @@ export default function ChinaCollapseContent() {
           </div>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               Even the most skeptical alternative analysis&mdash;Rhodium Group&rsquo;s estimate of 2.4&ndash;2.8% actual growth versus official 5.0%&mdash;still represents <strong>continued expansion, not contraction</strong>. For context, the United States is projected to grow around 2% in 2025. An economy contributing one-third of global economic growth is, by definition, not in &ldquo;depression.&rdquo;
             </p>
           </div>
@@ -150,15 +150,15 @@ export default function ChinaCollapseContent() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-sovereign-gold mb-1">19.39%</div>
-                <div className="text-foreground/70 text-sm">ICBC Capital Adequacy Ratio</div>
+                <div className="text-[#f0ebe3]/70 text-sm">ICBC Capital Adequacy Ratio</div>
               </div>
               <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-korean-red mb-1">1.25&ndash;1.34%</div>
-                <div className="text-foreground/70 text-sm">NPL Ratio (vs EU 2.28&ndash;2.31%)</div>
+                <div className="text-[#f0ebe3]/70 text-sm">NPL Ratio (vs EU 2.28&ndash;2.31%)</div>
               </div>
               <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-sovereign-gold mb-1">210%+</div>
-                <div className="text-foreground/70 text-sm">Provision Coverage Ratio</div>
+                <div className="text-[#f0ebe3]/70 text-sm">Provision Coverage Ratio</div>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function ChinaCollapseContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               The IMF&rsquo;s 2024 Financial Sector Assessment Program stress tests concluded that under an adverse scenario (GDP growth assumptions of just 1.1&ndash;3.2%), the 19 domestically systemically important banks would maintain capital adequacy of <strong>12.7%</strong>&mdash;still above regulatory minimums. The IMF Executive Board stated it was &ldquo;broadly reassured by the stress test findings that the banking system would remain resilient in an adverse scenario.&rdquo;
             </p>
           </div>
@@ -201,7 +201,7 @@ export default function ChinaCollapseContent() {
                   <th className="text-left p-3 text-sovereign-gold font-semibold">vs China</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-t border-sovereign-gold/10 bg-korean-red/5">
                   <td className="p-3">Macau</td>
                   <td className="p-3 font-semibold">0.68</td>
@@ -235,12 +235,12 @@ export default function ChinaCollapseContent() {
                 <tr className="border-t border-sovereign-gold/10">
                   <td className="p-3">Japan</td>
                   <td className="p-3 font-semibold">1.15&ndash;1.22</td>
-                  <td className="p-3 text-foreground/50">Comparable</td>
+                  <td className="p-3 text-[#f0ebe3]/50">Comparable</td>
                 </tr>
                 <tr className="border-t border-sovereign-gold/10 bg-sovereign-gold/5">
                   <td className="p-3">Italy</td>
                   <td className="p-3 font-semibold">1.2</td>
-                  <td className="p-3 text-foreground/50">Comparable</td>
+                  <td className="p-3 text-[#f0ebe3]/50">Comparable</td>
                 </tr>
               </tbody>
             </table>
@@ -250,7 +250,7 @@ export default function ChinaCollapseContent() {
             Notably, 2024 saw China&rsquo;s births <em>increase</em> to 9.54 million (up 520,000 from 2023), the first increase in years, attributed to post-COVID recovery and Year of the Dragon preferences.
           </p>
 
-          <h3 className="text-2xl font-bold mb-4 text-foreground">The &ldquo;Hospital Closures&rdquo; Myth</h3>
+          <h3 className="text-2xl font-bold mb-4 text-[#f0ebe3]">The &ldquo;Hospital Closures&rdquo; Myth</h3>
 
           <p className="text-lg leading-relaxed mb-6">
             The claim of &ldquo;7 hospitals closing per day&rdquo; is directly contradicted by official data showing hospital numbers at an <strong className="text-sovereign-gold">all-time high of 39,000</strong> in 2024&mdash;representing a <strong className="text-sovereign-gold">92% increase since 2009</strong>. Hospital beds have increased to 8 million, with bed density of <strong className="text-sovereign-gold">7.23 per 1,000 population</strong>&mdash;exceeding both the OECD average (4.7) and the United States (2.4).
@@ -260,15 +260,15 @@ export default function ChinaCollapseContent() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-sovereign-gold mb-1">39,000</div>
-                <div className="text-foreground/70 text-sm">Hospitals (All-Time High)</div>
+                <div className="text-[#f0ebe3]/70 text-sm">Hospitals (All-Time High)</div>
               </div>
               <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-korean-red mb-1">7.23</div>
-                <div className="text-foreground/70 text-sm">Beds per 1,000 (US: 2.4)</div>
+                <div className="text-[#f0ebe3]/70 text-sm">Beds per 1,000 (US: 2.4)</div>
               </div>
               <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-sovereign-gold mb-1">18x</div>
-                <div className="text-foreground/70 text-sm">Healthcare Spending Growth Since 2000</div>
+                <div className="text-[#f0ebe3]/70 text-sm">Healthcare Spending Growth Since 2000</div>
               </div>
             </div>
           </div>
@@ -299,15 +299,15 @@ export default function ChinaCollapseContent() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-sovereign-gold mb-1">16x</div>
-                <div className="text-foreground/70 text-sm">Education Spending Growth Since 2000</div>
+                <div className="text-[#f0ebe3]/70 text-sm">Education Spending Growth Since 2000</div>
               </div>
               <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-korean-red mb-1">16:1</div>
-                <div className="text-foreground/70 text-sm">Pupil-Teacher Ratio (Global Avg: 24.3:1)</div>
+                <div className="text-[#f0ebe3]/70 text-sm">Pupil-Teacher Ratio (Global Avg: 24.3:1)</div>
               </div>
               <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-sovereign-gold mb-1">92.74%</div>
-                <div className="text-foreground/70 text-sm">Teachers with Bachelor&rsquo;s+</div>
+                <div className="text-[#f0ebe3]/70 text-sm">Teachers with Bachelor&rsquo;s+</div>
               </div>
             </div>
           </div>
@@ -332,7 +332,7 @@ export default function ChinaCollapseContent() {
 
           <div className="not-prose my-8 p-6 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg">
             <h4 className="text-lg font-bold text-korean-red mb-3">For Context: Western AI Company Economics</h4>
-            <ul className="space-y-2 text-foreground/90">
+            <ul className="space-y-2 text-[#f0ebe3]/90">
               <li>&bull; <strong>OpenAI</strong> lost <strong>$5 billion in 2024</strong> and projects losses of <strong>$74 billion by 2028</strong></li>
               <li>&bull; <strong>Anthropic</strong> lost <strong>$5.6 billion in 2024</strong></li>
               <li>&bull; Neither company has <em>ever</em> reported a profit</li>
@@ -363,7 +363,7 @@ export default function ChinaCollapseContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               <strong className="text-sovereign-gold">Case Study:</strong> Kweichow Moutai, China&rsquo;s largest baijiu producer and one of the world&rsquo;s most valuable spirits companies, reported <strong>2024 revenue of RMB 174.1 billion with net profit of RMB 86.2 billion (up 15.4%)</strong>. The pattern mirrors US craft beer exactly: volume declined 4% in 2024 while dollar sales rose 3%. Declining production volume in the context of rising revenue indicates evolving consumer preferences&mdash;not economic collapse.
             </p>
           </div>
@@ -396,7 +396,7 @@ export default function ChinaCollapseContent() {
                   <th className="text-left p-3 text-korean-red font-semibold">What Actually Happened</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-t border-korean-red/10">
                   <td className="p-3 font-mono">2001</td>
                   <td className="p-3">Chang: Collapse within 5&ndash;10 years</td>
@@ -428,7 +428,7 @@ export default function ChinaCollapseContent() {
 
           <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
             &ldquo;All the Western dire predictions for the Chinese economy have come to naught so far. Since the 1990s, there have been voices prophesying the doom of China&rsquo;s economy and every five to ten years, all kinds of &lsquo;China collapse&rsquo; theories resurface. In fact, it is the &lsquo;China collapse&rsquo; theory that has repeatedly collapsed.&rdquo;
-            <footer className="text-sm text-muted-foreground mt-2 not-italic">&mdash; Keyu Jin, LSE Economist, 2025 Davos Summer Summit</footer>
+            <footer className="text-sm text-[#a0b4c8] mt-2 not-italic">&mdash; Keyu Jin, LSE Economist, 2025 Davos Summer Summit</footer>
           </blockquote>
         </section>
 
@@ -472,7 +472,7 @@ export default function ChinaCollapseContent() {
                   <th className="text-left p-3 text-sovereign-gold font-semibold">2026 Forecast</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-t border-sovereign-gold/10">
                   <td className="p-3 font-semibold">IMF</td>
                   <td className="p-3">5.0%</td>
@@ -521,7 +521,7 @@ export default function ChinaCollapseContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               <strong className="text-korean-red">Methodological Warning:</strong> Cherry-picking negative anecdotes while ignoring contradictory systematic data&mdash;like record exports, positive GDP growth, and profitable banks&mdash;represents confirmation bias, not rigorous analysis. The European Central Bank&rsquo;s economic forecasting research notes that &ldquo;unsuitable forecasting methods and unsuitable expectations regarding the degree of performance are the most important reasons for the lack of accuracy in G7 macroeconomic predictions.&rdquo;
             </p>
           </div>
@@ -556,7 +556,7 @@ export default function ChinaCollapseContent() {
         {/* Sources */}
         <section className="mb-12">
           <h3 className="text-2xl font-bold mb-4">Sources</h3>
-          <div className="text-sm text-muted-foreground space-y-1">
+          <div className="text-sm text-[#a0b4c8] space-y-1">
             <p>&bull; <a href="https://www.imf.org/en/news/articles/2025/12/10/pr-25415-china-imf-staff-completes-2025-article-iv-mission-to-the-peoples-republic-of-china" target="_blank" rel="noopener noreferrer" className="text-sovereign-gold hover:underline">IMF Article IV Consultation (December 2025)</a></p>
             <p>&bull; <a href="https://www.cnbc.com/2025/10/07/world-bank-raises-china-growth-forecast-trade-tensions.html" target="_blank" rel="noopener noreferrer" className="text-sovereign-gold hover:underline">World Bank China Growth Forecast (CNBC)</a></p>
             <p>&bull; <a href="https://english.www.gov.cn/news/202501/18/content_WS678ae501c6d0868f4e8eeef7.html" target="_blank" rel="noopener noreferrer" className="text-sovereign-gold hover:underline">China National Bureau of Statistics (2024 Full-Year Data)</a></p>

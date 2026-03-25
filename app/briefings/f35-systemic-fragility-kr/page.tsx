@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function F35SystemicFragilityKrPage() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-[#0d1b2a] text-[#f0ebe3]">
       <JucheHeader />
       <F35SystemicFragilityKrContent />
       <JucheFooter />

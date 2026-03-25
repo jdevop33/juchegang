@@ -10,13 +10,13 @@ export default function PerformativeEthicsContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             JPanda Papers
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#f0ebe3]">
             Performative Ethics and the Sanctions Regime
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto italic">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto italic">
             Virtue Theater, Structural Violence &amp; Global Hierarchy
           </p>
-          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
+          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-[#a0b4c8]">
             <span>March 2026</span>
             <span className="text-sovereign-gold">|</span>
             <span>Classification: Academic Research Paper</span>
@@ -25,7 +25,7 @@ export default function PerformativeEthicsContent() {
 
         {/* Key Finding */}
         <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-12">
-          <p className="text-foreground/90 leading-relaxed text-lg font-medium">
+          <p className="text-[#f0ebe3]/90 leading-relaxed text-lg font-medium">
             International sanctions are presented as moral imperatives &mdash; targeted tools of justice against rogue actors. The evidence reveals something far more troubling: a <strong className="text-sovereign-gold">codified global caste system</strong> that kills an estimated 564,000 people annually, disproportionately targets the Global South, and functions primarily as virtue theater for domestic political audiences in sanctioning states.
           </p>
         </div>
@@ -35,33 +35,33 @@ export default function PerformativeEthicsContent() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 p-4 text-center">
               <div className="text-2xl md:text-3xl font-bold text-korean-red">564,000</div>
-              <div className="text-xs text-foreground/60 mt-1">Annual deaths from sanctions (Lancet 2025)</div>
+              <div className="text-xs text-[#f0ebe3]/60 mt-1">Annual deaths from sanctions (Lancet 2025)</div>
             </div>
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 p-4 text-center">
               <div className="text-2xl md:text-3xl font-bold text-sovereign-gold">8 of 14</div>
-              <div className="text-xs text-foreground/60 mt-1">UN sanctions regimes targeting African states</div>
+              <div className="text-xs text-[#f0ebe3]/60 mt-1">UN sanctions regimes targeting African states</div>
             </div>
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 p-4 text-center">
               <div className="text-2xl md:text-3xl font-bold text-korean-red">4,000</div>
-              <div className="text-xs text-foreground/60 mt-1">DPRK lives lost to bureaucratic delays</div>
+              <div className="text-xs text-[#f0ebe3]/60 mt-1">DPRK lives lost to bureaucratic delays</div>
             </div>
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 p-4 text-center">
               <div className="text-2xl md:text-3xl font-bold text-sovereign-gold">2,500+</div>
-              <div className="text-xs text-foreground/60 mt-1">Films with Pentagon editorial control</div>
+              <div className="text-xs text-[#f0ebe3]/60 mt-1">Films with Pentagon editorial control</div>
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 p-4 text-center">
               <div className="text-2xl md:text-3xl font-bold text-korean-red">99 days</div>
-              <div className="text-xs text-foreground/60 mt-1">Average humanitarian exemption processing</div>
+              <div className="text-xs text-[#f0ebe3]/60 mt-1">Average humanitarian exemption processing</div>
             </div>
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 p-4 text-center">
               <div className="text-2xl md:text-3xl font-bold text-sovereign-gold">186%</div>
-              <div className="text-xs text-foreground/60 mt-1">Iran food price increase from sanctions</div>
+              <div className="text-xs text-[#f0ebe3]/60 mt-1">Iran food price increase from sanctions</div>
             </div>
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 p-4 text-center">
               <div className="text-2xl md:text-3xl font-bold text-korean-red">120</div>
-              <div className="text-xs text-foreground/60 mt-1">Russian vetoes since 1946</div>
+              <div className="text-xs text-[#f0ebe3]/60 mt-1">Russian vetoes since 1946</div>
             </div>
           </div>
         </div>
@@ -103,18 +103,18 @@ export default function PerformativeEthicsContent() {
           <div className="not-prose my-8">
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 overflow-hidden">
               <div className="bg-river-current/20 px-4 py-3 border-b border-river-current/30">
-                <h3 className="text-lg font-bold text-foreground">Geographic Distribution of UN Security Council Sanctions Regimes</h3>
+                <h3 className="text-lg font-bold text-[#f0ebe3]">Geographic Distribution of UN Security Council Sanctions Regimes</h3>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Region</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Targets</th>
-                      <th className="px-4 py-3 text-center text-foreground font-semibold">Count</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Targets</th>
+                      <th className="px-4 py-3 text-center text-[#f0ebe3] font-semibold">Count</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2 text-korean-red font-semibold">Africa</td>
                       <td className="px-4 py-2">CAR, DRC, Libya, Mali, Somalia, South Sudan, Sudan (Darfur), Eritrea*</td>
@@ -148,14 +148,14 @@ export default function PerformativeEthicsContent() {
                   </tbody>
                 </table>
               </div>
-              <div className="px-4 py-2 text-xs text-foreground/50 border-t border-river-current/10">
+              <div className="px-4 py-2 text-xs text-[#f0ebe3]/50 border-t border-river-current/10">
                 * Eritrea sanctions partially lifted. Source: UN Security Council Sanctions Committees, 2025.
               </div>
             </div>
           </div>
 
           <div className="not-prose my-8 p-6 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed font-medium">
+            <p className="text-[#f0ebe3]/90 leading-relaxed font-medium">
               <strong className="text-korean-red">57% of all UN sanctions regimes target African states.</strong> No European, North American, or Oceanian state has ever been subject to a UN Security Council sanctions regime. The correlation between being a former colony and being sanctioned is statistically significant at p &lt; 0.001.
             </p>
           </div>
@@ -179,18 +179,18 @@ export default function PerformativeEthicsContent() {
           <div className="not-prose my-8">
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 overflow-hidden">
               <div className="bg-river-current/20 px-4 py-3 border-b border-river-current/30">
-                <h3 className="text-lg font-bold text-foreground">Documented Humanitarian Impact of Sanctions</h3>
+                <h3 className="text-lg font-bold text-[#f0ebe3]">Documented Humanitarian Impact of Sanctions</h3>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Country</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Key Impact</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Source</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Key Impact</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Source</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2 font-semibold">Iraq (1990&ndash;2003)</td>
                       <td className="px-4 py-2">576,000 child deaths attributed to sanctions; child mortality doubled</td>
@@ -232,7 +232,7 @@ export default function PerformativeEthicsContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               <strong className="text-sovereign-gold">The Paradox of Increased Repression:</strong> Empirical evidence consistently shows that comprehensive sanctions <em>increase</em> rather than decrease state repression. A 2023 meta-analysis of 47 studies found that sanctioned states were <strong>23% more likely</strong> to escalate domestic repression in the two years following sanctions imposition. The causal mechanism is straightforward: threatened regimes consolidate control, restrict civil liberties, and redirect scarce resources from social services to security. Sanctions do not weaken authoritarian governments &mdash; they <strong>strengthen the authoritarian reflex</strong>.
             </p>
           </div>
@@ -253,7 +253,7 @@ export default function PerformativeEthicsContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed font-medium">
+            <p className="text-[#f0ebe3]/90 leading-relaxed font-medium">
               <strong className="text-korean-red">Criminalizing Compassion:</strong> The DPRK sanctions regime has created a legal environment in which humanitarian actors face criminal liability for providing assistance to civilians. NGOs report that banks refuse to process transactions related to DPRK humanitarian work; shipping companies refuse to transport goods; and individual aid workers face investigation under sanctions-evasion statutes. The result is a system in which <strong>compassion itself has been criminalized</strong> &mdash; not formally, but functionally. The message is clear: caring for the wrong people can destroy your career, your organization, and your freedom.
             </p>
           </div>
@@ -274,7 +274,7 @@ export default function PerformativeEthicsContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               <strong className="text-sovereign-gold">The Illegality Question:</strong> The International Court of Justice has never directly ruled on the legality of secondary sanctions, but the EU&rsquo;s Blocking Statute (Regulation 2271/96), enacted specifically to counter US secondary sanctions, reflects the European legal consensus that extraterritorial sanctions violate principles of sovereign equality and non-intervention under the UN Charter. In 2023, the African Union formally declared that secondary sanctions constitute a violation of the right to development under the African Charter on Human and Peoples&rsquo; Rights. The subordination of 193 sovereign states to one state&rsquo;s sanctions policy is not multilateralism &mdash; it is <strong>financial imperialism</strong>.
             </p>
           </div>
@@ -305,7 +305,7 @@ export default function PerformativeEthicsContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               <strong className="text-sovereign-gold">Worthy vs. Unworthy Victims:</strong> Herman and Chomsky&rsquo;s &ldquo;worthy victim&rdquo; framework remains empirically robust. A 2024 study compared coverage of civilian casualties: Ukrainian civilian deaths received <strong>17 times more coverage per death</strong> than Yemeni civilian deaths in the same outlets during overlapping periods. Palestinian deaths received <strong>4.2 times less coverage</strong> than Israeli deaths. The pattern is consistent: victims of official enemies are worthy of attention; victims of allies are invisible.
             </p>
           </div>
@@ -321,18 +321,18 @@ export default function PerformativeEthicsContent() {
           <div className="not-prose my-8">
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 overflow-hidden">
               <div className="bg-river-current/20 px-4 py-3 border-b border-river-current/30">
-                <h3 className="text-lg font-bold text-foreground">Media and Entertainment Control Mechanisms</h3>
+                <h3 className="text-lg font-bold text-[#f0ebe3]">Media and Entertainment Control Mechanisms</h3>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Mechanism</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Scale</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Function</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Scale</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Function</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2 font-semibold">DoD Entertainment Liaison</td>
                       <td className="px-4 py-2">2,500+ productions</td>
@@ -384,7 +384,7 @@ export default function PerformativeEthicsContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed font-medium">
+            <p className="text-[#f0ebe3]/90 leading-relaxed font-medium">
               <strong className="text-korean-red">The Epstein Paradox:</strong> The Jeffrey Epstein case provides a stark illustration. For decades, claims that a well-connected financier was operating a sex trafficking ring involving powerful political figures were dismissed as conspiracy theory. These claims proved to be <strong>substantially true</strong>. Yet the structural questions raised by the case &mdash; how such a network could operate openly for decades, why law enforcement repeatedly failed to act, and what institutional protections enabled it &mdash; remain largely unexamined in mainstream media. The conspiracy theorist label protected the network while it was operating; when the facts became undeniable, the label shifted to anyone asking why the network was protected.
             </p>
           </div>
@@ -419,7 +419,7 @@ export default function PerformativeEthicsContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               <strong className="text-sovereign-gold">Applied to Sanctions:</strong> Supporting sanctions against &ldquo;bad&rdquo; states serves as a moral credential that licenses subsequent moral disengagement. The citizen who supports DPRK sanctions has &ldquo;done something&rdquo; about human rights and is therefore psychologically freed from confronting the human rights violations of their own state, the humanitarian consequences of the sanctions they support, or the structural injustice of the system they participate in. The sanction is the indulgence; once purchased, the conscience is clear.
             </p>
           </div>
@@ -428,19 +428,19 @@ export default function PerformativeEthicsContent() {
           <div className="not-prose my-8">
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 overflow-hidden">
               <div className="bg-river-current/20 px-4 py-3 border-b border-river-current/30">
-                <h3 className="text-lg font-bold text-foreground">Psychological Framework Comparison</h3>
+                <h3 className="text-lg font-bold text-[#f0ebe3]">Psychological Framework Comparison</h3>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Framework</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Key Authors</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Core Mechanism</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Sanctions Application</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Key Authors</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Core Mechanism</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Sanctions Application</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2 font-semibold">Moral Grandstanding</td>
                       <td className="px-4 py-2">Tosi &amp; Warmke</td>
@@ -504,7 +504,7 @@ export default function PerformativeEthicsContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed font-medium">
+            <p className="text-[#f0ebe3]/90 leading-relaxed font-medium">
               <strong className="text-korean-red">The Domestic Posturing Mechanism:</strong> Sanctions serve politicians as a cost-free way to appear decisive. Imposing sanctions requires no budgetary appropriation, no military deployment, no risk of domestic casualties, and no congressional authorization beyond executive order. The political benefits are immediate and visible; the humanitarian costs are distant, diffuse, and borne by people who do not vote in the sanctioning state&rsquo;s elections. Sanctions are, in this sense, the <strong>perfect political product</strong>: all signal, no cost &mdash; to the sanctioner.
             </p>
           </div>
@@ -527,19 +527,19 @@ export default function PerformativeEthicsContent() {
           <div className="not-prose my-8">
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 overflow-hidden">
               <div className="bg-river-current/20 px-4 py-3 border-b border-river-current/30">
-                <h3 className="text-lg font-bold text-foreground">Five Testable Hypotheses on Performative Sanctions Ethics</h3>
+                <h3 className="text-lg font-bold text-[#f0ebe3]">Five Testable Hypotheses on Performative Sanctions Ethics</h3>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-center text-sovereign-gold font-semibold w-12">#</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Hypothesis</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Experimental Design</th>
-                      <th className="px-4 py-3 text-left text-foreground font-semibold">Predicted Outcome</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Hypothesis</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Experimental Design</th>
+                      <th className="px-4 py-3 text-left text-[#f0ebe3] font-semibold">Predicted Outcome</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-3 text-center text-sovereign-gold font-bold">H1</td>
                       <td className="px-4 py-3">Sanctions support functions as moral licensing: endorsing sanctions reduces subsequent engagement with humanitarian consequences</td>
@@ -605,7 +605,7 @@ export default function PerformativeEthicsContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               <strong className="text-sovereign-gold">The Bridge Figure:</strong> Peace studies scholarship identifies the critical importance of <strong>bridge figures</strong> &mdash; individuals who hold legitimate standing in multiple communities and can translate between them. In the Korean context, bridge figures include diaspora Koreans, humanitarian workers with experience in both Koreas, academic researchers who have conducted fieldwork on both sides, and the rare political figures who have maintained relationships across the divide. The sanctions regime actively destroys bridge figures by criminalizing the relationships they depend on. Every NGO worker prosecuted for sanctions evasion, every academic denied a visa, every family separated by travel restrictions represents a <strong>lost bridge</strong> &mdash; a human connection severed in the name of a policy that has demonstrably failed to achieve its stated objective.
             </p>
           </div>
@@ -663,7 +663,7 @@ export default function PerformativeEthicsContent() {
           </p>
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
-            <p className="text-foreground/90 leading-relaxed text-lg">
+            <p className="text-[#f0ebe3]/90 leading-relaxed text-lg">
               <strong className="text-sovereign-gold">Radical Factuality:</strong> The alternative to performative ethics is not moral relativism but <strong>radical factuality</strong> &mdash; a commitment to empirical truth as the foundation of moral judgment. Radical factuality requires confronting uncomfortable data: that sanctions kill more people than they save; that the states imposing sanctions have extensive records of their own violence; that the media narratives supporting sanctions are structurally shaped by military and intelligence institutions; and that our own moral judgments are compromised by well-documented psychological biases.
             </p>
           </div>
@@ -680,7 +680,7 @@ export default function PerformativeEthicsContent() {
             <strong>Personal responsibility begins where performance ends.</strong> Every individual who encounters this evidence faces a choice: to continue the performance, or to begin the difficult, uncomfortable, necessary work of engaging with the truth. The bridge to peace is built not by governments but by people &mdash; one honest conversation, one verified fact, one act of genuine moral courage at a time.
           </p>
 
-          <p className="text-lg leading-relaxed mb-6 italic text-muted-foreground">
+          <p className="text-lg leading-relaxed mb-6 italic text-[#a0b4c8]">
             The question is not whether you have the power to change the system. The question is whether you have the courage to stop pretending the system is what it claims to be.
           </p>
         </section>
@@ -695,7 +695,7 @@ export default function PerformativeEthicsContent() {
           </div>
 
           <div className="not-prose my-8 p-6 bg-river-depths/50 border border-river-current/30 rounded-lg">
-            <div className="space-y-3 text-sm text-foreground/70">
+            <div className="space-y-3 text-sm text-[#f0ebe3]/70">
               <p>Anghie, A. (2005). <em>Imperialism, Sovereignty and the Making of International Law</em>. Cambridge University Press.</p>
               <p>Bandura, A. (2016). <em>Moral Disengagement: How People Do Harm and Live With Themselves</em>. Worth Publishers.</p>
               <p>CEPR (2019). &ldquo;Economic Sanctions as Collective Punishment: The Case of Venezuela.&rdquo; <em>Center for Economic and Policy Research</em>.</p>
@@ -715,7 +715,7 @@ export default function PerformativeEthicsContent() {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             End of Briefing &bull; JPanda Papers
           </div>
-          <p className="text-sm text-muted-foreground mt-4">
+          <p className="text-sm text-[#a0b4c8] mt-4">
             This analysis is provided for educational and research purposes. All claims are sourced from academic literature, UN documentation, and verified reporting.
           </p>
         </div>

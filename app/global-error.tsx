@@ -11,7 +11,7 @@ export default function GlobalError({ error, reset }: { error: Error & { digest?
 	return (
 		<html lang="en">
 			<body>
-				<div className="min-h-screen grid place-items-center bg-background text-foreground p-6">
+				<div className="min-h-screen grid place-items-center bg-[#0d1b2a] text-[#f0ebe3] p-6">
 					<div className="max-w-md w-full space-y-4 text-center">
 						<h1 className="text-2xl font-semibold">Something went wrong</h1>
 						<p className="text-muted-foreground">An unexpected error occurred. You can try again, or go back home.</p>

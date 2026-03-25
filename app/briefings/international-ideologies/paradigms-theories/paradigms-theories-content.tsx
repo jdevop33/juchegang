@@ -30,7 +30,7 @@ export default function ParadigmsTheoriesContent() {
         social exchange). Paradigms set the worldview; theories do the explaining.
       </p>
 
-      <div className="mb-10 rounded-lg border border-foreground/20 bg-background/40 p-4">
+      <div className="mb-10 rounded-lg border border-[#f0ebe3]/20 bg-[#0d1b2a]/40 p-4">
         <h3 className="mb-2 text-lg font-semibold">How beliefs form (objective, human)</h3>
         <ul className="list-disc space-y-2 pl-6">
           <li>Early socialization: family, caregivers, and community norms shape default assumptions.</li>
@@ -40,7 +40,7 @@ export default function ParadigmsTheoriesContent() {
         </ul>
       </div>
 
-      <div className="mb-10 rounded-lg border border-foreground/20 bg-background/40 p-4">
+      <div className="mb-10 rounded-lg border border-[#f0ebe3]/20 bg-[#0d1b2a]/40 p-4">
         <h3 className="mb-2 text-lg font-semibold">Example: studying substance use</h3>
         <ul className="list-disc space-y-2 pl-6">
           <li>Positivist: measure prevalence and causes with surveys/experiments.</li>

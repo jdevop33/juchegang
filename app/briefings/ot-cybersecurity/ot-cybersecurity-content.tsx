@@ -10,13 +10,13 @@ export default function OtCybersecurityContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             JPanda Papers
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#f0ebe3]">
             Operational Technology Cybersecurity Vulnerabilities in Military Critical Infrastructure
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto italic">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto italic">
             Strategic Data Ops &mdash; A Comprehensive Assessment of OT/ICS/SCADA Attack Surfaces Across U.S. Military Installations
           </p>
-          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
+          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-[#a0b4c8]">
             <span>February 2026</span>
             <span className="text-sovereign-gold">|</span>
             <span>JPANDA-2026-OTSEC-001</span>
@@ -33,27 +33,27 @@ export default function OtCybersecurityContent() {
           <div className="not-prose grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-sovereign-gold">4,800</p>
-              <p className="text-sm text-muted-foreground mt-1">U.S. Military Installations</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">U.S. Military Installations</p>
             </div>
             <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-korean-red">85%</p>
-              <p className="text-sm text-muted-foreground mt-1">Infrastructure Outside-the-Fence</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Infrastructure Outside-the-Fence</p>
             </div>
             <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-sovereign-gold">77%</p>
-              <p className="text-sm text-muted-foreground mt-1">Federal Energy Consumed by DoD</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Federal Energy Consumed by DoD</p>
             </div>
             <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-korean-red">20&ndash;30 yr</p>
-              <p className="text-sm text-muted-foreground mt-1">OT System Lifecycle</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">OT System Lifecycle</p>
             </div>
             <div className="bg-muted/30 border border-sovereign-gold/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-sovereign-gold">18,000+</p>
-              <p className="text-sm text-muted-foreground mt-1">Orgs Compromised (SolarWinds)</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">Orgs Compromised (SolarWinds)</p>
             </div>
             <div className="bg-muted/30 border border-korean-red/20 rounded-lg p-4 text-center">
               <p className="text-3xl font-bold text-korean-red">$2B+</p>
-              <p className="text-sm text-muted-foreground mt-1">DPRK Crypto Theft</p>
+              <p className="text-sm text-[#a0b4c8] mt-1">DPRK Crypto Theft</p>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function OtCybersecurityContent() {
           <h2 className="text-2xl font-bold mb-3 text-korean-red">
             Strategic Warning
           </h2>
-          <p className="text-foreground/90 leading-relaxed">
+          <p className="text-[#f0ebe3]/90 leading-relaxed">
             Nation-state adversaries have already pre-positioned within U.S. critical infrastructure supporting military installations. The presumed &ldquo;air gap&rdquo; protecting operational technology systems is a myth&mdash;professional security assessments consistently find magnitudes greater numbers of connections than system operators believe exist. Approximately 85% of infrastructure supporting military operations is owned and operated by civilian entities with minimal cybersecurity oversight.
           </p>
         </div>
@@ -122,7 +122,7 @@ export default function OtCybersecurityContent() {
                   <th className="text-left p-3 text-sovereign-gold font-bold">Oversight</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-b border-muted">
                   <td className="p-3 font-medium">Electricity</td>
                   <td className="p-3">Power for all installation functions</td>
@@ -161,7 +161,7 @@ export default function OtCybersecurityContent() {
                 </tr>
               </tbody>
             </table>
-            <p className="text-xs text-muted-foreground mt-2 italic">Table 1: Critical Infrastructure Dependencies for Military Installations</p>
+            <p className="text-xs text-[#a0b4c8] mt-2 italic">Table 1: Critical Infrastructure Dependencies for Military Installations</p>
           </div>
 
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">2.2 The IT vs OT Security Gap</h3>
@@ -180,7 +180,7 @@ export default function OtCybersecurityContent() {
                   <th className="text-left p-3 text-korean-red font-bold">Operational Technology</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-b border-muted">
                   <td className="p-3 font-medium">Primary Objective</td>
                   <td className="p-3">Confidentiality, Integrity, Availability</td>
@@ -213,7 +213,7 @@ export default function OtCybersecurityContent() {
                 </tr>
               </tbody>
             </table>
-            <p className="text-xs text-muted-foreground mt-2 italic">Table 2: IT vs OT Security Model Comparison</p>
+            <p className="text-xs text-[#a0b4c8] mt-2 italic">Table 2: IT vs OT Security Model Comparison</p>
           </div>
 
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">2.3 The Air Gap Myth</h3>
@@ -224,7 +224,7 @@ export default function OtCybersecurityContent() {
 
           <div className="not-prose my-8 p-6 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg">
             <h4 className="text-lg font-bold text-korean-red mb-2">Case Example: Marine Corps Battery Incident</h4>
-            <p className="text-foreground/80 leading-relaxed">
+            <p className="text-[#f0ebe3]/80 leading-relaxed">
               The Marine Corps Base Camp Lejeune energy resilience project provides instructive illustration of how infrastructure hardening initiatives can inadvertently compound rather than reduce cybersecurity risk when supply chain security is inadequately addressed. Foreign-manufactured components, particularly from China, present specific security concerns given strategic competition, demonstrated capabilities for supply chain exploitation, and discovered instances of undisclosed functionality.
             </p>
           </div>
@@ -243,7 +243,7 @@ export default function OtCybersecurityContent() {
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
             <h4 className="text-lg font-bold text-sovereign-gold mb-2">CMMC Program Gaps</h4>
-            <p className="text-foreground/80 leading-relaxed">
+            <p className="text-[#f0ebe3]/80 leading-relaxed">
               The Cybersecurity Maturity Model Certification (CMMC) program represents the Department of Defense&rsquo;s most significant recent initiative for contractor cybersecurity improvement. Yet fundamental gaps in its applicability to operational technology environments create a misleading impression of comprehensive coverage. CMMC was designed for IT environments and does not address the unique characteristics of OT systems&mdash;legacy protocols, safety-critical operations, and extended lifecycles.
             </p>
           </div>
@@ -275,7 +275,7 @@ export default function OtCybersecurityContent() {
                   <th className="text-left p-3 text-sovereign-gold font-bold">Strategic Focus</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-b border-muted">
                   <td className="p-3 font-medium">United States</td>
                   <td className="p-3">Equation Group / TAO</td>
@@ -308,7 +308,7 @@ export default function OtCybersecurityContent() {
                 </tr>
               </tbody>
             </table>
-            <p className="text-xs text-muted-foreground mt-2 italic">Table 3: Nation-State OT Cyber Capabilities Comparison</p>
+            <p className="text-xs text-[#a0b4c8] mt-2 italic">Table 3: Nation-State OT Cyber Capabilities Comparison</p>
           </div>
 
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">3.2 Chinese PLA: Volt Typhoon</h3>
@@ -325,7 +325,7 @@ export default function OtCybersecurityContent() {
 
           <div className="not-prose my-8 p-6 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg">
             <h4 className="text-lg font-bold text-korean-red mb-2">NotPetya: The $10 Billion &ldquo;Ransomware&rdquo;</h4>
-            <p className="text-foreground/80 leading-relaxed">
+            <p className="text-[#f0ebe3]/80 leading-relaxed">
               The 2017 NotPetya attack, attributed to Russian GRU, demonstrated how a cyber weapon designed for one target&mdash;Ukraine&mdash;could cascade globally, causing over $10 billion in damages across multinational corporations including Maersk, Merck, and FedEx. The attack masqueraded as ransomware but was in fact a destructive weapon with no recovery mechanism. It remains the most economically damaging cyberattack in history.
             </p>
           </div>
@@ -347,7 +347,7 @@ export default function OtCybersecurityContent() {
                   <th className="text-left p-3 text-sovereign-gold font-bold">Activity</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-b border-muted">
                   <td className="p-3 font-medium">Peacetime</td>
                   <td className="p-3">Intelligence Collection</td>
@@ -365,7 +365,7 @@ export default function OtCybersecurityContent() {
                 </tr>
               </tbody>
             </table>
-            <p className="text-xs text-muted-foreground mt-2 italic">Table 4: Adversary Strategic Objectives Across the Conflict Spectrum</p>
+            <p className="text-xs text-[#a0b4c8] mt-2 italic">Table 4: Adversary Strategic Objectives Across the Conflict Spectrum</p>
           </div>
         </section>
 
@@ -393,7 +393,7 @@ export default function OtCybersecurityContent() {
                   <th className="text-left p-3 text-sovereign-gold font-bold">Impact</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-b border-muted">
                   <td className="p-3 font-mono text-sovereign-gold">2010</td>
                   <td className="p-3 font-medium">Stuxnet</td>
@@ -438,7 +438,7 @@ export default function OtCybersecurityContent() {
                 </tr>
               </tbody>
             </table>
-            <p className="text-xs text-muted-foreground mt-2 italic">Table 5: Major OT Cyber Operations Timeline</p>
+            <p className="text-xs text-[#a0b4c8] mt-2 italic">Table 5: Major OT Cyber Operations Timeline</p>
           </div>
 
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">4.1 Stuxnet: The Weapon That Changed Everything</h3>
@@ -497,7 +497,7 @@ export default function OtCybersecurityContent() {
 
           <div className="not-prose my-8 p-6 bg-korean-red/5 border-l-4 border-korean-red rounded-r-lg">
             <h4 className="text-lg font-bold text-korean-red mb-2">The Water Sector Gap</h4>
-            <p className="text-foreground/80 leading-relaxed">
+            <p className="text-[#f0ebe3]/80 leading-relaxed">
               Following the EPA&rsquo;s 2023 withdrawal of cybersecurity requirements for water systems, municipal water and wastewater utilities serving military installations operate with effectively zero federal cybersecurity mandates. This means the water consumed by military personnel, used for fire protection, and required for industrial processes on base depends on OT systems that may have no cybersecurity standards, no monitoring, and no incident response capability.
             </p>
           </div>
@@ -527,7 +527,7 @@ export default function OtCybersecurityContent() {
                   <th className="text-left p-3 text-sovereign-gold font-bold">OT-Specific Considerations</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-b border-muted">
                   <td className="p-3 font-mono text-sovereign-gold">1. Framing</td>
                   <td className="p-3">Scope definition &amp; risk context</td>
@@ -555,7 +555,7 @@ export default function OtCybersecurityContent() {
                 </tr>
               </tbody>
             </table>
-            <p className="text-xs text-muted-foreground mt-2 italic">Table 6: Five-Phase OT Vulnerability Management Framework</p>
+            <p className="text-xs text-[#a0b4c8] mt-2 italic">Table 6: Five-Phase OT Vulnerability Management Framework</p>
           </div>
 
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">6.2 Three-Tiered Military Approach</h3>
@@ -594,7 +594,7 @@ export default function OtCybersecurityContent() {
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
             <h4 className="text-lg font-bold text-sovereign-gold mb-2">The First Rule of OT Security</h4>
-            <p className="text-foreground/80 leading-relaxed">
+            <p className="text-[#f0ebe3]/80 leading-relaxed">
               &ldquo;It should begin, as all cybersecurity should begin, with an inventory of assets, inside and outside the fence.&rdquo; Without knowing what OT devices exist, what protocols they use, and what connections they maintain, all subsequent security measures are built on assumption rather than evidence.
             </p>
           </div>
@@ -637,7 +637,7 @@ export default function OtCybersecurityContent() {
                   <th className="text-left p-3 text-sovereign-gold font-bold">Success Metrics</th>
                 </tr>
               </thead>
-              <tbody className="text-foreground/80">
+              <tbody className="text-[#f0ebe3]/80">
                 <tr className="border-b border-muted">
                   <td className="p-3 font-medium text-korean-red">Near-Term<br /><span className="text-xs font-mono">(0&ndash;12 months)</span></td>
                   <td className="p-3">
@@ -667,7 +667,7 @@ export default function OtCybersecurityContent() {
                 </tr>
               </tbody>
             </table>
-            <p className="text-xs text-muted-foreground mt-2 italic">Table 7: Implementation Roadmap with Success Metrics</p>
+            <p className="text-xs text-[#a0b4c8] mt-2 italic">Table 7: Implementation Roadmap with Success Metrics</p>
           </div>
 
           <h3 className="text-xl font-bold mb-4 text-sovereign-gold">8.1 Senior Leadership Decision Framework</h3>
@@ -690,7 +690,7 @@ export default function OtCybersecurityContent() {
 
           <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
             <h4 className="text-lg font-bold text-sovereign-gold mb-2">The Procurement Lever</h4>
-            <p className="text-foreground/80 leading-relaxed">
+            <p className="text-[#f0ebe3]/80 leading-relaxed">
               Of all available policy interventions, procurement reform offers the most immediate impact. Every contract for infrastructure services supporting military installations is an opportunity to impose OT-specific cybersecurity requirements&mdash;asset inventory obligations, network monitoring mandates, incident reporting timelines, and supply chain security provisions. This requires no new legislation, no new agencies, and no new budgets. It requires only the will to include these clauses in contracts that are being written and renewed continuously.
             </p>
           </div>
@@ -724,29 +724,29 @@ export default function OtCybersecurityContent() {
 
         {/* Document Control */}
         <div className="not-prose mt-16 pt-8 border-t border-muted">
-          <div className="grid grid-cols-2 gap-4 text-sm text-muted-foreground">
+          <div className="grid grid-cols-2 gap-4 text-sm text-[#a0b4c8]">
             <div>
-              <p className="font-medium text-foreground/70">Document ID</p>
+              <p className="font-medium text-[#f0ebe3]/70">Document ID</p>
               <p>JPANDA-2026-OTSEC-001</p>
             </div>
             <div>
-              <p className="font-medium text-foreground/70">Version</p>
+              <p className="font-medium text-[#f0ebe3]/70">Version</p>
               <p>1.0</p>
             </div>
             <div>
-              <p className="font-medium text-foreground/70">Publication Date</p>
+              <p className="font-medium text-[#f0ebe3]/70">Publication Date</p>
               <p>2026-02-03</p>
             </div>
             <div>
-              <p className="font-medium text-foreground/70">Classification</p>
+              <p className="font-medium text-[#f0ebe3]/70">Classification</p>
               <p>UNCLASSIFIED // FOR OFFICIAL USE ONLY</p>
             </div>
             <div>
-              <p className="font-medium text-foreground/70">Review Date</p>
+              <p className="font-medium text-[#f0ebe3]/70">Review Date</p>
               <p>2027-02-03</p>
             </div>
             <div>
-              <p className="font-medium text-foreground/70">Point of Contact</p>
+              <p className="font-medium text-[#f0ebe3]/70">Point of Contact</p>
               <p>JPanda Papers Editorial Board</p>
             </div>
           </div>

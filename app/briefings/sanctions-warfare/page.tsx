@@ -21,7 +21,7 @@ export const metadata = {
 
 export default function SanctionsWarfareBriefing() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-[#0d1b2a] text-[#f0ebe3]">
       <JucheHeader />
   <BriefingBanner src="/images/coolgang2.png" alt="Sanctions warfare" aspect="12/5" contain overlay="bottom" />
       <SanctionsWarfareContent />

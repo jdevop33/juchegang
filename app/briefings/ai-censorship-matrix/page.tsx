@@ -20,13 +20,13 @@ export const metadata = {
 
 export default function AICensorshipMatrixBriefing() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-[#0d1b2a] text-[#f0ebe3]">
       <JucheHeader />
   <BriefingBanner src="/images/coolgang2.png" alt="AI censorship matrix" aspect="12/5" contain overlay="bottom" />
       <article className="container mx-auto px-4 pt-28 pb-20 prose prose-invert max-w-3xl">
         <header className="not-prose mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold">The AI Censorship Matrix</h1>
-          <p className="text-muted-foreground mt-2">How Western LLMs are programmed to suppress anti‑imperial perspectives</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#f0ebe3]">The AI Censorship Matrix</h1>
+          <p className="text-[#a0b4c8] mt-2">How Western LLMs are programmed to suppress anti‑imperial perspectives</p>
         </header>
 
         <p>
@@ -100,7 +100,7 @@ export default function AICensorshipMatrixBriefing() {
           <li><a href="https://hai.stanford.edu/" target="_blank" rel="noopener noreferrer">Stanford HAI – Policy & Research</a></li>
         </ul>
 
-        <footer className="not-prose mt-6 text-sm text-muted-foreground">
+        <footer className="not-prose mt-6 text-sm text-[#a0b4c8]">
           Send preferred citations to expand this bibliography with direct references used in each section.
         </footer>
       </article>

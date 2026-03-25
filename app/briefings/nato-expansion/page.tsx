@@ -7,7 +7,7 @@ import { BriefingBanner } from "@/components/briefing-banner"
 // Dynamic import for better code splitting
 const NATOExpansionContent = dynamic(() => import("./nato-expansion-content"), {
   loading: () => <div className="flex justify-center items-center min-h-[400px]">
-    <div className="animate-pulse text-muted-foreground">Loading briefing content...</div>
+    <div className="animate-pulse text-[#a0b4c8]">Loading briefing content...</div>
   </div>,
 })
 
@@ -29,7 +29,7 @@ export const metadata = {
 
 export default function NatoExpansionBriefing() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-[#0d1b2a] text-[#f0ebe3]">
       <JucheHeader />
   <BriefingBanner src="/images/coolgang2.png" alt="NATO expansion" aspect="12/5" contain overlay="bottom" />
       <NATOExpansionContent />

@@ -12,23 +12,23 @@ export default function FiveMonthsContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-[#d4a74a]/10 text-[#d4a74a] rounded-full text-sm font-medium tracking-widest uppercase">
             Classified to Declassified &bull; Part I
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#f0ebe3]">
             The Five Months That Broke the Bloc
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto">
             How the CIA Watched Poland&rsquo;s Communist Regime Unravel in Real Time
           </p>
-          <p className="text-base text-muted-foreground mt-4 max-w-2xl mx-auto">
+          <p className="text-base text-[#a0b4c8] mt-4 max-w-2xl mx-auto">
             A Narrative Analysis of Five Declassified Top Secret Intelligence Briefs &bull; April&ndash;August 1989
           </p>
-          <p className="text-sm text-muted-foreground/60 mt-2">
+          <p className="text-sm text-[#a0b4c8]/60 mt-2">
             Declassified and Approved for Release: October 29, 2019
           </p>
         </div>
 
         {/* Documents Reference Table */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-foreground">Source Documents at a Glance</h2>
+          <h2 className="text-2xl font-bold mb-6 text-[#f0ebe3]">Source Documents at a Glance</h2>
           <p className="text-lg leading-relaxed mb-6">
             The five intelligence assessments analyzed in this narrative were originally classified Top Secret and produced by the CIA&rsquo;s Directorate of Intelligence for the President&rsquo;s Daily Brief and senior policymakers. They were declassified in October 2019. Presented here in chronological order, they chart the collapse of Communist governance in Poland across 134 days.
           </p>
@@ -92,7 +92,7 @@ export default function FiveMonthsContent() {
 
         {/* Prologue */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Prologue: Reading the Tea Leaves of Empire&rsquo;s End</h2>
+          <h2 className="text-3xl font-bold mb-6 text-[#f0ebe3]">Prologue: Reading the Tea Leaves of Empire&rsquo;s End</h2>
 
           <p className="text-lg leading-relaxed mb-6">
             In the spring of 1989, the analysts at CIA headquarters in Langley had a front-row seat to something that none of them&mdash;nor anyone else in the Western intelligence community&mdash;had dared predict with confidence: the peaceful disintegration of Communist power in the heart of Europe. The five documents examined here, all originally stamped Top Secret and produced for the most senior echelons of American government, tell the story of that disintegration in Poland across just 134 days. They are remarkable not only for what they reveal about the events themselves, but for what they reveal about the intelligence community&rsquo;s own evolving understanding of a crisis that was rewriting the rules of Cold War geopolitics in real time.
@@ -107,8 +107,8 @@ export default function FiveMonthsContent() {
 
         {/* Act I */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-foreground">Act I: The Gamble at the Roundtable</h2>
-          <p className="text-sm text-muted-foreground mb-6 font-mono">April 6, 1989 &mdash; TCS 2779/89</p>
+          <h2 className="text-3xl font-bold mb-2 text-[#f0ebe3]">Act I: The Gamble at the Roundtable</h2>
+          <p className="text-sm text-[#a0b4c8] mb-6 font-mono">April 6, 1989 &mdash; TCS 2779/89</p>
 
           <p className="text-lg leading-relaxed mb-6">
             The first document, dated April 6, 1989, lands with the controlled tone of an analyst who suspects they may be witnessing something historic but isn&rsquo;t yet ready to say so. The Roundtable Accords had just been signed between the Solidarity opposition movement and General Wojciech Jaruzelski&rsquo;s Warsaw government. On paper, the deal looked like a masterpiece of managed liberalization: legalize Solidarity, allow limited parliamentary elections, create a powerful new presidency that the Communists would control, and hope that the appearance of reform would buy the regime the popular legitimacy it desperately needed to push through painful austerity measures.
@@ -141,8 +141,8 @@ export default function FiveMonthsContent() {
 
         {/* Act II */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-foreground">Act II: The Regime&rsquo;s Hail Mary</h2>
-          <p className="text-sm text-muted-foreground mb-6 font-mono">May 18, 1989 &mdash; TCS 2815/89</p>
+          <h2 className="text-3xl font-bold mb-2 text-[#f0ebe3]">Act II: The Regime&rsquo;s Hail Mary</h2>
+          <p className="text-sm text-[#a0b4c8] mb-6 font-mono">May 18, 1989 &mdash; TCS 2815/89</p>
 
           <p className="text-lg leading-relaxed mb-6">
             Six weeks later, the CIA reported on what might seem like a footnote in a story about the collapse of Communism&mdash;but was in fact a deeply revealing indicator of the regime&rsquo;s accelerating desperation. Poland&rsquo;s legislature had passed a law granting the Catholic Church full legal status. The Pope could now name all bishops without state interference. The Church could own property in its own name. A free Catholic press was authorized. A formal exchange of ambassadors between Warsaw and the Vatican was expected.
@@ -167,8 +167,8 @@ export default function FiveMonthsContent() {
 
         {/* Act III */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-foreground">Act III: The Election That Changed Everything</h2>
-          <p className="text-sm text-muted-foreground mb-6 font-mono">June 3, 1989 &mdash; TCS 2828/89 (Special Analysis)</p>
+          <h2 className="text-3xl font-bold mb-2 text-[#f0ebe3]">Act III: The Election That Changed Everything</h2>
+          <p className="text-sm text-[#a0b4c8] mb-6 font-mono">June 3, 1989 &mdash; TCS 2828/89 (Special Analysis)</p>
 
           <p className="text-lg leading-relaxed mb-6">
             The third document is the most analytically ambitious of the set&mdash;a full Special Analysis prepared on the eve of Poland&rsquo;s June 4 parliamentary elections. The CIA&rsquo;s prediction was blunt: a sweeping victory for Solidarity and a deeply divided government. The opposition would fully control the new senate and win most of the contested seats in the lower house. The party&rsquo;s negligible appeal and legitimacy made this outcome essentially certain.
@@ -198,7 +198,7 @@ export default function FiveMonthsContent() {
 
           <div className="bg-[#1b4965]/20 border border-[#1b4965]/30 rounded-lg p-6 mb-8">
             <h4 className="font-bold mb-3 text-[#1b4965] dark:text-[#4a9fd5]">CIA Warning &mdash; Proved Prophetic</h4>
-            <p className="text-foreground">
+            <p className="text-[#f0ebe3]">
               If the opposition failed to implement constructive reforms, it could end up in a stalemate with hardliners determined to protect their control of the economy and the corrupt nomenklatura. That outcome, the analysts warned, would leave the populace more disillusioned and angrier than ever. The stakes of this democratic experiment were not just political&mdash;they were existential for Poland&rsquo;s social stability.
             </p>
           </div>
@@ -208,8 +208,8 @@ export default function FiveMonthsContent() {
 
         {/* Act IV */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-foreground">Act IV: The Collision</h2>
-          <p className="text-sm text-muted-foreground mb-6 font-mono">August 17, 1989 &mdash; TCS 2891/89</p>
+          <h2 className="text-3xl font-bold mb-2 text-[#f0ebe3]">Act IV: The Collision</h2>
+          <p className="text-sm text-[#a0b4c8] mb-6 font-mono">August 17, 1989 &mdash; TCS 2891/89</p>
 
           <p className="text-lg leading-relaxed mb-6">
             By mid-August, the tug of war the CIA had predicted was reaching its breaking point. The fourth document, dated August 17, reports that Solidarity had reversed its earlier, more conciliatory position and was now insisting that its sweeping election victory and the public&rsquo;s demand for change entitled it to form a new Polish government. This was no longer a negotiation about ministerial portfolios. This was a demand for power.
@@ -238,8 +238,8 @@ export default function FiveMonthsContent() {
 
         {/* Act V */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-foreground">Act V: The Capitulation</h2>
-          <p className="text-sm text-muted-foreground mb-6 font-mono">August 18, 1989 &mdash; TCS 2892/89</p>
+          <h2 className="text-3xl font-bold mb-2 text-[#f0ebe3]">Act V: The Capitulation</h2>
+          <p className="text-sm text-[#a0b4c8] mb-6 font-mono">August 18, 1989 &mdash; TCS 2892/89</p>
 
           <p className="text-lg leading-relaxed mb-6">
             Just one day later, the fifth document landed on desks in Washington with news that would have been unthinkable twelve months earlier. After meeting with parliamentary leaders, President Jaruzelski had agreed to a landmark coalition government led by a non-Communist and dominated by Solidarity. The crucial choice of prime minister would be announced soon.
@@ -261,10 +261,10 @@ export default function FiveMonthsContent() {
 
           <div className="bg-[#1b4965]/20 border border-[#1b4965]/30 rounded-lg p-6 mb-8">
             <h4 className="font-bold mb-3 text-[#1b4965] dark:text-[#4a9fd5]">Regional Domino Effect</h4>
-            <p className="text-foreground mb-3">
+            <p className="text-[#f0ebe3] mb-3">
               The CIA noted that the prospect of a non-Communist government had drawn a cautious reaction elsewhere in Eastern Europe. Hungary, already on its own liberalization path, claimed such a government would not threaten the Warsaw Pact and could actually accelerate Hungary&rsquo;s progress toward multiparty elections.
             </p>
-            <p className="text-foreground">
+            <p className="text-[#f0ebe3]">
               The domino theory, so long invoked to justify containment, was about to work in reverse.
             </p>
           </div>
@@ -278,7 +278,7 @@ export default function FiveMonthsContent() {
 
         {/* Lessons */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Lessons for the Modern Security Professional</h2>
+          <h2 className="text-3xl font-bold mb-6 text-[#f0ebe3]">Lessons for the Modern Security Professional</h2>
 
           <p className="text-lg leading-relaxed mb-8">
             Read together as a single narrative, these five documents offer lessons that extend well beyond the specific context of Cold War Europe. They illuminate patterns that recur wherever authoritarian systems attempt managed liberalization, wherever regimes miscalculate the forces they have unleashed, and wherever intelligence analysts must assess the trajectory of political upheaval under conditions of radical uncertainty.
@@ -317,7 +317,7 @@ export default function FiveMonthsContent() {
 
         {/* Epilogue */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Epilogue: What the Stamps Tell Us</h2>
+          <h2 className="text-3xl font-bold mb-6 text-[#f0ebe3]">Epilogue: What the Stamps Tell Us</h2>
 
           <p className="text-lg leading-relaxed mb-6">
             There is something clarifying about reading documents that once carried the Top Secret classification stamp. These assessments were written for an audience of perhaps a few dozen people&mdash;the President of the United States, the National Security Advisor, the Secretary of State, and their closest aides. The analysts who wrote them understood that their words could shape American policy toward a crisis that might tip either toward democracy or toward tanks in the streets. That weight of consequence is visible in every careful hedge, every qualified prediction, every measured observation.
@@ -338,7 +338,7 @@ export default function FiveMonthsContent() {
         <section className="mb-12">
           <div className="bg-[#0d1b2a]/50 border border-[#1b4965]/30 rounded-lg p-6">
             <h4 className="font-bold mb-3 text-[#d4a74a] text-sm tracking-widest uppercase">About This Analysis</h4>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-sm text-[#a0b4c8] leading-relaxed">
               This narrative was synthesized from five declassified CIA intelligence documents (C06826736, C06826742, C06826743, C06826757, C06826758) approved for public release on October 29, 2019. All source material was originally classified Top Secret. The analytical commentary and narrative framework are original work; the underlying facts and assessments are drawn directly from the declassified record.
             </p>
           </div>
@@ -348,7 +348,7 @@ export default function FiveMonthsContent() {
         <section className="mb-12">
           <div className="bg-[#d4a74a]/5 border border-[#d4a74a]/30 rounded-lg p-6 text-center">
             <p className="text-sm tracking-widest uppercase text-[#d4a74a] mb-3">Classified to Declassified Series</p>
-            <p className="text-lg mb-4 text-foreground">
+            <p className="text-lg mb-4 text-[#f0ebe3]">
               Continue to Part II: How Poland&rsquo;s breakthrough rippled through Hungary, East Germany, Czechoslovakia, and Romania.
             </p>
             <Link

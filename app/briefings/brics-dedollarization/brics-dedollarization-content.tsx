@@ -9,8 +9,8 @@ export default function BRICSDedollarizationContent() {
   return (
     <article className="container mx-auto px-4 pt-28 pb-20 prose prose-invert max-w-4xl">
       <header className="not-prose mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold">{t('bricsTitle')}</h1>
-        <p className="text-muted-foreground mt-2">{t('bricsSubtitle')}</p>
+        <h1 className="text-4xl md:text-5xl font-bold text-[#f0ebe3]">{t('bricsTitle')}</h1>
+        <p className="text-[#a0b4c8] mt-2">{t('bricsSubtitle')}</p>
       </header>
 
       <div dangerouslySetInnerHTML={{ __html: t('bricsIntro') }} />
@@ -63,7 +63,7 @@ export default function BRICSDedollarizationContent() {
         <li><a href="https://www.imf.org/en/Publications/COFER" target="_blank" rel="noopener noreferrer">IMF COFER Data</a></li>
         <li><a href="https://www.federalreserve.gov/" target="_blank" rel="noopener noreferrer">Federal Reserve Economic Data</a></li>
       </ul>
-      <footer className="not-prose mt-6 text-sm text-muted-foreground">Send preferred citations to expand this bibliography with direct references.</footer>
+      <footer className="not-prose mt-6 text-sm text-[#a0b4c8]">Send preferred citations to expand this bibliography with direct references.</footer>
       
       <BriefingSignature />
     </article>

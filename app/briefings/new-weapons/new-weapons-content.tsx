@@ -10,16 +10,16 @@ export default function NewWeaponsContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             J Panda Research
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#f0ebe3]">
             The New Weapons
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto italic">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto italic">
             A Plain-Language Guide to Defense Energy &amp; Materials
           </p>
-          <p className="text-lg text-muted-foreground/80 max-w-xl mx-auto mt-2">
+          <p className="text-lg text-[#a0b4c8]/80 max-w-xl mx-auto mt-2">
             What&rsquo;s Changed Since 2003 &mdash; And Why It Matters
           </p>
-          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
+          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-[#a0b4c8]">
             <span>March 2026</span>
             <span className="text-sovereign-gold">|</span>
             <span>Classification: Open-Source Intelligence</span>
@@ -39,15 +39,15 @@ export default function NewWeaponsContent() {
           <div className="space-y-3 mb-8 not-prose">
             <div className="flex items-start gap-3 text-lg">
               <span className="text-sovereign-gold font-bold mt-0.5">1.</span>
-              <span className="text-foreground/90"><strong className="text-sovereign-gold">Nuclear Materials</strong> &mdash; From hafnium bombs to thorium clocks and diamond batteries</span>
+              <span className="text-[#f0ebe3]/90"><strong className="text-sovereign-gold">Nuclear Materials</strong> &mdash; From hafnium bombs to thorium clocks and diamond batteries</span>
             </div>
             <div className="flex items-start gap-3 text-lg">
               <span className="text-sovereign-gold font-bold mt-0.5">2.</span>
-              <span className="text-foreground/90"><strong className="text-sovereign-gold">Advanced Explosives</strong> &mdash; CL-20, nano-thermites, and reactive materials</span>
+              <span className="text-[#f0ebe3]/90"><strong className="text-sovereign-gold">Advanced Explosives</strong> &mdash; CL-20, nano-thermites, and reactive materials</span>
             </div>
             <div className="flex items-start gap-3 text-lg">
               <span className="text-sovereign-gold font-bold mt-0.5">3.</span>
-              <span className="text-foreground/90"><strong className="text-sovereign-gold">Energy Systems</strong> &mdash; Capacitors and power supplies for directed-energy weapons</span>
+              <span className="text-[#f0ebe3]/90"><strong className="text-sovereign-gold">Energy Systems</strong> &mdash; Capacitors and power supplies for directed-energy weapons</span>
             </div>
           </div>
         </section>
@@ -71,7 +71,7 @@ export default function NewWeaponsContent() {
 
           <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-8">
             <h4 className="font-bold text-sovereign-gold mb-3 uppercase tracking-wider text-sm">Think of It Like</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               Imagine you&rsquo;ve been training for a boxing match against a street brawler. You&rsquo;ve got heavy gloves and a thick chin. Then the rules change &mdash; your next opponent is a professional MMA fighter with kicks, elbows, and submissions. Everything you optimized for the last fight is now a liability. That&rsquo;s the shift from counterinsurgency to Great Power Competition.
             </p>
           </div>
@@ -108,7 +108,7 @@ export default function NewWeaponsContent() {
             <div className="flex items-center gap-3 mb-3">
               <span className="text-korean-red font-bold uppercase tracking-wider text-sm">Status: Debunked</span>
             </div>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               The hafnium bomb is now a textbook example of how extraordinary claims need extraordinary proof. DARPA eventually cut funding. But the episode reveals how desperately the defense establishment craves the &ldquo;next big thing&rdquo; &mdash; and how easily it can be led astray by a single promising result.
             </p>
           </div>
@@ -131,7 +131,7 @@ export default function NewWeaponsContent() {
             <div className="flex items-center gap-3 mb-3">
               <span className="text-sovereign-gold font-bold uppercase tracking-wider text-sm">Status: Validated 2024&ndash;2025</span>
             </div>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               Multiple independent laboratories successfully drove the thorium-229 nuclear transition with lasers, confirming the physics. <strong>DARPA launched the SUNSPOT program</strong> specifically to miniaturize thorium clocks for field deployment. This is no longer theoretical &mdash; it&rsquo;s an engineering problem, and DARPA is solving it.
             </p>
           </div>
@@ -159,18 +159,18 @@ export default function NewWeaponsContent() {
           <div className="space-y-4 mb-8">
             <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4">
               <h4 className="font-bold text-sovereign-gold mb-2">Betavolt (China)</h4>
-              <p className="text-foreground/90">Announced a nuclear diamond battery claiming <strong>10x the energy density of lithium batteries</strong>. While independent verification is pending, the claimed performance represents a generational leap.</p>
+              <p className="text-[#f0ebe3]/90">Announced a nuclear diamond battery claiming <strong>10x the energy density of lithium batteries</strong>. While independent verification is pending, the claimed performance represents a generational leap.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4">
               <h4 className="font-bold text-sovereign-gold mb-2">Infinity Power (UK)</h4>
-              <p className="text-foreground/90">Reported <strong>60% conversion efficiency</strong> in their diamond betavoltaic design &mdash; a dramatic improvement over the single-digit efficiencies of previous attempts.</p>
+              <p className="text-[#f0ebe3]/90">Reported <strong>60% conversion efficiency</strong> in their diamond betavoltaic design &mdash; a dramatic improvement over the single-digit efficiencies of previous attempts.</p>
             </div>
           </div>
 
           <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-8">
             <h4 className="font-bold text-sovereign-gold mb-3 uppercase tracking-wider text-sm">Think of It Like</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               Imagine a watch battery that never needs replacing &mdash; not in your lifetime, not in your grandchildren&rsquo;s lifetime. Now imagine that battery powering a sensor on the ocean floor, a satellite in deep space, or the secure memory in a military encryption device. No charging infrastructure. No supply chains. Just decades of silent, reliable power.
             </p>
           </div>
@@ -221,12 +221,12 @@ export default function NewWeaponsContent() {
           <div className="space-y-4 mb-8">
             <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4">
               <h4 className="font-bold text-sovereign-gold mb-2">20&ndash;40% More Penetration</h4>
-              <p className="text-foreground/90">Shaped charges and warheads using CL-20 penetrate 20&ndash;40% deeper into armor and hardened targets compared to current HMX-based explosives.</p>
+              <p className="text-[#f0ebe3]/90">Shaped charges and warheads using CL-20 penetrate 20&ndash;40% deeper into armor and hardened targets compared to current HMX-based explosives.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4">
               <h4 className="font-bold text-sovereign-gold mb-2">Smaller Warheads, Same Lethality</h4>
-              <p className="text-foreground/90">A missile using CL-20 can carry a smaller warhead and achieve the same destructive effect. That means longer range, more missiles per platform, and more kills per sortie.</p>
+              <p className="text-[#f0ebe3]/90">A missile using CL-20 can carry a smaller warhead and achieve the same destructive effect. That means longer range, more missiles per platform, and more kills per sortie.</p>
             </div>
           </div>
 
@@ -234,7 +234,7 @@ export default function NewWeaponsContent() {
             <div className="flex items-center gap-3 mb-3">
               <span className="text-sovereign-gold font-bold uppercase tracking-wider text-sm">Status: Industrial Scaling (2024)</span>
             </div>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               The <strong>FY2024 National Defense Authorization Act (NDAA)</strong> mandated pilot programs for CL-20 integration into existing munitions. The U.S., China, and several European nations are all racing to industrialize production. The era of CL-20 as a laboratory curiosity is over.
             </p>
           </div>
@@ -252,12 +252,12 @@ export default function NewWeaponsContent() {
           <div className="space-y-4 mb-8">
             <div className="bg-muted/30 border-l-4 border-river-current pl-6 py-4">
               <h4 className="font-bold text-river-current dark:text-river-mid mb-2">Replacing Toxic Lead Primers</h4>
-              <p className="text-foreground/90">Every bullet, shell, and missile uses a primer containing lead styphnate or lead azide. Nano-thermite primers eliminate lead entirely, reducing toxic exposure for soldiers in training and manufacturing workers.</p>
+              <p className="text-[#f0ebe3]/90">Every bullet, shell, and missile uses a primer containing lead styphnate or lead azide. Nano-thermite primers eliminate lead entirely, reducing toxic exposure for soldiers in training and manufacturing workers.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-river-current pl-6 py-4">
               <h4 className="font-bold text-river-current dark:text-river-mid mb-2">Tunable Reaction Rates</h4>
-              <p className="text-foreground/90">By adjusting particle size and composition, engineers can tune nano-thermites from slow-burn incendiaries to ultrafast detonators &mdash; a versatility impossible with traditional energetics.</p>
+              <p className="text-[#f0ebe3]/90">By adjusting particle size and composition, engineers can tune nano-thermites from slow-burn incendiaries to ultrafast detonators &mdash; a versatility impossible with traditional energetics.</p>
             </div>
           </div>
         </section>
@@ -283,7 +283,7 @@ export default function NewWeaponsContent() {
 
           <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-8">
             <h4 className="font-bold text-sovereign-gold mb-3 uppercase tracking-wider text-sm">Think of It Like</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               Imagine the difference between a bullet that makes a clean hole through a wall and a bullet that makes a hole and then detonates inside the room. That&rsquo;s the difference between conventional fragments and reactive materials. A smaller missile with HDRM warheads can achieve a &ldquo;catastrophic kill&rdquo; that previously required a much larger weapon.
             </p>
           </div>
@@ -324,7 +324,7 @@ export default function NewWeaponsContent() {
 
           <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-8">
             <h4 className="font-bold text-sovereign-gold mb-3 uppercase tracking-wider text-sm">Think of It Like</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               A battery is like a water tank &mdash; it holds a lot of energy but releases it slowly. A capacitor is like a fire hose &mdash; it releases everything at once. Laser weapons need the fire hose. The breakthrough is making the fire hose hold as much water as the tank.
             </p>
           </div>
@@ -336,12 +336,12 @@ export default function NewWeaponsContent() {
           <div className="space-y-4 mb-8">
             <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4">
               <h4 className="font-bold text-sovereign-gold mb-2">Cost Per Shot</h4>
-              <p className="text-foreground/90">Approximately <strong>$1 of electricity</strong> versus <strong>$100,000+ for a conventional interceptor missile.</strong> In a war where the enemy can launch thousands of cheap drones, this cost asymmetry is existential.</p>
+              <p className="text-[#f0ebe3]/90">Approximately <strong>$1 of electricity</strong> versus <strong>$100,000+ for a conventional interceptor missile.</strong> In a war where the enemy can launch thousands of cheap drones, this cost asymmetry is existential.</p>
             </div>
 
             <div className="bg-muted/30 border-l-4 border-sovereign-gold pl-6 py-4">
               <h4 className="font-bold text-sovereign-gold mb-2">Infinite Magazine</h4>
-              <p className="text-foreground/90">As long as the vehicle has fuel to run its generator, it has ammunition. No resupply convoys. No running out of interceptors. The laser fires as fast as the capacitors can recharge.</p>
+              <p className="text-[#f0ebe3]/90">As long as the vehicle has fuel to run its generator, it has ammunition. No resupply convoys. No running out of interceptors. The laser fires as fast as the capacitors can recharge.</p>
             </div>
           </div>
         </section>
@@ -365,7 +365,7 @@ export default function NewWeaponsContent() {
 
           <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-8">
             <h4 className="font-bold text-korean-red mb-3 uppercase tracking-wider text-sm">Strategic Implication</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               If one nation deploys a new armor material, the adversary can now develop a countermeasure in <strong>months instead of decades.</strong> This compresses the action-reaction cycle of military technology to a pace that human decision-making may struggle to match. The arms race is no longer between factories &mdash; it&rsquo;s between algorithms.
             </p>
           </div>
@@ -386,12 +386,12 @@ export default function NewWeaponsContent() {
               <table className="w-full text-sm border-collapse">
                 <thead>
                   <tr className="border-b border-sovereign-gold/30">
-                    <th className="text-left p-3 text-muted-foreground font-bold uppercase tracking-wider">Old Paradigm</th>
+                    <th className="text-left p-3 text-[#a0b4c8] font-bold uppercase tracking-wider">Old Paradigm</th>
                     <th className="text-left p-3 text-sovereign-gold font-bold uppercase tracking-wider">New Paradigm</th>
                     <th className="text-left p-3 text-river-current dark:text-river-mid font-bold uppercase tracking-wider">Example</th>
                   </tr>
                 </thead>
-                <tbody className="text-foreground/80">
+                <tbody className="text-[#f0ebe3]/80">
                   <tr className="border-b border-muted/30">
                     <td className="p-3">Bigger warheads</td>
                     <td className="p-3 text-sovereign-gold font-medium">Denser explosives</td>
@@ -423,9 +423,9 @@ export default function NewWeaponsContent() {
 
         {/* Footer */}
         <div className="text-center mt-12 pt-8 border-t border-sovereign-gold/20">
-          <p className="text-sm text-muted-foreground tracking-widest uppercase mb-2">J Panda Research</p>
+          <p className="text-sm text-[#a0b4c8] tracking-widest uppercase mb-2">J Panda Research</p>
           <p className="text-xs text-sovereign-gold mt-2 italic">&ldquo;Radical Transparency. Real Solutions.&rdquo;</p>
-          <p className="text-xs text-muted-foreground mt-2">&copy; 2026 J Panda Research. All rights reserved.</p>
+          <p className="text-xs text-[#a0b4c8] mt-2">&copy; 2026 J Panda Research. All rights reserved.</p>
         </div>
 
       </div>

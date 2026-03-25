@@ -8,10 +8,10 @@ export default function FrozenConflictsContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-[#c73032]/10 text-[#c73032] rounded-full text-sm font-medium">
             EISENHOWER'S WARNING
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#f0ebe3]">
             The Forever War Business Model
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto">
             How frozen conflicts from Korea to Taiwan to Ukraine generate endless profits for the military-industrial complex, corrupting democracy and American values.
           </p>
         </div>
@@ -316,7 +316,7 @@ export default function FrozenConflictsContent() {
 
         <div className="border-l-4 border-accent pl-6 mb-8">
           <h3 className="text-xl font-bold mb-4">Essential Reading</h3>
-          <div className="space-y-2 text-muted-foreground">
+          <div className="space-y-2 text-[#a0b4c8]">
             <p>• Eisenhower's Farewell Address (1961)</p>
             <p>• "War is a Racket" by General Smedley Butler</p>
             <p>• Congressional defense contractor donation records</p>

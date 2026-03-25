@@ -7,7 +7,7 @@ export default function ActivationParadigmContent() {
         public supports demanding active labour market policies (ALMPs) like stricter obligations, sanctions, and time limits.
       </p>
 
-      <div className="mb-8 rounded-lg border border-foreground/20 bg-background/40 p-4">
+      <div className="mb-8 rounded-lg border border-[#f0ebe3]/20 bg-[#0d1b2a]/40 p-4">
         <h2 className="mb-2 text-xl font-bold">Core idea</h2>
         <p className="leading-7">
           Support is tied to the activation policy paradigm: how people think benefits should be distributed (justice preferences)

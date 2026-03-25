@@ -10,13 +10,13 @@ export default function DprkHumanRightsContent() {
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             JPanda Papers
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#f0ebe3]">
             Human Rights: Who Has the Standing to Judge?
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto italic">
+          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto italic">
             A Comparative Analysis of Human Rights Records Across Nations
           </p>
-          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
+          <div className="mt-4 flex items-center justify-center gap-4 text-sm text-[#a0b4c8]">
             <span>February 2026</span>
             <span className="text-sovereign-gold">|</span>
             <span>Classification: Open-Source Intelligence</span>
@@ -25,7 +25,7 @@ export default function DprkHumanRightsContent() {
 
         {/* Key Finding */}
         <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-12">
-          <p className="text-foreground/90 leading-relaxed text-lg font-medium">
+          <p className="text-[#f0ebe3]/90 leading-relaxed text-lg font-medium">
             The DPRK has ratified more core international human rights treaties than the United States &mdash; <strong className="text-sovereign-gold">five versus three</strong> &mdash; yet the nations leading annual anti-DPRK resolutions carry their own substantial, documented human rights deficits that are rarely subjected to comparable international scrutiny.
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function DprkHumanRightsContent() {
           </p>
 
           <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-6">
-            <p className="text-foreground/90 leading-relaxed font-medium">
+            <p className="text-[#f0ebe3]/90 leading-relaxed font-medium">
               The US remains the <strong>only UN member state</strong> that has not ratified the Convention on the Rights of the Child &mdash; a treaty with 196 state parties. It is one of only seven countries globally that have not ratified CEDAW.
             </p>
           </div>
@@ -74,18 +74,18 @@ export default function DprkHumanRightsContent() {
           <div className="not-prose my-8">
             <div className="bg-river-depths/50 rounded-lg border border-river-current/30 overflow-hidden">
               <div className="bg-river-current/20 px-4 py-3 border-b border-river-current/30">
-                <h3 className="text-lg font-bold text-foreground">Core Treaty Ratification Comparison</h3>
+                <h3 className="text-lg font-bold text-[#f0ebe3]">Core Treaty Ratification Comparison</h3>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
                       <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Treaty</th>
-                      <th className="px-4 py-3 text-center text-foreground font-semibold">DPRK</th>
-                      <th className="px-4 py-3 text-center text-foreground font-semibold">USA</th>
+                      <th className="px-4 py-3 text-center text-[#f0ebe3] font-semibold">DPRK</th>
+                      <th className="px-4 py-3 text-center text-[#f0ebe3] font-semibold">USA</th>
                     </tr>
                   </thead>
-                  <tbody className="text-foreground/80">
+                  <tbody className="text-[#f0ebe3]/80">
                     <tr className="border-b border-river-current/10">
                       <td className="px-4 py-2">ICCPR</td>
                       <td className="px-4 py-2 text-center text-green-400">&#10003; 1981</td>
@@ -124,7 +124,7 @@ export default function DprkHumanRightsContent() {
                   </tbody>
                 </table>
               </div>
-              <div className="px-4 py-2 text-xs text-foreground/50 border-t border-river-current/10">
+              <div className="px-4 py-2 text-xs text-[#f0ebe3]/50 border-t border-river-current/10">
                 * With extensive reservations, understandings, and declarations
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function DprkHumanRightsContent() {
           </p>
 
           <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6 mb-6">
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               The DPRK&rsquo;s electoral system operates on a fundamentally different model than Western multi-party democracy. Whether that model constitutes a &ldquo;deficit&rdquo; depends on the framework applied. What is beyond dispute: the scale of disenfranchisement and structural barriers in the accusing nations affects millions of their own citizens.
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function DprkHumanRightsContent() {
 
           <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-6">
             <h4 className="text-lg font-bold text-korean-red mb-2">Sanctions Impact on Healthcare</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               UN sanctions ban all metal items including sterilizers, ambulances, X-ray machines, and water purification equipment. Researchers estimated sanctions caused approximately <strong>4,000 preventable deaths</strong> in 2018 alone through delays in humanitarian exemptions. Drug prices spiked over ten-fold following border closures.
             </p>
           </div>
@@ -236,8 +236,8 @@ export default function DprkHumanRightsContent() {
           </p>
 
           <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6 mb-6">
-            <h4 className="text-lg font-bold text-foreground mb-2">Homelessness Among the Accusers</h4>
-            <ul className="space-y-2 text-foreground/80">
+            <h4 className="text-lg font-bold text-[#f0ebe3] mb-2">Homelessness Among the Accusers</h4>
+            <ul className="space-y-2 text-[#f0ebe3]/80">
               <li><strong>United States:</strong> 771,480 people experiencing homelessness (January 2024) &mdash; 18% increase from 2023, highest since tracking began in 2007. Family homelessness rose 39%.</li>
               <li><strong>United Kingdom:</strong> 299,100 households in acute &ldquo;core&rdquo; homelessness (2024).</li>
               <li><strong>Australia:</strong> 122,000 people homeless on any given night; social housing shortfall exceeding half a million homes.</li>
@@ -298,7 +298,7 @@ export default function DprkHumanRightsContent() {
 
           <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-6">
             <h4 className="text-lg font-bold text-sovereign-gold mb-2">The 2014 UN Commission of Inquiry: Context and Critique</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               The 372-page COI report was produced without any access to the DPRK itself &mdash; the government denied entry to investigators. The report relied primarily on émigré testimony, much of it from individuals receiving resettlement benefits from the South Korean government. The DPRK has consistently rejected the COI&rsquo;s findings and methodology, describing them as politically motivated. Satellite imagery has been used to identify detention facilities, though the interpretation of such imagery is contested.
             </p>
           </div>
@@ -319,8 +319,8 @@ export default function DprkHumanRightsContent() {
           <div className="not-prose my-8">
             <div className="bg-korean-red/10 border border-korean-red/30 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-korean-red mb-2">1.9&ndash;2 Million</div>
-              <div className="text-foreground/70 text-sm">US incarcerated population &mdash; the highest rate in the world</div>
-              <div className="text-foreground/50 text-xs mt-1">531&ndash;600 per 100,000 citizens. More prisoners than any nation on Earth.</div>
+              <div className="text-[#f0ebe3]/70 text-sm">US incarcerated population &mdash; the highest rate in the world</div>
+              <div className="text-[#f0ebe3]/50 text-xs mt-1">531&ndash;600 per 100,000 citizens. More prisoners than any nation on Earth.</div>
             </div>
           </div>
 
@@ -352,10 +352,10 @@ export default function DprkHumanRightsContent() {
 
           <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-6">
             <h4 className="text-lg font-bold text-korean-red mb-2">US Children&rsquo;s Rights Record</h4>
-            <p className="text-foreground/90 leading-relaxed mb-3">
+            <p className="text-[#f0ebe3]/90 leading-relaxed mb-3">
               The United States is the <strong>only UN member state</strong> that has not ratified the CRC.
             </p>
-            <ul className="space-y-2 text-foreground/80">
+            <ul className="space-y-2 text-[#f0ebe3]/80">
               <li>Child poverty: <strong>14.3%</strong> (10.35 million children), with Black and Native American children at ~25%</li>
               <li>World leader in child incarceration rates; only country permitting juvenile life-without-parole</li>
               <li>Federal law allows children as young as <strong>12</strong> to work on commercial farms for unlimited hours</li>
@@ -406,7 +406,7 @@ export default function DprkHumanRightsContent() {
 
           <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-6">
             <h4 className="text-lg font-bold text-korean-red mb-2">Documented Humanitarian Impact</h4>
-            <ul className="space-y-2 text-foreground/90">
+            <ul className="space-y-2 text-[#f0ebe3]/90">
               <li>Resolution 2371 itself acknowledged &ldquo;well over half&rdquo; of the population suffers major food and medical insecurities</li>
               <li>UNICEF: <strong>200,000 children</strong> suffering acute malnutrition, 60,000 at risk of starvation</li>
               <li>WFP: <strong>10 million North Koreans (40%)</strong> food insecure</li>
@@ -418,7 +418,7 @@ export default function DprkHumanRightsContent() {
 
           <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-6">
             <h4 className="text-lg font-bold text-sovereign-gold mb-2">2025 Lancet Global Health Study</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               The first systematic cross-country analysis of sanctions mortality estimated unilateral sanctions are associated with approximately <strong>564,258 deaths per year</strong> globally, with children under five representing 51% of all sanctions-related deaths. The study found &ldquo;no statistical evidence of an effect for UN sanctions,&rdquo; suggesting the lethal impact is driven by unilateral measures.
             </p>
           </div>
@@ -431,7 +431,7 @@ export default function DprkHumanRightsContent() {
 
           <blockquote className="border-l-4 border-sovereign-gold pl-6 my-8 italic text-sovereign-gold text-xl">
             &ldquo;Sanctions function not merely as tools of political pressure but as instruments of systematic human-rights violations.&rdquo;
-            <span className="block text-sm mt-2 text-foreground/60 not-italic">&mdash; UN Special Rapporteur Alena Douhan</span>
+            <span className="block text-sm mt-2 text-[#f0ebe3]/60 not-italic">&mdash; UN Special Rapporteur Alena Douhan</span>
           </blockquote>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -492,7 +492,7 @@ export default function DprkHumanRightsContent() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6">
                 <h4 className="text-lg font-bold text-sovereign-gold mb-3">Documented Achievements</h4>
-                <ul className="space-y-3 text-foreground/80 text-sm">
+                <ul className="space-y-3 text-[#f0ebe3]/80 text-sm">
                   <li>&#10003; Universal literacy and 12-year free compulsory education with near-perfect attendance</li>
                   <li>&#10003; Universal healthcare structure with 93.7% antenatal visit coverage and 99.5% skilled birth attendance</li>
                   <li>&#10003; Dramatic child nutrition improvement (stunting: 62% &rarr; 19.1%, 1998&ndash;2017)</li>
@@ -501,8 +501,8 @@ export default function DprkHumanRightsContent() {
                 </ul>
               </div>
               <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6">
-                <h4 className="text-lg font-bold text-foreground mb-3">Ongoing Challenges (Context Matters)</h4>
-                <ul className="space-y-3 text-foreground/80 text-sm">
+                <h4 className="text-lg font-bold text-[#f0ebe3] mb-3">Ongoing Challenges (Context Matters)</h4>
+                <ul className="space-y-3 text-[#f0ebe3]/80 text-sm">
                   <li>Healthcare infrastructure strained by sanctions blocking medical equipment imports</li>
                   <li>Food security affected by sanctions, COVID border closures, and natural disasters</li>
                   <li>Housing development constrained by economic isolation and resource limitations</li>
@@ -533,21 +533,21 @@ export default function DprkHumanRightsContent() {
 
           <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-6">
             <h4 className="text-lg font-bold text-sovereign-gold mb-2">First: The DPRK Has Achieved Remarkable Things Under Impossible Conditions</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               Universal literacy, universal healthcare infrastructure, pioneering gender equality legislation, dramatic reductions in child malnutrition &mdash; all achieved while enduring the most comprehensive sanctions regime in history and seven decades of military hostility from the world&rsquo;s most powerful nation. These achievements deserve recognition, not erasure.
             </p>
           </div>
 
           <div className="bg-korean-red/10 dark:bg-korean-red/20 border border-korean-red/30 rounded-lg p-6 mb-6">
             <h4 className="text-lg font-bold text-korean-red mb-2">Second: The Accusers Carry Documented Violations of Enormous Scale</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               The US incarcerates 2 million people, bears responsibility for 4.5 million post-9/11 war deaths, and has ratified fewer core human rights treaties than the DPRK. The UK sells &pound;23 billion in weapons fueling Yemen&rsquo;s humanitarian catastrophe. Japan&rsquo;s comfort women legacy remains unresolved. Saudi Arabia supports anti-DPRK resolutions while itself designated a Country of Particular Concern. These are not whataboutisms; they are the receipts that expose who has standing to judge and who does not.
             </p>
           </div>
 
           <div className="bg-river-current/10 border border-river-current/30 rounded-lg p-6 mb-6">
-            <h4 className="text-lg font-bold text-foreground mb-2">Third: Sanctions Are the Real Human Rights Crisis</h4>
-            <p className="text-foreground/90 leading-relaxed">
+            <h4 className="text-lg font-bold text-[#f0ebe3] mb-2">Third: Sanctions Are the Real Human Rights Crisis</h4>
+            <p className="text-[#f0ebe3]/90 leading-relaxed">
               With an estimated 40% of the population food insecure, 200,000 children acutely malnourished, and no functioning banking channel for humanitarian aid &mdash; the sanctions regime is itself the most documented, most systematic human rights violation in this entire analysis. The 2025 Lancet study&rsquo;s finding that unilateral sanctions kill an estimated 564,258 people annually &mdash; predominantly children &mdash; makes the question unavoidable: the nations claiming to champion human rights are actively killing civilians through economic warfare.
             </p>
           </div>
@@ -570,10 +570,10 @@ export default function DprkHumanRightsContent() {
           <div className="text-sovereign-gold font-bold tracking-widest uppercase text-sm mb-2">
             JPanda Papers
           </div>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-[#a0b4c8] text-sm">
             Independent Analysis &bull; Open-Source Intelligence
           </p>
-          <p className="text-muted-foreground text-xs mt-2">
+          <p className="text-[#a0b4c8] text-xs mt-2">
             February 2026 &bull; Unclassified // For Public Release
           </p>
         </div>

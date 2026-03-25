@@ -10,8 +10,8 @@ export default function NorthKoreaDeceptionContent() {
   return (
     <article className="container mx-auto px-4 pt-28 pb-20 prose prose-invert max-w-3xl">
       <header className="not-prose mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold">{t('northKoreaTitle')}</h1>
-        <p className="text-muted-foreground mt-2">{t('northKoreaSubtitle')}</p>
+        <h1 className="text-4xl md:text-5xl font-bold text-[#f0ebe3]">{t('northKoreaTitle')}</h1>
+        <p className="text-[#a0b4c8] mt-2">{t('northKoreaSubtitle')}</p>
       </header>
 
       <div dangerouslySetInnerHTML={{ __html: t('northKoreaIntro') }} />
@@ -54,7 +54,7 @@ export default function NorthKoreaDeceptionContent() {
         <li><a href="https://attack.mitre.org/" target="_blank" rel="noopener noreferrer">MITRE ATT&CK Framework</a></li>
       </ul>
 
-      <footer className="not-prose mt-6 text-sm text-muted-foreground">
+      <footer className="not-prose mt-6 text-sm text-[#a0b4c8]">
         <div className="flex items-center justify-between gap-4 flex-wrap">
           <span>Send preferred citations and I'll expand this bibliography with direct references used in each section.</span>
           <LinkedInShare />

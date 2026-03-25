@@ -14,7 +14,7 @@ export default function ShiftsContent() {
         <li>Like science, ideologies can “shift” when anomalies pile up and a rival frame explains more or fits the times better.</li>
       </ul>
 
-      <div className="mb-10 rounded-lg border border-foreground/20 bg-background/40 p-4">
+      <div className="mb-10 rounded-lg border border-[#f0ebe3]/20 bg-[#0d1b2a]/40 p-4">
         <h3 className="mb-2 text-lg font-semibold">Why it matters</h3>
         <ul className="list-disc space-y-2 pl-6">
           <li>Read conflicts as signals of transition, not just polarization.</li>
