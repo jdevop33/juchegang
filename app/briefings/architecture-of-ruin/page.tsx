@@ -14,17 +14,17 @@ export const metadata = {
       "750 US military sites. 80 countries. $55 billion annually. Six case studies in what hosting really costs.",
     images: [
       {
-        url: "/images/brothers.jpg",
+        url: "/images/paektu-sunset.jpg",
         width: 1200,
         height: 630,
-        alt: "Korean reunification",
+        alt: "Heaven Lake at Mount Paektu at sunset",
       },
     ],
   },
   twitter: {
     card: "summary_large_image" as const,
     title: "The Architecture of Ruin",
-    images: ["/images/brothers.jpg"],
+    images: ["/images/paektu-sunset.jpg"],
   },
 }
 
