@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
-import { ExternalLink, Globe, TrendingUp, Coins, ShoppingBag, User, Heart } from "lucide-react"
+import { ExternalLink, Globe, TrendingUp, Coins, ShoppingBag, User, Heart, FileText } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Network Map",
@@ -47,7 +47,7 @@ const networks: NetworkGroup[] = [
         url: "https://tiger.juche.org",
         description: "Korean reunification campaign - The Line is Temporary",
         status: 'live',
-        icon: <span className="text-lg">🐅</span>,
+        icon: <Heart className="w-5 h-5" />,
         color: "text-sovereign-gold",
       },
       {
@@ -97,7 +97,7 @@ const networks: NetworkGroup[] = [
         url: "https://notaryton.com",
         description: "Document notarization on TON blockchain",
         status: 'building',
-        icon: <span className="text-lg">📜</span>,
+        icon: <FileText className="w-5 h-5" />,
         color: "text-river-mid",
       },
       {
@@ -106,7 +106,7 @@ const networks: NetworkGroup[] = [
         url: "https://seal-casino.vercel.app",
         description: "TON mini-app gaming",
         status: 'building',
-        icon: <span className="text-lg">🎰</span>,
+        icon: <Coins className="w-5 h-5" />,
         color: "text-river-mid",
       },
     ]
@@ -147,7 +147,7 @@ const networks: NetworkGroup[] = [
         url: "https://juchegang.ca",
         description: "Canadian personal brand (coming soon)",
         status: 'planned',
-        icon: <span className="text-lg">🍁</span>,
+        icon: <Globe className="w-5 h-5" />,
         color: "text-korean-red",
       },
     ]

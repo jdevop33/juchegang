@@ -115,10 +115,10 @@ export function SovereigntyProtocolContent() {
             <span>REF: KOR-885 // JESSE JAMES</span>
           </div>
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-4 sm:mb-6 leading-tight font-[family-name:var(--font-heading)]">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#f0ebe3] mb-4 sm:mb-6 leading-tight font-[family-name:var(--font-heading)]">
           The Sovereignty Protocol
         </h1>
-        <p className="text-xl sm:text-2xl text-[#8b6914] font-[family-name:var(--font-heading)] italic tracking-wide">
+        <p className="text-xl sm:text-2xl text-[#d4a74a] font-[family-name:var(--font-heading)] italic tracking-wide">
           Rented umbrellas, magazine maps, and the inheritance of Myeongnyang.
         </p>
       </header>
@@ -206,7 +206,7 @@ export function SovereigntyProtocolContent() {
 
         <p>And then, look North.</p>
 
-        <p className="text-xl sm:text-2xl text-white font-semibold leading-snug border-l-4 border-[#d4a74a] pl-4 sm:pl-6 py-2 my-6 sm:my-8 font-[family-name:var(--font-heading)]">
+        <p className="text-xl sm:text-2xl text-[#f0ebe3] font-semibold leading-snug border-l-4 border-[#d4a74a] pl-4 sm:pl-6 py-2 my-6 sm:my-8 font-[family-name:var(--font-heading)]">
           Under the most suffocating economic blockade in human history, entirely
           cut off from global capital, the DPRK built a fully independent,
           sovereign strategic deterrent. They achieved under a siege what the
@@ -218,7 +218,7 @@ export function SovereigntyProtocolContent() {
       {/* Interactive Intel Matrix */}
       <section className="mb-16 sm:mb-20 bg-[#142638] border border-[#1b4965] shadow-2xl rounded-sm overflow-hidden">
         <div className="border-b border-[#1b4965] bg-[#0d1b2a] p-4 sm:p-6 flex flex-col justify-start">
-          <h2 className="text-lg sm:text-xl font-[family-name:var(--font-mono)] font-bold uppercase tracking-widest text-white mb-1">
+          <h2 className="text-lg sm:text-xl font-[family-name:var(--font-mono)] font-bold uppercase tracking-widest text-[#f0ebe3] mb-1">
             The Dependency Matrix
           </h2>
           <p className="font-[family-name:var(--font-body)] text-[10px] sm:text-xs text-[#a0b4c8]/60 uppercase tracking-wider">
@@ -325,7 +325,7 @@ export function SovereigntyProtocolContent() {
                   ))}
                   {/* Summary Row */}
                   <tr className="border-t border-[#1b4965] font-bold bg-[#0d1b2a]">
-                    <td className="py-4 sm:py-5 px-3 sm:px-4 text-white text-[11px] sm:text-sm whitespace-normal sticky left-0 bg-[#0d1b2a] z-10 shadow-[2px_0_5px_rgba(0,0,0,0.3)]">
+                    <td className="py-4 sm:py-5 px-3 sm:px-4 text-[#f0ebe3] text-[11px] sm:text-sm whitespace-normal sticky left-0 bg-[#0d1b2a] z-10 shadow-[2px_0_5px_rgba(0,0,0,0.3)]">
                       Can deploy deterrent without foreign approval
                     </td>
                     <td className={`py-4 sm:py-5 px-3 sm:px-4 text-center text-[#a0b4c8]/50 text-sm sm:text-base transition-colors duration-300 ${highlightClass("canada")}`}>
@@ -373,7 +373,7 @@ export function SovereigntyProtocolContent() {
         </p>
 
         <blockquote className="my-8 sm:my-10 border-l-4 border-[#d4a74a] pl-4 sm:pl-8 py-3 sm:py-4 bg-[#0d1b2a]/50">
-          <p className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] text-white font-semibold italic mb-3 leading-snug">
+          <p className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] text-[#f0ebe3] font-semibold italic mb-3 leading-snug">
             &ldquo;Those who seek death shall live. Those who seek life shall
             die.&rdquo;
           </p>
@@ -427,7 +427,7 @@ export function SovereigntyProtocolContent() {
           by a bureaucratic fiction.
         </p>
 
-        <p className="text-xl sm:text-2xl text-white font-semibold leading-relaxed mt-8 sm:mt-10 font-[family-name:var(--font-heading)]">
+        <p className="text-xl sm:text-2xl text-[#f0ebe3] font-semibold leading-relaxed mt-8 sm:mt-10 font-[family-name:var(--font-heading)]">
           Imagine 80 million Koreans united. Combine the staggering capital
           engine of the South with the unbreakable sovereign deterrence of the
           North. When you remind them that Yi Sun-sin is their shared ancestry,

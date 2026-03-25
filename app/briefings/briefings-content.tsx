@@ -35,6 +35,20 @@ export default function BriefingsContent() {
       </header>
 
       <ul className="max-w-3xl mx-auto space-y-6">
+        {/* Featured: The Architecture of Ruin */}
+        <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-2 py-0.5 bg-[#d4a74a]/30 text-[#d4a74a] text-xs font-medium rounded">NEW</span>
+            <span className="px-2 py-0.5 bg-[#1b4965]/50 text-[#f0ebe3] text-xs font-medium rounded">Mar 2026</span>
+          </div>
+          <h2 className="text-2xl font-semibold mb-2">
+            <Link href="/briefings/architecture-of-ruin" className="hover:underline text-[#d4a74a]">
+              The Architecture of Ruin
+            </Link>
+          </h2>
+          <p className="text-[#f0ebe3]/70">What happens when you invite a superpower&rsquo;s weapons onto your soil to fight your neighbor. Six countries found out. Five are still paying. 750 bases. 80 countries. One pattern. One exception.</p>
+        </li>
+
         {/* Featured: The Sovereignty Protocol */}
         <li className="rounded-xl border-2 border-[#d4a74a] p-6 bg-[#1b4965]/20 hover:bg-[#1b4965]/30 transition">
           <div className="flex items-center gap-2 mb-2">

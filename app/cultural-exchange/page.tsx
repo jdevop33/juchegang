@@ -256,7 +256,7 @@ export default function CulturalExchangePage() {
                   </div>
                   <div>
                     <p className="text-sm text-[#f0ebe3]/60">{language === 'kr' ? '영향력' : 'Impact'}</p>
-                    <p className="text-lg font-bold text-[#1b4965]">{program.impact}</p>
+                    <p className="text-lg font-bold text-[#a0b4c8]">{program.impact}</p>
                   </div>
                 </div>
               </motion.div>

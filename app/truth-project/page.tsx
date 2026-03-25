@@ -85,7 +85,7 @@ export default function TruthProjectPage() {
             <div className="text-sm text-[#f0ebe3]/60 mt-1">When actions and words don't match, the receipts tell the real story</div>
           </Link>
           <Link href="/truth-project/power-dynamics" className="block rounded-lg border border-[#1b4965]/50 bg-[#1b4965]/20 px-6 py-4 text-center text-[#f0ebe3] hover:bg-[#1b4965]/30 transition-colors">
-            <div className="text-sm text-[#1b4965] mb-1">COMPREHENSIVE ANALYSIS</div>
+            <div className="text-sm text-[#a0b4c8] mb-1">COMPREHENSIVE ANALYSIS</div>
             <div className="font-semibold">How Major Powers Actually Behave</div>
             <div className="text-sm text-[#f0ebe3]/60 mt-1">Multi-language research exposes Cold War myths vs reality</div>
           </Link>
@@ -95,12 +95,12 @@ export default function TruthProjectPage() {
             <div className="text-sm text-[#f0ebe3]/60 mt-1">16 anonymous bureaucrats control the world's knowledge</div>
           </Link>
           <Link href="/truth-project/wikipedia-neutrality" className="block rounded-lg border border-[#1b4965]/50 bg-[#1b4965]/20 px-6 py-4 text-center text-[#f0ebe3] hover:bg-[#1b4965]/30 transition-colors">
-            <div className="text-sm text-[#1b4965] mb-1">INVESTIGATION</div>
+            <div className="text-sm text-[#a0b4c8] mb-1">INVESTIGATION</div>
             <div className="font-semibold">Wikipedia's Contested Neutrality</div>
             <div className="text-sm text-[#f0ebe3]/60 mt-1">How systematic bias shapes global information</div>
           </Link>
           <Link href="/truth-project/fiction-becomes-fact" className="block rounded-lg border border-[#1b4965]/50 bg-[#1b4965]/20 px-6 py-4 text-center text-[#f0ebe3] hover:bg-[#1b4965]/30 transition-colors">
-            <div className="text-sm text-[#1b4965] mb-1">ANALYSIS</div>
+            <div className="text-sm text-[#a0b4c8] mb-1">ANALYSIS</div>
             <div className="font-semibold">When Fiction Becomes Fact</div>
             <div className="text-sm text-[#f0ebe3]/60 mt-1">The psychology of narrative dependence</div>
           </Link>
@@ -110,12 +110,12 @@ export default function TruthProjectPage() {
             <div className="text-sm text-[#f0ebe3]/60 mt-1">From colonial plunder to frozen Russian assets</div>
           </Link>
           <Link href="/truth-project/eu-fiscal-gamble" className="block rounded-lg border border-[#1b4965]/50 bg-[#1b4965]/20 px-6 py-4 text-center text-[#f0ebe3] hover:bg-[#1b4965]/30 transition-colors">
-            <div className="text-sm text-[#1b4965] mb-1">NEW - DEC 2025</div>
+            <div className="text-sm text-[#a0b4c8] mb-1">NEW - DEC 2025</div>
             <div className="font-semibold">EU's &euro;90B Fiscal Gamble</div>
             <div className="text-sm text-[#f0ebe3]/60 mt-1">Deep analysis of Europe's riskiest financial commitment</div>
           </Link>
           <Link href="/briefings/ai-censorship-matrix" className="block rounded-lg border border-[#1b4965]/50 bg-[#1b4965]/20 px-6 py-4 text-center text-[#f0ebe3] hover:bg-[#1b4965]/30 transition-colors">
-            <div className="text-sm text-[#1b4965] mb-1">BRIEFING</div>
+            <div className="text-sm text-[#a0b4c8] mb-1">BRIEFING</div>
             <div className="font-semibold">The AI Censorship Matrix</div>
             <div className="text-sm text-[#f0ebe3]/60 mt-1">How AI systems are programmed with bias</div>
           </Link>
@@ -125,7 +125,7 @@ export default function TruthProjectPage() {
             <div className="text-sm text-[#f0ebe3]/60 mt-1">Challenging mainstream narratives</div>
           </Link>
           <Link href="/truth-project/liberation-frameworks" className="block rounded-lg border border-[#1b4965]/50 bg-[#1b4965]/20 px-6 py-4 text-center text-[#f0ebe3] hover:bg-[#1b4965]/30 transition-colors">
-            <div className="text-sm text-[#1b4965] mb-1">LIBERATION GUIDE</div>
+            <div className="text-sm text-[#a0b4c8] mb-1">LIBERATION GUIDE</div>
             <div className="font-semibold">Liberation Frameworks</div>
             <div className="text-sm text-[#f0ebe3]/60 mt-1">Practical tools for breaking free and building unity</div>
           </Link>
@@ -133,7 +133,7 @@ export default function TruthProjectPage() {
 
         <div className="mt-8">
           <Link href="/gallery/unity-reconnaissance" className="block rounded-lg border border-[#1b4965]/50 bg-[#1b4965]/20 px-6 py-4 text-center text-[#f0ebe3] hover:bg-[#1b4965]/30 transition-colors max-w-md mx-auto">
-            <div className="text-sm text-[#1b4965] mb-1">SPECIAL GALLERY</div>
+            <div className="text-sm text-[#a0b4c8] mb-1">SPECIAL GALLERY</div>
             <div className="font-semibold">Unity Reconnaissance</div>
             <div className="text-sm text-[#f0ebe3]/60 mt-1">Historical evidence of natural cooperation before manufactured division</div>
           </Link>

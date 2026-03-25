@@ -303,7 +303,7 @@ export default function YouthEmpowermentPage() {
                           <p className="text-xs text-[#f0ebe3]/60">{language === 'kr' ? '참가자' : 'Participants'}</p>
                         </div>
                         <div>
-                          <p className="text-2xl font-bold text-[#1b4965]">{project.impact.countries}</p>
+                          <p className="text-2xl font-bold text-[#a0b4c8]">{project.impact.countries}</p>
                           <p className="text-xs text-[#f0ebe3]/60">{language === 'kr' ? '국가' : 'Countries'}</p>
                         </div>
                         <div>
