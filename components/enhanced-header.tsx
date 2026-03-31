@@ -1,6 +1,6 @@
 "use client"
 
-import { Menu, X, Sparkles, Home, Globe, Users, Heart, Calendar, Image as ImageIcon, BookOpen, MessageCircle, FileText, Anchor } from "lucide-react"
+import { Menu, X, Sparkles, Home, Globe, Users, Heart, Calendar, Image as ImageIcon, BookOpen, MessageCircle, FileText, Anchor, Landmark } from "lucide-react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
@@ -54,6 +54,7 @@ export function EnhancedHeader() {
     { href: "/youth-empowerment", label: t('youth'), icon: Heart },
     { href: "/social", label: "Social", icon: MessageCircle },
     { href: "/peace-timeline", label: t('peace'), icon: Calendar },
+    { href: "/civilizations", label: "Civilizations", icon: Landmark },
     { href: "/gallery", label: t('gallery'), icon: ImageIcon, featured: true },
     { href: "/truth-project", label: t('truthProject'), icon: BookOpen, featured: true },
   ]
