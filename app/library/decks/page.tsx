@@ -5,6 +5,7 @@ import { ArrowLeft, Presentation, Download, Calendar, Eye, Search, ExternalLink 
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { useState } from "react"
+import { decks as libraryDecks, type LibraryResource } from "@/data/library-resources"
 
 interface Deck {
   id: string
@@ -20,23 +21,37 @@ interface Deck {
   featured?: boolean
 }
 
-// Slide deck data - add your presentations here
-const decks: Deck[] = [
-  // Example structure:
-  // {
-  //   id: "media-manipulation-101",
-  //   title: "Media Manipulation 101",
-  //   description: "How narratives are constructed and how to see through them",
-  //   slideCount: 24,
-  //   category: "Media Literacy",
-  //   date: "2025-01-10",
-  //   thumbnail: "/library/decks/thumbnails/media-manipulation.jpg",
-  //   downloadUrl: "/library/decks/media-manipulation-101.pdf",
-  //   viewUrl: "https://docs.google.com/presentation/d/...",
-  //   downloads: 89,
-  //   featured: true
-  // }
-]
+const DECK_CATEGORY_FROM_TAG: Record<string, string> = {
+  ukraine: "Geopolitics",
+  geopolitics: "Geopolitics",
+  economics: "Economics",
+  generation: "Geopolitics",
+  history: "History",
+  peace: "Peace Initiatives",
+  media: "Media Literacy",
+  carousel: "Geopolitics",
+}
+
+function resourceToDeck(r: LibraryResource): Deck {
+  const category =
+    r.tags.map(t => DECK_CATEGORY_FROM_TAG[t]).find(Boolean) ?? "Geopolitics"
+  const isExternal = r.downloadUrl.startsWith("http")
+  return {
+    id: r.id,
+    title: r.title,
+    description: r.description,
+    slideCount: r.pageCount ?? 0,
+    category,
+    date: r.publishedAt ?? "",
+    thumbnail: r.previewUrl,
+    downloadUrl: r.downloadUrl,
+    viewUrl: isExternal ? r.downloadUrl : r.previewUrl,
+    downloads: r.downloads ?? 0,
+    featured: r.featured,
+  }
+}
+
+const decks: Deck[] = libraryDecks.map(resourceToDeck)
 
 const categories = ["All", "Media Literacy", "Geopolitics", "History", "Economics", "Peace Initiatives"]
 
@@ -121,9 +136,11 @@ export default function DecksPage() {
                       <Presentation className="w-16 h-16 text-cream/20" />
                     </div>
                   )}
-                  <div className="absolute bottom-2 right-2 px-2 py-1 bg-river-depths/70 text-cream text-xs rounded">
-                    {deck.slideCount} slides
-                  </div>
+                  {deck.slideCount > 0 && (
+                    <div className="absolute bottom-2 right-2 px-2 py-1 bg-river-depths/70 text-cream text-xs rounded">
+                      {deck.slideCount} slides
+                    </div>
+                  )}
                   {deck.featured && (
                     <div className="absolute top-2 left-2 px-2 py-1 bg-sovereign-gold/90 text-black text-xs font-medium rounded">
                       Featured
@@ -142,10 +159,12 @@ export default function DecksPage() {
                   <p className="text-cream/60 text-sm mb-4 line-clamp-2">{deck.description}</p>
 
                   <div className="flex items-center justify-between text-sm text-cream/40 mb-4">
-                    <span className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      {new Date(deck.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
-                    </span>
+                    {deck.date && (
+                      <span className="flex items-center gap-1">
+                        <Calendar className="w-4 h-4" />
+                        {new Date(deck.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+                      </span>
+                    )}
                     <span className="flex items-center gap-1">
                       <Download className="w-4 h-4" />
                       {deck.downloads}
@@ -164,14 +183,26 @@ export default function DecksPage() {
                         View
                       </a>
                     )}
-                    <a
-                      href={deck.downloadUrl}
-                      download
-                      className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-river-current hover:bg-river-depths text-cream text-sm font-medium rounded-lg transition-colors"
-                    >
-                      <Download className="w-4 h-4" />
-                      Download
-                    </a>
+                    {deck.downloadUrl.startsWith('http') ? (
+                      <a
+                        href={deck.downloadUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-river-current hover:bg-river-depths text-cream text-sm font-medium rounded-lg transition-colors"
+                      >
+                        <Download className="w-4 h-4" />
+                        Download
+                      </a>
+                    ) : (
+                      <a
+                        href={deck.downloadUrl}
+                        download
+                        className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-river-current hover:bg-river-depths text-cream text-sm font-medium rounded-lg transition-colors"
+                      >
+                        <Download className="w-4 h-4" />
+                        Download
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

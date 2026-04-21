@@ -15,11 +15,19 @@ const nextConfig = {
   },
   // Optimize images for better performance
   images: {
-    domains: ['juche.org', 'localhost'],
+    remotePatterns: [
+      { protocol: 'https', hostname: 'juche.org' },
+      { protocol: 'https', hostname: 'i.ytimg.com' },
+      { protocol: 'https', hostname: 'img.youtube.com' },
+      { protocol: 'https', hostname: 'yt3.ggpht.com' },
+    ],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 3600, // 1 hour cache
-    deviceSizes: [640, 768, 1024, 1280, 1600],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1600, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    qualities: [60, 75, 85, 90, 100], // Pre-declare to avoid Next 16 breakage
+    dangerouslyAllowSVG: false,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     unoptimized: false,
   },
   // Bundle optimization

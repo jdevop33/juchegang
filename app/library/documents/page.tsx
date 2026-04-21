@@ -5,6 +5,7 @@ import { ArrowLeft, FileText, Download, Calendar, Eye, Search } from "lucide-rea
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { useState } from "react"
+import { documents as libraryDocuments, type LibraryResource } from "@/data/library-resources"
 
 interface Document {
   id: string
@@ -19,21 +20,44 @@ interface Document {
   featured?: boolean
 }
 
-// Document data - add your documents here
-const documents: Document[] = [
-  {
-    id: "eu-ukraine-factcheck",
-    title: "EU Ukraine Funding Factcheck Report",
-    description: "Analysis of EU funding commitments to Ukraine - separating fact from narrative",
-    category: "Geopolitics",
-    date: "2025-12-20",
-    fileSize: "23 KB",
-    fileType: "PDF",
-    downloadUrl: "/documents/eu_ukraine_factcheck_report.pdf",
-    downloads: 0,
-    featured: true
+const CATEGORY_FROM_TAG: Record<string, string> = {
+  geopolitics: "Geopolitics",
+  economics: "Economics",
+  ukraine: "Geopolitics",
+  korea: "Peace Initiatives",
+  peace: "Peace Initiatives",
+  philosophy: "Culture",
+  language: "Culture",
+  science: "Culture",
+  chemistry: "Culture",
+  mathematics: "Culture",
+  hegemony: "Geopolitics",
+  multipolarity: "Geopolitics",
+  rhetoric: "Culture",
+  psychology: "Culture",
+  media: "Geopolitics",
+  power: "Geopolitics",
+  generation: "Geopolitics",
+}
+
+function resourceToDocument(r: LibraryResource): Document {
+  const category =
+    r.tags.map(t => CATEGORY_FROM_TAG[t]).find(Boolean) ?? "Geopolitics"
+  return {
+    id: r.id,
+    title: r.title,
+    description: r.description,
+    category,
+    date: r.publishedAt ?? "",
+    fileSize: r.fileSize ?? "",
+    fileType: r.type.toUpperCase(),
+    downloadUrl: r.downloadUrl,
+    downloads: r.downloads ?? 0,
+    featured: r.featured,
   }
-]
+}
+
+const documents: Document[] = libraryDocuments.map(resourceToDocument)
 
 const categories = ["All", "Economics", "History", "Geopolitics", "Culture", "Peace Initiatives"]
 
@@ -129,10 +153,12 @@ export default function DocumentsPage() {
                     </h3>
                     <p className="text-cream/60 text-sm mb-4">{doc.description}</p>
                     <div className="flex items-center gap-4 text-sm text-cream/40">
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-4 h-4" />
-                        {new Date(doc.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-                      </span>
+                      {doc.date && (
+                        <span className="flex items-center gap-1">
+                          <Calendar className="w-4 h-4" />
+                          {new Date(doc.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                        </span>
+                      )}
                       <span>{doc.fileSize}</span>
                       <span className="flex items-center gap-1">
                         <Download className="w-4 h-4" />
@@ -140,14 +166,26 @@ export default function DocumentsPage() {
                       </span>
                     </div>
                   </div>
-                  <a
-                    href={doc.downloadUrl}
-                    download
-                    className="flex items-center gap-2 px-4 py-2 bg-river-current hover:bg-river-current text-cream font-medium rounded-lg transition-colors whitespace-nowrap"
-                  >
-                    <Download className="w-4 h-4" />
-                    Download
-                  </a>
+                  {doc.downloadUrl.startsWith('http') ? (
+                    <a
+                      href={doc.downloadUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-river-current hover:bg-river-current text-cream font-medium rounded-lg transition-colors whitespace-nowrap"
+                    >
+                      <Download className="w-4 h-4" />
+                      Download
+                    </a>
+                  ) : (
+                    <a
+                      href={doc.downloadUrl}
+                      download
+                      className="flex items-center gap-2 px-4 py-2 bg-river-current hover:bg-river-current text-cream font-medium rounded-lg transition-colors whitespace-nowrap"
+                    >
+                      <Download className="w-4 h-4" />
+                      Download
+                    </a>
+                  )}
                 </div>
               </div>
             ))}

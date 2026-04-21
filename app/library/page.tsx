@@ -125,11 +125,15 @@ export default function LibraryPage() {
               Featured Downloads
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              {featuredResources.map((resource: LibraryResource) => (
+              {featuredResources.map((resource: LibraryResource) => {
+                const isExternal = resource.downloadUrl.startsWith('http')
+                return (
                 <a
                   key={resource.id}
                   href={resource.downloadUrl}
-                  download
+                  {...(isExternal
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : { download: true })}
                   className="group flex items-center gap-4 p-4 bg-[#0d1b2a]/50 border border-[#1b4965] rounded-xl hover:bg-[#1b4965]/30 transition-colors"
                 >
                   <div className={`w-12 h-12 rounded-lg flex items-center justify-center shrink-0 ${
@@ -157,7 +161,7 @@ export default function LibraryPage() {
                   </div>
                   <Download className="w-5 h-5 text-[#f0ebe3]/40 group-hover:text-[#d4a74a] transition-colors shrink-0" />
                 </a>
-              ))}
+              )})}
             </div>
           </section>
         )}

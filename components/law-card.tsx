@@ -57,7 +57,7 @@ export function LawCard({ law }: LawCardProps) {
       style={{ animationDelay: `${(law.number % 6) * 100}ms` }}
     >
       {/* Unique image for each law — object-contain preserves full artwork */}
-      <div className="relative h-56 overflow-hidden bg-[#1a1a2e]">
+      <div className="relative h-56 overflow-hidden bg-gradient-to-br from-river-deep via-river-depths to-river-deep">
         <SafeFocalImage
           src={getLawImageCandidates(law.number)}
           alt={`Visual representation of ${t('lawLabel')} ${law.number}: ${displayTitle}`}

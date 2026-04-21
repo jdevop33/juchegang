@@ -108,7 +108,7 @@
     --secondary-foreground: 210 30% 71%;
 
     --muted: 210 47% 18%;
-    --muted-foreground: 210 30% 71%;     /* Text Secondary */
+    --muted-foreground: 210 32% 76%;     /* Text Secondary — bumped for AA contrast on River Depths */
 
     --accent: 40 60% 56%;                /* Sovereign Gold accent */
     --accent-foreground: 210 52% 11%;
@@ -157,16 +157,53 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Modern tabular + ligature rendering for premium feel */
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
   }
-  
+
   body {
     @apply bg-background text-foreground;
-    scroll-behavior: smooth;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    min-height: 100vh;                  /* Fallback for older browsers */
+    min-height: 100dvh;                 /* Dynamic viewport fixes iOS Safari address-bar collapse */
     overflow-x: hidden;
+    /* Respect notches / Dynamic Island on iOS */
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
   }
-  
+
+  /* Brand-tinted text selection — feels deliberate, not browser-default */
+  ::selection {
+    background: hsl(var(--ring) / 0.35);
+    color: hsl(var(--foreground));
+  }
+  ::-moz-selection {
+    background: hsl(var(--ring) / 0.35);
+    color: hsl(var(--foreground));
+  }
+
+  /* Brand-tinted scrollbar for desktop Chromium/Safari */
+  @media (pointer: fine) {
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: hsl(var(--background));
+    }
+    ::-webkit-scrollbar-thumb {
+      background: hsl(var(--accent) / 0.35);
+      border-radius: 10px;
+      border: 2px solid hsl(var(--background));
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: hsl(var(--accent) / 0.6);
+    }
+    html {
+      scrollbar-color: hsl(var(--accent) / 0.45) hsl(var(--background));
+      scrollbar-width: thin;
+    }
+  }
+
   /* Prevent horizontal scroll on mobile */
   @media (max-width: 640px) {
     html, body {
@@ -174,12 +211,10 @@
       position: relative;
     }
   }
-  
-  /* Fix for iOS Safari viewport height */
-  @supports (-webkit-touch-callout: none) {
-    body {
-      min-height: -webkit-fill-available;
-    }
+
+  /* Tabular numerals wherever numbers appear (dashboards, counters, tables) */
+  .tabular-nums, table, time, [data-numeric] {
+    font-variant-numeric: tabular-nums;
   }
   
   /* Better image rendering across browsers */

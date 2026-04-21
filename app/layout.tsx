@@ -8,6 +8,16 @@ import { getDictionary } from "@/lib/dictionary"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import Script from "next/script"
 
+// JSON-LD gets streamed into <head> via dangerouslySetInnerHTML. Non-ASCII
+// chars can throw "Cannot convert argument to a ByteString" during streaming,
+// so we escape everything above U+007F to \uXXXX per the JSON spec.
+function jsonLdSafe(value: unknown): string {
+  return JSON.stringify(value).replace(
+    /[-￿]/g,
+    (c) => "\\u" + c.charCodeAt(0).toString(16).padStart(4, "0"),
+  )
+}
+
 // Performance-optimized fonts
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
@@ -35,23 +45,53 @@ const playfair = Playfair_Display({
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0d1b2a", // River Depths
-  colorScheme: "dark",
+  viewportFit: "cover" as const, // Respect iOS notches / Dynamic Island
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#e8dfd0" }, // River Mist
+    { media: "(prefers-color-scheme: dark)", color: "#0d1b2a" },  // River Depths
+  ],
+  colorScheme: "dark light",
 }
 
 export const metadata = {
   metadataBase: new URL("https://juche.org"),
-  title: "The 48 Laws of Excellence - Juche GanG Edition",
+  title: {
+    default: "The 48 Laws of Excellence - Juche GanG Edition",
+    template: "%s — Juche GanG",
+  },
   description:
     "A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering commitment to your highest potential.",
   keywords: "excellence, personal development, discipline, courage, juche, self-improvement, laws of excellence, leadership, success, motivation",
   authors: [{ name: "Jesse James" }],
   creator: "Juche GanG",
   publisher: "Juche GanG",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/",
+      "ko-KR": "/",
+      "ko-KP": "/",
+      "x-default": "/",
+    },
+    types: {
+      "application/rss+xml": "/rss.xml",
+    },
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
+    alternateLocale: ["ko_KR"],
     url: "https://juche.org",
     title: "The 48 Laws of Excellence - Juche GanG Edition",
     description:
@@ -60,8 +100,8 @@ export const metadata = {
     images: [
       {
         url: "/images/heros/0sunsetpaektu3.jpg",
-        width: 700,
-        height: 285,
+        width: 1200,
+        height: 630,
         alt: "Sunset over Mount Paektu - Juche GanG",
       },
     ],
@@ -75,13 +115,17 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.svg" },
-      { url: "/favicon.svg", sizes: "16x16", type: "image/svg+xml" },
-      { url: "/favicon.svg", sizes: "32x32", type: "image/svg+xml" },
-      { url: "/favicon.svg", sizes: "48x48", type: "image/svg+xml" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/faviconjuche.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
     ],
     apple: [{ url: "/favicon.svg", sizes: "180x180", type: "image/svg+xml" }],
-    shortcut: "/favicon.svg",
+    shortcut: "/favicon.ico",
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
 }
 
@@ -104,12 +148,51 @@ export default async function RootLayout({
   return (
     <html lang={serverLang === 'en' ? 'en' : serverLang === 'kr' ? 'ko-KR' : 'ko-KP'} suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.svg" sizes="any" />
-        <link rel="apple-touch-icon" href="/favicon.svg" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+        <link rel="alternate" type="application/rss+xml" title="Juche GanG — Briefings" href="/rss.xml" />
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+        {/* Speed: warm up connections to 3rd-parties we know we'll hit */}
+        <link rel="preconnect" href="https://cloud.umami.is" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cloud.umami.is" />
+        <link rel="dns-prefetch" href="https://i.ytimg.com" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Juche GanG" />
+        <meta name="application-name" content="Juche GanG" />
+        {/* JSON-LD: Organization + WebSite (gives Google a knowledge panel + sitelinks search box) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: jsonLdSafe([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "Juche GanG",
+                alternateName: "JucheGang",
+                url: "https://juche.org",
+                logo: "https://juche.org/faviconjuche.png",
+                sameAs: [
+                  "https://t.me/jucheganG",
+                  "https://github.com/jdevop33",
+                ],
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "Juche GanG",
+                url: "https://juche.org",
+                inLanguage: ["en", "ko"],
+                potentialAction: {
+                  "@type": "SearchAction",
+                  target: "https://juche.org/briefings?q={search_term_string}",
+                  "query-input": "required name=search_term_string",
+                },
+              },
+            ]),
+          }}
+        />
         {/* Umami Analytics - Privacy-respecting */}
         <Script
           defer

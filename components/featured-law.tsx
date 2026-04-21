@@ -75,7 +75,7 @@ export function FeaturedLaw({ law }: FeaturedLawProps) {
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
-        <div className="relative h-64 md:h-auto bg-[#1a1a2e]">
+        <div className="relative h-64 md:h-auto bg-gradient-to-br from-river-deep via-river-depths to-river-deep">
           <SafeFocalImage
             src={getLawImage(law.number)}
             alt={`${t('lawLabel')} ${law.number}: ${displayTitle}`}

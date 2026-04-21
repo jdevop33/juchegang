@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -168,9 +169,9 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                   </div>
 
                   {submitStatus === "success" && (
-                    <Alert className="border-green-500/50 bg-green-500/10">
-                      <CheckCircle2 className="h-4 w-4 text-green-500" />
-                      <AlertDescription className="text-green-500">
+                    <Alert className="border-sovereign-gold/50 bg-sovereign-gold/10">
+                      <CheckCircle2 className="h-4 w-4 text-sovereign-gold" />
+                      <AlertDescription className="text-sovereign-gold">
                         {t('successBanner')}
                       </AlertDescription>
                     </Alert>
@@ -209,10 +210,12 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
           {/* Image Section */}
           <div className="order-1 lg:order-2">
             <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-2xl shadow-2xl ring-1 ring-sovereign-gold/20">
-              <img
+              <Image
                 src="/images/heros/korean03.jpg"
                 alt="Mount Paektu in golden light — Heaven Lake with wildflowers"
-                className="object-cover w-full h-full transition-transform duration-700 hover:scale-105"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover transition-transform duration-700 hover:scale-105"
               />
             </AspectRatio>
             <div className="mt-6 text-center lg:text-left">

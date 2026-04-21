@@ -1,5 +1,6 @@
 // Server component: remove client directive and async data on server
 
+import Image from "next/image"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import FocalImage from "@/components/focal-image"
@@ -310,8 +311,17 @@ export default async function SocialPage() {
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {yt.map((v) => (
-                <a key={v.id} href={v.url} target="_blank" className="block rounded-lg overflow-hidden border border-[#1b4965] bg-[#0d1b2a]/50 hover:bg-[#1b4965]/40">
-                  <img src={v.thumbnail} alt={v.title} className="w-full aspect-video object-cover" />
+                <a key={v.id} href={v.url} target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden border border-[#1b4965] bg-[#0d1b2a]/50 hover:bg-[#1b4965]/40 transition-colors">
+                  <div className="relative w-full aspect-video">
+                    <Image
+                      src={v.thumbnail}
+                      alt={v.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                   <div className="p-4">
                     <h3 className="text-[#f0ebe3] font-medium line-clamp-2">{v.title}</h3>
                     <p className="text-[#f0ebe3]/50 text-sm mt-1">{new Date(v.publishedAt).toLocaleString()}</p>
