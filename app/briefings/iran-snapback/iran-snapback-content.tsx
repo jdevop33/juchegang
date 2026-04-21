@@ -131,7 +131,7 @@ function QuoteCard({ expert, language }: { expert: typeof expertQuotes[0], langu
           >
             {expert.name}
           </h3>
-          <p className="text-[#a0b4c8] text-sm sm:text-base mt-1 break-words" role="text">
+          <p className="text-cream-muted text-sm sm:text-base mt-1 break-words" role="text">
             {expert.title}
           </p>
           <div className="flex flex-wrap gap-2 mt-3 justify-center sm:justify-start">
@@ -140,7 +140,7 @@ function QuoteCard({ expert, language }: { expert: typeof expertQuotes[0], langu
                 href={expert.social.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 px-3 py-1 bg-[#1b4965]/10 text-[#f0ebe3] hover:text-[#d4a74a] hover:bg-[#1b4965]/20 rounded-full text-xs sm:text-sm transition-all duration-200 border border-[#1b4965]/30"
+                className="inline-flex items-center gap-1 px-3 py-1 bg-river-current/10 text-cream hover:text-sovereign-gold hover:bg-river-current/20 rounded-full text-xs sm:text-sm transition-all duration-200 border border-river-current/30"
               >
                 <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -153,7 +153,7 @@ function QuoteCard({ expert, language }: { expert: typeof expertQuotes[0], langu
                 href={expert.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 px-3 py-1 bg-[#1b4965]/10 text-[#f0ebe3] hover:text-[#d4a74a] hover:bg-[#1b4965]/20 rounded-full text-xs sm:text-sm transition-all duration-200 border border-[#1b4965]/30"
+                className="inline-flex items-center gap-1 px-3 py-1 bg-river-current/10 text-cream hover:text-sovereign-gold hover:bg-river-current/20 rounded-full text-xs sm:text-sm transition-all duration-200 border border-river-current/30"
               >
                 {expert.social.linkedin.includes('wikipedia.org') ? (
                   <>
@@ -436,7 +436,7 @@ export default function IranSnapbackContent() {
 
         <footer className="not-prose mt-16 sm:mt-20 pt-8 border-t border-border/20 text-center">
           <div className="space-y-4">
-            <p className="text-sm sm:text-base text-[#a0b4c8] italic max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base text-cream-muted italic max-w-2xl mx-auto">
               {language === 'kr' 
                 ? '이 기사를 공유하십시오. 대화를 시작하십시오. 서사에 도전하십시오. 모든 것에 의문을 제기하십시오.' 
                 : 'Share this article. Start conversations. Challenge narratives. Question everything.'

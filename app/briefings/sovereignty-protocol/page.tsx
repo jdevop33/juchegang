@@ -29,23 +29,23 @@ export const metadata = {
 
 export default function SovereigntyProtocolPage() {
   return (
-    <main className="min-h-screen bg-[#0d1b2a] text-[#f0ebe3]">
+    <main className="min-h-screen bg-river-depths text-cream">
       <JucheHeader />
 
       {/* Classification Header */}
-      <section className="border-b border-[#1b4965] pt-20 sm:pt-24">
+      <section className="border-b border-river-current pt-20 sm:pt-24">
         <div className="max-w-[1200px] mx-auto px-6 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <p className="text-[#d4a74a] text-xs font-semibold tracking-[0.2em] uppercase">
+            <p className="text-sovereign-gold text-xs font-semibold tracking-[0.2em] uppercase">
               Strategic Assessment
             </p>
-            <p className="text-[#a0b4c8] text-xs tracking-widest uppercase mt-1">
+            <p className="text-cream-muted text-xs tracking-widest uppercase mt-1">
               Clearance: Level_01 // Ref: KOR-885
             </p>
           </div>
           <Link
             href="/briefings"
-            className="text-[#d4a74a] text-sm hover:underline underline-offset-4 transition-colors"
+            className="text-sovereign-gold text-sm hover:underline underline-offset-4 transition-colors"
           >
             &larr; Back to Briefings
           </Link>

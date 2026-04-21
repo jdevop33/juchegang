@@ -7,16 +7,8 @@ import { getServerLanguage, type Language } from "@/lib/i18n-server"
 import { getDictionary } from "@/lib/dictionary"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import Script from "next/script"
+import { jsonLdSafe } from "@/lib/json-ld"
 
-// JSON-LD gets streamed into <head> via dangerouslySetInnerHTML. Non-ASCII
-// chars can throw "Cannot convert argument to a ByteString" during streaming,
-// so we escape everything above U+007F to \uXXXX per the JSON spec.
-function jsonLdSafe(value: unknown): string {
-  return JSON.stringify(value).replace(
-    /[-￿]/g,
-    (c) => "\\u" + c.charCodeAt(0).toString(16).padStart(4, "0"),
-  )
-}
 
 // Performance-optimized fonts
 const sourceSans = Source_Sans_3({
@@ -113,15 +105,9 @@ export const metadata = {
       "A comprehensive guide to achieving personal excellence through discipline, courage, and unwavering commitment to your highest potential.",
     images: ["/images/heros/0sunsetpaektu3.jpg"],
   },
-  icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/faviconjuche.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon.ico", sizes: "any" },
-    ],
-    apple: [{ url: "/favicon.svg", sizes: "180x180", type: "image/svg+xml" }],
-    shortcut: "/favicon.ico",
-  },
+  // Icons are served dynamically via app/icon.tsx + app/apple-icon.tsx
+  // (tiny ImageResponse PNGs, crisp at all sizes). Next.js auto-wires them.
+  // We keep favicon.ico in /public as a legacy fallback for older crawlers.
   formatDetection: {
     email: false,
     address: false,

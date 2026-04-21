@@ -48,13 +48,13 @@ export function CorrectionsContent() {
       {/* Header */}
       <div className="max-w-[900px] mx-auto px-6 py-12">
         <div className="mb-8">
-          <p className="text-[#d4a74a] text-xs font-semibold tracking-[0.2em] uppercase mb-2">
+          <p className="text-sovereign-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2">
             Editorial Transparency
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-4">
             Corrections &amp; Updates
           </h1>
-          <p className="text-[#a0b4c8] text-lg leading-relaxed max-w-[640px]">
+          <p className="text-cream-muted text-lg leading-relaxed max-w-[640px]">
             We are not perfect and we get it wrong. This page is our public
             record of every correction, update, and clarification across all
             published reports.
@@ -62,8 +62,8 @@ export function CorrectionsContent() {
         </div>
 
         {/* Disclaimer */}
-        <div className="bg-[#142638] border-l-[3px] border-[#d4a74a] rounded-r px-6 py-5 mb-12">
-          <p className="text-[15px] text-[#a0b4c8] leading-relaxed">
+        <div className="bg-river-deep border-l-[3px] border-sovereign-gold rounded-r px-6 py-5 mb-12">
+          <p className="text-[15px] text-cream-muted leading-relaxed">
             This report archive is a living document published by 주체강. We
             research and cross-correlate publicly available sources from around
             the world and distill our best effort at objective analysis. The fog
@@ -73,7 +73,7 @@ export function CorrectionsContent() {
             Found an error?{" "}
             <Link
               href="/contact"
-              className="text-[#d4a74a] hover:underline underline-offset-4"
+              className="text-sovereign-gold hover:underline underline-offset-4"
             >
               Tell us
             </Link>
@@ -87,8 +87,8 @@ export function CorrectionsContent() {
             onClick={() => setActiveFilter("ALL")}
             className={`px-3 py-1.5 rounded text-xs font-mono tracking-wider transition-all ${
               activeFilter === "ALL"
-                ? "bg-[#f0ebe3]/10 text-[#f0ebe3] border border-[#f0ebe3]/30"
-                : "bg-[#142638] text-[#a0b4c8] border border-[#1b4965]/40 hover:border-[#a0b4c8]/40"
+                ? "bg-cream/10 text-cream border border-cream/30"
+                : "bg-river-deep text-cream-muted border border-river-current/40 hover:border-cream-muted/40"
             }`}
           >
             ALL ({corrections.length})
@@ -99,8 +99,8 @@ export function CorrectionsContent() {
               onClick={() => setActiveFilter(type)}
               className={`px-3 py-1.5 rounded text-xs font-mono tracking-wider transition-all ${
                 activeFilter === type
-                  ? "text-[#f0ebe3] border"
-                  : "bg-[#142638] border border-[#1b4965]/40 hover:border-[#a0b4c8]/40"
+                  ? "text-cream border"
+                  : "bg-river-deep border border-river-current/40 hover:border-cream-muted/40"
               }`}
               style={
                 activeFilter === type
@@ -122,7 +122,7 @@ export function CorrectionsContent() {
           {ALL_TYPES.map((type) => (
             <div
               key={type}
-              className="flex items-center gap-3 text-xs text-[#a0b4c8]"
+              className="flex items-center gap-3 text-xs text-cream-muted"
             >
               <span
                 className="w-2 h-2 rounded-full flex-shrink-0"
@@ -139,7 +139,7 @@ export function CorrectionsContent() {
         {/* Entries */}
         <div className="relative">
           {/* Vertical timeline line */}
-          <div className="absolute left-[11px] top-0 bottom-0 w-px bg-gradient-to-b from-[#d4a74a] via-[#1b4965] to-[#0d1b2a]" />
+          <div className="absolute left-[11px] top-0 bottom-0 w-px bg-gradient-to-b from-sovereign-gold via-river-current to-river-depths" />
 
           <div className="space-y-8">
             {filtered.map((entry, i) => (
@@ -161,7 +161,7 @@ export function CorrectionsContent() {
                 </div>
 
                 {/* Entry card */}
-                <div className="flex-1 bg-[#142638]/60 border border-[#1b4965]/40 rounded px-5 py-4">
+                <div className="flex-1 bg-river-deep/60 border border-river-current/40 rounded px-5 py-4">
                   {/* Header row */}
                   <div className="flex flex-wrap items-center gap-2 mb-3">
                     <span
@@ -173,16 +173,16 @@ export function CorrectionsContent() {
                     >
                       {TYPE_CODES[entry.type]}
                     </span>
-                    <span className="text-xs font-mono text-[#a0b4c8]/60">
+                    <span className="text-xs font-mono text-cream-muted/60">
                       {entry.date}
                     </span>
                     <Link
                       href={entry.reportUrl}
-                      className="text-xs text-[#d4a74a] hover:underline underline-offset-2"
+                      className="text-xs text-sovereign-gold hover:underline underline-offset-2"
                     >
                       {entry.report}
                     </Link>
-                    <span className="text-xs text-[#a0b4c8]/40">
+                    <span className="text-xs text-cream-muted/40">
                       &middot; {entry.section}
                     </span>
                   </div>
@@ -190,10 +190,10 @@ export function CorrectionsContent() {
                   {/* Diff */}
                   <div className="space-y-2 mb-3">
                     <div className="flex gap-2 text-sm">
-                      <span className="text-[#c73032] font-mono text-xs mt-0.5 flex-shrink-0">
+                      <span className="text-korean-red font-mono text-xs mt-0.5 flex-shrink-0">
                         &minus;
                       </span>
-                      <span className="text-[#a0b4c8]/70 line-through decoration-[#c73032]/40">
+                      <span className="text-cream-muted/70 line-through decoration-korean-red/40">
                         {entry.previous}
                       </span>
                     </div>
@@ -201,17 +201,17 @@ export function CorrectionsContent() {
                       <span className="text-[#2d6a4f] font-mono text-xs mt-0.5 flex-shrink-0">
                         +
                       </span>
-                      <span className="text-[#f0ebe3]">{entry.updated}</span>
+                      <span className="text-cream">{entry.updated}</span>
                     </div>
                   </div>
 
                   {/* Reason */}
-                  <p className="text-xs text-[#a0b4c8] leading-relaxed">
+                  <p className="text-xs text-cream-muted leading-relaxed">
                     {entry.reason}
                   </p>
 
                   {/* Source */}
-                  <p className="text-[10px] text-[#a0b4c8]/40 mt-2 font-mono">
+                  <p className="text-[10px] text-cream-muted/40 mt-2 font-mono">
                     Source: {entry.source}
                   </p>
                 </div>
@@ -222,7 +222,7 @@ export function CorrectionsContent() {
 
         {/* Empty state */}
         {filtered.length === 0 && (
-          <div className="text-center py-16 text-[#a0b4c8]">
+          <div className="text-center py-16 text-cream-muted">
             No {activeFilter.toLowerCase()} entries found.
           </div>
         )}

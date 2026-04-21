@@ -42,18 +42,18 @@ export function CulturalCalendar() {
 
   const getColorClass = (color: string) => {
     const colors = {
-      red: "from-[#c73032]/20 to-[#c73032]/30 border-[#c73032]/30",
-      blue: "from-[#1b4965]/30 to-[#1b4965]/40 border-[#1b4965]/50",
-      gold: "from-[#d4a74a]/20 to-[#d4a74a]/30 border-[#d4a74a]/40",
+      red: "from-korean-red/20 to-korean-red/30 border-korean-red/30",
+      blue: "from-river-current/30 to-river-current/40 border-river-current/50",
+      gold: "from-sovereign-gold/20 to-sovereign-gold/30 border-sovereign-gold/40",
     }
     return colors[color as keyof typeof colors] || colors.blue
   }
 
   return (
-    <div className="bg-gradient-to-br from-[#0d1b2a] via-[#1b4965]/20 to-[#0d1b2a] rounded-2xl p-6 border border-[#1b4965]/30">
+    <div className="bg-gradient-to-br from-river-depths via-river-current/20 to-river-depths rounded-2xl p-6 border border-river-current/30">
       <div className="flex items-center gap-3 mb-6">
-        <Calendar className="w-6 h-6 text-[#d4a74a]" />
-        <h3 className="text-xl font-bold text-[#f0ebe3]">Cultural Unity Calendar</h3>
+        <Calendar className="w-6 h-6 text-sovereign-gold" />
+        <h3 className="text-xl font-bold text-cream">Cultural Unity Calendar</h3>
       </div>
 
       <div className="space-y-3">
@@ -74,14 +74,14 @@ export function CulturalCalendar() {
               <div className="flex items-start gap-3">
                 <span className="text-2xl">{event.flag}</span>
                 <div>
-                  <h4 className="font-semibold text-[#f0ebe3]">{event.name}</h4>
-                  <p className="text-sm text-[#f0ebe3]/60">
+                  <h4 className="font-semibold text-cream">{event.name}</h4>
+                  <p className="text-sm text-cream/60">
                     {format(new Date(event.date), "MMMM d, yyyy")}
                   </p>
-                  <p className="text-xs text-[#f0ebe3]/50 mt-1">{event.country}</p>
+                  <p className="text-xs text-cream/50 mt-1">{event.country}</p>
                 </div>
               </div>
-              <Star className="w-4 h-4 text-[#d4a74a]" />
+              <Star className="w-4 h-4 text-sovereign-gold" />
             </div>
           </motion.div>
         ))}
@@ -93,11 +93,11 @@ export function CulturalCalendar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="mt-4 p-4 bg-[#1b4965]/20 rounded-lg"
+            className="mt-4 p-4 bg-river-current/20 rounded-lg"
           >
             <div className="flex items-center gap-2 mb-2">
-              <Heart className="w-4 h-4 text-[#c73032]" />
-              <p className="text-sm text-[#f0ebe3]">
+              <Heart className="w-4 h-4 text-korean-red" />
+              <p className="text-sm text-cream">
                 Let's celebrate {selectedEvent.country}'s culture together!
               </p>
             </div>
@@ -106,7 +106,7 @@ export function CulturalCalendar() {
                 e.stopPropagation()
                 setSelectedEvent(null)
               }}
-              className="text-xs text-[#f0ebe3]/60 hover:text-[#f0ebe3] transition-colors"
+              className="text-xs text-cream/60 hover:text-cream transition-colors"
             >
               Close
             </button>
@@ -114,8 +114,8 @@ export function CulturalCalendar() {
         )}
       </AnimatePresence>
 
-      <div className="mt-6 pt-4 border-t border-[#1b4965]/30">
-        <div className="flex items-center gap-2 text-xs text-[#f0ebe3]/50">
+      <div className="mt-6 pt-4 border-t border-river-current/30">
+        <div className="flex items-center gap-2 text-xs text-cream/50">
           <Globe className="w-4 h-4" />
           <span>Celebrating diversity, building unity</span>
         </div>

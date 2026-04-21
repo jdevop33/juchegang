@@ -211,7 +211,7 @@ export default function ChannelsPage() {
   return (
     <>
       <JucheHeader />
-      <main id="main-content" className="min-h-screen bg-[#0d1b2a] pt-20">
+      <main id="main-content" className="min-h-screen bg-river-depths pt-20">
         {/* Hero Section with Image */}
         <section className="relative h-[55vh] min-h-[400px] overflow-hidden">
           <div className="absolute inset-0">
@@ -224,18 +224,18 @@ export default function ChannelsPage() {
               sizes="100vw"
               quality={85}
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/60 via-[#0d1b2a]/30 to-[#0d1b2a]" />
+            <div className="absolute inset-0 bg-gradient-to-b from-river-depths/60 via-river-depths/30 to-river-depths" />
           </div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center"
           >
-            <Play className="h-16 w-16 text-[#d4a74a] mx-auto mb-6 drop-shadow-lg" />
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-[#d4a74a] drop-shadow-lg font-[family-name:var(--font-heading)]">
+            <Play className="h-16 w-16 text-sovereign-gold mx-auto mb-6 drop-shadow-lg" />
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-sovereign-gold drop-shadow-lg font-[family-name:var(--font-heading)]">
               {language === 'kr' ? '진실의 채널들' : 'Channels of Truth'}
             </h1>
-            <p className="text-xl md:text-2xl text-[#f0ebe3]/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl md:text-2xl text-cream/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
               {language === 'kr'
                 ? '서구 주류 미디어의 편견을 넘어 진실을 추구하는 독립 언론인들의 채널'
                 : 'Independent journalists and analysts seeking truth beyond Western mainstream media bias'}
@@ -253,8 +253,8 @@ export default function ChannelsPage() {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`px-6 py-3 rounded-lg font-semibold transition-all ${
                     selectedCategory === category.id
-                      ? 'bg-[#c73032] text-[#f0ebe3]'
-                      : 'bg-[#1b4965]/40 text-[#f0ebe3]/80 hover:bg-[#1b4965]/60'
+                      ? 'bg-korean-red text-cream'
+                      : 'bg-river-current/40 text-cream/80 hover:bg-river-current/60'
                   }`}
                 >
                   {category.label} ({category.count})
@@ -269,8 +269,8 @@ export default function ChannelsPage() {
           <div className="container mx-auto max-w-7xl">
             {loading ? (
               <div className="text-center py-20">
-                <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#d4a74a]"></div>
-                <p className="text-[#f0ebe3]/80 mt-4">
+                <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-sovereign-gold"></div>
+                <p className="text-cream/80 mt-4">
                   {language === 'kr' ? '채널 정보를 불러오는 중...' : 'Loading channels...'}
                 </p>
               </div>
@@ -284,23 +284,23 @@ export default function ChannelsPage() {
                     transition={{ delay: index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <Card className="bg-[#1b4965]/20 border-[#1b4965] hover:border-[#d4a74a]/50 transition-all">
+                    <Card className="bg-river-current/20 border-river-current hover:border-sovereign-gold/50 transition-all">
                       <CardHeader>
                         <div className="flex items-start justify-between">
                           <div className="flex-1">
-                            <CardTitle className="text-2xl text-[#f0ebe3] mb-2 flex items-center gap-3">
-                              <Globe className="h-8 w-8 text-[#d4a74a]" />
+                            <CardTitle className="text-2xl text-cream mb-2 flex items-center gap-3">
+                              <Globe className="h-8 w-8 text-sovereign-gold" />
                               {channel.title}
-                              <span className="text-sm text-[#f0ebe3]/60 font-normal">
+                              <span className="text-sm text-cream/60 font-normal">
                                 {channel.username}
                               </span>
                             </CardTitle>
-                            <p className="text-[#f0ebe3]/80 mb-4">{channel.description}</p>
+                            <p className="text-cream/80 mb-4">{channel.description}</p>
                             <div className="flex flex-wrap gap-3">
-                              <span className="px-3 py-1 bg-[#c73032]/30 text-[#f0ebe3] rounded-full text-sm">
+                              <span className="px-3 py-1 bg-korean-red/30 text-cream rounded-full text-sm">
                                 {channel.focus}
                               </span>
-                              <span className="px-3 py-1 bg-[#1b4965]/50 text-[#f0ebe3]/90 rounded-full text-sm capitalize">
+                              <span className="px-3 py-1 bg-river-current/50 text-cream/90 rounded-full text-sm capitalize">
                                 {channel.category}
                               </span>
                             </div>
@@ -309,7 +309,7 @@ export default function ChannelsPage() {
                             href={`https://youtube.com/${channel.username}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 bg-[#c73032] hover:bg-[#c73032]/80 text-[#f0ebe3] rounded-lg transition-colors flex items-center gap-2"
+                            className="px-4 py-2 bg-korean-red hover:bg-korean-red/80 text-cream rounded-lg transition-colors flex items-center gap-2"
                           >
                             <ExternalLink className="h-4 w-4" />
                             {language === 'kr' ? '채널 방문' : 'Visit Channel'}
@@ -325,10 +325,10 @@ export default function ChannelsPage() {
                                 href={video.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group block bg-[#1b4965]/30 rounded-lg overflow-hidden hover:bg-[#1b4965]/50 transition-all"
+                                className="group block bg-river-current/30 rounded-lg overflow-hidden hover:bg-river-current/50 transition-all"
                               >
                                 <div className="relative">
-                                  <div className="w-full h-48 bg-[#1b4965]/50 rounded-t-lg overflow-hidden">
+                                  <div className="w-full h-48 bg-river-current/50 rounded-t-lg overflow-hidden">
                                     {video.thumbnail ? (
                                       <img
                                         src={video.thumbnail}
@@ -337,24 +337,24 @@ export default function ChannelsPage() {
                                       />
                                     ) : (
                                       <div className="w-full h-full flex items-center justify-center">
-                                        <Play className="h-12 w-12 text-[#f0ebe3]/50" />
+                                        <Play className="h-12 w-12 text-cream/50" />
                                       </div>
                                     )}
                                     <div className="absolute inset-0 bg-river-depths/20 group-hover:bg-river-depths/10 transition-all flex items-center justify-center">
-                                      <Play className="h-12 w-12 text-[#f0ebe3]/80 group-hover:text-[#d4a74a] transition-colors" />
+                                      <Play className="h-12 w-12 text-cream/80 group-hover:text-sovereign-gold transition-colors" />
                                     </div>
                                   </div>
                                   {video.duration && (
-                                    <div className="absolute bottom-2 right-2 bg-river-depths/80 text-[#f0ebe3] text-xs px-2 py-1 rounded">
+                                    <div className="absolute bottom-2 right-2 bg-river-depths/80 text-cream text-xs px-2 py-1 rounded">
                                       {video.duration}
                                     </div>
                                   )}
                                 </div>
                                 <div className="p-4">
-                                  <h4 className="text-[#f0ebe3] font-semibold mb-2 line-clamp-2 group-hover:text-[#d4a74a] transition-colors">
+                                  <h4 className="text-cream font-semibold mb-2 line-clamp-2 group-hover:text-sovereign-gold transition-colors">
                                     {video.title}
                                   </h4>
-                                  <div className="flex items-center gap-4 text-sm text-[#f0ebe3]/60">
+                                  <div className="flex items-center gap-4 text-sm text-cream/60">
                                     <div className="flex items-center gap-1">
                                       <Eye className="h-4 w-4" />
                                       {video.viewCount ? formatViewCount(video.viewCount) : '—'}
@@ -369,7 +369,7 @@ export default function ChannelsPage() {
                             ))}
                           </div>
                         ) : (
-                          <div className="text-center py-8 text-[#f0ebe3]/60">
+                          <div className="text-center py-8 text-cream/60">
                             {language === 'kr'
                               ? '최근 영상을 불러올 수 없습니다. 채널을 직접 방문해보세요.'
                               : 'Unable to load recent videos. Please visit the channel directly.'}
@@ -392,12 +392,12 @@ export default function ChannelsPage() {
             viewport={{ once: true }}
             className="container mx-auto max-w-4xl text-center"
           >
-            <div className="bg-[#1b4965]/30 rounded-2xl p-8 border border-[#1b4965]">
-              <TrendingUp className="h-12 w-12 text-[#d4a74a] mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-[#f0ebe3] mb-4">
+            <div className="bg-river-current/30 rounded-2xl p-8 border border-river-current">
+              <TrendingUp className="h-12 w-12 text-sovereign-gold mx-auto mb-4" />
+              <h2 className="text-2xl font-bold text-cream mb-4">
                 {language === 'kr' ? '실시간 업데이트' : 'Real-time Updates'}
               </h2>
-              <p className="text-[#f0ebe3]/80 mb-6">
+              <p className="text-cream/80 mb-6">
                 {language === 'kr'
                   ? '이 페이지는 YouTube Data API를 통해 자동으로 업데이트됩니다. 새로운 영상이 업로드되면 실시간으로 반영됩니다.'
                   : 'This page automatically updates via YouTube Data API. New videos appear in real-time as they\'re uploaded.'}
@@ -405,13 +405,13 @@ export default function ChannelsPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/truth-project"
-                  className="px-6 py-3 bg-[#c73032] hover:bg-[#c73032]/80 text-[#f0ebe3] font-semibold rounded-lg transition-all"
+                  className="px-6 py-3 bg-korean-red hover:bg-korean-red/80 text-cream font-semibold rounded-lg transition-all"
                 >
                   {language === 'kr' ? '진실 프로젝트' : 'Truth Project'}
                 </Link>
                 <Link
                   href="/cultural-exchange"
-                  className="px-6 py-3 border-2 border-[#d4a74a] text-[#d4a74a] hover:bg-[#d4a74a] hover:text-[#0d1b2a] font-semibold rounded-lg transition-all"
+                  className="px-6 py-3 border-2 border-sovereign-gold text-sovereign-gold hover:bg-sovereign-gold hover:text-river-depths font-semibold rounded-lg transition-all"
                 >
                   {language === 'kr' ? '문화 교류' : 'Cultural Exchange'}
                 </Link>

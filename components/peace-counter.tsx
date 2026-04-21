@@ -6,7 +6,7 @@ import { motion, useReducedMotion } from "framer-motion"
 export function PeaceCounter() {
   const prefersReducedMotion = useReducedMotion()
   return (
-    <div className="bg-gradient-to-b from-[#0d1b2a] via-river-depths to-river-depths py-16 sm:py-20 border-b border-sovereign-gold/20 overflow-hidden">
+    <div className="bg-gradient-to-b from-river-depths via-river-depths to-river-depths py-16 sm:py-20 border-b border-sovereign-gold/20 overflow-hidden">
       <div className="container mx-auto px-4">
 
         {/* Title */}

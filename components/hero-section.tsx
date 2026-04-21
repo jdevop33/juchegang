@@ -18,7 +18,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-[#0d1b2a]">
+    <section className="relative w-full h-screen overflow-hidden bg-river-depths">
       {/* Breath One — Mount Paektu Heaven Lake (Cheonji/천지) */}
       <div className="absolute inset-0">
         <Image
@@ -42,18 +42,18 @@ export function HeroSection() {
           }`}
         >
           <blockquote className="text-center max-w-3xl">
-            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6 text-[#d4a74a] font-[family-name:var(--font-korean)] drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
+            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6 text-sovereign-gold font-[family-name:var(--font-korean)] drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
               필사즉생 필생즉사
             </p>
-            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8 text-[#f0ebe3] font-[family-name:var(--font-heading)] drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)]">
+            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8 text-cream font-[family-name:var(--font-heading)] drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)]">
               &ldquo;If you seek death, you will live.<br />
               If you seek life, you will die.&rdquo;
             </p>
             <footer>
-              <cite className="not-italic text-sm sm:text-base tracking-widest uppercase text-[#d4a74a] drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+              <cite className="not-italic text-sm sm:text-base tracking-widest uppercase text-sovereign-gold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
                 — Admiral Yi Sun-shin · 이순신
               </cite>
-              <p className="text-xs sm:text-sm mt-2 opacity-70 text-[#f0ebe3]">
+              <p className="text-xs sm:text-sm mt-2 opacity-70 text-cream">
                 Battle of Myeongnyang, 1597 · 난중일기
               </p>
             </footer>
@@ -67,13 +67,13 @@ export function HeroSection() {
           }`}
         >
           <div className="text-center">
-            <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-[#d4a74a] font-[family-name:var(--font-korean)]">
+            <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-sovereign-gold font-[family-name:var(--font-korean)]">
               주체강
             </p>
-            <p className="text-xl sm:text-2xl md:text-3xl mb-6 text-[#f0ebe3] font-[family-name:var(--font-heading)]">
+            <p className="text-xl sm:text-2xl md:text-3xl mb-6 text-cream font-[family-name:var(--font-heading)]">
               Subjective River
             </p>
-            <p className="text-base sm:text-lg tracking-[0.3em] uppercase text-[#d4a74a]">
+            <p className="text-base sm:text-lg tracking-[0.3em] uppercase text-sovereign-gold">
               Navigate the Current
             </p>
           </div>
@@ -86,10 +86,10 @@ export function HeroSection() {
           }`}
         >
           <div className="text-center">
-            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-relaxed mb-4 text-[#d4a74a] font-[family-name:var(--font-korean)]">
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-relaxed mb-4 text-sovereign-gold font-[family-name:var(--font-korean)]">
               한 호랑이. 한 강. 한 조선.
             </p>
-            <p className="text-lg sm:text-xl md:text-2xl text-[#f0ebe3] font-[family-name:var(--font-heading)]">
+            <p className="text-lg sm:text-xl md:text-2xl text-cream font-[family-name:var(--font-heading)]">
               One Tiger. One River. One Korea.
             </p>
           </div>
@@ -106,7 +106,7 @@ export function HeroSection() {
       />
 
       {/* Bottom fade to content */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0d1b2a] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-river-depths to-transparent" />
     </section>
   )
 }

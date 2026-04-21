@@ -150,7 +150,6 @@
   
   /* Enhanced cross-browser compatibility and responsive base styles */
   html {
-    scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-size-adjust: 100%;
@@ -159,6 +158,13 @@
     -moz-osx-font-smoothing: grayscale;
     /* Modern tabular + ligature rendering for premium feel */
     font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  }
+
+  /* Smooth scroll — opt-out for users who asked the OS for reduced motion */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 
   body {
@@ -215,6 +221,127 @@
   /* Tabular numerals wherever numbers appear (dashboards, counters, tables) */
   .tabular-nums, table, time, [data-numeric] {
     font-variant-numeric: tabular-nums;
+  }
+
+  /* Typography polish — premium prose feel without touching content */
+
+  /* Inline links inside prose get a tasteful underline that doesn't cut descenders */
+  .prose a,
+  article a:not(.not-prose *):not([class*="bg-"]):not([class*="rounded"]) {
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: hsl(var(--accent) / 0.4);
+    transition: text-decoration-color 0.2s ease, color 0.2s ease;
+  }
+  .prose a:hover,
+  article a:not(.not-prose *):not([class*="bg-"]):not([class*="rounded"]):hover {
+    text-decoration-color: hsl(var(--accent));
+  }
+
+  /* <hr> as a considered divider, not a default browser line */
+  hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--accent) / 0.5) 50%,
+      transparent 100%
+    );
+    margin: 2.5rem 0;
+  }
+
+  /* Inline <code> — mono chip tinted to brand, readable on dark */
+  :not(pre) > code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    padding: 0.15em 0.4em;
+    background: hsl(var(--muted) / 0.5);
+    color: hsl(var(--accent));
+    border: 1px solid hsl(var(--border) / 0.6);
+    border-radius: 0.25rem;
+    font-variant-ligatures: none;
+  }
+
+  /* <mark> — gold highlight on dark */
+  mark {
+    background: hsl(var(--accent) / 0.25);
+    color: inherit;
+    padding: 0 0.15em;
+    border-radius: 2px;
+  }
+
+  /* <kbd> — looks like a keyboard cap */
+  kbd {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.15em 0.45em;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-bottom-width: 2px;
+    border-radius: 0.3rem;
+    color: hsl(var(--foreground));
+  }
+
+  /* Quieter horizontal scroll snap for carousels */
+  [data-scroll-snap] {
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1rem;
+  }
+  [data-scroll-snap] > * {
+    scroll-snap-align: start;
+  }
+
+  /* Kill Chrome's aggressive yellow input-autofill background —
+     it shatters dark-mode branding within 100ms of page load. */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-text-fill-color: hsl(var(--foreground));
+    -webkit-box-shadow: 0 0 0px 1000px hsl(var(--input)) inset;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: hsl(var(--foreground));
+  }
+
+  /* Tap highlight on iOS Safari — use a brand tint, not the default gray */
+  a, button, [role="button"], input, textarea, select, summary {
+    -webkit-tap-highlight-color: hsl(var(--accent) / 0.2);
+  }
+
+  /* Search input: hide the default X-clear button in Edge/IE */
+  input[type="search"]::-ms-clear,
+  input[type="search"]::-ms-reveal {
+    display: none;
+  }
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+
+  /* Improved focus-visible: tighter offset so it doesn't float detached */
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px hsl(var(--ring) / 0.25);
+  }
+
+  /* When the page is being restored from bfcache, flash-reset animations */
+  @media (prefers-reduced-motion: no-preference) {
+    html.page-restored * {
+      animation: none !important;
+    }
+  }
+
+  /* Prefer-contrast adjustments: thicker borders, brighter text */
+  @media (prefers-contrast: more) {
+    :root {
+      --border: 40 60% 56%;
+      --muted-foreground: 37 35% 92%;
+    }
   }
   
   /* Better image rendering across browsers */

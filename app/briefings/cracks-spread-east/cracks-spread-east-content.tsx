@@ -9,50 +9,50 @@ export default function CracksSpreadEastContent() {
 
         {/* Hero Section */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-[#d4a74a]/10 text-[#d4a74a] rounded-full text-sm font-medium tracking-widest uppercase">
+          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             Classified to Declassified &bull; Part II
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#f0ebe3]">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-cream">
             The Cracks Spread East
           </h1>
-          <p className="text-xl md:text-2xl text-[#a0b4c8] max-w-3xl mx-auto mb-4">
+          <p className="text-xl md:text-2xl text-cream-muted max-w-3xl mx-auto mb-4">
             How the CIA Watched the Baltic Republics and East Germany Begin to Slip Moscow&rsquo;s Grip
           </p>
-          <p className="text-base text-[#a0b4c8] max-w-2xl mx-auto">
+          <p className="text-base text-cream-muted max-w-2xl mx-auto">
             A Narrative Analysis of Three Declassified Top Secret Intelligence Briefs, June&ndash;July 1989
           </p>
-          <p className="text-sm text-[#a0b4c8] mt-2">
+          <p className="text-sm text-cream-muted mt-2">
             Declassified: October 29, 2019
           </p>
         </div>
 
         {/* Series Navigation */}
-        <div className="not-prose my-8 p-4 bg-[#1b4965]/10 border border-[#1b4965]/30 rounded-lg text-center">
-          <p className="text-sm text-[#a0b4c8] mb-1">This is Part II of the <strong className="text-[#d4a74a]">Classified to Declassified</strong> series.</p>
-          <Link href="/briefings/five-months-broke-bloc" className="text-[#d4a74a] hover:text-[#d4a74a]/80 underline underline-offset-4 font-medium">
+        <div className="not-prose my-8 p-4 bg-river-current/10 border border-river-current/30 rounded-lg text-center">
+          <p className="text-sm text-cream-muted mb-1">This is Part II of the <strong className="text-sovereign-gold">Classified to Declassified</strong> series.</p>
+          <Link href="/briefings/five-months-broke-bloc" className="text-sovereign-gold hover:text-sovereign-gold/80 underline underline-offset-4 font-medium">
             &larr; Read Part I: The Five Months That Broke the Bloc
           </Link>
         </div>
 
         {/* Document Reference Table */}
         <div className="not-prose my-10">
-          <h3 className="text-lg font-bold mb-4 text-[#d4a74a] tracking-wide uppercase">Source Documents</h3>
+          <h3 className="text-lg font-bold mb-4 text-sovereign-gold tracking-wide uppercase">Source Documents</h3>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm border border-[#d4a74a]/20">
+            <table className="w-full text-sm border border-sovereign-gold/20">
               <thead>
-                <tr className="bg-[#d4a74a]/10">
-                  <th className="text-left p-3 border-b border-[#d4a74a]/20 text-[#d4a74a]">Reference</th>
-                  <th className="text-left p-3 border-b border-[#d4a74a]/20 text-[#d4a74a]">Date</th>
-                  <th className="text-left p-3 border-b border-[#d4a74a]/20 text-[#d4a74a]">Title</th>
+                <tr className="bg-sovereign-gold/10">
+                  <th className="text-left p-3 border-b border-sovereign-gold/20 text-sovereign-gold">Reference</th>
+                  <th className="text-left p-3 border-b border-sovereign-gold/20 text-sovereign-gold">Date</th>
+                  <th className="text-left p-3 border-b border-sovereign-gold/20 text-sovereign-gold">Title</th>
                 </tr>
               </thead>
-              <tbody className="text-[#f0ebe3]/80">
-                <tr className="border-b border-[#d4a74a]/10">
+              <tbody className="text-cream/80">
+                <tr className="border-b border-sovereign-gold/10">
                   <td className="p-3 font-mono text-xs">TCS 2847/89</td>
                   <td className="p-3">Jun 26, 1989</td>
                   <td className="p-3">East Germany: Seeking Fresh Policy Options</td>
                 </tr>
-                <tr className="border-b border-[#d4a74a]/10">
+                <tr className="border-b border-sovereign-gold/10">
                   <td className="p-3 font-mono text-xs">TCS 2874/89</td>
                   <td className="p-3">Jul 28, 1989</td>
                   <td className="p-3">Baltic Republics Move Toward Economic Autonomy</td>
@@ -67,7 +67,7 @@ export default function CracksSpreadEastContent() {
           </div>
         </div>
 
-        <div className="text-center text-[#d4a74a] text-2xl my-8">&#9762;</div>
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
 
         {/* Introduction */}
         <section className="mb-12">
@@ -78,18 +78,18 @@ export default function CracksSpreadEastContent() {
             Three Top Secret intelligence briefs produced between late June and late July 1989 capture this unraveling from two distinct theaters&mdash;East Germany and the Baltic republics. Read together, they reveal an intelligence community grappling with the speed of decomposition, the paralysis of incumbent regimes, and the single question that would determine whether the Soviet order would survive or shatter: <em>Would Moscow use force?</em>
           </p>
           <p className="text-lg leading-relaxed mb-6">
-            Where <Link href="/briefings/five-months-broke-bloc" className="text-[#d4a74a] hover:text-[#d4a74a]/80 underline underline-offset-4">Part I</Link> traced the arc of Poland and Hungary&rsquo;s defection from the socialist bloc, this installment follows the cracks as they spread east and north&mdash;into the heart of the German question and the restive Soviet periphery itself.
+            Where <Link href="/briefings/five-months-broke-bloc" className="text-sovereign-gold hover:text-sovereign-gold/80 underline underline-offset-4">Part I</Link> traced the arc of Poland and Hungary&rsquo;s defection from the socialist bloc, this installment follows the cracks as they spread east and north&mdash;into the heart of the German question and the restive Soviet periphery itself.
           </p>
         </section>
 
-        <div className="text-center text-[#d4a74a] text-2xl my-8">&#9762;</div>
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
 
         {/* Document 1: East Germany */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-[#f0ebe3]">
+          <h2 className="text-3xl font-bold mb-2 text-cream">
             Document One: East Germany Seeks Fresh Options
           </h2>
-          <p className="text-sm text-[#a0b4c8] mb-6 font-mono">
+          <p className="text-sm text-cream-muted mb-6 font-mono">
             TCS 2847/89 &bull; June 26, 1989 &bull; TOP SECRET
           </p>
 
@@ -100,8 +100,8 @@ export default function CracksSpreadEastContent() {
             But behind closed doors, the fiction was crumbling. The CIA&rsquo;s June 26 brief, &ldquo;East Germany: Seeking Fresh Policy Options,&rdquo; reveals that key Politburo members had begun an extraordinary maneuver: <strong>bypassing the party&rsquo;s own ideological think tanks to commission reform proposals from Humboldt University</strong>. This was not reform from the top. This was furtive, almost conspiratorial probing by party elites who understood the trajectory but lacked the power&mdash;or the courage&mdash;to alter it openly.
           </p>
 
-          <div className="not-prose my-8 p-6 bg-[#d4a74a]/5 border-l-4 border-[#d4a74a] rounded-r-lg">
-            <p className="text-base leading-relaxed text-[#f0ebe3]/90">
+          <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
+            <p className="text-base leading-relaxed text-cream/90">
               The significance of this move cannot be overstated. In a Leninist party-state, the ideological apparatus exists precisely to generate policy guidance that conforms to the party line. To go outside that apparatus&mdash;to an academic institution with no formal role in policy formation&mdash;was an admission that the official channels were intellectually bankrupt. The reformers within the SED had concluded that the party could not think its way out of the crisis using the party&rsquo;s own tools.
             </p>
           </div>
@@ -117,14 +117,14 @@ export default function CracksSpreadEastContent() {
           </p>
         </section>
 
-        <div className="text-center text-[#d4a74a] text-2xl my-8">&#9762;</div>
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
 
         {/* Document 2: Baltic Economic Autonomy */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-[#f0ebe3]">
+          <h2 className="text-3xl font-bold mb-2 text-cream">
             Document Two: The Baltic Republics Move Toward Economic Autonomy
           </h2>
-          <p className="text-sm text-[#a0b4c8] mb-6 font-mono">
+          <p className="text-sm text-cream-muted mb-6 font-mono">
             TCS 2874/89 &bull; July 28, 1989 &bull; TOP SECRET
           </p>
 
@@ -135,8 +135,8 @@ export default function CracksSpreadEastContent() {
             The Supreme Soviet had given Lithuania, Latvia, and Estonia the green light for economic self-financing&mdash;and critically, it had done so <strong>a full year ahead of the original schedule</strong>. This acceleration was not a gift. It was a concession extracted by Baltic political pressure, and the CIA recognized its significance immediately.
           </p>
 
-          <div className="not-prose my-8 p-6 bg-[#d4a74a]/5 border-l-4 border-[#d4a74a] rounded-r-lg">
-            <p className="text-base leading-relaxed text-[#f0ebe3]/90">
+          <div className="not-prose my-8 p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
+            <p className="text-base leading-relaxed text-cream/90">
               Economic autonomy, in the context of a command economy, is not merely an administrative adjustment. It is the severing of the central planning mechanism&rsquo;s reach into a constituent territory. Once a republic controls its own revenue, its own trade relationships, its own budgetary priorities, the political question&mdash;&ldquo;why do we need Moscow?&rdquo;&mdash;becomes not theoretical but operational. Every factory manager, every municipal budget officer, every trade negotiator begins to orient toward Vilnius, Riga, and Tallinn rather than Moscow.
             </p>
           </div>
@@ -152,14 +152,14 @@ export default function CracksSpreadEastContent() {
           </p>
         </section>
 
-        <div className="text-center text-[#d4a74a] text-2xl my-8">&#9762;</div>
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
 
         {/* Document 3: Baltic Nationalists Press Ahead */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-2 text-[#f0ebe3]">
+          <h2 className="text-3xl font-bold mb-2 text-cream">
             Document Three: Baltic Nationalists Press Ahead
           </h2>
-          <p className="text-sm text-[#a0b4c8] mb-6 font-mono">
+          <p className="text-sm text-cream-muted mb-6 font-mono">
             TCS 2876/89 &bull; July 31, 1989 &bull; TOP SECRET &bull; Special Analysis
           </p>
 
@@ -170,11 +170,11 @@ export default function CracksSpreadEastContent() {
             The headline finding: <strong>the Lithuanian Communist Party had voted to sever its organizational ties with the Communist Party of the Soviet Union</strong>. This was not a declaration of independence&mdash;not yet. But in the grammar of Leninist politics, it was something almost as radical. The CPSU&rsquo;s organizational unity was the structural backbone of the Soviet state. Every republic&rsquo;s Communist Party was formally subordinate to Moscow, bound by &ldquo;democratic centralism&rdquo;&mdash;the principle that lower party organs must obey higher ones without question. For a republic&rsquo;s party to declare organizational autonomy was to deny the foundational logic of the Soviet political system.
           </p>
 
-          <div className="not-prose my-8 p-6 bg-[#c73032]/10 border-l-4 border-[#c73032] rounded-r-lg">
-            <p className="text-base leading-relaxed text-[#f0ebe3]/90 italic">
+          <div className="not-prose my-8 p-6 bg-korean-red/10 border-l-4 border-korean-red rounded-r-lg">
+            <p className="text-base leading-relaxed text-cream/90 italic">
               &ldquo;If Moscow would not use force against the Baltics, the entire coercive foundation of the Soviet empire was hollow.&rdquo;
             </p>
-            <p className="text-sm text-[#a0b4c8] mt-2">&mdash; Key analytical finding, TCS 2876/89</p>
+            <p className="text-sm text-cream-muted mt-2">&mdash; Key analytical finding, TCS 2876/89</p>
           </div>
 
           <p className="text-lg leading-relaxed mb-6">
@@ -194,54 +194,54 @@ export default function CracksSpreadEastContent() {
           </p>
         </section>
 
-        <div className="text-center text-[#d4a74a] text-2xl my-8">&#9762;</div>
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
 
         {/* Four Lessons */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-[#f0ebe3]">
+          <h2 className="text-3xl font-bold mb-6 text-cream">
             Four Lessons from the Cracks
           </h2>
 
           <div className="not-prose my-8 space-y-6">
             {/* Lesson 1 */}
-            <div className="p-6 bg-[#d4a74a]/5 border-l-4 border-[#d4a74a] rounded-r-lg">
-              <h4 className="font-bold text-[#d4a74a] mb-3 text-lg">Lesson 1: Empires Rarely Collapse at One Point of Failure</h4>
-              <p className="text-base leading-relaxed text-[#f0ebe3]/90">
+            <div className="p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
+              <h4 className="font-bold text-sovereign-gold mb-3 text-lg">Lesson 1: Empires Rarely Collapse at One Point of Failure</h4>
+              <p className="text-base leading-relaxed text-cream/90">
                 The three documents analyzed here describe events unfolding simultaneously in East Germany, Lithuania, Latvia, and Estonia. Add the Polish and Hungarian developments covered in Part I, and the picture that emerges is not a single crisis but an <strong>ecosystem of crises</strong>&mdash;each feeding the others, each making the next one harder to contain. East German citizens watched the Baltics. Baltic activists cited Polish precedents. Hungarian border guards opened the gates that drained the GDR of its population. No single event was decisive because the system was failing at every joint simultaneously.
               </p>
             </div>
 
             {/* Lesson 2 */}
-            <div className="p-6 bg-[#d4a74a]/5 border-l-4 border-[#d4a74a] rounded-r-lg">
-              <h4 className="font-bold text-[#d4a74a] mb-3 text-lg">Lesson 2: Reform Rhetoric Creates Irreversible Expectations</h4>
-              <p className="text-base leading-relaxed text-[#f0ebe3]/90">
+            <div className="p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
+              <h4 className="font-bold text-sovereign-gold mb-3 text-lg">Lesson 2: Reform Rhetoric Creates Irreversible Expectations</h4>
+              <p className="text-base leading-relaxed text-cream/90">
                 Gorbachev&rsquo;s language of perestroika and glasnost was designed to modernize the Soviet system, not to dismantle it. But language, once released into a political ecosystem, cannot be recalled. The Baltic nationalists used Moscow&rsquo;s own reform vocabulary to justify their demands. The Lithuanian Communist Party cited democratic centralism&rsquo;s own logic to argue for autonomy. <strong>The tools of reform became the instruments of dissolution</strong>, wielded most effectively not by dissidents but by party members who had learned the grammar of power from the inside.
               </p>
             </div>
 
             {/* Lesson 3 */}
-            <div className="p-6 bg-[#d4a74a]/5 border-l-4 border-[#d4a74a] rounded-r-lg">
-              <h4 className="font-bold text-[#d4a74a] mb-3 text-lg">Lesson 3: The Force Question Is the Only Question That Matters</h4>
-              <p className="text-base leading-relaxed text-[#f0ebe3]/90">
+            <div className="p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
+              <h4 className="font-bold text-sovereign-gold mb-3 text-lg">Lesson 3: The Force Question Is the Only Question That Matters</h4>
+              <p className="text-base leading-relaxed text-cream/90">
                 Every political arrangement rests ultimately on the question of what happens when someone says no. The Soviet empire&rsquo;s answer had always been clear: Budapest 1956, Prague 1968, the implicit threat that hung over every Warsaw Pact capital. When Gorbachev removed that answer&mdash;not dramatically, not with a speech, but through a gradual accumulation of signals and silences&mdash;he did not merely reform the empire. <strong>He abolished the mechanism that held it together.</strong> The CIA&rsquo;s analysts grasped this in real time: without force, there was no empire. There was only geography and habit, and both were proving insufficient.
               </p>
             </div>
 
             {/* Lesson 4 */}
-            <div className="p-6 bg-[#d4a74a]/5 border-l-4 border-[#d4a74a] rounded-r-lg">
-              <h4 className="font-bold text-[#d4a74a] mb-3 text-lg">Lesson 4: The Ethnic Dimension Is Always More Complex Than the Political One</h4>
-              <p className="text-base leading-relaxed text-[#f0ebe3]/90">
+            <div className="p-6 bg-sovereign-gold/5 border-l-4 border-sovereign-gold rounded-r-lg">
+              <h4 className="font-bold text-sovereign-gold mb-3 text-lg">Lesson 4: The Ethnic Dimension Is Always More Complex Than the Political One</h4>
+              <p className="text-base leading-relaxed text-cream/90">
                 The CIA briefs on the Baltics are notable for their attention to the Russian minority question&mdash;an issue that most Western commentary at the time overlooked in its enthusiasm for Baltic independence. The analysts understood that decades of Soviet demographic engineering had created populations within populations, workers within workers&rsquo; states who would find themselves foreigners in their own homes if the political map was redrawn. <strong>This was not a footnote. It was a prediction.</strong> The status of Russian-speaking minorities in the Baltic states remains one of the most sensitive issues in European security thirty-five years later.
               </p>
             </div>
           </div>
         </section>
 
-        <div className="text-center text-[#d4a74a] text-2xl my-8">&#9762;</div>
+        <div className="text-center text-sovereign-gold text-2xl my-8">&#9762;</div>
 
         {/* Conclusion */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-[#f0ebe3]">
+          <h2 className="text-3xl font-bold mb-6 text-cream">
             Reading the Cracks
           </h2>
           <p className="text-lg leading-relaxed mb-6">
@@ -259,10 +259,10 @@ export default function CracksSpreadEastContent() {
         </section>
 
         {/* Series Navigation Footer */}
-        <div className="not-prose my-10 p-6 bg-[#1b4965]/10 border border-[#1b4965]/30 rounded-lg">
-          <h3 className="text-lg font-bold mb-4 text-[#d4a74a] tracking-wide uppercase text-center">Classified to Declassified Series</h3>
+        <div className="not-prose my-10 p-6 bg-river-current/10 border border-river-current/30 rounded-lg">
+          <h3 className="text-lg font-bold mb-4 text-sovereign-gold tracking-wide uppercase text-center">Classified to Declassified Series</h3>
           <div className="flex flex-col sm:flex-row justify-center gap-4 text-center">
-            <Link href="/briefings/five-months-broke-bloc" className="text-[#d4a74a] hover:text-[#d4a74a]/80 underline underline-offset-4 font-medium">
+            <Link href="/briefings/five-months-broke-bloc" className="text-sovereign-gold hover:text-sovereign-gold/80 underline underline-offset-4 font-medium">
               &larr; Part I: The Five Months That Broke the Bloc
             </Link>
           </div>

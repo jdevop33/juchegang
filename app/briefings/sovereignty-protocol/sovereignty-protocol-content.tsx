@@ -102,31 +102,31 @@ export function SovereigntyProtocolContent() {
   return (
     <article className="max-w-[1200px] mx-auto py-10 sm:py-16 px-4 sm:px-6 lg:px-8">
       {/* Header */}
-      <header className="mb-10 sm:mb-12 border-b border-[#1b4965] pb-8 sm:pb-10">
+      <header className="mb-10 sm:mb-12 border-b border-river-current pb-8 sm:pb-10">
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 sm:mb-8 gap-4">
           <div className="flex items-center space-x-3">
-            <span className="inline-block w-2 h-2 bg-[#d4a74a] rounded-full animate-pulse" />
-            <span className="font-[family-name:var(--font-mono)] text-xs font-bold tracking-[0.2em] text-[#d4a74a] uppercase">
+            <span className="inline-block w-2 h-2 bg-sovereign-gold rounded-full animate-pulse" />
+            <span className="font-[family-name:var(--font-mono)] text-xs font-bold tracking-[0.2em] text-sovereign-gold uppercase">
               Strategic Assessment
             </span>
           </div>
-          <div className="font-[family-name:var(--font-mono)] text-[10px] sm:text-xs text-[#a0b4c8]/60 tracking-wider flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
+          <div className="font-[family-name:var(--font-mono)] text-[10px] sm:text-xs text-cream-muted/60 tracking-wider flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
             <span>CLEARANCE: LEVEL_01</span>
             <span>REF: KOR-885 // JESSE JAMES</span>
           </div>
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#f0ebe3] mb-4 sm:mb-6 leading-tight font-[family-name:var(--font-heading)]">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-cream mb-4 sm:mb-6 leading-tight font-[family-name:var(--font-heading)]">
           The Sovereignty Protocol
         </h1>
-        <p className="text-xl sm:text-2xl text-[#d4a74a] font-[family-name:var(--font-heading)] italic tracking-wide">
+        <p className="text-xl sm:text-2xl text-sovereign-gold font-[family-name:var(--font-heading)] italic tracking-wide">
           Rented umbrellas, magazine maps, and the inheritance of Myeongnyang.
         </p>
       </header>
 
       {/* Visual Anchor 1: Heaven Lake / Mt Paektu */}
-      <div className="mb-12 sm:mb-14 relative border border-[#1b4965] rounded-sm overflow-hidden bg-[#0d1b2a] h-64 sm:h-[300px] md:h-[400px] group">
-        <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-10 bg-[#0d1b2a]/80 px-2 sm:px-3 py-1 border border-[#1b4965]">
-          <span className="font-[family-name:var(--font-mono)] text-[8px] sm:text-[10px] text-[#d4a74a] uppercase tracking-widest">
+      <div className="mb-12 sm:mb-14 relative border border-river-current rounded-sm overflow-hidden bg-river-depths h-64 sm:h-[300px] md:h-[400px] group">
+        <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-10 bg-river-depths/80 px-2 sm:px-3 py-1 border border-river-current">
+          <span className="font-[family-name:var(--font-mono)] text-[8px] sm:text-[10px] text-sovereign-gold uppercase tracking-widest">
             GEO_REF // PAEKTU_CHONJI // SHARED_ORIGIN
           </span>
         </div>
@@ -150,7 +150,7 @@ export function SovereigntyProtocolContent() {
       </div>
 
       {/* The Narrative Hook */}
-      <section className="mb-16 sm:mb-20 space-y-6 sm:space-y-8 text-[#a0b4c8] max-w-4xl mx-auto text-base sm:text-lg font-[family-name:var(--font-body)]">
+      <section className="mb-16 sm:mb-20 space-y-6 sm:space-y-8 text-cream-muted max-w-4xl mx-auto text-base sm:text-lg font-[family-name:var(--font-body)]">
         <p>
           In August 1945, two junior American military officers named Dean Rusk
           and Charles Bonesteel were given thirty minutes to figure out what to
@@ -206,7 +206,7 @@ export function SovereigntyProtocolContent() {
 
         <p>And then, look North.</p>
 
-        <p className="text-xl sm:text-2xl text-[#f0ebe3] font-semibold leading-snug border-l-4 border-[#d4a74a] pl-4 sm:pl-6 py-2 my-6 sm:my-8 font-[family-name:var(--font-heading)]">
+        <p className="text-xl sm:text-2xl text-cream font-semibold leading-snug border-l-4 border-sovereign-gold pl-4 sm:pl-6 py-2 my-6 sm:my-8 font-[family-name:var(--font-heading)]">
           Under the most suffocating economic blockade in human history, entirely
           cut off from global capital, the DPRK built a fully independent,
           sovereign strategic deterrent. They achieved under a siege what the
@@ -216,27 +216,27 @@ export function SovereigntyProtocolContent() {
       </section>
 
       {/* Interactive Intel Matrix */}
-      <section className="mb-16 sm:mb-20 bg-[#142638] border border-[#1b4965] shadow-2xl rounded-sm overflow-hidden">
-        <div className="border-b border-[#1b4965] bg-[#0d1b2a] p-4 sm:p-6 flex flex-col justify-start">
-          <h2 className="text-lg sm:text-xl font-[family-name:var(--font-mono)] font-bold uppercase tracking-widest text-[#f0ebe3] mb-1">
+      <section className="mb-16 sm:mb-20 bg-river-deep border border-river-current shadow-2xl rounded-sm overflow-hidden">
+        <div className="border-b border-river-current bg-river-depths p-4 sm:p-6 flex flex-col justify-start">
+          <h2 className="text-lg sm:text-xl font-[family-name:var(--font-mono)] font-bold uppercase tracking-widest text-cream mb-1">
             The Dependency Matrix
           </h2>
-          <p className="font-[family-name:var(--font-body)] text-[10px] sm:text-xs text-[#a0b4c8]/60 uppercase tracking-wider">
+          <p className="font-[family-name:var(--font-body)] text-[10px] sm:text-xs text-cream-muted/60 uppercase tracking-wider">
             Comparative Analysis: Rented Security vs. Sovereign Capability
           </p>
         </div>
 
         <div className="flex flex-col xl:flex-row gap-0">
           {/* Navigation */}
-          <div className="xl:w-1/4 border-b xl:border-b-0 xl:border-r border-[#1b4965] bg-[#0d1b2a]/30 p-4 sm:p-6 flex flex-col sm:flex-row xl:flex-col flex-wrap justify-start space-y-1 sm:space-y-0 sm:gap-2 xl:gap-0 xl:space-y-1">
+          <div className="xl:w-1/4 border-b xl:border-b-0 xl:border-r border-river-current bg-river-depths/30 p-4 sm:p-6 flex flex-col sm:flex-row xl:flex-col flex-wrap justify-start space-y-1 sm:space-y-0 sm:gap-2 xl:gap-0 xl:space-y-1">
             {navItems.map(({ key, label }) => (
               <button
                 key={key}
                 onClick={() => handlePhase(key)}
                 className={`py-3 sm:py-4 px-3 sm:px-4 font-[family-name:var(--font-mono)] text-xs sm:text-sm tracking-wider uppercase flex-1 xl:flex-none transition-all duration-300 border-b-2 sm:border-b-2 xl:border-b-0 xl:border-l-2 text-center xl:text-left ${
                   activePhase === key
-                    ? "text-[#d4a74a] border-b-[#d4a74a] xl:border-b-transparent xl:border-l-[#d4a74a] bg-[#d4a74a]/5 font-bold"
-                    : "text-[#a0b4c8]/50 border-b-transparent xl:border-l-transparent hover:text-[#f0ebe3] hover:border-b-[#1b4965] xl:hover:border-b-transparent xl:hover:border-l-[#1b4965] hover:bg-white/[0.02]"
+                    ? "text-sovereign-gold border-b-sovereign-gold xl:border-b-transparent xl:border-l-sovereign-gold bg-sovereign-gold/5 font-bold"
+                    : "text-cream-muted/50 border-b-transparent xl:border-l-transparent hover:text-cream hover:border-b-river-current xl:hover:border-b-transparent xl:hover:border-l-river-current hover:bg-white/[0.02]"
                 }`}
               >
                 {label}
@@ -249,16 +249,16 @@ export function SovereigntyProtocolContent() {
             {/* Dynamic Text Readout */}
             <div className="mb-8 sm:mb-10 min-h-[160px] sm:min-h-[140px] max-w-3xl">
               <div className="flex items-center mb-3 sm:mb-4 space-x-2 sm:space-x-3">
-                <span className="font-[family-name:var(--font-mono)] text-[10px] sm:text-xs bg-[#d4a74a] text-[#0d1b2a] px-2 py-1 font-bold tracking-widest">
+                <span className="font-[family-name:var(--font-mono)] text-[10px] sm:text-xs bg-sovereign-gold text-river-depths px-2 py-1 font-bold tracking-widest">
                   {data.badge}
                 </span>
-                <span className="font-[family-name:var(--font-mono)] text-[10px] sm:text-xs text-[#d4a74a] uppercase tracking-widest">
+                <span className="font-[family-name:var(--font-mono)] text-[10px] sm:text-xs text-sovereign-gold uppercase tracking-widest">
                   {data.title}
                 </span>
               </div>
               <div
                 key={activePhase}
-                className="font-[family-name:var(--font-body)] text-base sm:text-[1.15rem] leading-relaxed text-[#a0b4c8] animate-[fadeIn_0.4s_cubic-bezier(0.4,0,0.2,1)]"
+                className="font-[family-name:var(--font-body)] text-base sm:text-[1.15rem] leading-relaxed text-cream-muted animate-[fadeIn_0.4s_cubic-bezier(0.4,0,0.2,1)]"
               >
                 <p>{data.payload}</p>
               </div>
@@ -266,13 +266,13 @@ export function SovereigntyProtocolContent() {
 
             {/* Data Table */}
             <div
-              className="overflow-x-auto border border-[#1b4965] rounded-sm"
+              className="overflow-x-auto border border-river-current rounded-sm"
               style={{ WebkitOverflowScrolling: "touch" }}
             >
               <table className="w-full text-left font-[family-name:var(--font-mono)] text-xs sm:text-sm whitespace-nowrap border-collapse relative z-10 min-w-[700px]">
                 <thead>
-                  <tr className="border-b border-[#1b4965]/80 text-[#a0b4c8]/60 bg-[#0d1b2a]/80">
-                    <th className="py-3 sm:py-4 px-3 sm:px-4 font-semibold w-1/4 sticky left-0 bg-[#0d1b2a]/90 z-20 shadow-[2px_0_5px_rgba(0,0,0,0.2)]">
+                  <tr className="border-b border-river-current/80 text-cream-muted/60 bg-river-depths/80">
+                    <th className="py-3 sm:py-4 px-3 sm:px-4 font-semibold w-1/4 sticky left-0 bg-river-depths/90 z-20 shadow-[2px_0_5px_rgba(0,0,0,0.2)]">
                       Metric
                     </th>
                     <th className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center transition-colors duration-300 min-w-[120px] ${highlightClass("canada")}`}>
@@ -287,7 +287,7 @@ export function SovereigntyProtocolContent() {
                     <th className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center transition-colors duration-300 min-w-[120px] ${highlightClass("dprk")}`}>
                       DPRK
                     </th>
-                    <th className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center border-l border-[#d4a74a]/20 bg-[#d4a74a]/5 text-[#d4a74a] transition-colors duration-300 min-w-[160px] ${highlightClass("unified")}`}>
+                    <th className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center border-l border-sovereign-gold/20 bg-sovereign-gold/5 text-sovereign-gold transition-colors duration-300 min-w-[160px] ${highlightClass("unified")}`}>
                       Unified Peninsula
                     </th>
                   </tr>
@@ -296,18 +296,18 @@ export function SovereigntyProtocolContent() {
                   {tableRows.map((row, i) => (
                     <tr
                       key={i}
-                      className="border-b border-[#1b4965]/40 hover:bg-white/[0.02]"
+                      className="border-b border-river-current/40 hover:bg-white/[0.02]"
                     >
-                      <td className="py-3 sm:py-4 px-3 sm:px-4 text-[#a0b4c8] whitespace-normal sticky left-0 bg-[#142638] z-10 shadow-[2px_0_5px_rgba(0,0,0,0.2)]">
+                      <td className="py-3 sm:py-4 px-3 sm:px-4 text-cream-muted whitespace-normal sticky left-0 bg-river-deep z-10 shadow-[2px_0_5px_rgba(0,0,0,0.2)]">
                         {row.metric}
                       </td>
-                      <td className={`py-3 sm:py-4 px-3 sm:px-4 text-center text-[#a0b4c8]/50 transition-colors duration-300 ${highlightClass("canada")}`}>
+                      <td className={`py-3 sm:py-4 px-3 sm:px-4 text-center text-cream-muted/50 transition-colors duration-300 ${highlightClass("canada")}`}>
                         {row.canada}
                       </td>
-                      <td className={`py-3 sm:py-4 px-3 sm:px-4 text-center text-[#a0b4c8]/50 transition-colors duration-300 ${highlightClass("japan")}`}>
+                      <td className={`py-3 sm:py-4 px-3 sm:px-4 text-center text-cream-muted/50 transition-colors duration-300 ${highlightClass("japan")}`}>
                         {row.japan}
                       </td>
-                      <td className={`py-3 sm:py-4 px-3 sm:px-4 text-center text-[#a0b4c8]/50 transition-colors duration-300 ${highlightClass("rok")}`}>
+                      <td className={`py-3 sm:py-4 px-3 sm:px-4 text-center text-cream-muted/50 transition-colors duration-300 ${highlightClass("rok")}`}>
                         {row.rok}
                         {row.rokSub && (
                           <span className="text-[9px] sm:text-[10px] block sm:inline ml-0 sm:ml-1">
@@ -315,39 +315,39 @@ export function SovereigntyProtocolContent() {
                           </span>
                         )}
                       </td>
-                      <td className={`py-3 sm:py-4 px-3 sm:px-4 text-center text-[#d4a74a] font-bold transition-colors duration-300 ${highlightClass("dprk")}`}>
+                      <td className={`py-3 sm:py-4 px-3 sm:px-4 text-center text-sovereign-gold font-bold transition-colors duration-300 ${highlightClass("dprk")}`}>
                         {row.dprk}
                       </td>
-                      <td className={`py-3 sm:py-4 px-3 sm:px-4 text-center text-[#d4a74a] font-bold border-l border-[#d4a74a]/20 bg-[#d4a74a]/5 transition-colors duration-300 ${highlightClass("unified")}`}>
+                      <td className={`py-3 sm:py-4 px-3 sm:px-4 text-center text-sovereign-gold font-bold border-l border-sovereign-gold/20 bg-sovereign-gold/5 transition-colors duration-300 ${highlightClass("unified")}`}>
                         {row.unified}
                       </td>
                     </tr>
                   ))}
                   {/* Summary Row */}
-                  <tr className="border-t border-[#1b4965] font-bold bg-[#0d1b2a]">
-                    <td className="py-4 sm:py-5 px-3 sm:px-4 text-[#f0ebe3] text-[11px] sm:text-sm whitespace-normal sticky left-0 bg-[#0d1b2a] z-10 shadow-[2px_0_5px_rgba(0,0,0,0.3)]">
+                  <tr className="border-t border-river-current font-bold bg-river-depths">
+                    <td className="py-4 sm:py-5 px-3 sm:px-4 text-cream text-[11px] sm:text-sm whitespace-normal sticky left-0 bg-river-depths z-10 shadow-[2px_0_5px_rgba(0,0,0,0.3)]">
                       Can deploy deterrent without foreign approval
                     </td>
-                    <td className={`py-4 sm:py-5 px-3 sm:px-4 text-center text-[#a0b4c8]/50 text-sm sm:text-base transition-colors duration-300 ${highlightClass("canada")}`}>
+                    <td className={`py-4 sm:py-5 px-3 sm:px-4 text-center text-cream-muted/50 text-sm sm:text-base transition-colors duration-300 ${highlightClass("canada")}`}>
                       No
                     </td>
-                    <td className={`py-4 sm:py-5 px-3 sm:px-4 text-center text-[#a0b4c8]/50 text-sm sm:text-base transition-colors duration-300 ${highlightClass("japan")}`}>
+                    <td className={`py-4 sm:py-5 px-3 sm:px-4 text-center text-cream-muted/50 text-sm sm:text-base transition-colors duration-300 ${highlightClass("japan")}`}>
                       No
                     </td>
-                    <td className={`py-4 sm:py-5 px-3 sm:px-4 text-center text-[#a0b4c8]/50 text-sm sm:text-base transition-colors duration-300 ${highlightClass("rok")}`}>
+                    <td className={`py-4 sm:py-5 px-3 sm:px-4 text-center text-cream-muted/50 text-sm sm:text-base transition-colors duration-300 ${highlightClass("rok")}`}>
                       No
                     </td>
-                    <td className={`py-4 sm:py-5 px-3 sm:px-4 text-center text-[#d4a74a] text-sm sm:text-base transition-colors duration-300 ${highlightClass("dprk")}`}>
+                    <td className={`py-4 sm:py-5 px-3 sm:px-4 text-center text-sovereign-gold text-sm sm:text-base transition-colors duration-300 ${highlightClass("dprk")}`}>
                       Yes
                     </td>
-                    <td className={`py-4 sm:py-5 px-3 sm:px-4 text-center text-[#d4a74a] border-l border-[#d4a74a]/40 bg-[#d4a74a]/10 shadow-[inset_4px_0_10px_rgba(212,175,55,0.05)] text-sm sm:text-base transition-colors duration-300 ${highlightClass("unified")}`}>
+                    <td className={`py-4 sm:py-5 px-3 sm:px-4 text-center text-sovereign-gold border-l border-sovereign-gold/40 bg-sovereign-gold/10 shadow-[inset_4px_0_10px_rgba(212,175,55,0.05)] text-sm sm:text-base transition-colors duration-300 ${highlightClass("unified")}`}>
                       Yes
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div className="mt-2 sm:mt-3 font-[family-name:var(--font-mono)] text-[8px] sm:text-[10px] text-[#a0b4c8]/30 uppercase tracking-widest text-right">
+            <div className="mt-2 sm:mt-3 font-[family-name:var(--font-mono)] text-[8px] sm:text-[10px] text-cream-muted/30 uppercase tracking-widest text-right">
               Sources: USFK, Japanese Ministry of Defense, SIPRI, IISS 2024
             </div>
           </div>
@@ -355,7 +355,7 @@ export function SovereigntyProtocolContent() {
       </section>
 
       {/* The Strategic Turn / Conclusion */}
-      <section className="mb-16 space-y-6 sm:space-y-8 text-[#a0b4c8] relative max-w-4xl mx-auto text-base sm:text-lg font-[family-name:var(--font-body)]">
+      <section className="mb-16 space-y-6 sm:space-y-8 text-cream-muted relative max-w-4xl mx-auto text-base sm:text-lg font-[family-name:var(--font-body)]">
         <p>
           The architects of this division forget the bloodline. They look at the
           economic miracle of the South and the blockade survival of the North as
@@ -372,12 +372,12 @@ export function SovereigntyProtocolContent() {
           engagement:
         </p>
 
-        <blockquote className="my-8 sm:my-10 border-l-4 border-[#d4a74a] pl-4 sm:pl-8 py-3 sm:py-4 bg-[#0d1b2a]/50">
-          <p className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] text-[#f0ebe3] font-semibold italic mb-3 leading-snug">
+        <blockquote className="my-8 sm:my-10 border-l-4 border-sovereign-gold pl-4 sm:pl-8 py-3 sm:py-4 bg-river-depths/50">
+          <p className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] text-cream font-semibold italic mb-3 leading-snug">
             &ldquo;Those who seek death shall live. Those who seek life shall
             die.&rdquo;
           </p>
-          <p className="font-[family-name:var(--font-mono)] text-[10px] sm:text-xs text-[#d4a74a] uppercase tracking-widest leading-relaxed">
+          <p className="font-[family-name:var(--font-mono)] text-[10px] sm:text-xs text-sovereign-gold uppercase tracking-widest leading-relaxed">
             &mdash; Admiral Yi Sun-sin, Nanjung Ilgi (War Diary), 1597
             (&nbsp;必死則生 必生則死&nbsp;)
           </p>
@@ -390,9 +390,9 @@ export function SovereigntyProtocolContent() {
         </p>
 
         {/* Visual Anchor 2: Yi Sun-sin */}
-        <div className="my-10 sm:my-12 relative border border-[#1b4965] rounded-sm overflow-hidden bg-[#0d1b2a] h-80 sm:h-[450px] lg:h-[550px] lg:w-4/5 mx-auto group">
-          <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-10 bg-[#0d1b2a]/80 px-2 sm:px-3 py-1 border border-[#1b4965]">
-            <span className="font-[family-name:var(--font-mono)] text-[8px] sm:text-[10px] text-[#d4a74a] uppercase tracking-widest">
+        <div className="my-10 sm:my-12 relative border border-river-current rounded-sm overflow-hidden bg-river-depths h-80 sm:h-[450px] lg:h-[550px] lg:w-4/5 mx-auto group">
+          <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-10 bg-river-depths/80 px-2 sm:px-3 py-1 border border-river-current">
+            <span className="font-[family-name:var(--font-mono)] text-[8px] sm:text-[10px] text-sovereign-gold uppercase tracking-widest">
               HISTORICAL_FILE // YI_SUN_SIN // THE_BLOODLINE
             </span>
           </div>
@@ -427,7 +427,7 @@ export function SovereigntyProtocolContent() {
           by a bureaucratic fiction.
         </p>
 
-        <p className="text-xl sm:text-2xl text-[#f0ebe3] font-semibold leading-relaxed mt-8 sm:mt-10 font-[family-name:var(--font-heading)]">
+        <p className="text-xl sm:text-2xl text-cream font-semibold leading-relaxed mt-8 sm:mt-10 font-[family-name:var(--font-heading)]">
           Imagine 80 million Koreans united. Combine the staggering capital
           engine of the South with the unbreakable sovereign deterrence of the
           North. When you remind them that Yi Sun-sin is their shared ancestry,
@@ -437,9 +437,9 @@ export function SovereigntyProtocolContent() {
       </section>
 
       {/* Footer */}
-      <footer className="mt-16 sm:mt-24 pt-8 border-t border-[#1b4965] font-[family-name:var(--font-mono)] text-[8px] sm:text-[10px] text-[#a0b4c8]/30 flex flex-col sm:flex-row justify-between uppercase tracking-[0.1em] sm:tracking-[0.2em] gap-3 text-center sm:text-left">
+      <footer className="mt-16 sm:mt-24 pt-8 border-t border-river-current font-[family-name:var(--font-mono)] text-[8px] sm:text-[10px] text-cream-muted/30 flex flex-col sm:flex-row justify-between uppercase tracking-[0.1em] sm:tracking-[0.2em] gap-3 text-center sm:text-left">
         <span>Author: Jesse James // Juchegang</span>
-        <span className="text-[#8b6914] sm:text-right">
+        <span className="text-sovereign-dark sm:text-right">
           End of File // Restricted Distribution
         </span>
       </footer>

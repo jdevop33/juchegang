@@ -11,17 +11,17 @@ function DataCard({
   children: React.ReactNode
 }) {
   return (
-    <div className="bg-[#142638] border border-[#d4a74a]/15 rounded px-7 py-7 my-10">
+    <div className="bg-river-deep border border-sovereign-gold/15 rounded px-7 py-7 my-10">
       <div
         className="text-[11px] font-bold tracking-[3px] uppercase mb-3"
         style={{ fontFamily: "'Noto Serif KR', serif", color: "#d4a74a" }}
       >
         {label}
       </div>
-      <div className="font-mono text-[36px] font-medium text-[#d4a74a] mb-2">
+      <div className="font-mono text-[36px] font-medium text-sovereign-gold mb-2">
         {stat}
       </div>
-      <div className="text-[15px] text-[#a0b4c8] leading-relaxed">
+      <div className="text-[15px] text-cream-muted leading-relaxed">
         {children}
       </div>
     </div>
@@ -30,8 +30,8 @@ function DataCard({
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (
-    <div className="border-l-[3px] border-[#d4a74a] pl-7 py-5 my-10">
-      <p className="font-serif text-[22px] font-normal leading-[1.5] text-[#e8dfd0] italic">
+    <div className="border-l-[3px] border-sovereign-gold pl-7 py-5 my-10">
+      <p className="font-serif text-[22px] font-normal leading-[1.5] text-river-mist italic">
         {children}
       </p>
     </div>
@@ -46,14 +46,14 @@ function SectionHeader({
   title: string
 }) {
   return (
-    <div className="mt-20 mb-10 pt-10 border-t border-[#d4a74a]/20">
+    <div className="mt-20 mb-10 pt-10 border-t border-sovereign-gold/20">
       <span
-        className="text-[14px] font-bold tracking-[4px] text-[#d4a74a] block mb-3"
+        className="text-[14px] font-bold tracking-[4px] text-sovereign-gold block mb-3"
         style={{ fontFamily: "'Noto Serif KR', serif" }}
       >
         {korean}
       </span>
-      <h2 className="font-serif text-[28px] font-bold leading-[1.3] text-[#f0ebe3]">
+      <h2 className="font-serif text-[28px] font-bold leading-[1.3] text-cream">
         {title}
       </h2>
     </div>
@@ -63,7 +63,7 @@ function SectionHeader({
 function Disclaimer({ children }: { children: React.ReactNode }) {
   return (
     <div
-      className="rounded my-10 px-6 py-6 text-sm text-[#a0b4c8] leading-relaxed border"
+      className="rounded my-10 px-6 py-6 text-sm text-cream-muted leading-relaxed border"
       style={{
         background: "rgba(199, 48, 50, 0.08)",
         borderColor: "rgba(199, 48, 50, 0.2)",
@@ -100,7 +100,7 @@ export function BlowbackContent() {
 
         <div className="relative z-10 flex flex-col items-center">
           <div
-            className="text-lg font-bold tracking-[6px] text-[#d4a74a] mb-12"
+            className="text-lg font-bold tracking-[6px] text-sovereign-gold mb-12"
             style={{ fontFamily: "'Noto Serif KR', serif" }}
           >
             주체강
@@ -111,15 +111,15 @@ export function BlowbackContent() {
           </h1>
 
           <div
-            className="text-[clamp(18px,3vw,28px)] text-[#d4a74a] mb-12 tracking-[2px]"
+            className="text-[clamp(18px,3vw,28px)] text-sovereign-gold mb-12 tracking-[2px]"
             style={{ fontFamily: "'Noto Serif KR', serif" }}
           >
             역풍: 테러 지정의 무기화
           </div>
 
-          <div className="w-[80px] h-[2px] bg-[#d4a74a] mb-8" />
+          <div className="w-[80px] h-[2px] bg-sovereign-gold mb-8" />
 
-          <div className="text-[14px] font-light text-[#a0b4c8] tracking-[3px] uppercase">
+          <div className="text-[14px] font-light text-cream-muted tracking-[3px] uppercase">
             Jesse James &nbsp;&middot;&nbsp; 주체강 전략 보고서 &nbsp;&middot;&nbsp; 2026년 3월
           </div>
         </div>
@@ -128,7 +128,7 @@ export function BlowbackContent() {
       {/* ═══ CONTENT ═══ */}
       <div className="max-w-[720px] mx-auto px-6 py-20 text-[17px] leading-[1.75]">
         <Disclaimer>
-          <strong className="text-[#c73032]">사적 전략 보고서</strong> — This
+          <strong className="text-korean-red">사적 전략 보고서</strong> — This
           document is a private strategic intelligence briefing. The analysis
           represents the author&rsquo;s interpretation of documented historical
           patterns and publicly available sources. It is not legal advice,
@@ -189,12 +189,12 @@ export function BlowbackContent() {
         <p>
           The term stayed classified until Chalmers Johnson — a man who
           consulted for the CIA from 1967 to 1973 — published a book called{" "}
-          <em className="text-[#e8dfd0]">Blowback</em> in 2000. Nobody cared.
+          <em className="text-river-mist">Blowback</em> in 2000. Nobody cared.
           Then September 11 happened and the book became a bestseller, because
           it turned out the specific problem Johnson was describing — that
           covert operations create the very threats they&rsquo;re supposed to
           prevent — had just killed{" "}
-          <span className="font-mono text-[#d4a74a]">2,977</span> people in
+          <span className="font-mono text-sovereign-gold">2,977</span> people in
           New York, Washington, and a field in Pennsylvania.
         </p>
 
@@ -223,11 +223,11 @@ export function BlowbackContent() {
           Operation Cyclone. The CIA&rsquo;s covert program arming Afghan
           mujahideen against the Soviets. Ran from 1979 to 1992. Cost somewhere
           between{" "}
-          <span className="font-mono text-[#d4a74a]">$2–3 billion</span> in
+          <span className="font-mono text-sovereign-gold">$2–3 billion</span> in
           American taxpayer money, with Saudi Arabia matching dollar-for-dollar.
           President Carter signed the initial finding on July 3, 1979 — five
           months before the Soviet invasion. Under Reagan, annual funding peaked
-          at <span className="font-mono text-[#d4a74a]">$630 million</span> in
+          at <span className="font-mono text-sovereign-gold">$630 million</span> in
           1987.
         </p>
 
@@ -237,17 +237,17 @@ export function BlowbackContent() {
           what Pakistan&rsquo;s strategic interests dictated. Gulbuddin
           Hekmatyar — who later became a bin Laden ally and used
           American-supplied rockets to shell Kabul — received an estimated{" "}
-          <span className="font-mono text-[#d4a74a]">$600 million</span>{" "}
+          <span className="font-mono text-sovereign-gold">$600 million</span>{" "}
           during the 1980s. The CIA made cash payments directly to Jalaluddin
           Haqqani, one of bin Laden&rsquo;s closest associates.
         </p>
 
         <p>
           Approximately{" "}
-          <span className="font-mono text-[#d4a74a]">2,300</span> Stinger
+          <span className="font-mono text-sovereign-gold">2,300</span> Stinger
           missiles shipped between 1986 and 1989. A subsequent buyback program
           spent $65 million and was deemed a failure. About{" "}
-          <span className="font-mono text-[#d4a74a]">600 Stingers</span>{" "}
+          <span className="font-mono text-sovereign-gold">600 Stingers</span>{" "}
           remained unaccounted for by 1996. Just floating around the
           world&rsquo;s most unstable region with the ability to shoot down
           commercial aircraft.
@@ -289,7 +289,7 @@ export function BlowbackContent() {
           Sidell warned him: &ldquo;You will have between 30,000 and 50,000
           Baathists go underground by sundown.&rdquo; CPA Order 2, signed seven
           days later, dissolved the entire Iraqi military —{" "}
-          <span className="font-mono text-[#d4a74a]">720,000</span> armed
+          <span className="font-mono text-sovereign-gold">720,000</span> armed
           personnel. Trained soldiers. With weapons. And nothing to do.
         </p>
 
@@ -363,7 +363,7 @@ export function BlowbackContent() {
         <p>
           The Contras in Nicaragua: CIA-created, CIA-trained, funded through
           illegal arms sales to Iran, responsible for over{" "}
-          <span className="font-mono text-[#d4a74a]">1,300</span> documented
+          <span className="font-mono text-sovereign-gold">1,300</span> documented
           terrorist attacks. The International Court of Justice ruled the US
           violated international law. America refused to comply and vetoed
           enforcement at the Security Council. The Kerry Committee found
@@ -373,7 +373,7 @@ export function BlowbackContent() {
 
         <p>
           The School of the Americas:{" "}
-          <span className="font-mono text-[#d4a74a]">60,000+</span> Latin
+          <span className="font-mono text-sovereign-gold">60,000+</span> Latin
           American military personnel trained at Fort Benning.
           Pentagon-released manuals advocating torture, execution, and bounties
           for enemy dead. Forty-eight of 69 officers cited for the worst
@@ -394,7 +394,7 @@ export function BlowbackContent() {
 
         <p>
           The Libya intervention scattered{" "}
-          <span className="font-mono text-[#d4a74a]">
+          <span className="font-mono text-sovereign-gold">
             250,000–700,000
           </span>{" "}
           weapons to at least 12 countries, directly fueling the jihadist
@@ -418,7 +418,7 @@ export function BlowbackContent() {
         <p>
           I ran the numbers as best I could. Of the approximately 75 Foreign
           Terrorist Organizations on the State Department&rsquo;s list, roughly{" "}
-          <span className="font-mono text-[#d4a74a]">25–40%</span> have direct
+          <span className="font-mono text-sovereign-gold">25–40%</span> have direct
           or significant indirect connections to Western covert operations or
           military interventions that created the conditions for their
           emergence. If you expand the definition to include groups that formed
@@ -443,9 +443,9 @@ export function BlowbackContent() {
           canal workers in the British-controlled Suez city of Ismailia. A
           schoolteacher who believed Islam was a complete governance system and
           Western secularism was a colonial imposition. The organization grew
-          from <span className="font-mono text-[#d4a74a]">800 members</span>{" "}
+          from <span className="font-mono text-sovereign-gold">800 members</span>{" "}
           in 1936 to over{" "}
-          <span className="font-mono text-[#d4a74a]">2 million</span> by 1948.
+          <span className="font-mono text-sovereign-gold">2 million</span> by 1948.
           They built hospitals, schools, charity networks — a parallel social
           infrastructure serving the people the government couldn&rsquo;t or
           wouldn&rsquo;t serve.
@@ -468,7 +468,7 @@ export function BlowbackContent() {
         <p>
           Mohamed Morsi won Egypt&rsquo;s presidential runoff on June 16-17,
           2012 with{" "}
-          <span className="font-mono text-[#d4a74a]">51.73%</span> of the
+          <span className="font-mono text-sovereign-gold">51.73%</span> of the
           vote. The first democratically elected leader in Egypt&rsquo;s
           5,000-year history. He governed badly — overreached on constitutional
           authority, alienated secular allies, showed authoritarian tendencies.
@@ -485,7 +485,7 @@ export function BlowbackContent() {
           On August 14, 2013, security forces moved into Rabaa al-Adawiya
           Square. Armored vehicles. Bulldozers. Live ammunition. Rooftop
           snipers. Human Rights Watch documented at least{" "}
-          <span className="font-mono text-[#d4a74a]">
+          <span className="font-mono text-sovereign-gold">
             817 killed at Rabaa alone
           </span>{" "}
           — one of the largest single-day massacres of protesters in modern
@@ -496,7 +496,7 @@ export function BlowbackContent() {
 
         <p>
           By mid-2014, between{" "}
-          <span className="font-mono text-[#d4a74a]">
+          <span className="font-mono text-sovereign-gold">
             16,000 and 40,000
           </span>{" "}
           Brotherhood members had been arrested. Morsi died in detention on
@@ -684,22 +684,22 @@ export function BlowbackContent() {
 
       {/* ═══ FOOTER ═══ */}
       <div
-        className="text-center py-20 px-6 border-t border-[#d4a74a]/10"
+        className="text-center py-20 px-6 border-t border-sovereign-gold/10"
         style={{
           background: "linear-gradient(180deg, #0d1b2a 0%, #142638 100%)",
         }}
       >
         <div
-          className="text-lg font-bold tracking-[6px] text-[#d4a74a] mb-4"
+          className="text-lg font-bold tracking-[6px] text-sovereign-gold mb-4"
           style={{ fontFamily: "'Noto Serif KR', serif" }}
         >
           주체강
         </div>
-        <div className="w-[80px] h-[2px] bg-[#d4a74a] mx-auto mb-6" />
-        <p className="text-[13px] text-[#a0b4c8] font-light">
+        <div className="w-[80px] h-[2px] bg-sovereign-gold mx-auto mb-6" />
+        <p className="text-[13px] text-cream-muted font-light">
           주체의 흐름을 따라 &nbsp;&middot;&nbsp; Navigate the Current
         </p>
-        <p className="text-[11px] text-[#a0b4c8]/60 mt-4 max-w-[500px] mx-auto">
+        <p className="text-[11px] text-cream-muted/60 mt-4 max-w-[500px] mx-auto">
           This report is a private strategic intelligence briefing. Sources
           include declassified CIA documents, congressional investigations, ICJ
           rulings, HRW reports, FARA filings, and academic scholarship. All

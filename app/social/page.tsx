@@ -114,7 +114,7 @@ export default async function SocialPage() {
   return (
     <>
       <JucheHeader />
-      <main className="min-h-screen bg-gradient-to-b from-[#0d1b2a] via-[#1b4965] to-[#0d1b2a] pt-20">
+      <main className="min-h-screen bg-gradient-to-b from-river-depths via-river-current to-river-depths pt-20">
       <section
         className="relative h-auto -mt-20"
         style={{ minHeight: '100svh' }}
@@ -127,7 +127,7 @@ export default async function SocialPage() {
           sizes="100vw"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/40 via-[#0d1b2a]/20 to-[#0d1b2a]/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-river-depths/40 via-river-depths/20 to-river-depths/90" />
         <div className="relative z-10 flex h-full items-end justify-center text-center px-4 pb-24 sm:pb-28 md:pb-36">
           <div>
             <h1 className="sr-only">Social Media</h1>
@@ -158,7 +158,7 @@ export default async function SocialPage() {
         {/* Featured Channels */}
         {featuredChannels.length > 0 ? (
           <section className="mb-16">
-            <h2 className="text-2xl font-semibold text-[#f0ebe3] mb-6">Featured Channels</h2>
+            <h2 className="text-2xl font-semibold text-cream mb-6">Featured Channels</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {await Promise.all(
                 featuredChannels.map(async (fc) => {
@@ -201,16 +201,16 @@ export default async function SocialPage() {
         ) : null}
         {/* Trusted Sources */}
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-[#f0ebe3] mb-4">Trusted Sources</h2>
+          <h2 className="text-2xl font-semibold text-cream mb-4">Trusted Sources</h2>
           {/* Featured Channels strip */}
           <div className="flex flex-wrap gap-3 mb-6">
             {youtubeSources.map((src) => (
-              <a key={src.id} href={src.url} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg bg-[#0d1b2a]/50 border border-[#1b4965] text-[#f0ebe3]/90 hover:bg-[#1b4965]/50">
+              <a key={src.id} href={src.url} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg bg-river-depths/50 border border-river-current text-cream/90 hover:bg-river-current/50">
                 {src.sourceName || src.url}
               </a>
             ))}
             {linkSources.map((src) => (
-              <a key={src.id} href={src.url} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg bg-[#0d1b2a]/50 border border-[#d4a74a]/30 text-[#d4a74a] hover:bg-[#1b4965]/50">
+              <a key={src.id} href={src.url} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg bg-river-depths/50 border border-sovereign-gold/30 text-sovereign-gold hover:bg-river-current/50">
                 {src.sourceName || src.url}
               </a>
             ))}
@@ -231,12 +231,12 @@ export default async function SocialPage() {
                   />
                   <div className="flex items-center gap-3">
                     <TtsButton text={(item.title ? item.title + ". " : "") + (item.summary || "")} />
-                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-[#f0ebe3]/70 underline">
+                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-cream/70 underline">
                       Original source
                     </a>
                   </div>
                   {item.youtubeUrl ? (
-                    <div className="aspect-video w-full overflow-hidden rounded-lg border border-[#1b4965] bg-[#0d1b2a]/50">
+                    <div className="aspect-video w-full overflow-hidden rounded-lg border border-river-current bg-river-depths/50">
                       <iframe
                         src={item.youtubeUrl.replace("watch?v=", "embed/")}
                         title={item.title || "Video"}
@@ -251,7 +251,7 @@ export default async function SocialPage() {
               ))}
             </div>
           ) : (
-            <p className="text-[#f0ebe3]/60 mb-10">No trusted stories available right now.</p>
+            <p className="text-cream/60 mb-10">No trusted stories available right now.</p>
           )}
 
           {/* Videos */}
@@ -259,7 +259,7 @@ export default async function SocialPage() {
             <div className="grid md:grid-cols-2 gap-6">
               {trustedVideos.map((v) => (
                 <div key={v.id} className="space-y-2">
-                  <div className="aspect-video w-full overflow-hidden rounded-lg border border-[#1b4965] bg-[#0d1b2a]/50">
+                  <div className="aspect-video w-full overflow-hidden rounded-lg border border-river-current bg-river-depths/50">
                     <iframe
                       src={v.url.replace("watch?v=", "embed/")}
                       title={v.title}
@@ -269,19 +269,19 @@ export default async function SocialPage() {
                       allowFullScreen
                     />
                   </div>
-                  <div className="text-[#f0ebe3]/80 text-sm">{v.sourceName ? `${v.sourceName} • ` : ""}{new Date(v.publishedAt).toLocaleString()}</div>
-                  <a href={v.url} target="_blank" rel="noopener noreferrer" className="text-[#f0ebe3] font-medium hover:underline">{v.title}</a>
+                  <div className="text-cream/80 text-sm">{v.sourceName ? `${v.sourceName} • ` : ""}{new Date(v.publishedAt).toLocaleString()}</div>
+                  <a href={v.url} target="_blank" rel="noopener noreferrer" className="text-cream font-medium hover:underline">{v.title}</a>
                 </div>
               ))}
             </div>
           ) : null}
-          <p className="text-xs text-[#f0ebe3]/50 mt-4">
+          <p className="text-xs text-cream/50 mt-4">
             All linked works are the property of their respective authors and publishers. Embedded media is displayed for
             educational commentary and discovery. Please visit the original source to support the creators.
           </p>
         </section>
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-[#f0ebe3] mb-4">Profiles</h2>
+          <h2 className="text-2xl font-semibold text-cream mb-4">Profiles</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {socialProfiles.map((p) => (
               <a
@@ -289,15 +289,15 @@ export default async function SocialPage() {
                 href={p.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-lg bg-[#0d1b2a]/50 border border-[#1b4965] hover:bg-[#1b4965]/40 transition-colors"
+                className="flex items-center gap-3 p-4 rounded-lg bg-river-depths/50 border border-river-current hover:bg-river-current/40 transition-colors"
               >
                 {/* Simple platform badge */}
-                <span className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-[#1b4965]/50 text-[#f0ebe3] capitalize">
+                <span className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-river-current/50 text-cream capitalize">
                   {p.platform[0]}
                 </span>
                 <div>
-                  <div className="text-[#f0ebe3] font-medium">{p.displayName ?? `@${p.handle}`}</div>
-                  <div className="text-[#f0ebe3]/60 text-sm">{p.platform}</div>
+                  <div className="text-cream font-medium">{p.displayName ?? `@${p.handle}`}</div>
+                  <div className="text-cream/60 text-sm">{p.platform}</div>
                 </div>
               </a>
             ))}
@@ -305,13 +305,13 @@ export default async function SocialPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-[#f0ebe3] mb-4">YouTube</h2>
+          <h2 className="text-2xl font-semibold text-cream mb-4">YouTube</h2>
           {yt.length === 0 ? (
-            <p className="text-[#f0ebe3]/60">YouTube channel coming soon. Stay tuned for video content!</p>
+            <p className="text-cream/60">YouTube channel coming soon. Stay tuned for video content!</p>
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {yt.map((v) => (
-                <a key={v.id} href={v.url} target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden border border-[#1b4965] bg-[#0d1b2a]/50 hover:bg-[#1b4965]/40 transition-colors">
+                <a key={v.id} href={v.url} target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden border border-river-current bg-river-depths/50 hover:bg-river-current/40 transition-colors">
                   <div className="relative w-full aspect-video">
                     <Image
                       src={v.thumbnail}
@@ -323,8 +323,8 @@ export default async function SocialPage() {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-[#f0ebe3] font-medium line-clamp-2">{v.title}</h3>
-                    <p className="text-[#f0ebe3]/50 text-sm mt-1">{new Date(v.publishedAt).toLocaleString()}</p>
+                    <h3 className="text-cream font-medium line-clamp-2">{v.title}</h3>
+                    <p className="text-cream/50 text-sm mt-1">{new Date(v.publishedAt).toLocaleString()}</p>
                   </div>
                 </a>
               ))}
@@ -333,8 +333,8 @@ export default async function SocialPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-[#f0ebe3] mb-4">Audio</h2>
-          <div className="rounded-lg overflow-hidden border border-[#1b4965] bg-[#0d1b2a]/50">
+          <h2 className="text-2xl font-semibold text-cream mb-4">Audio</h2>
+          <div className="rounded-lg overflow-hidden border border-river-current bg-river-depths/50">
             <iframe
               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/407296785&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
               title="SoundCloud Player — Donald Trump Diss Track"
@@ -343,7 +343,7 @@ export default async function SocialPage() {
               allow="autoplay"
             />
           </div>
-          <p className="mt-2 text-xs text-[#f0ebe3]/60">
+          <p className="mt-2 text-xs text-cream/60">
             <a href="https://soundcloud.com/kimjongunnuking" target="_blank" rel="noopener noreferrer" className="underline">KimJongUn</a>
             {" "}·{" "}
             <a href="https://soundcloud.com/kimjongunnuking/donald-trump-diss-panda-remix" target="_blank" rel="noopener noreferrer" className="underline">Donald Trump Diss Track</a>
@@ -351,12 +351,12 @@ export default async function SocialPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-[#f0ebe3] mb-4">Contact</h2>
-          <div className="bg-[#0d1b2a]/50 border border-[#1b4965] rounded-lg p-6">
-            <p className="text-[#f0ebe3] mb-2">For inquiries and collaborations:</p>
+          <h2 className="text-2xl font-semibold text-cream mb-4">Contact</h2>
+          <div className="bg-river-depths/50 border border-river-current rounded-lg p-6">
+            <p className="text-cream mb-2">For inquiries and collaborations:</p>
             <a
               href="mailto:panda@juche.org"
-              className="inline-flex items-center text-[#d4a74a] hover:text-[#c73032] transition-colors"
+              className="inline-flex items-center text-sovereign-gold hover:text-korean-red transition-colors"
             >
               <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />

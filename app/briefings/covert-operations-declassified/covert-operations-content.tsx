@@ -5,22 +5,22 @@ export default function CovertOperationsContent() {
     <div className="container mx-auto px-4 py-16">
       <div className="max-w-4xl mx-auto prose prose-lg dark:prose-invert">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-[#c73032]/10 text-[#c73032] rounded-full text-sm font-medium">
+          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-korean-red/10 text-korean-red rounded-full text-sm font-medium">
             DECLASSIFIED
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#f0ebe3]">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-cream">
             The Human Cost of Covert Operations
           </h1>
-          <p className="text-xl text-[#a0b4c8] max-w-2xl mx-auto">
+          <p className="text-xl text-cream-muted max-w-2xl mx-auto">
             Documented evidence from declassified files, congressional investigations, and credible historical sources revealing the true human toll.
           </p>
         </div>
 
-        <div className="bg-[#d4a74a]/10 border border-[#d4a74a]/30 rounded-lg p-6 mb-8">
-          <h3 className="text-xl font-bold mb-3 text-[#d4a74a]">
+        <div className="bg-sovereign-gold/10 border border-sovereign-gold/30 rounded-lg p-6 mb-8">
+          <h3 className="text-xl font-bold mb-3 text-sovereign-gold">
             Content Warning
           </h3>
-          <p className="text-[#f0ebe3]">
+          <p className="text-cream">
             This briefing contains detailed accounts of civilian casualties, torture, and state violence.
             All information is sourced from official documents, congressional investigations, and credible journalism.
             We honor the victims by telling their stories truthfully.
@@ -46,7 +46,7 @@ export default function CovertOperationsContent() {
             <strong> 37 wedding guests including 23 children and 10 women</strong>, with the bride among the wounded.
           </p>
 
-          <div className="bg-muted/30 border-l-4 border-[#c73032] pl-6 mb-8">
+          <div className="bg-muted/30 border-l-4 border-korean-red pl-6 mb-8">
             <p className="italic text-lg">
               "The targeting of celebrations extended beyond weddings. Between 2009-2012, the Bureau of Investigative Journalism documented that
               <strong> more than 20 civilians were attacked in deliberate strikes on funerals</strong> in Pakistan."
@@ -74,9 +74,9 @@ export default function CovertOperationsContent() {
             <strong> The dead included seven children: Zamir (20), Faisal (16), Farzad (10), Arwin (7), Benyamin (6), Hayat (2), and Malika (3).</strong>
           </p>
 
-          <div className="bg-[#1b4965]/20 border border-[#1b4965]/30 rounded-lg p-6 mb-8">
-            <h4 className="font-bold mb-3 text-[#1b4965]">The Kabul Strike Timeline</h4>
-            <ul className="text-[#f0ebe3] space-y-2">
+          <div className="bg-river-current/20 border border-river-current/30 rounded-lg p-6 mb-8">
+            <h4 className="font-bold mb-3 text-river-current">The Kabul Strike Timeline</h4>
+            <ul className="text-cream space-y-2">
               <li>Pentagon tracks Ahmadi for 8 hours, watching him go to work</li>
               <li>They interpret his water containers as "explosives"</li>
               <li>Children run to greet him when he arrives home</li>
@@ -103,11 +103,11 @@ export default function CovertOperationsContent() {
           </p>
         </section>
 
-        <div className="bg-[#1b4965]/20 border border-[#1b4965]/30 rounded-lg p-6">
-          <h3 className="text-xl font-bold mb-3 text-[#1b4965]">
+        <div className="bg-river-current/20 border border-river-current/30 rounded-lg p-6">
+          <h3 className="text-xl font-bold mb-3 text-river-current">
             Path Forward: Truth and Reconciliation
           </h3>
-          <p className="text-[#f0ebe3]">
+          <p className="text-cream">
             Acknowledging this history is not anti-American - it's pro-humanity. Every nation has made mistakes.
             The path forward requires honest accounting, genuine accountability, and commitment to preventing future atrocities.
             Only through truth can we build a world where all people, regardless of nationality, are valued equally.

@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function IdeologicalParadigmShiftsPage() {
   return (
-    <main className="min-h-screen bg-[#0d1b2a] text-[#f0ebe3]">
+    <main className="min-h-screen bg-river-depths text-cream">
       <JucheHeader />
       <BriefingBanner src="/images/coolgang2.png" alt="Ideological paradigm shifts" aspect="12/5" contain overlay="bottom" />
       <ShiftsContent />

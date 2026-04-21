@@ -144,7 +144,7 @@ export default function CuisineTraditionsPage() {
   return (
     <>
       <JucheHeader />
-      <main className="min-h-screen bg-gradient-to-b from-[#0d1b2a] via-[#142638] to-[#0d1b2a] pt-20">
+      <main className="min-h-screen bg-gradient-to-b from-river-depths via-river-deep to-river-depths pt-20">
       {/* Hero Section with background image */}
       <section className="relative py-20 px-4 overflow-hidden" style={{ minHeight: '60svh' }}>
         {/* Background image */}
@@ -157,17 +157,17 @@ export default function CuisineTraditionsPage() {
           priority
         />
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/80 via-[#0d1b2a]/60 to-[#0d1b2a]/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-river-depths/80 via-river-depths/60 to-river-depths/80" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="container mx-auto max-w-6xl text-center relative z-10"
         >
-          <ChefHat className="h-16 w-16 text-[#d4a74a] mx-auto mb-6" />
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[#d4a74a] via-[#c73032] to-[#d4a74a] bg-clip-text text-transparent font-[family-name:var(--font-heading)]">
+          <ChefHat className="h-16 w-16 text-sovereign-gold mx-auto mb-6" />
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-sovereign-gold via-korean-red to-sovereign-gold bg-clip-text text-transparent font-[family-name:var(--font-heading)]">
             {language === 'kr' ? '한식과 전통 문화' : 'Korean Cuisine & Traditional Culture'}
           </h1>
-          <p className="text-xl md:text-2xl text-[#f0ebe3]/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-cream/90 mb-8 max-w-3xl mx-auto">
             {language === 'kr'
               ? '5000년 역사 속에 축적된 음식 철학과 건강 지혜를 세계와 나누는 문화 보고'
               : 'A cultural treasury sharing 5000 years of culinary philosophy and health wisdom with the world'}
@@ -178,7 +178,7 @@ export default function CuisineTraditionsPage() {
       {/* Traditional Dishes */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#f0ebe3] mb-12 font-[family-name:var(--font-heading)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-cream mb-12 font-[family-name:var(--font-heading)]">
             {language === 'kr' ? '전통 음식의 지혜' : 'Wisdom of Traditional Foods'}
           </h2>
 
@@ -191,33 +191,33 @@ export default function CuisineTraditionsPage() {
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="bg-[#142638]/80 border-[#1b4965]/40 hover:border-[#d4a74a]/40 transition-all h-full overflow-hidden">
+                <Card className="bg-river-deep/80 border-river-current/40 hover:border-sovereign-gold/40 transition-all h-full overflow-hidden">
                   <div className={`h-2 bg-gradient-to-r ${dish.color}`} />
                   <CardHeader>
-                    <CardTitle className="text-2xl text-[#f0ebe3] flex items-center gap-3">
-                      <Soup className="h-8 w-8 text-[#d4a74a]" />
+                    <CardTitle className="text-2xl text-cream flex items-center gap-3">
+                      <Soup className="h-8 w-8 text-sovereign-gold" />
                       {dish.name}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <p className="text-[#a0b4c8]">{dish.description}</p>
+                    <p className="text-cream-muted">{dish.description}</p>
 
-                    <div className="bg-[#0d1b2a]/50 rounded-lg p-4">
-                      <h4 className="text-sm font-semibold text-[#d4a74a] mb-2">
+                    <div className="bg-river-depths/50 rounded-lg p-4">
+                      <h4 className="text-sm font-semibold text-sovereign-gold mb-2">
                         {language === 'kr' ? '건강 효과' : 'Health Benefits'}
                       </h4>
-                      <p className="text-[#a0b4c8] text-sm">{dish.health}</p>
+                      <p className="text-cream-muted text-sm">{dish.health}</p>
                     </div>
 
                     <div className="flex justify-between items-center">
                       <div>
-                        <p className="text-xs text-[#a0b4c8]/60">{language === 'kr' ? '제철' : 'Season'}</p>
-                        <p className="text-sm text-[#f0ebe3]/80">{dish.season}</p>
+                        <p className="text-xs text-cream-muted/60">{language === 'kr' ? '제철' : 'Season'}</p>
+                        <p className="text-sm text-cream/80">{dish.season}</p>
                       </div>
-                      <Leaf className="h-5 w-5 text-[#2a6f8e]" />
+                      <Leaf className="h-5 w-5 text-river-mid" />
                     </div>
 
-                    <blockquote className="border-l-4 border-[#d4a74a] pl-4 italic text-[#a0b4c8] text-sm">
+                    <blockquote className="border-l-4 border-sovereign-gold pl-4 italic text-cream-muted text-sm">
                       &ldquo;{dish.philosophy}&rdquo;
                     </blockquote>
                   </CardContent>
@@ -229,9 +229,9 @@ export default function CuisineTraditionsPage() {
       </section>
 
       {/* Cultural Traditions */}
-      <section className="py-16 px-4 bg-gradient-to-b from-transparent via-[#1b4965]/15 to-transparent">
+      <section className="py-16 px-4 bg-gradient-to-b from-transparent via-river-current/15 to-transparent">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#f0ebe3] mb-12 font-[family-name:var(--font-heading)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-cream mb-12 font-[family-name:var(--font-heading)]">
             {language === 'kr' ? '음식 문화와 전통' : 'Food Culture & Traditions'}
           </h2>
 
@@ -243,18 +243,18 @@ export default function CuisineTraditionsPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-gradient-to-br from-[#142638] to-[#1b4965]/30 rounded-xl p-6 border border-[#1b4965]/40"
+                className="bg-gradient-to-br from-river-deep to-river-current/30 rounded-xl p-6 border border-river-current/40"
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <tradition.icon className="h-10 w-10 text-[#d4a74a]" />
-                  <h3 className="text-xl font-bold text-[#f0ebe3]">{tradition.title}</h3>
+                  <tradition.icon className="h-10 w-10 text-sovereign-gold" />
+                  <h3 className="text-xl font-bold text-cream">{tradition.title}</h3>
                 </div>
 
-                <p className="text-[#a0b4c8] mb-4">{tradition.description}</p>
+                <p className="text-cream-muted mb-4">{tradition.description}</p>
 
                 <div className="flex flex-wrap gap-2">
                   {tradition.values.map((value, i) => (
-                    <span key={i} className="px-3 py-1 bg-[#1b4965]/30 rounded-full text-sm text-[#d4a74a]">
+                    <span key={i} className="px-3 py-1 bg-river-current/30 rounded-full text-sm text-sovereign-gold">
                       {value}
                     </span>
                   ))}
@@ -272,12 +272,12 @@ export default function CuisineTraditionsPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-r from-[#142638] to-[#1b4965]/30 rounded-2xl p-8 border border-[#1b4965]/40"
+            className="bg-gradient-to-r from-river-deep to-river-current/30 rounded-2xl p-8 border border-river-current/40"
           >
             <div className="text-center mb-8">
-              <Flame className="h-12 w-12 text-[#c73032] mx-auto mb-4" />
-              <h2 className="text-3xl font-bold text-[#f0ebe3] mb-4 font-[family-name:var(--font-heading)]">{healthBenefits.title}</h2>
-              <p className="text-[#a0b4c8] max-w-2xl mx-auto">
+              <Flame className="h-12 w-12 text-korean-red mx-auto mb-4" />
+              <h2 className="text-3xl font-bold text-cream mb-4 font-[family-name:var(--font-heading)]">{healthBenefits.title}</h2>
+              <p className="text-cream-muted max-w-2xl mx-auto">
                 {language === 'kr'
                   ? '현대 과학으로 입증된 한식의 놀라운 건강 효과'
                   : 'Amazing health effects of Korean food proven by modern science'}
@@ -292,12 +292,12 @@ export default function CuisineTraditionsPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-[#0d1b2a]/50 rounded-lg p-6"
+                  className="bg-river-depths/50 rounded-lg p-6"
                 >
-                  <h3 className="text-lg font-bold text-[#2a6f8e] mb-3">{benefit.category}</h3>
-                  <p className="text-[#a0b4c8] mb-3">{benefit.description}</p>
-                  <div className="bg-gradient-to-r from-[#1b4965]/30 to-[#2a6f8e]/30 rounded p-3">
-                    <p className="text-[#d4a74a] font-semibold text-center">{benefit.impact}</p>
+                  <h3 className="text-lg font-bold text-river-mid mb-3">{benefit.category}</h3>
+                  <p className="text-cream-muted mb-3">{benefit.description}</p>
+                  <div className="bg-gradient-to-r from-river-current/30 to-river-mid/30 rounded p-3">
+                    <p className="text-sovereign-gold font-semibold text-center">{benefit.impact}</p>
                   </div>
                 </motion.div>
               ))}
@@ -314,32 +314,32 @@ export default function CuisineTraditionsPage() {
           viewport={{ once: true }}
           className="container mx-auto max-w-4xl text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-[#f0ebe3] mb-6 font-[family-name:var(--font-heading)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-cream mb-6 font-[family-name:var(--font-heading)]">
             {language === 'kr'
               ? '세계와 함께하는 한식 문화'
               : 'Korean Food Culture with the World'}
           </h2>
-          <p className="text-xl text-[#a0b4c8] mb-8">
+          <p className="text-xl text-cream-muted mb-8">
             {language === 'kr'
               ? '우리의 음식 철학과 건강 지혜를 전 인류와 나누어 더 건강하고 지속가능한 미래를 만들어갑니다.'
               : 'Sharing our culinary philosophy and health wisdom with all humanity to create a healthier and more sustainable future.'}
           </p>
 
-          <div className="bg-gradient-to-r from-[#142638] to-[#1b4965]/30 rounded-2xl p-8 mb-8 border border-[#d4a74a]/20">
-            <h3 className="text-2xl font-bold text-[#d4a74a] mb-4 font-[family-name:var(--font-heading)]">
+          <div className="bg-gradient-to-r from-river-deep to-river-current/30 rounded-2xl p-8 mb-8 border border-sovereign-gold/20">
+            <h3 className="text-2xl font-bold text-sovereign-gold mb-4 font-[family-name:var(--font-heading)]">
               {language === 'kr' ? '글로벌 한식 비전' : 'Global Korean Food Vision'}
             </h3>
-            <div className="grid md:grid-cols-3 gap-6 text-[#a0b4c8]">
+            <div className="grid md:grid-cols-3 gap-6 text-cream-muted">
               <div>
-                <h4 className="font-bold mb-2 text-[#f0ebe3]">{language === 'kr' ? '건강한 세계' : 'Healthy World'}</h4>
+                <h4 className="font-bold mb-2 text-cream">{language === 'kr' ? '건강한 세계' : 'Healthy World'}</h4>
                 <p className="text-sm">{language === 'kr' ? '발효음식과 자연재료로 인류 건강 증진' : 'Promoting human health with fermented foods and natural ingredients'}</p>
               </div>
               <div>
-                <h4 className="font-bold mb-2 text-[#f0ebe3]">{language === 'kr' ? '지속가능성' : 'Sustainability'}</h4>
+                <h4 className="font-bold mb-2 text-cream">{language === 'kr' ? '지속가능성' : 'Sustainability'}</h4>
                 <p className="text-sm">{language === 'kr' ? '계절 음식과 로컬푸드 철학으로 환경 보호' : 'Environmental protection through seasonal and local food philosophy'}</p>
               </div>
               <div>
-                <h4 className="font-bold mb-2 text-[#f0ebe3]">{language === 'kr' ? '문화 교류' : 'Cultural Exchange'}</h4>
+                <h4 className="font-bold mb-2 text-cream">{language === 'kr' ? '문화 교류' : 'Cultural Exchange'}</h4>
                 <p className="text-sm">{language === 'kr' ? '음식을 통한 평화와 이해의 다리 놓기' : 'Building bridges of peace and understanding through food'}</p>
               </div>
             </div>
@@ -348,13 +348,13 @@ export default function CuisineTraditionsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/cultural-exchange"
-              className="px-8 py-4 bg-gradient-to-r from-[#c73032] to-[#1b4965] hover:from-[#c73032]/90 hover:to-[#1b4965]/90 text-[#f0ebe3] font-bold rounded-lg transition-all transform hover:scale-105"
+              className="px-8 py-4 bg-gradient-to-r from-korean-red to-river-current hover:from-korean-red/90 hover:to-river-current/90 text-cream font-bold rounded-lg transition-all transform hover:scale-105"
             >
               {language === 'kr' ? '문화 교류 보기' : 'View Cultural Exchange'}
             </Link>
             <Link
               href="/youth-empowerment"
-              className="px-8 py-4 border-2 border-[#d4a74a] text-[#d4a74a] hover:bg-[#d4a74a] hover:text-[#0d1b2a] font-bold rounded-lg transition-all transform hover:scale-105"
+              className="px-8 py-4 border-2 border-sovereign-gold text-sovereign-gold hover:bg-sovereign-gold hover:text-river-depths font-bold rounded-lg transition-all transform hover:scale-105"
             >
               {language === 'kr' ? '청년들과 함께' : 'Together with Youth'}
             </Link>

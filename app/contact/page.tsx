@@ -25,12 +25,12 @@ function ContactPageContent() {
 export default function ContactPage() {
   const { t } = useLanguage()
   return (
-    <main id="main-content" className="min-h-screen bg-[#0d1b2a]">
+    <main id="main-content" className="min-h-screen bg-river-depths">
       <JucheHeader />
       <div className="container mx-auto px-4 py-10 pt-28">
         <header className="mb-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#f0ebe3]">{t('contactTitle')}</h1>
-          <p className="text-[#f0ebe3]/80 mt-2">{t('contactSubtitle')}</p>
+          <h1 className="text-4xl md:text-6xl font-bold text-cream">{t('contactTitle')}</h1>
+          <p className="text-cream/80 mt-2">{t('contactSubtitle')}</p>
         </header>
         <Suspense fallback={<div>{t('loading')}</div>}>
           <ContactPageContent />

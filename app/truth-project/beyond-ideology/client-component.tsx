@@ -42,7 +42,7 @@ export function BeyondIdeologyClient() {
   ]
 
   return (
-    <main className="min-h-screen bg-[#0d1b2a]">
+    <main className="min-h-screen bg-river-depths">
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
@@ -51,30 +51,30 @@ export function BeyondIdeologyClient() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-12"
           >
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-[#1b4965]/30 text-[#d4a74a] rounded-full text-sm font-medium">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-river-current/30 text-sovereign-gold rounded-full text-sm font-medium">
               <BookOpen className="w-4 h-4" />
               Truth Project Analysis
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#f0ebe3]">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-cream">
               Beyond Ideology
             </h1>
-            <p className="text-xl md:text-2xl text-[#f0ebe3]/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-cream/80 mb-8 max-w-3xl mx-auto leading-relaxed">
               The Psychology of Political Division & The Path to Unity
             </p>
-            <div className="bg-[#1b4965]/30 rounded-xl p-6 border border-[#1b4965]">
-              <p className="text-[#f0ebe3]/90 italic">
+            <div className="bg-river-current/30 rounded-xl p-6 border border-river-current">
+              <p className="text-cream/90 italic">
                 "Instead of having this thing where we're in factions constantly thinking me against the other guy, 
                 why not show a little grace, a little humility, assume you don't know everything and approach all 
                 arguments by finding a point of unity."
               </p>
-              <p className="text-[#d4a74a] mt-3 font-semibold">— Dr. Roy, Political Historian</p>
+              <p className="text-sovereign-gold mt-3 font-semibold">— Dr. Roy, Political Historian</p>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* JucheGanG Triad Instagram Feature */}
-      <section className="py-16 px-4 bg-[#1b4965]/20 border-y border-[#d4a74a]/20">
+      <section className="py-16 px-4 bg-river-current/20 border-y border-sovereign-gold/20">
         <div className="container mx-auto max-w-4xl">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -83,17 +83,17 @@ export function BeyondIdeologyClient() {
           >
             {/* JucheGanG Triad Header */}
             <div className="mb-6">
-              <div className="inline-flex items-center gap-3 mb-4 px-6 py-3 bg-[#1b4965]/30 rounded-full border border-[#d4a74a]/30">
+              <div className="inline-flex items-center gap-3 mb-4 px-6 py-3 bg-river-current/30 rounded-full border border-sovereign-gold/30">
                 <CountryFlag iso="ru" size={28} className="rounded-sm border border-cream/10" />
                 <CountryFlag iso="kp" size={28} className="rounded-sm border border-cream/10" />
                 <CountryFlag iso="cn" size={28} className="rounded-sm border border-cream/10" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                <span className="text-[#d4a74a]">
+                <span className="text-sovereign-gold">
                   JucheGanG Triad Unity
                 </span>
               </h2>
-              <p className="text-[#f0ebe3]/90 text-lg max-w-2xl mx-auto leading-relaxed">
+              <p className="text-cream/90 text-lg max-w-2xl mx-auto leading-relaxed">
                 Honoring the sovereign bonds of friendship between Russia, the DPRK, and China — 
                 three nations united in their pursuit of dignity, independence, and mutual respect.
               </p>
@@ -101,26 +101,26 @@ export function BeyondIdeologyClient() {
             
             {/* Triad Values */}
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <div className="bg-[#1b4965]/30 rounded-lg p-4 border border-[#c73032]/30">
-                <CountryFlag iso="ru" size={24} className="mb-2 rounded-sm border border-[#f0ebe3]/10 inline-block" />
-                <h3 className="font-bold text-[#f0ebe3] mb-1">Russian Federation</h3>
-                <p className="text-[#f0ebe3]/70 text-sm">Strength through sovereignty</p>
+              <div className="bg-river-current/30 rounded-lg p-4 border border-korean-red/30">
+                <CountryFlag iso="ru" size={24} className="mb-2 rounded-sm border border-cream/10 inline-block" />
+                <h3 className="font-bold text-cream mb-1">Russian Federation</h3>
+                <p className="text-cream/70 text-sm">Strength through sovereignty</p>
               </div>
-              <div className="bg-[#1b4965]/30 rounded-lg p-4 border border-[#c73032]/30">
-                <CountryFlag iso="kp" size={24} className="mb-2 rounded-sm border border-[#f0ebe3]/10 inline-block" />
-                <h3 className="font-bold text-[#f0ebe3] mb-1">DPRK</h3>
-                <p className="text-[#f0ebe3]/70 text-sm">Self-reliance and unity</p>
+              <div className="bg-river-current/30 rounded-lg p-4 border border-korean-red/30">
+                <CountryFlag iso="kp" size={24} className="mb-2 rounded-sm border border-cream/10 inline-block" />
+                <h3 className="font-bold text-cream mb-1">DPRK</h3>
+                <p className="text-cream/70 text-sm">Self-reliance and unity</p>
               </div>
-              <div className="bg-[#1b4965]/30 rounded-lg p-4 border border-[#d4a74a]/30">
-                <CountryFlag iso="cn" size={24} className="mb-2 rounded-sm border border-[#f0ebe3]/10 inline-block" />
-                <h3 className="font-bold text-[#d4a74a] mb-1">People's Republic of China</h3>
-                <p className="text-[#d4a74a]/70 text-sm">Harmony and prosperity</p>
+              <div className="bg-river-current/30 rounded-lg p-4 border border-sovereign-gold/30">
+                <CountryFlag iso="cn" size={24} className="mb-2 rounded-sm border border-cream/10 inline-block" />
+                <h3 className="font-bold text-sovereign-gold mb-1">People's Republic of China</h3>
+                <p className="text-sovereign-gold/70 text-sm">Harmony and prosperity</p>
               </div>
             </div>
           </motion.div>
           
           {/* Instagram Embed with Triad Styling */}
-          <div className="bg-[#0d1b2a]/60 backdrop-blur-sm rounded-2xl p-6 border border-[#d4a74a]/20 shadow-2xl">
+          <div className="bg-river-depths/60 backdrop-blur-sm rounded-2xl p-6 border border-sovereign-gold/20 shadow-2xl">
             <div className="max-w-lg mx-auto">
               <blockquote 
                 className="instagram-media" 
@@ -144,12 +144,12 @@ export function BeyondIdeologyClient() {
             
             {/* Triad Unity Message */}
             <div className="mt-6 text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#1b4965]/30 rounded-full border border-[#f0ebe3]/20">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-river-current/30 rounded-full border border-cream/20">
                 <span className="text-lg">✊</span>
-                <span className="text-[#f0ebe3] font-medium">Together in Solidarity</span>
+                <span className="text-cream font-medium">Together in Solidarity</span>
                 <span className="text-lg">🕊️</span>
               </div>
-              <p className="mt-3 text-[#f0ebe3]/70 text-sm italic">
+              <p className="mt-3 text-cream/70 text-sm italic">
                 "Unity is not uniformity. It is respect for our differences while working toward common goals of peace and prosperity."
               </p>
             </div>
@@ -165,8 +165,8 @@ export function BeyondIdeologyClient() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-[#f0ebe3] mb-4">Key Insights from Dr. Roy</h2>
-            <p className="text-[#f0ebe3]/70 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-cream mb-4">Key Insights from Dr. Roy</h2>
+            <p className="text-cream/70 max-w-2xl mx-auto">
               Understanding how our brains work and how politicians exploit our psychology
             </p>
           </motion.div>
@@ -179,15 +179,15 @@ export function BeyondIdeologyClient() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="bg-[#1b4965]/30 border-[#1b4965] h-full">
+                <Card className="bg-river-current/30 border-river-current h-full">
                   <CardHeader>
-                    <div className="w-12 h-12 rounded-lg bg-[#1b4965] flex items-center justify-center mb-3">
-                      <insight.icon className="w-6 h-6 text-[#d4a74a]" />
+                    <div className="w-12 h-12 rounded-lg bg-river-current flex items-center justify-center mb-3">
+                      <insight.icon className="w-6 h-6 text-sovereign-gold" />
                     </div>
-                    <CardTitle className="text-[#f0ebe3]">{insight.title}</CardTitle>
+                    <CardTitle className="text-cream">{insight.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#f0ebe3]/80">{insight.description}</p>
+                    <p className="text-cream/80">{insight.description}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -202,25 +202,25 @@ export function BeyondIdeologyClient() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-[#1b4965]/30 rounded-2xl p-8 border border-[#1b4965]"
+            className="bg-river-current/30 rounded-2xl p-8 border border-river-current"
           >
-            <Heart className="w-12 h-12 text-[#d4a74a] mx-auto mb-4" />
-            <h2 className="text-2xl font-bold text-[#f0ebe3] mb-4">Building Bridges, Not Walls</h2>
-            <p className="text-[#f0ebe3]/80 mb-6">
+            <Heart className="w-12 h-12 text-sovereign-gold mx-auto mb-4" />
+            <h2 className="text-2xl font-bold text-cream mb-4">Building Bridges, Not Walls</h2>
+            <p className="text-cream/80 mb-6">
               Dr. Roy's message aligns perfectly with our mission of peace and understanding between nations. 
               Instead of falling for artificial divisions, let's find our common humanity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/peace-timeline"
-                className="inline-flex items-center px-6 py-3 bg-[#1b4965] hover:bg-[#1b4965]/80 text-[#f0ebe3] font-bold rounded-lg transition-all transform hover:scale-105"
+                className="inline-flex items-center px-6 py-3 bg-river-current hover:bg-river-current/80 text-cream font-bold rounded-lg transition-all transform hover:scale-105"
               >
                 <Globe className="w-5 h-5 mr-2" />
                 Explore Peace Timeline
               </a>
               <a
                 href="/cultural-exchange"
-                className="inline-flex items-center px-6 py-3 border-2 border-[#d4a74a] text-[#d4a74a] hover:bg-[#d4a74a] hover:text-[#0d1b2a] font-bold rounded-lg transition-all transform hover:scale-105"
+                className="inline-flex items-center px-6 py-3 border-2 border-sovereign-gold text-sovereign-gold hover:bg-sovereign-gold hover:text-river-depths font-bold rounded-lg transition-all transform hover:scale-105"
               >
                 <Users className="w-5 h-5 mr-2" />
                 Cultural Exchange

@@ -11,11 +11,11 @@ function DataCallout({
   source: string
 }) {
   return (
-    <div className="bg-[#142638] border-l-[3px] border-[#d4a74a] rounded-r px-6 sm:px-9 py-8 my-10">
-      <div className="font-mono text-[clamp(32px,5vw,52px)] font-medium text-[#d4a74a] leading-tight mb-2">
+    <div className="bg-river-deep border-l-[3px] border-sovereign-gold rounded-r px-6 sm:px-9 py-8 my-10">
+      <div className="font-mono text-[clamp(32px,5vw,52px)] font-medium text-sovereign-gold leading-tight mb-2">
         {number}
       </div>
-      <div className="text-[15px] text-[#a0b4c8] leading-relaxed">{context}</div>
+      <div className="text-[15px] text-cream-muted leading-relaxed">{context}</div>
       <div className="text-xs text-[#6a7f94] mt-3 italic">{source}</div>
     </div>
   )
@@ -23,11 +23,11 @@ function DataCallout({
 
 function PullQuote({ children, attr }: { children: React.ReactNode; attr: string }) {
   return (
-    <div className="border-t border-b border-[#d4a74a]/30 py-10 my-12 text-center">
-      <p className="font-serif text-[clamp(20px,3vw,28px)] italic text-[#e8dfd0] leading-relaxed max-w-[600px] mx-auto">
+    <div className="border-t border-b border-sovereign-gold/30 py-10 my-12 text-center">
+      <p className="font-serif text-[clamp(20px,3vw,28px)] italic text-river-mist leading-relaxed max-w-[600px] mx-auto">
         {children}
       </p>
-      <div className="text-[13px] text-[#d4a74a] tracking-[2px] uppercase mt-5">{attr}</div>
+      <div className="text-[13px] text-sovereign-gold tracking-[2px] uppercase mt-5">{attr}</div>
     </div>
   )
 }
@@ -35,7 +35,7 @@ function PullQuote({ children, attr }: { children: React.ReactNode; attr: string
 function RedBlock({ children }: { children: React.ReactNode }) {
   return (
     <div
-      className="rounded-r my-10 px-6 sm:px-9 py-8 border-l-[3px] border-[#c73032]"
+      className="rounded-r my-10 px-6 sm:px-9 py-8 border-l-[3px] border-korean-red"
       style={{
         background: "linear-gradient(135deg, rgba(199,48,50,0.15) 0%, rgba(13,27,42,0.95) 100%)",
       }}
@@ -55,20 +55,20 @@ function CaseHeader({
   meta: string
 }) {
   return (
-    <div className="bg-[#142638] px-6 sm:px-9 py-12 my-10 rounded relative overflow-hidden">
-      <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#c73032] via-[#d4a74a] to-[#1b4965]" />
-      <div className="font-mono text-xs text-[#c73032] tracking-[3px] uppercase mb-3">{label}</div>
+    <div className="bg-river-deep px-6 sm:px-9 py-12 my-10 rounded relative overflow-hidden">
+      <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-korean-red via-sovereign-gold to-river-current" />
+      <div className="font-mono text-xs text-korean-red tracking-[3px] uppercase mb-3">{label}</div>
       <h3 className="font-serif text-[clamp(24px,3.5vw,36px)] font-bold leading-tight">{title}</h3>
-      <div className="text-sm text-[#a0b4c8] mt-3">{meta}</div>
+      <div className="text-sm text-cream-muted mt-3">{meta}</div>
     </div>
   )
 }
 
 function EvidenceCard({ number, label }: { number: string; label: string }) {
   return (
-    <div className="bg-[#142638] p-6 rounded border-t-2 border-[#d4a74a]">
-      <div className="font-mono text-[28px] text-[#d4a74a] mb-2">{number}</div>
-      <div className="text-sm text-[#a0b4c8] leading-relaxed">{label}</div>
+    <div className="bg-river-deep p-6 rounded border-t-2 border-sovereign-gold">
+      <div className="font-mono text-[28px] text-sovereign-gold mb-2">{number}</div>
+      <div className="text-sm text-cream-muted leading-relaxed">{label}</div>
     </div>
   )
 }
@@ -82,12 +82,12 @@ function SectionBreak({
 }) {
   return (
     <div className="text-center py-20 px-6 max-w-[720px] mx-auto">
-      <div className="w-[60px] h-[2px] bg-[#d4a74a] mx-auto mb-10" />
+      <div className="w-[60px] h-[2px] bg-sovereign-gold mx-auto mb-10" />
       <h2 className="font-serif text-[clamp(28px,4vw,42px)] font-bold leading-tight mb-4">
         {title}
       </h2>
       {korean && (
-        <div className="font-[&apos;Noto_Serif_KR&apos;,serif] text-base text-[#d4a74a] tracking-[3px]">
+        <div className="font-[&apos;Noto_Serif_KR&apos;,serif] text-base text-sovereign-gold tracking-[3px]">
           {korean}
         </div>
       )}
@@ -117,16 +117,16 @@ export function ArchitectureOfRuinContent() {
         />
 
         <div className="relative z-10 flex flex-col items-center">
-          <div className="text-[clamp(14px,2vw,18px)] text-[#d4a74a] tracking-[6px] uppercase mb-10 animate-fade-up">
+          <div className="text-[clamp(14px,2vw,18px)] text-sovereign-gold tracking-[6px] uppercase mb-10 animate-fade-up">
             주체강 &middot; Navigate the Current
           </div>
 
           <h1 className="font-serif font-black text-[clamp(36px,7vw,80px)] leading-[1.05] max-w-[900px] mb-8">
             The Architecture<br />
-            of <span className="text-[#d4a74a]">Ruin</span>
+            of <span className="text-sovereign-gold">Ruin</span>
           </h1>
 
-          <p className="font-light text-[clamp(16px,2.5vw,22px)] text-[#a0b4c8] max-w-[640px] leading-relaxed mb-12">
+          <p className="font-light text-[clamp(16px,2.5vw,22px)] text-cream-muted max-w-[640px] leading-relaxed mb-12">
             What happens when you invite a superpower&rsquo;s weapons onto your soil to fight your
             neighbor. Six countries found out. Five of them are still paying.
           </p>
@@ -139,10 +139,10 @@ export function ArchitectureOfRuinContent() {
               { n: "1", l: "That Reunified" },
             ].map((s) => (
               <div key={s.l} className="text-center">
-                <span className="font-mono text-[clamp(28px,5vw,48px)] font-medium text-[#d4a74a] block">
+                <span className="font-mono text-[clamp(28px,5vw,48px)] font-medium text-sovereign-gold block">
                   {s.n}
                 </span>
-                <span className="text-[13px] text-[#a0b4c8] tracking-[2px] uppercase mt-1 block">
+                <span className="text-[13px] text-cream-muted tracking-[2px] uppercase mt-1 block">
                   {s.l}
                 </span>
               </div>
@@ -177,12 +177,12 @@ export function ArchitectureOfRuinContent() {
           time. On March 2, 2026, Iranian drones struck Qatar&rsquo;s Ras Laffan Industrial City.
           QatarEnergy — the world&rsquo;s largest LNG producer — halted all production and declared
           force majeure. Five days ago, CEO Saad al-Kaabi told Reuters that{" "}
-          <span className="font-mono text-[#d4a74a]">17%</span> of Qatar&rsquo;s LNG export
+          <span className="font-mono text-sovereign-gold">17%</span> of Qatar&rsquo;s LNG export
           capacity is offline for{" "}
-          <span className="font-mono text-[#d4a74a]">three to five years</span>. Estimated lost
-          revenue: <span className="font-mono text-[#d4a74a]">$20 billion annually</span>. The
+          <span className="font-mono text-sovereign-gold">three to five years</span>. Estimated lost
+          revenue: <span className="font-mono text-sovereign-gold">$20 billion annually</span>. The
           damaged facilities cost{" "}
-          <span className="font-mono text-[#d4a74a]">$26 billion</span> to build. Force majeure
+          <span className="font-mono text-sovereign-gold">$26 billion</span> to build. Force majeure
           declared on long-term contracts to South Korea, China, Italy, and Belgium.
         </p>
 
@@ -190,10 +190,10 @@ export function ArchitectureOfRuinContent() {
           Dubai International Airport — the world&rsquo;s busiest for international traffic — has
           been struck multiple times. The Burj Al Arab was hit. Palm Jumeirah was hit. ADNOC shut
           its Ruwais refinery —{" "}
-          <span className="font-mono text-[#d4a74a]">922,000 barrels per day</span> — after a drone
+          <span className="font-mono text-sovereign-gold">922,000 barrels per day</span> — after a drone
           strike. Saudi Aramco&rsquo;s Ras Tanura refinery caught fire after a drone attack. The
           Strait of Hormuz is effectively blocked. Brent crude touched{" "}
-          <span className="font-mono text-[#d4a74a]">$119 a barrel</span>.
+          <span className="font-mono text-sovereign-gold">$119 a barrel</span>.
         </p>
 
         <p>
@@ -205,7 +205,7 @@ export function ArchitectureOfRuinContent() {
           That&rsquo;s the QatarEnergy CEO — the man running the world&rsquo;s largest LNG
           operation — telling you this is not his war. He&rsquo;s hosting the bases. He&rsquo;s
           paying the price. Iran has fired over{" "}
-          <span className="font-mono text-[#d4a74a]">2,000</span> missiles and drones at Gulf
+          <span className="font-mono text-sovereign-gold">2,000</span> missiles and drones at Gulf
           states since February 28. The hosts and the neighbors both burn. The only party that
           doesn&rsquo;t is the one that manufactured the weapons eight thousand miles away.
         </p>
@@ -244,7 +244,7 @@ export function ArchitectureOfRuinContent() {
         <RedBlock>
           <p className="text-[17px] leading-relaxed">
             What follows is not a tragic accident of war. It is the deliberate, structural design of
-            what military researchers call the <em className="text-[#e8dfd0]">proxy paradigm</em>.
+            what military researchers call the <em className="text-river-mist">proxy paradigm</em>.
             The sponsor achieves its objectives at arm&rsquo;s length. The host absorbs the
             catastrophic externalities. Every time.
           </p>
@@ -265,20 +265,20 @@ export function ArchitectureOfRuinContent() {
       <div className="max-w-[720px] mx-auto px-6 pb-20 space-y-6 text-lg leading-[1.8]">
         <p>
           Political scientists have a name for what happens when you invite foreign weapons onto your
-          soil. They call it the <strong className="text-[#e8dfd0] font-semibold">Target Effect</strong>. The theory says
+          soil. They call it the <strong className="text-river-mist font-semibold">Target Effect</strong>. The theory says
           foreign bases are established to project power and deter aggression. The reality says those
           bases transform the host into a primary target.
         </p>
 
         <p>
-          Not a secondary target. Not collateral. <em className="text-[#e8dfd0]">Primary</em>.
+          Not a secondary target. Not collateral. <em className="text-river-mist">Primary</em>.
         </p>
 
         <p>
           The United States operates approximately{" "}
-          <span className="font-mono text-[#d4a74a]">750</span> military sites across{" "}
-          <span className="font-mono text-[#d4a74a]">80</span> countries, costing roughly{" "}
-          <span className="font-mono text-[#d4a74a]">$55 billion</span> annually. That&rsquo;s an
+          <span className="font-mono text-sovereign-gold">750</span> military sites across{" "}
+          <span className="font-mono text-sovereign-gold">80</span> countries, costing roughly{" "}
+          <span className="font-mono text-sovereign-gold">$55 billion</span> annually. That&rsquo;s an
           architecture designed for American force projection. The host nation&rsquo;s security is
           not the objective. It&rsquo;s the sales pitch.
         </p>
@@ -383,7 +383,7 @@ export function ArchitectureOfRuinContent() {
 
         <p>
           In 1986, the International Court of Justice ruled on{" "}
-          <em className="text-[#e8dfd0]">Nicaragua v. United States</em>. The case examined
+          <em className="text-river-mist">Nicaragua v. United States</em>. The case examined
           America&rsquo;s role in directing, financing, training, equipping, and supplying the Contra
           insurgency operating from Honduran territory against Nicaragua.
         </p>
@@ -409,7 +409,7 @@ export function ArchitectureOfRuinContent() {
         <p>
           The Court established the &ldquo;effective control&rdquo; test. For the sponsor to bear
           legal responsibility, it must be proven that the sponsor exercised{" "}
-          <em className="text-[#e8dfd0]">effective control</em> over the specific operations in which
+          <em className="text-river-mist">effective control</em> over the specific operations in which
           violations occurred. Not general control. Not strategic direction. Not the fact that without
           the sponsor&rsquo;s weapons and money, the violations would have been impossible.
         </p>
@@ -422,7 +422,7 @@ export function ArchitectureOfRuinContent() {
           Honduras hosted the Contras. The CIA trained Battalion 3-16, which disappeared 184
           Honduran citizens — its own people — to protect the proxy infrastructure. Government
           records were burned. Investigators found empty filing cabinets. The files themselves became{" "}
-          <em className="text-[#e8dfd0]">desaparecidos</em>.
+          <em className="text-river-mist">desaparecidos</em>.
         </p>
 
         <p>The United States went home. Honduras inherited the ashes and the blame.</p>
@@ -449,7 +449,7 @@ export function ArchitectureOfRuinContent() {
         <p>
           Burns&rsquo; cable was titled &ldquo;NYET MEANS NYET.&rdquo; He wrote that Ukrainian entry
           into NATO was &ldquo;the brightest of all red lines for the Russian elite.&rdquo; Kissinger
-          told <em className="text-[#e8dfd0]">The Economist</em> in 2023 that the NATO offer was
+          told <em className="text-river-mist">The Economist</em> in 2023 that the NATO offer was
           &ldquo;a grave mistake&rdquo; that &ldquo;led to this war.&rdquo;
         </p>
 
@@ -531,7 +531,7 @@ export function ArchitectureOfRuinContent() {
         <p>
           Lebanon tells the same story stretched across decades. A host nation for Syrian, Iranian,
           Israeli, and Western proxy operations since the 1970s. The World Bank&rsquo;s damage
-          assessment: <span className="font-mono text-[#d4a74a]">$14 billion</span> from the most
+          assessment: <span className="font-mono text-sovereign-gold">$14 billion</span> from the most
           recent conflict alone. GDP contracted 7.1% in 2024, compounding a cumulative decline of
           40% since 2019. The housing sector took $4.6 billion in damage. Over 4,285 dead.
         </p>
@@ -560,7 +560,7 @@ export function ArchitectureOfRuinContent() {
 
         <p>
           On October 22, 1983,{" "}
-          <span className="font-mono text-[#d4a74a]">1.3 million Germans</span> took to the streets
+          <span className="font-mono text-sovereign-gold">1.3 million Germans</span> took to the streets
           in the largest mass demonstrations in West German history. They understood something their
           government was pretending not to know: the weapons on their soil didn&rsquo;t protect them.
           The weapons made them the target.
@@ -582,7 +582,7 @@ export function ArchitectureOfRuinContent() {
         </PullQuote>
 
         <p>
-          Egon Bahr called it <em className="text-[#e8dfd0]">Wandel durch Ann&auml;herung</em>.
+          Egon Bahr called it <em className="text-river-mist">Wandel durch Ann&auml;herung</em>.
           Change through rapprochement. Willy Brandt built it into policy. The 1970 Moscow Treaty
           renounced force. The 1972 Basic Treaty established mutual recognition. The 1975 Helsinki
           Final Act created frameworks for human rights monitoring that seeded dissident movements
@@ -596,7 +596,7 @@ export function ArchitectureOfRuinContent() {
 
         <p>
           Angela Merkel said it:{" "}
-          <em className="text-[#e8dfd0]">Nichts muss so bleiben, wie es ist.</em>
+          <em className="text-river-mist">Nichts muss so bleiben, wie es ist.</em>
         </p>
 
         <p>Nothing must remain as it is.</p>
@@ -646,7 +646,7 @@ export function ArchitectureOfRuinContent() {
             generation that will inherit this peninsula is already asking the question their parents
             were too afraid to ask.
           </p>
-          <p className="text-[13px] text-[#a0b4c8]">
+          <p className="text-[13px] text-cream-muted">
             Gallup World Poll, 2006
           </p>
         </RedBlock>
@@ -726,7 +726,7 @@ export function ArchitectureOfRuinContent() {
           background: "linear-gradient(180deg, #0d1b2a 0%, #142638 100%)",
         }}
       >
-        <div className="text-[clamp(20px,3vw,28px)] text-[#e8dfd0] leading-[1.8] max-w-[600px] mx-auto mb-8"
+        <div className="text-[clamp(20px,3vw,28px)] text-river-mist leading-[1.8] max-w-[600px] mx-auto mb-8"
           style={{ fontFamily: "'Noto Serif KR', serif" }}
         >
           무기는 분단을 영구화한다.<br />
@@ -734,7 +734,7 @@ export function ArchitectureOfRuinContent() {
           역사가 증명한다. 독일이 증명한다.<br />
           이제 한반도의 차례다.
         </div>
-        <div className="text-sm text-[#a0b4c8] italic">
+        <div className="text-sm text-cream-muted italic">
           Weapons make division permanent. Only dialogue creates reunification.<br />
           History proves it. Germany proves it. Now it is Korea&rsquo;s turn.
         </div>

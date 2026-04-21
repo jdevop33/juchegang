@@ -28,7 +28,7 @@ export const metadata = {
 
 export default function FiveMonthsPage() {
   return (
-    <main className="min-h-screen bg-[#0d1b2a] text-[#f0ebe3]">
+    <main className="min-h-screen bg-river-depths text-cream">
       <JucheHeader />
       <FiveMonthsContent />
       <JucheFooter />
