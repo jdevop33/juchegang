@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function SorosGovernmentNexusPage() {
   return (
-    <main className="min-h-screen bg-river-depths text-cream">
+    <main className="min-h-[100dvh] bg-river-depths text-cream">
       <JucheHeader />
       <BriefingBanner src="/images/brothers.jpg" alt="Soros-Government Nexus" aspect="12/5" overlay="bottom" />
       <SorosGovernmentNexusContent />

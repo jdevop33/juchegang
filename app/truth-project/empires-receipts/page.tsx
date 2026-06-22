@@ -14,7 +14,7 @@ export default function EmpiresReceiptsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-river-depths">
+    <div className="min-h-[100dvh] bg-river-depths">
       <div className="container mx-auto px-4 py-8">
         <Link href="/truth-project" className="inline-flex items-center gap-2 text-cream/70 hover:text-cream mb-8 transition-colors">
           <ArrowLeft className="h-4 w-4" />

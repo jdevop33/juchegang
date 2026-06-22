@@ -16,7 +16,7 @@ export default async function OG() {
           justifyContent: "space-between",
           padding: "64px 80px",
           background:
-            "linear-gradient(135deg, #0d1b2a 0%, #142638 45%, #1b4965 100%)",
+            "linear-gradient(135deg, #050505 0%, #142638 45%, #1b4965 100%)",
           color: "#f0ebe3",
           fontFamily: "serif",
           position: "relative",
@@ -58,7 +58,7 @@ export default async function OG() {
               borderRadius: 12,
               background:
                 "linear-gradient(135deg, #d4a74a 0%, #8b6914 100%)",
-              color: "#0d1b2a",
+              color: "#050505",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",

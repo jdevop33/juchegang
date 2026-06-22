@@ -177,7 +177,7 @@ export default function BriefingsContent() {
   ]
 
   return (
-    <div className="min-h-screen bg-river-depths selection:bg-sovereign-gold/30 selection:text-sovereign-gold">
+    <div className="min-h-[100dvh] bg-river-depths selection:bg-sovereign-gold/30 selection:text-sovereign-gold">
       {/* Cinematic Hero Image */}
       <section ref={heroRef} className="relative h-[60vh] min-h-[500px] overflow-hidden mb-16">
         <motion.div 

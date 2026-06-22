@@ -42,7 +42,7 @@ export function BeyondIdeologyClient() {
   ]
 
   return (
-    <main className="min-h-screen bg-river-depths">
+    <main className="min-h-[100dvh] bg-river-depths">
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">

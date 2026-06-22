@@ -42,7 +42,7 @@ export default function SocialContent({
   const linkSources = trustedSources.filter((s) => s.kind === 'link')
 
   return (
-    <div className="min-h-screen bg-river-depths selection:bg-sovereign-gold/30 selection:text-sovereign-gold">
+    <div className="min-h-[100dvh] bg-river-depths selection:bg-sovereign-gold/30 selection:text-sovereign-gold">
       
       {/* Cinematic Hero */}
       <section ref={heroRef} className="relative h-[60vh] min-h-[500px] overflow-hidden mb-20">

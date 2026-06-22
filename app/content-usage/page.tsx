@@ -12,7 +12,7 @@ export default function ContentUsagePage() {
 	return (
 		<>
 			<JucheHeader />
-			<main className="min-h-screen bg-river-depths selection:bg-sovereign-gold/30 selection:text-sovereign-gold">
+			<main className="min-h-[100dvh] bg-river-depths selection:bg-sovereign-gold/30 selection:text-sovereign-gold">
 				
 				{/* Cinematic Hero */}
 				<section className="relative h-[40vh] min-h-[400px] overflow-hidden mb-16">

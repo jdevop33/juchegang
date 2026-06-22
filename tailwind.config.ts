@@ -54,9 +54,9 @@ const config: Config = {
         // RIVER PALETTE v2.0 — "Navigate the Current"
         // ═══════════════════════════════════════════════════════════════
         river: {
-          depths: "#0d1b2a",    // Primary background - deep navy
+          depths: "#050505",    // Primary background - OLED black
           current: "#1b4965",   // Supporting blue - the visible flow
-          deep: "#142638",      // Card surfaces - where depth creates dimension
+          deep: "#0a0a0a",      // Card surfaces - where depth creates dimension
           mid: "#2a6f8e",       // Accent blue - lighter current
           mist: "#e8dfd0",      // Light text - morning fog on water
         },

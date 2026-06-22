@@ -195,7 +195,7 @@ export default function PeaceTimelinePage() {
   ]
 
   return (
-    <div className="min-h-screen bg-river-depths selection:bg-sovereign-gold/30 selection:text-sovereign-gold">
+    <div className="min-h-[100dvh] bg-river-depths selection:bg-sovereign-gold/30 selection:text-sovereign-gold">
       <JucheHeader />
       
       <main id="main-content" className="relative pt-24 pb-24">
@@ -394,7 +394,7 @@ export default function PeaceTimelinePage() {
                   viewport={{ once: true }}
                   className={`relative p-px rounded-2xl bg-gradient-to-b from-cream/10 to-transparent group ${benefit.colSpan}`}
                 >
-                  <div className="relative bg-[#0d1b2a] border border-cream/5 rounded-[15px] p-8 h-full flex flex-col justify-between overflow-hidden inset-shadow-sm inset-shadow-cream/5">
+                  <div className="relative bg-[#050505] border border-cream/5 rounded-[15px] p-8 h-full flex flex-col justify-between overflow-hidden inset-shadow-sm inset-shadow-cream/5">
                     <div className="absolute top-0 right-0 p-8 opacity-5">
                       <Globe className="w-32 h-32" />
                     </div>

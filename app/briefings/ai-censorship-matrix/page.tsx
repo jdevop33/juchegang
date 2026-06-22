@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function AICensorshipMatrixBriefing() {
   return (
-    <main className="min-h-screen bg-river-depths text-cream">
+    <main className="min-h-[100dvh] bg-river-depths text-cream">
       <JucheHeader />
   <BriefingBanner src="/images/coolgang2.png" alt="AI censorship matrix" aspect="12/5" contain overlay="bottom" />
       <article className="container mx-auto px-4 pt-28 pb-20 prose prose-invert max-w-3xl">

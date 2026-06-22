@@ -1,7 +1,7 @@
 "use client"
 
-import { Menu, X, Sparkles, Home, Globe, Users, Heart, Calendar, Image as ImageIcon, BookOpen, MessageCircle, FileText, Anchor, Landmark } from "lucide-react"
-import { useState, useEffect } from "react"
+import { Menu, X } from "lucide-react"
+import { useState, useEffect, useCallback } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
@@ -9,230 +9,231 @@ import * as Drawer from "vaul"
 import { LanguageToggle } from "@/components/language-toggle"
 import MotionToggle from "@/components/motion-toggle"
 import { useLanguage } from "@/contexts/language-context"
-import { motion, AnimatePresence } from "framer-motion"
+
+const navLinks = [
+  { href: "/", labelKey: "home" },
+  { href: "/briefings", label: "Briefings" },
+  { href: "/mission", labelKey: "mission" },
+  { href: "/cultural-exchange", labelKey: "culture" },
+  { href: "/youth-empowerment", labelKey: "youth" },
+  { href: "/social", label: "Social" },
+  { href: "/peace-timeline", labelKey: "peace" },
+  { href: "/civilizations", label: "Civilizations" },
+  { href: "/channels", labelKey: "channels" },
+]
+
+const featuredLinks = [
+  { href: "/gallery", labelKey: "gallery", icon: "📸" },
+  { href: "/truth-project", labelKey: "truthProject", icon: "🌍" },
+]
 
 export function EnhancedHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const [scrollProgress, setScrollProgress] = useState(0)
   const { t } = useLanguage()
   const pathname = usePathname()
 
-  // Enhanced scroll detection with progress
   useEffect(() => {
+    let ticking = false
     const handleScroll = () => {
-      const scrollY = window.scrollY
-      const documentHeight = document.documentElement.scrollHeight - window.innerHeight
-      const progress = (scrollY / documentHeight) * 100
-
-      setScrollProgress(progress)
-      setIsScrolled(scrollY > 20)
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 32)
+          ticking = false
+        })
+        ticking = true
+      }
     }
-
     window.addEventListener("scroll", handleScroll, { passive: true })
-    handleScroll() // Initial check
+    handleScroll()
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Smooth scroll to section
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith('#')) {
-      e.preventDefault()
-      const element = document.querySelector(href)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        setIsMenuOpen(false)
-      }
-    }
-  }
-
-  const navItems = [
-    { href: "/", label: t('home'), icon: Home },
-    { href: "/briefings", label: "Briefings", icon: FileText, featured: true },
-    { href: "/mission", label: t('mission'), icon: Globe },
-    { href: "/cultural-exchange", label: t('culture'), icon: Users },
-    { href: "/youth-empowerment", label: t('youth'), icon: Heart },
-    { href: "/social", label: "Social", icon: MessageCircle },
-    { href: "/peace-timeline", label: t('peace'), icon: Calendar },
-    { href: "/civilizations", label: "Civilizations", icon: Landmark },
-    { href: "/gallery", label: t('gallery'), icon: ImageIcon, featured: true },
-    { href: "/truth-project", label: t('truthProject'), icon: BookOpen, featured: true },
-  ]
+  const closeMenu = useCallback(() => setIsMenuOpen(false), [])
 
   return (
     <>
-      {/* Progress Bar - River Flow */}
-      <div className="fixed top-0 left-0 right-0 h-1 z-[60] pointer-events-none">
-        <motion.div
-          className="h-full bg-gradient-to-r from-river-current via-sovereign-gold to-river-current"
-          style={{ width: `${scrollProgress}%` }}
-          transition={{ duration: 0.1 }}
-        />
-      </div>
-
-      <motion.header
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
           isScrolled
-            ? "bg-river-depths/80 backdrop-blur-2xl border-b border-white/5 shadow-2xl shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]"
+            ? "bg-[#050505]/95 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.3)]"
             : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="flex items-center justify-between h-16 sm:h-20">
-            {/* Logo Section */}
-            <motion.div
-              className="flex items-center gap-3"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+        <div className="container mx-auto max-w-[1400px] px-4 md:px-8">
+          <div className="flex items-center justify-between h-16 md:h-[72px]">
+            {/* Logo — proportionate on all screens */}
+            <div className="flex items-center shrink-0">
               <Link
                 href="/"
-                className="group flex items-center gap-3"
+                className="group inline-flex items-center gap-2.5 transition-opacity duration-300 hover:opacity-80"
               >
-                <div className="relative">
-                  <Image
-                    src="/logo-icon-gang.png"
-                    alt="JucheGang"
-                    width={64}
-                    height={64}
-                    className="sm:w-[72px] sm:h-[72px]"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-sovereign-gold/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
-                </div>
-                {/* Text hidden - logo contains branding */}
+                <Image
+                  src="/logo-icon-gang.png"
+                  alt="JucheGang"
+                  width={40}
+                  height={40}
+                  priority
+                  className="w-9 h-9 md:w-10 md:h-10 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105"
+                />
+                <span className="text-cream/60 text-[11px] font-medium tracking-[0.15em] uppercase hidden sm:inline">
+                  JucheGang
+                </span>
               </Link>
-            </motion.div>
+            </div>
 
-            {/* Desktop Navigation */}
+            {/* Desktop inline nav (first 5 items) */}
             <nav className="hidden lg:flex items-center gap-1">
-              {navItems.slice(0, 5).map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`group px-3 py-2 rounded-lg text-sm font-medium transition-all active:scale-[0.98] ${
-                    pathname === item.href
-                      ? "bg-river-current/30 text-river-mist"
-                      : "text-cream-muted hover:text-river-mist hover:bg-river-current/20"
-                  }`}
-                >
-                  <span className="flex items-center gap-2">
-                    <item.icon className="w-4 h-4" />
-                    {item.label}
-                  </span>
-                </Link>
-              ))}
+              {navLinks.slice(0, 5).map((item) => {
+                const label = item.labelKey ? t(item.labelKey) : item.label
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 active:scale-[0.98] ${
+                      pathname === item.href
+                        ? "bg-white/10 text-cream"
+                        : "text-cream/50 hover:text-cream hover:bg-white/5"
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                )
+              })}
             </nav>
 
-            {/* Actions */}
-            <div className="flex items-center gap-2 sm:gap-3">
-              <div className="hidden sm:block">
-                <LanguageToggle />
-              </div>
+            {/* Desktop actions */}
+            <div className="hidden md:flex items-center gap-3">
+              <LanguageToggle />
               <MotionToggle />
-
               <Link
                 href="/contact"
-                className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-sovereign-gold to-sovereign-dark hover:from-sovereign-gold hover:to-sovereign-gold text-river-depths font-bold text-xs sm:text-sm transition-all transform hover:scale-105 active:scale-[0.98] shadow-lg shadow-sovereign-gold/20"
+                className="group relative inline-flex items-center justify-center pl-5 pr-1.5 py-1.5 rounded-full bg-cream text-[#050505] text-sm font-bold transition-all duration-300 active:scale-[0.98] hover:bg-white"
               >
-                {t('contact')}
+                <span className="mr-3">{t('contact')}</span>
+                <div className="w-7 h-7 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-0.5 group-hover:scale-105">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-[#050505]">
+                    <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
               </Link>
-
               <button
                 onClick={() => setIsMenuOpen(true)}
-                className="p-2 sm:p-2.5 rounded-lg bg-river-current/20 hover:bg-river-current/30 transition-all active:scale-[0.98] focus:ring-2 focus:ring-sovereign-gold/50 focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center"
+                className="relative inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 text-cream-muted hover:text-cream bg-white/5 hover:bg-white/10 transition-all duration-300 active:scale-[0.98] text-sm font-medium"
                 aria-label="Open navigation menu"
                 type="button"
               >
-                <Menu className="w-5 h-5 sm:w-6 sm:h-6 text-river-mist" />
+                <Menu className="h-4 w-4" strokeWidth={1.5} />
+                <span className="uppercase text-[11px] tracking-[0.15em]">Menu</span>
+              </button>
+            </div>
+
+            {/* Mobile: language + motion + compact menu */}
+            <div className="md:hidden flex items-center gap-2">
+              <LanguageToggle />
+              <MotionToggle />
+              <button
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/10 text-cream-muted hover:text-cream bg-white/5 hover:bg-white/10 transition-all duration-300 active:scale-[0.95]"
+                aria-label="Toggle menu"
+                onClick={() => setIsMenuOpen(true)}
+              >
+                <Menu className="h-[18px] w-[18px]" strokeWidth={1.5} />
               </button>
             </div>
           </div>
         </div>
-      </motion.header>
+      </header>
 
-      {/* Enhanced Mobile Drawer */}
-      <AnimatePresence>
-        {isMenuOpen && (
-          <Drawer.Root direction="right" open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-            <Drawer.Portal>
-              <Drawer.Overlay className="fixed inset-0 bg-river-depths/90 backdrop-blur-sm z-[100]" />
-              <Drawer.Content className="fixed right-0 top-0 h-full w-[85vw] max-w-md bg-gradient-to-b from-river-depths via-river-deep to-river-depths border-l border-sovereign-gold/20 shadow-2xl z-[101]">
-                <div className="flex flex-col h-full">
-                  {/* Drawer Header */}
-                  <div className="flex items-center justify-between p-6 border-b border-river-current/30">
-                    <div className="flex items-center gap-2">
-                      <Anchor className="w-5 h-5 text-sovereign-gold" />
-                      <h2 className="text-xl font-heading font-bold text-sovereign-gold">Navigate</h2>
-                    </div>
-                    <button
-                      onClick={() => setIsMenuOpen(false)}
-                      className="p-2 rounded-lg hover:bg-river-current/20 transition-colors"
-                    >
-                      <X className="w-6 h-6 text-river-mist" />
-                    </button>
-                  </div>
+      {/* Drawer */}
+      <Drawer.Root direction="right" open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+        <Drawer.Portal>
+          <Drawer.Overlay className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100]" />
+          <Drawer.Content className="fixed right-0 top-0 h-[100dvh] w-[92vw] max-w-[480px] bg-[#050505] border-l border-white/10 shadow-2xl will-change-transform z-[101] flex flex-col">
+            {/* Drawer header */}
+            <div className="flex items-center justify-between px-6 py-5 border-b border-white/5 shrink-0">
+              <div className="flex items-baseline gap-2">
+                <span className="text-lg font-bold tracking-tight text-sovereign-gold font-[family-name:var(--font-korean)]">
+                  주체강
+                </span>
+                <span className="text-cream/30 text-[10px] tracking-[0.15em] uppercase">Navigate</span>
+              </div>
+              <button
+                onClick={closeMenu}
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-cream-muted hover:text-cream hover:bg-white/5 transition-all duration-300 active:scale-[0.95]"
+              >
+                <X className="h-[18px] w-[18px]" strokeWidth={1.5} />
+              </button>
+            </div>
 
-                  {/* Drawer Content */}
-                  <nav className="flex-1 overflow-y-auto p-6">
-                    <div className="space-y-2">
-                      {navItems.map((item, index) => (
-                        <motion.div
-                          key={item.href}
-                          initial={{ x: 50, opacity: 0 }}
-                          animate={{ x: 0, opacity: 1 }}
-                          transition={{ delay: index * 0.05 }}
-                        >
-                          <Link
-                            href={item.href}
-                            onClick={(e) => {
-                              handleSmoothScroll(e, item.href)
-                              if (!item.href.startsWith('#')) setIsMenuOpen(false)
-                            }}
-                            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
-                              pathname === item.href
-                                ? "bg-gradient-to-r from-river-current/40 to-transparent text-river-mist border-l-4 border-sovereign-gold"
-                                : "text-cream-muted hover:text-river-mist hover:bg-river-current/20"
-                            } ${item.featured ? 'ring-1 ring-sovereign-gold/30' : ''}`}
-                          >
-                            <item.icon className="w-5 h-5" />
-                            <span className="font-medium">{item.label}</span>
-                            {item.featured && (
-                              <span className="ml-auto text-xs px-2 py-1 bg-sovereign-gold/20 text-sovereign-gold rounded-full">
-                                Featured
-                              </span>
-                            )}
-                          </Link>
-                        </motion.div>
-                      ))}
-                    </div>
+            {/* Nav links */}
+            <nav className="flex-1 overflow-y-auto overscroll-contain px-4 py-6">
+              <ul className="space-y-1">
+                {navLinks.map((link) => {
+                  const label = link.labelKey ? t(link.labelKey) : link.label
+                  const isActive = pathname === link.href
 
-                    {/* Social Links */}
-                    <div className="mt-8 pt-8 border-t border-river-current/30">
-                      <p className="text-sm text-cream-muted mb-4">Connect with us</p>
+                  return (
+                    <li key={link.href}>
                       <Link
-                        href="/social"
-                        onClick={() => setIsMenuOpen(false)}
-                        className="flex items-center gap-3 px-4 py-3 rounded-xl bg-gradient-to-r from-river-current/30 to-river-mid/30 text-river-mist hover:from-river-current/50 hover:to-river-mid/50 transition-all"
+                        href={link.href}
+                        onClick={closeMenu}
+                        className={`block px-4 py-3.5 rounded-2xl text-[15px] font-medium transition-all duration-300 ${
+                          isActive
+                            ? "bg-white/10 text-cream border border-white/10"
+                            : "text-cream-muted hover:text-cream hover:bg-white/5"
+                        }`}
                       >
-                        <MessageCircle className="w-5 h-5" />
-                        <span className="font-medium">Social Channels</span>
+                        {label}
                       </Link>
-                    </div>
+                    </li>
+                  )
+                })}
 
-                    {/* Mobile Language Toggle */}
-                    <div className="mt-6 sm:hidden">
-                      <LanguageToggle />
-                    </div>
-                  </nav>
+                {/* Featured divider */}
+                <li className="pt-5 mt-3">
+                  <div className="px-4 pb-3">
+                    <span className="text-[10px] uppercase tracking-[0.25em] font-medium text-sovereign-gold/70">
+                      Featured
+                    </span>
+                  </div>
+                </li>
+
+                {featuredLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      onClick={closeMenu}
+                      className="group flex items-center gap-3 px-4 py-3.5 rounded-2xl text-[15px] font-medium text-cream bg-white/5 border border-white/5 hover:border-sovereign-gold/20 hover:bg-white/10 transition-all duration-300"
+                    >
+                      <span className="text-base">{link.icon}</span>
+                      <span>{t(link.labelKey)}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            {/* Drawer footer */}
+            <div className="px-4 py-5 border-t border-white/5 shrink-0 space-y-4">
+              <Link
+                href="/contact"
+                onClick={closeMenu}
+                className="group relative flex items-center justify-center pl-6 pr-2 py-2.5 rounded-full bg-cream text-[#050505] font-bold text-base transition-all duration-300 active:scale-[0.98] hover:bg-white w-full"
+              >
+                <span className="mr-4">{t('contact')}</span>
+                <div className="w-8 h-8 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
+                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none" className="text-[#050505]">
+                    <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
                 </div>
-              </Drawer.Content>
-            </Drawer.Portal>
-          </Drawer.Root>
-        )}
-      </AnimatePresence>
+              </Link>
+              <div className="flex justify-center gap-4">
+                <LanguageToggle />
+              </div>
+            </div>
+          </Drawer.Content>
+        </Drawer.Portal>
+      </Drawer.Root>
     </>
   )
 }

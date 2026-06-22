@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function FalseFlagCyberOperationsBriefing() {
   return (
-    <main className="min-h-screen bg-river-depths text-cream">
+    <main className="min-h-[100dvh] bg-river-depths text-cream">
       <JucheHeader />
   <BriefingBanner src="/images/hero-image.png" alt="False flag cyber operations" aspect="12/5" contain overlay="bottom" />
       <FalseFlagContent />

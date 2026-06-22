@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function ArchitectureOfSovereigntyKrPage() {
   return (
-    <main className="min-h-screen bg-river-depths">
+    <main className="min-h-[100dvh] bg-river-depths">
       <JucheHeader />
 
       {/* Hero Section */}

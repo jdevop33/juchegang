@@ -101,10 +101,10 @@ export function ArchitectureOfRuinContent() {
     <article>
       {/* ═══ HERO ═══ */}
       <div
-        className="min-h-screen flex flex-col justify-center items-center text-center px-6 py-16 relative overflow-hidden"
+        className="min-h-[100dvh] flex flex-col justify-center items-center text-center px-6 py-16 relative overflow-hidden"
         style={{
           background:
-            "linear-gradient(180deg, #0d1b2a 0%, #1b4965 50%, #c73032 100%)",
+            "linear-gradient(180deg, #050505 0%, #1b4965 50%, #c73032 100%)",
         }}
       >
         {/* scan-line overlay */}
@@ -723,7 +723,7 @@ export function ArchitectureOfRuinContent() {
       <div
         className="text-center py-20 px-6"
         style={{
-          background: "linear-gradient(180deg, #0d1b2a 0%, #142638 100%)",
+          background: "linear-gradient(180deg, #050505 0%, #142638 100%)",
         }}
       >
         <div className="text-[clamp(20px,3vw,28px)] text-river-mist leading-[1.8] max-w-[600px] mx-auto mb-8"

@@ -189,7 +189,7 @@ export default function NetworkPage() {
   const opacity = useTransform(heroScroll, [0, 0.8], [1, 0])
 
   return (
-    <main className="min-h-screen bg-river-depths selection:bg-sovereign-gold/30 selection:text-sovereign-gold">
+    <main className="min-h-[100dvh] bg-river-depths selection:bg-sovereign-gold/30 selection:text-sovereign-gold">
       <JucheHeader />
 
       {/* Cinematic Hero Image */}

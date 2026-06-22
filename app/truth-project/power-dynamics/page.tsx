@@ -14,7 +14,7 @@ export default function PowerDynamicsPage() {
   }
 
   return (
-    <div className="min-h-screen" style={{ background: 'linear-gradient(to bottom, #0d1b2a, #0d1b2a)' }}>
+    <div className="min-h-[100dvh]" style={{ background: 'linear-gradient(to bottom, #050505, #050505)' }}>
       <div className="container mx-auto px-4 py-8">
         <Link href="/truth-project" className="inline-flex items-center gap-2 mb-8 transition-colors" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>
           <ArrowLeft className="h-4 w-4" />

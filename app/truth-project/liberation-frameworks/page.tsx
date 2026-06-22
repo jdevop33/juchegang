@@ -25,7 +25,7 @@ export default function LiberationFrameworksPage() {
   }
 
   return (
-    <div className="min-h-screen" style={{ background: 'linear-gradient(to bottom, #0d1b2a, #0d1b2a)' }}>
+    <div className="min-h-[100dvh]" style={{ background: 'linear-gradient(to bottom, #050505, #050505)' }}>
       <div className="container mx-auto px-4 py-8">
         <Link href="/truth-project" className="inline-flex items-center gap-2 mb-8 transition-colors" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>
           <ArrowLeft className="h-4 w-4" />
@@ -524,7 +524,7 @@ export default function LiberationFrameworksPage() {
           <Link href="/truth-project/empires-receipts" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: '#c73032', color: '#f0ebe3' }}>
             Start with Truth
           </Link>
-          <Link href="/gallery/unity-reconnaissance" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: '#d4a74a', color: '#0d1b2a' }}>
+          <Link href="/gallery/unity-reconnaissance" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: '#d4a74a', color: '#050505' }}>
             Study Unity History
           </Link>
           <Link href="/contact" className="px-6 py-3 font-medium rounded-lg transition-colors" style={{ background: '#1b4965', color: '#f0ebe3' }}>
@@ -625,7 +625,7 @@ function ProtocolStep({
           }}
         >
           {completed ? (
-            <CheckCircle className="w-4 h-4" style={{ color: '#0d1b2a' }} />
+            <CheckCircle className="w-4 h-4" style={{ color: '#050505' }} />
           ) : (
             <span className="text-sm font-bold" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>{number}</span>
           )}

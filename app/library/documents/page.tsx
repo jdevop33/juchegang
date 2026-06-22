@@ -73,7 +73,7 @@ export default function DocumentsPage() {
   })
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-river-depths via-river-deep to-river-depths">
+    <main className="min-h-[100dvh] bg-gradient-to-b from-river-depths via-river-deep to-river-depths">
       <JucheHeader />
 
       <div className="container mx-auto px-4 pt-28 pb-16">

@@ -1,7 +1,7 @@
 "use client"
 
-import { Menu, X, Sparkles } from "lucide-react"
-import { useState, useEffect } from "react"
+import { Menu, X } from "lucide-react"
+import { useState, useEffect, useCallback } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
@@ -9,188 +9,219 @@ import * as Drawer from "vaul"
 import { LanguageToggle } from "@/components/language-toggle"
 import { useLanguage } from "@/contexts/language-context"
 
+const navLinks = [
+  { href: "/", labelKey: "home" },
+  { href: "/mission", labelKey: "mission" },
+  { href: "/cultural-exchange", labelKey: "culture" },
+  { href: "/youth-empowerment", labelKey: "youth" },
+  { href: "/peace-timeline", labelKey: "peace" },
+  { href: "/civilizations", label: "Civilizations" },
+  { href: "/briefings", labelKey: "briefings" },
+  { href: "/library", label: "Library" },
+  { href: "/channels", labelKey: "channels" },
+  { href: "/social", labelKey: "social" },
+]
+
+const featuredLinks = [
+  { href: "/gallery", labelKey: "gallery", icon: "📸" },
+  { href: "/truth-project", labelKey: "truthProject", icon: "🌍" },
+]
+
 export function JucheHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const { t } = useLanguage()
   const pathname = usePathname()
 
-  // Add scroll detection for header transparency
   useEffect(() => {
+    let ticking = false
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 32)
+          ticking = false
+        })
+        ticking = true
       }
     }
-
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  const closeMenu = useCallback(() => setIsMenuOpen(false), [])
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
         isScrolled
-          ? "bg-river-depths/95 backdrop-blur-xl border-b border-sovereign-gold/20 shadow-lg shadow-river-depths/40"
-          : "bg-gradient-to-r from-transparent via-river-depths/20 to-transparent backdrop-blur-sm"
+          ? "bg-[#050505]/95 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.3)]"
+          : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-5 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          {pathname === "/" ? (
-            <h1 className="text-2xl md:text-3xl font-heading font-bold tracking-tight">
-              <Link href="/" className="bg-gradient-to-r from-sovereign-gold via-river-mist to-sovereign-gold bg-clip-text text-transparent hover:opacity-90 transition-opacity">
-                주체강
-              </Link>
-              <span className="ml-2 text-lg font-sans font-normal text-river-mist/80">JucheGang</span>
-            </h1>
-          ) : (
-            <Link
-              href="/"
-              aria-label="Home"
-              className="group inline-flex items-center gap-3 transform transition-all duration-300 hover:scale-105"
-            >
-              <div className="relative">
+      <div className="container mx-auto max-w-[1400px] px-4 md:px-8">
+        <div className="flex items-center justify-between h-16 md:h-[72px]">
+          {/* Logo — compact, proportionate on all screens */}
+          <div className="flex items-center shrink-0">
+            {pathname === "/" ? (
+              <h1 className="text-xl md:text-2xl font-bold tracking-tighter leading-none">
+                <Link
+                  href="/"
+                  className="inline-flex items-baseline gap-1.5 bg-gradient-to-r from-sovereign-gold via-cream to-sovereign-gold bg-clip-text text-transparent hover:opacity-80 transition-opacity duration-300"
+                >
+                  <span className="text-[1.35em] font-[family-name:var(--font-korean)]">주체강</span>
+                  <span className="text-cream-muted/70 text-[0.55em] font-sans font-medium tracking-[0.1em] uppercase">
+                    JucheGang
+                  </span>
+                </Link>
+              </h1>
+            ) : (
+              <Link
+                href="/"
+                aria-label="Home"
+                className="group inline-flex items-center gap-2.5 transition-opacity duration-300 hover:opacity-80"
+              >
                 <Image
                   src="/logo-icon-gang.png"
                   alt="JucheGang"
-                  width={64}
-                  height={64}
+                  width={40}
+                  height={40}
                   priority
-                  className="transition-all duration-300 group-hover:drop-shadow-[0_0_15px_rgba(212,167,74,0.6)] group-hover:brightness-110"
+                  className="w-9 h-9 md:w-10 md:h-10 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-sovereign-gold/20 via-transparent to-river-current/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <span className="text-cream/60 text-[11px] font-medium tracking-[0.15em] uppercase hidden sm:inline">
+                  JucheGang
+                </span>
+              </Link>
+            )}
+          </div>
+
+          {/* Desktop: contact + language + menu trigger */}
+          <div className="hidden md:flex items-center gap-3">
+            <LanguageToggle />
+            <Link
+              href="/contact"
+              className="group relative inline-flex items-center justify-center pl-5 pr-1.5 py-1.5 rounded-full bg-cream text-[#050505] text-sm font-bold transition-all duration-300 active:scale-[0.98] hover:bg-white"
+            >
+              <span className="mr-3">{t('contact')}</span>
+              <div className="w-7 h-7 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-0.5 group-hover:scale-105">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-[#050505]">
+                  <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
-              <span className="sr-only">JucheGang</span>
             </Link>
-          )}
-        </div>
+            <button
+              onClick={() => setIsMenuOpen(true)}
+              className="relative inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 text-cream-muted hover:text-cream bg-white/5 hover:bg-white/10 transition-all duration-300 active:scale-[0.98] backdrop-blur-sm text-sm font-medium tracking-[0.05em]"
+              aria-label="Open menu"
+            >
+              <Menu className="h-4 w-4" strokeWidth={1.5} />
+              <span className="uppercase text-[11px] tracking-[0.15em]">Menu</span>
+            </button>
+          </div>
 
-        <div className="hidden md:flex items-center gap-4">
-          <LanguageToggle />
-          <Link href="/contact" className="group px-4 py-2 rounded-full bg-gradient-to-r from-sovereign-gold to-sovereign-dark hover:from-sovereign-gold hover:to-sovereign-gold text-river-depths font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-sovereign-gold/30 border border-sovereign-dark/20">
-            {t('contact')}
-          </Link>
-          <button onClick={() => setIsMenuOpen(true)} className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-full border border-river-current/40 text-river-mist hover:text-cream bg-river-current/10 hover:bg-river-current/20 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm overflow-hidden" aria-label="Open menu">
-            <div className="absolute inset-0 bg-gradient-to-r from-sovereign-gold/5 via-river-current/10 to-sovereign-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <Menu className="h-5 w-5 relative z-10 transition-all duration-300 group-hover:rotate-180" />
-            <span className="uppercase tracking-wide text-sm font-semibold relative z-10">Menu</span>
-            <Sparkles className="h-3 w-3 absolute top-0 right-0 text-sovereign-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" />
-          </button>
-        </div>
-
-        {/* Mobile: language + menu + contact */}
-        <div className="md:hidden flex items-center gap-3">
-          <LanguageToggle />
-          <Link href="/contact" className="px-3 py-1.5 rounded-full bg-sovereign-gold hover:bg-sovereign-gold/90 text-river-depths font-bold transition-all duration-300 transform hover:scale-105 text-sm shadow-md hover:shadow-lg">
-            {t('contact')}
-          </Link>
-          <button className="group relative text-river-mist hover:text-cream p-3 transition-all duration-300 transform hover:scale-110 hover:rotate-12" aria-label="Toggle menu" onClick={() => setIsMenuOpen(true)}>
-            {isMenuOpen ? <X className="h-6 w-6 transition-all duration-300" /> : <Menu className="h-6 w-6 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(212,167,74,0.8)]" />}
-            <div className="absolute inset-0 rounded-full bg-sovereign-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-ping"></div>
-          </button>
+          {/* Mobile: language icon + compact menu trigger only */}
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageToggle />
+            <button
+              className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/10 text-cream-muted hover:text-cream bg-white/5 hover:bg-white/10 transition-all duration-300 active:scale-[0.95]"
+              aria-label="Toggle menu"
+              onClick={() => setIsMenuOpen(true)}
+            >
+              <Menu className="h-[18px] w-[18px]" strokeWidth={1.5} />
+            </button>
+          </div>
         </div>
       </div>
-      {/* Unified Drawer Root to avoid duplicate overlays */}
+
+      {/* Full-screen Drawer */}
       <Drawer.Root direction="right" open={isMenuOpen} onOpenChange={setIsMenuOpen}>
         <Drawer.Portal>
-          <Drawer.Overlay className="fixed inset-0 bg-river-depths/90 backdrop-blur-md transition-opacity duration-300" />
-          <Drawer.Content className="fixed right-0 top-0 h-screen w-[92vw] max-w-[560px] bg-gradient-to-br from-river-depths via-river-deep to-river-depths border-l border-sovereign-gold/20 shadow-2xl shadow-river-depths/80 will-change-transform backdrop-blur-xl">
-            <div className="flex items-center justify-between px-4 py-4 border-b border-river-current/30">
+          <Drawer.Overlay className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[60]" />
+          <Drawer.Content className="fixed right-0 top-0 h-[100dvh] w-[92vw] max-w-[480px] bg-[#050505] border-l border-white/10 shadow-2xl will-change-transform z-[70] flex flex-col">
+            {/* Drawer header */}
+            <div className="flex items-center justify-between px-6 py-5 border-b border-white/5 shrink-0">
               <Image
                 src="/banner-horizontal.png"
                 alt="JucheGang - Navigate the Current"
-                width={240}
-                height={60}
-                className="h-12 w-auto"
+                width={180}
+                height={45}
+                className="h-9 w-auto opacity-80"
               />
-              <button onClick={() => setIsMenuOpen(false)} aria-label="Close menu" className="group p-2 text-river-mist hover:text-cream transition-all duration-300 transform hover:scale-110 hover:rotate-90">
-                <X className="h-6 w-6 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(212,167,74,0.8)]" />
+              <button
+                onClick={closeMenu}
+                aria-label="Close menu"
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-cream-muted hover:text-cream hover:bg-white/5 transition-all duration-300 active:scale-[0.95]"
+              >
+                <X className="h-[18px] w-[18px]" strokeWidth={1.5} />
               </button>
             </div>
-            <nav className="px-6 py-6 overflow-y-auto h-[calc(100vh-64px)]">
-              <ul className="space-y-3">
-                <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
-                    <span className="font-medium">{t('home')}</span>
-                  </Link>
-                </li>
-                <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/mission" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
-                    <span className="font-medium">{t('mission')}</span>
-                  </Link>
-                </li>
-                <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/cultural-exchange" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
-                    <span className="font-medium">{t('culture')}</span>
-                  </Link>
-                </li>
-                <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/youth-empowerment" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
-                    <span className="font-medium">{t('youth')}</span>
-                  </Link>
-                </li>
-                <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/peace-timeline" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
-                    <span className="font-medium">{t('peace')}</span>
-                  </Link>
-                </li>
-                <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/civilizations" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
-                    <span className="font-medium">Civilizations</span>
-                  </Link>
-                </li>
-                <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/briefings" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
-                    <span className="font-medium">{t('briefings')}</span>
-                  </Link>
-                </li>
-                <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/library" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
-                    <span className="font-medium">Library</span>
-                  </Link>
-                </li>
-                <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/channels" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
-                    <span className="font-medium">{t('channels')}</span>
-                  </Link>
-                </li>
-                <li className="transform transition-all duration-300 hover:scale-[1.02]">
-                  <Link href="/social" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">
-                    <span className="font-medium">{t('social')}</span>
-                  </Link>
-                </li>
 
-                {/* Featured Links */}
-                <li className="pt-4 mt-4 border-t border-sovereign-gold/20">
-                  <p className="text-xs uppercase tracking-wider text-sovereign-gold/80 font-semibold mb-3 px-1">Featured</p>
-                </li>
+            {/* Nav links */}
+            <nav className="flex-1 overflow-y-auto overscroll-contain px-4 py-6">
+              <ul className="space-y-1">
+                {navLinks.map((link) => {
+                  const label = link.labelKey ? t(link.labelKey) : link.label
+                  const isActive = pathname === link.href
 
-                <li className="transform transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1">
-                  <Link href="/gallery" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-gradient-to-r from-river-current to-river-mid text-cream font-semibold transition-all duration-300 shadow-md hover:shadow-lg border border-sovereign-gold/30">
-                    <span className="flex items-center gap-2">
-                      <span className="text-lg">📸</span>
-                      <span>{t('gallery')}</span>
+                  return (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        onClick={closeMenu}
+                        className={`block px-4 py-3.5 rounded-2xl text-[15px] font-medium transition-all duration-300 ${
+                          isActive
+                            ? "bg-white/10 text-cream border border-white/10"
+                            : "text-cream-muted hover:text-cream hover:bg-white/5"
+                        }`}
+                      >
+                        {label}
+                      </Link>
+                    </li>
+                  )
+                })}
+
+                {/* Featured section divider */}
+                <li className="pt-5 mt-3">
+                  <div className="px-4 pb-3">
+                    <span className="text-[10px] uppercase tracking-[0.25em] font-medium text-sovereign-gold/70">
+                      Featured
                     </span>
-                  </Link>
-                </li>
-                <li className="transform transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1">
-                  <Link href="/truth-project" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-gradient-to-r from-korean-red/80 to-korean-red text-cream font-semibold transition-all duration-300 shadow-md hover:shadow-lg border border-korean-red/40">
-                    <span className="flex items-center gap-2">
-                      <span className="text-lg">🌍</span>
-                      <span>{t('truthProject')}</span>
-                    </span>
-                  </Link>
-                </li>
-                <li className="pt-6 mt-4 border-t border-river-current/30">
-                  <div className="px-1">
-                    <LanguageToggle />
                   </div>
                 </li>
+
+                {featuredLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      onClick={closeMenu}
+                      className="group flex items-center gap-3 px-4 py-3.5 rounded-2xl text-[15px] font-medium text-cream bg-white/5 border border-white/5 hover:border-sovereign-gold/20 hover:bg-white/10 transition-all duration-300"
+                    >
+                      <span className="text-base">{link.icon}</span>
+                      <span>{t(link.labelKey)}</span>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
+
+            {/* Drawer footer: contact CTA + language */}
+            <div className="px-4 py-5 border-t border-white/5 shrink-0 space-y-4">
+              <Link
+                href="/contact"
+                onClick={closeMenu}
+                className="group relative flex items-center justify-center pl-6 pr-2 py-2.5 rounded-full bg-cream text-[#050505] font-bold text-base transition-all duration-300 active:scale-[0.98] hover:bg-white w-full"
+              >
+                <span className="mr-4">{t('contact')}</span>
+                <div className="w-8 h-8 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
+                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none" className="text-[#050505]">
+                    <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </Link>
+              <div className="flex justify-center">
+                <LanguageToggle />
+              </div>
+            </div>
           </Drawer.Content>
         </Drawer.Portal>
       </Drawer.Root>

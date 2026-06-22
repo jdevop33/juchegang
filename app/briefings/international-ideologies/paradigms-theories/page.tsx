@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function ParadigmsTheoriesPage() {
   return (
-    <main className="min-h-screen bg-river-depths text-cream">
+    <main className="min-h-[100dvh] bg-river-depths text-cream">
       <JucheHeader />
       <BriefingBanner src="/images/coolgang2.png" alt="Paradigms and theories" aspect="12/5" contain overlay="bottom" />
       <ParadigmsTheoriesContent />
