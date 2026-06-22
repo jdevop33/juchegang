@@ -25,7 +25,6 @@ async function listGalleryImages(): Promise<{ src: string; alt: string }[]> {
 
     const files: string[] = []
     for (const entry of entries) {
-      // Skip hidden files/folders
       if (entry.name.startsWith(".")) continue
       const fullPath = path.join(dir, entry.name)
       const relUrl = `${baseUrl}/${entry.name}`
@@ -40,9 +39,7 @@ async function listGalleryImages(): Promise<{ src: string; alt: string }[]> {
 
   const fileUrls = await walk(galleryDir, "/gallery")
   
-  // Remove duplicates by preferring webp over jpg, then png over jpg
   const deduplicatedUrls = new Map<string, string>()
-  
   fileUrls.forEach(url => {
     const name = path.basename(url)
     const nameWithoutExt = name.replace(/\.[^.]+$/, '')
@@ -54,7 +51,6 @@ async function listGalleryImages(): Promise<{ src: string; alt: string }[]> {
       const existingUrl = deduplicatedUrls.get(nameWithoutExt)!
       const existingExt = path.extname(existingUrl).toLowerCase()
       
-      // Priority: webp > png > jpg/jpeg
       const priority = { '.webp': 3, '.png': 2, '.jpg': 1, '.jpeg': 1 }
       const currentPriority = priority[ext as keyof typeof priority] || 0
       const existingPriority = priority[existingExt as keyof typeof priority] || 0
@@ -77,248 +73,198 @@ export default async function GalleryPage() {
   const images = await listGalleryImages()
 
   return (
-    <main className="min-h-screen bg-river-depths text-cream">
+    <main className="min-h-[100dvh] bg-[#050505] text-cream selection:bg-sovereign-gold/30">
       <JucheHeader />
 
-      {/* Hero Section with Image */}
-      <section className="relative h-[50vh] min-h-[350px] overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/heros/0sunsetpaektu3.jpg"
-            alt="Panoramic sunset over Mount Paektu crater with golden and purple skies"
-            fill
-            className="object-cover object-[center_40%]"
-            priority
-            sizes="100vw"
-            quality={85}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-river-depths/50 via-river-depths/20 to-river-depths" />
-        </div>
-        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
-          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-river-depths/60 backdrop-blur-sm text-sovereign-gold rounded-full text-sm font-medium border border-sovereign-gold/30">
-            Gallery
+      {/* Hero Section: Ethereal Glass */}
+      <section className="relative pt-40 pb-24 md:pt-56 md:pb-32 px-4 md:px-8 overflow-hidden">
+        {/* Background Radial Orbs */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[600px] bg-sovereign-gold/5 blur-[120px] rounded-[100%] pointer-events-none" />
+        
+        <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
+          <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 bg-white/5 backdrop-blur-2xl text-cream-muted rounded-full text-[10px] font-medium tracking-[0.2em] uppercase border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+            Media Archive
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-cream drop-shadow-lg font-[family-name:var(--font-heading)]">
-            Media Gallery
+          <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tighter leading-[1.05] mb-8 bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
+            Visual Registry
           </h1>
-          <p className="text-lg text-cream/90 max-w-2xl mx-auto drop-shadow-md">
-            A curated collection of powerful imagery. Click any image to explore in full detail.
+          <p className="text-xl md:text-2xl text-cream-muted max-w-2xl mx-auto leading-relaxed">
+            A curated collection of historical and contemporary photography. Raw, unedited, direct from the source.
           </p>
-          {images.length > 0 && (
-            <div className="mt-4 text-sm text-cream/70">
-              {images.length} images • High resolution • Full screen viewing
-            </div>
-          )}
         </div>
       </section>
 
-      <section className="container mx-auto px-4 pt-12 pb-16">
+      {/* Main Content Area */}
+      <section className="container mx-auto px-4 md:px-8 pb-32">
 
-        {/* SoundCloud player */}
-        <div className="mb-12">
-          <div className="rounded-xl overflow-hidden border border-river-current/40 bg-river-deep/50">
-            <iframe
-              title="Gallery soundtrack"
-              width="100%"
-              height="300"
-              allow="autoplay"
-              loading="lazy"
-              style={{ border: 0 }}
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1087014736&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            />
+        {/* SoundCloud Double-Bezel */}
+        <div className="mb-24 flex justify-center">
+          <div className="w-full max-w-3xl p-1.5 rounded-[2rem] bg-white/5 border border-white/10">
+            <div className="rounded-[calc(2rem-0.375rem)] overflow-hidden bg-[#0a0a0a] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+              <iframe
+                title="Gallery soundtrack"
+                width="100%"
+                height="166"
+                allow="autoplay"
+                loading="lazy"
+                style={{ border: 0 }}
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1087014736&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false"
+              />
+            </div>
           </div>
         </div>
 
         {images.length === 0 ? (
-          <div className="text-center py-16">
-            <h3 className="text-xl font-semibold mb-2 text-cream-muted">No media found</h3>
-            <p className="text-cream-muted">Images should be placed in /public/gallery/</p>
+          <div className="text-center py-32">
+            <p className="text-xl text-cream-muted tracking-tight">No media found in the archive.</p>
           </div>
         ) : (
           <>
-            {/* Main gallery grid - Natural aspect ratios to preserve faces */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-3 lg:gap-4" aria-label="Media gallery">
-              {images.map((img, index) => (
-                <div key={img.src} className="relative group">
-                  <div className="relative w-full overflow-hidden rounded-lg bg-river-deep/30 border border-river-current/40 hover:border-sovereign-gold/40 transition-all duration-300">
-                    <GalleryImage 
-                      src={img.src} 
-                      alt={img.alt} 
-                      index={index}
-                      allImages={images}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            {/* Gallery stats */}
-            <div className="mt-12 text-center">
-              <div className="inline-flex items-center gap-6 px-6 py-3 bg-river-deep/50 rounded-full text-sm text-cream-muted">
-                <span>{images.length} Images</span>
-                <span>&middot;</span>
-                <span>Click to zoom</span>
-                <span>&middot;</span>
-                <span>Download available</span>
-              </div>
-            </div>
+            {/* Asymmetrical Bento Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-6 auto-rows-[280px]" aria-label="Media gallery">
+              {images.map((img, index) => {
+                // Procedural Layout Generation
+                const isHero = index % 11 === 0;
+                const isTall = index % 5 === 0 && !isHero;
+                const isWide = index % 4 === 0 && !isHero && !isTall;
+                
+                let spanClasses = "lg:col-span-4 row-span-1";
+                if (isHero) spanClasses = "lg:col-span-8 row-span-2";
+                else if (isTall) spanClasses = "lg:col-span-4 row-span-2";
+                else if (isWide) spanClasses = "lg:col-span-8 row-span-1";
 
-            {/* Historical Context Section */}
-            <section className="mt-20 max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-river-current/20 text-sovereign-gold rounded-full text-sm font-medium">
-                  Historical Context
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-cream font-[family-name:var(--font-heading)]">
-                  NATO Expansion and Russia-US Relations
-                </h2>
-                <p className="text-lg text-cream-muted max-w-2xl mx-auto">
-                  Primary sources and historical facts that provide essential context for understanding contemporary geopolitical developments.
-                </p>
-              </div>
-
-              <div className="space-y-12">
-                {/* Putin's 2007 Munich Speech */}
-                <div className="bg-river-deep/60 rounded-xl p-6 md:p-8 border border-river-current/40">
-                  <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-sovereign-gold/20 text-sovereign-gold rounded-full flex items-center justify-center text-sm font-bold">1</span>
-                    Putin's 2007 Munich Security Conference Speech
-                  </h3>
-                  <div className="prose prose-invert max-w-none">
-                    <p className="text-cream-muted leading-relaxed">
-                      Vladimir Putin delivered his landmark address at the Munich Conference on Security Policy on <strong>February 10, 2007</strong> - not 2008 as commonly misremembered. The official Kremlin transcript documents Putin's most direct challenge to Western security architecture since the Soviet collapse.
-                    </p>
-                    <blockquote className="border-l-4 border-river-current pl-4 my-6 italic bg-river-current/10 p-4 rounded-r">
-                      <p className="mb-2">"I think it is obvious that NATO expansion does not have any relation with the modernisation of the Alliance itself or with ensuring security in Europe. On the contrary, it represents a serious provocation that reduces the level of mutual trust. And we have the right to ask: against whom is this expansion intended?"</p>
-                    </blockquote>
-                    <p className="text-cream-muted leading-relaxed">
-                      The Russian president explicitly invoked broken Western promises, quoting NATO Secretary General Manfred Wörner's May 17, 1990 statement about Soviet security guarantees. Putin warned that while "the stones and concrete blocks of the Berlin Wall have long been distributed as souvenirs," new dividing lines were emerging - "virtual walls" that "cut through our continent."
-                    </p>
-                  </div>
-                </div>
-
-                {/* NATO's Eastward Expansion */}
-                <div className="bg-river-deep/60 rounded-xl p-6 md:p-8 border border-river-current/40">
-                  <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-sovereign-gold/20 text-sovereign-gold rounded-full flex items-center justify-center text-sm font-bold">2</span>
-                    NATO's Seven Waves of Expansion
-                  </h3>
-                  <div className="prose prose-invert max-w-none">
-                    <p className="text-cream-muted leading-relaxed mb-4">
-                      The alliance's post-Cold War expansion began with German reunification on October 3, 1990, when former East German territory joined NATO under West Germany's existing membership. The expansion proceeded in distinct waves:
-                    </p>
-                    <div className="grid md:grid-cols-2 gap-4 my-6">
-                      <div className="bg-river-depths/60 p-4 rounded-lg">
-                        <div className="font-semibold text-sovereign-gold">March 12, 1999</div>
-                        <div className="text-sm text-cream-muted">Czech Republic, Hungary, Poland</div>
-                      </div>
-                      <div className="bg-river-depths/60 p-4 rounded-lg">
-                        <div className="font-semibold text-sovereign-gold">March 29, 2004</div>
-                        <div className="text-sm text-cream-muted">Bulgaria, Estonia, Latvia, Lithuania, Romania, Slovakia, Slovenia</div>
-                      </div>
-                      <div className="bg-river-depths/60 p-4 rounded-lg">
-                        <div className="font-semibold text-sovereign-gold">April 1, 2009</div>
-                        <div className="text-sm text-cream-muted">Albania, Croatia</div>
-                      </div>
-                      <div className="bg-river-depths/60 p-4 rounded-lg">
-                        <div className="font-semibold text-sovereign-gold">2017-2024</div>
-                        <div className="text-sm text-cream-muted">Montenegro, N. Macedonia, Finland, Sweden</div>
-                      </div>
-                    </div>
-                    <blockquote className="border-l-4 border-river-current pl-4 my-6 italic bg-river-current/10 p-4 rounded-r">
-                      <p className="mb-2">Secretary of State James Baker told Mikhail Gorbachev on February 9, 1990: <strong>"There would be no extension of NATO's jurisdiction for forces of NATO one inch to the east."</strong></p>
-                    </blockquote>
-                  </div>
-                </div>
-
-                {/* Cuban Missile Crisis */}
-                <div className="bg-river-deep/60 rounded-xl p-6 md:p-8 border border-river-current/40">
-                  <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-sovereign-gold/20 text-sovereign-gold rounded-full flex items-center justify-center text-sm font-bold">3</span>
-                    The Cuban Missile Crisis Precedent
-                  </h3>
-                  <div className="prose prose-invert max-w-none">
-                    <p className="text-cream-muted leading-relaxed">
-                      When U.S. reconnaissance discovered Soviet missiles in Cuba on October 14, 1962, President Kennedy responded with unprecedented military mobilization, raising military readiness to <strong>DEFCON 2</strong> - one step from nuclear war.
-                    </p>
-                    <blockquote className="border-l-4 border-korean-red pl-4 my-6 italic bg-korean-red/10 p-4 rounded-r">
-                      <p className="mb-2">"It shall be the policy of this nation to regard any nuclear missile launched from Cuba against any nation in the Western Hemisphere as an attack by the Soviet Union on the United States, requiring a full retaliatory response."</p>
-                    </blockquote>
-                    <p className="text-cream-muted leading-relaxed">
-                      The crisis established clear precedent that the United States would risk nuclear war to prevent hostile military deployments near its borders, a principle consistently applied throughout the Western Hemisphere under various iterations of the Monroe Doctrine.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Economic Collapse */}
-                <div className="bg-river-deep/60 rounded-xl p-6 md:p-8 border border-river-current/40">
-                  <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-sovereign-gold/20 text-sovereign-gold rounded-full flex items-center justify-center text-sm font-bold">4</span>
-                    Russia's Economic Catastrophe
-                  </h3>
-                  <div className="prose prose-invert max-w-none">
-                    <p className="text-cream-muted leading-relaxed">
-                      The post-Soviet economic collapse between 1991 and 1998 represented what economists called "the most cataclysmic peacetime economic collapse of an industrial country in history." <strong>Russian GDP contracted 40-50% cumulatively</strong>, exceeding the depth of the Great Depression.
-                    </p>
-                    <div className="grid md:grid-cols-3 gap-4 my-6">
-                      <div className="bg-korean-red/10 p-4 rounded-lg text-center">
-                        <div className="text-2xl font-bold text-korean-red">2,520%</div>
-                        <div className="text-xs text-cream-muted">Inflation in 1992</div>
-                      </div>
-                      <div className="bg-korean-red/10 p-4 rounded-lg text-center">
-                        <div className="text-2xl font-bold text-korean-red">6 years</div>
-                        <div className="text-xs text-cream-muted">Drop in male life expectancy</div>
-                      </div>
-                      <div className="bg-korean-red/10 p-4 rounded-lg text-center">
-                        <div className="text-2xl font-bold text-korean-red">41.5%</div>
-                        <div className="text-xs text-cream-muted">Poverty rate by 1999</div>
-                      </div>
+                return (
+                  <div key={img.src} className={`p-1.5 rounded-[2rem] bg-white/5 border border-white/10 hover:border-white/20 transition-colors duration-500 ${spanClasses}`}>
+                    <div className="relative w-full h-full rounded-[calc(2rem-0.375rem)] overflow-hidden bg-[#0a0a0a] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+                      <GalleryImage 
+                        src={img.src} 
+                        alt={img.alt} 
+                        index={index}
+                        allImages={images}
+                      />
                     </div>
                   </div>
-                </div>
-
-                {/* American Warnings */}
-                <div className="bg-river-deep/60 rounded-xl p-6 md:p-8 border border-river-current/40">
-                  <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-sovereign-gold/20 text-sovereign-gold rounded-full flex items-center justify-center text-sm font-bold">5</span>
-                    American Officials Warned of Russian Backlash
-                  </h3>
-                  <div className="prose prose-invert max-w-none">
-                    <blockquote className="border-l-4 border-river-current pl-4 my-6 italic bg-river-current/10 p-4 rounded-r">
-                      <p className="mb-2">George Kennan, architect of containment, called NATO expansion <strong>"the most fateful error of American policy in the entire post-Cold War era"</strong>, warning it would "inflame the nationalistic, anti-Western and militaristic tendencies in Russian opinion."</p>
-                    </blockquote>
-                    <p className="text-cream-muted leading-relaxed">
-                      Most striking was current CIA Director William Burns' February 1, 2008 cable titled <strong>"NYET MEANS NYET: RUSSIA'S NATO ENLARGEMENT REDLINES"</strong>, which warned that Ukraine's NATO aspirations could lead to "a major split, involving violence or at worst, civil war."
-                    </p>
-                  </div>
-                </div>
-
-                {/* Monroe Doctrine */}
-                <div className="bg-river-deep/60 rounded-xl p-6 md:p-8 border border-river-current/40">
-                  <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-sovereign-gold/20 text-sovereign-gold rounded-full flex items-center justify-center text-sm font-bold">6</span>
-                    America's Monroe Doctrine Sphere
-                  </h3>
-                  <div className="prose prose-invert max-w-none">
-                    <p className="text-cream-muted leading-relaxed">
-                      Since President James Monroe declared in 1823 that European attempts "to extend their system to any portion of this hemisphere" would be considered "dangerous to our peace and safety," the United States has consistently intervened against foreign military presence in the Western Hemisphere.
-                    </p>
-                    <p className="text-cream-muted leading-relaxed">
-                      Recent applications continue this pattern. When Russia deployed nuclear-capable bombers to Venezuela in 2018, National Security Adviser John Bolton declared the Monroe Doctrine "alive and well." Congressional leaders now cite Chinese port construction and telecommunications networks as violations of hemispheric security principles, demonstrating that the United States maintains its centuries-old opposition to foreign military presence in its sphere of influence - <strong>the same principle Russia invokes regarding NATO expansion to its borders.</strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Final Note */}
-              <div className="mt-12 text-center">
-                <div className="inline-flex items-center gap-2 px-6 py-3 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-sm">
-                  Historical context for informed understanding
-                </div>
-              </div>
-            </section>
+                )
+              })}
+            </div>
           </>
         )}
+
+        {/* Historical Context Section */}
+        <section className="mt-40 max-w-5xl mx-auto">
+          <div className="text-center mb-24">
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 bg-sovereign-gold/10 text-sovereign-gold rounded-full text-[10px] font-medium tracking-[0.2em] uppercase border border-sovereign-gold/20">
+              Primary Sources
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-cream tracking-tighter">
+              Historical Context
+            </h2>
+            <p className="text-xl text-cream-muted max-w-2xl mx-auto leading-relaxed">
+              Declassified materials, speeches, and treaties that formed the modern geopolitical faultlines.
+            </p>
+          </div>
+
+          <div className="space-y-8 md:space-y-12">
+            {[
+              {
+                id: "1",
+                title: "Putin's 2007 Munich Speech",
+                content: (
+                  <>
+                    <p className="text-lg text-cream-muted leading-relaxed mb-6">
+                      Vladimir Putin delivered his landmark address at the Munich Conference on Security Policy on <strong>February 10, 2007</strong>. The official Kremlin transcript documents Putin's most direct challenge to Western security architecture since the Soviet collapse.
+                    </p>
+                    <blockquote className="border-l-2 border-sovereign-gold/50 pl-6 my-8 italic text-xl text-cream leading-relaxed">
+                      "I think it is obvious that NATO expansion does not have any relation with the modernisation of the Alliance itself... On the contrary, it represents a serious provocation that reduces the level of mutual trust."
+                    </blockquote>
+                  </>
+                )
+              },
+              {
+                id: "2",
+                title: "NATO's Seven Waves of Expansion",
+                content: (
+                  <>
+                    <p className="text-lg text-cream-muted leading-relaxed mb-8">
+                      The alliance's post-Cold War expansion began with German reunification. It proceeded in distinct, aggressive waves despite early assurances.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                      {[
+                        { date: "March 12, 1999", places: "Czech Republic, Hungary, Poland" },
+                        { date: "March 29, 2004", places: "Bulgaria, Estonia, Latvia, Lithuania, Romania, Slovakia, Slovenia" },
+                        { date: "April 1, 2009", places: "Albania, Croatia" },
+                        { date: "2017-2024", places: "Montenegro, N. Macedonia, Finland, Sweden" }
+                      ].map((wave, i) => (
+                        <div key={i} className="p-1 rounded-2xl bg-white/5 border border-white/10">
+                          <div className="bg-[#0a0a0a] rounded-[calc(1rem-2px)] p-6 h-full">
+                            <div className="text-sm font-bold text-sovereign-gold mb-2">{wave.date}</div>
+                            <div className="text-cream text-base">{wave.places}</div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    <blockquote className="border-l-2 border-sovereign-gold/50 pl-6 italic text-xl text-cream leading-relaxed">
+                      Secretary of State James Baker told Mikhail Gorbachev on February 9, 1990: <strong>"There would be no extension of NATO's jurisdiction for forces of NATO one inch to the east."</strong>
+                    </blockquote>
+                  </>
+                )
+              },
+              {
+                id: "3",
+                title: "The Cuban Missile Crisis Precedent",
+                content: (
+                  <>
+                    <p className="text-lg text-cream-muted leading-relaxed mb-6">
+                      When U.S. reconnaissance discovered Soviet missiles in Cuba on October 14, 1962, President Kennedy responded with unprecedented military mobilization, raising military readiness to <strong>DEFCON 2</strong> - one step from nuclear war.
+                    </p>
+                    <p className="text-lg text-cream-muted leading-relaxed">
+                      The crisis established clear precedent that the United States would risk nuclear war to prevent hostile military deployments near its borders.
+                    </p>
+                  </>
+                )
+              },
+              {
+                id: "4",
+                title: "Russia's Economic Catastrophe (1990s)",
+                content: (
+                  <>
+                    <p className="text-lg text-cream-muted leading-relaxed mb-8">
+                      The post-Soviet economic collapse represented what economists called "the most cataclysmic peacetime economic collapse of an industrial country in history." <strong>Russian GDP contracted 40-50% cumulatively.</strong>
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                      {[
+                        { stat: "2,520%", label: "Inflation in 1992" },
+                        { stat: "-6 Yrs", label: "Male Life Expectancy" },
+                        { stat: "41.5%", label: "Poverty Rate (1999)" }
+                      ].map((item, i) => (
+                        <div key={i} className="p-1 rounded-2xl bg-[#0a0a0a] border border-white/5 text-center">
+                          <div className="py-8">
+                            <div className="text-3xl font-bold text-cream mb-2 tracking-tighter">{item.stat}</div>
+                            <div className="text-xs text-cream-muted tracking-widest uppercase">{item.label}</div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )
+              }
+            ].map((section) => (
+              <div key={section.id} className="p-1.5 md:p-2 rounded-[2.5rem] bg-white/5 border border-white/10 group">
+                <div className="bg-[#0a0a0a] rounded-[calc(2.5rem-0.5rem)] p-8 md:p-12 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-[#111]">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-4 text-cream tracking-tight">
+                    <span className="w-10 h-10 bg-sovereign-gold/10 text-sovereign-gold rounded-full flex items-center justify-center text-sm font-bold border border-sovereign-gold/20 shrink-0">
+                      {section.id}
+                    </span>
+                    {section.title}
+                  </h3>
+                  <div className="max-w-3xl">
+                    {section.content}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
       </section>
       <JucheFooter />
     </main>

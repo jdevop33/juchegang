@@ -2,11 +2,11 @@
 
 import { useLanguage } from "@/contexts/language-context"
 import { motion } from "framer-motion"
-import { Globe, Users, Target, Flame, Mountain, Sun } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
+import { Globe, Users, Target, Flame, Mountain, Sun, ArrowRight } from "lucide-react"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function MissionPage() {
   const { t, language } = useLanguage()
@@ -18,7 +18,6 @@ export default function MissionPage() {
       description: language === 'kr'
         ? '우리는 자신의 운명의 주인이며, 외부 의존 없이 우리 자신의 길을 개척한다.'
         : 'We are masters of our own destiny, forging our path without external dependence.',
-      color: 'text-korean-red'
     },
     {
       icon: Users,
@@ -26,7 +25,6 @@ export default function MissionPage() {
       description: language === 'kr'
         ? '개인의 힘이 집단 속에서 배가되며, 함께 우리는 불가능을 가능하게 만든다.'
         : 'Individual strength multiplies within the collective, together we make the impossible possible.',
-      color: 'text-river-current'
     },
     {
       icon: Target,
@@ -34,7 +32,6 @@ export default function MissionPage() {
       description: language === 'kr'
         ? '명확한 목표와 흔들리지 않는 의지로 우리는 인류의 발전을 이끈다.'
         : 'With clear goals and unwavering will, we lead humanity\'s advancement.',
-      color: 'text-sovereign-gold'
     },
     {
       icon: Flame,
@@ -42,7 +39,6 @@ export default function MissionPage() {
       description: language === 'kr'
         ? '낡은 것을 타파하고 새로운 세계를 건설하는 불굴의 정신.'
         : 'The indomitable spirit that breaks the old and builds the new world.',
-      color: 'text-sovereign-gold'
     },
     {
       icon: Globe,
@@ -50,7 +46,6 @@ export default function MissionPage() {
       description: language === 'kr'
         ? '전 세계 정의로운 사람들과 연대하여 더 나은 세계를 만든다.'
         : 'Unite with righteous people worldwide to create a better world.',
-      color: 'text-river-current'
     },
     {
       icon: Sun,
@@ -58,144 +53,206 @@ export default function MissionPage() {
       description: language === 'kr'
         ? '어둠 속에서도 빛을 찾고, 역경을 승리로 바꾸는 긍정의 힘.'
         : 'The power to find light in darkness and turn adversity into victory.',
-      color: 'text-sovereign-gold'
     }
   ]
 
   return (
     <>
       <JucheHeader />
-      <main id="main-content" className="min-h-screen bg-river-depths">
-      {/* Hero Image */}
-      <section className="relative h-[50vh] min-h-[400px]">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/paektu-golden.jpg"
-            alt="Mount Paektu at sunrise - sacred mountain of Korean civilization"
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-            quality={85}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-river-depths/60 via-transparent to-river-depths" />
-        </div>
-      </section>
+      <main id="main-content" className="min-h-[100dvh] bg-[#050505] text-cream selection:bg-sovereign-gold/30 selection:text-cream">
+        
+        {/* Editorial Split Hero */}
+        <section className="relative w-full pt-32 pb-24 md:pt-40 md:pb-32 px-4 md:px-8">
+          <div className="container mx-auto max-w-[1400px]">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
+              
+              {/* Left: Massive Typography (Sticky on Desktop) */}
+              <div className="w-full lg:w-1/2 lg:sticky lg:top-40 self-start">
+                <motion.div
+                  initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  transition={{ duration: 1, ease: [0.32, 0.72, 0, 1] }}
+                >
+                  <div className="mb-6 inline-flex items-center rounded-full px-3 py-1 bg-white/5 border border-white/10 text-cream-muted text-[10px] uppercase tracking-[0.2em] font-medium shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+                    {language === 'kr' ? '선언문' : 'Manifesto'}
+                  </div>
+                  
+                  <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-bold leading-[1.05] tracking-tighter mb-8 bg-gradient-to-br from-white via-cream to-cream-muted bg-clip-text text-transparent">
+                    {t('missionTitle')}
+                  </h1>
+                  
+                  <p className="text-xl md:text-2xl text-cream-muted leading-relaxed max-w-[45ch]">
+                    {t('missionText')}
+                  </p>
 
-      {/* Content Section */}
-      <section className="relative py-20 px-4 -mt-32">
-        <div className="container mx-auto max-w-6xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] bg-gradient-to-r from-sovereign-gold via-cream to-sovereign-gold bg-clip-text text-transparent">
-              {t('missionTitle')}
-            </h1>
-            <p className="text-xl md:text-2xl text-cream/90 max-w-4xl mx-auto leading-relaxed">
-              {t('missionText')}
-            </p>
-            {/* Korean Mission Statement */}
-            {language !== 'kr' && (
-              <p className="text-lg text-sovereign-gold/80 mt-4 font-[family-name:var(--font-korean)]">
-                우리의 사명: 평화와 통일을 향한 길
-              </p>
-            )}
-          </motion.div>
-
-          {/* Vision Statement */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="bg-gradient-to-r from-river-current/50 to-river-current/30 rounded-2xl p-8 mb-16 border border-river-current"
-          >
-            <h2 className="text-3xl font-bold text-sovereign-gold mb-4 font-[family-name:var(--font-heading)]">
-              {language === 'kr' ? '우리의 비전' : 'Our Vision'}
-            </h2>
-            <p className="text-cream text-lg leading-relaxed">
-              {language === 'kr'
-                ? '우리는 자주, 평화, 친선의 이념 아래 전 인류가 진정한 자유와 평등을 누리는 세계를 건설한다. 각 개인이 자신의 잠재력을 최대한 발휘하면서도 집단의 이익과 조화를 이루는 사회, 그것이 우리가 추구하는 미래이다.'
-                : 'Under the ideals of independence, peace, and friendship, we build a world where all humanity enjoys true freedom and equality. A society where each individual maximizes their potential while harmonizing with collective interests - this is the future we pursue.'}
-            </p>
-          </motion.div>
-
-          {/* Core Principles Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {principles.map((principle, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 * index, duration: 0.5 }}
-              >
-                <Card className="bg-river-depths/80 border-river-current hover:border-sovereign-gold/50 transition-all duration-300 h-full">
-                  <CardContent className="p-6">
-                    <div className={`mb-4 ${principle.color}`}>
-                      <principle.icon className="h-12 w-12" />
-                    </div>
-                    <h3 className="text-xl font-bold text-cream mb-2">
-                      {principle.title}
-                    </h3>
-                    <p className="text-cream/80 text-sm">
-                      {principle.description}
+                  {language !== 'kr' && (
+                    <p className="mt-8 text-sm md:text-base text-sovereign-gold/80 font-medium tracking-[0.3em] uppercase">
+                      우리의 사명: 평화와 통일을 향한 길
                     </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
+                  )}
+                </motion.div>
+              </div>
 
-          {/* Call to Action */}
+              {/* Right: Scrolling Interactive Content */}
+              <div className="w-full lg:w-1/2 space-y-24 mt-12 lg:mt-0">
+                
+                {/* Visual Narrative */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.2, duration: 1, ease: [0.32, 0.72, 0, 1] }}
+                  className="p-2 rounded-[2.5rem] bg-white/5 border border-white/10"
+                >
+                  <div className="relative h-[60vh] lg:h-[70vh] rounded-[calc(2.5rem-0.5rem)] overflow-hidden shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)]">
+                    <Image
+                      src="/images/paektu-golden.jpg"
+                      alt="Mount Paektu at sunrise"
+                      fill
+                      className="object-cover scale-105 transition-transform duration-[20s] hover:scale-100"
+                      priority
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      quality={90}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/90 via-[#050505]/20 to-transparent" />
+                    
+                    <div className="absolute bottom-0 left-0 w-full p-8 md:p-12">
+                      <blockquote className="text-2xl md:text-3xl text-sovereign-gold italic font-light leading-snug drop-shadow-lg">
+                        {language === 'kr'
+                          ? '"인민대중의 자주적이며 창조적인 생활을 위하여!"'
+                          : '"For the independent and creative life of the popular masses!"'}
+                      </blockquote>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Double-Bezel Vision Statement */}
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
+                  className="p-1.5 md:p-2 rounded-[2rem] bg-white/5 border border-white/10"
+                >
+                  <div className="bg-[#0a0a0a] rounded-[calc(2rem-0.375rem)] p-8 md:p-12 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] relative overflow-hidden">
+                    <div className="relative z-10">
+                      <div className="mb-6 inline-flex items-center rounded-full px-3 py-1 bg-sovereign-gold/10 text-sovereign-gold text-[10px] uppercase tracking-[0.2em] font-medium border border-sovereign-gold/20">
+                        {language === 'kr' ? '우리의 비전' : 'Our Vision'}
+                      </div>
+                      <p className="text-2xl md:text-3xl leading-snug font-medium text-cream mb-6">
+                        {language === 'kr'
+                          ? '우리는 자주, 평화, 친선의 이념 아래 전 인류가 진정한 자유와 평등을 누리는 세계를 건설한다.'
+                          : 'Under the ideals of independence, peace, and friendship, we build a world where all humanity enjoys true freedom and equality.'}
+                      </p>
+                      <p className="text-lg text-cream-muted leading-relaxed">
+                        {language === 'kr'
+                          ? '각 개인이 자신의 잠재력을 최대한 발휘하면서도 집단의 이익과 조화를 이루는 사회, 그것이 우리가 추구하는 미래이다.'
+                          : 'A society where each individual maximizes their potential while harmonizing with collective interests - this is the future we pursue.'}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Asymmetrical Bento Grid Section */}
+        <section className="py-32 px-4 md:px-8 border-t border-white/5 bg-gradient-to-b from-[#050505] to-[#0a0a0a]">
+          <div className="container mx-auto max-w-[1400px]">
+            
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
+              className="mb-20"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-cream">
+                {language === 'kr' ? '핵심 원칙' : 'Core Principles'}
+              </h2>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-6">
+              {principles.map((principle, index) => {
+                // Creative Variance: Asymmetrical sizing
+                const isLarge = index === 0 || index === 3;
+                const colSpan = isLarge ? "lg:col-span-8" : "lg:col-span-4";
+                
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ delay: 0.1 * (index % 3), duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
+                    className={`p-1.5 rounded-[2rem] bg-white/5 border border-white/10 group ${colSpan}`}
+                  >
+                    <div className="bg-[#050505] rounded-[calc(2rem-0.375rem)] p-8 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:bg-[#0a0a0a] flex flex-col justify-between min-h-[280px]">
+                      <div className="mb-8 w-14 h-14 rounded-full bg-white/5 flex items-center justify-center border border-white/10 transition-transform duration-500 group-hover:scale-110 group-hover:border-sovereign-gold/30">
+                        <principle.icon className="h-6 w-6 text-cream group-hover:text-sovereign-gold transition-colors duration-500" strokeWidth={1.5} />
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold text-cream mb-3 tracking-tight">
+                          {principle.title}
+                        </h3>
+                        <p className="text-cream-muted text-base leading-relaxed">
+                          {principle.description}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Action CTA Section */}
+        <section className="py-32 px-4 md:px-8 flex justify-center">
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 0.8 }}
-            className="text-center bg-gradient-to-r from-river-current/30 to-river-current/20 rounded-2xl p-12 border border-sovereign-gold/30"
+            initial={{ opacity: 0, y: 40, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: [0.32, 0.72, 0, 1] }}
+            className="w-full max-w-4xl p-2 rounded-[3rem] bg-white/5 border border-white/10"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-sovereign-gold mb-6 font-[family-name:var(--font-heading)]">
-              {language === 'kr' ? '역사의 주인공이 되라' : 'Become the Protagonist of History'}
-            </h2>
-            <p className="text-cream text-lg mb-8 max-w-3xl mx-auto">
-              {language === 'kr'
-                ? '우리 시대의 위대한 변혁에 동참하라. 당신의 의지와 행동이 새로운 세계를 만드는 초석이 된다.'
-                : 'Join the great transformation of our time. Your will and actions become the cornerstone of building a new world.'}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/social"
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-river-current to-river-depths hover:from-river-depths hover:to-river-current text-cream font-bold rounded-lg transition-all duration-300 transform hover:scale-105 border border-sovereign-gold/30"
-              >
-                {language === 'kr' ? '함께하기' : 'Join Us'}
-              </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center px-8 py-4 border-2 border-sovereign-gold text-sovereign-gold hover:bg-sovereign-gold hover:text-river-depths font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
-              >
-                {language === 'kr' ? '더 알아보기' : 'Learn More'}
-              </a>
+            <div className="bg-gradient-to-b from-[#111] to-[#050505] rounded-[calc(3rem-0.5rem)] p-12 md:p-24 text-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cream mb-8 tracking-tighter">
+                {language === 'kr' ? '역사의 주인공이 되라' : 'Become the Protagonist'}
+              </h2>
+              <p className="text-xl text-cream-muted mb-12 max-w-2xl mx-auto leading-relaxed">
+                {language === 'kr'
+                  ? '우리 시대의 위대한 변혁에 동참하라. 당신의 의지와 행동이 새로운 세계를 만드는 초석이 된다.'
+                  : 'Join the great transformation of our time. Your will and actions become the cornerstone of building a new world.'}
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                {/* Primary Button-in-Button */}
+                <Link
+                  href="/social"
+                  className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#050505] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white"
+                >
+                  <span className="mr-6">{language === 'kr' ? '함께하기' : 'Join Us'}</span>
+                  <div className="w-10 h-10 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
+                    <ArrowRight className="w-5 h-5" strokeWidth={2} />
+                  </div>
+                </Link>
+                
+                {/* Secondary Button */}
+                <Link
+                  href="#contact"
+                  className="inline-flex items-center px-8 py-4 rounded-full border border-white/20 text-cream font-medium text-lg hover:bg-white/5 transition-all duration-300 active:scale-[0.98]"
+                >
+                  {language === 'kr' ? '더 알아보기' : 'Learn More'}
+                </Link>
+              </div>
             </div>
           </motion.div>
+        </section>
 
-          {/* Inspirational Quote */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 0.8 }}
-            className="mt-16 text-center"
-          >
-            <blockquote className="text-2xl md:text-3xl text-sovereign-gold italic font-light font-[family-name:var(--font-korean)]">
-              {language === 'kr'
-                ? '"인민대중의 자주적이며 창조적인 생활을 위하여!"'
-                : '"For the independent and creative life of the popular masses!"'}
-            </blockquote>
-          </motion.div>
-        </div>
-      </section>
-    </main>
-    <JucheFooter />
+      </main>
+      <JucheFooter />
     </>
   )
 }

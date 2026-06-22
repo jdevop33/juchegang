@@ -73,14 +73,14 @@ export default function GalleryImage({ src, alt, index = 0, allImages = [] }: Pr
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <div className="relative group cursor-pointer overflow-hidden rounded-lg hover:scale-[1.02] transition-transform duration-300">
+        <div className="relative group cursor-pointer overflow-hidden w-full h-full rounded-lg hover:scale-[1.02] transition-transform duration-[400ms] ease-[cubic-bezier(0.32,0.72,0,1)]">
           <Image
             src={src}
             alt={alt}
             width={1200}
             height={800}
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, (max-width: 1440px) 25vw, 20vw"
-            className={`w-full h-auto transition-all duration-500 ${isLoaded ? "opacity-100" : "opacity-0"} group-hover:brightness-110`}
+            className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-105"} group-hover:scale-105 group-hover:brightness-110`}
             onLoad={handleImageLoad}
             onError={() => setHasError(true)}
             priority={index < 8}
