@@ -26,7 +26,7 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/gallery/hero.jpg"
+          src="/gallery/hero.png"
           alt="Heaven Lake at Mount Paektu - sacred birthplace of Korean civilization"
           fill
           className="object-cover object-[center_60%]"
@@ -41,7 +41,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 max-w-[1400px]">
-        <motion.div 
+        <motion.div
           variants={staggerContainer}
           initial="hidden"
           animate="show"
@@ -52,24 +52,24 @@ export function HeroSection() {
               필사즉생 필생즉사
             </span>
           </motion.div>
-          
+
           <motion.h1 variants={staggerItem} className="text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-tight mb-6 drop-shadow-xl tracking-tight">
             One Tiger.<br />One River.<br />One Korea.
           </motion.h1>
-          
+
           <motion.p variants={staggerItem} className="text-lg sm:text-xl md:text-2xl text-cream-muted max-w-[65ch] leading-relaxed mb-10 drop-shadow-md">
             If you seek death, you will live. If you seek life, you will die. Navigate the current of excellence.
           </motion.p>
-          
+
           <motion.div variants={staggerItem} className="flex flex-col sm:flex-row gap-4">
-            <Link 
-              href="#laws" 
+            <Link
+              href="#laws"
               className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-sovereign-gold text-river-depths font-bold text-base transition-all transform hover:scale-105 active:scale-[0.98] shadow-xl shadow-sovereign-gold/20"
             >
               Explore the 48 Laws
             </Link>
-            <Link 
-              href="/mission" 
+            <Link
+              href="/mission"
               className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white/10 text-cream backdrop-blur-md border border-white/20 font-semibold text-base transition-all hover:bg-white/20 active:scale-[0.98]"
             >
               Read our Mission
@@ -77,7 +77,7 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
       </div>
-      
+
       {/* Bottom fade to content */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
     </section>

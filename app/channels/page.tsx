@@ -5,8 +5,7 @@ import { motion } from "framer-motion"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import Image from "next/image"
-import { Play, Calendar, Eye, ThumbsUp, ExternalLink, Globe, TrendingUp, Users } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Play, Calendar, Eye, ExternalLink, Globe, TrendingUp, MonitorPlay } from "lucide-react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 
@@ -129,7 +128,6 @@ export default function ChannelsPage() {
   const [loading, setLoading] = useState(true)
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
 
-  // Fetch videos from YouTube Data API
   const fetchChannelVideos = async (channelId: string, channelUsername: string): Promise<YouTubeVideo[]> => {
     try {
       const response = await fetch(`/api/youtube?channelId=${channelId}&action=videos`)
@@ -209,218 +207,252 @@ export default function ChannelsPage() {
   }
 
   return (
-    <>
+    <main className="min-h-[100dvh] bg-[#050505] text-cream selection:bg-sovereign-gold/30">
       <JucheHeader />
-      <main id="main-content" className="min-h-screen bg-river-depths pt-20">
-        {/* Hero Section with Image */}
-        <section className="relative h-[55vh] min-h-[400px] overflow-hidden">
-          <div className="absolute inset-0">
-            <Image
-              src="/images/heros/Paektusan Geopark).jpg"
-              alt="Illuminated mountain city at night near Paektusan Geopark"
-              fill
-              className="object-cover"
-              priority
-              sizes="100vw"
-              quality={85}
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-river-depths/60 via-river-depths/30 to-river-depths" />
-          </div>
+      
+      {/* Cinematic Hero */}
+      <section className="relative pt-40 pb-24 md:pt-56 md:pb-32 px-4 md:px-8 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/heros/Paektusan Geopark).jpg"
+            alt="Illuminated mountain city at night near Paektusan Geopark"
+            fill
+            className="object-cover opacity-40 mix-blend-luminosity"
+            priority
+            sizes="100vw"
+            quality={85}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/80 via-[#050505]/60 to-[#050505]" />
+          {/* Radial accent */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] h-[400px] bg-korean-red/10 blur-[100px] rounded-full pointer-events-none" />
+        </div>
+        
+        <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center"
+            transition={{ duration: 1, ease: [0.32, 0.72, 0, 1] }}
           >
-            <Play className="h-16 w-16 text-sovereign-gold mx-auto mb-6 drop-shadow-lg" />
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-sovereign-gold drop-shadow-lg font-[family-name:var(--font-heading)]">
-              {language === 'kr' ? '진실의 채널들' : 'Channels of Truth'}
+            <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 bg-white/5 backdrop-blur-2xl text-cream-muted rounded-full text-[10px] font-medium tracking-[0.2em] uppercase border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+              <MonitorPlay className="w-3 h-3 text-sovereign-gold" />
+              {language === 'kr' ? '진실의 목소리' : 'Voices of Truth'}
+            </div>
+            <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tighter leading-[1.05] mb-8 bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
+              {language === 'kr' ? '채널 아카이브' : 'Channels Archive'}
             </h1>
-            <p className="text-xl md:text-2xl text-cream/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl md:text-2xl text-cream-muted max-w-2xl mx-auto leading-relaxed">
               {language === 'kr'
                 ? '서구 주류 미디어의 편견을 넘어 진실을 추구하는 독립 언론인들의 채널'
                 : 'Independent journalists and analysts seeking truth beyond Western mainstream media bias'}
             </p>
           </motion.div>
-        </section>
+        </div>
+      </section>
 
-        {/* Category Filter */}
-        <section className="py-8 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="flex flex-wrap gap-4 justify-center mb-8">
-              {categories.map((category) => (
-                <button
-                  key={category.id}
-                  onClick={() => setSelectedCategory(category.id)}
-                  className={`px-6 py-3 rounded-lg font-semibold transition-all ${
-                    selectedCategory === category.id
-                      ? 'bg-korean-red text-cream'
-                      : 'bg-river-current/40 text-cream/80 hover:bg-river-current/60'
-                  }`}
-                >
-                  {category.label} ({category.count})
-                </button>
-              ))}
-            </div>
+      {/* Category Filter */}
+      <section className="px-4 md:px-8 mb-16 relative z-20">
+        <div className="container mx-auto max-w-[1400px]">
+          <div className="flex flex-wrap gap-3 justify-center">
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                onClick={() => setSelectedCategory(category.id)}
+                className={`px-5 py-2.5 rounded-full text-sm font-medium tracking-[0.1em] uppercase transition-all duration-300 border backdrop-blur-sm ${
+                  selectedCategory === category.id
+                    ? 'bg-cream text-[#050505] border-cream'
+                    : 'bg-white/5 text-cream-muted border-white/10 hover:border-white/30 hover:text-cream hover:bg-white/10'
+                }`}
+              >
+                {category.label} <span className="opacity-50 ml-1">({category.count})</span>
+              </button>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Channels Grid */}
-        <section className="py-8 px-4">
-          <div className="container mx-auto max-w-7xl">
-            {loading ? (
-              <div className="text-center py-20">
-                <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-sovereign-gold"></div>
-                <p className="text-cream/80 mt-4">
-                  {language === 'kr' ? '채널 정보를 불러오는 중...' : 'Loading channels...'}
-                </p>
-              </div>
-            ) : (
-              <div className="space-y-12">
-                {filteredChannels.map((channel, index) => (
-                  <motion.div
-                    key={channel.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                  >
-                    <Card className="bg-river-current/20 border-river-current hover:border-sovereign-gold/50 transition-all">
-                      <CardHeader>
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <CardTitle className="text-2xl text-cream mb-2 flex items-center gap-3">
-                              <Globe className="h-8 w-8 text-sovereign-gold" />
-                              {channel.title}
-                              <span className="text-sm text-cream/60 font-normal">
+      {/* Channels Grid */}
+      <section className="px-4 md:px-8 pb-32">
+        <div className="container mx-auto max-w-[1400px]">
+          {loading ? (
+            <div className="text-center py-32 flex flex-col items-center">
+              <div className="w-12 h-12 rounded-full border-2 border-white/10 border-t-sovereign-gold animate-spin mb-6" />
+              <p className="text-cream-muted tracking-[0.2em] uppercase text-sm font-medium">
+                {language === 'kr' ? '채널 동기화 중...' : 'Synchronizing channels...'}
+              </p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+              {filteredChannels.map((channel, index) => (
+                <motion.div
+                  key={channel.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 * (index % 4), duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  className="p-1.5 md:p-2 rounded-[2.5rem] bg-white/5 border border-white/10 group flex flex-col h-full"
+                >
+                  <div className="bg-[#0a0a0a] rounded-[calc(2.5rem-0.5rem)] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] flex-1 overflow-hidden flex flex-col">
+                    {/* Header */}
+                    <div className="p-8 md:p-10 border-b border-white/5 relative overflow-hidden">
+                      {/* Subtle hover glow */}
+                      <div className="absolute -top-24 -right-24 w-48 h-48 bg-sovereign-gold/10 blur-[50px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+                      
+                      <div className="flex flex-col sm:flex-row items-start justify-between gap-6 relative z-10">
+                        <div className="flex-1">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/10 shrink-0">
+                              <Globe className="h-5 w-5 text-sovereign-gold" />
+                            </div>
+                            <div>
+                              <h2 className="text-2xl font-bold text-cream tracking-tight group-hover:text-white transition-colors">
+                                {channel.title}
+                              </h2>
+                              <span className="text-sm text-cream/40 font-mono">
                                 {channel.username}
-                              </span>
-                            </CardTitle>
-                            <p className="text-cream/80 mb-4">{channel.description}</p>
-                            <div className="flex flex-wrap gap-3">
-                              <span className="px-3 py-1 bg-korean-red/30 text-cream rounded-full text-sm">
-                                {channel.focus}
-                              </span>
-                              <span className="px-3 py-1 bg-river-current/50 text-cream/90 rounded-full text-sm capitalize">
-                                {channel.category}
                               </span>
                             </div>
                           </div>
-                          <a
-                            href={`https://youtube.com/${channel.username}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-4 py-2 bg-korean-red hover:bg-korean-red/80 text-cream rounded-lg transition-colors flex items-center gap-2"
-                          >
-                            <ExternalLink className="h-4 w-4" />
-                            {language === 'kr' ? '채널 방문' : 'Visit Channel'}
-                          </a>
+                          <p className="text-cream-muted text-base leading-relaxed mb-6">
+                            {channel.description}
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-sovereign-gold/10 text-sovereign-gold border border-sovereign-gold/20 rounded-full text-[10px] uppercase tracking-[0.15em] font-medium">
+                              {channel.focus}
+                            </span>
+                            <span className="px-3 py-1 bg-white/5 text-cream-muted border border-white/10 rounded-full text-[10px] uppercase tracking-[0.15em] font-medium">
+                              {channel.category}
+                            </span>
+                          </div>
                         </div>
-                      </CardHeader>
-                      <CardContent>
-                        {videos[channel.id] && videos[channel.id].length > 0 ? (
-                          <div className="grid md:grid-cols-2 gap-6">
-                            {videos[channel.id].slice(0, 2).map((video) => (
-                              <a
-                                key={video.id}
-                                href={video.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group block bg-river-current/30 rounded-lg overflow-hidden hover:bg-river-current/50 transition-all"
-                              >
-                                <div className="relative">
-                                  <div className="w-full h-48 bg-river-current/50 rounded-t-lg overflow-hidden">
-                                    {video.thumbnail ? (
-                                      <img
-                                        src={video.thumbnail}
-                                        alt={video.title}
-                                        className="w-full h-full object-cover"
-                                      />
-                                    ) : (
-                                      <div className="w-full h-full flex items-center justify-center">
-                                        <Play className="h-12 w-12 text-cream/50" />
-                                      </div>
-                                    )}
-                                    <div className="absolute inset-0 bg-river-depths/20 group-hover:bg-river-depths/10 transition-all flex items-center justify-center">
-                                      <Play className="h-12 w-12 text-cream/80 group-hover:text-sovereign-gold transition-colors" />
-                                    </div>
-                                  </div>
-                                  {video.duration && (
-                                    <div className="absolute bottom-2 right-2 bg-river-depths/80 text-cream text-xs px-2 py-1 rounded">
-                                      {video.duration}
-                                    </div>
-                                  )}
-                                </div>
-                                <div className="p-4">
-                                  <h4 className="text-cream font-semibold mb-2 line-clamp-2 group-hover:text-sovereign-gold transition-colors">
-                                    {video.title}
-                                  </h4>
-                                  <div className="flex items-center gap-4 text-sm text-cream/60">
-                                    <div className="flex items-center gap-1">
-                                      <Eye className="h-4 w-4" />
-                                      {video.viewCount ? formatViewCount(video.viewCount) : '—'}
-                                    </div>
-                                    <div className="flex items-center gap-1">
-                                      <Calendar className="h-4 w-4" />
-                                      {formatTimeAgo(video.publishedAt)}
-                                    </div>
-                                  </div>
-                                </div>
-                              </a>
-                            ))}
-                          </div>
-                        ) : (
-                          <div className="text-center py-8 text-cream/60">
-                            {language === 'kr'
-                              ? '최근 영상을 불러올 수 없습니다. 채널을 직접 방문해보세요.'
-                              : 'Unable to load recent videos. Please visit the channel directly.'}
-                          </div>
-                        )}
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
-            )}
-          </div>
-        </section>
+                        
+                        <a
+                          href={`https://youtube.com/${channel.username}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="shrink-0 inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/5 hover:bg-white text-cream-muted hover:text-[#050505] transition-all duration-300 border border-white/10"
+                          aria-label={language === 'kr' ? '채널 방문' : 'Visit Channel'}
+                        >
+                          <ExternalLink className="h-5 w-5" />
+                        </a>
+                      </div>
+                    </div>
 
-        {/* Integration Notice */}
-        <section className="py-16 px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="container mx-auto max-w-4xl text-center"
-          >
-            <div className="bg-river-current/30 rounded-2xl p-8 border border-river-current">
-              <TrendingUp className="h-12 w-12 text-sovereign-gold mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-cream mb-4">
-                {language === 'kr' ? '실시간 업데이트' : 'Real-time Updates'}
+                    {/* Videos Grid */}
+                    <div className="p-8 md:p-10 bg-[#050505] flex-1 flex flex-col">
+                      <h3 className="text-sm font-medium tracking-[0.2em] uppercase text-cream/40 mb-6 flex items-center gap-2">
+                        <MonitorPlay className="w-4 h-4" />
+                        {language === 'kr' ? '최근 영상' : 'Recent Broadcasts'}
+                      </h3>
+                      
+                      {videos[channel.id] && videos[channel.id].length > 0 ? (
+                        <div className="grid sm:grid-cols-2 gap-4 flex-1">
+                          {videos[channel.id].slice(0, 2).map((video) => (
+                            <a
+                              key={video.id}
+                              href={video.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="group/video block relative rounded-2xl overflow-hidden border border-white/5 hover:border-white/20 transition-colors duration-300"
+                            >
+                              <div className="aspect-video relative bg-[#111] overflow-hidden">
+                                {video.thumbnail ? (
+                                  <img
+                                    src={video.thumbnail}
+                                    alt={video.title}
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover/video:scale-105"
+                                  />
+                                ) : (
+                                  <div className="w-full h-full flex items-center justify-center">
+                                    <Play className="h-8 w-8 text-cream/20" />
+                                  </div>
+                                )}
+                                <div className="absolute inset-0 bg-black/20 group-hover/video:bg-black/40 transition-colors flex items-center justify-center opacity-0 group-hover/video:opacity-100">
+                                  <div className="w-12 h-12 rounded-full bg-korean-red flex items-center justify-center backdrop-blur-md">
+                                    <Play className="h-5 w-5 text-white ml-1" />
+                                  </div>
+                                </div>
+                                {video.duration && (
+                                  <div className="absolute bottom-2 right-2 bg-black/80 backdrop-blur-md text-white font-mono text-[10px] px-2 py-1 rounded-md">
+                                    {video.duration}
+                                  </div>
+                                )}
+                              </div>
+                              <div className="p-4 bg-[#0a0a0a]">
+                                <h4 className="text-cream text-sm font-medium mb-3 line-clamp-2 leading-snug group-hover/video:text-white transition-colors">
+                                  {video.title}
+                                </h4>
+                                <div className="flex items-center gap-4 text-[10px] uppercase tracking-[0.1em] font-mono text-cream/40">
+                                  <div className="flex items-center gap-1.5">
+                                    <Eye className="h-3 w-3" />
+                                    {video.viewCount ? formatViewCount(video.viewCount) : '—'}
+                                  </div>
+                                  <div className="flex items-center gap-1.5">
+                                    <Calendar className="h-3 w-3" />
+                                    {formatTimeAgo(video.publishedAt)}
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="text-center py-12 flex-1 flex flex-col items-center justify-center bg-[#0a0a0a] rounded-2xl border border-white/5 border-dashed">
+                          <p className="text-cream/40 text-sm">
+                            {language === 'kr'
+                              ? '최근 영상을 불러올 수 없습니다.'
+                              : 'Unable to load recent broadcasts.'}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Integration Notice / CTA */}
+      <section className="px-4 md:px-8 pb-32">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="container mx-auto max-w-4xl"
+        >
+          <div className="p-1.5 md:p-2 rounded-[3rem] bg-white/5 border border-white/10">
+            <div className="bg-gradient-to-b from-[#111] to-[#050505] rounded-[calc(3rem-0.5rem)] p-12 md:p-20 text-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+              <TrendingUp className="h-12 w-12 text-sovereign-gold mx-auto mb-8 opacity-80" />
+              <h2 className="text-3xl md:text-4xl font-bold text-cream mb-6 tracking-tight">
+                {language === 'kr' ? '실시간 동기화 네트워크' : 'Live Synchronization Network'}
               </h2>
-              <p className="text-cream/80 mb-6">
+              <p className="text-lg text-cream-muted mb-12 max-w-2xl mx-auto leading-relaxed">
                 {language === 'kr'
-                  ? '이 페이지는 YouTube Data API를 통해 자동으로 업데이트됩니다. 새로운 영상이 업로드되면 실시간으로 반영됩니다.'
-                  : 'This page automatically updates via YouTube Data API. New videos appear in real-time as they\'re uploaded.'}
+                  ? '이 미디어 매트릭스는 YouTube Data API를 통해 직접 연결되어 있습니다. 독립 언론인들의 새로운 보고서가 송출되는 즉시 이 아카이브에 등록됩니다.'
+                  : 'This media matrix connects directly via YouTube Data API. As soon as independent analysts broadcast new reports, they are indexed into this registry.'}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/truth-project"
-                  className="px-6 py-3 bg-korean-red hover:bg-korean-red/80 text-cream font-semibold rounded-lg transition-all"
+                  className="group relative inline-flex items-center justify-center px-8 py-4 rounded-full bg-cream text-[#050505] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white"
                 >
-                  {language === 'kr' ? '진실 프로젝트' : 'Truth Project'}
+                  {language === 'kr' ? '진실 프로젝트' : 'The Truth Project'}
                 </Link>
                 <Link
-                  href="/cultural-exchange"
-                  className="px-6 py-3 border-2 border-sovereign-gold text-sovereign-gold hover:bg-sovereign-gold hover:text-river-depths font-semibold rounded-lg transition-all"
+                  href="/briefings"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-full border border-white/20 text-cream font-medium text-lg hover:bg-white/5 transition-all duration-300 active:scale-[0.98]"
                 >
-                  {language === 'kr' ? '문화 교류' : 'Cultural Exchange'}
+                  {language === 'kr' ? '일일 브리핑' : 'Daily Briefings'}
                 </Link>
               </div>
             </div>
-          </motion.div>
-        </section>
-      </main>
+          </div>
+        </motion.div>
+      </section>
+
       <JucheFooter />
-    </>
+    </main>
   )
 }
+

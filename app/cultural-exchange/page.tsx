@@ -2,8 +2,7 @@
 
 import { useLanguage } from "@/contexts/language-context"
 import { motion } from "framer-motion"
-import { Heart, Globe, Music, Utensils, Book, Users, Camera, Plane, HandHeart, Star } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Heart, Globe, Music, Utensils, Book, Users, Camera, Plane, HandHeart, Star, ArrowRight } from "lucide-react"
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import Link from "next/link"
@@ -22,7 +21,8 @@ export default function CulturalExchangePage() {
       examples: language === 'kr'
         ? ['전통 국악', '민요와 판소리', '현대 음악', '무용과 공연']
         : ['Traditional Gugak', 'Folk Songs & Pansori', 'Contemporary Music', 'Dance & Performance'],
-      color: 'border-sovereign-gold'
+      color: 'text-sovereign-gold',
+      bg: 'bg-sovereign-gold/10'
     },
     {
       icon: Utensils,
@@ -33,7 +33,8 @@ export default function CulturalExchangePage() {
       examples: language === 'kr'
         ? ['발효 음식의 과학', '계절 요리', '전통 차 문화', '공동체 식사 문화']
         : ['Fermentation Science', 'Seasonal Dishes', 'Tea Culture', 'Communal Dining'],
-      color: 'border-korean-red'
+      color: 'text-korean-red',
+      bg: 'bg-korean-red/10'
     },
     {
       icon: Book,
@@ -44,7 +45,8 @@ export default function CulturalExchangePage() {
       examples: language === 'kr'
         ? ['한글의 창제 원리', '고전 문학', '현대 시와 소설', '구전 전통']
         : ['Hangul Creation Principles', 'Classical Literature', 'Modern Poetry & Novels', 'Oral Traditions'],
-      color: 'border-river-current'
+      color: 'text-river-current',
+      bg: 'bg-river-current/10'
     },
     {
       icon: Users,
@@ -55,7 +57,8 @@ export default function CulturalExchangePage() {
       examples: language === 'kr'
         ? ['대가족 문화', '마을 공동체', '상부상조 정신', '세대간 지혜 전수']
         : ['Extended Family Culture', 'Village Communities', 'Mutual Aid Spirit', 'Intergenerational Wisdom'],
-      color: 'border-sovereign-gold'
+      color: 'text-white',
+      bg: 'bg-white/10'
     }
   ]
 
@@ -131,216 +134,245 @@ export default function CulturalExchangePage() {
   return (
     <>
       <JucheHeader />
-      <main className="min-h-screen bg-river-depths pt-20">
-      {/* Hero Section with Image */}
-      <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/heros/0sobeautiful6.jpg"
-            alt="Traditional Korean pavilion amid cascading waterfalls and lush forest"
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-            quality={85}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-river-depths/60 via-river-depths/40 to-river-depths" />
-        </div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center"
-        >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-[family-name:var(--font-heading)] text-cream drop-shadow-lg">
-            {language === 'kr' ? '문화 교류와 세계 평화' : 'Cultural Exchange & World Peace'}
-          </h1>
-          <p className="text-xl md:text-2xl text-cream/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
-            {language === 'kr'
-              ? '5000년 역사의 지혜를 세계와 나누고, 세계의 아름다움을 품는 열린 한반도'
-              : '5000 years of wisdom shared with the world, an open peninsula embracing global beauty'}
-          </p>
-        </motion.div>
-      </section>
-
-      {/* Vision Statement */}
-      <section className="py-12 px-4">
-        <div className="container mx-auto max-w-4xl">
+      <main className="min-h-[100dvh] bg-[#050505] text-cream selection:bg-sovereign-gold/30">
+        {/* Cinematic Hero Section */}
+        <section className="relative h-[80vh] min-h-[600px] overflow-hidden flex items-center justify-center">
+          <div className="absolute inset-0">
+            <Image
+              src="/images/heros/0sobeautiful6.jpg"
+              alt="Traditional Korean pavilion amid cascading waterfalls and lush forest"
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+              quality={90}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent" />
+            <div className="absolute inset-0 bg-black/30" />
+          </div>
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="bg-river-current/30 rounded-2xl p-8 border border-sovereign-gold/30 text-center"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.32, 0.72, 0, 1] }}
+            className="relative z-10 flex flex-col items-center justify-center px-4 text-center max-w-5xl"
           >
-            <Star className="h-12 w-12 text-sovereign-gold mx-auto mb-4" />
-            <h2 className="text-2xl font-bold text-sovereign-gold mb-4 font-[family-name:var(--font-heading)]">
-              {language === 'kr' ? '우리의 꿈' : 'Our Dream'}
-            </h2>
-            <p className="text-cream text-lg leading-relaxed">
+            <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 bg-white/5 backdrop-blur-2xl text-cream-muted rounded-full text-[10px] font-medium tracking-[0.2em] uppercase border border-white/10">
+              {language === 'kr' ? '미래를 향한 다리' : 'Bridge to the Future'}
+            </div>
+            <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tighter leading-[1.05] mb-8 bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent">
+              {language === 'kr' ? '문화 교류와 세계 평화' : 'Cultural Exchange & World Peace'}
+            </h1>
+            <p className="text-xl md:text-2xl text-cream-muted max-w-3xl mx-auto leading-relaxed">
               {language === 'kr'
-                ? '한반도가 동서양 문명의 가교가 되고, 남북이 하나 되어 인류 평화의 중심지가 되는 그날. 우리 음식으로 세계인의 건강을 지키고, 우리 정신으로 인류애를 실현하며, 우리 예술로 영혼을 치유하는 미래.'
-                : 'The Korean Peninsula as a bridge between Eastern and Western civilizations, North and South united as a center for human peace. A future where our food protects global health, our spirit realizes humanity, and our art heals souls.'}
+                ? '5000년 역사의 지혜를 세계와 나누고, 세계의 아름다움을 품는 열린 한반도'
+                : '5000 years of wisdom shared with the world, an open peninsula embracing global beauty'}
             </p>
           </motion.div>
-        </div>
-      </section>
+        </section>
 
-      {/* Cultural Pillars */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-cream mb-12 font-[family-name:var(--font-heading)]">
-            {language === 'kr' ? '문화 교류의 네 기둥' : 'Four Pillars of Cultural Exchange'}
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {culturalPillars.map((pillar, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Card className="bg-river-depths/80 border-river-current/40 hover:border-sovereign-gold/40 transition-all h-full">
-                  <CardHeader>
-                    <div className={`w-16 h-16 rounded-full border-2 ${pillar.color} bg-river-depths/50 flex items-center justify-center mb-4`}>
-                      <pillar.icon className="h-8 w-8 text-sovereign-gold" />
-                    </div>
-                    <CardTitle className="text-2xl text-cream">{pillar.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-cream/80 mb-4">{pillar.description}</p>
-                    <div className="space-y-2">
-                      {pillar.examples.map((example, i) => (
-                        <div key={i} className="flex items-center gap-2">
-                          <div className="w-2 h-2 rounded-full bg-sovereign-gold" />
-                          <span className="text-cream/70 text-sm">{example}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Exchange Programs */}
-      <section className="py-16 px-4 bg-river-current/20">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-cream mb-4 font-[family-name:var(--font-heading)]">
-            {language === 'kr' ? '글로벌 교류 프로그램' : 'Global Exchange Programs'}
-          </h2>
-          <p className="text-center text-cream/80 mb-12 max-w-2xl mx-auto">
-            {language === 'kr'
-              ? '미래 세대가 함께 만드는 평화롭고 번영하는 세계'
-              : 'Future generations creating a peaceful and prosperous world together'}
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {exchangePrograms.map((program, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-river-depths/60 rounded-xl p-6 border border-river-current/40"
-              >
-                <h3 className="text-xl font-bold text-sovereign-gold mb-3">{program.title}</h3>
-                <p className="text-cream/80 mb-4">{program.description}</p>
-                <div className="flex justify-between items-center">
-                  <div>
-                    <p className="text-sm text-cream/60">{language === 'kr' ? '참가자' : 'Participants'}</p>
-                    <p className="text-lg font-bold text-sovereign-gold">{program.participants}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-cream/60">{language === 'kr' ? '영향력' : 'Impact'}</p>
-                    <p className="text-lg font-bold text-cream-muted">{program.impact}</p>
-                  </div>
+        <div className="container mx-auto px-4 md:px-8 pb-32 max-w-[1400px]">
+          {/* Vision Statement - Double Bezel */}
+          <section className="mt-[-80px] relative z-20 mb-32">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
+              className="p-1.5 md:p-2 rounded-[2.5rem] bg-white/5 border border-white/10 max-w-4xl mx-auto backdrop-blur-xl"
+            >
+              <div className="bg-[#0a0a0a] rounded-[calc(2.5rem-0.5rem)] p-8 md:p-16 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] text-center">
+                <div className="w-16 h-16 rounded-full bg-sovereign-gold/10 border border-sovereign-gold/20 flex items-center justify-center mx-auto mb-8">
+                  <Star className="h-8 w-8 text-sovereign-gold" />
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-cream mb-6">
+                  {language === 'kr' ? '우리의 꿈' : 'Our Dream'}
+                </h2>
+                <p className="text-xl text-cream-muted leading-relaxed">
+                  {language === 'kr'
+                    ? '한반도가 동서양 문명의 가교가 되고, 남북이 하나 되어 인류 평화의 중심지가 되는 그날. 우리 음식으로 세계인의 건강을 지키고, 우리 정신으로 인류애를 실현하며, 우리 예술로 영혼을 치유하는 미래.'
+                    : 'The Korean Peninsula as a bridge between Eastern and Western civilizations, North and South united as a center for human peace. A future where our food protects global health, our spirit realizes humanity, and our art heals souls.'}
+                </p>
+              </div>
+            </motion.div>
+          </section>
 
-      {/* Tourism Vision */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="bg-river-current/20 rounded-2xl p-8 border border-river-current/40">
-            <div className="flex items-center justify-center mb-6">
-              <Plane className="h-12 w-12 text-sovereign-gold mr-3" />
-              <h2 className="text-3xl font-bold text-cream font-[family-name:var(--font-heading)]">{tourismVision.title}</h2>
+          {/* Cultural Pillars - Asymmetrical Bento Grid */}
+          <section className="mb-32">
+            <div className="flex items-center gap-4 mb-16">
+              <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+                <Globe className="w-5 h-5 text-cream" />
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-cream">
+                {language === 'kr' ? '문화 교류의 네 기둥' : 'Four Pillars of Cultural Exchange'}
+              </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {tourismVision.destinations.map((dest, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="bg-river-depths/60 rounded-lg p-6"
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
+              {culturalPillars.map((pillar, index) => {
+                const colSpan = index === 0 || index === 3 ? "md:col-span-12 lg:col-span-8" : "md:col-span-6 lg:col-span-4";
+                
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: index * 0.1, ease: [0.32, 0.72, 0, 1] }}
+                    className={`p-1.5 rounded-[2rem] bg-white/5 border border-white/10 group hover:border-white/20 transition-all duration-500 ${colSpan}`}
+                  >
+                    <div className="bg-[#0a0a0a] rounded-[calc(2rem-0.375rem)] p-8 md:p-12 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-[#111]">
+                      <div className={`w-14 h-14 rounded-full ${pillar.bg} border border-white/5 flex items-center justify-center mb-8 transition-transform duration-500 group-hover:scale-110`}>
+                        <pillar.icon className={`h-6 w-6 ${pillar.color}`} />
+                      </div>
+                      <h3 className="text-3xl font-bold text-cream tracking-tight mb-4">{pillar.title}</h3>
+                      <p className="text-lg text-cream-muted leading-relaxed mb-8">{pillar.description}</p>
+                      
+                      <div className="space-y-3">
+                        {pillar.examples.map((example, i) => (
+                          <div key={i} className="flex items-center gap-3">
+                            <div className={`w-1.5 h-1.5 rounded-full ${pillar.bg.replace('/10', '')}`} />
+                            <span className="text-sm font-medium tracking-wide text-cream/70 uppercase">{example}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </motion.div>
+                )
+              })}
+            </div>
+          </section>
+
+          {/* Exchange Programs - Double Bezel Grid */}
+          <section className="mb-32 p-1.5 md:p-2 rounded-[3rem] bg-white/5 border border-white/10">
+            <div className="bg-[#0a0a0a] rounded-[calc(3rem-0.5rem)] p-8 md:p-16 lg:p-24 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-cream mb-6">
+                  {language === 'kr' ? '글로벌 교류 프로그램' : 'Global Exchange Programs'}
+                </h2>
+                <p className="text-xl text-cream-muted max-w-2xl mx-auto">
+                  {language === 'kr'
+                    ? '미래 세대가 함께 만드는 평화롭고 번영하는 세계'
+                    : 'Future generations creating a peaceful and prosperous world together'}
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                {exchangePrograms.map((program, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    className="bg-[#050505] rounded-[2rem] p-8 border border-white/5 hover:border-white/10 transition-colors"
+                  >
+                    <h3 className="text-2xl font-bold tracking-tight text-sovereign-gold mb-4">{program.title}</h3>
+                    <p className="text-cream-muted text-lg mb-8">{program.description}</p>
+                    
+                    <div className="flex flex-col sm:flex-row gap-6 pt-6 border-t border-white/5">
+                      <div>
+                        <p className="text-[10px] uppercase tracking-[0.2em] text-cream-muted mb-1">
+                          {language === 'kr' ? '참가자' : 'Participants'}
+                        </p>
+                        <p className="text-xl font-bold text-cream">{program.participants}</p>
+                      </div>
+                      <div>
+                        <p className="text-[10px] uppercase tracking-[0.2em] text-cream-muted mb-1">
+                          {language === 'kr' ? '영향력' : 'Impact'}
+                        </p>
+                        <p className="text-xl font-bold text-cream">{program.impact}</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Tourism Vision */}
+          <section className="mb-32">
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="w-full md:w-1/3">
+                <div className="w-16 h-16 rounded-full bg-sovereign-gold/10 border border-sovereign-gold/20 flex items-center justify-center mb-8">
+                  <Plane className="h-8 w-8 text-sovereign-gold" />
+                </div>
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-cream mb-6">
+                  {tourismVision.title}
+                </h2>
+                <p className="text-xl text-cream-muted leading-relaxed">
+                  {language === 'kr' ? '미래의 평화 시대, 한반도 전역을 잇는 관광과 우정의 루트가 전 세계 여행자들을 맞이할 것입니다.' : 'In the future era of peace, tourism and friendship routes connecting the entire Korean Peninsula will welcome travelers from around the world.'}
+                </p>
+              </div>
+
+              <div className="w-full md:w-2/3 grid sm:grid-cols-2 gap-4">
+                {tourismVision.destinations.map((dest, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    className="p-1.5 rounded-[2rem] bg-white/5 border border-white/10"
+                  >
+                    <div className="bg-[#0a0a0a] rounded-[calc(2rem-0.375rem)] p-8 h-full">
+                      <h3 className="text-xl font-bold tracking-tight text-cream mb-3">{dest.name}</h3>
+                      <p className="text-cream-muted text-sm leading-relaxed mb-6">{dest.description}</p>
+                      <div className="flex items-center gap-3">
+                        <Camera className="h-4 w-4 text-sovereign-gold" />
+                        <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-sovereign-gold">{dest.visitors}</span>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Call to Action */}
+          <section className="text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: [0.32, 0.72, 0, 1] }}
+              className="max-w-4xl mx-auto"
+            >
+              <div className="w-20 h-20 rounded-full bg-korean-red/10 border border-korean-red/20 flex items-center justify-center mx-auto mb-8">
+                <HandHeart className="h-10 w-10 text-korean-red" />
+              </div>
+              <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-cream mb-8">
+                {language === 'kr'
+                  ? '함께 만드는 평화로운 미래'
+                  : 'Creating a Peaceful Future Together'}
+              </h2>
+              <p className="text-xl md:text-2xl text-cream-muted mb-12 max-w-2xl mx-auto leading-relaxed">
+                {language === 'kr'
+                  ? '문화의 힘으로 마음의 장벽을 허물고, 이해와 사랑으로 새로운 세계를 열어갑니다.'
+                  : 'Breaking down barriers with cultural power, opening a new world with understanding and love.'}
+              </p>
+
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <Link
+                  href="/cuisine-traditions"
+                  className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#050505] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white w-full sm:w-auto"
                 >
-                  <h3 className="text-xl font-bold text-sovereign-gold mb-2">{dest.name}</h3>
-                  <p className="text-cream/80 mb-3">{dest.description}</p>
-                  <div className="flex items-center gap-2">
-                    <Camera className="h-4 w-4 text-sovereign-gold" />
-                    <span className="text-sovereign-gold font-medium">{dest.visitors}</span>
+                  <span className="mr-6">{language === 'kr' ? '한식과 전통 탐험' : 'Explore Cuisine & Traditions'}</span>
+                  <div className="w-10 h-10 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
+                    <ArrowRight className="w-5 h-5" strokeWidth={2} />
                   </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
+                </Link>
+                <Link
+                  href="/youth-empowerment"
+                  className="group relative inline-flex items-center justify-center px-8 py-3 rounded-full bg-transparent border border-white/20 text-cream font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white/5 w-full sm:w-auto"
+                >
+                  {language === 'kr' ? '청년 임파워먼트' : 'Youth Empowerment'}
+                </Link>
+              </div>
+            </motion.div>
+          </section>
         </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-20 px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="container mx-auto max-w-4xl text-center"
-        >
-          <HandHeart className="h-16 w-16 text-korean-red mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-bold text-cream mb-6 font-[family-name:var(--font-heading)]">
-            {language === 'kr'
-              ? '함께 만드는 평화로운 미래'
-              : 'Creating a Peaceful Future Together'}
-          </h2>
-          <p className="text-xl text-cream/80 mb-8">
-            {language === 'kr'
-              ? '문화의 힘으로 마음의 장벽을 허물고, 이해와 사랑으로 새로운 세계를 열어갑니다.'
-              : 'Breaking down barriers with cultural power, opening a new world with understanding and love.'}
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/cuisine-traditions"
-              className="px-8 py-4 bg-gradient-to-r from-korean-red to-sovereign-gold hover:from-[#a82628] hover:to-[#c4973a] text-cream font-bold rounded-lg transition-all transform hover:scale-105"
-            >
-              {language === 'kr' ? '한식과 전통 탐험' : 'Explore Cuisine & Traditions'}
-            </Link>
-            <Link
-              href="/peace-timeline"
-              className="px-8 py-4 bg-gradient-to-r from-river-current to-river-depths hover:from-[#143a52] hover:to-[#0a1521] text-cream font-bold rounded-lg transition-all transform hover:scale-105"
-            >
-              {language === 'kr' ? '평화의 역사' : 'History of Peace'}
-            </Link>
-            <Link
-              href="/youth-empowerment"
-              className="px-8 py-4 border-2 border-sovereign-gold text-sovereign-gold hover:bg-sovereign-gold hover:text-river-depths font-bold rounded-lg transition-all transform hover:scale-105"
-            >
-              {language === 'kr' ? '청년 임파워먼트' : 'Youth Empowerment'}
-            </Link>
-          </div>
-        </motion.div>
-      </section>
-    </main>
-    <JucheFooter />
+      </main>
+      <JucheFooter />
     </>
   )
 }

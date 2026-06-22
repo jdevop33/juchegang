@@ -17,6 +17,7 @@ import { personalInspiration } from "@/data/personal-inspiration"
 import { PersonalInspiration } from "@/components/personal-inspiration"
 import { TelegramFeed } from "@/components/telegram-feed"
 import { telegramFeed, telegramChannels } from "@/data/telegram-feed"
+import SocialContent from "./social-content"
 
 export const metadata = {
   title: "Social Media",
@@ -111,264 +112,29 @@ export default async function SocialPage() {
   ))
     .flat()
 
+  // Pre-fetch videos for featured channels
+  const featuredChannelVideosMap: Record<string, any[]> = {}
+  await Promise.all(
+    featuredChannels.map(async (fc) => {
+      if (fc.channelId) {
+        const vids = await fetchChannelVideos(fc.channelId)
+        featuredChannelVideosMap[fc.id] = vids
+      } else {
+        featuredChannelVideosMap[fc.id] = []
+      }
+    })
+  )
+
   return (
     <>
       <JucheHeader />
-      <main className="min-h-screen bg-gradient-to-b from-river-depths via-river-current to-river-depths pt-20">
-      <section
-        className="relative h-auto -mt-20"
-        style={{ minHeight: '100svh' }}
-      >
-        <FocalImage
-          src="/images/heros/socialmediapagehero.jpg"
-          alt="Juche Social"
-          fill
-          className="object-cover"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-river-depths/40 via-river-depths/20 to-river-depths/90" />
-        <div className="relative z-10 flex h-full items-end justify-center text-center px-4 pb-24 sm:pb-28 md:pb-36">
-          <div>
-            <h1 className="sr-only">Social Media</h1>
-          </div>
-        </div>
-      </section>
-      <div className="container mx-auto px-4 py-10">
-        {/* Foundational Inspiration */}
-        {personalInspiration ? (
-          <PersonalInspiration
-            title={personalInspiration.title}
-            description={personalInspiration.description}
-            youtubeEmbedUrl={personalInspiration.youtubeEmbedUrl}
-            sources={personalInspiration.sources}
-          />
-        ) : null}
-
-        {/* Telegram Feed */}
-        <section className="mb-16">
-          <TelegramFeed
-            posts={telegramFeed}
-            channels={telegramChannels}
-            autoPlay={true}
-            autoPlayInterval={10000}
-          />
-        </section>
-
-        {/* Featured Channels */}
-        {featuredChannels.length > 0 ? (
-          <section className="mb-16">
-            <h2 className="text-2xl font-semibold text-cream mb-6">Featured Channels</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {await Promise.all(
-                featuredChannels.map(async (fc) => {
-                  const vids = fc.channelId ? await fetchChannelVideos(fc.channelId) : []
-                  return (
-                    <FeaturedChannel
-                      key={fc.id}
-                      title={fc.title}
-                      username={fc.username}
-                      channelUrl={`https://youtube.com/${fc.username}`}
-                      description={fc.description}
-                      location={fc.location}
-                      joined={fc.joined}
-                      subscribers={fc.subscribers}
-                      videosCount={fc.videosCount}
-                      totalViews={fc.totalViews}
-                      links={fc.links}
-                      videos={vids}
-                    />
-                  )
-                })
-              )}
-            </div>
-          </section>
-        ) : null}
-        {/* Featured Lecture */}
-        {featuredVideos.length > 0 ? (
-          <FeaturedLecture
-            title={featuredVideos[0].title}
-            speaker={featuredVideos[0].speaker}
-            series={featuredVideos[0].series}
-            date={featuredVideos[0].date}
-            views={featuredVideos[0].views}
-            description={featuredVideos[0].description}
-            hashtags={featuredVideos[0].hashtags}
-            youtubeEmbedUrl={featuredVideos[0].youtubeEmbedUrl}
-            attributionHtml={featuredVideos[0].attributionHtml}
-            chapters={featuredVideos[0].chapters}
-          />
-        ) : null}
-        {/* Trusted Sources */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-cream mb-4">Trusted Sources</h2>
-          {/* Featured Channels strip */}
-          <div className="flex flex-wrap gap-3 mb-6">
-            {youtubeSources.map((src) => (
-              <a key={src.id} href={src.url} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg bg-river-depths/50 border border-river-current text-cream/90 hover:bg-river-current/50">
-                {src.sourceName || src.url}
-              </a>
-            ))}
-            {linkSources.map((src) => (
-              <a key={src.id} href={src.url} target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg bg-river-depths/50 border border-sovereign-gold/30 text-sovereign-gold hover:bg-river-current/50">
-                {src.sourceName || src.url}
-              </a>
-            ))}
-          </div>
-
-          {/* Stories */}
-          {trustedStories.length > 0 ? (
-            <div className="grid md:grid-cols-2 gap-6 mb-10">
-              {trustedStories.map((item) => (
-                <div key={item.id} className="space-y-3">
-                  <TrustedStoryCard
-                    title={item.title}
-                    author={item.author}
-                    sourceName={item.sourceName}
-                    url={item.url}
-                    publishedAt={item.publishedAt}
-                    summary={item.summary}
-                  />
-                  <div className="flex items-center gap-3">
-                    <TtsButton text={(item.title ? item.title + ". " : "") + (item.summary || "")} />
-                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-cream/70 underline">
-                      Original source
-                    </a>
-                  </div>
-                  {item.youtubeUrl ? (
-                    <div className="aspect-video w-full overflow-hidden rounded-lg border border-river-current bg-river-depths/50">
-                      <iframe
-                        src={item.youtubeUrl.replace("watch?v=", "embed/")}
-                        title={item.title || "Video"}
-                        className="w-full h-full"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                      />
-                    </div>
-                  ) : null}
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p className="text-cream/60 mb-10">No trusted stories available right now.</p>
-          )}
-
-          {/* Videos */}
-          {trustedVideos.length > 0 ? (
-            <div className="grid md:grid-cols-2 gap-6">
-              {trustedVideos.map((v) => (
-                <div key={v.id} className="space-y-2">
-                  <div className="aspect-video w-full overflow-hidden rounded-lg border border-river-current bg-river-depths/50">
-                    <iframe
-                      src={v.url.replace("watch?v=", "embed/")}
-                      title={v.title}
-                      className="w-full h-full"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                    />
-                  </div>
-                  <div className="text-cream/80 text-sm">{v.sourceName ? `${v.sourceName} • ` : ""}{new Date(v.publishedAt).toLocaleString()}</div>
-                  <a href={v.url} target="_blank" rel="noopener noreferrer" className="text-cream font-medium hover:underline">{v.title}</a>
-                </div>
-              ))}
-            </div>
-          ) : null}
-          <p className="text-xs text-cream/50 mt-4">
-            All linked works are the property of their respective authors and publishers. Embedded media is displayed for
-            educational commentary and discovery. Please visit the original source to support the creators.
-          </p>
-        </section>
-        <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-cream mb-4">Profiles</h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {socialProfiles.map((p) => (
-              <a
-                key={p.url}
-                href={p.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-lg bg-river-depths/50 border border-river-current hover:bg-river-current/40 transition-colors"
-              >
-                {/* Simple platform badge */}
-                <span className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-river-current/50 text-cream capitalize">
-                  {p.platform[0]}
-                </span>
-                <div>
-                  <div className="text-cream font-medium">{p.displayName ?? `@${p.handle}`}</div>
-                  <div className="text-cream/60 text-sm">{p.platform}</div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-cream mb-4">YouTube</h2>
-          {yt.length === 0 ? (
-            <p className="text-cream/60">YouTube channel coming soon. Stay tuned for video content!</p>
-          ) : (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {yt.map((v) => (
-                <a key={v.id} href={v.url} target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden border border-river-current bg-river-depths/50 hover:bg-river-current/40 transition-colors">
-                  <div className="relative w-full aspect-video">
-                    <Image
-                      src={v.thumbnail}
-                      alt={v.title}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="text-cream font-medium line-clamp-2">{v.title}</h3>
-                    <p className="text-cream/50 text-sm mt-1">{new Date(v.publishedAt).toLocaleString()}</p>
-                  </div>
-                </a>
-              ))}
-            </div>
-          )}
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-cream mb-4">Audio</h2>
-          <div className="rounded-lg overflow-hidden border border-river-current bg-river-depths/50">
-            <iframe
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/407296785&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-              title="SoundCloud Player — Donald Trump Diss Track"
-              className="w-full"
-              style={{ height: 600 }}
-              allow="autoplay"
-            />
-          </div>
-          <p className="mt-2 text-xs text-cream/60">
-            <a href="https://soundcloud.com/kimjongunnuking" target="_blank" rel="noopener noreferrer" className="underline">KimJongUn</a>
-            {" "}·{" "}
-            <a href="https://soundcloud.com/kimjongunnuking/donald-trump-diss-panda-remix" target="_blank" rel="noopener noreferrer" className="underline">Donald Trump Diss Track</a>
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-cream mb-4">Contact</h2>
-          <div className="bg-river-depths/50 border border-river-current rounded-lg p-6">
-            <p className="text-cream mb-2">For inquiries and collaborations:</p>
-            <a
-              href="mailto:panda@juche.org"
-              className="inline-flex items-center text-sovereign-gold hover:text-korean-red transition-colors"
-            >
-              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-              </svg>
-              panda@juche.org
-            </a>
-          </div>
-        </section>
-      </div>
-    </main>
-    <JucheFooter />
+      <SocialContent
+        yt={yt}
+        trustedStories={trustedStories}
+        trustedVideos={trustedVideos}
+        featuredChannelVideosMap={featuredChannelVideosMap}
+      />
+      <JucheFooter />
     </>
   )
 }

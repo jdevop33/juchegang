@@ -25,22 +25,21 @@ export function CivilizationTimeline() {
   const maxCivAge = Math.max(...civilizations.map(c => getCivAge(c.civYear)))
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#0a0e17] via-river-depths to-river-current py-12 sm:py-16 px-4 sm:px-6">
-
+    <section className="min-h-[100dvh] bg-[#050505] text-cream py-20 md:py-32 px-4 md:px-8 selection:bg-sovereign-gold/30">
       {/* Header */}
       <motion.div
-        initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
+        initial={prefersReducedMotion ? false : { opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: prefersReducedMotion ? 0 : 0.8 }}
-        className="text-center mb-10 sm:mb-14"
+        transition={{ duration: prefersReducedMotion ? 0 : 0.8, ease: [0.32, 0.72, 0, 1] }}
+        className="text-center mb-16 md:mb-24"
       >
-        <p className="text-xs sm:text-sm uppercase tracking-[0.3em] text-sovereign-gold/60 mb-3 font-body">
+        <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 bg-white/5 backdrop-blur-2xl text-cream-muted rounded-full text-[10px] font-medium tracking-[0.2em] uppercase border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
           주체강 · Navigate the Current
-        </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-river-mist mb-4 leading-tight">
+        </div>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.05] mb-6 bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent">
           How Old Is Your Country, Really?
         </h1>
-        <p className="text-cream-muted text-sm sm:text-base max-w-lg mx-auto leading-relaxed font-body">
+        <p className="text-xl md:text-2xl text-cream-muted max-w-3xl mx-auto leading-relaxed">
           Civilization age versus nation-state age. The gap between the two tells you who built the world and who showed up yesterday.
         </p>
       </motion.div>
@@ -50,26 +49,28 @@ export function CivilizationTimeline() {
         initial={prefersReducedMotion ? false : { opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: prefersReducedMotion ? 0 : 0.6, delay: prefersReducedMotion ? 0 : 0.2 }}
-        className="flex flex-wrap gap-2 justify-center mb-8 sm:mb-10"
+        className="flex flex-wrap gap-2 justify-center mb-16"
       >
-        {sortOptions.map(opt => (
-          <button
-            key={opt.key}
-            onClick={() => setSortBy(opt.key)}
-            className={cn(
-              "px-4 py-2 rounded-lg text-xs sm:text-sm font-body transition-all duration-300 cursor-pointer",
-              sortBy === opt.key
-                ? "border border-sovereign-gold bg-sovereign-gold/15 text-sovereign-gold"
-                : "border border-cream-muted/20 bg-white/[0.03] text-cream-muted hover:border-sovereign-gold/40 hover:text-sovereign-gold/80"
-            )}
-          >
-            {opt.label}
-          </button>
-        ))}
+        <div className="p-1 rounded-2xl bg-white/5 border border-white/10 inline-flex">
+          {sortOptions.map(opt => (
+            <button
+              key={opt.key}
+              onClick={() => setSortBy(opt.key)}
+              className={cn(
+                "px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 cursor-pointer",
+                sortBy === opt.key
+                  ? "bg-[#0a0a0a] text-sovereign-gold shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] border border-white/5"
+                  : "text-cream-muted hover:text-cream border border-transparent"
+              )}
+            >
+              {opt.label}
+            </button>
+          ))}
+        </div>
       </motion.div>
 
       {/* Cards */}
-      <div className="max-w-3xl mx-auto space-y-2">
+      <div className="max-w-4xl mx-auto space-y-3">
         {sorted.map((civ, i) => {
           const civAge = getCivAge(civ.civYear)
           const stateAge = getStateAge(civ.stateYear)
@@ -80,96 +81,107 @@ export function CivilizationTimeline() {
           return (
             <motion.div
               key={civ.name}
-              initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                duration: prefersReducedMotion ? 0 : 0.4,
-                delay: prefersReducedMotion ? 0 : Math.min(i * 0.04, 0.8),
+                duration: prefersReducedMotion ? 0 : 0.6,
+                delay: prefersReducedMotion ? 0 : Math.min(i * 0.05, 0.8),
+                ease: [0.32, 0.72, 0, 1]
               }}
               onClick={() => setExpanded(isExpanded ? null : civ.name)}
               className={cn(
-                "rounded-xl p-4 cursor-pointer transition-all duration-300",
+                "p-1.5 rounded-[2rem] border transition-all duration-500 cursor-pointer overflow-hidden",
                 isExpanded
-                  ? "bg-gradient-to-br from-sovereign-gold/[0.08] to-river-current/15 border border-sovereign-gold/30"
-                  : "bg-white/[0.03] border border-white/5 hover:border-sovereign-gold/20 hover:bg-white/[0.05]"
+                  ? "bg-sovereign-gold/10 border-sovereign-gold/30"
+                  : "bg-white/5 border-white/10 hover:border-white/20 hover:bg-white/10"
               )}
             >
-              {/* Top row */}
-              <div className="flex items-center justify-between mb-3">
-                <div className="flex items-center gap-3">
-                  <span className="text-xl sm:text-2xl">{civ.flag}</span>
-                  <div>
-                    <div className="text-sm sm:text-base font-heading font-bold text-river-mist">
-                      {civ.name}
+              <div className="bg-[#050505] rounded-[calc(2rem-0.375rem)] p-6 md:p-8 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+                {/* Top row */}
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-2xl">
+                      {civ.flag}
                     </div>
-                    <div className="text-[11px] sm:text-xs text-cream-muted font-body">
-                      Civ: {formatYear(civ.civYear)} · State: {formatYear(civ.stateYear)}
-                    </div>
-                  </div>
-                </div>
-                <div className="text-right flex-shrink-0 ml-3">
-                  <div className="text-sm sm:text-base font-heading font-bold text-sovereign-gold">
-                    {civAge.toLocaleString()} yrs
-                  </div>
-                  <div className="text-[11px] sm:text-xs text-cream-muted font-body">
-                    {formatGDP(civ.gdp)} · #{civ.gdpRank}
-                  </div>
-                </div>
-              </div>
-
-              {/* Bars */}
-              <div className="space-y-1.5">
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-[9px] sm:text-[10px] text-cream-muted w-16 text-right flex-shrink-0 font-body">
-                    Civilization
-                  </span>
-                  <div className="flex-1 h-2.5 bg-white/5 rounded-full overflow-hidden">
-                    <motion.div
-                      className="h-full rounded-full bg-gradient-to-r from-river-current to-sovereign-gold"
-                      initial={{ width: 0 }}
-                      animate={{ width: `${barWidth}%` }}
-                      transition={{ duration: prefersReducedMotion ? 0 : 0.6, delay: prefersReducedMotion ? 0 : 0.2 }}
-                    />
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-[9px] sm:text-[10px] text-cream-muted w-16 text-right flex-shrink-0 font-body">
-                    Nation-State
-                  </span>
-                  <div className="flex-1 h-2.5 bg-white/5 rounded-full overflow-hidden">
-                    <motion.div
-                      className="h-full rounded-full bg-korean-red"
-                      initial={{ width: 0 }}
-                      animate={{ width: `${stateBarWidth}%` }}
-                      transition={{ duration: prefersReducedMotion ? 0 : 0.6, delay: prefersReducedMotion ? 0 : 0.3 }}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Expanded note */}
-              <AnimatePresence>
-                {isExpanded && (
-                  <motion.div
-                    initial={prefersReducedMotion ? false : { opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={prefersReducedMotion ? undefined : { opacity: 0, height: 0 }}
-                    transition={{ duration: prefersReducedMotion ? 0 : 0.3 }}
-                    className="overflow-hidden"
-                  >
-                    <div className="mt-4 pt-4 border-t border-sovereign-gold/20">
-                      <p className="text-sm text-river-mist/80 leading-relaxed italic font-body">
-                        {civ.note}
-                      </p>
-                      <div className="mt-3 text-[11px] text-cream-muted font-body">
-                        Civilization age: <span className="text-sovereign-gold">{civAge.toLocaleString()} years</span> ·{" "}
-                        Nation-state age: <span className="text-korean-red">{stateAge.toLocaleString()} years</span> ·{" "}
-                        GDP: <span className="text-river-mist">{formatGDP(civ.gdp)}</span> (#{civ.gdpRank} world)
+                    <div>
+                      <div className="text-2xl font-bold text-cream tracking-tight mb-1">
+                        {civ.name}
+                      </div>
+                      <div className="text-xs text-cream-muted uppercase tracking-[0.2em]">
+                        Civ: {formatYear(civ.civYear)} · State: {formatYear(civ.stateYear)}
                       </div>
                     </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                  </div>
+                  <div className="md:text-right flex-shrink-0">
+                    <div className="text-2xl font-bold text-sovereign-gold tracking-tight mb-1">
+                      {civAge.toLocaleString()} yrs
+                    </div>
+                    <div className="text-xs text-cream-muted uppercase tracking-[0.2em]">
+                      {formatGDP(civ.gdp)} · #{civ.gdpRank}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bars */}
+                <div className="space-y-3">
+                  <div className="flex items-center gap-4">
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-cream-muted w-24 text-right flex-shrink-0">
+                      Civilization
+                    </span>
+                    <div className="flex-1 h-3 bg-white/5 rounded-full overflow-hidden border border-white/5">
+                      <motion.div
+                        className="h-full rounded-full bg-gradient-to-r from-sovereign-gold/50 to-sovereign-gold"
+                        initial={{ width: 0 }}
+                        animate={{ width: `${barWidth}%` }}
+                        transition={{ duration: prefersReducedMotion ? 0 : 0.8, delay: prefersReducedMotion ? 0 : 0.2, ease: [0.32, 0.72, 0, 1] }}
+                      />
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-cream-muted w-24 text-right flex-shrink-0">
+                      Nation-State
+                    </span>
+                    <div className="flex-1 h-3 bg-white/5 rounded-full overflow-hidden border border-white/5">
+                      <motion.div
+                        className="h-full rounded-full bg-korean-red"
+                        initial={{ width: 0 }}
+                        animate={{ width: `${stateBarWidth}%` }}
+                        transition={{ duration: prefersReducedMotion ? 0 : 0.8, delay: prefersReducedMotion ? 0 : 0.3, ease: [0.32, 0.72, 0, 1] }}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Expanded note */}
+                <AnimatePresence>
+                  {isExpanded && (
+                    <motion.div
+                      initial={prefersReducedMotion ? false : { opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={prefersReducedMotion ? undefined : { opacity: 0, height: 0 }}
+                      transition={{ duration: prefersReducedMotion ? 0 : 0.5, ease: [0.32, 0.72, 0, 1] }}
+                      className="overflow-hidden"
+                    >
+                      <div className="mt-8 pt-8 border-t border-white/10">
+                        <p className="text-lg text-cream-muted leading-relaxed mb-6">
+                          {civ.note}
+                        </p>
+                        <div className="flex flex-wrap gap-4 text-[10px] text-cream-muted uppercase tracking-[0.2em] font-medium">
+                          <span className="px-3 py-1.5 rounded-md bg-sovereign-gold/10 text-sovereign-gold border border-sovereign-gold/20">
+                            Civ Age: {civAge.toLocaleString()} years
+                          </span>
+                          <span className="px-3 py-1.5 rounded-md bg-korean-red/10 text-korean-red border border-korean-red/20">
+                            State Age: {stateAge.toLocaleString()} years
+                          </span>
+                          <span className="px-3 py-1.5 rounded-md bg-white/5 text-cream border border-white/10">
+                            GDP: {formatGDP(civ.gdp)}
+                          </span>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
             </motion.div>
           )
         })}
@@ -177,21 +189,23 @@ export function CivilizationTimeline() {
 
       {/* Bottom insight */}
       <motion.div
-        initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
+        initial={prefersReducedMotion ? false : { opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: prefersReducedMotion ? 0 : 0.8 }}
-        className="max-w-3xl mx-auto mt-12 sm:mt-16 p-6 bg-sovereign-gold/[0.06] rounded-xl border border-sovereign-gold/15 text-center"
+        transition={{ duration: prefersReducedMotion ? 0 : 0.8, ease: [0.32, 0.72, 0, 1] }}
+        className="max-w-4xl mx-auto mt-24 p-1.5 rounded-[2.5rem] bg-white/5 border border-white/10"
       >
-        <h2 className="text-base sm:text-lg font-heading font-bold text-sovereign-gold mb-3">
-          The Pattern
-        </h2>
-        <p className="text-sm sm:text-base text-river-mist/80 leading-relaxed font-body">
-          The wealthiest nation on Earth is 250 years old. The civilizations it lectures about democracy and governance are 3,000 to 5,000 years old. South Korea — whose military the US still commands in wartime — has been a civilization for 4,359 years. The nation cutting it in half hasn&apos;t existed for 3% of that time.
-        </p>
+        <div className="bg-[#0a0a0a] rounded-[calc(2.5rem-0.375rem)] p-12 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] text-center">
+          <h2 className="text-2xl font-bold tracking-tight text-sovereign-gold mb-6">
+            The Pattern
+          </h2>
+          <p className="text-xl text-cream-muted leading-relaxed max-w-2xl mx-auto">
+            The wealthiest nation on Earth is 250 years old. The civilizations it lectures about democracy and governance are 3,000 to 5,000 years old. South Korea — whose military the US still commands in wartime — has been a civilization for 4,359 years. The nation cutting it in half hasn&apos;t existed for 3% of that time.
+          </p>
+        </div>
       </motion.div>
 
-      <p className="text-center mt-8 text-[11px] text-cream-muted/50 font-body">
+      <p className="text-center mt-12 text-[10px] text-cream/40 uppercase tracking-[0.2em] font-medium">
         Tap any country for details · GDP figures approximate (2025 nominal, USD) · Civilization dates use earliest documented culture
       </p>
     </section>
