@@ -147,7 +147,7 @@ export default function CulturalExchangePage() {
               sizes="100vw"
               quality={90}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a] via-[#0d1b2a]/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/50 via-transparent to-transparent pointer-events-none" />
             <div className="absolute inset-0 bg-black/30" />
           </div>
           <motion.div

@@ -42,7 +42,7 @@ export default function ArchitectureOfSovereigntyPage() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-river-depths via-river-depths/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/50 via-transparent to-transparent pointer-events-none" />
         <div className="absolute bottom-0 left-0 right-0 px-6 pb-12 md:pb-16">
           <div className="max-w-4xl mx-auto">
             <p className="text-sovereign-gold text-sm font-semibold tracking-widest uppercase mb-4">

@@ -20,7 +20,7 @@ export default function ContentUsagePage() {
 						{/* Background visual - can be replaced with a real image if available */}
 						<div className="absolute inset-0 bg-[#050a10] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(196,151,58,0.15),rgba(255,255,255,0))]" />
 						<div className="absolute inset-0 bg-[url('/images/noise.png')] opacity-20 mix-blend-overlay" />
-						<div className="absolute inset-0 bg-gradient-to-t from-river-depths via-river-depths/60 to-transparent" />
+						<div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/50 via-transparent to-transparent pointer-events-none" />
 					</div>
 
 					<div className="container relative z-10 mx-auto px-4 h-full flex flex-col justify-end pb-16">

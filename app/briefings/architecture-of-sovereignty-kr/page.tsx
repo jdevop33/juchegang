@@ -33,7 +33,7 @@ export default function ArchitectureOfSovereigntyKrPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-river-depths via-river-depths/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/50 via-transparent to-transparent pointer-events-none" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 pb-16 text-center">
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-sovereign-gold/10 border border-sovereign-gold/30 text-sovereign-gold rounded-full text-sm font-medium tracking-widest uppercase">
             J 판다 전략 보고서

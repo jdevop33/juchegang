@@ -193,7 +193,7 @@ export default function BriefingsContent() {
             sizes="100vw"
             quality={100}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-river-depths via-river-depths/40 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/50 via-transparent to-transparent pointer-events-none" />
         </motion.div>
 
         <div className="container relative z-10 mx-auto px-4 h-full flex items-end pb-24">

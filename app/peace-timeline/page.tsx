@@ -215,7 +215,7 @@ export default function PeaceTimelinePage() {
               quality={90}
             />
             <div className="absolute inset-0 bg-river-depths/10 pointer-events-none" />
-            <div className="absolute inset-0 bg-gradient-to-t from-river-depths via-river-depths/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/50 via-transparent to-transparent pointer-events-none" />
             <div className="absolute inset-0 bg-gradient-to-r from-river-depths via-transparent to-river-depths opacity-80" />
           </motion.div>
 
