@@ -75,8 +75,8 @@ export function EnhancedHeader() {
         animate={{ y: 0 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-river-depths/95 backdrop-blur-xl border-b border-sovereign-gold/20 shadow-2xl shadow-river-depths/50"
-            : "bg-gradient-to-b from-river-depths/80 to-transparent"
+            ? "bg-river-depths/80 backdrop-blur-2xl border-b border-white/5 shadow-2xl shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]"
+            : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-4 sm:px-6">
@@ -112,7 +112,7 @@ export function EnhancedHeader() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`group px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                  className={`group px-3 py-2 rounded-lg text-sm font-medium transition-all active:scale-[0.98] ${
                     pathname === item.href
                       ? "bg-river-current/30 text-river-mist"
                       : "text-cream-muted hover:text-river-mist hover:bg-river-current/20"
@@ -135,14 +135,14 @@ export function EnhancedHeader() {
 
               <Link
                 href="/contact"
-                className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-sovereign-gold to-sovereign-dark hover:from-sovereign-gold hover:to-sovereign-gold text-river-depths font-bold text-xs sm:text-sm transition-all transform hover:scale-105 shadow-lg shadow-sovereign-gold/20"
+                className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-sovereign-gold to-sovereign-dark hover:from-sovereign-gold hover:to-sovereign-gold text-river-depths font-bold text-xs sm:text-sm transition-all transform hover:scale-105 active:scale-[0.98] shadow-lg shadow-sovereign-gold/20"
               >
                 {t('contact')}
               </Link>
 
               <button
                 onClick={() => setIsMenuOpen(true)}
-                className="p-2 sm:p-2.5 rounded-lg bg-river-current/20 hover:bg-river-current/30 transition-all focus:ring-2 focus:ring-sovereign-gold/50 focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center"
+                className="p-2 sm:p-2.5 rounded-lg bg-river-current/20 hover:bg-river-current/30 transition-all active:scale-[0.98] focus:ring-2 focus:ring-sovereign-gold/50 focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center"
                 aria-label="Open navigation menu"
                 type="button"
               >

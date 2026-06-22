@@ -1,6 +1,6 @@
 import type React from "react"
 import "@/app/globals.css"
-import { Source_Sans_3, Noto_Serif_KR, Playfair_Display } from "next/font/google"
+import { Inter, Noto_Serif_KR } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
 import { getServerLanguage, type Language } from "@/lib/i18n-server"
@@ -11,9 +11,8 @@ import { jsonLdSafe } from "@/lib/json-ld"
 
 
 // Performance-optimized fonts
-const sourceSans = Source_Sans_3({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
   variable: "--font-body",
   display: "swap",
 })
@@ -26,10 +25,9 @@ const notoSerifKR = Noto_Serif_KR({
   display: "swap",
 })
 
-// English headings - Classical authority
-const playfair = Playfair_Display({
+// English headings - Using Inter with tight tracking for premium feel
+const interHeading = Inter({
   subsets: ["latin"],
-  weight: ["700", "900"],
   variable: "--font-heading",
   display: "swap",
 })
@@ -187,7 +185,7 @@ export default async function RootLayout({
           strategy="afterInteractive"
         />
       </head>
-      <body className={`${sourceSans.variable} ${notoSerifKR.variable} ${playfair.variable} font-sans`}>
+      <body className={`${inter.variable} ${notoSerifKR.variable} ${interHeading.variable} font-sans tracking-tight`}>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:rounded-md focus:bg-primary focus:text-primary-foreground"

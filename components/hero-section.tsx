@@ -1,25 +1,29 @@
 "use client"
 
-import { useState, useEffect } from "react"
 import Image from "next/image"
+import { motion } from "motion/react"
+import Link from "next/link"
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.2,
+    }
+  }
+}
+
+const staggerItem = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100, damping: 20 } }
+}
 
 export function HeroSection() {
-  const [breath, setBreath] = useState(0)
-
-  useEffect(() => {
-    // Four breaths, 3 seconds each
-    const timers = [
-      setTimeout(() => setBreath(1), 3000),  // Show quote
-      setTimeout(() => setBreath(2), 6000),  // Show brand
-      setTimeout(() => setBreath(3), 9000),  // Show mission
-    ]
-
-    return () => timers.forEach(clearTimeout)
-  }, [])
-
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-river-depths">
-      {/* Breath One — Mount Paektu Heaven Lake (Cheonji/천지) */}
+    <section className="relative w-full min-h-[100dvh] flex flex-col justify-center overflow-hidden bg-river-depths pt-24 pb-12">
+      {/* Background Image */}
       <div className="absolute inset-0">
         <Image
           src="/gallery/hero.jpg"
@@ -30,83 +34,52 @@ export function HeroSection() {
           sizes="100vw"
           quality={90}
         />
+        {/* Deep, refined gradient overlay instead of simple vignette */}
+        <div className="absolute inset-0 bg-gradient-to-t from-river-depths via-river-depths/70 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-river-depths/40 pointer-events-none" />
       </div>
 
-      {/* Content layers — fade in sequentially */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full px-6">
-
-        {/* Breath Two — The Warrior Quote */}
-        <div
-          className={`absolute inset-0 flex flex-col items-center justify-center px-6 transition-opacity duration-1000 ${
-            breath >= 1 && breath < 2 ? 'opacity-100' : 'opacity-0'
-          }`}
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-6 max-w-[1400px]">
+        <motion.div 
+          variants={staggerContainer}
+          initial="hidden"
+          animate="show"
+          className="flex flex-col max-w-3xl"
         >
-          <blockquote className="text-center max-w-3xl">
-            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6 text-sovereign-gold font-[family-name:var(--font-korean)] drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
+          <motion.div variants={staggerItem} className="mb-6">
+            <span className="text-sm font-bold tracking-[0.2em] uppercase text-sovereign-gold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
               필사즉생 필생즉사
-            </p>
-            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8 text-cream font-[family-name:var(--font-heading)] drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)]">
-              &ldquo;If you seek death, you will live.<br />
-              If you seek life, you will die.&rdquo;
-            </p>
-            <footer>
-              <cite className="not-italic text-sm sm:text-base tracking-widest uppercase text-sovereign-gold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
-                — Admiral Yi Sun-shin · 이순신
-              </cite>
-              <p className="text-xs sm:text-sm mt-2 opacity-70 text-cream">
-                Battle of Myeongnyang, 1597 · 난중일기
-              </p>
-            </footer>
-          </blockquote>
-        </div>
-
-        {/* Breath Three — The Brand Reveal */}
-        <div
-          className={`absolute inset-0 flex flex-col items-center justify-center px-6 transition-opacity duration-1000 ${
-            breath >= 2 && breath < 3 ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <div className="text-center">
-            <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-sovereign-gold font-[family-name:var(--font-korean)]">
-              주체강
-            </p>
-            <p className="text-xl sm:text-2xl md:text-3xl mb-6 text-cream font-[family-name:var(--font-heading)]">
-              Subjective River
-            </p>
-            <p className="text-base sm:text-lg tracking-[0.3em] uppercase text-sovereign-gold">
-              Navigate the Current
-            </p>
-          </div>
-        </div>
-
-        {/* Breath Four — The Mission (stays visible) */}
-        <div
-          className={`absolute inset-0 flex flex-col items-center justify-center px-6 transition-opacity duration-1000 ${
-            breath >= 3 ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <div className="text-center">
-            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-relaxed mb-4 text-sovereign-gold font-[family-name:var(--font-korean)]">
-              한 호랑이. 한 강. 한 조선.
-            </p>
-            <p className="text-lg sm:text-xl md:text-2xl text-cream font-[family-name:var(--font-heading)]">
-              One Tiger. One River. One Korea.
-            </p>
-          </div>
-        </div>
-
+            </span>
+          </motion.div>
+          
+          <motion.h1 variants={staggerItem} className="text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-tight mb-6 drop-shadow-xl tracking-tight">
+            One Tiger.<br />One River.<br />One Korea.
+          </motion.h1>
+          
+          <motion.p variants={staggerItem} className="text-lg sm:text-xl md:text-2xl text-cream-muted max-w-[65ch] leading-relaxed mb-10 drop-shadow-md">
+            If you seek death, you will live. If you seek life, you will die. Navigate the current of excellence.
+          </motion.p>
+          
+          <motion.div variants={staggerItem} className="flex flex-col sm:flex-row gap-4">
+            <Link 
+              href="#laws" 
+              className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-sovereign-gold text-river-depths font-bold text-base transition-all transform hover:scale-105 active:scale-[0.98] shadow-xl shadow-sovereign-gold/20"
+            >
+              Explore the 48 Laws
+            </Link>
+            <Link 
+              href="/mission" 
+              className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white/10 text-cream backdrop-blur-md border border-white/20 font-semibold text-base transition-all hover:bg-white/20 active:scale-[0.98]"
+            >
+              Read our Mission
+            </Link>
+          </motion.div>
+        </motion.div>
       </div>
-
-      {/* Subtle vignette overlay */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background: 'radial-gradient(ellipse at center, transparent 0%, rgba(13, 27, 42, 0.4) 100%)'
-        }}
-      />
-
+      
       {/* Bottom fade to content */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-river-depths to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
     </section>
   )
 }

@@ -94,14 +94,11 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
         <HeroSection />
         <PeaceCounter />
 
-        <div className="container mx-auto px-4 py-8 relative z-10">
+        <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
           <div className="featured-laws-section relative">
-            <div className="max-w-4xl mx-auto mb-20 text-center section-reveal relative z-10" id="featured">
-              <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-sovereign-gold/20 to-sovereign-dark/20 text-sovereign-gold rounded-full text-sm font-medium animate-staggered-fade-in backdrop-blur-sm border border-sovereign-gold/30">
-                ✦ {t('featuredExcellence')}
-              </div>
-              <h2 className="text-headline text-foreground mb-8 animate-staggered-fade-in stagger-delay-1">{t('foundationLaws')}</h2>
-              <p className="text-body-large text-muted-foreground max-w-2xl mx-auto animate-staggered-fade-in stagger-delay-2">{t('foundationDesc')}</p>
+            <div className="max-w-5xl mb-24 section-reveal relative z-10" id="featured">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 tracking-tight animate-staggered-fade-in stagger-delay-1">{t('foundationLaws')}</h2>
+              <p className="text-xl text-muted-foreground max-w-2xl animate-staggered-fade-in stagger-delay-2 leading-relaxed">{t('foundationDesc')}</p>
             </div>
             <div className="space-y-16 mb-20 relative z-10">
               <div className="animate-staggered-fade-in stagger-delay-3"><FeaturedLaw law={featuredLaw1} /></div>
@@ -111,16 +108,16 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
 
           <div className="section-transition"><TriptychDivider /></div>
 
-          <div id="laws" className="scroll-mt-nav max-w-4xl mx-auto mb-20 text-center section-reveal">
-            <blockquote className="border-l-4 border-sovereign-gold/40 pl-6 mb-6">
-              <p className="text-lg font-semibold italic text-sovereign-gold/90">
+          <div id="laws" className="scroll-mt-nav max-w-5xl mb-24 section-reveal flex flex-col md:flex-row md:items-end justify-between gap-8 border-t border-white/5 pt-16">
+            <div className="max-w-2xl">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 tracking-tight">{t('laws48')}</h2>
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">{t('lawsSubtitle')}</p>
+            </div>
+            <blockquote className="border-l-4 border-sovereign-gold/40 pl-6 mb-8 max-w-sm">
+              <p className="text-base italic text-sovereign-gold/90 leading-relaxed">
                 These are not the 48 Laws of Power. Those laws teach deception. These laws exist because deception is poison.
               </p>
             </blockquote>
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-river-current/20 to-river-mid/20 text-river-mid rounded-full text-sm font-medium border border-river-current/30 backdrop-blur-sm">📚 {t('completeCollection')}</div>
-            <h2 className="text-headline text-foreground mb-8">{t('laws48')}</h2>
-            <p className="text-body-large text-muted-foreground max-w-3xl mx-auto mb-8">{t('lawsSubtitle')}</p>
-            <div className="section-divider"></div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
