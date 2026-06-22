@@ -105,15 +105,15 @@ export default function MissionPage() {
                 >
                   <div className="relative h-[60vh] lg:h-[70vh] rounded-[calc(2.5rem-0.5rem)] overflow-hidden shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)]">
                     <Image
-                      src="/gallery/paektu-hero-.webp"
+                      src="/gallery/paektu-hero-2.webp"
                       alt="Mount Paektu at sunrise"
                       fill
                       className="object-cover scale-105 transition-transform duration-[20s] hover:scale-100"
                       priority
                       sizes="(max-width: 1024px) 100vw, 50vw"
-                      quality={90}
+                      quality={100}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/90 via-[#0d1b2a]/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/50 via-transparent to-transparent pointer-events-none" />
                     
                     <div className="absolute bottom-0 left-0 w-full p-8 md:p-12">
                       <blockquote className="text-2xl md:text-3xl text-sovereign-gold italic font-light leading-snug drop-shadow-lg">
