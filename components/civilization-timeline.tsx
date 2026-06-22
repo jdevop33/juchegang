@@ -25,7 +25,7 @@ export function CivilizationTimeline() {
   const maxCivAge = Math.max(...civilizations.map(c => getCivAge(c.civYear)))
 
   return (
-    <section className="min-h-[100dvh] bg-[#050505] text-cream py-20 md:py-32 px-4 md:px-8 selection:bg-sovereign-gold/30">
+    <section className="min-h-[100dvh] bg-river-depths text-cream py-20 md:py-32 px-4 md:px-8 selection:bg-sovereign-gold/30">
       {/* Header */}
       <motion.div
         initial={prefersReducedMotion ? false : { opacity: 0, y: 30 }}
@@ -59,7 +59,7 @@ export function CivilizationTimeline() {
               className={cn(
                 "px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 cursor-pointer",
                 sortBy === opt.key
-                  ? "bg-[#0a0a0a] text-sovereign-gold shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] border border-white/5"
+                  ? "bg-river-deep text-sovereign-gold shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] border border-white/5"
                   : "text-cream-muted hover:text-cream border border-transparent"
               )}
             >
@@ -96,7 +96,7 @@ export function CivilizationTimeline() {
                   : "bg-white/5 border-white/10 hover:border-white/20 hover:bg-white/10"
               )}
             >
-              <div className="bg-[#050505] rounded-[calc(2rem-0.375rem)] p-6 md:p-8 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+              <div className="bg-river-depths rounded-[calc(2rem-0.375rem)] p-6 md:p-8 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
                 {/* Top row */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
                   <div className="flex items-center gap-4">
@@ -195,7 +195,7 @@ export function CivilizationTimeline() {
         transition={{ duration: prefersReducedMotion ? 0 : 0.8, ease: [0.32, 0.72, 0, 1] }}
         className="max-w-4xl mx-auto mt-24 p-1.5 rounded-[2.5rem] bg-white/5 border border-white/10"
       >
-        <div className="bg-[#0a0a0a] rounded-[calc(2.5rem-0.375rem)] p-12 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] text-center">
+        <div className="bg-river-deep rounded-[calc(2.5rem-0.375rem)] p-12 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] text-center">
           <h2 className="text-2xl font-bold tracking-tight text-sovereign-gold mb-6">
             The Pattern
           </h2>

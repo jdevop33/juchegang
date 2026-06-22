@@ -38,7 +38,7 @@ export const viewport = {
   viewportFit: "cover" as const, // Respect iOS notches / Dynamic Island
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#e8dfd0" }, // River Mist
-    { media: "(prefers-color-scheme: dark)", color: "#050505" },  // OLED Black
+    { media: "(prefers-color-scheme: dark)", color: "#0d1b2a" },  // River Depths
   ],
   colorScheme: "dark light",
 }

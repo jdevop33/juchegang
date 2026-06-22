@@ -96,14 +96,14 @@ export default function TruthProjectPage() {
   ]
 
   return (
-    <main className="min-h-[100dvh] bg-[#050505] text-cream selection:bg-sovereign-gold/30">
+    <main className="min-h-[100dvh] bg-river-depths text-cream selection:bg-sovereign-gold/30">
       <JucheHeader />
       
       {/* Cinematic Hero */}
       <section className="relative pt-40 pb-24 md:pt-56 md:pb-32 px-4 md:px-8 overflow-hidden">
         <div className="absolute inset-0">
           <NextImage
-            src="/images/heros/05.jpg"
+            src="/gallery/paektu-hero-.webp"
             alt="Dramatic clouds parting over Heaven Lake crater at Mount Paektu"
             fill
             className="object-cover opacity-60 mix-blend-luminosity"
@@ -111,7 +111,7 @@ export default function TruthProjectPage() {
             sizes="100vw"
             quality={85}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/90 via-[#050505]/60 to-[#050505]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/90 via-[#0d1b2a]/60 to-[#0d1b2a]" />
           
           {/* Subtle light leak */}
           <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-korean-red/10 blur-[120px] rounded-[100%] pointer-events-none" />
@@ -151,8 +151,8 @@ export default function TruthProjectPage() {
           >
             <div className="p-1.5 md:p-2 rounded-[3rem] bg-gradient-to-br from-sovereign-gold/20 via-white/5 to-white/5 border border-white/10 relative overflow-hidden group">
               <div className="absolute inset-0 bg-sovereign-gold/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-              <div className="bg-[#050505] rounded-[calc(3rem-0.5rem)] p-8 md:p-16 lg:p-24 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] relative z-10 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
-                <div className="w-24 h-24 lg:w-32 lg:h-32 bg-gradient-to-br from-[#0a0a0a] to-[#111] rounded-full border border-white/10 flex items-center justify-center shrink-0 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] relative">
+              <div className="bg-river-depths rounded-[calc(3rem-0.5rem)] p-8 md:p-16 lg:p-24 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] relative z-10 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+                <div className="w-24 h-24 lg:w-32 lg:h-32 bg-gradient-to-br from-[#142638] to-[#111] rounded-full border border-white/10 flex items-center justify-center shrink-0 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] relative">
                   <div className="absolute inset-0 rounded-full border border-sovereign-gold/20 animate-[spin_10s_linear_infinite]" />
                   <Brain className="w-10 h-10 lg:w-12 lg:h-12 text-sovereign-gold drop-shadow-[0_0_15px_rgba(235,172,0,0.5)]" />
                 </div>
@@ -173,10 +173,10 @@ export default function TruthProjectPage() {
                   </p>
                   <Link
                     href="/truth-project/beyond-ideology"
-                    className="inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#050505] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white group/btn"
+                    className="inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#0d1b2a] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white group/btn"
                   >
                     <span className="mr-6">Read Full Analysis</span>
-                    <div className="w-10 h-10 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:scale-105">
+                    <div className="w-10 h-10 rounded-full bg-river-depths/10 flex items-center justify-center transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:scale-105">
                       <ArrowRight className="w-5 h-5" strokeWidth={2} />
                     </div>
                   </Link>
@@ -222,7 +222,7 @@ export default function TruthProjectPage() {
                   viewport={{ once: true }}
                   className={`p-1.5 rounded-[2rem] bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-500 group flex flex-col ${spanClass}`}
                 >
-                  <Link href={item.href} className="bg-[#0a0a0a] rounded-[calc(2rem-0.375rem)] p-8 md:p-10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-[#111] flex flex-col h-full min-h-[280px]">
+                  <Link href={item.href} className="bg-river-deep rounded-[calc(2rem-0.375rem)] p-8 md:p-10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-[#111] flex flex-col h-full min-h-[280px]">
                     <div className="mb-auto">
                       <div className={`inline-block px-3 py-1 mb-6 rounded-md text-[10px] font-medium tracking-[0.2em] uppercase border ${badgeStyle}`}>
                         {item.badge}
@@ -252,7 +252,7 @@ export default function TruthProjectPage() {
               viewport={{ once: true }}
               className="p-1.5 rounded-[2.5rem] bg-white/5 border border-white/10 group hover:border-sovereign-gold/30 transition-all duration-500"
             >
-              <Link href="/gallery/unity-reconnaissance" className="block bg-[#050505] rounded-[calc(2.5rem-0.375rem)] p-12 text-center h-full flex flex-col justify-center items-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+              <Link href="/gallery/unity-reconnaissance" className="block bg-river-depths rounded-[calc(2.5rem-0.375rem)] p-12 text-center h-full flex flex-col justify-center items-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
                 <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center border border-white/10 mb-8 transition-transform duration-500 group-hover:scale-110">
                   <Image className="w-6 h-6 text-cream-muted" />
                 </div>
@@ -270,7 +270,7 @@ export default function TruthProjectPage() {
               viewport={{ once: true }}
               className="p-1.5 rounded-[2.5rem] bg-white/5 border border-white/10 group hover:border-korean-red/30 transition-all duration-500"
             >
-              <Link href="/briefings/media-manipulation-decoded" className="block bg-[#050505] rounded-[calc(2.5rem-0.375rem)] p-12 text-center h-full flex flex-col justify-center items-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+              <Link href="/briefings/media-manipulation-decoded" className="block bg-river-depths rounded-[calc(2.5rem-0.375rem)] p-12 text-center h-full flex flex-col justify-center items-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
                 <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center border border-white/10 mb-8 transition-transform duration-500 group-hover:scale-110">
                   <Globe className="w-6 h-6 text-cream-muted" />
                 </div>

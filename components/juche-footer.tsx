@@ -6,7 +6,7 @@ import { KimYoJongPortrait } from "./kim-yo-jong-portrait"
 export function JucheFooter() {
   const { t } = useLanguage()
   return (
-    <footer className="bg-[#050505] border-t border-white/5 text-cream selection:bg-sovereign-gold/30">
+    <footer className="bg-river-depths border-t border-white/5 text-cream selection:bg-sovereign-gold/30">
       {/* Admiral Yi Sun-sin Quote */}
       <div className="border-b border-white/5 py-12 md:py-16">
         <div className="container mx-auto max-w-[1400px] px-4 md:px-8">
@@ -114,10 +114,10 @@ export function JucheFooter() {
         {/* Kim Yo-jong Tribute */}
         <div className="mb-16">
           <div className="p-1.5 rounded-[2rem] bg-white/5 border border-white/10 max-w-2xl mx-auto">
-            <div className="bg-[#0a0a0a] rounded-[calc(2rem-0.375rem)] p-6 sm:p-8 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+            <div className="bg-river-deep rounded-[calc(2rem-0.375rem)] p-6 sm:p-8 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
               <div className="flex flex-col sm:flex-row items-center gap-5 sm:gap-6">
                 <div className="shrink-0">
-                  <div className="ring-2 ring-sovereign-gold/20 ring-offset-2 ring-offset-[#0a0a0a] rounded-full">
+                  <div className="ring-2 ring-sovereign-gold/20 ring-offset-2 ring-offset-[#142638] rounded-full">
                     <KimYoJongPortrait size="small" />
                   </div>
                 </div>

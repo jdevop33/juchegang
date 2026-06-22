@@ -29,7 +29,7 @@ export const metadata = {
 
 export default function NavySealsCiviliansPage() {
   return (
-    <main className="min-h-[100dvh]" style={{ backgroundColor: '#050505', color: '#f0ebe3' }}>
+    <main className="min-h-[100dvh]" style={{ backgroundColor: '#0d1b2a', color: '#f0ebe3' }}>
       <JucheHeader />
       <BriefingBanner src="/images/coolgang2.png" alt="Navy SEALs civilians" aspect="12/5" contain overlay="bottom" />
       <NavySealsCiviliansContent />

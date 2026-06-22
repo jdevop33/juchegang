@@ -21,7 +21,7 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 // Dynamic imports with better optimization
 const PeaceCounter = dynamic(() => import("@/components/peace-counter").then(mod => ({ default: mod.PeaceCounter })), {
   ssr: false,
-  loading: () => <div className="h-32 animate-pulse bg-[#0a0a0a] rounded-2xl" />,
+  loading: () => <div className="h-32 animate-pulse bg-river-deep rounded-2xl" />,
   // Load when user scrolls near the component
 })
 
@@ -32,18 +32,18 @@ const CulturalCalendar = dynamic(() => import("@/components/cultural-calendar").
 
 const AboutSection = dynamic(() => import("@/components/about-section").then(mod => ({ default: mod.AboutSection })), {
   ssr: false,
-  loading: () => <div className="h-64 animate-pulse bg-[#0a0a0a] rounded-2xl" />
+  loading: () => <div className="h-64 animate-pulse bg-river-deep rounded-2xl" />
 })
 
 const CategorySection = dynamic(() => import("@/components/category-section").then(mod => ({ default: mod.CategorySection })), {
   ssr: false,
-  loading: () => <div className="h-96 animate-pulse bg-[#0a0a0a] rounded-2xl" />
+  loading: () => <div className="h-96 animate-pulse bg-river-deep rounded-2xl" />
 })
 
 // Lower priority components - load only when needed
 const ContactForm = dynamic(() => import("@/components/contact-form").then(mod => ({ default: mod.ContactForm })), {
   ssr: false,
-  loading: () => <div className="h-96 animate-pulse bg-[#0a0a0a] rounded-2xl" />
+  loading: () => <div className="h-96 animate-pulse bg-river-deep rounded-2xl" />
 })
 
 
@@ -85,7 +85,7 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
       <StructuredData type="homepage" />
       <StructuredData type="organization" />
       {showLoading && <EnhancedLoading onComplete={() => setShowLoading(false)} />}
-      <main id="main-content" className={`min-h-[100dvh] bg-[#050505] text-foreground transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"}`}>
+      <main id="main-content" className={`min-h-[100dvh] bg-river-depths text-foreground transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"}`}>
         <ReadingProgress />
         <EnhancedHeader />
         <div className="pt-20">
@@ -134,7 +134,7 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
         <div className="section-divider"></div>
 
         <div className="section-reveal">
-          <CategorySection title={t('selfDisciplineTitle')} description={t('selfDisciplineDesc')} laws={selfDisciplineLaws} imagePath="/images/heros/beautioful4.jpg" bgClass="bg-muted/50 backdrop-blur-sm" />
+          <CategorySection title={t('selfDisciplineTitle')} description={t('selfDisciplineDesc')} laws={selfDisciplineLaws} imagePath="/gallery/paektu-hero-.webp" bgClass="bg-muted/50 backdrop-blur-sm" />
         </div>
 
         <div className="section-divider"></div>

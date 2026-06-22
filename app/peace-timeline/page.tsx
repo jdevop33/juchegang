@@ -206,7 +206,7 @@ export default function PeaceTimelinePage() {
             className="absolute inset-0 z-0"
           >
             <Image
-              src="/images/paektu-winter.jpg"
+              src="/gallery/paektu-hero-.webp"
               alt="Mount Paektu in winter - symbol of Korean resilience and unity"
               fill
               className="object-cover scale-105"
@@ -394,7 +394,7 @@ export default function PeaceTimelinePage() {
                   viewport={{ once: true }}
                   className={`relative p-px rounded-2xl bg-gradient-to-b from-cream/10 to-transparent group ${benefit.colSpan}`}
                 >
-                  <div className="relative bg-[#050505] border border-cream/5 rounded-[15px] p-8 h-full flex flex-col justify-between overflow-hidden inset-shadow-sm inset-shadow-cream/5">
+                  <div className="relative bg-river-depths border border-cream/5 rounded-[15px] p-8 h-full flex flex-col justify-between overflow-hidden inset-shadow-sm inset-shadow-cream/5">
                     <div className="absolute top-0 right-0 p-8 opacity-5">
                       <Globe className="w-32 h-32" />
                     </div>

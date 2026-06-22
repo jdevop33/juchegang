@@ -207,14 +207,14 @@ export default function ChannelsPage() {
   }
 
   return (
-    <main className="min-h-[100dvh] bg-[#050505] text-cream selection:bg-sovereign-gold/30">
+    <main className="min-h-[100dvh] bg-river-depths text-cream selection:bg-sovereign-gold/30">
       <JucheHeader />
       
       {/* Cinematic Hero */}
       <section className="relative pt-40 pb-24 md:pt-56 md:pb-32 px-4 md:px-8 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/heros/Paektusan Geopark).jpg"
+            src="/gallery/paektu-hero-.webp"
             alt="Illuminated mountain city at night near Paektusan Geopark"
             fill
             className="object-cover opacity-40 mix-blend-luminosity"
@@ -222,7 +222,7 @@ export default function ChannelsPage() {
             sizes="100vw"
             quality={85}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/80 via-[#050505]/60 to-[#050505]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/80 via-[#0d1b2a]/60 to-[#0d1b2a]" />
           {/* Radial accent */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] h-[400px] bg-korean-red/10 blur-[100px] rounded-full pointer-events-none" />
         </div>
@@ -259,7 +259,7 @@ export default function ChannelsPage() {
                 onClick={() => setSelectedCategory(category.id)}
                 className={`px-5 py-2.5 rounded-full text-sm font-medium tracking-[0.1em] uppercase transition-all duration-300 border backdrop-blur-sm ${
                   selectedCategory === category.id
-                    ? 'bg-cream text-[#050505] border-cream'
+                    ? 'bg-cream text-[#0d1b2a] border-cream'
                     : 'bg-white/5 text-cream-muted border-white/10 hover:border-white/30 hover:text-cream hover:bg-white/10'
                 }`}
               >
@@ -291,7 +291,7 @@ export default function ChannelsPage() {
                   viewport={{ once: true, margin: "-50px" }}
                   className="p-1.5 md:p-2 rounded-[2.5rem] bg-white/5 border border-white/10 group flex flex-col h-full"
                 >
-                  <div className="bg-[#0a0a0a] rounded-[calc(2.5rem-0.5rem)] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] flex-1 overflow-hidden flex flex-col">
+                  <div className="bg-river-deep rounded-[calc(2.5rem-0.5rem)] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] flex-1 overflow-hidden flex flex-col">
                     {/* Header */}
                     <div className="p-8 md:p-10 border-b border-white/5 relative overflow-hidden">
                       {/* Subtle hover glow */}
@@ -329,7 +329,7 @@ export default function ChannelsPage() {
                           href={`https://youtube.com/${channel.username}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="shrink-0 inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/5 hover:bg-white text-cream-muted hover:text-[#050505] transition-all duration-300 border border-white/10"
+                          className="shrink-0 inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/5 hover:bg-white text-cream-muted hover:text-[#0d1b2a] transition-all duration-300 border border-white/10"
                           aria-label={language === 'kr' ? '채널 방문' : 'Visit Channel'}
                         >
                           <ExternalLink className="h-5 w-5" />
@@ -338,7 +338,7 @@ export default function ChannelsPage() {
                     </div>
 
                     {/* Videos Grid */}
-                    <div className="p-8 md:p-10 bg-[#050505] flex-1 flex flex-col">
+                    <div className="p-8 md:p-10 bg-river-depths flex-1 flex flex-col">
                       <h3 className="text-sm font-medium tracking-[0.2em] uppercase text-cream/40 mb-6 flex items-center gap-2">
                         <MonitorPlay className="w-4 h-4" />
                         {language === 'kr' ? '최근 영상' : 'Recent Broadcasts'}
@@ -377,7 +377,7 @@ export default function ChannelsPage() {
                                   </div>
                                 )}
                               </div>
-                              <div className="p-4 bg-[#0a0a0a]">
+                              <div className="p-4 bg-river-deep">
                                 <h4 className="text-cream text-sm font-medium mb-3 line-clamp-2 leading-snug group-hover/video:text-white transition-colors">
                                   {video.title}
                                 </h4>
@@ -396,7 +396,7 @@ export default function ChannelsPage() {
                           ))}
                         </div>
                       ) : (
-                        <div className="text-center py-12 flex-1 flex flex-col items-center justify-center bg-[#0a0a0a] rounded-2xl border border-white/5 border-dashed">
+                        <div className="text-center py-12 flex-1 flex flex-col items-center justify-center bg-river-deep rounded-2xl border border-white/5 border-dashed">
                           <p className="text-cream/40 text-sm">
                             {language === 'kr'
                               ? '최근 영상을 불러올 수 없습니다.'
@@ -422,7 +422,7 @@ export default function ChannelsPage() {
           className="container mx-auto max-w-4xl"
         >
           <div className="p-1.5 md:p-2 rounded-[3rem] bg-white/5 border border-white/10">
-            <div className="bg-gradient-to-b from-[#111] to-[#050505] rounded-[calc(3rem-0.5rem)] p-12 md:p-20 text-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+            <div className="bg-gradient-to-b from-[#111] to-[#0d1b2a] rounded-[calc(3rem-0.5rem)] p-12 md:p-20 text-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
               <TrendingUp className="h-12 w-12 text-sovereign-gold mx-auto mb-8 opacity-80" />
               <h2 className="text-3xl md:text-4xl font-bold text-cream mb-6 tracking-tight">
                 {language === 'kr' ? '실시간 동기화 네트워크' : 'Live Synchronization Network'}
@@ -435,7 +435,7 @@ export default function ChannelsPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/truth-project"
-                  className="group relative inline-flex items-center justify-center px-8 py-4 rounded-full bg-cream text-[#050505] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white"
+                  className="group relative inline-flex items-center justify-center px-8 py-4 rounded-full bg-cream text-[#0d1b2a] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white"
                 >
                   {language === 'kr' ? '진실 프로젝트' : 'The Truth Project'}
                 </Link>

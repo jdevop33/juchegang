@@ -156,7 +156,7 @@ export default function YouthEmpowermentPage() {
             className="absolute inset-0 z-0"
           >
             <Image
-              src="/images/heros/beautioful4.jpg"
+              src="/gallery/paektu-hero-.webp"
               alt="Sunrise breaking through snow-capped peaks of Mount Paektu"
               fill
               className="object-cover scale-105"
@@ -412,7 +412,7 @@ export default function YouthEmpowermentPage() {
                   viewport={{ once: true }}
                   className={`relative p-px rounded-2xl bg-gradient-to-b from-cream/10 to-transparent group ${story.colSpan}`}
                 >
-                  <div className="relative bg-[#050505] border border-cream/5 rounded-[15px] p-8 h-full flex flex-col justify-between overflow-hidden inset-shadow-sm inset-shadow-cream/5 group-hover:bg-[#122338] transition-colors">
+                  <div className="relative bg-river-depths border border-cream/5 rounded-[15px] p-8 h-full flex flex-col justify-between overflow-hidden inset-shadow-sm inset-shadow-cream/5 group-hover:bg-[#122338] transition-colors">
                     
                     <div className="relative z-10 mb-8">
                       <div className="flex items-center gap-4 mb-6">

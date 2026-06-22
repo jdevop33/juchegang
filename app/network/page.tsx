@@ -199,7 +199,7 @@ export default function NetworkPage() {
           className="absolute inset-0 z-0"
         >
           <Image
-            src="/images/paektu-sunset.jpg"
+            src="/gallery/paektu-hero-.webp"
             alt="The JPanda Network - interconnected nodes of truth and technology"
             fill
             className="object-cover scale-105"

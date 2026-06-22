@@ -7,10 +7,10 @@
    ═══════════════════════════════════════════════════════════════ */
 @layer utilities {
   .gradient-river-flow {
-    background: linear-gradient(135deg, #050505 0%, #1b4965 50%, #2a6f8e 100%);
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b4965 50%, #2a6f8e 100%);
   }
   .gradient-korean-dawn {
-    background: linear-gradient(180deg, #050505 0%, #1b4965 50%, #c73032 100%);
+    background: linear-gradient(180deg, #0d1b2a 0%, #1b4965 50%, #c73032 100%);
   }
   .gradient-sovereign {
     background: linear-gradient(135deg, #d4a74a 0%, #8b6914 100%);
@@ -37,9 +37,9 @@
        ═══════════════════════════════════════════════════════════════ */
 
     /* River Palette - Core Colors */
-    --river-depths: 0 0% 2%;              /* #050505 - OLED black, primary bg */
+    --river-depths: 210 52% 11%;         /* #0d1b2a - deep navy, primary bg */
     --river-current: 203 58% 25%;        /* #1b4965 - flowing blue */
-    --river-deep: 0 0% 4%;               /* #0a0a0a - card surfaces */
+    --river-deep: 210 47% 15%;           /* #142638 - card surfaces */
     --river-mid: 199 54% 36%;            /* #2a6f8e - accent blue */
     --korean-red: 359 60% 49%;           /* #c73032 - cultural accent */
     --sovereign-gold: 40 60% 56%;        /* #d4a74a - wisdom, highlights */
@@ -92,32 +92,32 @@
        The deep water where the current is strongest
        ═══════════════════════════════════════════════════════════════ */
 
-    --background: 0 0% 2%;              /* #050505 OLED Black */
+    --background: 210 52% 11%;           /* River Depths */
     --foreground: 37 35% 92%;            /* Text Primary (warm cream) */
 
-    --card: 0 0% 4%;                     /* #0a0a0a Card Surface */
+    --card: 210 47% 15%;                 /* Deep Water */
     --card-foreground: 37 35% 92%;
 
-    --popover: 0 0% 4%;
+    --popover: 210 47% 15%;
     --popover-foreground: 37 35% 92%;
 
     --primary: 37 35% 92%;
-    --primary-foreground: 0 0% 2%;
+    --primary-foreground: 210 52% 11%;
 
-    --secondary: 0 0% 6%;
-    --secondary-foreground: 0 0% 70%;
+    --secondary: 210 47% 18%;
+    --secondary-foreground: 210 30% 71%;
 
-    --muted: 0 0% 6%;
-    --muted-foreground: 0 0% 63%;        /* Text Secondary — AA contrast on OLED black */
+    --muted: 210 47% 18%;
+    --muted-foreground: 210 32% 76%;     /* Text Secondary — bumped for AA contrast on River Depths */
 
     --accent: 40 60% 56%;                /* Sovereign Gold accent */
-    --accent-foreground: 0 0% 2%;
+    --accent-foreground: 210 52% 11%;
 
     --destructive: 359 60% 55%;          /* Korean Red (slightly brighter) */
     --destructive-foreground: 37 35% 92%;
 
-    --border: 0 0% 12%;                  /* Neutral border */
-    --input: 0 0% 6%;
+    --border: 203 40% 22%;               /* Current Blue border */
+    --input: 210 47% 18%;
     --ring: 40 60% 56%;                  /* Sovereign Gold focus */
 
     /* Bloomberg Terminal Colors - Preserved */

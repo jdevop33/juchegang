@@ -3,7 +3,7 @@ import { Home, Image as ImageIcon, Globe, FileText, Mail, ArrowRight } from "luc
 
 export default function NotFound() {
   return (
-    <div className="min-h-[100dvh] bg-[#050505] text-cream flex flex-col items-center justify-center px-4 md:px-8 relative overflow-hidden selection:bg-korean-red/30">
+    <div className="min-h-[100dvh] bg-river-depths text-cream flex flex-col items-center justify-center px-4 md:px-8 relative overflow-hidden selection:bg-korean-red/30">
       {/* Abstract Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-full max-h-[800px] bg-korean-red/5 blur-[150px] rounded-[100%] pointer-events-none" />
 
@@ -27,17 +27,17 @@ export default function NotFound() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-16">
             <Link
               href="/"
-              className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#050505] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white"
+              className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#0d1b2a] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white"
             >
               <span className="mr-6">Return Home</span>
-              <div className="w-10 h-10 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
+              <div className="w-10 h-10 rounded-full bg-river-depths/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
                 <Home className="w-5 h-5" strokeWidth={2} />
               </div>
             </Link>
           </div>
 
           <div className="p-1.5 rounded-3xl bg-white/5 border border-white/10 w-full max-w-md mx-auto md:mx-0">
-            <div className="bg-[#0a0a0a] rounded-[calc(1.5rem-0.375rem)] p-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+            <div className="bg-river-deep rounded-[calc(1.5rem-0.375rem)] p-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
               <h3 className="text-sm font-bold text-cream-muted mb-4 uppercase tracking-[0.2em]">Recovered Signals</h3>
               <div className="grid grid-cols-2 gap-3 text-left">
                 <Link href="/gallery" className="group flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors duration-300">

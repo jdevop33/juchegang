@@ -147,7 +147,7 @@ export default function CuisineTraditionsPage() {
   return (
     <>
       <JucheHeader />
-      <main className="min-h-[100dvh] bg-[#050505] text-cream selection:bg-sovereign-gold/30">
+      <main className="min-h-[100dvh] bg-river-depths text-cream selection:bg-sovereign-gold/30">
         {/* Cinematic Hero Section */}
         <section className="relative h-[80vh] min-h-[600px] overflow-hidden flex items-center justify-center">
           <div className="absolute inset-0">
@@ -159,7 +159,7 @@ export default function CuisineTraditionsPage() {
               sizes="100vw"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a] via-[#0d1b2a]/60 to-transparent" />
             <div className="absolute inset-0 bg-black/40" />
           </div>
           
@@ -208,7 +208,7 @@ export default function CuisineTraditionsPage() {
                     transition={{ duration: 0.8, delay: index * 0.1, ease: [0.32, 0.72, 0, 1] }}
                     className={`p-1.5 rounded-[2rem] bg-white/5 border border-white/10 group hover:border-white/20 transition-all duration-500 ${colSpan}`}
                   >
-                    <div className="bg-[#0a0a0a] rounded-[calc(2rem-0.375rem)] p-8 md:p-12 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-[#111] flex flex-col justify-between">
+                    <div className="bg-river-deep rounded-[calc(2rem-0.375rem)] p-8 md:p-12 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-[#111] flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-8">
                           <div className={`w-14 h-14 rounded-full ${dish.color} border border-white/5 flex items-center justify-center transition-transform duration-500 group-hover:scale-110`}>
@@ -225,7 +225,7 @@ export default function CuisineTraditionsPage() {
                       </div>
                       
                       <div>
-                        <div className="bg-[#050505] rounded-2xl p-6 border border-white/5 mb-6">
+                        <div className="bg-river-depths rounded-2xl p-6 border border-white/5 mb-6">
                           <h4 className="text-[10px] uppercase tracking-[0.2em] font-bold text-cream-muted mb-2">
                             {language === 'kr' ? '건강 효과' : 'Health Benefits'}
                           </h4>
@@ -264,7 +264,7 @@ export default function CuisineTraditionsPage() {
                   transition={{ duration: 0.8, delay: index * 0.1, ease: [0.32, 0.72, 0, 1] }}
                   className="p-1.5 rounded-[2.5rem] bg-white/5 border border-white/10"
                 >
-                  <div className="bg-[#0a0a0a] rounded-[calc(2.5rem-0.375rem)] p-8 md:p-12 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+                  <div className="bg-river-deep rounded-[calc(2.5rem-0.375rem)] p-8 md:p-12 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-12 h-12 rounded-full bg-sovereign-gold/10 border border-sovereign-gold/20 flex items-center justify-center">
                         <tradition.icon className="h-5 w-5 text-sovereign-gold" />
@@ -276,7 +276,7 @@ export default function CuisineTraditionsPage() {
                     
                     <div className="flex flex-wrap gap-2">
                       {tradition.values.map((value, i) => (
-                        <span key={i} className="px-4 py-2 bg-[#050505] border border-white/5 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium text-cream/70">
+                        <span key={i} className="px-4 py-2 bg-river-depths border border-white/5 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium text-cream/70">
                           {value}
                         </span>
                       ))}
@@ -289,7 +289,7 @@ export default function CuisineTraditionsPage() {
 
           {/* Health Benefits - Structuralist Display */}
           <section className="mb-32 p-1.5 md:p-2 rounded-[3rem] bg-white/5 border border-white/10">
-            <div className="bg-[#0a0a0a] rounded-[calc(3rem-0.5rem)] p-8 md:p-16 lg:p-24 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+            <div className="bg-river-deep rounded-[calc(3rem-0.5rem)] p-8 md:p-16 lg:p-24 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
               <div className="text-center mb-20">
                 <div className="w-20 h-20 rounded-full bg-korean-red/10 border border-korean-red/20 flex items-center justify-center mx-auto mb-8">
                   <Flame className="h-10 w-10 text-korean-red" />
@@ -351,10 +351,10 @@ export default function CuisineTraditionsPage() {
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <Link
                   href="/cultural-exchange"
-                  className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#050505] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white w-full sm:w-auto"
+                  className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#0d1b2a] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white w-full sm:w-auto"
                 >
                   <span className="mr-6">{language === 'kr' ? '문화 교류 보기' : 'View Cultural Exchange'}</span>
-                  <div className="w-10 h-10 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
+                  <div className="w-10 h-10 rounded-full bg-river-depths/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
                     <ArrowRight className="w-5 h-5" strokeWidth={2} />
                   </div>
                 </Link>

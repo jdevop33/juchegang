@@ -42,7 +42,7 @@ const featuredResources = getFeaturedResources()
 
 export default function LibraryPage() {
   return (
-    <main className="min-h-[100dvh] bg-[#050505] text-cream selection:bg-sovereign-gold/30">
+    <main className="min-h-[100dvh] bg-river-depths text-cream selection:bg-sovereign-gold/30">
       <JucheHeader />
 
       {/* Ethereal Glass Hero */}
@@ -90,7 +90,7 @@ export default function LibraryPage() {
                     transition={{ delay: 0.1 * index, duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
                     className={`p-1.5 rounded-[2rem] bg-white/5 border border-white/10 opacity-60 ${colSpan}`}
                   >
-                    <div className="bg-[#0a0a0a] rounded-[calc(2rem-0.375rem)] p-8 md:p-12 h-full relative overflow-hidden flex flex-col justify-between min-h-[320px]">
+                    <div className="bg-river-deep rounded-[calc(2rem-0.375rem)] p-8 md:p-12 h-full relative overflow-hidden flex flex-col justify-between min-h-[320px]">
                       <div className="absolute top-6 right-6 px-3 py-1 bg-white/5 border border-white/10 text-cream-muted text-[10px] tracking-[0.2em] uppercase rounded-full">
                         Coming Soon
                       </div>
@@ -115,7 +115,7 @@ export default function LibraryPage() {
                   className={`p-1.5 rounded-[2rem] bg-white/5 border border-white/10 hover:border-white/20 transition-colors duration-500 group ${colSpan}`}
                 >
                   <Link href={category.href} className="block h-full">
-                    <div className="bg-[#050505] rounded-[calc(2rem-0.375rem)] p-8 md:p-12 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-[#0a0a0a] flex flex-col justify-between min-h-[320px]">
+                    <div className="bg-river-depths rounded-[calc(2rem-0.375rem)] p-8 md:p-12 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-river-deep flex flex-col justify-between min-h-[320px]">
                       <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-8 transition-transform duration-500 group-hover:scale-110 group-hover:border-sovereign-gold/30">
                         <Icon className="w-6 h-6 text-cream group-hover:text-sovereign-gold transition-colors" />
                       </div>
@@ -169,7 +169,7 @@ export default function LibraryPage() {
                   transition={{ delay: 0.1 * i, duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
                   className="group p-1.5 rounded-[2rem] bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-500 active:scale-[0.98]"
                 >
-                  <div className="bg-[#050505] rounded-[calc(2rem-0.375rem)] p-6 md:p-8 flex items-center gap-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-[#0a0a0a]">
+                  <div className="bg-river-depths rounded-[calc(2rem-0.375rem)] p-6 md:p-8 flex items-center gap-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-river-deep">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center shrink-0 border transition-colors duration-500 ${
                       resource.type === 'slides' ? 'bg-sovereign-gold/5 border-sovereign-gold/20 group-hover:bg-sovereign-gold/10' :
                       'bg-river-current/5 border-river-current/20 group-hover:bg-river-current/10'
@@ -192,7 +192,7 @@ export default function LibraryPage() {
                       </div>
                     </div>
                     <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center transition-all duration-500 group-hover:bg-white group-hover:border-white">
-                      <Download className="w-5 h-5 text-cream-muted group-hover:text-[#050505]" />
+                      <Download className="w-5 h-5 text-cream-muted group-hover:text-[#0d1b2a]" />
                     </div>
                   </div>
                 </motion.a>
@@ -204,7 +204,7 @@ export default function LibraryPage() {
         {/* Empty State */}
         {featuredResources.length === 0 && (
           <section className="text-center py-32 p-2 rounded-[3rem] bg-white/5 border border-white/10 mb-32">
-            <div className="bg-[#0a0a0a] rounded-[calc(3rem-0.5rem)] p-12 md:p-24 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+            <div className="bg-river-deep rounded-[calc(3rem-0.5rem)] p-12 md:p-24 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
               <FolderOpen className="w-16 h-16 text-white/20 mx-auto mb-8" />
               <h3 className="text-3xl font-bold text-cream mb-4 tracking-tight">Library is being built</h3>
               <p className="text-lg text-cream-muted max-w-lg mx-auto mb-10 leading-relaxed">
@@ -212,10 +212,10 @@ export default function LibraryPage() {
               </p>
               <Link
                 href="/briefings"
-                className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#050505] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white"
+                className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#0d1b2a] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white"
               >
                 <span className="mr-6">Browse Briefings</span>
-                <div className="w-10 h-10 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
+                <div className="w-10 h-10 rounded-full bg-river-depths/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
                   <ArrowRight className="w-5 h-5" strokeWidth={2} />
                 </div>
               </Link>
@@ -225,7 +225,7 @@ export default function LibraryPage() {
 
         {/* How to Use Section - Structuralism */}
         <section className="p-1.5 md:p-2 rounded-[3rem] bg-white/5 border border-white/10">
-          <div className="bg-[#0a0a0a] rounded-[calc(3rem-0.5rem)] p-12 md:p-20 lg:p-24 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+          <div className="bg-river-deep rounded-[calc(3rem-0.5rem)] p-12 md:p-20 lg:p-24 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
             <h2 className="text-4xl md:text-5xl font-bold text-cream mb-16 tracking-tight">How to Use This Library</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
               {[

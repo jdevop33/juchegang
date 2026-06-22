@@ -54,7 +54,7 @@ export function JucheHeader() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
         isScrolled
-          ? "bg-[#050505]/95 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.3)]"
+          ? "bg-river-depths/95 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.3)]"
           : "bg-transparent"
       }`}
     >
@@ -100,11 +100,11 @@ export function JucheHeader() {
             <LanguageToggle />
             <Link
               href="/contact"
-              className="group relative inline-flex items-center justify-center pl-5 pr-1.5 py-1.5 rounded-full bg-cream text-[#050505] text-sm font-bold transition-all duration-300 active:scale-[0.98] hover:bg-white"
+              className="group relative inline-flex items-center justify-center pl-5 pr-1.5 py-1.5 rounded-full bg-cream text-[#0d1b2a] text-sm font-bold transition-all duration-300 active:scale-[0.98] hover:bg-white"
             >
               <span className="mr-3">{t('contact')}</span>
-              <div className="w-7 h-7 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-0.5 group-hover:scale-105">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-[#050505]">
+              <div className="w-7 h-7 rounded-full bg-river-depths/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-0.5 group-hover:scale-105">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-[#0d1b2a]">
                   <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -137,7 +137,7 @@ export function JucheHeader() {
       <Drawer.Root direction="right" open={isMenuOpen} onOpenChange={setIsMenuOpen}>
         <Drawer.Portal>
           <Drawer.Overlay className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[60]" />
-          <Drawer.Content className="fixed right-0 top-0 h-[100dvh] w-[92vw] max-w-[480px] bg-[#050505] border-l border-white/10 shadow-2xl will-change-transform z-[70] flex flex-col">
+          <Drawer.Content className="fixed right-0 top-0 h-[100dvh] w-[92vw] max-w-[480px] bg-river-depths border-l border-white/10 shadow-2xl will-change-transform z-[70] flex flex-col">
             {/* Drawer header */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-white/5 shrink-0">
               <Image
@@ -209,11 +209,11 @@ export function JucheHeader() {
               <Link
                 href="/contact"
                 onClick={closeMenu}
-                className="group relative flex items-center justify-center pl-6 pr-2 py-2.5 rounded-full bg-cream text-[#050505] font-bold text-base transition-all duration-300 active:scale-[0.98] hover:bg-white w-full"
+                className="group relative flex items-center justify-center pl-6 pr-2 py-2.5 rounded-full bg-cream text-[#0d1b2a] font-bold text-base transition-all duration-300 active:scale-[0.98] hover:bg-white w-full"
               >
                 <span className="mr-4">{t('contact')}</span>
-                <div className="w-8 h-8 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
-                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none" className="text-[#050505]">
+                <div className="w-8 h-8 rounded-full bg-river-depths/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
+                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none" className="text-[#0d1b2a]">
                     <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>

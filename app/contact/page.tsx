@@ -26,7 +26,7 @@ export default function ContactPage() {
   const { t, language } = useLanguage()
   
   return (
-    <main id="main-content" className="min-h-[100dvh] bg-[#050505] text-cream selection:bg-sovereign-gold/30">
+    <main id="main-content" className="min-h-[100dvh] bg-river-depths text-cream selection:bg-sovereign-gold/30">
       <JucheHeader />
       
       <section className="relative pt-40 pb-24 md:pt-56 md:pb-12 px-4 md:px-8 overflow-hidden">

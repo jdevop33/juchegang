@@ -185,7 +185,7 @@ export default function BriefingsContent() {
           className="absolute inset-0 z-0"
         >
           <Image
-            src="/images/paektu-sunset.jpg"
+            src="/gallery/paektu-hero-.webp"
             alt="Mount Paektu at sunset - where truth meets understanding"
             fill
             className="object-cover scale-105"

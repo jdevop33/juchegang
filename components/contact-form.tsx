@@ -74,7 +74,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
           transition={{ duration: 1, ease: [0.32, 0.72, 0, 1] }}
           className="order-2 lg:order-1 p-1.5 md:p-2 rounded-[2.5rem] bg-white/5 border border-white/10"
         >
-          <div className="bg-[#0a0a0a] rounded-[calc(2.5rem-0.5rem)] p-8 md:p-12 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] h-full">
+          <div className="bg-river-deep rounded-[calc(2.5rem-0.5rem)] p-8 md:p-12 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] h-full">
             <div className="mb-12">
               <h2 className="text-3xl font-bold tracking-tight text-cream mb-4">
                 {t('connectWithExcellence')}
@@ -104,7 +104,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                     value={formData.Name}
                     onChange={handleChange}
                     required
-                    className="w-full bg-[#050505] border border-white/10 rounded-xl px-4 py-4 text-cream placeholder:text-cream/20 focus:outline-none focus:border-sovereign-gold focus:ring-1 focus:ring-sovereign-gold transition-all duration-300"
+                    className="w-full bg-river-depths border border-white/10 rounded-xl px-4 py-4 text-cream placeholder:text-cream/20 focus:outline-none focus:border-sovereign-gold focus:ring-1 focus:ring-sovereign-gold transition-all duration-300"
                   />
                 </div>
                 <div className="space-y-3">
@@ -119,7 +119,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                     value={formData.Email}
                     onChange={handleChange}
                     required
-                    className="w-full bg-[#050505] border border-white/10 rounded-xl px-4 py-4 text-cream placeholder:text-cream/20 focus:outline-none focus:border-sovereign-gold focus:ring-1 focus:ring-sovereign-gold transition-all duration-300"
+                    className="w-full bg-river-depths border border-white/10 rounded-xl px-4 py-4 text-cream placeholder:text-cream/20 focus:outline-none focus:border-sovereign-gold focus:ring-1 focus:ring-sovereign-gold transition-all duration-300"
                   />
                 </div>
               </div>
@@ -135,7 +135,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                   value={formData.Subject}
                   onChange={handleChange}
                   required
-                  className="w-full bg-[#050505] border border-white/10 rounded-xl px-4 py-4 text-cream placeholder:text-cream/20 focus:outline-none focus:border-sovereign-gold focus:ring-1 focus:ring-sovereign-gold transition-all duration-300"
+                  className="w-full bg-river-depths border border-white/10 rounded-xl px-4 py-4 text-cream placeholder:text-cream/20 focus:outline-none focus:border-sovereign-gold focus:ring-1 focus:ring-sovereign-gold transition-all duration-300"
                 />
               </div>
               <div className="space-y-3">
@@ -150,7 +150,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full min-h-[150px] bg-[#050505] border border-white/10 rounded-xl px-4 py-4 text-cream placeholder:text-cream/20 focus:outline-none focus:border-sovereign-gold focus:ring-1 focus:ring-sovereign-gold transition-all duration-300 resize-none"
+                  className="w-full min-h-[150px] bg-river-depths border border-white/10 rounded-xl px-4 py-4 text-cream placeholder:text-cream/20 focus:outline-none focus:border-sovereign-gold focus:ring-1 focus:ring-sovereign-gold transition-all duration-300 resize-none"
                 />
               </div>
               
@@ -179,11 +179,11 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 mt-4 rounded-full bg-cream text-[#050505] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed"
+                className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 mt-4 rounded-full bg-cream text-[#0d1b2a] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <span className="mr-6">{isSubmitting ? t('sending') : t('sendMessageCTA')}</span>
                 {!isSubmitting && (
-                  <div className="w-10 h-10 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
+                  <div className="w-10 h-10 rounded-full bg-river-depths/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
                     <ArrowRight className="w-5 h-5" strokeWidth={2} />
                   </div>
                 )}
@@ -199,7 +199,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
           transition={{ duration: 1, ease: [0.32, 0.72, 0, 1] }}
           className="order-1 lg:order-2 p-1.5 md:p-2 rounded-[2.5rem] bg-white/5 border border-white/10"
         >
-          <div className="bg-[#050505] rounded-[calc(2.5rem-0.5rem)] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] h-full overflow-hidden relative min-h-[500px]">
+          <div className="bg-river-depths rounded-[calc(2.5rem-0.5rem)] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] h-full overflow-hidden relative min-h-[500px]">
             <Image
               src="/images/heros/korean03.jpg"
               alt="Mount Paektu in golden light"
@@ -207,7 +207,7 @@ export function ContactForm({ initialValues }: { initialValues?: ContactInitialV
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover transition-transform duration-[20s] hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a] via-[#0d1b2a]/40 to-transparent" />
             
             <div className="absolute bottom-0 left-0 w-full p-8 md:p-12">
               <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-4 text-cream">

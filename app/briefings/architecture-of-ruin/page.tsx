@@ -14,7 +14,7 @@ export const metadata = {
       "750 US military sites. 80 countries. $55 billion annually. Six case studies in what hosting really costs.",
     images: [
       {
-        url: "/images/paektu-sunset.jpg",
+        url: "/gallery/paektu-hero-.webp",
         width: 1200,
         height: 630,
         alt: "Heaven Lake at Mount Paektu at sunset",

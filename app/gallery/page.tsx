@@ -73,7 +73,7 @@ export default async function GalleryPage() {
   const images = await listGalleryImages()
 
   return (
-    <main className="min-h-[100dvh] bg-[#050505] text-cream selection:bg-sovereign-gold/30">
+    <main className="min-h-[100dvh] bg-river-depths text-cream selection:bg-sovereign-gold/30">
       <JucheHeader />
 
       {/* Hero Section: Ethereal Glass */}
@@ -97,22 +97,7 @@ export default async function GalleryPage() {
       {/* Main Content Area */}
       <section className="container mx-auto px-4 md:px-8 pb-32">
 
-        {/* SoundCloud Double-Bezel */}
-        <div className="mb-24 flex justify-center">
-          <div className="w-full max-w-3xl p-1.5 rounded-[2rem] bg-white/5 border border-white/10">
-            <div className="rounded-[calc(2rem-0.375rem)] overflow-hidden bg-[#0a0a0a] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
-              <iframe
-                title="Gallery soundtrack"
-                width="100%"
-                height="166"
-                allow="autoplay"
-                loading="lazy"
-                style={{ border: 0 }}
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1087014736&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false"
-              />
-            </div>
-          </div>
-        </div>
+
 
         {images.length === 0 ? (
           <div className="text-center py-32">
@@ -135,7 +120,7 @@ export default async function GalleryPage() {
 
                 return (
                   <div key={img.src} className={`p-1.5 rounded-[2rem] bg-white/5 border border-white/10 hover:border-white/20 transition-colors duration-500 ${spanClasses}`}>
-                    <div className="relative w-full h-full rounded-[calc(2rem-0.375rem)] overflow-hidden bg-[#0a0a0a] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+                    <div className="relative w-full h-full rounded-[calc(2rem-0.375rem)] overflow-hidden bg-river-deep shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
                       <GalleryImage 
                         src={img.src} 
                         alt={img.alt} 
@@ -196,7 +181,7 @@ export default async function GalleryPage() {
                         { date: "2017-2024", places: "Montenegro, N. Macedonia, Finland, Sweden" }
                       ].map((wave, i) => (
                         <div key={i} className="p-1 rounded-2xl bg-white/5 border border-white/10">
-                          <div className="bg-[#0a0a0a] rounded-[calc(1rem-2px)] p-6 h-full">
+                          <div className="bg-river-deep rounded-[calc(1rem-2px)] p-6 h-full">
                             <div className="text-sm font-bold text-sovereign-gold mb-2">{wave.date}</div>
                             <div className="text-cream text-base">{wave.places}</div>
                           </div>
@@ -237,7 +222,7 @@ export default async function GalleryPage() {
                         { stat: "-6 Yrs", label: "Male Life Expectancy" },
                         { stat: "41.5%", label: "Poverty Rate (1999)" }
                       ].map((item, i) => (
-                        <div key={i} className="p-1 rounded-2xl bg-[#0a0a0a] border border-white/5 text-center">
+                        <div key={i} className="p-1 rounded-2xl bg-river-deep border border-white/5 text-center">
                           <div className="py-8">
                             <div className="text-3xl font-bold text-cream mb-2 tracking-tighter">{item.stat}</div>
                             <div className="text-xs text-cream-muted tracking-widest uppercase">{item.label}</div>
@@ -250,7 +235,7 @@ export default async function GalleryPage() {
               }
             ].map((section) => (
               <div key={section.id} className="p-1.5 md:p-2 rounded-[2.5rem] bg-white/5 border border-white/10 group">
-                <div className="bg-[#0a0a0a] rounded-[calc(2.5rem-0.5rem)] p-8 md:p-12 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-[#111]">
+                <div className="bg-river-deep rounded-[calc(2.5rem-0.5rem)] p-8 md:p-12 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors duration-500 group-hover:bg-[#111]">
                   <h3 className="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-4 text-cream tracking-tight">
                     <span className="w-10 h-10 bg-sovereign-gold/10 text-sovereign-gold rounded-full flex items-center justify-center text-sm font-bold border border-sovereign-gold/20 shrink-0">
                       {section.id}

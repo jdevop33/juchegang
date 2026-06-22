@@ -14,7 +14,7 @@ export const metadata = {
       "From a crescent moon to the Brotherhood designation. The pipeline from covert operations to terror lists.",
     images: [
       {
-        url: "/images/paektu-sunset.jpg",
+        url: "/gallery/paektu-hero-.webp",
         width: 1200,
         height: 630,
         alt: "Heaven Lake at Mount Paektu at sunset",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "주권의 건축과 글로벌 개입의 메커니즘 | J Panda 전략 보고서",
     description: "인권, 군산복합체, 국가 서사에 대한 비교 분석.",
-    images: [{ url: "/images/heros/amaazing07.jpg", width: 1200, height: 630, alt: "주권의 건축과 글로벌 개입의 메커니즘" }],
+    images: [{ url: "/gallery/paektu-hero-.webp", width: 1200, height: 630, alt: "주권의 건축과 글로벌 개입의 메커니즘" }],
   },
   twitter: {
     card: "summary_large_image",

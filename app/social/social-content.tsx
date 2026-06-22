@@ -51,7 +51,7 @@ export default function SocialContent({
           className="absolute inset-0 z-0"
         >
           <Image
-            src="/images/heros/socialmediapagehero.jpg"
+            src="/gallery/paektu-hero-.webp"
             alt="Juche Social Media Operations"
             fill
             className="object-cover scale-105"

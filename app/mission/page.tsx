@@ -59,7 +59,7 @@ export default function MissionPage() {
   return (
     <>
       <JucheHeader />
-      <main id="main-content" className="min-h-[100dvh] bg-[#050505] text-cream selection:bg-sovereign-gold/30 selection:text-cream">
+      <main id="main-content" className="min-h-[100dvh] bg-river-depths text-cream selection:bg-sovereign-gold/30 selection:text-cream">
         
         {/* Editorial Split Hero */}
         <section className="relative w-full pt-32 pb-24 md:pt-40 md:pb-32 px-4 md:px-8">
@@ -105,7 +105,7 @@ export default function MissionPage() {
                 >
                   <div className="relative h-[60vh] lg:h-[70vh] rounded-[calc(2.5rem-0.5rem)] overflow-hidden shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)]">
                     <Image
-                      src="/images/paektu-golden.jpg"
+                      src="/gallery/paektu-hero-.webp"
                       alt="Mount Paektu at sunrise"
                       fill
                       className="object-cover scale-105 transition-transform duration-[20s] hover:scale-100"
@@ -113,7 +113,7 @@ export default function MissionPage() {
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       quality={90}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/90 via-[#050505]/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/90 via-[#0d1b2a]/20 to-transparent" />
                     
                     <div className="absolute bottom-0 left-0 w-full p-8 md:p-12">
                       <blockquote className="text-2xl md:text-3xl text-sovereign-gold italic font-light leading-snug drop-shadow-lg">
@@ -133,7 +133,7 @@ export default function MissionPage() {
                   transition={{ duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
                   className="p-1.5 md:p-2 rounded-[2rem] bg-white/5 border border-white/10"
                 >
-                  <div className="bg-[#0a0a0a] rounded-[calc(2rem-0.375rem)] p-8 md:p-12 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] relative overflow-hidden">
+                  <div className="bg-river-deep rounded-[calc(2rem-0.375rem)] p-8 md:p-12 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] relative overflow-hidden">
                     <div className="relative z-10">
                       <div className="mb-6 inline-flex items-center rounded-full px-3 py-1 bg-sovereign-gold/10 text-sovereign-gold text-[10px] uppercase tracking-[0.2em] font-medium border border-sovereign-gold/20">
                         {language === 'kr' ? '우리의 비전' : 'Our Vision'}
@@ -158,7 +158,7 @@ export default function MissionPage() {
         </section>
 
         {/* Asymmetrical Bento Grid Section */}
-        <section className="py-32 px-4 md:px-8 border-t border-white/5 bg-gradient-to-b from-[#050505] to-[#0a0a0a]">
+        <section className="py-32 px-4 md:px-8 border-t border-white/5 bg-gradient-to-b from-[#0d1b2a] to-[#142638]">
           <div className="container mx-auto max-w-[1400px]">
             
             <motion.div
@@ -188,7 +188,7 @@ export default function MissionPage() {
                     transition={{ delay: 0.1 * (index % 3), duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
                     className={`p-1.5 rounded-[2rem] bg-white/5 border border-white/10 group ${colSpan}`}
                   >
-                    <div className="bg-[#050505] rounded-[calc(2rem-0.375rem)] p-8 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:bg-[#0a0a0a] flex flex-col justify-between min-h-[280px]">
+                    <div className="bg-river-depths rounded-[calc(2rem-0.375rem)] p-8 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:bg-river-deep flex flex-col justify-between min-h-[280px]">
                       <div className="mb-8 w-14 h-14 rounded-full bg-white/5 flex items-center justify-center border border-white/10 transition-transform duration-500 group-hover:scale-110 group-hover:border-sovereign-gold/30">
                         <principle.icon className="h-6 w-6 text-cream group-hover:text-sovereign-gold transition-colors duration-500" strokeWidth={1.5} />
                       </div>
@@ -217,7 +217,7 @@ export default function MissionPage() {
             transition={{ duration: 1, ease: [0.32, 0.72, 0, 1] }}
             className="w-full max-w-4xl p-2 rounded-[3rem] bg-white/5 border border-white/10"
           >
-            <div className="bg-gradient-to-b from-[#111] to-[#050505] rounded-[calc(3rem-0.5rem)] p-12 md:p-24 text-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+            <div className="bg-gradient-to-b from-[#111] to-[#0d1b2a] rounded-[calc(3rem-0.5rem)] p-12 md:p-24 text-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cream mb-8 tracking-tighter">
                 {language === 'kr' ? '역사의 주인공이 되라' : 'Become the Protagonist'}
               </h2>
@@ -231,10 +231,10 @@ export default function MissionPage() {
                 {/* Primary Button-in-Button */}
                 <Link
                   href="/social"
-                  className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#050505] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white"
+                  className="group relative inline-flex items-center justify-center pl-8 pr-2 py-2 rounded-full bg-cream text-[#0d1b2a] font-bold text-lg transition-all duration-300 active:scale-[0.98] hover:bg-white"
                 >
                   <span className="mr-6">{language === 'kr' ? '함께하기' : 'Join Us'}</span>
-                  <div className="w-10 h-10 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
+                  <div className="w-10 h-10 rounded-full bg-river-depths/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
                     <ArrowRight className="w-5 h-5" strokeWidth={2} />
                   </div>
                 </Link>

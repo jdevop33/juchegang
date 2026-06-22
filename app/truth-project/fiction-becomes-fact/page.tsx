@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function FictionBecomesFactPage() {
   return (
-    <div className="container mx-auto px-4 py-8" style={{ background: '#050505', minHeight: '100vh' }}>
+    <div className="container mx-auto px-4 py-8" style={{ background: '#0d1b2a', minHeight: '100vh' }}>
       <Link href="/truth-project" className="inline-flex items-center gap-2 mb-8 transition-colors" style={{ color: 'rgba(232, 228, 223, 0.7)' }}>
         <ArrowLeft className="h-4 w-4" />
         Back to Truth Project

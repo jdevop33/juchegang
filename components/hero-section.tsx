@@ -22,7 +22,7 @@ const staggerItem: Variants = {
 
 export function HeroSection() {
   return (
-    <section className="relative w-full min-h-[100dvh] flex flex-col justify-center overflow-hidden bg-[#050505]">
+    <section className="relative w-full min-h-[100dvh] flex flex-col justify-center overflow-hidden bg-river-depths">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -35,8 +35,8 @@ export function HeroSection() {
           quality={90}
         />
         {/* Layered gradient for cinematic depth */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent pointer-events-none" />
-        <div className="absolute inset-0 bg-[#050505]/30 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a] via-[#0d1b2a]/60 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-river-depths/30 pointer-events-none" />
         {/* Subtle warm light leak */}
         <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-sovereign-gold/5 blur-[120px] rounded-[100%] pointer-events-none" />
       </div>
@@ -72,11 +72,11 @@ export function HeroSection() {
           <motion.div variants={staggerItem} className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Link
               href="#laws"
-              className="group inline-flex items-center justify-center pl-8 pr-2 py-2.5 rounded-full bg-cream text-[#050505] font-bold text-base transition-all duration-300 active:scale-[0.98] hover:bg-white"
+              className="group inline-flex items-center justify-center pl-8 pr-2 py-2.5 rounded-full bg-cream text-[#0d1b2a] font-bold text-base transition-all duration-300 active:scale-[0.98] hover:bg-white"
             >
               <span className="mr-4">Explore the 48 Laws</span>
-              <div className="w-9 h-9 rounded-full bg-[#050505]/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
-                <svg width="14" height="14" viewBox="0 0 12 12" fill="none" className="text-[#050505]">
+              <div className="w-9 h-9 rounded-full bg-river-depths/10 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-105">
+                <svg width="14" height="14" viewBox="0 0 12 12" fill="none" className="text-[#0d1b2a]">
                   <path d="M6 2.5V9.5M6 9.5L3 6.5M6 9.5L9 6.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -92,7 +92,7 @@ export function HeroSection() {
       </div>
 
       {/* Bottom fade to content */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#050505] to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0d1b2a] to-transparent pointer-events-none" />
     </section>
   )
 }

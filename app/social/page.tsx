@@ -26,7 +26,7 @@ export const metadata = {
     title: "Social Media — Juche GanG",
     description: "Follow Juche GanG across platforms. Updates, media and analysis.",
     images: [
-      { url: "/images/heros/socialmediapagehero.jpg", width: 1200, height: 630, alt: "Juche Social" },
+      { url: "/gallery/paektu-hero-.webp", width: 1200, height: 630, alt: "Juche Social" },
     ],
   },
 }

@@ -13,7 +13,7 @@ export const metadata = {
       "The propaganda is working. Just not the way you think it is. A JPanda James editorial on American hubris, economic dependency, and the debt reckoning.",
     images: [
       {
-        url: "/images/heros/06.jpg",
+        url: "/gallery/paektu-hero-.webp",
         width: 1200,
         height: 630,
         alt: "Golden mist over mountain peaks",
