@@ -51,7 +51,7 @@ export default function SocialContent({
           className="absolute inset-0 z-0"
         >
           <Image
-            src="/gallery/paektu-hero-.webp"
+            src="/gallery/paektu-hero-1.webp"
             alt="Juche Social Media Operations"
             fill
             className="object-cover scale-105"
@@ -59,7 +59,7 @@ export default function SocialContent({
             sizes="100vw"
             quality={90}
           />
-          <div className="absolute inset-0 bg-river-depths/80 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-river-depths/80 pointer-events-none" />
           <div className="absolute inset-0 bg-gradient-to-t from-river-depths via-river-depths/40 to-transparent" />
         </motion.div>
 

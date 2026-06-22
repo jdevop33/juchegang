@@ -135,7 +135,7 @@ export function SovereigntyProtocolContent() {
           alt="Heaven Lake at Mount Paektu"
           fill
           priority
-          className="object-cover grayscale contrast-[1.2] brightness-[0.8] mix-blend-luminosity transition-all duration-[1.5s] group-hover:grayscale-0 group-hover:contrast-100 group-hover:brightness-100 group-hover:mix-blend-normal"
+          className="object-cover opacity-90 transition-all duration-[1.5s] group-hover:grayscale-0 group-hover:contrast-100 group-hover:brightness-100 group-hover:mix-blend-normal"
           sizes="(max-width: 1200px) 100vw, 1200px"
         />
         {/* Scanline overlay */}
@@ -400,7 +400,7 @@ export function SovereigntyProtocolContent() {
             src="/images/sovereignty-protocol/yi-sun-sin.jpg"
             alt="Statue of Admiral Yi Sun-sin"
             fill
-            className="object-cover object-top grayscale contrast-[1.2] brightness-[0.8] mix-blend-luminosity transition-all duration-[1.5s] group-hover:grayscale-0 group-hover:contrast-100 group-hover:brightness-100 group-hover:mix-blend-normal"
+            className="object-cover object-top opacity-90 transition-all duration-[1.5s] group-hover:grayscale-0 group-hover:contrast-100 group-hover:brightness-100 group-hover:mix-blend-normal"
             sizes="(max-width: 1024px) 100vw, 80vw"
           />
           <div

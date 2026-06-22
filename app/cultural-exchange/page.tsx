@@ -139,7 +139,7 @@ export default function CulturalExchangePage() {
         <section className="relative h-[80vh] min-h-[600px] overflow-hidden flex items-center justify-center">
           <div className="absolute inset-0">
             <Image
-              src="/gallery/paektu-hero-.webp"
+              src="/gallery/paektu-hero-1.webp"
               alt="Traditional Korean pavilion amid cascading waterfalls and lush forest"
               fill
               className="object-cover"

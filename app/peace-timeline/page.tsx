@@ -206,7 +206,7 @@ export default function PeaceTimelinePage() {
             className="absolute inset-0 z-0"
           >
             <Image
-              src="/gallery/paektu-hero-.webp"
+              src="/gallery/paektu-hero-5.webp"
               alt="Mount Paektu in winter - symbol of Korean resilience and unity"
               fill
               className="object-cover scale-105"
@@ -214,7 +214,7 @@ export default function PeaceTimelinePage() {
               sizes="100vw"
               quality={90}
             />
-            <div className="absolute inset-0 bg-river-depths/40 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-river-depths/10 pointer-events-none" />
             <div className="absolute inset-0 bg-gradient-to-t from-river-depths via-river-depths/60 to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-r from-river-depths via-transparent to-river-depths opacity-80" />
           </motion.div>

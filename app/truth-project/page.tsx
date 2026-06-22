@@ -103,7 +103,7 @@ export default function TruthProjectPage() {
       <section className="relative pt-40 pb-24 md:pt-56 md:pb-32 px-4 md:px-8 overflow-hidden">
         <div className="absolute inset-0">
           <NextImage
-            src="/gallery/paektu-hero-.webp"
+            src="/gallery/paektu-hero-2.webp"
             alt="Dramatic clouds parting over Heaven Lake crater at Mount Paektu"
             fill
             className="object-cover opacity-60 mix-blend-luminosity"

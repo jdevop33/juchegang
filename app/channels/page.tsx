@@ -214,7 +214,7 @@ export default function ChannelsPage() {
       <section className="relative pt-40 pb-24 md:pt-56 md:pb-32 px-4 md:px-8 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/gallery/paektu-hero-.webp"
+            src="/gallery/paektu-hero-6.webp"
             alt="Illuminated mountain city at night near Paektusan Geopark"
             fill
             className="object-cover opacity-40 mix-blend-luminosity"

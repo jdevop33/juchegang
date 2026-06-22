@@ -13,7 +13,7 @@ export const metadata = {
       "Examining the friction between sovereignty doctrines and interventionist frameworks through the lens of the DPRK, US military operations, and the defense-industrial complex.",
     images: [
       {
-        url: "/gallery/paektu-hero-.webp",
+        url: "/gallery/paektu-hero-2.webp",
         width: 1200,
         height: 630,
         alt: "Milky way over Paektu crater",
