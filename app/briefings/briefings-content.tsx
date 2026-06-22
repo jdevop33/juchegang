@@ -185,16 +185,15 @@ export default function BriefingsContent() {
           className="absolute inset-0 z-0"
         >
           <Image
-            src="/gallery/paektu-hero-.webp"
+            src="/gallery/paektu-hero-4.webp"
             alt="Mount Paektu at sunset - where truth meets understanding"
             fill
-            className="object-cover scale-105"
+            className="object-cover scale-105 opacity-90"
             priority
             sizes="100vw"
-            quality={90}
+            quality={100}
           />
-          <div className="absolute inset-0 bg-river-depths/60 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-river-depths via-river-depths/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-river-depths via-river-depths/40 to-transparent pointer-events-none" />
         </motion.div>
 
         <div className="container relative z-10 mx-auto px-4 h-full flex items-end pb-24">
