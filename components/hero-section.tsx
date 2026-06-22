@@ -26,13 +26,13 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/gallery/hero.png"
+          src="/gallery/hero.webp"
           alt="Heaven Lake at Mount Paektu - sacred birthplace of Korean civilization"
           fill
-          className="object-cover object-[center_60%] opacity-70 mix-blend-luminosity"
+          className="object-cover object-[center_60%] opacity-90"
           priority
           sizes="100vw"
-          quality={90}
+          quality={100}
         />
         {/* Layered gradient for cinematic depth */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a] via-[#0d1b2a]/60 to-transparent pointer-events-none" />
