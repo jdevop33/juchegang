@@ -1,6 +1,6 @@
 "use client"
 
-import { Menu, X, Sparkles } from "lucide-react"
+import { Menu, X, Sparkles, ArrowRight } from "lucide-react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
@@ -98,8 +98,8 @@ export function JucheHeader() {
       {/* Unified Drawer Root to avoid duplicate overlays */}
       <Drawer.Root direction="right" open={isMenuOpen} onOpenChange={setIsMenuOpen}>
         <Drawer.Portal>
-          <Drawer.Overlay className="fixed inset-0 bg-river-depths/90 backdrop-blur-md transition-opacity duration-300" />
-          <Drawer.Content className="fixed right-0 top-0 h-screen w-[92vw] max-w-[560px] bg-gradient-to-br from-river-depths via-river-deep to-river-depths border-l border-sovereign-gold/20 shadow-2xl shadow-river-depths/80 will-change-transform backdrop-blur-xl">
+          <Drawer.Overlay className="fixed inset-0 bg-river-depths/90 backdrop-blur-md transition-opacity duration-300 z-[100]" />
+          <Drawer.Content className="fixed right-0 top-0 h-screen w-[92vw] max-w-[560px] bg-gradient-to-br from-river-depths via-river-deep to-river-depths border-l border-sovereign-gold/20 shadow-2xl shadow-river-depths/80 will-change-transform backdrop-blur-xl z-[100] flex flex-col">
             <div className="flex items-center justify-between px-4 py-4 border-b border-river-current/30">
               <Image
                 src="/banner-horizontal.png"
@@ -170,20 +170,16 @@ export function JucheHeader() {
                   <p className="text-xs uppercase tracking-wider text-sovereign-gold/80 font-semibold mb-3 px-1">Featured</p>
                 </li>
 
-                <li className="transform transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1">
-                  <Link href="/gallery" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-gradient-to-r from-river-current to-river-mid text-cream font-semibold transition-all duration-300 shadow-md hover:shadow-lg border border-sovereign-gold/30">
-                    <span className="flex items-center gap-2">
-                      <span className="text-lg">📸</span>
-                      <span>{t('gallery')}</span>
-                    </span>
+                <li>
+                  <Link href="/gallery" onClick={() => setIsMenuOpen(false)} className="group flex items-center justify-between px-4 py-3.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-cream transition-all duration-300">
+                    <span className="font-medium tracking-wide">{t('gallery')}</span>
+                    <ArrowRight className="w-4 h-4 text-cream-muted group-hover:text-cream transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
                 </li>
-                <li className="transform transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1">
-                  <Link href="/truth-project" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-gradient-to-r from-korean-red/80 to-korean-red text-cream font-semibold transition-all duration-300 shadow-md hover:shadow-lg border border-korean-red/40">
-                    <span className="flex items-center gap-2">
-                      <span className="text-lg">🌍</span>
-                      <span>{t('truthProject')}</span>
-                    </span>
+                <li>
+                  <Link href="/truth-project" onClick={() => setIsMenuOpen(false)} className="group flex items-center justify-between px-4 py-3.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-cream transition-all duration-300 mt-2">
+                    <span className="font-medium tracking-wide">{t('truthProject')}</span>
+                    <ArrowRight className="w-4 h-4 text-cream-muted group-hover:text-cream transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
                 </li>
                 <li className="pt-6 mt-4 border-t border-river-current/30">
