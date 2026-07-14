@@ -22,6 +22,14 @@ export default function BriefingsContent() {
   // Split items into "featured" and "standard" to map them to the bento grid easily
   const featuredBriefings = [
     {
+      date: "Jul 2026",
+      badge: "NEW",
+      title: "The Score That Does Not Exist — 존재하지 않는 점수",
+      desc: "The unified Chinese citizen score is a Western invention. The scoring-and-lending machine was built in London and San Francisco, carried east by Goldman Sachs alumni — and shut down at scale by exactly one government. Bilingual white paper, every claim verified against primary sources.",
+      href: "/briefings/score-that-does-not-exist",
+      colSpan: "md:col-span-2 lg:col-span-6"
+    },
+    {
       date: "Mar 2026",
       badge: "NEW",
       title: "Blowback — 역풍: 테러 지정의 무기화",
