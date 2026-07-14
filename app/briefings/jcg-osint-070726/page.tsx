@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
+import { StructuredData } from "@/components/structured-data"
 import Link from "next/link"
 import { OsintContent } from "./osint-content"
 
@@ -32,6 +33,17 @@ export default function OsintReportPage() {
   return (
     <main className="min-h-[100dvh] bg-river-depths text-cream">
       <JucheHeader />
+      <StructuredData
+        type="article"
+        data={{
+          title: "JCG-OSINT 070726: Islamabad Memorandum in Open Breach",
+          description: "주체강 OSINT serialized report: key judgments with confidence levels, the twenty-day breach ledger, and peninsula implications.",
+          url: "https://juche.org/briefings/jcg-osint-070726",
+          image: "https://juche.org/gallery/paektu-hero-4.webp",
+          publishedDate: "2026-07-07",
+          modifiedDate: "2026-07-07",
+        }}
+      />
 
       {/* Classification banner */}
       <div className="bg-river-deep border-b border-sovereign-gold/40 pt-20 sm:pt-24">

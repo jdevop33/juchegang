@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
+import { StructuredData } from "@/components/structured-data"
 import Link from "next/link"
 import { MirageShieldContent } from "./mirage-shield-content"
 
@@ -32,6 +33,17 @@ export default function MirageShieldPage() {
   return (
     <main className="min-h-[100dvh] bg-river-depths text-cream">
       <JucheHeader />
+      <StructuredData
+        type="article"
+        data={{
+          title: "The Mirage of the Impenetrable Shield",
+          description: "Thirty-five years of combat data on ballistic missile defense: the verified record versus the marketing.",
+          url: "https://juche.org/briefings/mirage-shield",
+          image: "https://juche.org/gallery/paektu-hero-4.webp",
+          publishedDate: "2026-07-07",
+          modifiedDate: "2026-07-07",
+        }}
+      />
 
       {/* Classification Header */}
       <section className="border-b border-river-current pt-20 sm:pt-24">

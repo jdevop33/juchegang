@@ -1,5 +1,3 @@
-import Script from 'next/script'
-
 interface StructuredDataProps {
   type: 'homepage' | 'law' | 'article' | 'organization'
   data?: any
@@ -151,7 +149,9 @@ export function StructuredData({ type, data }: StructuredDataProps) {
   if (!structuredData) return null
 
   return (
-    <Script
+    // Plain script tag so the JSON-LD ships in the initial HTML for crawlers,
+    // instead of being injected after hydration by next/script.
+    <script
       id={`structured-data-${type}`}
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

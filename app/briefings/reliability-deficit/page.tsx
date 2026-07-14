@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
+import { StructuredData } from "@/components/structured-data"
 import Link from "next/link"
 import { ReliabilityDeficitContent } from "./reliability-deficit-content"
 
@@ -32,6 +33,17 @@ export default function ReliabilityDeficitPage() {
   return (
     <main className="min-h-[100dvh] bg-river-depths text-cream">
       <JucheHeader />
+      <StructuredData
+        type="article"
+        data={{
+          title: "The Reliability Deficit",
+          description: "The Islamabad Memorandum in open breach: the collapse ledger, the license problem, and the deficit no signature can fix.",
+          url: "https://juche.org/briefings/reliability-deficit",
+          image: "https://juche.org/gallery/paektu-hero-4.webp",
+          publishedDate: "2026-07-07",
+          modifiedDate: "2026-07-07",
+        }}
+      />
 
       {/* Classification Header */}
       <section className="border-b border-river-current pt-20 sm:pt-24">

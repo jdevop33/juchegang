@@ -10,7 +10,7 @@ function SectionHead({
 }) {
   return (
     <div className="mt-20 mb-8 pt-10 border-t border-sovereign-gold/20">
-      <h2 className="font-serif text-[26px] font-bold leading-[1.3] text-cream">
+      <h2 className="font-display text-[26px] font-bold leading-[1.3] text-cream">
         <span className="font-mono text-[15px] text-sovereign-gold mr-4">
           {num}
         </span>
@@ -22,7 +22,7 @@ function SectionHead({
 
 function MinorHead({ children }: { children: React.ReactNode }) {
   return (
-    <h3 className="font-serif text-[19px] font-bold text-sovereign-gold mt-10 mb-4">
+    <h3 className="font-display text-[19px] font-bold text-sovereign-gold mt-10 mb-4">
       {children}
     </h3>
   )
@@ -135,7 +135,7 @@ export function MirageShieldContent() {
             iPurpose · Strategic Briefing №01 · Missile Defense · July 2026
           </div>
 
-          <h1 className="font-serif font-black text-[clamp(32px,5.5vw,58px)] leading-[1.12] mb-8">
+          <h1 className="font-display font-black text-[clamp(32px,5.5vw,58px)] leading-[1.12] mb-8">
             The Mirage of the Impenetrable Shield
           </h1>
 
@@ -259,7 +259,7 @@ export function MirageShieldContent() {
         </p>
 
         <div className="border-l-[3px] border-sovereign-gold bg-river-current/30 pl-7 pr-5 py-5 my-10">
-          <p className="font-serif text-[20px] font-normal leading-[1.5] text-river-mist italic mb-3">
+          <p className="font-display text-[20px] font-normal leading-[1.5] text-river-mist italic mb-3">
             &ldquo;They haven&rsquo;t intercepted one missile.&rdquo;
           </p>
           <p className="font-mono text-[11px] text-cream-muted tracking-wider uppercase mb-0">
@@ -610,7 +610,7 @@ export function MirageShieldContent() {
 
         {/* ─── SOURCES ─── */}
         <div className="mt-16 pt-10 border-t border-sovereign-gold/20">
-          <h2 className="font-serif text-[22px] font-bold text-cream mb-5">
+          <h2 className="font-display text-[22px] font-bold text-cream mb-5">
             Sources and method
           </h2>
           <p className="text-[14px] text-cream-muted leading-[1.8] mb-4">

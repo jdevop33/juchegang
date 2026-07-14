@@ -14,7 +14,7 @@ function DataCard({
     <div className="bg-river-deep border border-sovereign-gold/15 rounded px-7 py-7 my-10">
       <div
         className="text-[11px] font-bold tracking-[3px] uppercase mb-3"
-        style={{ fontFamily: "'Noto Serif KR', serif", color: "#d4a74a" }}
+        style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif", color: "#d4a74a" }}
       >
         {label}
       </div>
@@ -31,7 +31,7 @@ function DataCard({
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (
     <div className="border-l-[3px] border-sovereign-gold pl-7 py-5 my-10">
-      <p className="font-serif text-[22px] font-normal leading-[1.5] text-river-mist italic">
+      <p className="font-display text-[22px] font-normal leading-[1.5] text-river-mist italic">
         {children}
       </p>
     </div>
@@ -49,11 +49,11 @@ function SectionHeader({
     <div className="mt-20 mb-10 pt-10 border-t border-sovereign-gold/20">
       <span
         className="text-[14px] font-bold tracking-[4px] text-sovereign-gold block mb-3"
-        style={{ fontFamily: "'Noto Serif KR', serif" }}
+        style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
       >
         {korean}
       </span>
-      <h2 className="font-serif text-[28px] font-bold leading-[1.3] text-cream">
+      <h2 className="font-display text-[28px] font-bold leading-[1.3] text-cream">
         {title}
       </h2>
     </div>
@@ -89,7 +89,7 @@ export function BlowbackContent() {
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
           style={{
-            fontFamily: "'Noto Serif KR', serif",
+            fontFamily: "var(--font-korean), 'Noto Serif KR', serif",
             fontSize: "40vw",
             fontWeight: 700,
             color: "rgba(212, 167, 74, 0.03)",
@@ -101,18 +101,18 @@ export function BlowbackContent() {
         <div className="relative z-10 flex flex-col items-center">
           <div
             className="text-lg font-bold tracking-[6px] text-sovereign-gold mb-12"
-            style={{ fontFamily: "'Noto Serif KR', serif" }}
+            style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
           >
             주체강
           </div>
 
-          <h1 className="font-serif font-black text-[clamp(36px,6vw,64px)] leading-[1.15] max-w-[800px] mb-6">
+          <h1 className="font-display font-black text-[clamp(36px,6vw,64px)] leading-[1.15] max-w-[800px] mb-6">
             Blowback
           </h1>
 
           <div
             className="text-[clamp(18px,3vw,28px)] text-sovereign-gold mb-12 tracking-[2px]"
-            style={{ fontFamily: "'Noto Serif KR', serif" }}
+            style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
           >
             역풍: 테러 지정의 무기화
           </div>
@@ -691,7 +691,7 @@ export function BlowbackContent() {
       >
         <div
           className="text-lg font-bold tracking-[6px] text-sovereign-gold mb-4"
-          style={{ fontFamily: "'Noto Serif KR', serif" }}
+          style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
         >
           주체강
         </div>

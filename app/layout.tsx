@@ -1,6 +1,6 @@
 import type React from "react"
 import "@/app/globals.css"
-import { Inter, Noto_Serif_KR } from "next/font/google"
+import { Inter, Noto_Serif_KR, JetBrains_Mono, Playfair_Display } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
 import { getServerLanguage, type Language } from "@/lib/i18n-server"
@@ -29,6 +29,23 @@ const notoSerifKR = Noto_Serif_KR({
 const interHeading = Inter({
   subsets: ["latin"],
   variable: "--font-heading",
+  display: "swap",
+})
+
+// Serialized-report typography - JetBrains Mono for serials, labels, and stats
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-jetbrains",
+  display: "swap",
+})
+
+// Document display serif - Playfair Display per the white-paper masthead spec
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["700", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-display",
   display: "swap",
 })
 
@@ -185,7 +202,7 @@ export default async function RootLayout({
           strategy="afterInteractive"
         />
       </head>
-      <body className={`${inter.variable} ${notoSerifKR.variable} ${interHeading.variable} font-sans tracking-tight`}>
+      <body className={`${inter.variable} ${notoSerifKR.variable} ${interHeading.variable} ${jetbrainsMono.variable} ${playfairDisplay.variable} font-sans tracking-tight`}>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:rounded-md focus:bg-primary focus:text-primary-foreground"

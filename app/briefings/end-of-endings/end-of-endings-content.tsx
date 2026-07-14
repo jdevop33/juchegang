@@ -15,7 +15,7 @@ function PartHeader({
       <span className="font-mono text-[13px] font-bold tracking-[4px] text-sovereign-gold block mb-3 uppercase">
         Part {numeral}
       </span>
-      <h2 className="font-serif text-[28px] font-bold leading-[1.3] text-cream">
+      <h2 className="font-display text-[28px] font-bold leading-[1.3] text-cream">
         {title}
       </h2>
       {note && (
@@ -27,7 +27,7 @@ function PartHeader({
 
 function SubHead({ id, children }: { id: string; children: React.ReactNode }) {
   return (
-    <h3 className="font-serif text-[20px] font-bold text-sovereign-gold mt-12 mb-4">
+    <h3 className="font-display text-[20px] font-bold text-sovereign-gold mt-12 mb-4">
       <span className="font-mono text-[14px] text-cream-muted mr-3">{id}</span>
       {children}
     </h3>
@@ -56,7 +56,7 @@ function Diamond() {
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (
     <div className="border-l-[3px] border-sovereign-gold bg-river-current/30 pl-7 pr-5 py-5 my-10">
-      <p className="font-serif text-[20px] font-normal leading-[1.5] text-river-mist italic">
+      <p className="font-display text-[20px] font-normal leading-[1.5] text-river-mist italic">
         {children}
       </p>
     </div>
@@ -130,7 +130,7 @@ export function EndOfEndingsContent() {
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
           style={{
-            fontFamily: "'Noto Serif KR', serif",
+            fontFamily: "var(--font-korean), 'Noto Serif KR', serif",
             fontSize: "38vw",
             fontWeight: 700,
             color: "rgba(212, 167, 74, 0.04)",
@@ -144,7 +144,7 @@ export function EndOfEndingsContent() {
             Juche Gang Research Division
           </div>
 
-          <h1 className="font-serif font-black text-[clamp(36px,6vw,64px)] leading-[1.12] max-w-[820px] mb-6">
+          <h1 className="font-display font-black text-[clamp(36px,6vw,64px)] leading-[1.12] max-w-[820px] mb-6">
             The End of Endings
           </h1>
 
@@ -722,7 +722,7 @@ export function EndOfEndingsContent() {
 
         {/* ─── REFERENCES ─── */}
         <div className="mt-16 pt-10 border-t border-sovereign-gold/20">
-          <h2 className="font-serif text-[22px] font-bold text-cream mb-5">
+          <h2 className="font-display text-[22px] font-bold text-cream mb-5">
             References &amp; Data Sources
           </h2>
           <p className="text-[14px] text-cream-muted leading-[1.8]">
@@ -751,7 +751,7 @@ export function EndOfEndingsContent() {
       >
         <div
           className="text-lg font-bold tracking-[6px] text-sovereign-gold mb-4"
-          style={{ fontFamily: "'Noto Serif KR', serif" }}
+          style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
         >
           주체강
         </div>

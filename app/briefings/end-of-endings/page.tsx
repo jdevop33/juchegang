@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
+import { StructuredData } from "@/components/structured-data"
 import Link from "next/link"
 import { EndOfEndingsContent } from "./end-of-endings-content"
 
@@ -32,6 +33,17 @@ export default function EndOfEndingsPage() {
   return (
     <main className="min-h-[100dvh] bg-river-depths text-cream">
       <JucheHeader />
+      <StructuredData
+        type="article"
+        data={{
+          title: "The End of Endings",
+          description: "A grand audit of war termination, historical revisionism, and the algorithmic precipice.",
+          url: "https://juche.org/briefings/end-of-endings",
+          image: "https://juche.org/gallery/paektu-hero-4.webp",
+          publishedDate: "2026-07-14",
+          modifiedDate: "2026-07-14",
+        }}
+      />
 
       {/* Classification Header */}
       <section className="border-b border-river-current pt-20 sm:pt-24">

@@ -10,7 +10,7 @@ function SectionHead({
 }) {
   return (
     <div className="mt-20 mb-8 pt-10 border-t border-sovereign-gold/20">
-      <h2 className="font-serif text-[26px] font-bold leading-[1.3] text-cream">
+      <h2 className="font-display text-[26px] font-bold leading-[1.3] text-cream">
         <span className="font-mono text-[15px] text-sovereign-gold mr-4">
           {num}
         </span>
@@ -65,7 +65,7 @@ function OnRecord({
       <p className="font-mono text-[11px] tracking-[0.14em] uppercase text-sovereign-gold mb-3">
         {who} <span className="text-cream-muted">· {where}</span>
       </p>
-      <p className="font-serif text-[19px] italic leading-[1.5] text-river-mist mb-3">
+      <p className="font-display text-[19px] italic leading-[1.5] text-river-mist mb-3">
         &ldquo;{quote}&rdquo;
       </p>
       <p className="text-[14px] text-cream-muted leading-relaxed">
@@ -116,7 +116,7 @@ export function TributeBillContent() {
             iPurpose · Market Structure Brief · MS-2026-0713
           </div>
 
-          <h1 className="font-serif font-black text-[clamp(38px,6.5vw,68px)] leading-[1.1] max-w-[780px] mb-6">
+          <h1 className="font-display font-black text-[clamp(38px,6.5vw,68px)] leading-[1.1] max-w-[780px] mb-6">
             The Tribute Bill
           </h1>
 
@@ -387,7 +387,7 @@ export function TributeBillContent() {
         </p>
 
         <div className="border-l-[3px] border-sovereign-gold bg-river-current/30 pl-7 pr-5 py-5 my-10">
-          <p className="font-serif text-[20px] font-normal leading-[1.5] text-river-mist italic">
+          <p className="font-display text-[20px] font-normal leading-[1.5] text-river-mist italic">
             Washington&rsquo;s most powerful economic weapon works only as long
             as the world needs the dollar more than it fears it. This bill is
             the largest single test of that balance ever proposed.

@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
+import { StructuredData } from "@/components/structured-data"
 import Link from "next/link"
 import { TributeBillContent } from "./tribute-bill-content"
 
@@ -32,6 +33,17 @@ export default function TributeBillPage() {
   return (
     <main className="min-h-[100dvh] bg-river-depths text-cream">
       <JucheHeader />
+      <StructuredData
+        type="article"
+        data={{
+          title: "The Tribute Bill",
+          description: "Lindsey Graham's last act, the 500 percent tariff, and the de-dollarization it may end up financing.",
+          url: "https://juche.org/briefings/tribute-bill",
+          image: "https://juche.org/gallery/paektu-hero-4.webp",
+          publishedDate: "2026-07-13",
+          modifiedDate: "2026-07-13",
+        }}
+      />
 
       {/* Classification Header */}
       <section className="border-b border-river-current pt-20 sm:pt-24">
