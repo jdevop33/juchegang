@@ -2,6 +2,7 @@ import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
 import { StructuredData } from "@/components/structured-data"
+import { BriefingRail } from "@/components/briefing-rail"
 import Link from "next/link"
 import { EndOfEndingsContent } from "./end-of-endings-content"
 
@@ -13,19 +14,10 @@ export const metadata = {
     title: "The End of Endings",
     description:
       "War termination theory from Thucydides to flash wars. The defeated do not disappear; they write memoirs, they form underground movements, and today, they train AI models.",
-    images: [
-      {
-        url: "/gallery/paektu-hero-2.webp",
-        width: 1200,
-        height: 630,
-        alt: "Milky way over the Paektu crater at night",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image" as const,
     title: "The End of Endings: War Termination and the Algorithmic Precipice",
-    images: ["/gallery/paektu-hero-2.webp"],
   },
 }
 
@@ -74,6 +66,7 @@ export default function EndOfEndingsPage() {
 
       <EndOfEndingsContent />
 
+      <BriefingRail />
       <JucheFooter />
     </main>
   )

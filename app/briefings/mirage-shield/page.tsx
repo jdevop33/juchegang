@@ -2,6 +2,7 @@ import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
 import { StructuredData } from "@/components/structured-data"
+import { BriefingRail } from "@/components/briefing-rail"
 import Link from "next/link"
 import { MirageShieldContent } from "./mirage-shield-content"
 
@@ -13,19 +14,10 @@ export const metadata = {
     title: "The Mirage of the Impenetrable Shield",
     description:
       "From the Patriot's 96 percent that became 9 percent to the interceptor drain of the 2025 Israel-Iran war. Every time leadership believed the shield was impenetrable, the threshold for war dropped.",
-    images: [
-      {
-        url: "/gallery/paektu-hero-4.webp",
-        width: 1200,
-        height: 630,
-        alt: "Heaven Lake at Mount Paektu at sunset",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image" as const,
     title: "The Mirage of the Impenetrable Shield: Missile Defense 1991-2026",
-    images: ["/gallery/paektu-hero-4.webp"],
   },
 }
 
@@ -74,6 +66,7 @@ export default function MirageShieldPage() {
 
       <MirageShieldContent />
 
+      <BriefingRail />
       <JucheFooter />
     </main>
   )

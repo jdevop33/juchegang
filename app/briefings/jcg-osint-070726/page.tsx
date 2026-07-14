@@ -2,6 +2,7 @@ import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
 import { StructuredData } from "@/components/structured-data"
+import { BriefingRail } from "@/components/briefing-rail"
 import Link from "next/link"
 import { OsintContent } from "./osint-content"
 
@@ -13,19 +14,10 @@ export const metadata = {
     title: "JCG-OSINT 070726 — 주체강 Serialized Report",
     description:
       "Iran–United States: the Islamabad Memorandum in open breach. Six key judgments, the twenty-day breach ledger, the license problem, and what Seoul should read in this file.",
-    images: [
-      {
-        url: "/gallery/paektu-hero-2.webp",
-        width: 1200,
-        height: 630,
-        alt: "Milky way over the Paektu crater at night",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image" as const,
     title: "JCG-OSINT 070726: Islamabad Memorandum in Open Breach",
-    images: ["/gallery/paektu-hero-2.webp"],
   },
 }
 
@@ -81,6 +73,7 @@ export default function OsintReportPage() {
 
       <OsintContent />
 
+      <BriefingRail />
       <JucheFooter />
     </main>
   )
