@@ -32,7 +32,7 @@ export function HeroSection() {
           className="object-cover object-[center_60%] opacity-90"
           priority
           sizes="100vw"
-          quality={100}
+          quality={80}
         />
         {/* Layered gradient for cinematic depth */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a] via-[#0d1b2a]/60 to-transparent pointer-events-none" />

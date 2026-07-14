@@ -27,6 +27,22 @@ export default function BriefingsContent() {
       title: "The Score That Does Not Exist — 존재하지 않는 점수",
       desc: "The unified Chinese citizen score is a Western invention. The scoring-and-lending machine was built in London and San Francisco, carried east by Goldman Sachs alumni — and shut down at scale by exactly one government. Bilingual white paper, every claim verified against primary sources.",
       href: "/briefings/score-that-does-not-exist",
+      colSpan: "md:col-span-2 lg:col-span-3"
+    },
+    {
+      date: "Jul 2026",
+      badge: "NEW",
+      title: "The End of Endings",
+      desc: "A grand audit of war termination, historical revisionism, and the algorithmic precipice. Why wars no longer end, who writes the history when they do, and what happens when machines inherit both jobs. From Thucydides to flash wars.",
+      href: "/briefings/end-of-endings",
+      colSpan: "md:col-span-2 lg:col-span-3"
+    },
+    {
+      date: "Jul 2026",
+      badge: "OSINT",
+      title: "JCG-OSINT 070726 — Islamabad Memorandum in Open Breach",
+      desc: "Tehran enforces the Hormuz corridor by fire; Washington revokes its own sixteen-day-old oil waiver and resumes strikes; twelve million mourn a martyred leader. Six key judgments with confidence levels, the twenty-day breach ledger, and what Seoul should read in this file.",
+      href: "/briefings/jcg-osint-070726",
       colSpan: "md:col-span-2 lg:col-span-6"
     },
     {
@@ -72,6 +88,27 @@ export default function BriefingsContent() {
   ]
 
   const secondaryBriefings = [
+    {
+      date: "Jul 2026",
+      badge: "NEW",
+      title: "The Reliability Deficit",
+      desc: "The Islamabad Memorandum in open breach, twenty days after signature. The collapse ledger, the license problem, twelve million mourners as strategic data, and the deficit no signature can fix. iPurpose Strategic Briefing №02.",
+      href: "/briefings/reliability-deficit",
+    },
+    {
+      date: "Jul 2026",
+      badge: "NEW",
+      title: "The Mirage of the Impenetrable Shield",
+      desc: "Thirty-five years of missile defense combat data: 96% claims that became 9%, a shield defeated by a software update, and interceptors that cost 18 to 120 times their targets. iPurpose Strategic Briefing №01.",
+      href: "/briefings/mirage-shield",
+    },
+    {
+      date: "Jul 2026",
+      badge: "NEW",
+      title: "The Tribute Bill",
+      desc: "Lindsey Graham's last act, the 500 percent tariff, and the de-dollarization it may end up financing. Market structure brief: on-record quotes from four named officials, the two-layer diagram, four watch markers, and the caveats.",
+      href: "/briefings/tribute-bill",
+    },
     {
       date: "Mar 2026",
       badge: "NEW",
@@ -199,7 +236,7 @@ export default function BriefingsContent() {
             className="object-cover scale-105 opacity-90"
             priority
             sizes="100vw"
-            quality={100}
+            quality={80}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/50 via-transparent to-transparent pointer-events-none" />
         </motion.div>
