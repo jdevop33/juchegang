@@ -8,7 +8,7 @@ export const metadata = {
     title: "Sovereign Wealth Seizures Through History",
     description: "How different cultures, legal traditions, and historical experiences shape radically divergent views on when sovereign asset seizures can be justified.",
     images: [
-      { url: "/gallery/sovereign-wealth.jpg", width: 1200, height: 630, alt: "Sovereign Wealth Investigation" },
+      { url: "/gallery/paektu-hero-4.webp", width: 1200, height: 630, alt: "Sovereign Wealth Investigation" },
     ],
   },
 }

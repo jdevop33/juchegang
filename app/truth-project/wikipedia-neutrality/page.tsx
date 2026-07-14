@@ -8,7 +8,7 @@ export const metadata = {
     title: "Wikipedia's Contested Neutrality: A Comprehensive Investigation",
     description: "Mounting evidence reveals systematic vulnerabilities to bias, institutional capture, and geopolitical manipulation in the world's largest collaborative knowledge project.",
     images: [
-      { url: "/gallery/wikipedia-neutrality.jpg", width: 1200, height: 630, alt: "Wikipedia Neutrality Investigation" },
+      { url: "/gallery/paektu-hero-4.webp", width: 1200, height: 630, alt: "Wikipedia Neutrality Investigation" },
     ],
   },
 }

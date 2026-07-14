@@ -8,7 +8,7 @@ export const metadata = {
     title: "Wikipedia's Hidden Power: Inside the bureaucrat system",
     description: "Research reveals how 16 anonymous bureaucrats control the world's largest encyclopedia, with documented bias and resistance to reform.",
     images: [
-      { url: "/gallery/wikipedia-investigation.jpg", width: 1200, height: 630, alt: "Wikipedia Investigation" },
+      { url: "/gallery/paektu-hero-2.webp", width: 1200, height: 630, alt: "Wikipedia Investigation" },
     ],
   },
 }
