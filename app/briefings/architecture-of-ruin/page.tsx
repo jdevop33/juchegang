@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
+import { BriefingRail } from "@/components/briefing-rail"
 import Link from "next/link"
 import { ArchitectureOfRuinContent } from "./architecture-of-ruin-content"
 
@@ -58,6 +59,7 @@ export default function ArchitectureOfRuinPage() {
 
       <ArchitectureOfRuinContent />
 
+      <BriefingRail />
       <JucheFooter />
     </main>
   )
