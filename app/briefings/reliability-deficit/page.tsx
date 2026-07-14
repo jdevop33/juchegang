@@ -2,6 +2,7 @@ import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
 import { StructuredData } from "@/components/structured-data"
+import { BriefingRail } from "@/components/briefing-rail"
 import Link from "next/link"
 import { ReliabilityDeficitContent } from "./reliability-deficit-content"
 
@@ -13,19 +14,10 @@ export const metadata = {
     title: "The Reliability Deficit",
     description:
       "Relief delivered by revocable license is relief the other side correctly prices at near zero. A deal in which one party is sole judge of performance is not a deal but a probation order.",
-    images: [
-      {
-        url: "/gallery/paektu-hero-2.webp",
-        width: 1200,
-        height: 630,
-        alt: "Milky way over the Paektu crater at night",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image" as const,
     title: "The Reliability Deficit: The Islamabad Memorandum in Open Breach",
-    images: ["/gallery/paektu-hero-2.webp"],
   },
 }
 
@@ -74,6 +66,7 @@ export default function ReliabilityDeficitPage() {
 
       <ReliabilityDeficitContent />
 
+      <BriefingRail />
       <JucheFooter />
     </main>
   )

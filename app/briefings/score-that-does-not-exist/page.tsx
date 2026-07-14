@@ -2,6 +2,7 @@ import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
 import { StructuredData } from "@/components/structured-data"
+import { BriefingRail } from "@/components/briefing-rail"
 import Link from "next/link"
 import { ScoreContent } from "./score-content"
 
@@ -13,19 +14,10 @@ export const metadata = {
     title: "The Score That Does Not Exist — 존재하지 않는 점수",
     description:
       "The unified Chinese citizen score is a Western invention. The scoring-and-lending machine was built in London and San Francisco — and only one government shut it down.",
-    images: [
-      {
-        url: "/gallery/paektu-hero-4.webp",
-        width: 1200,
-        height: 630,
-        alt: "Heaven Lake at Mount Paektu at sunset",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image" as const,
     title: "The Score That Does Not Exist — 존재하지 않는 점수",
-    images: ["/gallery/paektu-hero-4.webp"],
   },
 }
 
@@ -74,6 +66,7 @@ export default function ScoreThatDoesNotExistPage() {
 
       <ScoreContent />
 
+      <BriefingRail />
       <JucheFooter />
     </main>
   )

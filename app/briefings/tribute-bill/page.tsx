@@ -2,6 +2,7 @@ import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
 import { StructuredData } from "@/components/structured-data"
+import { BriefingRail } from "@/components/briefing-rail"
 import Link from "next/link"
 import { TributeBillContent } from "./tribute-bill-content"
 
@@ -13,19 +14,10 @@ export const metadata = {
     title: "The Tribute Bill",
     description:
       "A weapon that dulls with every swing, and the heaviest swing yet proposed, taken in memoriam. The mechanics of the Sanctioning Russia Act and the two-layer oil market.",
-    images: [
-      {
-        url: "/gallery/paektu-hero-4.webp",
-        width: 1200,
-        height: 630,
-        alt: "Heaven Lake at Mount Paektu at sunset",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image" as const,
     title: "The Tribute Bill: The 500 Percent Tariff and De-Dollarization",
-    images: ["/gallery/paektu-hero-4.webp"],
   },
 }
 
@@ -74,6 +66,7 @@ export default function TributeBillPage() {
 
       <TributeBillContent />
 
+      <BriefingRail />
       <JucheFooter />
     </main>
   )
