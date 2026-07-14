@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
+import { BriefingRail } from "@/components/briefing-rail"
 import Link from "next/link"
 import { BlowbackContent } from "./blowback-content"
 
@@ -62,6 +63,7 @@ export default function BlowbackPage() {
 
       <BlowbackContent />
 
+      <BriefingRail />
       <JucheFooter />
     </main>
   )

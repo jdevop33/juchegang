@@ -4,12 +4,30 @@ import Link from "next/link"
 import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { useRef } from "react"
-import { FileText, ArrowRight } from "lucide-react"
+import { useEffect, useRef, useState } from "react"
+import { FileText, ArrowRight, Search, X } from "lucide-react"
 
 export default function BriefingsContent() {
   const { t, language } = useLanguage()
   const heroRef = useRef<HTMLDivElement>(null)
+  const [query, setQuery] = useState("")
+
+  // Honor the ?q= param advertised by the site's SearchAction schema
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get("q")
+    if (q) setQuery(q)
+  }, [])
+
+  const updateQuery = (value: string) => {
+    setQuery(value)
+    const url = new URL(window.location.href)
+    if (value.trim()) {
+      url.searchParams.set("q", value)
+    } else {
+      url.searchParams.delete("q")
+    }
+    history.replaceState(null, "", url.toString())
+  }
   
   const { scrollYProgress: heroScroll } = useScroll({
     target: heroRef,
@@ -205,6 +223,9 @@ export default function BriefingsContent() {
     }
   ]
 
+  const trimmedQuery = query.trim().toLowerCase()
+  const isSearching = trimmedQuery.length > 0
+
   const translatedBriefings = [
     { title: t('iranSnapbackTitle'), desc: t('iranSnapbackDesc'), href: "/briefings/iran-snapback" },
     { title: t('natoExpansionTitle'), desc: t('natoExpansionDesc'), href: "/briefings/nato-expansion" },
@@ -220,6 +241,28 @@ export default function BriefingsContent() {
     { title: t('frozenConflictsTitle'), desc: t('frozenConflictsDesc'), href: "/briefings/frozen-conflicts-profit" },
     { title: t('aptDownFilesTitle'), desc: t('aptDownFilesDesc'), href: "/briefings/apt-down-files" }
   ]
+
+  type SearchEntry = { title: string; desc: string; href: string; date?: string; badge?: string }
+  const toEntry = (b: { title: string; desc: string; href: string } & Partial<SearchEntry>): SearchEntry => ({
+    title: b.title,
+    desc: b.desc,
+    href: b.href,
+    date: b.date,
+    badge: b.badge,
+  })
+  const allBriefings: SearchEntry[] = [
+    ...featuredBriefings.map(toEntry),
+    ...secondaryBriefings.map(toEntry),
+    ...translatedBriefings.map(toEntry),
+  ]
+
+  const results = isSearching
+    ? allBriefings.filter(
+        (b) =>
+          b.title.toLowerCase().includes(trimmedQuery) ||
+          b.desc.toLowerCase().includes(trimmedQuery)
+      )
+    : []
 
   return (
     <div className="min-h-[100dvh] bg-river-depths selection:bg-sovereign-gold/30 selection:text-sovereign-gold">
@@ -269,7 +312,88 @@ export default function BriefingsContent() {
       {/* Featured Briefings Bento */}
       <section className="relative z-10 px-4 mb-24 -mt-20">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
+          {/* Search */}
+          <div className="mb-10">
+            <label htmlFor="briefings-search" className="sr-only">
+              Search briefings
+            </label>
+            <div className="relative max-w-2xl">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-cream-muted pointer-events-none" />
+              <input
+                id="briefings-search"
+                type="search"
+                value={query}
+                onChange={(e) => updateQuery(e.target.value)}
+                placeholder="Search briefings by title or topic…"
+                className="w-full bg-river-deep border border-river-current/60 rounded-lg pl-11 pr-11 py-3 text-[15px] text-cream placeholder:text-cream-muted/60 focus:outline-none focus:border-sovereign-gold/60 focus:ring-2 focus:ring-sovereign-gold/20 transition-colors [&::-webkit-search-cancel-button]:hidden"
+              />
+              {isSearching && (
+                <button
+                  type="button"
+                  onClick={() => updateQuery("")}
+                  aria-label="Clear search"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-cream-muted hover:text-sovereign-gold transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              )}
+            </div>
+            {isSearching && (
+              <p className="mt-3 text-sm text-cream-muted">
+                {results.length === 0
+                  ? "No briefings match"
+                  : `${results.length} briefing${results.length === 1 ? "" : "s"} found`}
+                {" for "}
+                <span className="text-sovereign-gold">&ldquo;{query.trim()}&rdquo;</span>
+              </p>
+            )}
+          </div>
+
+          {/* Search results */}
+          {isSearching && (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {results.map((b) => (
+                <Link
+                  key={b.href}
+                  href={b.href}
+                  className="block relative p-6 rounded-xl border bg-[#0a1521] border-cream/5 hover:border-river-current/50 hover:bg-[#0e1c2c] transition-all duration-300 h-full flex flex-col"
+                >
+                  <div className="flex items-center gap-3 mb-4 min-h-[20px]">
+                    {b.badge && (
+                      <span className="px-2.5 py-1 text-[10px] font-bold tracking-wider rounded border bg-sovereign-gold/10 border-sovereign-gold/20 text-sovereign-gold">
+                        {b.badge}
+                      </span>
+                    )}
+                    {b.date && (
+                      <span className="text-cream/40 text-[10px] font-mono uppercase tracking-widest">
+                        {b.date}
+                      </span>
+                    )}
+                  </div>
+                  <h4 className="text-xl font-bold mb-3 font-[family-name:var(--font-heading)] text-cream/90 leading-snug">
+                    {b.title}
+                  </h4>
+                  <p className="text-sm leading-relaxed mb-6 flex-grow text-cream/60">
+                    {b.desc}
+                  </p>
+                  <div className="mt-auto inline-flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase text-river-current">
+                    Read <ArrowRight className="w-3 h-3" />
+                  </div>
+                </Link>
+              ))}
+              {results.length === 0 && (
+                <div className="md:col-span-2 lg:col-span-3 text-center py-16 border border-river-current/30 rounded-xl bg-river-deep/40">
+                  <FileText className="w-8 h-8 text-cream-muted/50 mx-auto mb-4" />
+                  <p className="text-cream/80 font-semibold mb-2">Nothing in the archive matches that.</p>
+                  <p className="text-sm text-cream-muted">
+                    Try a broader term, like &ldquo;sanctions&rdquo;, &ldquo;Korea&rdquo;, or &ldquo;missile&rdquo;.
+                  </p>
+                </div>
+              )}
+            </div>
+          )}
+
+          <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 ${isSearching ? "hidden" : ""}`}>
             {featuredBriefings.map((briefing, i) => (
               <motion.div
                 key={i}
@@ -312,7 +436,7 @@ export default function BriefingsContent() {
       </section>
 
       {/* Secondary Briefings Grid */}
-      <section className="relative z-10 px-4 py-24 border-t border-cream/5 bg-river-depths/50">
+      <section className={`relative z-10 px-4 py-24 border-t border-cream/5 bg-river-depths/50 ${isSearching ? "hidden" : ""}`}>
         <div className="container mx-auto max-w-7xl">
           <div className="flex items-center justify-between mb-12">
             <h3 className="text-2xl font-bold font-[family-name:var(--font-heading)] text-cream">Intelligence & Analysis</h3>
@@ -372,7 +496,7 @@ export default function BriefingsContent() {
       </section>
 
       {/* Translated / Core Briefings List */}
-      <section className="relative z-10 px-4 py-24 border-t border-cream/5 bg-[#050a10]">
+      <section className={`relative z-10 px-4 py-24 border-t border-cream/5 bg-[#050a10] ${isSearching ? "hidden" : ""}`}>
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <h3 className="text-2xl font-bold font-[family-name:var(--font-heading)] text-cream mb-4">Core Briefings Repository</h3>
