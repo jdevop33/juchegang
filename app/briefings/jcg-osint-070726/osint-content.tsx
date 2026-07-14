@@ -14,9 +14,9 @@ function SectionLabel({
     <div className="mt-20 mb-8 pt-10 border-t border-sovereign-gold/20">
       <p className="font-mono text-[11px] tracking-[0.24em] uppercase text-sovereign-gold mb-3">
         Section {num} ·{" "}
-        <span style={{ fontFamily: "'Noto Serif KR', serif" }}>{kr}</span>
+        <span style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}>{kr}</span>
       </p>
-      <h2 className="font-serif text-[25px] font-bold leading-[1.3] text-cream">
+      <h2 className="font-display text-[25px] font-bold leading-[1.3] text-cream">
         <span className="font-mono text-[13px] text-cream-muted mr-2">(U)</span>
         {children}
       </h2>
@@ -128,14 +128,14 @@ export function OsintContent() {
           <div className="flex items-center gap-4 mb-10">
             <span
               className="text-[34px] font-bold text-sovereign-gold leading-none"
-              style={{ fontFamily: "'Noto Serif KR', serif" }}
+              style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
             >
               강
             </span>
             <div>
               <p
                 className="text-[19px] font-bold text-sovereign-gold leading-tight"
-                style={{ fontFamily: "'Noto Serif KR', serif" }}
+                style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
               >
                 주체강
               </p>
@@ -170,7 +170,7 @@ export function OsintContent() {
             ))}
           </div>
 
-          <h1 className="font-serif font-black text-[clamp(26px,4vw,40px)] leading-[1.25] text-cream mb-4">
+          <h1 className="font-display font-black text-[clamp(26px,4vw,40px)] leading-[1.25] text-cream mb-4">
             <span className="font-mono text-[16px] text-cream-muted mr-2">
               (U)
             </span>
@@ -180,7 +180,7 @@ export function OsintContent() {
           </h1>
           <p
             className="text-[15px] text-sovereign-gold leading-relaxed"
-            style={{ fontFamily: "'Noto Serif KR', serif" }}
+            style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
           >
             이슬라마바드 양해각서: 서명 20일 만에 공개 파기 국면에 진입하였습니다.
             본 보고서는 검증된 사실만을 기술합니다.
@@ -477,12 +477,12 @@ export function OsintContent() {
         <div className="border-l-[3px] border-sovereign-gold bg-river-current/30 pl-7 pr-5 py-5 my-10">
           <p
             className="text-[17px] leading-[1.8] text-river-mist mb-3"
-            style={{ fontFamily: "'Noto Serif KR', serif" }}
+            style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
           >
             순교의 문법을 가진 문명의 지도자를 암살하면, 적을 제거하는 것이
             아니라 순교자를 창조하는 것입니다.
           </p>
-          <p className="font-serif text-[17px] italic leading-[1.5] text-cream-muted mb-0">
+          <p className="font-display text-[17px] italic leading-[1.5] text-cream-muted mb-0">
             Assassinate the leader of a civilization whose devotional grammar
             is martyrdom, and you do not remove an enemy. You manufacture a
             martyr.
@@ -730,7 +730,7 @@ export function OsintContent() {
 
         {/* ─── SOURCE ANNEX ─── */}
         <div className="mt-16 pt-10 border-t border-sovereign-gold/20">
-          <h2 className="font-serif text-[22px] font-bold text-cream mb-5">
+          <h2 className="font-display text-[22px] font-bold text-cream mb-5">
             (U) Source annex &amp; analytic standards
           </h2>
           <p className="text-[14px] text-cream-muted leading-[1.8] mb-4">
@@ -794,7 +794,7 @@ export function OsintContent() {
       >
         <div
           className="text-lg font-bold tracking-[6px] text-sovereign-gold mb-4"
-          style={{ fontFamily: "'Noto Serif KR', serif" }}
+          style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
         >
           주체강
         </div>

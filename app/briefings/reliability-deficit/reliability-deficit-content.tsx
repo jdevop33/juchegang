@@ -10,7 +10,7 @@ function SectionHead({
 }) {
   return (
     <div className="mt-20 mb-8 pt-10 border-t border-sovereign-gold/20">
-      <h2 className="font-serif text-[26px] font-bold leading-[1.3] text-cream">
+      <h2 className="font-display text-[26px] font-bold leading-[1.3] text-cream">
         <span className="font-mono text-[15px] text-sovereign-gold mr-4">
           {num}
         </span>
@@ -96,7 +96,7 @@ export function ReliabilityDeficitContent() {
             iPurpose · Strategic Briefing №02 · The Islamabad Memorandum · 7 July 2026
           </div>
 
-          <h1 className="font-serif font-black text-[clamp(36px,6vw,62px)] leading-[1.12] mb-8">
+          <h1 className="font-display font-black text-[clamp(36px,6vw,62px)] leading-[1.12] mb-8">
             The Reliability Deficit
           </h1>
 
@@ -704,7 +704,7 @@ export function ReliabilityDeficitContent() {
 
         {/* ─── SOURCES ─── */}
         <div className="mt-16 pt-10 border-t border-sovereign-gold/20">
-          <h2 className="font-serif text-[22px] font-bold text-cream mb-5">
+          <h2 className="font-display text-[22px] font-bold text-cream mb-5">
             Sources and method
           </h2>
           <p className="text-[14px] text-cream-muted leading-[1.8] mb-4">

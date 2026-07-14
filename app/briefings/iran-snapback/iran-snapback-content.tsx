@@ -181,9 +181,9 @@ function QuoteCard({ expert, language }: { expert: typeof expertQuotes[0], langu
         role="blockquote"
         aria-label={`Quote from ${expert.name}`}
       >
-        <span className="text-accent text-2xl leading-none font-serif" aria-hidden="true">"</span>
+        <span className="text-accent text-2xl leading-none font-display" aria-hidden="true">"</span>
         <span className="ml-1">{language === 'kr' ? expert.quote.kr : expert.quote.en}</span>
-        <span className="text-accent text-2xl leading-none font-serif ml-1" aria-hidden="true">"</span>
+        <span className="text-accent text-2xl leading-none font-display ml-1" aria-hidden="true">"</span>
       </blockquote>
     </article>
   )

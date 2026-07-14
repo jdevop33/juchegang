@@ -12,11 +12,11 @@ function SectionHeader({
     <div className="mt-20 mb-10 pt-10 border-t border-sovereign-gold/20">
       <span
         className="text-[14px] font-bold tracking-[4px] text-sovereign-gold block mb-3"
-        style={{ fontFamily: "'Noto Serif KR', serif" }}
+        style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
       >
         {korean}
       </span>
-      <h2 className="font-serif text-[28px] font-bold leading-[1.3] text-cream">
+      <h2 className="font-display text-[28px] font-bold leading-[1.3] text-cream">
         {title}
       </h2>
     </div>
@@ -69,7 +69,7 @@ function PullQuote({
 }) {
   return (
     <div className="border-l-[3px] border-sovereign-gold bg-river-current/30 pl-7 pr-5 py-5 my-10">
-      <p className="font-serif text-[20px] font-normal leading-[1.5] text-river-mist italic">
+      <p className="font-display text-[20px] font-normal leading-[1.5] text-river-mist italic">
         {children}
       </p>
       {attr && (
@@ -86,13 +86,13 @@ function KDivider({ hanja, label }: { hanja: string; label: string }) {
     <div className="flex items-center gap-4 mt-16 mb-6">
       <span
         className="text-[30px] font-bold text-korean-red leading-none"
-        style={{ fontFamily: "'Noto Serif KR', serif" }}
+        style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
       >
         {hanja}
       </span>
       <span
         className="text-[18px] font-bold text-sovereign-gold"
-        style={{ fontFamily: "'Noto Serif KR', serif" }}
+        style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
       >
         {label}
       </span>
@@ -120,13 +120,13 @@ function PartHeader({
       <div className="font-mono text-[11px] tracking-[0.28em] text-sovereign-gold mb-2 uppercase">
         {kicker}
       </div>
-      <div className="font-serif text-[26px] font-black text-cream leading-tight">
+      <div className="font-display text-[26px] font-black text-cream leading-tight">
         {title}
       </div>
       {koreanTitle && (
         <div
           className="text-[18px] font-bold text-sovereign-gold mt-1"
-          style={{ fontFamily: "'Noto Serif KR', serif" }}
+          style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
         >
           {koreanTitle}
         </div>
@@ -150,7 +150,7 @@ export function ScoreContent() {
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
           style={{
-            fontFamily: "'Noto Serif KR', serif",
+            fontFamily: "var(--font-korean), 'Noto Serif KR', serif",
             fontSize: "40vw",
             fontWeight: 700,
             color: "rgba(212, 167, 74, 0.05)",
@@ -166,7 +166,7 @@ export function ScoreContent() {
 
           <div
             className="text-lg font-bold tracking-[6px] text-sovereign-gold mb-10"
-            style={{ fontFamily: "'Noto Serif KR', serif" }}
+            style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
           >
             주체강
           </div>
@@ -175,13 +175,13 @@ export function ScoreContent() {
             Bilingual Edition · 한영 합본
           </div>
 
-          <h1 className="font-serif font-black text-[clamp(34px,5.5vw,60px)] leading-[1.15] max-w-[820px] mb-4">
+          <h1 className="font-display font-black text-[clamp(34px,5.5vw,60px)] leading-[1.15] max-w-[820px] mb-4">
             The Score That Does Not Exist
           </h1>
 
           <div
             className="text-[clamp(18px,3vw,28px)] text-sovereign-gold mb-10 tracking-[2px]"
-            style={{ fontFamily: "'Noto Serif KR', serif" }}
+            style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
           >
             존재하지 않는 점수
           </div>
@@ -193,7 +193,7 @@ export function ScoreContent() {
           </p>
           <p
             className="text-[14px] text-cream-muted max-w-[560px] leading-relaxed mb-12"
-            style={{ fontFamily: "'Noto Serif KR', serif" }}
+            style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
           >
             서방이 두려워한 사회신용점수의 실체, 그리고 중국이 멈춘 약탈적 대출
             기계에 관한 검증 보고서
@@ -625,7 +625,7 @@ export function ScoreContent() {
 
         <div
           className="text-[16px] leading-[1.9]"
-          style={{ fontFamily: "'Noto Serif KR', serif" }}
+          style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
         >
           <KDivider hanja="起" label="기 · 서방에 퍼진 이야기" />
           <p className="mb-5">
@@ -813,7 +813,7 @@ export function ScoreContent() {
       >
         <div
           className="text-lg font-bold tracking-[6px] text-sovereign-gold mb-4"
-          style={{ fontFamily: "'Noto Serif KR', serif" }}
+          style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
         >
           주체강
         </div>

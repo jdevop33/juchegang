@@ -109,7 +109,8 @@ const config: Config = {
         sans: ["var(--font-body)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
         heading: ["var(--font-heading)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
         korean: ["var(--font-korean)", "Noto Serif KR", "Apple SD Gothic Neo", "Malgun Gothic", "serif"],
-        mono: ["JetBrains Mono", "Fira Code", "Consolas", "monospace"],
+        mono: ["var(--font-jetbrains)", "JetBrains Mono", "Fira Code", "Consolas", "monospace"],
+        display: ["var(--font-display)", "Playfair Display", "Georgia", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

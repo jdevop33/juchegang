@@ -24,7 +24,7 @@ function DataCallout({
 function PullQuote({ children, attr }: { children: React.ReactNode; attr: string }) {
   return (
     <div className="border-t border-b border-sovereign-gold/30 py-10 my-12 text-center">
-      <p className="font-serif text-[clamp(20px,3vw,28px)] italic text-river-mist leading-relaxed max-w-[600px] mx-auto">
+      <p className="font-display text-[clamp(20px,3vw,28px)] italic text-river-mist leading-relaxed max-w-[600px] mx-auto">
         {children}
       </p>
       <div className="text-[13px] text-sovereign-gold tracking-[2px] uppercase mt-5">{attr}</div>
@@ -58,7 +58,7 @@ function CaseHeader({
     <div className="bg-river-deep px-6 sm:px-9 py-12 my-10 rounded relative overflow-hidden">
       <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-korean-red via-sovereign-gold to-river-current" />
       <div className="font-mono text-xs text-korean-red tracking-[3px] uppercase mb-3">{label}</div>
-      <h3 className="font-serif text-[clamp(24px,3.5vw,36px)] font-bold leading-tight">{title}</h3>
+      <h3 className="font-display text-[clamp(24px,3.5vw,36px)] font-bold leading-tight">{title}</h3>
       <div className="text-sm text-cream-muted mt-3">{meta}</div>
     </div>
   )
@@ -83,7 +83,7 @@ function SectionBreak({
   return (
     <div className="text-center py-20 px-6 max-w-[720px] mx-auto">
       <div className="w-[60px] h-[2px] bg-sovereign-gold mx-auto mb-10" />
-      <h2 className="font-serif text-[clamp(28px,4vw,42px)] font-bold leading-tight mb-4">
+      <h2 className="font-display text-[clamp(28px,4vw,42px)] font-bold leading-tight mb-4">
         {title}
       </h2>
       {korean && (
@@ -121,7 +121,7 @@ export function ArchitectureOfRuinContent() {
             주체강 &middot; Navigate the Current
           </div>
 
-          <h1 className="font-serif font-black text-[clamp(36px,7vw,80px)] leading-[1.05] max-w-[900px] mb-8">
+          <h1 className="font-display font-black text-[clamp(36px,7vw,80px)] leading-[1.05] max-w-[900px] mb-8">
             The Architecture<br />
             of <span className="text-sovereign-gold">Ruin</span>
           </h1>
@@ -727,7 +727,7 @@ export function ArchitectureOfRuinContent() {
         }}
       >
         <div className="text-[clamp(20px,3vw,28px)] text-river-mist leading-[1.8] max-w-[600px] mx-auto mb-8"
-          style={{ fontFamily: "'Noto Serif KR', serif" }}
+          style={{ fontFamily: "var(--font-korean), 'Noto Serif KR', serif" }}
         >
           무기는 분단을 영구화한다.<br />
           대화만이 통일을 만든다.<br />

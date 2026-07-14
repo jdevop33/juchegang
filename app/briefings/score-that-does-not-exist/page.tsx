@@ -1,6 +1,7 @@
 import { JucheHeader } from "@/components/juche-header"
 import { JucheFooter } from "@/components/juche-footer"
 import { LivingDocumentBadge } from "@/components/living-document-badge"
+import { StructuredData } from "@/components/structured-data"
 import Link from "next/link"
 import { ScoreContent } from "./score-content"
 
@@ -32,6 +33,17 @@ export default function ScoreThatDoesNotExistPage() {
   return (
     <main className="min-h-[100dvh] bg-river-depths text-cream">
       <JucheHeader />
+      <StructuredData
+        type="article"
+        data={{
+          title: "The Score That Does Not Exist — 존재하지 않는 점수",
+          description: "Social credit, reputation-scored lending, and the predatory machine China shut down while the West kept it running. Every claim verified against primary sources.",
+          url: "https://juche.org/briefings/score-that-does-not-exist",
+          image: "https://juche.org/gallery/paektu-hero-4.webp",
+          publishedDate: "2026-07-14",
+          modifiedDate: "2026-07-14",
+        }}
+      />
 
       {/* Classification Header */}
       <section className="border-b border-river-current pt-20 sm:pt-24">
