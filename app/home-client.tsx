@@ -11,11 +11,10 @@ import { FeaturedLaw } from "@/components/featured-law"
 import { useLanguage } from "@/contexts/language-context"
 import { TriptychDivider } from "@/components/triptych-divider"
 import { ReadingProgress } from "@/components/reading-progress"
-import { EnhancedLoading } from "@/components/enhanced-loading"
 import type { Law } from "@/types/law"
 import dynamic from "next/dynamic"
 import { StructuredData } from "@/components/structured-data"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 // Dynamic imports with better optimization
@@ -48,23 +47,15 @@ const ContactForm = dynamic(() => import("@/components/contact-form").then(mod =
 
 
 export default function HomeClient({ laws }: { laws: Law[] }) {
-  const [isLoaded, setIsLoaded] = useState(false)
-  const [showLoading, setShowLoading] = useState(false)
-  const [lawsLoading, setLawsLoading] = useState(true)
   useSmoothScroll()
   useScrollAnimation()
   const { t } = useLanguage()
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoaded(true)
-      setLawsLoading(false)
-    }, 100)
     if ('serviceWorker' in navigator && typeof window !== 'undefined') {
       const idle = (window as any).requestIdleCallback || ((cb: any) => setTimeout(cb, 2000))
       idle(() => navigator.serviceWorker.register('/sw.js'))
     }
-    return () => clearTimeout(timer)
   }, [])
 
   const featuredLaw1 = laws.find((law) => law.number === 1) || laws[0]
@@ -84,8 +75,7 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
     <>
       <StructuredData type="homepage" />
       <StructuredData type="organization" />
-      {showLoading && <EnhancedLoading onComplete={() => setShowLoading(false)} />}
-      <main id="main-content" className={`min-h-[100dvh] bg-river-depths text-foreground transition-opacity duration-1000 ${isLoaded && !showLoading ? "opacity-100" : "opacity-0"}`}>
+      <main id="main-content" className="min-h-[100dvh] bg-river-depths text-foreground">
         <ReadingProgress />
         <EnhancedHeader />
         <div className="pt-20">
@@ -121,13 +111,11 @@ export default function HomeClient({ laws }: { laws: Law[] }) {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {lawsLoading ? Array.from({ length: 6 }).map((_, i) => (<CardSkeleton key={i} />)) : (
-              laws.map((law, index) => (
-                <div key={law.number} className="animate-staggered-fade-in" style={{ animationDelay: `${(index % 6) * 0.1}s` }}>
-                  <LawCard law={law} />
-                </div>
-              ))
-            )}
+            {laws.map((law, index) => (
+              <div key={law.number} className="animate-staggered-fade-in" style={{ animationDelay: `${(index % 6) * 0.1}s` }}>
+                <LawCard law={law} />
+              </div>
+            ))}
           </div>
         </div>
 

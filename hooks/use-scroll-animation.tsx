@@ -32,34 +32,6 @@ export function useScrollAnimation() {
     }
   }, [])
 
-  useEffect(() => {
-    // Add smooth scrolling behavior for anchor links
-    const handleAnchorClick = (e: Event) => {
-      const target = e.target as HTMLAnchorElement
-      const href = target.getAttribute('href')
-      
-      if (href?.startsWith('#')) {
-        e.preventDefault()
-        const element = document.querySelector(href)
-        if (element) {
-          element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          })
-        }
-      }
-    }
-
-    // Add listeners to all anchor links
-    const anchorLinks = document.querySelectorAll('a[href^="#"]')
-    anchorLinks.forEach(link => {
-      link.addEventListener('click', handleAnchorClick)
-    })
-
-    return () => {
-      anchorLinks.forEach(link => {
-        link.removeEventListener('click', handleAnchorClick)
-      })
-    }
-  }, [])
+  // Anchor-link smooth scrolling is handled by useSmoothScroll, which also
+  // honors prefers-reduced-motion and manages focus for accessibility.
 }
