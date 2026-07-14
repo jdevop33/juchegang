@@ -8,7 +8,7 @@ export const metadata = {
     title: "When Fiction Becomes Fact: The Psychology of Narrative Dependence",
     description: "Peer-reviewed research reveals profound implications of using fictional stories as guides for living, affecting cognition, culture, and survival competence.",
     images: [
-      { url: "/gallery/fiction-reality.jpg", width: 1200, height: 630, alt: "Fiction Reality Investigation" },
+      { url: "/gallery/paektu-hero-2.webp", width: 1200, height: 630, alt: "Fiction Reality Investigation" },
     ],
   },
 }
