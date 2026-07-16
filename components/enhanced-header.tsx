@@ -133,7 +133,7 @@ export function EnhancedHeader() {
               <LanguageToggle />
               <MotionToggle />
               <button
-                className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/10 text-cream-muted hover:text-cream bg-white/5 hover:bg-white/10 transition-all duration-300 active:scale-[0.95]"
+                className="inline-flex items-center justify-center w-11 h-11 rounded-full border border-white/10 text-cream-muted hover:text-cream bg-white/5 hover:bg-white/10 transition-all duration-300 active:scale-[0.95]"
                 aria-label="Toggle menu"
                 onClick={() => setIsMenuOpen(true)}
               >

@@ -699,7 +699,7 @@ export function BlowbackContent() {
         <p className="text-[13px] text-cream-muted font-light">
           주체의 흐름을 따라 &nbsp;&middot;&nbsp; Navigate the Current
         </p>
-        <p className="text-[11px] text-cream-muted/60 mt-4 max-w-[500px] mx-auto">
+        <p className="text-[11px] text-cream-muted/75 mt-4 max-w-[500px] mx-auto">
           This report is a private strategic intelligence briefing. Sources
           include declassified CIA documents, congressional investigations, ICJ
           rulings, HRW reports, FARA filings, and academic scholarship. All

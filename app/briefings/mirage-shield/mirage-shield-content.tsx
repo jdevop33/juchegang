@@ -82,7 +82,7 @@ function DataTable({
           <thead>
             <tr>
               {head.map((h) => (
-                <th
+                <th scope="col"
                   key={h}
                   className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep"
                 >
@@ -663,7 +663,7 @@ export function MirageShieldContent() {
         <p className="text-[13px] text-cream-muted font-light">
           Intelligence with intent
         </p>
-        <p className="text-[11px] text-cream-muted/60 mt-4 max-w-[500px] mx-auto">
+        <p className="text-[11px] text-cream-muted/75 mt-4 max-w-[500px] mx-auto">
           &copy; 2026 iPurpose Research &middot; Open-source briefing &middot;
           Reproduction with attribution permitted
         </p>

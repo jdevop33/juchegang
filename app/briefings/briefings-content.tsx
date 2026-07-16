@@ -365,7 +365,7 @@ export default function BriefingsContent() {
                       </span>
                     )}
                     {b.date && (
-                      <span className="text-cream/40 text-[10px] font-mono uppercase tracking-widest">
+                      <span className="text-cream/55 text-[10px] font-mono uppercase tracking-widest">
                         {b.date}
                       </span>
                     )}
@@ -471,7 +471,7 @@ export default function BriefingsContent() {
                       </span>
                     )}
                     {briefing.date && (
-                      <span className="text-cream/40 text-[10px] font-mono uppercase tracking-widest">{briefing.date}</span>
+                      <span className="text-cream/55 text-[10px] font-mono uppercase tracking-widest">{briefing.date}</span>
                     )}
                   </div>
                   

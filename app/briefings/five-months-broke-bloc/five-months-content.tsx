@@ -37,9 +37,9 @@ export default function FiveMonthsContent() {
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="border-b-2 border-sovereign-gold/40">
-                  <th className="text-left py-3 px-4 text-sovereign-gold font-semibold">Date</th>
-                  <th className="text-left py-3 px-4 text-sovereign-gold font-semibold">Reference</th>
-                  <th className="text-left py-3 px-4 text-sovereign-gold font-semibold">Title &amp; Significance</th>
+                  <th scope="col" className="text-left py-3 px-4 text-sovereign-gold font-semibold">Date</th>
+                  <th scope="col" className="text-left py-3 px-4 text-sovereign-gold font-semibold">Reference</th>
+                  <th scope="col" className="text-left py-3 px-4 text-sovereign-gold font-semibold">Title &amp; Significance</th>
                 </tr>
               </thead>
               <tbody>

@@ -82,7 +82,7 @@ function DataTable({
           <thead>
             <tr>
               {head.map((h) => (
-                <th
+                <th scope="col"
                   key={h}
                   className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep"
                 >
@@ -760,7 +760,7 @@ export function EndOfEndingsContent() {
           Juche Gang Research Division &nbsp;&middot;&nbsp; juchegang.ca
           &nbsp;&middot;&nbsp; juche.org
         </p>
-        <p className="text-[11px] text-cream-muted/60 mt-4 max-w-[500px] mx-auto">
+        <p className="text-[11px] text-cream-muted/75 mt-4 max-w-[500px] mx-auto">
           A grand audit of war termination, historical revisionism, and the
           algorithmic precipice. Analysis represents the research
           division&rsquo;s interpretation of documented historical patterns

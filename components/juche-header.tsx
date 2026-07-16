@@ -84,10 +84,10 @@ export function JucheHeader() {
         {/* Mobile: language + menu */}
         <div className="md:hidden flex items-center gap-2">
           <LanguageToggle />
-          <Link href="/contact" className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-cream text-[#0d1b2a] text-xs font-bold transition-all duration-300 active:scale-[0.95]">
+          <Link href="/contact" className="inline-flex items-center justify-center min-h-[44px] px-4 py-2.5 rounded-full bg-cream text-[#0d1b2a] text-xs font-bold transition-all duration-300 active:scale-[0.95]">
             {t('contact')}
           </Link>
-          <button className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/10 text-cream-muted hover:text-cream bg-white/5 hover:bg-white/10 transition-all duration-300 active:scale-[0.95]" aria-label="Toggle menu" onClick={() => setIsMenuOpen(true)}>
+          <button className="inline-flex items-center justify-center w-11 h-11 rounded-full border border-white/10 text-cream-muted hover:text-cream bg-white/5 hover:bg-white/10 transition-all duration-300 active:scale-[0.95]" aria-label="Toggle menu" onClick={() => setIsMenuOpen(true)}>
             <Menu className="h-4 w-4" strokeWidth={1.5} />
           </button>
         </div>
@@ -96,7 +96,7 @@ export function JucheHeader() {
       <Drawer.Root direction="right" open={isMenuOpen} onOpenChange={setIsMenuOpen}>
         <Drawer.Portal>
           <Drawer.Overlay className="fixed inset-0 bg-river-depths/90 backdrop-blur-md transition-opacity duration-300 z-[100]" />
-          <Drawer.Content className="fixed right-0 top-0 h-screen w-[92vw] max-w-[560px] bg-gradient-to-br from-river-depths via-river-deep to-river-depths border-l border-sovereign-gold/20 shadow-2xl shadow-river-depths/80 will-change-transform backdrop-blur-xl z-[100] flex flex-col">
+          <Drawer.Content className="fixed right-0 top-0 h-[100dvh] w-[92vw] max-w-[560px] bg-gradient-to-br from-river-depths via-river-deep to-river-depths border-l border-sovereign-gold/20 shadow-2xl shadow-river-depths/80 will-change-transform backdrop-blur-xl z-[100] flex flex-col">
             <div className="flex items-center justify-between px-4 py-4 border-b border-river-current/30">
               <Image
                 src="/banner-horizontal.png"
@@ -109,7 +109,7 @@ export function JucheHeader() {
                 <X className="h-6 w-6 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(212,167,74,0.8)]" />
               </button>
             </div>
-            <nav className="px-6 py-6 overflow-y-auto h-[calc(100vh-64px)]">
+            <nav className="px-6 py-6 overflow-y-auto h-[calc(100dvh-64px)]">
               <ul className="space-y-3">
                 <li className="transform transition-all duration-300 hover:scale-[1.02]">
                   <Link href="/" onClick={() => setIsMenuOpen(false)} className="group block px-4 py-3 rounded-lg bg-river-current/10 hover:bg-river-current/20 text-river-mist hover:text-cream transition-all duration-300 border border-river-current/20 hover:border-sovereign-gold/40">

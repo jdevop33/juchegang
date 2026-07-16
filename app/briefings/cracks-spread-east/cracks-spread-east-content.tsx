@@ -41,9 +41,9 @@ export default function CracksSpreadEastContent() {
             <table className="w-full text-sm border border-sovereign-gold/20">
               <thead>
                 <tr className="bg-sovereign-gold/10">
-                  <th className="text-left p-3 border-b border-sovereign-gold/20 text-sovereign-gold">Reference</th>
-                  <th className="text-left p-3 border-b border-sovereign-gold/20 text-sovereign-gold">Date</th>
-                  <th className="text-left p-3 border-b border-sovereign-gold/20 text-sovereign-gold">Title</th>
+                  <th scope="col" className="text-left p-3 border-b border-sovereign-gold/20 text-sovereign-gold">Reference</th>
+                  <th scope="col" className="text-left p-3 border-b border-sovereign-gold/20 text-sovereign-gold">Date</th>
+                  <th scope="col" className="text-left p-3 border-b border-sovereign-gold/20 text-sovereign-gold">Title</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">

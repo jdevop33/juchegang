@@ -386,9 +386,9 @@ export default function NewWeaponsContent() {
               <table className="w-full text-sm border-collapse">
                 <thead>
                   <tr className="border-b border-sovereign-gold/30">
-                    <th className="text-left p-3 text-cream-muted font-bold uppercase tracking-wider">Old Paradigm</th>
-                    <th className="text-left p-3 text-sovereign-gold font-bold uppercase tracking-wider">New Paradigm</th>
-                    <th className="text-left p-3 text-river-current dark:text-river-mid font-bold uppercase tracking-wider">Example</th>
+                    <th scope="col" className="text-left p-3 text-cream-muted font-bold uppercase tracking-wider">Old Paradigm</th>
+                    <th scope="col" className="text-left p-3 text-sovereign-gold font-bold uppercase tracking-wider">New Paradigm</th>
+                    <th scope="col" className="text-left p-3 text-river-current dark:text-river-mid font-bold uppercase tracking-wider">Example</th>
                   </tr>
                 </thead>
                 <tbody className="text-cream/80">

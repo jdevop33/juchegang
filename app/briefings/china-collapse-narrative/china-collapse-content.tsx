@@ -86,9 +86,9 @@ export default function ChinaCollapseContent() {
             <table className="w-full text-sm border border-sovereign-gold/20 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-sovereign-gold/10">
-                  <th className="text-left p-3 text-sovereign-gold font-semibold">Indicator</th>
-                  <th className="text-left p-3 text-sovereign-gold font-semibold">2024 Figure</th>
-                  <th className="text-left p-3 text-sovereign-gold font-semibold">Trend</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-semibold">Indicator</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-semibold">2024 Figure</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-semibold">Trend</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">
@@ -196,9 +196,9 @@ export default function ChinaCollapseContent() {
             <table className="w-full text-sm border border-sovereign-gold/20 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-sovereign-gold/10">
-                  <th className="text-left p-3 text-sovereign-gold font-semibold">Country/Territory</th>
-                  <th className="text-left p-3 text-sovereign-gold font-semibold">Fertility Rate</th>
-                  <th className="text-left p-3 text-sovereign-gold font-semibold">vs China</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-semibold">Country/Territory</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-semibold">Fertility Rate</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-semibold">vs China</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">
@@ -391,9 +391,9 @@ export default function ChinaCollapseContent() {
             <table className="w-full text-sm border border-korean-red/20 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-korean-red/10">
-                  <th className="text-left p-3 text-korean-red font-semibold">Year</th>
-                  <th className="text-left p-3 text-korean-red font-semibold">Prediction</th>
-                  <th className="text-left p-3 text-korean-red font-semibold">What Actually Happened</th>
+                  <th scope="col" className="text-left p-3 text-korean-red font-semibold">Year</th>
+                  <th scope="col" className="text-left p-3 text-korean-red font-semibold">Prediction</th>
+                  <th scope="col" className="text-left p-3 text-korean-red font-semibold">What Actually Happened</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">
@@ -467,9 +467,9 @@ export default function ChinaCollapseContent() {
             <table className="w-full text-sm border border-sovereign-gold/20 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-sovereign-gold/10">
-                  <th className="text-left p-3 text-sovereign-gold font-semibold">Institution</th>
-                  <th className="text-left p-3 text-sovereign-gold font-semibold">2025 Forecast</th>
-                  <th className="text-left p-3 text-sovereign-gold font-semibold">2026 Forecast</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-semibold">Institution</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-semibold">2025 Forecast</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-semibold">2026 Forecast</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">

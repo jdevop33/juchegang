@@ -109,9 +109,9 @@ export default function PerformativeEthicsContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Region</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Targets</th>
-                      <th className="px-4 py-3 text-center text-cream font-semibold">Count</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Region</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Targets</th>
+                      <th scope="col" className="px-4 py-3 text-center text-cream font-semibold">Count</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">
@@ -185,9 +185,9 @@ export default function PerformativeEthicsContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Country</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Key Impact</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Source</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Country</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Key Impact</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Source</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">
@@ -327,9 +327,9 @@ export default function PerformativeEthicsContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Mechanism</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Scale</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Function</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Mechanism</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Scale</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Function</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">
@@ -434,10 +434,10 @@ export default function PerformativeEthicsContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Framework</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Key Authors</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Core Mechanism</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Sanctions Application</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Framework</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Key Authors</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Core Mechanism</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Sanctions Application</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">
@@ -533,10 +533,10 @@ export default function PerformativeEthicsContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-center text-sovereign-gold font-semibold w-12">#</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Hypothesis</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Experimental Design</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Predicted Outcome</th>
+                      <th scope="col" className="px-4 py-3 text-center text-sovereign-gold font-semibold w-12">#</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Hypothesis</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Experimental Design</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Predicted Outcome</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">

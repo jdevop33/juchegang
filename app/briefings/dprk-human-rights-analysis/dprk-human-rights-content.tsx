@@ -80,9 +80,9 @@ export default function DprkHumanRightsContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Treaty</th>
-                      <th className="px-4 py-3 text-center text-cream font-semibold">DPRK</th>
-                      <th className="px-4 py-3 text-center text-cream font-semibold">USA</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Treaty</th>
+                      <th scope="col" className="px-4 py-3 text-center text-cream font-semibold">DPRK</th>
+                      <th scope="col" className="px-4 py-3 text-center text-cream font-semibold">USA</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">

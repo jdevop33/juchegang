@@ -771,7 +771,7 @@ export function ReliabilityDeficitContent() {
         <p className="text-[13px] text-cream-muted font-light">
           Intelligence with intent
         </p>
-        <p className="text-[11px] text-cream-muted/60 mt-4 max-w-[500px] mx-auto">
+        <p className="text-[11px] text-cream-muted/75 mt-4 max-w-[500px] mx-auto">
           &copy; 2026 iPurpose Research &middot; Open-source briefing &middot;
           Reproduction with attribution permitted
         </p>

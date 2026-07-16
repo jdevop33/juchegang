@@ -140,10 +140,10 @@ export default function EUUkraineAidContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-cream/20">
-                      <th className="text-left py-3 px-4 text-cream font-bold">Country</th>
-                      <th className="text-center py-3 px-4 text-cream font-bold">Debt-to-GDP (Q3 2025)</th>
-                      <th className="text-center py-3 px-4 text-cream font-bold">Projected 2026 Increase</th>
-                      <th className="text-left py-3 px-4 text-cream font-bold">Key Pressure</th>
+                      <th scope="col" className="text-left py-3 px-4 text-cream font-bold">Country</th>
+                      <th scope="col" className="text-center py-3 px-4 text-cream font-bold">Debt-to-GDP (Q3 2025)</th>
+                      <th scope="col" className="text-center py-3 px-4 text-cream font-bold">Projected 2026 Increase</th>
+                      <th scope="col" className="text-left py-3 px-4 text-cream font-bold">Key Pressure</th>
                     </tr>
                   </thead>
                   <tbody>

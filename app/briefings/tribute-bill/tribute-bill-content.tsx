@@ -248,13 +248,13 @@ export function TributeBillContent() {
             <table className="w-full border-collapse text-[14px] min-w-[560px]">
               <thead>
                 <tr>
-                  <th className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep">
+                  <th scope="col" className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep">
                     Buyer
                   </th>
-                  <th className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep">
+                  <th scope="col" className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep">
                     Purchases
                   </th>
-                  <th className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep">
+                  <th scope="col" className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep">
                     Note
                   </th>
                 </tr>
@@ -573,7 +573,7 @@ export function TributeBillContent() {
           Intelligence with intent &nbsp;&middot;&nbsp; Prepared from open
           sources only
         </p>
-        <p className="text-[11px] text-cream-muted/60 mt-4 max-w-[500px] mx-auto">
+        <p className="text-[11px] text-cream-muted/75 mt-4 max-w-[500px] mx-auto">
           Errors of fact are the author&rsquo;s and correctable. Every claim in
           this brief is traceable to the named, on-record sources listed above.
         </p>

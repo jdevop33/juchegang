@@ -109,9 +109,9 @@ export default function SleepwalkersContent() {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="border-b-2 border-sovereign-gold">
-                  <th className="text-left p-3 text-sovereign-gold font-mono text-sm">#</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Symptom</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Description</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-mono text-sm">#</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Symptom</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Description</th>
                 </tr>
               </thead>
               <tbody className="text-cream/90">
@@ -279,8 +279,8 @@ export default function SleepwalkersContent() {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="border-b-2 border-sovereign-gold">
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Variation</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Obedience Rate</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Variation</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Obedience Rate</th>
                 </tr>
               </thead>
               <tbody className="text-cream/90">
@@ -358,9 +358,9 @@ export default function SleepwalkersContent() {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="border-b-2 border-sovereign-gold">
-                  <th className="text-left p-3 text-sovereign-gold font-mono text-sm">#</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Mechanism</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">How It Works</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-mono text-sm">#</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Mechanism</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">How It Works</th>
                 </tr>
               </thead>
               <tbody className="text-cream/90">
@@ -525,8 +525,8 @@ export default function SleepwalkersContent() {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="border-b-2 border-korean-red">
-                  <th className="text-left p-3 text-korean-red font-bold">Metric</th>
-                  <th className="text-left p-3 text-korean-red font-bold">Reality</th>
+                  <th scope="col" className="text-left p-3 text-korean-red font-bold">Metric</th>
+                  <th scope="col" className="text-left p-3 text-korean-red font-bold">Reality</th>
                 </tr>
               </thead>
               <tbody className="text-cream/90">
@@ -595,9 +595,9 @@ export default function SleepwalkersContent() {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="border-b-2 border-korean-red">
-                  <th className="text-left p-3 text-korean-red font-mono text-sm">#</th>
-                  <th className="text-left p-3 text-korean-red font-bold">Symptom</th>
-                  <th className="text-left p-3 text-korean-red font-bold">Current Manifestation</th>
+                  <th scope="col" className="text-left p-3 text-korean-red font-mono text-sm">#</th>
+                  <th scope="col" className="text-left p-3 text-korean-red font-bold">Symptom</th>
+                  <th scope="col" className="text-left p-3 text-korean-red font-bold">Current Manifestation</th>
                 </tr>
               </thead>
               <tbody className="text-cream/90">

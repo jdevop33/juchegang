@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion"
-import { Heart, Globe, Handshake, Star } from "lucide-react"
+import { Heart, Globe, Handshake, Star, X } from "lucide-react"
 
 const messages = [
   { text: "和平与友谊", lang: "zh", translation: "Peace and Friendship", flag: "🇨🇳", iso: "cn" },
@@ -38,6 +38,8 @@ export function SolidarityBanner() {
 
   const icons = [Heart, Globe, Handshake, Star]
   const Icon = icons[currentIndex % icons.length]
+
+  if (!isVisible) return null
 
   return (
     <div className="relative overflow-hidden bg-gradient-to-r from-river-depths via-river-current to-river-depths border-y border-sovereign-gold/20">
@@ -85,11 +87,11 @@ export function SolidarityBanner() {
           </AnimatePresence>
 
           <button
-            onClick={() => setIsVisible(!isVisible)}
-            className="hidden sm:block p-1 rounded hover:bg-river-mist/10 transition-colors"
-            aria-label="Toggle banner"
+            onClick={() => setIsVisible(false)}
+            className="absolute right-2 sm:right-4 inline-flex items-center justify-center w-9 h-9 rounded-full text-cream-muted hover:text-cream hover:bg-river-mist/10 transition-colors"
+            aria-label="Dismiss banner"
           >
-            <Star className="w-5 h-5 text-sovereign-gold" />
+            <X className="w-4 h-4" />
           </button>
         </div>
       </div>

@@ -429,10 +429,10 @@ export default function WarNobodyWinsContent() {
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="border-b border-sovereign-gold/30">
-                  <th className="text-left p-3 text-sovereign-gold font-bold uppercase tracking-wider">Feature</th>
-                  <th className="text-left p-3 text-korean-red font-bold">Russia <span className="font-normal text-cream-muted">(The Bear)</span></th>
-                  <th className="text-left p-3 text-korean-red font-bold">China <span className="font-normal text-cream-muted">(The Dragon)</span></th>
-                  <th className="text-left p-3 text-river-current dark:text-river-mid font-bold">NATO / Europe <span className="font-normal text-cream-muted">(The Sick Man)</span></th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold uppercase tracking-wider">Feature</th>
+                  <th scope="col" className="text-left p-3 text-korean-red font-bold">Russia <span className="font-normal text-cream-muted">(The Bear)</span></th>
+                  <th scope="col" className="text-left p-3 text-korean-red font-bold">China <span className="font-normal text-cream-muted">(The Dragon)</span></th>
+                  <th scope="col" className="text-left p-3 text-river-current dark:text-river-mid font-bold">NATO / Europe <span className="font-normal text-cream-muted">(The Sick Man)</span></th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">

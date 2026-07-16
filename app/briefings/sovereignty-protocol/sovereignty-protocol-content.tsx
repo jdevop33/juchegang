@@ -272,22 +272,22 @@ export function SovereigntyProtocolContent() {
               <table className="w-full text-left font-[family-name:var(--font-mono)] text-xs sm:text-sm whitespace-nowrap border-collapse relative z-10 min-w-[700px]">
                 <thead>
                   <tr className="border-b border-river-current/80 text-cream-muted/60 bg-river-depths/80">
-                    <th className="py-3 sm:py-4 px-3 sm:px-4 font-semibold w-1/4 sticky left-0 bg-river-depths/90 z-20 shadow-[2px_0_5px_rgba(0,0,0,0.2)]">
+                    <th scope="col" className="py-3 sm:py-4 px-3 sm:px-4 font-semibold w-1/4 sticky left-0 bg-river-depths/90 z-20 shadow-[2px_0_5px_rgba(0,0,0,0.2)]">
                       Metric
                     </th>
-                    <th className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center transition-colors duration-300 min-w-[120px] ${highlightClass("canada")}`}>
+                    <th scope="col" className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center transition-colors duration-300 min-w-[120px] ${highlightClass("canada")}`}>
                       Canada
                     </th>
-                    <th className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center transition-colors duration-300 min-w-[120px] ${highlightClass("japan")}`}>
+                    <th scope="col" className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center transition-colors duration-300 min-w-[120px] ${highlightClass("japan")}`}>
                       Japan
                     </th>
-                    <th className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center transition-colors duration-300 min-w-[120px] ${highlightClass("rok")}`}>
+                    <th scope="col" className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center transition-colors duration-300 min-w-[120px] ${highlightClass("rok")}`}>
                       South Korea
                     </th>
-                    <th className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center transition-colors duration-300 min-w-[120px] ${highlightClass("dprk")}`}>
+                    <th scope="col" className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center transition-colors duration-300 min-w-[120px] ${highlightClass("dprk")}`}>
                       DPRK
                     </th>
-                    <th className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center border-l border-sovereign-gold/20 bg-sovereign-gold/5 text-sovereign-gold transition-colors duration-300 min-w-[160px] ${highlightClass("unified")}`}>
+                    <th scope="col" className={`py-3 sm:py-4 px-3 sm:px-4 font-semibold text-center border-l border-sovereign-gold/20 bg-sovereign-gold/5 text-sovereign-gold transition-colors duration-300 min-w-[160px] ${highlightClass("unified")}`}>
                       Unified Peninsula
                     </th>
                   </tr>

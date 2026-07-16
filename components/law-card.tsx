@@ -77,10 +77,11 @@ export function LawCard({ law }: LawCardProps) {
       
       <div className="p-4 sm:p-5 md:p-6 flex-1 flex flex-col">
         <div className="mb-4">
-          <h3 className="text-sm font-medium text-sovereign-gold/70 flex items-center gap-2 mb-2">
-            <Star className="h-4 w-4 text-sovereign-gold" />
+          {/* Eyebrow label, not a heading — keeps the card's h2 title first in heading order */}
+          <p className="text-sm font-medium text-sovereign-gold/70 flex items-center gap-2 mb-2">
+            <Star className="h-4 w-4 text-sovereign-gold" aria-hidden="true" />
             {t('lawLabel')} {law.number}
-          </h3>
+          </p>
         </div>
         <h2 
           id={`law-${law.number}-title`}

@@ -625,10 +625,10 @@ export function OsintContent() {
             <table className="w-full border-collapse text-[14px] min-w-[640px]">
               <thead>
                 <tr>
-                  <th className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep w-[42%]">
+                  <th scope="col" className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep w-[42%]">
                     Claim as broadcast
                   </th>
-                  <th className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep">
+                  <th scope="col" className="font-mono text-[11px] tracking-[0.14em] uppercase text-left text-sovereign-gold border-b-[1.5px] border-sovereign-gold px-4 py-3 bg-river-deep">
                     Verified record
                   </th>
                 </tr>
@@ -802,7 +802,7 @@ export function OsintContent() {
         <p className="text-[13px] text-cream-muted font-light">
           Navigate the Current &nbsp;&middot;&nbsp; juchegang.ca
         </p>
-        <p className="font-mono text-[11px] text-cream-muted/60 mt-4">
+        <p className="font-mono text-[11px] text-cream-muted/75 mt-4">
           2/OS/070726-26 &middot; &copy; 2026 &middot; Reproduction with
           attribution permitted
         </p>

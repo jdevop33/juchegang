@@ -116,10 +116,10 @@ export default function OtCybersecurityContent() {
             <table className="w-full border-collapse text-sm">
               <thead>
                 <tr className="border-b-2 border-sovereign-gold/50">
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Sector</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Function</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Ownership</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Oversight</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Sector</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Function</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Ownership</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Oversight</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">
@@ -175,9 +175,9 @@ export default function OtCybersecurityContent() {
             <table className="w-full border-collapse text-sm">
               <thead>
                 <tr className="border-b-2 border-sovereign-gold/50">
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Dimension</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Information Technology</th>
-                  <th className="text-left p-3 text-korean-red font-bold">Operational Technology</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Dimension</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Information Technology</th>
+                  <th scope="col" className="text-left p-3 text-korean-red font-bold">Operational Technology</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">
@@ -269,10 +269,10 @@ export default function OtCybersecurityContent() {
             <table className="w-full border-collapse text-sm">
               <thead>
                 <tr className="border-b-2 border-sovereign-gold/50">
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Nation</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Primary Groups</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Key Operations</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Strategic Focus</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Nation</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Primary Groups</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Key Operations</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Strategic Focus</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">
@@ -342,9 +342,9 @@ export default function OtCybersecurityContent() {
             <table className="w-full border-collapse text-sm">
               <thead>
                 <tr className="border-b-2 border-sovereign-gold/50">
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Phase</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Objective</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Activity</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Phase</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Objective</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Activity</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">
@@ -387,10 +387,10 @@ export default function OtCybersecurityContent() {
             <table className="w-full border-collapse text-sm">
               <thead>
                 <tr className="border-b-2 border-sovereign-gold/50">
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Year</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Operation</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Attribution</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Impact</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Year</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Operation</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Attribution</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Impact</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">
@@ -522,9 +522,9 @@ export default function OtCybersecurityContent() {
             <table className="w-full border-collapse text-sm">
               <thead>
                 <tr className="border-b-2 border-sovereign-gold/50">
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Phase</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Activity</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">OT-Specific Considerations</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Phase</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Activity</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">OT-Specific Considerations</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">
@@ -632,9 +632,9 @@ export default function OtCybersecurityContent() {
             <table className="w-full border-collapse text-sm">
               <thead>
                 <tr className="border-b-2 border-sovereign-gold/50">
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Timeline</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Priority Actions</th>
-                  <th className="text-left p-3 text-sovereign-gold font-bold">Success Metrics</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Timeline</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Priority Actions</th>
+                  <th scope="col" className="text-left p-3 text-sovereign-gold font-bold">Success Metrics</th>
                 </tr>
               </thead>
               <tbody className="text-cream/80">

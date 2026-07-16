@@ -85,9 +85,9 @@ export default function SatelliteEavesdroppingContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Component</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Specification</th>
-                      <th className="px-4 py-3 text-right text-cream font-semibold">Cost</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Component</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Specification</th>
+                      <th scope="col" className="px-4 py-3 text-right text-cream font-semibold">Cost</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">
@@ -190,10 +190,10 @@ export default function SatelliteEavesdroppingContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Carrier</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Exposure</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Data Captured</th>
-                      <th className="px-4 py-3 text-right text-cream font-semibold">Duration</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Carrier</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Exposure</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Data Captured</th>
+                      <th scope="col" className="px-4 py-3 text-right text-cream font-semibold">Duration</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">
@@ -253,8 +253,8 @@ export default function SatelliteEavesdroppingContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Entity</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Exposed Data</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Entity</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Exposed Data</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">
@@ -376,9 +376,9 @@ export default function SatelliteEavesdroppingContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Dimension</th>
-                      <th className="px-4 py-3 text-center text-cream font-semibold">GCHQ TEMPORA (2013)</th>
-                      <th className="px-4 py-3 text-center text-cream font-semibold">Satellite Eaves. (2025)</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Dimension</th>
+                      <th scope="col" className="px-4 py-3 text-center text-cream font-semibold">GCHQ TEMPORA (2013)</th>
+                      <th scope="col" className="px-4 py-3 text-center text-cream font-semibold">Satellite Eaves. (2025)</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">
@@ -445,9 +445,9 @@ export default function SatelliteEavesdroppingContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Framework</th>
-                      <th className="px-4 py-3 text-center text-cream font-semibold">Status</th>
-                      <th className="px-4 py-3 text-center text-cream font-semibold">Enforcement</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Framework</th>
+                      <th scope="col" className="px-4 py-3 text-center text-cream font-semibold">Status</th>
+                      <th scope="col" className="px-4 py-3 text-center text-cream font-semibold">Enforcement</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">
@@ -527,9 +527,9 @@ export default function SatelliteEavesdroppingContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Dimension</th>
-                      <th className="px-4 py-3 text-center text-cream font-semibold">GEO (Legacy)</th>
-                      <th className="px-4 py-3 text-center text-cream font-semibold">Starlink (LEO)</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Dimension</th>
+                      <th scope="col" className="px-4 py-3 text-center text-cream font-semibold">GEO (Legacy)</th>
+                      <th scope="col" className="px-4 py-3 text-center text-cream font-semibold">Starlink (LEO)</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">
@@ -584,10 +584,10 @@ export default function SatelliteEavesdroppingContent() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-river-current/20">
-                      <th className="px-4 py-3 text-left text-sovereign-gold font-semibold">Entity</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Response</th>
-                      <th className="px-4 py-3 text-left text-cream font-semibold">Action Taken</th>
-                      <th className="px-4 py-3 text-center text-cream font-semibold">Grade</th>
+                      <th scope="col" className="px-4 py-3 text-left text-sovereign-gold font-semibold">Entity</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Response</th>
+                      <th scope="col" className="px-4 py-3 text-left text-cream font-semibold">Action Taken</th>
+                      <th scope="col" className="px-4 py-3 text-center text-cream font-semibold">Grade</th>
                     </tr>
                   </thead>
                   <tbody className="text-cream/80">
