@@ -3,51 +3,16 @@ type FocalPoint = { x: number; y: number }
 // Defaults to center if not specified
 const defaultFocal: FocalPoint = { x: 50, y: 50 }
 
-// Per-image focal points so faces are not cropped.
-// Values are percentages for CSS object-position.
+// Per-image focal points so subjects are not cropped awkwardly.
+// Values are percentages for CSS object-position, applied by FocalImage.
+//
+// Only images that still exist in /public belong here. The 48 law cards
+// render their heritage artwork with object-contain (full image, no crop),
+// so they intentionally need no focal entry. Add a key only when an
+// object-cover image needs its subject biased away from center.
 const focalMap: Record<string, FocalPoint> = {
   "/images/hero-image.png": { x: 50, y: 12 },
-  "/gallery/gallery-010.webp": { x: 50, y: 18 },
-  // Ensure faces visible for specific laws
-  "/gallery/gallery-064.png": { x: 50, y: 35 }, // Law 1
-  "/gallery/gallery-063.png": { x: 50, y: 35 }, // Law 3
-  "/gallery/gallery-054.webp": { x: 50, y: 35 }, // Law 5
-  "/gallery/gallery-046.webp": { x: 50, y: 20 }, // Law 7 (nudge further down)
-  "/gallery/gallery-044.jpg": { x: 50, y: 35 }, // Law 8
-  "/gallery/gallery-055.webp": { x: 50, y: 12 }, // Law 46 (moved down to show more top)
-  "/gallery/gallery-057.jpg": { x: 50, y: 12 }, // Law 47 (moved down to show more top)
-  "/images/SupremeLeader.png": { x: 70, y: 85 }, // Social hero focal (legacy)
-  "/gallery/herosocial.jpg": { x: 50, y: 40 }, // Social hero focal (preferred)
-  "/gallery/North_Korean_Bibimbap_비빔밥_(12330376074).jpg": { x: 50, y: 35 }, // Cuisine hero focal
-  "/gallery/gallery-041.webp": { x: 50, y: 35 },
-  "/gallery/gallery-042.jpg": { x: 50, y: 12 }, // Law 44 (moved down to show more top)
-  "/gallery/gallery-043.jpg": { x: 50, y: 12 }, // Law 42 (moved down to show more top)
-  "/gallery/gallery-040.webp": { x: 50, y: 12 }, // Law 40 (moved down to show more top)
-  "/gallery/gallery-039.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-038.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-037.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-036.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-032.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-028.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-026.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-024.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-022.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-021.jpg": { x: 50, y: 60 },
-  "/gallery/gallery-019.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-015.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-013.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-011.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-009.jpg": { x: 50, y: 35 },
-  // Adjustments to keep faces fully visible
-  "/gallery/gallery-012.webp": { x: 50, y: 20 }, // Law 12 (come down a bit more)
-  "/gallery/gallery-016.webp": { x: 50, y: 32 }, // Law 16
-  "/gallery/gallery-020.webp": { x: 50, y: 32 }, // Law 20
-  "/gallery/gallery-023.jpg": { x: 50, y: 10 },  // Law 23 (moved down to show more top)
-  "/gallery/gallery-030.jpg": { x: 50, y: 10 },  // Law 30 (moved down to show more top)
-  "/gallery/gallery-034.jpg": { x: 50, y: 12 },  // Law 34 (moved down to show more top)
-  // Law 4 dynamic file varies, but we bias downward crop
-  "/gallery/gallery-004.jpg": { x: 50, y: 35 },
-  "/gallery/gallery-004.webp": { x: 50, y: 35 },
+  "/gallery/North_Korean_Bibimbap_비빔밥_(12330376074).jpg": { x: 50, y: 35 }, // Cuisine hero
 }
 
 export function getFocalForImage(src: string): FocalPoint {
@@ -57,5 +22,3 @@ export function getFocalForImage(src: string): FocalPoint {
 export function setFocalPoint(src: string, x: number, y: number) {
   focalMap[src] = { x, y }
 }
-
-
