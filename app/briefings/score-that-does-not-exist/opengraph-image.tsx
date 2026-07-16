@@ -1,5 +1,9 @@
 import { briefingOgImage, OG_SIZE } from "@/lib/briefing-og"
 
+// Render on-demand at request time; never prerender at build (font fetch
+// must not be able to fail the production build).
+export const dynamic = "force-dynamic"
+
 export const size = OG_SIZE
 export const contentType = "image/png"
 export const alt = "The Score That Does Not Exist, a Juchegang white paper"
