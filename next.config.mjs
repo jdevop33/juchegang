@@ -23,13 +23,14 @@ const nextConfig = {
     ],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 3600, // 1 hour cache
-    // 768 and 1280 are absent from the srcset of any page built today, but
-    // HTML cached from earlier builds still asks for them. A width the
-    // optimizer does not list is answered with 400, not the nearest size, so
-    // every image on such a page fails. Keeping both widths costs nothing and
-    // means a stale document degrades to a slightly wrong size instead of
-    // no image at all.
-    deviceSizes: [640, 750, 768, 828, 1080, 1200, 1280, 1600, 1920, 2048],
+    // 768, 1024 and 1280 are absent from the srcset of any page built today.
+    // They come from the [640, 768, 1024, 1280, 1600] list this config carried
+    // until b835744, and HTML cached from that era still asks for them. A width
+    // the optimizer does not list is answered with 400, not the nearest size,
+    // so every image on such a page fails. Keeping all three costs nothing and
+    // means a stale document degrades to a slightly wrong size instead of no
+    // image at all.
+    deviceSizes: [640, 750, 768, 828, 1024, 1080, 1200, 1280, 1600, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     qualities: [60, 75, 80, 85, 90, 100], // Pre-declare to avoid Next 16 breakage
     dangerouslyAllowSVG: false,
