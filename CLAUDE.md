@@ -10,92 +10,6 @@ Part of the **JPanda Network** of sites (see ARCHITECTURE.md, OPERATING-MODEL.md
 
 > **NOTE (Dec 26, 2024)**: Financial dashboard ("Sovereign Alpha") has been migrated to **1929.world** (jessejamesvictoria/v0-global-debt-analysis). This repo is now content-focused only.
 
-## Key Commands
-
-```bash
-npm run dev          # Development server (localhost:3000)
-npm run build        # Production build
-npm run build:analyze # Bundle analysis (ANALYZE=true)
-npm run start        # Production server
-npm run lint         # ESLint checks
-```
-
-## Tech Stack
-
-| Layer | Technology |
-|-------|------------|
-| Framework | Next.js 15.5.9 with App Router |
-| Language | TypeScript + React 19 |
-| Styling | Tailwind CSS + CSS variables |
-| UI Components | shadcn/ui (Radix primitives) |
-| Animations | Framer Motion |
-| Analytics | Umami (privacy-respecting) |
-| Deployment | Vercel with cron jobs |
-| i18n | Custom context + server-side dictionary |
-
-## Project Structure
-
-```
-/app/
-├── page.tsx              # Homepage (static, renders HomeClient)
-├── home-client.tsx       # Main client component with laws display
-├── layout.tsx            # Root layout (fonts, providers, metadata)
-├── globals.css           # Tailwind + CSS variables (light/dark/terminal themes)
-├── api/                  # API routes
-│   ├── telegram/         # Telegram bot integrations
-│   ├── tradingview/      # TradingView webhook receiver
-│   └── cron/             # Scheduled tasks (daily digests/alerts)
-│   # NOTE: Dashboard APIs moved to 1929.world (Dec 2024)
-├── briefings/            # 22+ research briefings (geopolitics, media analysis)
-├── truth-project/        # AI bias/propaganda analysis content
-├── dashboard/            # DEPRECATED - UI moved to 1929.world
-├── gallery/              # Photo gallery with focal point system
-├── library/              # Documents and slide decks
-└── [other-pages]/        # mission, contact, channels, etc.
-
-/components/
-├── ui/                   # shadcn/ui primitives (50+ components)
-├── dashboard/            # DEPRECATED - widgets moved to 1929.world
-├── juche-header.tsx      # Main navigation header
-├── juche-footer.tsx      # Site footer with network links
-├── peace-counter.tsx     # Days since armistice counter
-├── cultural-calendar.tsx # Korean holidays/events
-├── law-card.tsx          # Individual law display card
-├── featured-law.tsx      # Featured law with image
-└── ...                   # 60+ custom components
-
-/contexts/
-└── language-context.tsx  # i18n context (en/kr/kp)
-
-/data/
-├── laws.ts               # 48 Laws of Excellence content
-├── laws.kr.ts            # Korean translations
-├── countries.ts          # Country data for dashboard
-└── ...
-
-/i18n/
-├── en.json               # English translations
-├── kr.json               # South Korean translations
-└── kp.json               # North Korean translations
-
-/hooks/
-├── use-smooth-scroll.ts
-├── use-scroll-animation.tsx
-├── use-intersection-observer.tsx
-└── ...
-
-/lib/
-├── utils.ts              # cn() for className merging
-├── auto-translate.ts     # Translation utilities
-├── dictionary.ts         # i18n dictionary loader
-└── ...
-
-/types/
-├── law.ts                # Law interface
-├── dashboard.ts          # Dashboard data types
-└── ...
-```
-
 ## Key Patterns
 
 ### 1. Server/Client Split
@@ -139,20 +53,6 @@ export async function GET(request: Request) {
 - **Courage Red**: #EC1D25 (passion, strength)
 - **Gold**: #FFD700 (highlights, achievements)
 
-### Tailwind Custom Colors
-```typescript
-friendship: {
-  blue: "#034DA2",
-  red: "#EC1D25",
-}
-```
-
-### Terminal Theme (Dashboard)
-Bloomberg-inspired with green/amber on black:
-- `--terminal-green`: #22C55E
-- `--terminal-amber`: #F59E0B
-- `--terminal-bg`: near-black
-
 ## API Integrations
 
 | Service | Purpose | Notes |
@@ -163,27 +63,7 @@ Bloomberg-inspired with green/amber on black:
 | Telegram | Bot notifications | Daily digests |
 | Umami | Analytics | Privacy-focused |
 
-## Vercel Configuration
-
-```json
-// vercel.json
-{
-  "installCommand": "npm install --legacy-peer-deps",
-  "crons": [
-    { "path": "/api/cron/telegram-digest", "schedule": "0 8 * * *" },
-    { "path": "/api/cron/telegram-alerts", "schedule": "0 20 * * *" }
-  ]
-}
-```
-
 ## Build Configuration
-
-### next.config.mjs
-- **ESLint/TypeScript**: Errors ignored in production builds
-- **Images**: Optimized with AVIF/WebP, domains whitelisted
-- **Security Headers**: CSP, HSTS, X-Frame-Options, etc.
-- **Bundle Optimization**: Package imports optimized (lucide-react, framer-motion, etc.)
-- **Console Removal**: In production, console logs stripped (except errors)
 
 ### Important: Build Errors Are Suppressed
 TypeScript and ESLint errors are only enforced in development:
