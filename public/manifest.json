@@ -5,7 +5,10 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "display_override": ["standalone", "minimal-ui"],
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "background_color": "#0d1b2a",
   "theme_color": "#0d1b2a",
   "orientation": "any",
@@ -25,34 +28,53 @@
       "purpose": "any"
     },
     {
-      "src": "/faviconjuche.png",
-      "sizes": "192x192",
+      "src": "/icon-512-maskable.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     }
   ],
-  "categories": ["education", "news", "politics"],
+  "categories": [
+    "education",
+    "news",
+    "politics"
+  ],
   "shortcuts": [
     {
       "name": "Briefings",
       "short_name": "Briefings",
       "description": "Primary-source research and analysis",
       "url": "/briefings",
-      "icons": [{ "src": "/faviconjuche.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "/faviconjuche.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Truth Project",
       "short_name": "Truth",
       "description": "Understanding through facts",
       "url": "/truth-project",
-      "icons": [{ "src": "/faviconjuche.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "/faviconjuche.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Gallery",
       "short_name": "Gallery",
       "description": "View media gallery",
       "url": "/gallery",
-      "icons": [{ "src": "/faviconjuche.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "/faviconjuche.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ]
 }
