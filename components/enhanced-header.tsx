@@ -62,21 +62,23 @@ export function EnhancedHeader() {
       >
         <div className="container mx-auto max-w-[1400px] px-4 md:px-8">
           <div className="flex items-center justify-between h-16 md:h-[72px]">
-            {/* Logo — proportionate on all screens */}
-            <div className="flex items-center shrink-0">
+            {/* Logo — rooted on the bar's base so the stem grows up out of it.
+                The mark has no transparent padding, so its bottom edge is the
+                stem itself; bottom-aligning it lands the stem on the border. */}
+            <div className="flex items-end self-stretch shrink-0">
               <Link
                 href="/"
-                className="group inline-flex items-center gap-2.5 transition-opacity duration-300 hover:opacity-80"
+                className="group inline-flex items-end gap-2.5 transition-opacity duration-300 hover:opacity-80"
               >
                 <Image
                   src="/logo-icon-gang.png"
                   alt="JucheGang"
-                  width={40}
-                  height={40}
+                  width={72}
+                  height={72}
                   priority
-                  className="w-9 h-9 md:w-10 md:h-10 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105"
+                  className="block h-14 w-14 md:h-16 md:w-16 origin-bottom transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105"
                 />
-                <span className="text-cream/60 text-[11px] font-medium tracking-[0.15em] uppercase hidden sm:inline">
+                <span className="self-center text-cream/60 text-[11px] font-medium tracking-[0.15em] uppercase hidden sm:inline">
                   JucheGang
                 </span>
               </Link>
