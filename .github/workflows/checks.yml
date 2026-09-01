@@ -1,0 +1,28 @@
+name: Checks
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  asset-refs:
+    name: asset references resolve
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      # No install step: the check reads the repo with node's stdlib only,
+      # so it stays fast and cannot be broken by a dependency resolution.
+      - name: Check that every referenced public asset exists
+        run: node scripts/check-asset-refs.mjs
