@@ -14,7 +14,7 @@
 //      build's asset hashes and image srcset widths, which 400 once the config
 //      behind them moves on.
 
-const VERSION = 'v8';
+const VERSION = 'v9';
 const PRECACHE = `juche-precache-${VERSION}`;
 const RUNTIME = `juche-runtime-${VERSION}`;
 

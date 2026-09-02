@@ -817,7 +817,8 @@
 
   /* Smooth scrolling between sections */
   .scroll-mt-nav {
-    scroll-margin-top: 5rem;
+    /* Clears the fixed header (h-20 / md:h-[88px]) plus a little air. */
+    scroll-margin-top: 6.5rem;
   }
 
   /* Enhanced section reveal animations */

@@ -61,24 +61,27 @@ export function EnhancedHeader() {
         }`}
       >
         <div className="container mx-auto max-w-[1400px] px-4 md:px-8">
-          <div className="flex items-center justify-between h-16 md:h-[72px]">
-            {/* Logo — rose-header.png is a stem cropped at the frame's bottom
-                edge, with its breathing room baked in above the blooms. Bottom
-                -aligned in a full-height box it reads as growing up out of the
-                bar. h-full keeps that true at any bar height, so the mark is
-                responsive without a single per-breakpoint size. */}
-            <div className="flex items-end self-stretch shrink-0">
+          <div className="flex items-center justify-between h-20 md:h-[88px]">
+            {/* Logo: rose-mark.png is the full two-bloom mark on a
+                transparent ground, near square (711x552 of ink in a 728 frame).
+                A square mark wants to be centred, not bottom-anchored the way
+                the old cropped stem was, and it carries far more visual mass at
+                the same height, so it reads as prominent without crowding the
+                nav. Sized in px rather than h-full so it keeps breathing room
+                inside the bar at both breakpoints. */}
+            <div className="flex items-center self-stretch shrink-0">
               <Link
                 href="/"
-                className="group inline-flex h-full items-end gap-2.5 transition-opacity duration-300 hover:opacity-80"
+                className="group inline-flex h-full items-center gap-2.5 transition-opacity duration-300 hover:opacity-80"
               >
                 <Image
-                  src="/rose-header.png"
+                  src="/rose-mark.png"
                   alt="JucheGang"
-                  width={372}
-                  height={556}
+                  width={728}
+                  height={728}
+                  sizes="76px"
                   priority
-                  className="block h-full w-auto origin-bottom transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.03]"
+                  className="block h-[64px] md:h-[76px] w-auto transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]"
                 />
                 <span className="self-center text-cream/60 text-[11px] font-medium tracking-[0.15em] uppercase hidden sm:inline">
                   JucheGang
