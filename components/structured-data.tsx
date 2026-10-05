@@ -55,7 +55,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             "name": "JucheGang",
             "logo": {
               "@type": "ImageObject",
-              "url": `${baseUrl}/images/logo.png`
+              "url": `${baseUrl}/faviconjuche.png`
             }
           },
           "datePublished": "2024-01-01",
@@ -84,9 +84,9 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "license": "https://creativecommons.org/licenses/by/4.0/",
           "logo": {
             "@type": "ImageObject",
-            "url": `${baseUrl}/images/logo.png`,
-            "width": 200,
-            "height": 200
+            "url": `${baseUrl}/faviconjuche.png`,
+            "width": 192,
+            "height": 192
           },
           "foundingDate": "2024",
           "founder": {
@@ -120,7 +120,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             "name": "JucheGang",
             "logo": {
               "@type": "ImageObject",
-              "url": `${baseUrl}/images/logo.png`
+              "url": `${baseUrl}/faviconjuche.png`
             }
           },
           "datePublished": data?.publishedDate || "2024-01-01",
@@ -131,7 +131,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           },
           "image": {
             "@type": "ImageObject",
-            "url": data?.image || `${baseUrl}/images/og-image.jpg`,
+            "url": data?.image || `${baseUrl}/opengraph-image`,
             "width": 1200,
             "height": 630
           },
