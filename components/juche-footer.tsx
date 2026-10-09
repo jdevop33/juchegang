@@ -158,12 +158,12 @@ export function JucheFooter() {
                 Tiger Unity
               </a>
               <a
-                href="https://www.1929.world"
+                href="https://www.macroview.live"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-cream/40 hover:text-cream/80 transition-colors duration-300"
               >
-                1929 World
+                MacroView
               </a>
               <a
                 href="/library"
@@ -178,6 +178,13 @@ export function JucheFooter() {
                 Briefings
               </a>
             </div>
+            <p className="text-cream/25 text-xs mb-6 max-w-xl mx-auto leading-relaxed">
+              The record: every MacroView call since 19 June 2026, dated and scored, at{" "}
+              <a href="https://www.macroview.live/ledger" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-cream/10 hover:text-cream/50 transition-colors duration-300">
+                macroview.live/ledger
+              </a>
+              .
+            </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-cream/20">
               <a href="https://outlierclothiers.com" target="_blank" rel="noopener noreferrer" className="hover:text-cream/50 transition-colors duration-300">
                 Outlier Clothiers
