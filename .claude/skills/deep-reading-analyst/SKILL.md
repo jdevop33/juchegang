@@ -14,21 +14,22 @@ Systematic analysis of written content using multiple thinking frameworks. Desig
 - Breaking down a speech or policy document
 - Comparing how different sources cover the same event
 - Identifying rhetorical manipulation techniques
+- As Phase 1 of `/refute`, which writes a rebuttal only when grades D-F dominate. On its own, this skill analyses and never writes a rebuttal.
 
 ## Analysis Depth Levels
 
-### Quick (5 min) — Surface scan
+### Quick — Surface scan
 - SCQA breakdown (Situation, Complication, Question, Answer)
 - Evidence type tagging (fact / inference / opinion / unsourced)
 - Top 3 takeaways
 
-### Standard (15 min) — Full analysis
+### Standard — Full analysis
 - SCQA + 5W2H (Who, What, When, Where, Why, How, How much)
 - Critical thinking pass (evidence evaluation, fallacy check, source credibility)
 - Argument structure map
 - Missing context identification
 
-### Deep (30 min) — Adversarial review
+### Deep — Adversarial review
 - Everything in Standard, plus:
 - First principles deconstruction (strip assumptions, rebuild from evidence)
 - Competing hypotheses (3-5 alternative explanations)
@@ -64,6 +65,8 @@ For each claim in the text, classify:
 | D | Anonymous Source | "Officials say", "analysts believe", unnamed sources |
 | E | Editorial Framing | Loaded language, selective emphasis, missing context |
 | F | Circular Citation | Source A cites Source B which cites Source A |
+
+A claim stated as fact with no source at all is graded D and marked *unsourced*: it has less behind it than an anonymous source, not more.
 
 ## Step 3: Logical Fallacy Check
 

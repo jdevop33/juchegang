@@ -1,6 +1,6 @@
 ---
 name: content-research-writer
-description: Writing partner for drafting, researching, and refining articles, briefings, and content for juche.org. Maintains the site's voice (factual, respectful, hopeful, bold) while helping structure arguments with proper citations.
+description: Writing partner for drafting, researching, and refining articles, briefings, and content for juche.org. Maintains the site's voice (factual, respectful, hopeful, bold, human) while helping structure arguments with proper citations.
 ---
 
 # Content Research Writer
@@ -23,6 +23,11 @@ From BRAND.md — the voice is:
 - **Respectful**: Dignified tone, no name-calling or sensationalism
 - **Hopeful**: Focus on what's possible, peace and reunification as achievable goals
 - **Bold**: Unapologetic about challenging mainstream narratives with evidence
+- **Human**: People over politics
+
+And, from BRAND.md's Don'ts, never:
+- Propaganda or inflammatory language
+- Demonize any people (governments are fair game)
 
 ## Workflow
 
@@ -68,12 +73,12 @@ Ask:
 
 ### 3. Research & Citations
 
-When researching, prioritize sources in this order:
-1. **Primary sources** (KCNA, Rodong Sinmun, official statements, treaties, UN documents)
-2. **Historical record** (declassified documents, academic history)
+When researching, match the source to the question, then prioritize in this order:
+1. **For what a government or institution said**: its own statement (KCNA, Rodong Sinmun, Blue House, treaties)
+2. **For what happened**: documents, data, independent verification, and the historical record (declassified documents, academic history, UN documents)
 3. **Independent journalism** (non-aligned media, investigative reporting)
 4. **Academic research** (peer-reviewed, check funding/affiliation)
-5. **Mainstream media** (only when demonstrating the narrative being challenged)
+5. **Mainstream reporting**: cite it where it is accurate; challenge it where the record contradicts it
 
 Citation format:
 ```markdown
@@ -114,6 +119,7 @@ For each section, review:
 - [ ] No unattributed opinions presented as fact
 - [ ] Conclusion ties back to mission
 - [ ] SEO metadata drafted (title, description)
+- [ ] Run living-record's EXTRACT and VERIFY phases on the draft before publishing
 ```
 
 ## Publishing to the Site
