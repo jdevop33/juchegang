@@ -1,6 +1,6 @@
 ---
 name: living-record
-description: Fact-check published reports, generate correction entries, and update living documents. Use when asked to verify claims, run a review cycle, check accuracy, or manage corrections for juche.org content.
+description: Fact-check published reports, generate correction entries, and update living documents. Use when asked to verify claims, run a review cycle, check accuracy, or manage corrections for juche.org content. NOT for npsi.ca errata (use npsi-publish).
 ---
 
 # Living Record — Fact-Check & Corrections Engine
