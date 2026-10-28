@@ -13,7 +13,7 @@ Verified 28 October 2026 by checking live DNS, HTTP responses and page content a
 | [kim.juche.org](https://kim.juche.org) | [jessejamesvictoria/juchegang-astro](https://github.com/jessejamesvictoria/juchegang-astro) | `juchegang-astro` (jesse-james-projects) **and** `juchegang-astro` (koreawins) | Astro | "The die is cast" strategic-intelligence hub: The Current, Arithmetic, Report 7394-K, Support |
 | [tiger.juche.org](https://tiger.juche.org) | [cherishwins/v0-korean-tiger-unity-campaign](https://github.com/cherishwins/v0-korean-tiger-unity-campaign) | `v0-korean-tiger-unity-campaign` (Jpanda) | Next.js (v0) | The Tiger Reunites campaign |
 
-All four deploy `main` to production on every merge. The projects are spread over five Vercel teams. **juche.org and kim.juche.org are each built by two Vercel projects**, so every push builds twice. Only one of each pair holds the custom domain; the tiger project is the only one confirmed so far. Open each project's Domains tab, keep the one that holds the domain, and disconnect the Git link on the other.
+All four deploy `main` to production on every merge. The projects are spread over four Vercel teams: jesse-james-projects, panda3, koreawins and Jpanda. **juche.org and kim.juche.org are each built by two Vercel projects**, so every push builds twice. Only one of each pair can hold the custom domain, and which one is not yet confirmed. Open each project's Domains tab, keep the one that holds the domain, and disconnect the Git link on the other.
 
 ### Accounts
 
