@@ -6,14 +6,14 @@ Verified 28 October 2026 by checking live DNS, HTTP responses and page content a
 
 ## Live sites
 
-| Site | Source repository | Stack | What it is |
-|------|-------------------|-------|------------|
-| [juchegang.ca](https://juchegang.ca) and www | [jessejamesvictoria/juchegang0f8](https://github.com/jessejamesvictoria/juchegang0f8) | Next.js 15 | Personal journal: long-form essays, The Current, numerology explorer |
-| [juche.org](https://juche.org) and www | [jdevop33/juchegang](https://github.com/jdevop33/juchegang) (this repo) | Next.js 15 | The 48 Laws of Excellence, briefings, peace and reunification content. Also served at sovereign-alpha.vercel.app |
-| [kim.juche.org](https://kim.juche.org) | [jessejamesvictoria/juchegang-astro](https://github.com/jessejamesvictoria/juchegang-astro) | Astro | "The die is cast" strategic-intelligence hub: The Current, Arithmetic, Report 7394-K, Support |
-| [tiger.juche.org](https://tiger.juche.org) | [cherishwins/v0-korean-tiger-unity-campaign](https://github.com/cherishwins/v0-korean-tiger-unity-campaign) | Next.js (v0) | The Tiger Reunites campaign |
+| Site | Source repository | Vercel project (team) | Stack | What it is |
+|------|-------------------|-----------------------|-------|------------|
+| [juchegang.ca](https://juchegang.ca) and www | [jessejamesvictoria/juchegang0f8](https://github.com/jessejamesvictoria/juchegang0f8) | `juchegang.ca` (jesse-james-projects) | Next.js 15 | Personal journal: long-form essays, The Current, numerology explorer |
+| [juche.org](https://juche.org) and www | [jdevop33/juchegang](https://github.com/jdevop33/juchegang) (this repo) | `of8wins` (panda3) | Next.js 15 | The 48 Laws of Excellence, briefings, peace and reunification content. Also served at sovereign-alpha.vercel.app |
+| [kim.juche.org](https://kim.juche.org) | [jessejamesvictoria/juchegang-astro](https://github.com/jessejamesvictoria/juchegang-astro) | `juchegang-astro` (jesse-james-projects) | Astro | "The die is cast" strategic-intelligence hub: The Current, Arithmetic, Report 7394-K, Support |
+| [tiger.juche.org](https://tiger.juche.org) | [cherishwins/v0-korean-tiger-unity-campaign](https://github.com/cherishwins/v0-korean-tiger-unity-campaign) | `v0-korean-tiger-unity-campaign` (Jpanda) | Next.js (v0) | The Tiger Reunites campaign |
 
-All four are hosted on Vercel and deploy `main` to production on every merge.
+All four deploy `main` to production on every merge. They sit in three different Vercel teams, so check the team above before looking for a project in the dashboard.
 
 ### Accounts
 
@@ -22,7 +22,6 @@ All four are hosted on Vercel and deploy `main` to production on every merge.
 | Registrar | GoDaddy Domains Canada | GoDaddy.com |
 | Expires | 13 October 2027 | **11 December 2026** |
 | DNS | Cloudflare, records set to DNS only | Cloudflare, records set to DNS only |
-| Vercel | Not in the Jpanda or Cherish teams | tiger.juche.org is in the Jpanda team; juche.org and kim.juche.org are not in the Jpanda or Cherish teams |
 
 Keep the Cloudflare records **grey-clouded (DNS only)**. Vercel issues the TLS certificates itself, and proxying through Cloudflare on top of Vercel causes redirect loops unless SSL is set to Full (strict).
 
