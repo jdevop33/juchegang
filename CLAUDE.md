@@ -4,9 +4,9 @@ This file provides guidance to Claude Code when working with this repository.
 
 ## Project Overview
 
-**juche.org** (deployed at sovereign-alpha.vercel.app) - A Next.js 15 application showcasing "The 48 Laws of Excellence" with Korean reunification/peace advocacy content and multilingual support.
+**juche.org** (live at https://juche.org, also sovereign-alpha.vercel.app) - A Next.js 15 application showcasing "The 48 Laws of Excellence" with Korean reunification/peace advocacy content and multilingual support.
 
-Part of the **JPanda Network** of sites (see ARCHITECTURE.md, OPERATING-MODEL.md for multi-site strategy).
+Part of the **JPanda Network** of sites (see ARCHITECTURE.md, OPERATING-MODEL.md for multi-site strategy, and SITES.md for which repository deploys which site).
 
 > **NOTE (Dec 26, 2024)**: Financial dashboard ("Sovereign Alpha") has been migrated to **1929.world** (jessejamesvictoria/v0-global-debt-analysis). This repo is now content-focused only.
 

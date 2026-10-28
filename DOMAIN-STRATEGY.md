@@ -1,5 +1,5 @@
 # Domain Content Strategy
-> Last updated: December 2024
+> Last updated: December 2024. For which repository deploys each live site, see [SITES.md](SITES.md).
 
 ## The Rule: Purpose-Driven Content
 
@@ -14,6 +14,7 @@ Each domain has ONE clear purpose. Content goes where it belongs. No bleed-over.
 |--------|---------|---------------|-------|
 | **juche.org** | Korean peace, 48 Laws, geopolitical analysis | Briefings, history, reunification, cultural | Crypto, trading, commercial |
 | **tiger.juche.org** | Emotional reunification campaign | Photos, stories, cultural heritage | News, analysis, commercial |
+| **kim.juche.org** | Strategic-intelligence hub | The Current, Arithmetic, reports | Commercial |
 
 ### ECONOMICS & FINANCE
 | Domain | Purpose | Content Types | NO-GO |
@@ -37,7 +38,7 @@ Each domain has ONE clear purpose. Content goes where it belongs. No bleed-over.
 | Domain | Purpose | Content Types | NO-GO |
 |--------|---------|---------------|-------|
 | **jesse-resume.vercel.app** | Professional identity | Portfolio, experience | Activism, opinions |
-| **juchegang.ca** | Canadian personal brand | TBD - art, personal projects | TBD |
+| **juchegang.ca** | Personal journal | Long-form essays, The Current, numerology | Briefings that belong on juche.org |
 
 ---
 
