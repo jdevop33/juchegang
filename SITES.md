@@ -6,14 +6,14 @@ Verified 28 October 2026 by checking live DNS, HTTP responses and page content a
 
 ## Live sites
 
-| Site | Source repository | Vercel project (team) | Stack | What it is |
+| Site | Source repository | Vercel projects that build it (team) | Stack | What it is |
 |------|-------------------|-----------------------|-------|------------|
 | [juchegang.ca](https://juchegang.ca) and www | [jessejamesvictoria/juchegang0f8](https://github.com/jessejamesvictoria/juchegang0f8) | `juchegang.ca` (jesse-james-projects) | Next.js 15 | Personal journal: long-form essays, The Current, numerology explorer |
-| [juche.org](https://juche.org) and www | [jdevop33/juchegang](https://github.com/jdevop33/juchegang) (this repo) | `of8wins` (panda3) | Next.js 15 | The 48 Laws of Excellence, briefings, peace and reunification content. Also served at sovereign-alpha.vercel.app |
-| [kim.juche.org](https://kim.juche.org) | [jessejamesvictoria/juchegang-astro](https://github.com/jessejamesvictoria/juchegang-astro) | `juchegang-astro` (jesse-james-projects) | Astro | "The die is cast" strategic-intelligence hub: The Current, Arithmetic, Report 7394-K, Support |
+| [juche.org](https://juche.org) and www | [jdevop33/juchegang](https://github.com/jdevop33/juchegang) (this repo) | `juchegang` (jesse-james-projects) **and** `of8wins` (panda3) | Next.js 15 | The 48 Laws of Excellence, briefings, peace and reunification content. Also served at sovereign-alpha.vercel.app |
+| [kim.juche.org](https://kim.juche.org) | [jessejamesvictoria/juchegang-astro](https://github.com/jessejamesvictoria/juchegang-astro) | `juchegang-astro` (jesse-james-projects) **and** `juchegang-astro` (koreawins) | Astro | "The die is cast" strategic-intelligence hub: The Current, Arithmetic, Report 7394-K, Support |
 | [tiger.juche.org](https://tiger.juche.org) | [cherishwins/v0-korean-tiger-unity-campaign](https://github.com/cherishwins/v0-korean-tiger-unity-campaign) | `v0-korean-tiger-unity-campaign` (Jpanda) | Next.js (v0) | The Tiger Reunites campaign |
 
-All four deploy `main` to production on every merge. They sit in three different Vercel teams, so check the team above before looking for a project in the dashboard.
+All four deploy `main` to production on every merge. The projects are spread over five Vercel teams. **juche.org and kim.juche.org are each built by two Vercel projects**, so every push builds twice. Only one of each pair holds the custom domain; the tiger project is the only one confirmed so far. Open each project's Domains tab, keep the one that holds the domain, and disconnect the Git link on the other.
 
 ### Accounts
 
