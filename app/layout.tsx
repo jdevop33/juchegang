@@ -85,12 +85,6 @@ export const metadata = {
   },
   alternates: {
     canonical: "/",
-    languages: {
-      "en-US": "/",
-      "ko-KR": "/",
-      "ko-KP": "/",
-      "x-default": "/",
-    },
     types: {
       "application/rss+xml": "/rss.xml",
     },
