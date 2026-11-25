@@ -4,11 +4,25 @@ The single map of the JucheGang / juche.org web properties: which repository bui
 
 Verified 28 October 2026 by checking live DNS, HTTP responses and page content against each repository's code.
 
+## ⚠️ Current status (25 November 2026)
+
+**juchegang.ca is currently deployed from a private GitLab repo** (`jessecares/juchegang0f8`), not from the GitHub repo listed below.
+
+- Live site: https://juchegang.ca (long-form journal / essays / numbers)
+- Framework: Next.js (not Astro)
+- The GitLab copy and any GitHub copies have already drifted. Updating one does not update the other.
+- Canonical tags on the GitLab version may still need to be set to `https://juchegang.ca`.
+- Plan: either connect the GitLab repo so it can be edited, or delete the Vercel project and redeploy from a clean GitHub repo that you control.
+
+**juche.org** is live and correctly set (non-www canonical, 301 from www, fake hreflang removed). Source: this repo (`jdevop33/juchegang`).
+
+**kim.juche.org** is the Astro site (`jessejamesvictoria/juchegang-astro`).
+
 ## Live sites
 
 | Site | Source repository | Vercel projects that build it (team) | Stack | What it is |
 |------|-------------------|-----------------------|-------|------------|
-| [juchegang.ca](https://juchegang.ca) and www | [jessejamesvictoria/juchegang0f8](https://github.com/jessejamesvictoria/juchegang0f8) | `juchegang.ca` (jesse-james-projects) | Next.js 15 | Personal journal: long-form essays, The Current, numerology explorer |
+| [juchegang.ca](https://juchegang.ca) and www | Currently: GitLab `jessecares/juchegang0f8` (was listed as jessejamesvictoria/juchegang0f8) | `juchegang.ca` | Next.js 15 | Personal journal: long-form essays, The Current, numerology explorer |
 | [juche.org](https://juche.org) and www | [jdevop33/juchegang](https://github.com/jdevop33/juchegang) (this repo) | `juchegang` (jesse-james-projects) **and** `of8wins` (panda3) | Next.js 15 | The 48 Laws of Excellence, briefings, peace and reunification content. Also served at sovereign-alpha.vercel.app |
 | [kim.juche.org](https://kim.juche.org) | [jessejamesvictoria/juchegang-astro](https://github.com/jessejamesvictoria/juchegang-astro) | `juchegang-astro` (jesse-james-projects) **and** `juchegang-astro` (koreawins) | Astro | "The die is cast" strategic-intelligence hub: The Current, Arithmetic, Report 7394-K, Support |
 | [tiger.juche.org](https://tiger.juche.org) | [cherishwins/v0-korean-tiger-unity-campaign](https://github.com/cherishwins/v0-korean-tiger-unity-campaign) | `v0-korean-tiger-unity-campaign` (Jpanda) | Next.js (v0) | The Tiger Reunites campaign |
