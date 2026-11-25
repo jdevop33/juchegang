@@ -54,13 +54,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: t.freq,
       priority: t.priority,
-      alternates: {
-        languages: {
-          en: `${BASE_URL}${t.path}`,
-          'ko-KR': `${BASE_URL}${t.path}`,
-          'ko-KP': `${BASE_URL}${t.path}`,
-        },
-      },
     })),
     ...briefings.map((slug) => {
       const pagePath = path.join(appDir, 'briefings', slug, 'page.tsx')
